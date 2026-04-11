@@ -1,0 +1,44 @@
+{
+  "condition": "Alzheimer's Disease",
+  "category": "neurological",
+  "icd10": "G30",
+  "snps": [
+    {
+      "rsid": "rs429358",
+      "gene_region": "APOE",
+      "risk_allele": "C",
+      "odds_ratio": 3.2,
+      "population_frequency": {
+        "global": 0.16,
+        "european": 0.15
+      },
+      "effect_template": "APOE ε4 determining SNP. C allele (ε4) increases Alzheimer's risk ~3x per copy."
+    },
+    {
+      "rsid": "rs7412",
+      "gene_region": "APOE",
+      "risk_allele": "T",
+      "odds_ratio": 0.6,
+      "population_frequency": {
+        "global": 0.08,
+        "european": 0.08
+      },
+      "effect_template": "APOE ε2 determining SNP. T allele (ε2) is protective against Alzheimer's."
+    }
+  ],
+  "evidence_level": "established",
+  "gwas_catalog_id": "GCST000066",
+  "general_population_risk": "10-12%",
+  "recommendation_template": "Focus on modifiable risk factors: cardiovascular health, exercise, cognitive engagement, sleep quality. Consider earlier screening discussions with a neurologist if elevated risk.",
+  "studies": [
+    {
+      "pmid": "24162737",
+      "title": "Meta-analysis of 74,046 individuals identifies 11 new susceptibility loci for Alzheimer's disease",
+      "journal": "Nature Genetics",
+      "year": 2013,
+      "cohort_size": 74046,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24162737/",
+      "finding": "APOE ε4 remains strongest common genetic risk factor for late-onset Alzheimer's"
+    }
+  ]
+}

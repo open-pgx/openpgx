@@ -1,0 +1,24 @@
+{
+  "trait": "Asparagus Odor Detection",
+  "category": "sensory",
+  "snps": [
+    {
+      "rsid": "rs4481887",
+      "gene": "OR2M7",
+      "effect_allele": "G",
+      "effect_template": "Olfactory receptor variant affecting ability to smell asparagus metabolites in urine."
+    }
+  ],
+  "evidence_level": "established",
+  "studies": [
+    {
+      "pmid": "27841880",
+      "title": "Sniffing out significant 'Pee values': genome wide association study of asparagus anosmia",
+      "journal": "BMJ",
+      "year": 2016,
+      "cohort_size": 6909,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27841880/",
+      "finding": "rs4481887 near OR2M7 strongly associated with asparagus anosmia (ability to smell asparagus metabolites)"
+    }
+  ]
+}

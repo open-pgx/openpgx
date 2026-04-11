@@ -1,0 +1,30 @@
+{
+  "trait": "Male Pattern Baldness",
+  "category": "appearance",
+  "snps": [
+    {
+      "rsid": "rs2180439",
+      "gene": "20p11/PAX1",
+      "effect_allele": "C",
+      "effect_template": "20p11 variant associated with male pattern baldness risk."
+    },
+    {
+      "rsid": "rs6152",
+      "gene": "AR/EDA2R",
+      "effect_allele": "G",
+      "effect_template": "Androgen receptor region variant on X chromosome. Major baldness locus."
+    }
+  ],
+  "evidence_level": "established",
+  "studies": [
+    {
+      "pmid": "18849994",
+      "title": "Male-pattern baldness susceptibility locus at 20p11",
+      "journal": "Nature Genetics",
+      "year": 2008,
+      "cohort_size": 5000,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/18849994/",
+      "finding": "rs2180439 at 20p11 and androgen receptor region are major male pattern baldness loci"
+    }
+  ]
+}

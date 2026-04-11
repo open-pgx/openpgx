@@ -1,0 +1,45 @@
+{
+  "gene": "CBS",
+  "category": "methylation",
+  "gene_description": "Transsulfuration pathway (homocysteine)",
+  "drugs": ["pyridoxine", "folic_acid"],
+  "source": {
+    "pmid": "12471200",
+    "doi": null,
+    "source_type": "pubmed",
+    "title": "CBS 844ins68 polymorphism and homocysteine metabolism",
+    "journal": "Journal of Molecular Medicine",
+    "year": 2002,
+    "cohort_size": 1200,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/12471200/",
+    "finding": "CBS variants affect transsulfuration pathway and homocysteine levels."
+  },
+  "snps": [
+    {
+      "rsid": "rs234706",
+      "risk_allele": "T",
+      "reference_allele": "C",
+      "interpretations": {
+        "TT": {
+          "phenotype": "Upregulated CBS (Homozygous)",
+          "effect": "Increased transsulfuration activity. May deplete homocysteine too rapidly, shunting away from methylation.",
+          "recommendation": "Monitor homocysteine levels. May need less B6 supplementation. Ensure adequate methylation support.",
+          "severity": "mild"
+        },
+        "CT": {
+          "phenotype": "Mildly Upregulated CBS",
+          "effect": "Slightly increased CBS activity.",
+          "recommendation": "Standard B vitamin intake. Monitor if combined with MTHFR variants.",
+          "severity": "info"
+        },
+        "CC": {
+          "phenotype": "Normal CBS Activity",
+          "effect": "Normal transsulfuration pathway.",
+          "recommendation": "Standard dietary intake sufficient.",
+          "severity": "info"
+        }
+      }
+    }
+  ],
+  "evidence_level": "emerging"
+}

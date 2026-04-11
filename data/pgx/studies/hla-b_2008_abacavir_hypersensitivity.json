@@ -1,0 +1,59 @@
+{
+  "gene": "HLA-B",
+  "category": "immune",
+  "gene_description": "Immune-mediated drug hypersensitivity (abacavir)",
+  "drugs": ["abacavir"],
+  "source": {
+    "pmid": "18256392",
+    "doi": "10.1056/NEJMoa0706135",
+    "source_type": "pubmed",
+    "title": "HLA-B*5701 screening for hypersensitivity to abacavir (PREDICT-1 trial)",
+    "journal": "New England Journal of Medicine",
+    "year": 2008,
+    "cohort_size": 1956,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/18256392/",
+    "finding": "Prospective HLA-B*5701 screening eliminated immunologically confirmed abacavir hypersensitivity (0% vs 2.7% in controls, P<0.001). 94% of patients do not carry the allele and are at low risk."
+  },
+  "snps": [
+    {
+      "rsid": "rs2395029",
+      "risk_allele": "G",
+      "reference_allele": "T",
+      "interpretations": {
+        "GG": {
+          "phenotype": "HLA-B*5701 Positive (Homozygous)",
+          "effect": "Very high risk of severe, potentially life-threatening abacavir hypersensitivity reaction. Symptoms include fever, rash, GI distress, respiratory issues within first 6 weeks.",
+          "recommendation": "DO NOT prescribe abacavir. Use alternative NRTI (tenofovir, emtricitabine). Record as abacavir allergy in medical record.",
+          "severity": "life_threatening",
+          "odds_ratio": 960
+        },
+        "GT": {
+          "phenotype": "HLA-B*5701 Positive (Heterozygous)",
+          "effect": "High risk of severe abacavir hypersensitivity reaction. One copy of the risk allele is sufficient to trigger the immune-mediated reaction.",
+          "recommendation": "DO NOT prescribe abacavir. Use alternative NRTI. Record as abacavir allergy.",
+          "severity": "life_threatening",
+          "odds_ratio": 960
+        },
+        "TT": {
+          "phenotype": "HLA-B*5701 Negative",
+          "effect": "Low risk of immunologically confirmed abacavir hypersensitivity. Standard abacavir use is appropriate.",
+          "recommendation": "Abacavir can be prescribed. Maintain standard clinical vigilance for any hypersensitivity symptoms.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "global": 0.06,
+        "european": 0.08,
+        "african": 0.03,
+        "east_asian": 0.01,
+        "latino": 0.02,
+        "south_asian": 0.05
+      }
+    }
+  ],
+  "evidence_level": "established",
+  "contributor": {
+    "name": "OpenPGx Demo",
+    "github": "open-pgx"
+  }
+}

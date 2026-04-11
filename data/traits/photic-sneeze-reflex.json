@@ -1,0 +1,24 @@
+{
+  "trait": "Photic Sneeze Reflex",
+  "category": "sensory",
+  "snps": [
+    {
+      "rsid": "rs10427255",
+      "gene": "2q22/ZEB2",
+      "effect_allele": "C",
+      "effect_template": "Variant near ZEB2 associated with photic sneeze reflex (sneezing when looking at bright light)."
+    }
+  ],
+  "evidence_level": "moderate",
+  "studies": [
+    {
+      "pmid": "20585627",
+      "title": "Web-based genome-wide association study identifies two novel loci and a substantial genetic component for photic sneeze reflex",
+      "journal": "PLoS Genetics",
+      "year": 2010,
+      "cohort_size": 10000,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/20585627/",
+      "finding": "rs10427255 near ZEB2 significantly associated with photic sneeze reflex"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "gene": "COMT",
+  "category": "catecholamine",
+  "gene_description": "Catecholamine metabolism, stress response",
+  "drugs": ["modafinil", "armodafinil"],
+  "source": {
+    "pmid": "19037200",
+    "doi": "10.1038/clpt.2008.222",
+    "source_type": "pubmed",
+    "title": "Pharmacogenetics of modafinil after sleep loss: catechol-O-methyltransferase genotype modulates waking functions but not recovery sleep",
+    "journal": "Clinical Pharmacology & Therapeutics",
+    "year": 2009,
+    "cohort_size": 22,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/19037200/",
+    "finding": "COMT Val158Met strongly predicts modafinil efficacy. Val/Val (GG) subjects maintained baseline cognitive performance on 200mg modafinil during 40h sleep deprivation; Met/Met (AA) subjects showed virtually no benefit from the same dose."
+  },
+  "snps": [
+    {
+      "rsid": "rs4680",
+      "risk_allele": "A",
+      "reference_allele": "G",
+      "interpretations": {
+        "AA": {
+          "phenotype": "Low COMT Activity (Met/Met) — Poor Modafinil Responder",
+          "effect": "High baseline prefrontal dopamine. Modafinil was virtually ineffective at maintaining cognitive performance and vigilant attention during sleep deprivation. Already-saturated dopamine system leaves little room for modafinil's dopaminergic action.",
+          "recommendation": "Modafinil may have minimal benefit. Consider alternative wakefulness agents or higher doses with close monitoring. Armodafinil may offer slightly different pharmacokinetics.",
+          "severity": "moderate"
+        },
+        "AG": {
+          "phenotype": "Intermediate COMT Activity (Val/Met) — Partial Modafinil Responder",
+          "effect": "Intermediate dopamine metabolism. Moderate response to modafinil expected.",
+          "recommendation": "Standard starting dose (100-200mg). Titrate based on response.",
+          "severity": "info"
+        },
+        "GG": {
+          "phenotype": "High COMT Activity (Val/Val) — Good Modafinil Responder",
+          "effect": "Fast dopamine clearance in prefrontal cortex. Modafinil potently improved vigor, well-being, executive functioning, and sustained vigilant attention throughout 40h sleep deprivation.",
+          "recommendation": "Standard dose (100-200mg) expected to be effective. Good candidate for modafinil therapy.",
+          "severity": "info"
+        }
+      }
+    }
+  ],
+  "evidence_level": "moderate"
+}

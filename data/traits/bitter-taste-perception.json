@@ -1,0 +1,20 @@
+{
+  "trait": "Bitter Taste Perception",
+  "category": "sensory",
+  "snps": [
+    {
+      "rsid": "rs713598",
+      "gene": "TAS2R38",
+      "effect_allele": "C",
+      "effect_template": "TAS2R38 variant affecting bitter taste receptor sensitivity."
+    },
+    {
+      "rsid": "rs1726866",
+      "gene": "TAS2R38",
+      "effect_allele": "G",
+      "effect_template": "Second TAS2R38 variant contributing to bitter taste sensitivity."
+    }
+  ],
+  "evidence_level": "established",
+  "studies": []
+}

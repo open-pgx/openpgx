@@ -1,0 +1,44 @@
+{
+  "condition": "Gout",
+  "category": "metabolic",
+  "icd10": "M10",
+  "snps": [
+    {
+      "rsid": "rs2231142",
+      "gene_region": "ABCG2",
+      "risk_allele": "T",
+      "odds_ratio": 1.73,
+      "population_frequency": {
+        "global": 0.11,
+        "european": 0.11
+      },
+      "effect_template": "ABCG2 Q141K variant. Reduces uric acid excretion, increasing gout risk ~1.7x per allele."
+    },
+    {
+      "rsid": "rs12129861",
+      "gene_region": "SLC2A9",
+      "risk_allele": "C",
+      "odds_ratio": 1.6,
+      "population_frequency": {
+        "global": 0.25,
+        "european": 0.26
+      },
+      "effect_template": "SLC2A9 variant affecting renal urate transport. Second major gout risk locus."
+    }
+  ],
+  "evidence_level": "established",
+  "gwas_catalog_id": "GCST000220",
+  "general_population_risk": "~4% (men), ~2% (women)",
+  "recommendation_template": "Stay well hydrated. Limit purine-rich foods (organ meats, shellfish), fructose, and alcohol (especially beer). Maintain healthy weight. Monitor uric acid levels.",
+  "studies": [
+    {
+      "pmid": "18759275",
+      "title": "SLC2A9 is a newly identified urate transporter influencing serum urate concentration, urate excretion and gout",
+      "journal": "Nature Genetics",
+      "year": 2008,
+      "cohort_size": 12000,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/18759275/",
+      "finding": "ABCG2 rs2231142 and SLC2A9 are major genetic determinants of serum urate and gout risk"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "condition": "Osteoporosis",
+  "category": "musculoskeletal",
+  "icd10": "M81",
+  "snps": [
+    {
+      "rsid": "rs3736228",
+      "gene_region": "LRP5",
+      "risk_allele": "T",
+      "odds_ratio": 1.3,
+      "population_frequency": {
+        "global": 0.14,
+        "european": 0.15
+      },
+      "effect_template": "LRP5 A1330V variant. Reduces Wnt signaling and bone mineral density."
+    },
+    {
+      "rsid": "rs4988235",
+      "gene_region": "MCM6/LCT",
+      "risk_allele": "C",
+      "odds_ratio": 1.15,
+      "population_frequency": {
+        "global": 0.5,
+        "european": 0.24
+      },
+      "effect_template": "Lactase non-persistence indirectly affects calcium absorption from dairy, modestly increasing osteoporosis risk."
+    }
+  ],
+  "evidence_level": "established",
+  "gwas_catalog_id": "GCST000051",
+  "general_population_risk": "~10% (women over 50), ~2% (men over 50)",
+  "recommendation_template": "Ensure adequate calcium (1000-1200mg/day) and vitamin D (40-60 ng/mL). Weight-bearing exercise builds bone density. Consider DEXA scan after age 50 if risk factors present.",
+  "studies": [
+    {
+      "pmid": "18445777",
+      "title": "Large-scale analysis of association between LRP5 and LRP6 variants and osteoporosis",
+      "journal": "JAMA",
+      "year": 2008,
+      "cohort_size": 37534,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/18445777/",
+      "finding": "LRP5 rs3736228 T allele associated with reduced BMD and fracture risk (OR=1.3)"
+    }
+  ]
+}

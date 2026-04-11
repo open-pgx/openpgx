@@ -1,0 +1,45 @@
+{
+  "gene": "MTHFR",
+  "category": "folate_metabolism",
+  "gene_description": "Folate metabolism, methylation cycle",
+  "drugs": ["folic_acid", "methylfolate", "methotrexate"],
+  "source": {
+    "pmid": "16825682",
+    "doi": null,
+    "source_type": "pubmed",
+    "title": "MTHFR 677C→T polymorphism and risk of coronary heart disease: meta-analysis",
+    "journal": "JAMA",
+    "year": 2005,
+    "cohort_size": 16849,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/16825682/",
+    "finding": "MTHFR 677TT genotype associated with 16% increased CHD risk. Folate supplementation may mitigate."
+  },
+  "snps": [
+    {
+      "rsid": "rs1801133",
+      "risk_allele": "T",
+      "reference_allele": "C",
+      "interpretations": {
+        "TT": {
+          "phenotype": "Reduced Function (Homozygous)",
+          "effect": "~70% reduced MTHFR enzyme activity. Elevated homocysteine. Impaired folate metabolism.",
+          "recommendation": "Supplement with methylfolate (not folic acid). Monitor homocysteine levels.",
+          "severity": "moderate"
+        },
+        "CT": {
+          "phenotype": "Intermediate Function (Heterozygous)",
+          "effect": "~35% reduced MTHFR activity. Mildly elevated homocysteine risk.",
+          "recommendation": "Consider methylfolate supplementation. Ensure adequate dietary folate.",
+          "severity": "mild"
+        },
+        "CC": {
+          "phenotype": "Normal Function",
+          "effect": "Normal folate metabolism and MTHFR enzyme activity.",
+          "recommendation": "Standard dietary folate intake sufficient.",
+          "severity": "info"
+        }
+      }
+    }
+  ],
+  "evidence_level": "established"
+}

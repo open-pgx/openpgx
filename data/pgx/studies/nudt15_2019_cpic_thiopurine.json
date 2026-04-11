@@ -1,0 +1,53 @@
+{
+  "gene": "NUDT15",
+  "category": "drug_target",
+  "gene_description": "Thiopurine toxicity (common in Asian populations)",
+  "drugs": ["azathioprine", "mercaptopurine", "thioguanine"],
+  "source": {
+    "pmid": "30447069",
+    "doi": null,
+    "source_type": "guideline",
+    "title": "CPIC Guideline Update for TPMT and NUDT15 Genotypes and Dosing of Thiopurines",
+    "journal": "Clinical Pharmacology & Therapeutics",
+    "year": 2019,
+    "cohort_size": null,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/30447069/",
+    "finding": "NUDT15 *3 homozygous: consider alternative to thiopurines. Common in Asian populations."
+  },
+  "snps": [
+    {
+      "rsid": "rs116855232",
+      "risk_allele": "T",
+      "reference_allele": "C",
+      "interpretations": {
+        "TT": {
+          "phenotype": "Poor Metabolizer (*3/*3 — NUDT15 Deficient)",
+          "effect": "Complete NUDT15 deficiency. Very high risk of life-threatening myelosuppression with thiopurines. Especially prevalent in East Asian populations (~2%).",
+          "recommendation": "Avoid thiopurines or use <10% of standard dose. Consider alternative immunosuppressant.",
+          "severity": "life_threatening"
+        },
+        "CT": {
+          "phenotype": "Intermediate Metabolizer (*1/*3)",
+          "effect": "Reduced NUDT15 activity. Increased risk of leukopenia with thiopurines.",
+          "recommendation": "Reduce thiopurine dose to 25-50% of standard. Monitor CBC weekly at start.",
+          "severity": "moderate"
+        },
+        "CC": {
+          "phenotype": "Normal Metabolizer (*1/*1)",
+          "effect": "Normal NUDT15 activity.",
+          "recommendation": "Standard thiopurine dosing with routine monitoring.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "global": 0.04,
+        "european": 0.002,
+        "east_asian": 0.10,
+        "african": 0.003,
+        "latino": 0.01,
+        "south_asian": 0.02
+      }
+    }
+  ],
+  "evidence_level": "established"
+}

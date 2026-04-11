@@ -1,0 +1,24 @@
+{
+  "trait": "Stretch Marks Susceptibility",
+  "category": "skin",
+  "snps": [
+    {
+      "rsid": "rs7787362",
+      "gene": "ELN",
+      "effect_allele": "A",
+      "effect_template": "Elastin gene variant affecting skin elasticity and stretch mark formation."
+    }
+  ],
+  "evidence_level": "moderate",
+  "studies": [
+    {
+      "pmid": "23695559",
+      "title": "Genome-wide association study identifies variants in the ELN and HMCN1 genes associated with stretch marks",
+      "journal": "Journal of Investigative Dermatology",
+      "year": 2013,
+      "cohort_size": 33572,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/23695559/",
+      "finding": "ELN rs7787362 A allele associated with striae distensae (stretch marks)"
+    }
+  ]
+}

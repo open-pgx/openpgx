@@ -1,0 +1,44 @@
+{
+  "condition": "Celiac Disease",
+  "category": "autoimmune",
+  "icd10": "K90.0",
+  "snps": [
+    {
+      "rsid": "rs2187668",
+      "gene_region": "HLA-DQ2.5",
+      "risk_allele": "T",
+      "odds_ratio": 7,
+      "population_frequency": {
+        "global": 0.12,
+        "european": 0.14
+      },
+      "effect_template": "HLA-DQ2.5 tag SNP. Major genetic risk factor for celiac disease (~95% of patients carry DQ2)."
+    },
+    {
+      "rsid": "rs7454108",
+      "gene_region": "HLA-DQ8",
+      "risk_allele": "C",
+      "odds_ratio": 3.5,
+      "population_frequency": {
+        "global": 0.08,
+        "european": 0.09
+      },
+      "effect_template": "HLA-DQ8 tag SNP. Secondary celiac risk allele (found in remaining ~5% of patients)."
+    }
+  ],
+  "evidence_level": "established",
+  "gwas_catalog_id": "GCST000612",
+  "general_population_risk": "~1%",
+  "recommendation_template": "If you carry HLA-DQ2/DQ8 AND have symptoms (bloating, diarrhea, fatigue), consider tTG-IgA blood test. Genetic predisposition alone doesn't mean celiac — only ~3% of carriers develop it.",
+  "studies": [
+    {
+      "pmid": "20190752",
+      "title": "Dense genotyping identifies and localizes multiple common and rare variant association signals in celiac disease",
+      "journal": "Nature Genetics",
+      "year": 2011,
+      "cohort_size": 24269,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/20190752/",
+      "finding": "HLA-DQ2.5 (rs2187668) confers highest genetic risk for celiac disease (OR~7)"
+    }
+  ]
+}

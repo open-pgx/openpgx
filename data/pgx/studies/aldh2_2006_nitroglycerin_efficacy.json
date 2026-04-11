@@ -1,0 +1,54 @@
+{
+  "gene": "ALDH2",
+  "category": "drug_metabolism",
+  "gene_description": "Alcohol metabolism, nitroglycerin bioactivation (Asian flush gene)",
+  "drugs": ["nitroglycerin", "isosorbide_dinitrate", "disulfiram", "ethanol"],
+  "source": {
+    "pmid": "16395407",
+    "doi": "10.1172/JCI26564",
+    "source_type": "pubmed",
+    "title": "Mitochondrial ALDH2 Glu504Lys polymorphism contributes to the variation in efficacy of sublingual nitroglycerin",
+    "journal": "Journal of Clinical Investigation",
+    "year": 2006,
+    "cohort_size": 986,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/16395407/",
+    "finding": "ALDH2*2 (rs671 A allele) virtually eliminates nitroglycerin bioactivation to NO. 30-50% of East Asians carry this variant. Carriers show significantly reduced GTN efficacy for angina."
+  },
+  "snps": [
+    {
+      "rsid": "rs671",
+      "risk_allele": "A",
+      "reference_allele": "G",
+      "interpretations": {
+        "AA": {
+          "phenotype": "ALDH2 Deficient (*2/*2) — Non-Functional",
+          "effect": "~96% loss of ALDH2 enzyme activity. Nitroglycerin cannot be bioactivated to NO — drug is essentially ineffective. Severe alcohol flush reaction. Accumulated acetaldehyde increases esophageal cancer risk with alcohol use.",
+          "recommendation": "Nitroglycerin will NOT work for angina. Use alternative vasodilators (calcium channel blockers, direct NO donors). AVOID alcohol due to carcinogenic acetaldehyde accumulation.",
+          "severity": "severe",
+          "odds_ratio": null
+        },
+        "AG": {
+          "phenotype": "ALDH2 Reduced Activity (*1/*2) — Partial Function",
+          "effect": "~60-80% reduced ALDH2 activity. Nitroglycerin efficacy reduced by ~33-40%. Mild-to-moderate alcohol flush. One defective subunit is sufficient to impair the ALDH2 tetramer.",
+          "recommendation": "Nitroglycerin may have reduced effectiveness. Consider higher dose or alternative anti-anginal. Moderate alcohol with caution.",
+          "severity": "moderate"
+        },
+        "GG": {
+          "phenotype": "ALDH2 Normal Activity (*1/*1) — Full Function",
+          "effect": "Normal ALDH2 enzyme activity. Standard nitroglycerin bioactivation and efficacy. Normal alcohol metabolism.",
+          "recommendation": "Standard nitroglycerin dosing for angina. No ALDH2-related drug concerns.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "global": 0.08,
+        "european": 0.0,
+        "east_asian": 0.30,
+        "african": 0.0,
+        "latino": 0.02,
+        "south_asian": 0.01
+      }
+    }
+  ],
+  "evidence_level": "established"
+}

@@ -1,0 +1,30 @@
+{
+  "trait": "Circadian Rhythm / Chronotype",
+  "category": "sleep",
+  "snps": [
+    {
+      "rsid": "rs12927162",
+      "gene": "PER2",
+      "effect_allele": "A",
+      "effect_template": "PER2 clock gene variant influencing morning/evening preference."
+    },
+    {
+      "rsid": "rs1801260",
+      "gene": "CLOCK",
+      "effect_allele": "G",
+      "effect_template": "CLOCK gene variant associated with evening chronotype."
+    }
+  ],
+  "evidence_level": "moderate",
+  "studies": [
+    {
+      "pmid": "26955885",
+      "title": "Genome-wide association analyses of chronotype in 697,828 individuals",
+      "journal": "Nature Communications",
+      "year": 2019,
+      "cohort_size": 697828,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26955885/",
+      "finding": "Multiple loci including PER2 and CLOCK associated with morningness preference"
+    }
+  ]
+}

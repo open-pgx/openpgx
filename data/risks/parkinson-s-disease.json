@@ -1,0 +1,55 @@
+{
+  "condition": "Parkinson's Disease",
+  "category": "neurological",
+  "icd10": "G20",
+  "snps": [
+    {
+      "rsid": "rs34637584",
+      "gene_region": "LRRK2",
+      "risk_allele": "A",
+      "odds_ratio": 9,
+      "population_frequency": {
+        "global": 0.001,
+        "european": 0.001
+      },
+      "effect_template": "LRRK2 G2019S mutation. Most common genetic cause of Parkinson's. FDA-approved 23andMe test."
+    },
+    {
+      "rsid": "rs76763715",
+      "gene_region": "GBA",
+      "risk_allele": "T",
+      "odds_ratio": 5,
+      "population_frequency": {
+        "global": 0.003,
+        "european": 0.003
+      },
+      "effect_template": "GBA N370S variant. Major Parkinson's risk factor, especially in Ashkenazi Jewish populations."
+    },
+    {
+      "rsid": "rs356220",
+      "gene_region": "SNCA",
+      "risk_allele": "T",
+      "odds_ratio": 1.3,
+      "population_frequency": {
+        "global": 0.4,
+        "european": 0.4
+      },
+      "effect_template": "SNCA (alpha-synuclein) locus. Common variant with modest effect on PD risk."
+    }
+  ],
+  "evidence_level": "established",
+  "gwas_catalog_id": "GCST000023",
+  "general_population_risk": "1-2% (lifetime)",
+  "recommendation_template": "No proven prevention exists, but regular exercise, quality sleep, and avoiding pesticide exposure may reduce risk. Discuss genetic counseling if carrying LRRK2/GBA variants.",
+  "studies": [
+    {
+      "pmid": "15680457",
+      "title": "Mutations in LRRK2 cause autosomal-dominant parkinsonism",
+      "journal": "Neuron",
+      "year": 2005,
+      "cohort_size": 534,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/15680457/",
+      "finding": "LRRK2 G2019S (rs34637584) is the most common genetic cause of familial and sporadic PD"
+    }
+  ]
+}

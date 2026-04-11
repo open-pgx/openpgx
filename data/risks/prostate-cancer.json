@@ -1,0 +1,46 @@
+{
+  "condition": "Prostate Cancer",
+  "category": "oncology",
+  "icd10": "C61",
+  "snps": [
+    {
+      "rsid": "rs1447295",
+      "gene_region": "8q24",
+      "risk_allele": "A",
+      "odds_ratio": 1.62,
+      "population_frequency": {
+        "global": 0.11,
+        "european": 0.1,
+        "african": 0.21,
+        "east_asian": 0.04
+      },
+      "effect_template": "8q24 region variant. A allele increases prostate cancer risk ~1.6x in European ancestry."
+    },
+    {
+      "rsid": "rs138213197",
+      "gene_region": "HOXB13",
+      "risk_allele": "A",
+      "odds_ratio": 4.51,
+      "population_frequency": {
+        "global": 0.003,
+        "european": 0.004
+      },
+      "effect_template": "Rare HOXB13 variant with strong effect (OR 4.5)."
+    }
+  ],
+  "evidence_level": "established",
+  "gwas_catalog_id": "GCST001879",
+  "general_population_risk": "12.5%",
+  "recommendation_template": "Consider discussing PSA screening schedule with your doctor. Earlier or more frequent screening may be appropriate given genetic risk profile.",
+  "studies": [
+    {
+      "pmid": "17401363",
+      "title": "Multiple loci identified in GWAS of prostate cancer",
+      "journal": "Nature Genetics",
+      "year": 2007,
+      "cohort_size": 11789,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17401363/",
+      "finding": "rs1447295 A allele OR=1.62 for prostate cancer in European ancestry"
+    }
+  ]
+}

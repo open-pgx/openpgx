@@ -1,0 +1,24 @@
+{
+  "trait": "Histamine Intolerance Risk",
+  "category": "nutrition",
+  "snps": [
+    {
+      "rsid": "rs10156191",
+      "gene": "ABP1/AOC1",
+      "effect_allele": "T",
+      "effect_template": "ABP1 (diamine oxidase) variant affecting histamine degradation in the gut."
+    }
+  ],
+  "evidence_level": "moderate",
+  "studies": [
+    {
+      "pmid": "22072568",
+      "title": "Diamine oxidase gene polymorphisms in patients with histamine intolerance",
+      "journal": "Central European Journal of Medicine",
+      "year": 2012,
+      "cohort_size": 285,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/22072568/",
+      "finding": "ABP1/AOC1 rs10156191 T allele associated with reduced DAO activity and histamine intolerance"
+    }
+  ]
+}

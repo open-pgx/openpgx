@@ -1,0 +1,33 @@
+{
+  "condition": "Venous Thromboembolism (Factor V Leiden)",
+  "category": "hematological",
+  "icd10": "I82",
+  "snps": [
+    {
+      "rsid": "rs6025",
+      "gene_region": "F5",
+      "risk_allele": "A",
+      "odds_ratio": 5,
+      "population_frequency": {
+        "global": 0.03,
+        "european": 0.05
+      },
+      "effect_template": "Factor V Leiden mutation. A allele causes activated protein C resistance, major VTE risk factor."
+    }
+  ],
+  "evidence_level": "established",
+  "gwas_catalog_id": null,
+  "general_population_risk": "0.1-0.2% per year",
+  "recommendation_template": "If carrier: inform doctors before surgery, during pregnancy, or when considering hormonal contraception. Avoid prolonged immobility. Stay hydrated during long flights.",
+  "studies": [
+    {
+      "pmid": "7989540",
+      "title": "Mutation in blood coagulation factor V associated with resistance to activated protein C",
+      "journal": "Nature",
+      "year": 1994,
+      "cohort_size": 343,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/7989540/",
+      "finding": "Factor V Leiden (rs6025 A) confers 5x increased VTE risk (heterozygous)"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "trait": "Novelty Seeking / Risk Taking",
+  "category": "behavioral",
+  "snps": [
+    {
+      "rsid": "rs1800955",
+      "gene": "DRD4",
+      "effect_allele": "C",
+      "effect_template": "DRD4 promoter variant associated with novelty seeking and exploratory behavior."
+    }
+  ],
+  "evidence_level": "moderate",
+  "studies": [
+    {
+      "pmid": "10208643",
+      "title": "DRD4 promoter polymorphism and novelty seeking",
+      "journal": "Molecular Psychiatry",
+      "year": 1999,
+      "cohort_size": 600,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/10208643/",
+      "finding": "DRD4 rs1800955 C allele associated with higher novelty seeking scores on personality assessments"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "trait": "Deep Sleep Quality",
+  "category": "sleep",
+  "snps": [
+    {
+      "rsid": "rs73598374",
+      "gene": "ADA",
+      "effect_allele": "T",
+      "effect_template": "ADA variant affecting adenosine metabolism and deep sleep duration."
+    }
+  ],
+  "evidence_level": "moderate",
+  "studies": [
+    {
+      "pmid": "15800623",
+      "title": "Functional polymorphism of adenosine deaminase affects the duration and intensity of deep sleep",
+      "journal": "PNAS",
+      "year": 2005,
+      "cohort_size": 120,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/15800623/",
+      "finding": "ADA rs73598374 T allele associated with more intense slow-wave (deep) sleep"
+    }
+  ]
+}

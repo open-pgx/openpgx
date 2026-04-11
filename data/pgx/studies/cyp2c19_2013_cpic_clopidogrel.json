@@ -1,0 +1,70 @@
+{
+  "gene": "CYP2C19",
+  "category": "drug_metabolism",
+  "gene_description": "Metabolizes clopidogrel, SSRIs, PPIs, voriconazole",
+  "drugs": ["clopidogrel", "escitalopram", "citalopram", "omeprazole", "voriconazole"],
+  "source": {
+    "pmid": "23486447",
+    "doi": null,
+    "source_type": "guideline",
+    "title": "CPIC Guideline for CYP2C19 and Clopidogrel Therapy",
+    "journal": "Clinical Pharmacology & Therapeutics",
+    "year": 2013,
+    "cohort_size": null,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/23486447/",
+    "finding": "CYP2C19 poor metabolizers should avoid clopidogrel. Consider prasugrel or ticagrelor."
+  },
+  "snps": [
+    {
+      "rsid": "rs4244285",
+      "risk_allele": "A",
+      "reference_allele": "G",
+      "interpretations": {
+        "AA": {
+          "phenotype": "Poor Metabolizer (*2/*2)",
+          "effect": "Cannot activate clopidogrel. Major cardiovascular risk.",
+          "recommendation": "Avoid clopidogrel. Use prasugrel or ticagrelor.",
+          "severity": "severe"
+        },
+        "AG": {
+          "phenotype": "Intermediate Metabolizer (*1/*2)",
+          "effect": "Reduced clopidogrel activation. Diminished antiplatelet effect.",
+          "recommendation": "Consider alternative antiplatelet or higher dose with monitoring.",
+          "severity": "moderate"
+        },
+        "GG": {
+          "phenotype": "Normal Metabolizer (*1/*1)",
+          "effect": "Normal clopidogrel activation.",
+          "recommendation": "Standard dosing.",
+          "severity": "info"
+        }
+      }
+    },
+    {
+      "rsid": "rs12248560",
+      "risk_allele": "T",
+      "reference_allele": "C",
+      "interpretations": {
+        "TT": {
+          "phenotype": "Ultrarapid Metabolizer (*17/*17)",
+          "effect": "Increased drug activation. May have enhanced response or increased bleeding risk.",
+          "recommendation": "Standard dose; monitor for bleeding with clopidogrel.",
+          "severity": "mild"
+        },
+        "CT": {
+          "phenotype": "Rapid Metabolizer (*1/*17)",
+          "effect": "Slightly increased drug metabolism.",
+          "recommendation": "Standard dosing.",
+          "severity": "info"
+        },
+        "CC": {
+          "phenotype": "Normal Metabolizer (*1/*1)",
+          "effect": "Normal drug metabolism.",
+          "recommendation": "Standard dosing.",
+          "severity": "info"
+        }
+      }
+    }
+  ],
+  "evidence_level": "established"
+}

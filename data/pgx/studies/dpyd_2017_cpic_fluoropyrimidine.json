@@ -1,0 +1,45 @@
+{
+  "gene": "DPYD",
+  "category": "drug_target",
+  "gene_description": "5-FU/capecitabine toxicity risk",
+  "drugs": ["capecitabine", "fluorouracil"],
+  "source": {
+    "pmid": "29152729",
+    "doi": null,
+    "source_type": "guideline",
+    "title": "CPIC Guideline for Dihydropyrimidine Dehydrogenase and Fluoropyrimidine Dosing",
+    "journal": "Clinical Pharmacology & Therapeutics",
+    "year": 2017,
+    "cohort_size": null,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/29152729/",
+    "finding": "DPYD poor metabolizers: reduce fluoropyrimidine dose by 50% or use alternative. Potentially life-threatening toxicity."
+  },
+  "snps": [
+    {
+      "rsid": "rs3918290",
+      "risk_allele": "A",
+      "reference_allele": "G",
+      "interpretations": {
+        "AA": {
+          "phenotype": "Poor Metabolizer (DPD Deficient)",
+          "effect": "Complete DPD deficiency. Life-threatening toxicity with fluoropyrimidines.",
+          "recommendation": "Avoid fluoropyrimidines entirely. Use alternative chemotherapy.",
+          "severity": "life_threatening"
+        },
+        "AG": {
+          "phenotype": "Intermediate Metabolizer (Partial DPD Deficiency)",
+          "effect": "Partial DPD deficiency. High risk of severe toxicity.",
+          "recommendation": "Reduce fluoropyrimidine dose by at least 50%. Close monitoring required.",
+          "severity": "severe"
+        },
+        "GG": {
+          "phenotype": "Normal Metabolizer",
+          "effect": "Normal DPD activity. Standard fluoropyrimidine metabolism.",
+          "recommendation": "Standard dosing.",
+          "severity": "info"
+        }
+      }
+    }
+  ],
+  "evidence_level": "established"
+}

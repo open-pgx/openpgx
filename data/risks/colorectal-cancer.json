@@ -1,0 +1,44 @@
+{
+  "condition": "Colorectal Cancer",
+  "category": "oncology",
+  "icd10": "C18",
+  "snps": [
+    {
+      "rsid": "rs6983267",
+      "gene_region": "8q24.21",
+      "risk_allele": "G",
+      "odds_ratio": 1.27,
+      "population_frequency": {
+        "global": 0.5,
+        "european": 0.51
+      },
+      "effect_template": "8q24 region variant associated with colorectal cancer risk (OR ~1.3)."
+    },
+    {
+      "rsid": "rs3802842",
+      "gene_region": "11q23.1",
+      "risk_allele": "C",
+      "odds_ratio": 1.19,
+      "population_frequency": {
+        "global": 0.27,
+        "european": 0.29
+      },
+      "effect_template": "11q23.1 locus variant. Modest effect on colorectal cancer risk."
+    }
+  ],
+  "evidence_level": "established",
+  "gwas_catalog_id": "GCST000091",
+  "general_population_risk": "4.1%",
+  "recommendation_template": "Standard screening guidelines apply. Discuss family history with your doctor for personalized screening schedule.",
+  "studies": [
+    {
+      "pmid": "17618284",
+      "title": "Genome-wide association scan identifies a colorectal cancer susceptibility locus on 8q24",
+      "journal": "Nature Genetics",
+      "year": 2007,
+      "cohort_size": 7480,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17618284/",
+      "finding": "rs6983267 G allele OR=1.27 for colorectal cancer"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "condition": "Lupus (SLE)",
+  "category": "autoimmune",
+  "icd10": "M32",
+  "snps": [
+    {
+      "rsid": "rs1270942",
+      "gene_region": "HLA-DRB1",
+      "risk_allele": "A",
+      "odds_ratio": 2.4,
+      "population_frequency": {
+        "global": 0.1,
+        "european": 0.12
+      },
+      "effect_template": "HLA-DRB1 region. Major MHC risk locus for systemic lupus erythematosus."
+    },
+    {
+      "rsid": "rs2476601",
+      "gene_region": "PTPN22",
+      "risk_allele": "A",
+      "odds_ratio": 1.5,
+      "population_frequency": {
+        "global": 0.08,
+        "european": 0.1
+      },
+      "effect_template": "PTPN22 R620W. Shared autoimmune susceptibility variant."
+    }
+  ],
+  "evidence_level": "established",
+  "gwas_catalog_id": "GCST000109",
+  "general_population_risk": "0.1-0.2% (higher in women)",
+  "recommendation_template": "Sun protection is critical (UV can trigger flares). Avoid smoking. Regular monitoring of kidney function and blood counts if at elevated risk.",
+  "studies": [
+    {
+      "pmid": "18204098",
+      "title": "Genome-wide association study in systemic lupus erythematosus",
+      "journal": "Nature Genetics",
+      "year": 2008,
+      "cohort_size": 8100,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/18204098/",
+      "finding": "HLA region and PTPN22 confirmed as major SLE risk loci"
+    }
+  ]
+}

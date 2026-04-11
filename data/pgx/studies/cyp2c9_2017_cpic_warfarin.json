@@ -1,0 +1,45 @@
+{
+  "gene": "CYP2C9",
+  "category": "drug_metabolism",
+  "gene_description": "Metabolizes warfarin, NSAIDs, phenytoin",
+  "drugs": ["warfarin", "ibuprofen", "naproxen", "phenytoin", "celecoxib"],
+  "source": {
+    "pmid": "27441996",
+    "doi": null,
+    "source_type": "guideline",
+    "title": "CPIC Guideline for Pharmacogenetics-Guided Warfarin Dosing",
+    "journal": "Clinical Pharmacology & Therapeutics",
+    "year": 2017,
+    "cohort_size": null,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/27441996/",
+    "finding": "CYP2C9 *2 and *3 alleles require warfarin dose reduction of 20-50%."
+  },
+  "snps": [
+    {
+      "rsid": "rs1799853",
+      "risk_allele": "T",
+      "reference_allele": "C",
+      "interpretations": {
+        "TT": {
+          "phenotype": "Poor Metabolizer (*2/*2)",
+          "effect": "Significantly reduced CYP2C9 activity. Warfarin dose reduction ~50%.",
+          "recommendation": "Use pharmacogenomic dosing algorithm. Reduce warfarin and NSAID doses significantly.",
+          "severity": "severe"
+        },
+        "CT": {
+          "phenotype": "Intermediate Metabolizer (*1/*2)",
+          "effect": "Reduced CYP2C9 activity. Warfarin dose reduction ~20-30%.",
+          "recommendation": "Reduce initial warfarin dose. Monitor INR closely.",
+          "severity": "moderate"
+        },
+        "CC": {
+          "phenotype": "Normal Metabolizer (*1/*1)",
+          "effect": "Normal CYP2C9 activity.",
+          "recommendation": "Standard dosing.",
+          "severity": "info"
+        }
+      }
+    }
+  ],
+  "evidence_level": "established"
+}

@@ -1,0 +1,47 @@
+{
+  "gene": "SLCO1B1",
+  "category": "drug_transport",
+  "gene_description": "Statin myopathy risk (simvastatin)",
+  "drugs": ["simvastatin", "atorvastatin", "rosuvastatin", "pravastatin"],
+  "source": {
+    "pmid": "22617227",
+    "doi": null,
+    "source_type": "guideline",
+    "title": "CPIC Guideline for SLCO1B1 and Simvastatin-Induced Myopathy",
+    "journal": "Clinical Pharmacology & Therapeutics",
+    "year": 2012,
+    "cohort_size": null,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/22617227/",
+    "finding": "SLCO1B1 521T>C: CC genotype has 17x increased simvastatin myopathy risk. Use alternative statin."
+  },
+  "snps": [
+    {
+      "rsid": "rs4149056",
+      "risk_allele": "C",
+      "reference_allele": "T",
+      "interpretations": {
+        "CC": {
+          "phenotype": "Poor Transporter (Homozygous)",
+          "effect": "17x increased risk of simvastatin myopathy. Severely impaired hepatic statin uptake.",
+          "recommendation": "Avoid simvastatin. Use pravastatin or rosuvastatin at lowest effective dose.",
+          "severity": "severe",
+          "odds_ratio": 17.0
+        },
+        "CT": {
+          "phenotype": "Intermediate Transporter (Heterozygous)",
+          "effect": "4.5x increased risk of simvastatin myopathy.",
+          "recommendation": "Avoid simvastatin >20mg. Consider alternative statin.",
+          "severity": "moderate",
+          "odds_ratio": 4.5
+        },
+        "TT": {
+          "phenotype": "Normal Transporter",
+          "effect": "Normal hepatic statin uptake. Standard myopathy risk.",
+          "recommendation": "Standard statin dosing.",
+          "severity": "info"
+        }
+      }
+    }
+  ],
+  "evidence_level": "established"
+}

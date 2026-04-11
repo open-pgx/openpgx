@@ -1,0 +1,44 @@
+{
+  "condition": "Hereditary Hemochromatosis",
+  "category": "metabolic",
+  "icd10": "E83.1",
+  "snps": [
+    {
+      "rsid": "rs1800562",
+      "gene_region": "HFE",
+      "risk_allele": "A",
+      "odds_ratio": 20,
+      "population_frequency": {
+        "global": 0.04,
+        "european": 0.06
+      },
+      "effect_template": "HFE C282Y mutation. Homozygous carriers have high risk of iron overload."
+    },
+    {
+      "rsid": "rs1799945",
+      "gene_region": "HFE",
+      "risk_allele": "G",
+      "odds_ratio": 2.5,
+      "population_frequency": {
+        "global": 0.1,
+        "european": 0.13
+      },
+      "effect_template": "HFE H63D variant. Compound heterozygous (C282Y/H63D) has moderate hemochromatosis risk."
+    }
+  ],
+  "evidence_level": "established",
+  "gwas_catalog_id": null,
+  "general_population_risk": "0.3-0.5% (Northern European)",
+  "recommendation_template": "If carrier: monitor serum ferritin and transferrin saturation periodically. Iron overload is treatable with phlebotomy if caught early.",
+  "studies": [
+    {
+      "pmid": "8696333",
+      "title": "A novel MHC class I-like gene is mutated in patients with hereditary haemochromatosis",
+      "journal": "Nature Genetics",
+      "year": 1996,
+      "cohort_size": 178,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8696333/",
+      "finding": "HFE C282Y (rs1800562) homozygosity causes majority of hereditary hemochromatosis"
+    }
+  ]
+}

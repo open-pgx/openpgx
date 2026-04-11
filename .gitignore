@@ -1,0 +1,48 @@
+# === OpenPGx .gitignore ===
+# CRITICAL: Protect user genetic data from accidental commits
+
+# === USER DNA DATA ===
+# Raw data files from genetic testing providers
+*.23andme.txt
+*genome*.txt
+*23andMe*.txt
+*ancestry*.txt
+*AncestryDNA*.txt
+*genera*.csv
+*Genera*.csv
+*.vcf
+*.vcf.gz
+*.bam
+*.sam
+*.fastq
+*.fastq.gz
+*.fasta
+*.fa
+*.bed
+
+# OpenPGx patient profiles (contain genetic data)
+*.openpgx.json
+!data/drugs_embeddings.json
+!data/tfidf_vocab.json
+
+# The user's local data directory
+genomes/
+raw-data/
+patient-data/
+dna/
+my-dna/
+
+# OpenPGx local cache (may contain patient data)
+.openpgx/
+
+# === STANDARD ===
+node_modules/
+dist/
+*.tgz
+.env
+.env.*
+!.env.sample
+.DS_Store
+Thumbs.db
+*.log
+npm-debug.log*

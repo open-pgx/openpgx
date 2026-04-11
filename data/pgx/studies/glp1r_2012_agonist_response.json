@@ -1,0 +1,45 @@
+{
+  "gene": "GLP1R",
+  "category": "glp1_response",
+  "gene_description": "GLP-1 receptor (Ozempic/semaglutide response)",
+  "drugs": ["semaglutide", "liraglutide", "dulaglutide"],
+  "source": {
+    "pmid": "22412859",
+    "doi": null,
+    "source_type": "pubmed",
+    "title": "GLP1R variants and response to GLP-1 receptor agonists",
+    "journal": "Diabetes",
+    "year": 2012,
+    "cohort_size": 4571,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/22412859/",
+    "finding": "GLP1R rs6923761 A allele associated with reduced GLP-1 agonist efficacy. Emerging evidence."
+  },
+  "snps": [
+    {
+      "rsid": "rs6923761",
+      "risk_allele": "A",
+      "reference_allele": "G",
+      "interpretations": {
+        "AA": {
+          "phenotype": "Reduced GLP-1 Response",
+          "effect": "Lower efficacy with GLP-1 receptor agonists (semaglutide, liraglutide).",
+          "recommendation": "May need higher dose or alternative therapy (e.g., tirzepatide which also targets GIP).",
+          "severity": "moderate"
+        },
+        "AG": {
+          "phenotype": "Intermediate GLP-1 Response",
+          "effect": "Moderately reduced response to GLP-1 agonists.",
+          "recommendation": "Monitor response closely. Dose adjustment may be needed.",
+          "severity": "mild"
+        },
+        "GG": {
+          "phenotype": "Normal GLP-1 Response",
+          "effect": "Expected response to GLP-1 receptor agonists.",
+          "recommendation": "Standard dosing.",
+          "severity": "info"
+        }
+      }
+    }
+  ],
+  "evidence_level": "emerging"
+}

@@ -1,0 +1,24 @@
+{
+  "trait": "Lactose Tolerance",
+  "category": "nutrition",
+  "snps": [
+    {
+      "rsid": "rs4988235",
+      "gene": "MCM6/LCT",
+      "effect_allele": "T",
+      "effect_template": "MCM6 variant controlling lactase persistence into adulthood."
+    }
+  ],
+  "evidence_level": "established",
+  "studies": [
+    {
+      "pmid": "11788828",
+      "title": "Identification of a variant associated with adult-type hypolactasia",
+      "journal": "Nature Genetics",
+      "year": 2002,
+      "cohort_size": 196,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11788828/",
+      "finding": "rs4988235 T allele confers lactase persistence in European populations"
+    }
+  ]
+}

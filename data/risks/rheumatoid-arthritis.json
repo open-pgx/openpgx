@@ -1,0 +1,44 @@
+{
+  "condition": "Rheumatoid Arthritis",
+  "category": "autoimmune",
+  "icd10": "M06",
+  "snps": [
+    {
+      "rsid": "rs6910071",
+      "gene_region": "HLA-DRB1",
+      "risk_allele": "G",
+      "odds_ratio": 3.5,
+      "population_frequency": {
+        "global": 0.12,
+        "european": 0.14
+      },
+      "effect_template": "HLA-DRB1 shared epitope tag SNP. Major genetic risk factor for seropositive RA."
+    },
+    {
+      "rsid": "rs2476601",
+      "gene_region": "PTPN22",
+      "risk_allele": "A",
+      "odds_ratio": 1.75,
+      "population_frequency": {
+        "global": 0.08,
+        "european": 0.1
+      },
+      "effect_template": "PTPN22 R620W variant. Shared autoimmune risk allele (RA, T1D, lupus)."
+    }
+  ],
+  "evidence_level": "established",
+  "gwas_catalog_id": "GCST000076",
+  "general_population_risk": "0.5-1%",
+  "recommendation_template": "Don't smoke (strongest modifiable risk factor for RA). Maintain dental health (periodontitis linked to RA). Early diagnosis and treatment prevents joint damage.",
+  "studies": [
+    {
+      "pmid": "17804836",
+      "title": "Genome-wide association study of rheumatoid arthritis",
+      "journal": "New England Journal of Medicine",
+      "year": 2007,
+      "cohort_size": 14000,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17804836/",
+      "finding": "HLA-DRB1 shared epitope and PTPN22 are strongest common RA risk factors"
+    }
+  ]
+}

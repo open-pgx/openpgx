@@ -1,0 +1,24 @@
+{
+  "trait": "Caffeine Metabolism",
+  "category": "metabolism",
+  "snps": [
+    {
+      "rsid": "rs762551",
+      "gene": "CYP1A2",
+      "effect_allele": "C",
+      "effect_template": "CYP1A2 variant affecting caffeine metabolism speed."
+    }
+  ],
+  "evidence_level": "established",
+  "studies": [
+    {
+      "pmid": "16522833",
+      "title": "CYP1A2 genotype modifies the association of coffee intake with risk of hypertension",
+      "journal": "JAMA",
+      "year": 2006,
+      "cohort_size": 4028,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/16522833/",
+      "finding": "Slow metabolizers (AC/CC at rs762551) had increased MI risk with >3 cups/day"
+    }
+  ]
+}

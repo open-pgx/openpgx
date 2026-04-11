@@ -1,0 +1,44 @@
+{
+  "condition": "Psoriasis",
+  "category": "autoimmune",
+  "icd10": "L40",
+  "snps": [
+    {
+      "rsid": "rs10484554",
+      "gene_region": "HLA-C",
+      "risk_allele": "T",
+      "odds_ratio": 4.66,
+      "population_frequency": {
+        "global": 0.09,
+        "european": 0.1
+      },
+      "effect_template": "HLA-C*06:02 tag SNP. Strongest genetic risk factor for plaque psoriasis."
+    },
+    {
+      "rsid": "rs12191877",
+      "gene_region": "HLA-C",
+      "risk_allele": "T",
+      "odds_ratio": 4,
+      "population_frequency": {
+        "global": 0.1,
+        "european": 0.11
+      },
+      "effect_template": "Second HLA-C tag SNP for psoriasis risk. Strong effect."
+    }
+  ],
+  "evidence_level": "established",
+  "gwas_catalog_id": "GCST000013",
+  "general_population_risk": "2-3%",
+  "recommendation_template": "Manage known triggers: stress, skin injury, infections. Maintain healthy weight (obesity worsens psoriasis). Early treatment with a dermatologist can prevent progression.",
+  "studies": [
+    {
+      "pmid": "19169254",
+      "title": "A large-scale genetic association study confirms IL12B and leads to the identification of IL23R as psoriasis-risk genes",
+      "journal": "Nature Genetics",
+      "year": 2009,
+      "cohort_size": 10588,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/19169254/",
+      "finding": "HLA-C region (rs10484554) confers OR=4.66 for psoriasis"
+    }
+  ]
+}

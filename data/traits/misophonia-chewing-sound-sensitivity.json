@@ -1,0 +1,24 @@
+{
+  "trait": "Misophonia (Chewing Sound Sensitivity)",
+  "category": "sensory",
+  "snps": [
+    {
+      "rsid": "rs2937573",
+      "gene": "TENM2",
+      "effect_allele": "G",
+      "effect_template": "TENM2 variant associated with misophonia — strong negative response to chewing/mouth sounds."
+    }
+  ],
+  "evidence_level": "moderate",
+  "studies": [
+    {
+      "pmid": "34635845",
+      "title": "Genome-wide association study identifies loci associated with misophonia",
+      "journal": "Nature Human Behaviour",
+      "year": 2021,
+      "cohort_size": 80000,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34635845/",
+      "finding": "TENM2 rs2937573 associated with misophonia sensitivity"
+    }
+  ]
+}

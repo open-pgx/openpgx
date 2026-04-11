@@ -1,0 +1,24 @@
+{
+  "trait": "Omega-3 Conversion Efficiency",
+  "category": "nutrition",
+  "snps": [
+    {
+      "rsid": "rs174546",
+      "gene": "FADS1",
+      "effect_allele": "T",
+      "effect_template": "FADS1 variant affecting conversion of plant omega-3 (ALA) to EPA/DHA."
+    }
+  ],
+  "evidence_level": "established",
+  "studies": [
+    {
+      "pmid": "21829377",
+      "title": "FADS1 and FADS2 polymorphisms modulate fatty acid desaturase activities",
+      "journal": "Journal of Lipid Research",
+      "year": 2011,
+      "cohort_size": 727,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/21829377/",
+      "finding": "FADS1 rs174546 T allele associated with reduced desaturase activity and lower EPA/DHA levels"
+    }
+  ]
+}

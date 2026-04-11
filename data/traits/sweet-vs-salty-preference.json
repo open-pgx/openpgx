@@ -1,0 +1,24 @@
+{
+  "trait": "Sweet vs Salty Preference",
+  "category": "behavioral",
+  "snps": [
+    {
+      "rsid": "rs838133",
+      "gene": "FGF21",
+      "effect_allele": "A",
+      "effect_template": "FGF21 variant associated with preference for sweet foods and carbohydrate intake."
+    }
+  ],
+  "evidence_level": "established",
+  "studies": [
+    {
+      "pmid": "28157179",
+      "title": "FGF21 is a sugar-induced hormone associated with sweet preference",
+      "journal": "Cell Metabolism",
+      "year": 2017,
+      "cohort_size": 6514,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28157179/",
+      "finding": "FGF21 rs838133 A allele associated with increased sweet preference and carbohydrate intake"
+    }
+  ]
+}

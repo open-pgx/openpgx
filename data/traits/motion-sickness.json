@@ -1,0 +1,24 @@
+{
+  "trait": "Motion Sickness",
+  "category": "sensory",
+  "snps": [
+    {
+      "rsid": "rs2052440",
+      "gene": "PVRL3",
+      "effect_allele": "C",
+      "effect_template": "PVRL3 variant associated with susceptibility to motion sickness."
+    }
+  ],
+  "evidence_level": "moderate",
+  "studies": [
+    {
+      "pmid": "25644384",
+      "title": "Genome-wide association study of self-reported motion sickness",
+      "journal": "Human Molecular Genetics",
+      "year": 2015,
+      "cohort_size": 80494,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25644384/",
+      "finding": "35 loci associated with motion sickness including PVRL3 (rs2052440)"
+    }
+  ]
+}

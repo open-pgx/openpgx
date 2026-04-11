@@ -1,0 +1,44 @@
+{
+  "condition": "Asthma",
+  "category": "respiratory",
+  "icd10": "J45",
+  "snps": [
+    {
+      "rsid": "rs2305480",
+      "gene_region": "ORMDL3/GSDMB",
+      "risk_allele": "G",
+      "odds_ratio": 1.4,
+      "population_frequency": {
+        "global": 0.45,
+        "european": 0.52
+      },
+      "effect_template": "ORMDL3/GSDMB locus on 17q21. Most replicated childhood asthma risk locus."
+    },
+    {
+      "rsid": "rs8076131",
+      "gene_region": "ORMDL3",
+      "risk_allele": "T",
+      "odds_ratio": 1.35,
+      "population_frequency": {
+        "global": 0.43,
+        "european": 0.5
+      },
+      "effect_template": "Second independent 17q21 variant for asthma susceptibility."
+    }
+  ],
+  "evidence_level": "established",
+  "gwas_catalog_id": "GCST000068",
+  "general_population_risk": "~8% (adults), ~10% (children)",
+  "recommendation_template": "Avoid known triggers (allergens, pollution, smoke). Maintain healthy weight. Regular exercise improves lung function. Keep rescue inhaler available if diagnosed.",
+  "studies": [
+    {
+      "pmid": "17611496",
+      "title": "A large-scale, consortium-based genomewide association study of asthma",
+      "journal": "Nature Genetics",
+      "year": 2007,
+      "cohort_size": 10000,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17611496/",
+      "finding": "ORMDL3 locus (17q21) strongly associated with childhood asthma (OR=1.4)"
+    }
+  ]
+}

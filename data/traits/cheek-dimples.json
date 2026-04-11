@@ -1,0 +1,14 @@
+{
+  "trait": "Cheek Dimples",
+  "category": "appearance",
+  "snps": [
+    {
+      "rsid": "rs3841438",
+      "gene": "ZYGOMATICUS",
+      "effect_allele": "A",
+      "effect_template": "Variant associated with cheek dimples presence."
+    }
+  ],
+  "evidence_level": "moderate",
+  "studies": []
+}

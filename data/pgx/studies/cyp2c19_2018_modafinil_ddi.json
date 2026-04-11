@@ -1,0 +1,45 @@
+{
+  "gene": "CYP2C19",
+  "category": "drug_metabolism",
+  "gene_description": "Metabolizes clopidogrel, SSRIs, PPIs, voriconazole",
+  "drugs": ["modafinil", "armodafinil"],
+  "source": {
+    "pmid": "29178272",
+    "doi": "10.1111/bcp.13478",
+    "source_type": "pubmed",
+    "title": "Evaluation of modafinil as a perpetrator of metabolic drug-drug interactions using a model informed cocktail reaction phenotyping trial protocol",
+    "journal": "British Journal of Clinical Pharmacology",
+    "year": 2018,
+    "cohort_size": 20,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/29178272/",
+    "finding": "Modafinil is a borderline moderate CYP2C19 inhibitor. Omeprazole AUC increased 77% with modafinil co-administration. CYP2C19 poor metabolizers face compounded risk when taking modafinil alongside CYP2C19 substrates."
+  },
+  "snps": [
+    {
+      "rsid": "rs4244285",
+      "risk_allele": "A",
+      "reference_allele": "G",
+      "interpretations": {
+        "AA": {
+          "phenotype": "Poor Metabolizer (*2/*2) — High Interaction Risk with Modafinil",
+          "effect": "Already minimal CYP2C19 activity. Modafinil's CYP2C19 inhibition compounds the deficit. Co-administered CYP2C19 substrates (omeprazole, clopidogrel, diazepam, phenytoin, SSRIs) may reach dangerously high levels.",
+          "recommendation": "Avoid co-administering modafinil with CYP2C19 substrates. If unavoidable, reduce substrate dose and monitor closely. Consider alternative to clopidogrel (prasugrel/ticagrelor).",
+          "severity": "severe"
+        },
+        "AG": {
+          "phenotype": "Intermediate Metabolizer (*1/*2) — Moderate Interaction Risk with Modafinil",
+          "effect": "Reduced CYP2C19 activity further inhibited by modafinil. CYP2C19 substrates may accumulate.",
+          "recommendation": "Monitor CYP2C19 substrate levels when co-administered with modafinil. Dose adjustments may be needed for omeprazole, diazepam, or SSRIs.",
+          "severity": "moderate"
+        },
+        "GG": {
+          "phenotype": "Normal Metabolizer (*1/*1) — Standard Interaction Risk with Modafinil",
+          "effect": "Normal CYP2C19 activity partially inhibited by modafinil (omeprazole AUC +77%). Clinically manageable in most cases.",
+          "recommendation": "Be aware of potential interaction with CYP2C19 substrates. Routine monitoring sufficient.",
+          "severity": "mild"
+        }
+      }
+    }
+  ],
+  "evidence_level": "established"
+}

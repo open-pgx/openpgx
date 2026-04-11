@@ -1,0 +1,45 @@
+{
+  "gene": "CYP3A5",
+  "category": "drug_metabolism",
+  "gene_description": "Metabolizes tacrolimus, many drugs",
+  "drugs": ["tacrolimus"],
+  "source": {
+    "pmid": "25801146",
+    "doi": null,
+    "source_type": "guideline",
+    "title": "CPIC Guideline for CYP3A5 Genotype and Tacrolimus Dosing",
+    "journal": "Clinical Pharmacology & Therapeutics",
+    "year": 2015,
+    "cohort_size": null,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/25801146/",
+    "finding": "CYP3A5 expressers require higher tacrolimus starting doses (0.3 mg/kg/day vs 0.15)."
+  },
+  "snps": [
+    {
+      "rsid": "rs776746",
+      "risk_allele": "C",
+      "reference_allele": "T",
+      "interpretations": {
+        "CC": {
+          "phenotype": "Non-Expresser (*3/*3)",
+          "effect": "No CYP3A5 expression. Slower tacrolimus metabolism.",
+          "recommendation": "Standard tacrolimus dose (0.15 mg/kg/day). Standard target trough levels.",
+          "severity": "info"
+        },
+        "CT": {
+          "phenotype": "Intermediate Expresser (*1/*3)",
+          "effect": "Some CYP3A5 expression. Moderately faster tacrolimus metabolism.",
+          "recommendation": "May need tacrolimus dose increase (0.2-0.25 mg/kg/day). Monitor trough levels.",
+          "severity": "mild"
+        },
+        "TT": {
+          "phenotype": "Expresser (*1/*1)",
+          "effect": "Full CYP3A5 expression. Rapid tacrolimus metabolism — may not reach therapeutic levels at standard dose.",
+          "recommendation": "Increase tacrolimus starting dose to 0.3 mg/kg/day. Monitor trough levels closely.",
+          "severity": "moderate"
+        }
+      }
+    }
+  ],
+  "evidence_level": "established"
+}

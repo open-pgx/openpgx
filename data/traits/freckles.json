@@ -1,0 +1,30 @@
+{
+  "trait": "Freckles",
+  "category": "appearance",
+  "snps": [
+    {
+      "rsid": "rs1805007",
+      "gene": "MC1R",
+      "effect_allele": "T",
+      "effect_template": "MC1R R151C — strongly associated with freckling and fair skin."
+    },
+    {
+      "rsid": "rs4911414",
+      "gene": "IRF4",
+      "effect_allele": "T",
+      "effect_template": "IRF4 variant associated with freckling, sun sensitivity, and hair color."
+    }
+  ],
+  "evidence_level": "established",
+  "studies": [
+    {
+      "pmid": "18488028",
+      "title": "Genome-wide association study identifies variants in the MHC class I, KIF3C and TERT regions associated with freckling",
+      "journal": "Nature Genetics",
+      "year": 2008,
+      "cohort_size": 4900,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/18488028/",
+      "finding": "MC1R and IRF4 variants strongly predict freckling in European populations"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "condition": "Coronary Artery Disease",
+  "category": "cardiovascular",
+  "icd10": "I25",
+  "snps": [
+    {
+      "rsid": "rs10757274",
+      "gene_region": "9p21.3",
+      "risk_allele": "G",
+      "odds_ratio": 1.29,
+      "population_frequency": {
+        "global": 0.47,
+        "european": 0.49
+      },
+      "effect_template": "9p21.3 locus — most replicated CAD risk locus. G allele increases risk ~1.3x per copy."
+    },
+    {
+      "rsid": "rs1333049",
+      "gene_region": "9p21.3",
+      "risk_allele": "C",
+      "odds_ratio": 1.36,
+      "population_frequency": {
+        "global": 0.47,
+        "european": 0.47
+      },
+      "effect_template": "9p21.3 variant independently associated with CAD and MI risk."
+    }
+  ],
+  "evidence_level": "established",
+  "gwas_catalog_id": "GCST000022",
+  "general_population_risk": "~6% (10-year risk varies by age/sex)",
+  "recommendation_template": "Monitor standard cardiovascular risk factors (blood pressure, cholesterol, blood sugar). Lifestyle modifications have strong evidence for risk reduction.",
+  "studies": [
+    {
+      "pmid": "17478679",
+      "title": "A common allele on chromosome 9 associated with coronary heart disease",
+      "journal": "Science",
+      "year": 2007,
+      "cohort_size": 23000,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17478679/",
+      "finding": "9p21.3 locus associated with ~30% increased risk per allele for CAD"
+    }
+  ]
+}

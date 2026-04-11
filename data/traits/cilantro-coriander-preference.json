@@ -1,0 +1,24 @@
+{
+  "trait": "Cilantro / Coriander Preference",
+  "category": "sensory",
+  "snps": [
+    {
+      "rsid": "rs72921001",
+      "gene": "OR6A2",
+      "effect_allele": "A",
+      "effect_template": "OR6A2 olfactory receptor variant affecting cilantro perception."
+    }
+  ],
+  "evidence_level": "moderate",
+  "studies": [
+    {
+      "pmid": "22927850",
+      "title": "A genetic variant near olfactory receptor genes influences cilantro preference",
+      "journal": "Flavour",
+      "year": 2012,
+      "cohort_size": 14604,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/22927850/",
+      "finding": "rs72921001 near OR6A2 significantly associated with detecting soapy taste in cilantro"
+    }
+  ]
+}

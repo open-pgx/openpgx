@@ -1,0 +1,24 @@
+{
+  "trait": "Vitamin B6 Needs",
+  "category": "nutrition",
+  "snps": [
+    {
+      "rsid": "rs4654748",
+      "gene": "NBPF3/ALPL",
+      "effect_allele": "T",
+      "effect_template": "ALPL region variant affecting pyridoxal phosphate (active B6) levels."
+    }
+  ],
+  "evidence_level": "established",
+  "studies": [
+    {
+      "pmid": "19214204",
+      "title": "Genome-wide association study identifies common variants affecting vitamin B6 metabolism",
+      "journal": "PNAS",
+      "year": 2009,
+      "cohort_size": 4763,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/19214204/",
+      "finding": "rs4654748 T allele at NBPF3/ALPL locus associated with lower plasma PLP (active B6) levels"
+    }
+  ]
+}

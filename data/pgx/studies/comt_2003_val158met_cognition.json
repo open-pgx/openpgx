@@ -1,0 +1,45 @@
+{
+  "gene": "COMT",
+  "category": "catecholamine",
+  "gene_description": "Catecholamine metabolism, stress response",
+  "drugs": ["lisdexamfetamine", "methylphenidate", "amphetamine"],
+  "source": {
+    "pmid": "14583076",
+    "doi": null,
+    "source_type": "pubmed",
+    "title": "COMT Val158Met polymorphism and cognition",
+    "journal": "American Journal of Psychiatry",
+    "year": 2003,
+    "cohort_size": 350,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/14583076/",
+    "finding": "COMT Val158Met: Met/Met (AA) = higher prefrontal dopamine, better working memory, but higher stress sensitivity."
+  },
+  "snps": [
+    {
+      "rsid": "rs4680",
+      "risk_allele": "A",
+      "reference_allele": "G",
+      "interpretations": {
+        "AA": {
+          "phenotype": "Low Activity (Met/Met) — Worrier",
+          "effect": "Slow dopamine clearance in prefrontal cortex. Better baseline cognition but more stress-sensitive. Stimulants may cause anxiety.",
+          "recommendation": "Start stimulants at lower dose. Monitor for anxiety and overstimulation.",
+          "severity": "moderate"
+        },
+        "AG": {
+          "phenotype": "Intermediate Activity (Val/Met)",
+          "effect": "Balanced dopamine metabolism. Moderate response to stimulants.",
+          "recommendation": "Standard dosing. Good baseline for most stimulant medications.",
+          "severity": "info"
+        },
+        "GG": {
+          "phenotype": "High Activity (Val/Val) — Warrior",
+          "effect": "Fast dopamine clearance. Stress-resilient but may have lower baseline cognitive performance. Tends to respond well to stimulants.",
+          "recommendation": "Standard to higher stimulant doses may be needed for optimal effect.",
+          "severity": "info"
+        }
+      }
+    }
+  ],
+  "evidence_level": "moderate"
+}

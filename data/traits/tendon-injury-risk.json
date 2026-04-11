@@ -1,0 +1,24 @@
+{
+  "trait": "Tendon / Injury Risk",
+  "category": "fitness",
+  "snps": [
+    {
+      "rsid": "rs12722",
+      "gene": "COL5A1",
+      "effect_allele": "C",
+      "effect_template": "COL5A1 variant affecting type V collagen. Influences tendon and ligament strength."
+    }
+  ],
+  "evidence_level": "moderate",
+  "studies": [
+    {
+      "pmid": "19727869",
+      "title": "COL5A1 gene variants previously associated with reduced soft tissue injury risk",
+      "journal": "British Journal of Sports Medicine",
+      "year": 2009,
+      "cohort_size": 313,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/19727869/",
+      "finding": "COL5A1 rs12722 CC genotype associated with reduced Achilles tendon injury risk"
+    }
+  ]
+}

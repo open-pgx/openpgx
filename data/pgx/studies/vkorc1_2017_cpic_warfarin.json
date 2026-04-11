@@ -1,0 +1,45 @@
+{
+  "gene": "VKORC1",
+  "category": "drug_target",
+  "gene_description": "Warfarin dose sensitivity",
+  "drugs": ["warfarin"],
+  "source": {
+    "pmid": "27441996",
+    "doi": null,
+    "source_type": "guideline",
+    "title": "CPIC Guideline for Pharmacogenetics-Guided Warfarin Dosing",
+    "journal": "Clinical Pharmacology & Therapeutics",
+    "year": 2017,
+    "cohort_size": null,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/27441996/",
+    "finding": "VKORC1 -1639G>A: AA genotype requires ~50% lower warfarin dose."
+  },
+  "snps": [
+    {
+      "rsid": "rs9923231",
+      "risk_allele": "A",
+      "reference_allele": "G",
+      "interpretations": {
+        "AA": {
+          "phenotype": "High Sensitivity",
+          "effect": "Requires ~50% lower warfarin dose. High bleeding risk at standard doses.",
+          "recommendation": "Start warfarin at significantly reduced dose. Use pharmacogenomic dosing algorithm.",
+          "severity": "severe"
+        },
+        "AG": {
+          "phenotype": "Intermediate Sensitivity",
+          "effect": "Requires ~25% lower warfarin dose.",
+          "recommendation": "Reduce initial warfarin dose. Monitor INR closely.",
+          "severity": "moderate"
+        },
+        "GG": {
+          "phenotype": "Normal Sensitivity",
+          "effect": "Standard warfarin sensitivity.",
+          "recommendation": "Standard warfarin dosing with routine INR monitoring.",
+          "severity": "info"
+        }
+      }
+    }
+  ],
+  "evidence_level": "established"
+}

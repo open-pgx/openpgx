@@ -1,0 +1,24 @@
+{
+  "trait": "Alcohol Flush Reaction",
+  "category": "metabolism",
+  "snps": [
+    {
+      "rsid": "rs671",
+      "gene": "ALDH2",
+      "effect_allele": "A",
+      "effect_template": "ALDH2 variant affecting acetaldehyde metabolism."
+    }
+  ],
+  "evidence_level": "established",
+  "studies": [
+    {
+      "pmid": "19729618",
+      "title": "ALDH2 Glu504Lys polymorphism and alcohol-related cancers",
+      "journal": "PLoS Medicine",
+      "year": 2009,
+      "cohort_size": 10000,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/19729618/",
+      "finding": "ALDH2*2 carriers who drink have 6-10x increased esophageal cancer risk"
+    }
+  ]
+}

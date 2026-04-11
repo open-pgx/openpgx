@@ -1,0 +1,24 @@
+{
+  "trait": "Earwax Type",
+  "category": "appearance",
+  "snps": [
+    {
+      "rsid": "rs17822931",
+      "gene": "ABCC11",
+      "effect_allele": "T",
+      "effect_template": "ABCC11 variant determining earwax type and body odor."
+    }
+  ],
+  "evidence_level": "established",
+  "studies": [
+    {
+      "pmid": "16444273",
+      "title": "A SNP in the ABCC11 gene is the determinant of human earwax type",
+      "journal": "Nature Genetics",
+      "year": 2006,
+      "cohort_size": 598,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/16444273/",
+      "finding": "rs17822931 TT = dry earwax, CC/CT = wet earwax. Also determines axillary odor."
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "trait": "Muscle Composition (Power vs Endurance)",
+  "category": "fitness",
+  "snps": [
+    {
+      "rsid": "rs1815739",
+      "gene": "ACTN3",
+      "effect_allele": "T",
+      "effect_template": "ACTN3 R577X variant affecting fast-twitch muscle fiber protein."
+    }
+  ],
+  "evidence_level": "established",
+  "studies": [
+    {
+      "pmid": "12879365",
+      "title": "ACTN3 genotype is associated with human elite athletic performance",
+      "journal": "American Journal of Human Genetics",
+      "year": 2003,
+      "cohort_size": 429,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/12879365/",
+      "finding": "ACTN3 R577X (rs1815739) XX genotype overrepresented in endurance athletes, RR in power athletes"
+    }
+  ]
+}

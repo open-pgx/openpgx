@@ -1,0 +1,70 @@
+{
+  "gene": "BCMO1",
+  "category": "vitamin_conversion",
+  "gene_description": "Beta-carotene to vitamin A conversion",
+  "drugs": ["beta_carotene", "retinol"],
+  "source": {
+    "pmid": "19103647",
+    "doi": null,
+    "source_type": "pubmed",
+    "title": "Two common SNPs in BCMO1 affect beta-carotene metabolism",
+    "journal": "Journal of Nutrition",
+    "year": 2009,
+    "cohort_size": 2344,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/19103647/",
+    "finding": "BCMO1 variants reduce beta-carotene to retinal conversion by 32-69%. Preformed vitamin A may be needed."
+  },
+  "snps": [
+    {
+      "rsid": "rs12934922",
+      "risk_allele": "T",
+      "reference_allele": "A",
+      "interpretations": {
+        "TT": {
+          "phenotype": "Poor Converter (Homozygous)",
+          "effect": "~69% reduced beta-carotene to retinal conversion. Plant-based vitamin A sources may be insufficient.",
+          "recommendation": "Consider preformed vitamin A (retinol) from animal sources or supplements instead of relying on beta-carotene.",
+          "severity": "moderate"
+        },
+        "AT": {
+          "phenotype": "Intermediate Converter",
+          "effect": "~32% reduced beta-carotene conversion.",
+          "recommendation": "Ensure mixed sources of vitamin A. Monitor if following a plant-based diet.",
+          "severity": "mild"
+        },
+        "AA": {
+          "phenotype": "Normal Converter",
+          "effect": "Normal beta-carotene to retinal conversion.",
+          "recommendation": "Standard dietary vitamin A intake sufficient.",
+          "severity": "info"
+        }
+      }
+    },
+    {
+      "rsid": "rs7501331",
+      "risk_allele": "T",
+      "reference_allele": "C",
+      "interpretations": {
+        "TT": {
+          "phenotype": "Poor Converter (Homozygous)",
+          "effect": "Significantly reduced beta-carotene conversion.",
+          "recommendation": "Preformed vitamin A recommended.",
+          "severity": "moderate"
+        },
+        "CT": {
+          "phenotype": "Intermediate Converter",
+          "effect": "Moderately reduced beta-carotene conversion.",
+          "recommendation": "Mixed vitamin A sources recommended.",
+          "severity": "mild"
+        },
+        "CC": {
+          "phenotype": "Normal Converter",
+          "effect": "Normal conversion.",
+          "recommendation": "Standard diet sufficient.",
+          "severity": "info"
+        }
+      }
+    }
+  ],
+  "evidence_level": "moderate"
+}

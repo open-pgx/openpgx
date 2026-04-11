@@ -1,0 +1,45 @@
+{
+  "gene": "GIPR",
+  "category": "glp1_response",
+  "gene_description": "GIP receptor (Mounjaro/tirzepatide response)",
+  "drugs": ["tirzepatide"],
+  "source": {
+    "pmid": "20818381",
+    "doi": null,
+    "source_type": "pubmed",
+    "title": "GIPR rs1800437 and incretin response",
+    "journal": "Diabetologia",
+    "year": 2010,
+    "cohort_size": 2800,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/20818381/",
+    "finding": "GIPR E354Q variant affects GIP receptor signaling. May influence tirzepatide response."
+  },
+  "snps": [
+    {
+      "rsid": "rs1800437",
+      "risk_allele": "C",
+      "reference_allele": "G",
+      "interpretations": {
+        "CC": {
+          "phenotype": "Reduced GIP Response (Homozygous)",
+          "effect": "Impaired GIP receptor signaling. May have reduced response to GIP-targeting drugs like tirzepatide.",
+          "recommendation": "Monitor tirzepatide response. GLP-1-only agonists may be more effective.",
+          "severity": "moderate"
+        },
+        "CG": {
+          "phenotype": "Intermediate GIP Response",
+          "effect": "Partially reduced GIP receptor signaling.",
+          "recommendation": "Standard dosing with response monitoring.",
+          "severity": "mild"
+        },
+        "GG": {
+          "phenotype": "Normal GIP Response",
+          "effect": "Normal GIP receptor function.",
+          "recommendation": "Standard dosing.",
+          "severity": "info"
+        }
+      }
+    }
+  ],
+  "evidence_level": "emerging"
+}

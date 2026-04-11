@@ -1,0 +1,45 @@
+{
+  "gene": "CYP2D6",
+  "category": "drug_metabolism",
+  "gene_description": "Metabolizes ~25% of all drugs (codeine, tamoxifen, antidepressants)",
+  "drugs": ["codeine", "tramadol", "tamoxifen", "fluoxetine", "paroxetine", "venlafaxine", "aripiprazole", "risperidone", "atomoxetine", "lisdexamfetamine", "methylphenidate"],
+  "source": {
+    "pmid": "17301689",
+    "doi": null,
+    "source_type": "guideline",
+    "title": "PharmGKB summary: very important pharmacogene information for CYP2D6",
+    "journal": "Pharmacogenetics and Genomics",
+    "year": 2009,
+    "cohort_size": null,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/17301689/",
+    "finding": "CYP2D6 metabolizes ~25% of clinically used drugs. Poor metabolizers at risk for toxicity or therapeutic failure."
+  },
+  "snps": [
+    {
+      "rsid": "rs3892097",
+      "risk_allele": "A",
+      "reference_allele": "G",
+      "interpretations": {
+        "AA": {
+          "phenotype": "Poor Metabolizer (*4/*4)",
+          "effect": "No CYP2D6 activity. Codeine has no analgesic effect; risk of toxicity with other substrates.",
+          "recommendation": "Avoid codeine/tramadol (no conversion to active metabolite). Reduce dose of SSRIs, antipsychotics.",
+          "severity": "severe"
+        },
+        "AG": {
+          "phenotype": "Intermediate Metabolizer (*1/*4)",
+          "effect": "Reduced CYP2D6 activity. Partial drug metabolism.",
+          "recommendation": "Consider dose reduction for CYP2D6 substrates. Monitor for side effects.",
+          "severity": "moderate"
+        },
+        "GG": {
+          "phenotype": "Normal Metabolizer (*1/*1)",
+          "effect": "Normal CYP2D6 activity.",
+          "recommendation": "Standard dosing.",
+          "severity": "info"
+        }
+      }
+    }
+  ],
+  "evidence_level": "established"
+}

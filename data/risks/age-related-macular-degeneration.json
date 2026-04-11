@@ -1,0 +1,44 @@
+{
+  "condition": "Age-Related Macular Degeneration",
+  "category": "ophthalmological",
+  "icd10": "H35.3",
+  "snps": [
+    {
+      "rsid": "rs1061170",
+      "gene_region": "CFH",
+      "risk_allele": "C",
+      "odds_ratio": 2.45,
+      "population_frequency": {
+        "global": 0.34,
+        "european": 0.34
+      },
+      "effect_template": "Complement Factor H Y402H variant. Major AMD risk factor (OR ~2.5 per allele)."
+    },
+    {
+      "rsid": "rs10490924",
+      "gene_region": "ARMS2/HTRA1",
+      "risk_allele": "T",
+      "odds_ratio": 2.69,
+      "population_frequency": {
+        "global": 0.22,
+        "european": 0.22
+      },
+      "effect_template": "ARMS2/HTRA1 locus. Second major AMD risk locus with strong effect."
+    }
+  ],
+  "evidence_level": "established",
+  "gwas_catalog_id": "GCST000027",
+  "general_population_risk": "~6.5% (advanced AMD by age 80)",
+  "recommendation_template": "Protect eyes from UV light, don't smoke, eat leafy greens (lutein/zeaxanthin). Regular eye exams become more important with genetic risk. AREDS supplements may help in intermediate stages.",
+  "studies": [
+    {
+      "pmid": "15761122",
+      "title": "Complement factor H polymorphism in age-related macular degeneration",
+      "journal": "Science",
+      "year": 2005,
+      "cohort_size": 2172,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/15761122/",
+      "finding": "CFH Y402H (rs1061170 C) increases AMD risk 2.5-fold per allele"
+    }
+  ]
+}

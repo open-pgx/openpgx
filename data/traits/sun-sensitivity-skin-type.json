@@ -1,0 +1,30 @@
+{
+  "trait": "Sun Sensitivity / Skin Type",
+  "category": "skin",
+  "snps": [
+    {
+      "rsid": "rs1805007",
+      "gene": "MC1R",
+      "effect_allele": "T",
+      "effect_template": "MC1R R151C variant — strong red hair/fair skin allele."
+    },
+    {
+      "rsid": "rs1805008",
+      "gene": "MC1R",
+      "effect_allele": "T",
+      "effect_template": "MC1R R160W variant — associated with fair skin and sun sensitivity."
+    }
+  ],
+  "evidence_level": "established",
+  "studies": [
+    {
+      "pmid": "11260714",
+      "title": "MC1R variants increase melanoma risk in families",
+      "journal": "British Medical Journal",
+      "year": 2001,
+      "cohort_size": 3963,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11260714/",
+      "finding": "MC1R R151C and R160W variants double melanoma risk and strongly predict fair skin"
+    }
+  ]
+}

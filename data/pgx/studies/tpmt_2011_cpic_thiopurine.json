@@ -1,0 +1,45 @@
+{
+  "gene": "TPMT",
+  "category": "drug_target",
+  "gene_description": "Thiopurine (azathioprine) dosing",
+  "drugs": ["azathioprine", "mercaptopurine", "thioguanine"],
+  "source": {
+    "pmid": "21270794",
+    "doi": null,
+    "source_type": "guideline",
+    "title": "CPIC Guideline for Thiopurine Dosing Based on TPMT and NUDT15",
+    "journal": "Clinical Pharmacology & Therapeutics",
+    "year": 2011,
+    "cohort_size": null,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/21270794/",
+    "finding": "TPMT intermediate: reduce thiopurine dose to 30-80%. Poor: consider alternative or 10% dose."
+  },
+  "snps": [
+    {
+      "rsid": "rs1142345",
+      "risk_allele": "C",
+      "reference_allele": "T",
+      "interpretations": {
+        "CC": {
+          "phenotype": "Poor Metabolizer (TPMT Deficient)",
+          "effect": "No TPMT activity. Life-threatening myelosuppression with standard thiopurine doses.",
+          "recommendation": "Reduce dose to 10% of standard or use alternative. Mandatory monitoring.",
+          "severity": "life_threatening"
+        },
+        "CT": {
+          "phenotype": "Intermediate Metabolizer",
+          "effect": "Reduced TPMT activity. Increased risk of myelosuppression.",
+          "recommendation": "Reduce thiopurine dose to 30-80% of standard. Monitor CBC weekly at initiation.",
+          "severity": "moderate"
+        },
+        "TT": {
+          "phenotype": "Normal Metabolizer",
+          "effect": "Normal TPMT activity.",
+          "recommendation": "Standard thiopurine dosing with routine monitoring.",
+          "severity": "info"
+        }
+      }
+    }
+  ],
+  "evidence_level": "established"
+}

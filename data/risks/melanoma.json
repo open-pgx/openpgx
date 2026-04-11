@@ -1,0 +1,44 @@
+{
+  "condition": "Melanoma",
+  "category": "dermatological",
+  "icd10": "C43",
+  "snps": [
+    {
+      "rsid": "rs1805007",
+      "gene_region": "MC1R",
+      "risk_allele": "T",
+      "odds_ratio": 2.4,
+      "population_frequency": {
+        "global": 0.06,
+        "european": 0.08
+      },
+      "effect_template": "MC1R R151C variant. Strongly associated with fair skin, red hair, and melanoma risk."
+    },
+    {
+      "rsid": "rs910873",
+      "gene_region": "CDKN2A/9p21",
+      "risk_allele": "C",
+      "odds_ratio": 1.75,
+      "population_frequency": {
+        "global": 0.18,
+        "european": 0.2
+      },
+      "effect_template": "CDKN2A region variant. Affects cell cycle control and melanoma susceptibility."
+    }
+  ],
+  "evidence_level": "established",
+  "gwas_catalog_id": "GCST000168",
+  "general_population_risk": "~2.6% (lifetime, fair-skinned populations)",
+  "recommendation_template": "SPF 30-50+ daily. Avoid tanning beds. Monthly self-skin exams. Annual dermatologist check if fair-skinned or have many moles. Seek care for changing moles (ABCDE rule).",
+  "studies": [
+    {
+      "pmid": "18488026",
+      "title": "Genome-wide association study identifies three loci associated with melanoma risk",
+      "journal": "Nature Genetics",
+      "year": 2008,
+      "cohort_size": 5000,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/18488026/",
+      "finding": "MC1R and CDKN2A/9p21 confirmed as major melanoma risk loci"
+    }
+  ]
+}

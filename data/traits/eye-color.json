@@ -1,0 +1,24 @@
+{
+  "trait": "Eye Color",
+  "category": "appearance",
+  "snps": [
+    {
+      "rsid": "rs12913832",
+      "gene": "HERC2/OCA2",
+      "effect_allele": "G",
+      "effect_template": "HERC2 variant — strongest single predictor of blue vs brown eye color."
+    }
+  ],
+  "evidence_level": "established",
+  "studies": [
+    {
+      "pmid": "17236130",
+      "title": "A single SNP in an evolutionary conserved region within intron 86 of the HERC2 gene determines human blue-brown eye color",
+      "journal": "American Journal of Human Genetics",
+      "year": 2008,
+      "cohort_size": 5951,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17236130/",
+      "finding": "rs12913832 GG predicts blue eyes with ~99% accuracy in European populations"
+    }
+  ]
+}

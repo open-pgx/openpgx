@@ -1,0 +1,24 @@
+{
+  "trait": "VO2max Potential (Aerobic Capacity)",
+  "category": "fitness",
+  "snps": [
+    {
+      "rsid": "rs4341",
+      "gene": "ACE",
+      "effect_allele": "G",
+      "effect_template": "ACE I/D proxy variant. I allele (lower ACE) associated with endurance capacity."
+    }
+  ],
+  "evidence_level": "moderate",
+  "studies": [
+    {
+      "pmid": "10694876",
+      "title": "Human gene for physical performance",
+      "journal": "Nature",
+      "year": 2000,
+      "cohort_size": 400,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/10694876/",
+      "finding": "ACE I allele overrepresented in endurance athletes; D allele in power/sprint athletes"
+    }
+  ]
+}

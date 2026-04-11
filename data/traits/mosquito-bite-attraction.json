@@ -1,0 +1,24 @@
+{
+  "trait": "Mosquito Bite Attraction",
+  "category": "behavioral",
+  "snps": [
+    {
+      "rsid": "rs478304",
+      "gene": "HLA region",
+      "effect_allele": "T",
+      "effect_template": "HLA region variant associated with body odor profile that attracts or repels mosquitoes."
+    }
+  ],
+  "evidence_level": "emerging",
+  "studies": [
+    {
+      "pmid": "25904101",
+      "title": "Heritability of attractiveness to mosquitoes",
+      "journal": "PLOS ONE",
+      "year": 2015,
+      "cohort_size": 37,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25904101/",
+      "finding": "Twin studies show 67-83% heritability for mosquito attractiveness, likely mediated by body odor genes"
+    }
+  ]
+}

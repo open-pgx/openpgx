@@ -1,0 +1,24 @@
+{
+  "trait": "Salt Sensitivity (Blood Pressure)",
+  "category": "nutrition",
+  "snps": [
+    {
+      "rsid": "rs699",
+      "gene": "AGT",
+      "effect_allele": "C",
+      "effect_template": "Angiotensinogen M235T variant. C allele (T235) associated with salt-sensitive hypertension."
+    }
+  ],
+  "evidence_level": "established",
+  "studies": [
+    {
+      "pmid": "9192270",
+      "title": "Molecular basis of human hypertension: role of angiotensinogen",
+      "journal": "Cell",
+      "year": 1992,
+      "cohort_size": 3095,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/9192270/",
+      "finding": "AGT M235T (rs699) associated with salt-sensitive hypertension and elevated angiotensinogen levels"
+    }
+  ]
+}

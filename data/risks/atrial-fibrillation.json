@@ -1,0 +1,44 @@
+{
+  "condition": "Atrial Fibrillation",
+  "category": "cardiovascular",
+  "icd10": "I48",
+  "snps": [
+    {
+      "rsid": "rs2200733",
+      "gene_region": "4q25/PITX2",
+      "risk_allele": "T",
+      "odds_ratio": 1.72,
+      "population_frequency": {
+        "global": 0.12,
+        "european": 0.11
+      },
+      "effect_template": "4q25 locus near PITX2. T allele significantly increases atrial fibrillation risk."
+    },
+    {
+      "rsid": "rs10033464",
+      "gene_region": "4q25/PITX2",
+      "risk_allele": "T",
+      "odds_ratio": 1.39,
+      "population_frequency": {
+        "global": 0.08,
+        "european": 0.09
+      },
+      "effect_template": "Second independent 4q25 variant for AF risk."
+    }
+  ],
+  "evidence_level": "established",
+  "gwas_catalog_id": "GCST000524",
+  "general_population_risk": "2-3% (lifetime ~25%)",
+  "recommendation_template": "Be aware of AF symptoms (irregular heartbeat, palpitations). Reduce modifiable risk factors: maintain healthy weight, limit alcohol, manage blood pressure.",
+  "studies": [
+    {
+      "pmid": "17603472",
+      "title": "Variants in ZFHX3 and 4q25 are associated with atrial fibrillation",
+      "journal": "Nature Genetics",
+      "year": 2007,
+      "cohort_size": 5500,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17603472/",
+      "finding": "rs2200733 at 4q25 strongly associated with AF (OR=1.72)"
+    }
+  ]
+}

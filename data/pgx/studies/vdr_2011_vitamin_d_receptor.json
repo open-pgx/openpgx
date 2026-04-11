@@ -1,0 +1,95 @@
+{
+  "gene": "VDR",
+  "category": "vitamin_receptor",
+  "gene_description": "Vitamin D receptor function",
+  "drugs": ["cholecalciferol", "ergocalciferol", "calcitriol"],
+  "source": {
+    "pmid": "22012749",
+    "doi": null,
+    "source_type": "pubmed",
+    "title": "Vitamin D receptor gene polymorphisms and cancer risk",
+    "journal": "Cancer Epidemiology Biomarkers",
+    "year": 2011,
+    "cohort_size": 35000,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/22012749/",
+    "finding": "VDR FokI (rs2228570) T allele associated with altered vitamin D signaling and cancer risk."
+  },
+  "snps": [
+    {
+      "rsid": "rs2228570",
+      "risk_allele": "T",
+      "reference_allele": "C",
+      "interpretations": {
+        "TT": {
+          "phenotype": "Reduced VDR Function (ff genotype)",
+          "effect": "Lower vitamin D receptor activity. Reduced calcium absorption and immune modulation. Associated with increased cancer risk.",
+          "recommendation": "Ensure adequate vitamin D levels (target 40-60 ng/mL). Higher supplementation doses may be needed. Regular level monitoring.",
+          "severity": "moderate"
+        },
+        "CT": {
+          "phenotype": "Intermediate VDR Function (Ff genotype)",
+          "effect": "Moderately reduced vitamin D receptor activity.",
+          "recommendation": "Maintain vitamin D levels above 30 ng/mL. Consider supplementation during winter months.",
+          "severity": "mild"
+        },
+        "CC": {
+          "phenotype": "Normal VDR Function (FF genotype)",
+          "effect": "Normal vitamin D receptor activity and signaling.",
+          "recommendation": "Standard vitamin D intake sufficient.",
+          "severity": "info"
+        }
+      }
+    },
+    {
+      "rsid": "rs1544410",
+      "risk_allele": "A",
+      "reference_allele": "G",
+      "interpretations": {
+        "AA": {
+          "phenotype": "BsmI bb (Altered VDR Expression)",
+          "effect": "Associated with lower bone mineral density and altered vitamin D metabolism.",
+          "recommendation": "Monitor bone density. Ensure vitamin D and calcium sufficiency.",
+          "severity": "mild"
+        },
+        "AG": {
+          "phenotype": "BsmI Bb (Intermediate)",
+          "effect": "Intermediate VDR expression variant.",
+          "recommendation": "Standard monitoring.",
+          "severity": "info"
+        },
+        "GG": {
+          "phenotype": "BsmI BB (Normal Expression)",
+          "effect": "Normal VDR expression.",
+          "recommendation": "Standard diet and supplementation.",
+          "severity": "info"
+        }
+      }
+    },
+    {
+      "rsid": "rs7975232",
+      "risk_allele": "A",
+      "reference_allele": "C",
+      "interpretations": {
+        "AA": {
+          "phenotype": "ApaI aa (Altered Signaling)",
+          "effect": "Associated with altered vitamin D signaling efficiency.",
+          "recommendation": "Monitor vitamin D levels. May need higher supplementation.",
+          "severity": "mild"
+        },
+        "AC": {
+          "phenotype": "ApaI Aa (Intermediate)",
+          "effect": "Intermediate signaling variant.",
+          "recommendation": "Standard monitoring.",
+          "severity": "info"
+        },
+        "CC": {
+          "phenotype": "ApaI AA (Normal Signaling)",
+          "effect": "Normal vitamin D signaling.",
+          "recommendation": "Standard diet.",
+          "severity": "info"
+        }
+      }
+    }
+  ],
+  "evidence_level": "moderate"
+}

@@ -1,0 +1,14 @@
+{
+  "trait": "Widow's Peak",
+  "category": "appearance",
+  "snps": [
+    {
+      "rsid": "rs2249079",
+      "gene": "LMX1A",
+      "effect_allele": "C",
+      "effect_template": "LMX1A variant associated with widow's peak hairline pattern."
+    }
+  ],
+  "evidence_level": "moderate",
+  "studies": []
+}

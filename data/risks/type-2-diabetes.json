@@ -1,0 +1,55 @@
+{
+  "condition": "Type 2 Diabetes",
+  "category": "metabolic",
+  "icd10": "E11",
+  "snps": [
+    {
+      "rsid": "rs7903146",
+      "gene_region": "TCF7L2",
+      "risk_allele": "T",
+      "odds_ratio": 1.37,
+      "population_frequency": {
+        "global": 0.3,
+        "european": 0.3
+      },
+      "effect_template": "TCF7L2 — strongest common genetic risk factor for T2D. T allele increases risk ~1.4x per copy."
+    },
+    {
+      "rsid": "rs5219",
+      "gene_region": "KCNJ11",
+      "risk_allele": "T",
+      "odds_ratio": 1.15,
+      "population_frequency": {
+        "global": 0.35,
+        "european": 0.36
+      },
+      "effect_template": "KCNJ11 E23K variant. Modest effect on insulin secretion and T2D risk."
+    },
+    {
+      "rsid": "rs13266634",
+      "gene_region": "SLC30A8",
+      "risk_allele": "C",
+      "odds_ratio": 1.12,
+      "population_frequency": {
+        "global": 0.7,
+        "european": 0.7
+      },
+      "effect_template": "SLC30A8 variant affecting zinc transporter in pancreatic beta cells."
+    }
+  ],
+  "evidence_level": "established",
+  "gwas_catalog_id": "GCST000044",
+  "general_population_risk": "~11% (lifetime ~40%)",
+  "recommendation_template": "Focus on modifiable risk factors: maintain healthy weight, regular exercise, balanced diet. Monitor fasting glucose and HbA1c periodically.",
+  "studies": [
+    {
+      "pmid": "17463246",
+      "title": "Replication of genome-wide association signals in UK samples reveals risk loci for type 2 diabetes",
+      "journal": "Science",
+      "year": 2007,
+      "cohort_size": 14000,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17463246/",
+      "finding": "TCF7L2 rs7903146 T allele strongest common T2D risk variant (OR=1.37)"
+    }
+  ]
+}

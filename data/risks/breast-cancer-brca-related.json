@@ -1,0 +1,54 @@
+{
+  "condition": "Breast Cancer (BRCA-related)",
+  "category": "oncology",
+  "icd10": "C50",
+  "snps": [
+    {
+      "rsid": "rs80357906",
+      "gene_region": "BRCA1",
+      "risk_allele": "T",
+      "odds_ratio": 11,
+      "population_frequency": {
+        "global": 0.001,
+        "european": 0.001
+      },
+      "effect_template": "BRCA1 5382insC founder mutation. Significantly elevated breast/ovarian cancer risk."
+    },
+    {
+      "rsid": "rs80358981",
+      "gene_region": "BRCA2",
+      "risk_allele": "T",
+      "odds_ratio": 6,
+      "population_frequency": {
+        "global": 0.001
+      },
+      "effect_template": "BRCA2 6174delT founder mutation. Elevated breast and ovarian cancer risk."
+    },
+    {
+      "rsid": "rs1799966",
+      "gene_region": "BRCA1",
+      "risk_allele": "T",
+      "odds_ratio": 1.3,
+      "population_frequency": {
+        "global": 0.35,
+        "european": 0.33
+      },
+      "effect_template": "Common BRCA1 polymorphism. Modest effect on breast cancer risk."
+    }
+  ],
+  "evidence_level": "established",
+  "gwas_catalog_id": null,
+  "general_population_risk": "12.4% (women), <1% (men)",
+  "recommendation_template": "If carrying pathogenic variants, discuss enhanced screening (MRI, mammography) and risk reduction options with a genetic counselor.",
+  "studies": [
+    {
+      "pmid": "17529967",
+      "title": "Average risks of breast and ovarian cancer associated with BRCA1 or BRCA2 mutations",
+      "journal": "JAMA",
+      "year": 2007,
+      "cohort_size": 8139,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17529967/",
+      "finding": "BRCA1 carriers: 65% cumulative breast cancer risk by age 70"
+    }
+  ]
+}

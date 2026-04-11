@@ -1,0 +1,24 @@
+{
+  "trait": "Pain Sensitivity",
+  "category": "sensory",
+  "snps": [
+    {
+      "rsid": "rs6746030",
+      "gene": "SCN9A",
+      "effect_allele": "A",
+      "effect_template": "SCN9A variant affecting sodium channel in pain neurons. Influences pain perception threshold."
+    }
+  ],
+  "evidence_level": "moderate",
+  "studies": [
+    {
+      "pmid": "16826519",
+      "title": "SCN9A variants modulate pain sensitivity",
+      "journal": "PNAS",
+      "year": 2006,
+      "cohort_size": 578,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/16826519/",
+      "finding": "SCN9A rs6746030 A allele associated with increased pain perception in multiple pain conditions"
+    }
+  ]
+}
