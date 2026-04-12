@@ -1,0 +1,162 @@
+{
+  "gene": "CYP2C19",
+  "category": "drug_metabolism",
+  "gene_description": "Cytochrome P450 2C19 — primary hepatic enzyme metabolizing proton pump inhibitors (omeprazole, lansoprazole, pantoprazole, esomeprazole), benzodiazepines (diazepam, clobazam), and antifungals (voriconazole). Loss-of-function variants (*2, *3) reduce metabolism; gain-of-function (*17) increases metabolism.",
+  "drugs": [
+    "omeprazole",
+    "lansoprazole",
+    "pantoprazole",
+    "esomeprazole",
+    "diazepam",
+    "clobazam",
+    "voriconazole"
+  ],
+  "source": {
+    "pmid": "32989530",
+    "doi": "10.1097/FPC.0000000000000419",
+    "source_type": "guideline",
+    "title": "Clinical Pharmacogenetics Implementation Consortium (CPIC) Guideline for CYP2C19 and Proton Pump Inhibitor Dosing",
+    "journal": "Clinical Pharmacology & Therapeutics",
+    "year": 2020,
+    "cohort_size": null,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/32989530/",
+    "finding": "CYP2C19 poor metabolizers show significantly reduced PPI efficacy for acid suppression; ultrarapid metabolizers require higher doses or alternative agents."
+  },
+  "snps": [
+    {
+      "rsid": "rs4244285",
+      "risk_allele": "A",
+      "reference_allele": "G",
+      "interpretations": {
+        "AA": {
+          "phenotype": "Poor Metabolizer (CYP2C19*2/*2)",
+          "effect": "Non-functional CYP2C19 enzyme. Homozygous carriers have ~2-5 fold decreased metabolism of PPIs, resulting in markedly elevated plasma concentrations and prolonged acid suppression. For benzodiazepines, 2-fold increased AUC compared to rapid metabolizers increases toxicity risk. Voriconazole accumulates to supratherapeutic levels, increasing risk of hepatotoxicity and visual disturbances.",
+          "recommendation": "For PPIs: consider alternative acid suppressant (H2-blocker) or increased monitoring. For diazepam/clobazam: reduce starting dose by 25-50%; start clobazam at 5 mg/day. For voriconazole: use alternative antifungal (isavuconazole, posaconazole, lipid amphotericin B) or significantly reduce dose with therapeutic drug monitoring.",
+          "severity": "severe",
+          "odds_ratio": null
+        },
+        "AG": {
+          "phenotype": "Intermediate Metabolizer (CYP2C19*1/*2)",
+          "effect": "Heterozygous carriers show 30-50% reduction in CYP2C19 activity. Intermediate PPI metabolism results in modest elevation of plasma concentrations. Benzodiazepine AUC increased 1.46-fold compared to normal metabolizers. Voriconazole trough concentrations elevated but usually manageable.",
+          "recommendation": "For PPIs: standard dosing with enhanced monitoring for therapeutic response. For diazepam/clobazam: standard dosing with baseline monitoring; if adverse effects occur, consider 25% dose reduction. For voriconazole: standard dosing with therapeutic drug monitoring; target trough 1-5.5 mg/L.",
+          "severity": "moderate",
+          "odds_ratio": null
+        },
+        "GA": {
+          "phenotype": "Intermediate Metabolizer (CYP2C19*1/*2)",
+          "effect": "Heterozygous carriers show 30-50% reduction in CYP2C19 activity. Intermediate PPI metabolism results in modest elevation of plasma concentrations. Benzodiazepine AUC increased 1.46-fold compared to normal metabolizers. Voriconazole trough concentrations elevated but usually manageable.",
+          "recommendation": "For PPIs: standard dosing with enhanced monitoring for therapeutic response. For diazepam/clobazam: standard dosing with baseline monitoring; if adverse effects occur, consider 25% dose reduction. For voriconazole: standard dosing with therapeutic drug monitoring; target trough 1-5.5 mg/L.",
+          "severity": "moderate",
+          "odds_ratio": null
+        },
+        "GG": {
+          "phenotype": "Normal Metabolizer (CYP2C19*1/*1)",
+          "effect": "Normal CYP2C19 enzyme activity. Standard metabolism of all substrates with expected plasma concentrations and clinical response.",
+          "recommendation": "Standard dosing for all drugs (omeprazole 20 mg daily, lansoprazole 30 mg daily, pantoprazole 40 mg daily, esomeprazole 40 mg daily, diazepam 2-10 mg per dose, clobazam 15-30 mg daily, voriconazole loading 6 mg/kg Q12h then 4 mg/kg Q12h).",
+          "severity": "info",
+          "odds_ratio": null
+        }
+      },
+      "population_frequency": {
+        "global": 0.29,
+        "european": 0.3,
+        "african": 0.24,
+        "east_asian": 0.54,
+        "south_asian": 0.27,
+        "latino": 0.28
+      }
+    },
+    {
+      "rsid": "rs4986893",
+      "risk_allele": "A",
+      "reference_allele": "G",
+      "interpretations": {
+        "AA": {
+          "phenotype": "Poor Metabolizer (CYP2C19*3/*3)",
+          "effect": "Premature stop codon creates non-functional CYP2C19. Homozygous carriers show severe loss of function (~99% activity reduction), resulting in profound drug accumulation. PPIs achieve very high plasma levels. Benzodiazepines show dramatically elevated exposure. Voriconazole reaches toxic concentrations rapidly.",
+          "recommendation": "For PPIs: strongly consider alternative agent or minimal dosing with frequent monitoring. For diazepam/clobazam: significant dose reduction (start at 25-50% of standard); monitor closely for adverse effects. For voriconazole: DO NOT USE standard regimen; use alternative antifungal or consult pharmacokinetics specialist for dose adjustment.",
+          "severity": "severe",
+          "odds_ratio": null
+        },
+        "AG": {
+          "phenotype": "Intermediate Metabolizer (CYP2C19*1/*3)",
+          "effect": "Heterozygous loss-of-function; approximately 50% reduction in enzyme activity. Moderate elevation in drug plasma concentrations across all substrates. Moderate increase in both benzodiazepine exposure and voriconazole levels.",
+          "recommendation": "For PPIs: standard dosing with enhanced clinical monitoring. For diazepam/clobazam: standard dosing; monitor for adverse effects and consider dose reduction if needed. For voriconazole: standard dosing with therapeutic drug monitoring.",
+          "severity": "moderate",
+          "odds_ratio": null
+        },
+        "GA": {
+          "phenotype": "Intermediate Metabolizer (CYP2C19*1/*3)",
+          "effect": "Heterozygous loss-of-function; approximately 50% reduction in enzyme activity. Moderate elevation in drug plasma concentrations across all substrates. Moderate increase in both benzodiazepine exposure and voriconazole levels.",
+          "recommendation": "For PPIs: standard dosing with enhanced clinical monitoring. For diazepam/clobazam: standard dosing; monitor for adverse effects and consider dose reduction if needed. For voriconazole: standard dosing with therapeutic drug monitoring.",
+          "severity": "moderate",
+          "odds_ratio": null
+        },
+        "GG": {
+          "phenotype": "Normal Metabolizer (CYP2C19*1/*1)",
+          "effect": "Normal CYP2C19 enzyme function. Standard drug metabolism and plasma concentrations expected.",
+          "recommendation": "Standard dosing for all substrates per CPIC and product labeling.",
+          "severity": "info",
+          "odds_ratio": null
+        }
+      },
+      "population_frequency": {
+        "global": 0.01,
+        "european": 0.005,
+        "african": 0.03,
+        "east_asian": 0.09,
+        "south_asian": 0.01,
+        "latino": 0.01
+      }
+    },
+    {
+      "rsid": "rs12248560",
+      "risk_allele": "T",
+      "reference_allele": "C",
+      "interpretations": {
+        "TT": {
+          "phenotype": "Ultrarapid Metabolizer (CYP2C19*17/*17)",
+          "effect": "Promoter gain-of-function variant (*17) increases CYP2C19 transcription and protein expression by ~2-fold. Homozygous carriers show markedly increased metabolism of PPIs, benzodiazepines, and voriconazole, resulting in subtherapeutic plasma concentrations. PPIs may not achieve adequate acid suppression. Voriconazole levels may be insufficient to treat invasive fungal infections.",
+          "recommendation": "For PPIs: may require higher doses (e.g., omeprazole 40 mg daily instead of 20 mg) or alternative agent; monitor symptom control. For diazepam/clobazam: standard to higher doses; monitor clinical response. For voriconazole: standard voriconazole dosing often inadequate; consider higher doses with careful therapeutic drug monitoring (target trough 1-5.5 mg/L) or alternative antifungal.",
+          "severity": "moderate",
+          "odds_ratio": null
+        },
+        "CT": {
+          "phenotype": "Rapid Metabolizer (CYP2C19*1/*17)",
+          "effect": "Heterozygous gain-of-function; ~1.25-fold increased enzyme activity. Slightly enhanced metabolism of all substrates, resulting in modestly lower plasma concentrations and potentially reduced clinical efficacy, particularly for PPIs.",
+          "recommendation": "For PPIs: standard dosing with monitoring for adequate acid suppression; if inadequate, consider dose increase. For diazepam/clobazam: standard dosing. For voriconazole: standard dosing with therapeutic drug monitoring.",
+          "severity": "mild",
+          "odds_ratio": null
+        },
+        "TC": {
+          "phenotype": "Rapid Metabolizer (CYP2C19*1/*17)",
+          "effect": "Heterozygous gain-of-function; ~1.25-fold increased enzyme activity. Slightly enhanced metabolism of all substrates, resulting in modestly lower plasma concentrations and potentially reduced clinical efficacy, particularly for PPIs.",
+          "recommendation": "For PPIs: standard dosing with monitoring for adequate acid suppression; if inadequate, consider dose increase. For diazepam/clobazam: standard dosing. For voriconazole: standard dosing with therapeutic drug monitoring.",
+          "severity": "mild",
+          "odds_ratio": null
+        },
+        "CC": {
+          "phenotype": "Normal Metabolizer (CYP2C19*1/*1)",
+          "effect": "Wild-type promoter. Normal CYP2C19 expression and enzyme activity. Standard drug metabolism.",
+          "recommendation": "Standard dosing for all substrates per guidelines.",
+          "severity": "info",
+          "odds_ratio": null
+        }
+      },
+      "population_frequency": {
+        "global": 0.21,
+        "european": 0.22,
+        "african": 0.13,
+        "east_asian": 0.33,
+        "south_asian": 0.24,
+        "latino": 0.23
+      }
+    }
+  ],
+  "evidence_level": "established",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx",
+    "orcid": null
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "gene": "APOE",
+  "category": "nutrient_absorption",
+  "gene_description": "Apolipoprotein E — major apolipoprotein that mediates hepatic uptake of chylomicron remnants and VLDL. Three isoforms (ε2, ε3, ε4) defined by two SNPs create a haplotypic system affecting lipid metabolism, cardiovascular risk, and Alzheimer's disease susceptibility.",
+  "drugs": ["atorvastatin", "rosuvastatin", "donepezil", "memantine", "lecanemab"],
+  "source": {
+    "pmid": "28758614",
+    "doi": "10.3389/fnagi.2017.00248",
+    "source_type": "pubmed",
+    "title": "ApoE rs429358 and rs7412 Polymorphism and Gender Differences of Serum Lipid Profile and Cognition in Aging Chinese Population",
+    "journal": "Frontiers in Aging Neuroscience",
+    "year": 2017,
+    "cohort_size": 2000,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/28758614/",
+    "finding": "APOE ε4 carriers (rs429358-C) have significantly higher total cholesterol and LDL-C, while ε2 carriers (rs7412-T) have lower TC but higher triglycerides. ε4 is the strongest genetic risk factor for late-onset Alzheimer's disease (3-15 fold risk increase)."
+  },
+  "snps": [
+    {
+      "rsid": "rs429358",
+      "risk_allele": "C",
+      "reference_allele": "T",
+      "interpretations": {
+        "CC": {
+          "phenotype": "APOE ε4/ε4 — highest Alzheimer's/cardiovascular risk",
+          "effect": "Homozygous ε4 carriers have highest LDL-C and total cholesterol levels. 10-15 fold increased risk of late-onset Alzheimer's disease with earlier age of onset (mean ~68 years). Enhanced cholesterol absorption and impaired amyloid-beta clearance. Increased cardiovascular disease risk. Higher response to dietary cholesterol and saturated fat.",
+          "recommendation": "Aggressive cardiovascular risk management — strict LDL-C targets. Mediterranean/MIND diet for cognitive protection. Regular cognitive screening from age 50. Statin therapy per lipid guidelines. Consider anti-amyloid therapies (lecanemab) eligibility. Limit saturated fat and dietary cholesterol. APOE genotype may affect statin response.",
+          "severity": "severe",
+          "odds_ratio": 12.0
+        },
+        "CT": {
+          "phenotype": "APOE ε3/ε4 or ε2/ε4 — elevated risk",
+          "effect": "Heterozygous ε4 carrier (one copy). 3-4 fold increased Alzheimer's disease risk. Elevated LDL-C and total cholesterol compared to ε3/ε3. Stronger lipid response to dietary saturated fat. Intermediate cardiovascular risk elevation.",
+          "recommendation": "Heart-healthy diet with reduced saturated fat. Regular lipid and cognitive monitoring. Consider MIND/Mediterranean diet. Exercise (neuroprotective). Statin therapy if LDL-C elevated. Cognitive engagement activities.",
+          "severity": "moderate",
+          "odds_ratio": 3.5
+        },
+        "TC": {
+          "phenotype": "APOE ε3/ε4 or ε2/ε4 — elevated risk",
+          "effect": "Heterozygous ε4 carrier (one copy). 3-4 fold increased Alzheimer's disease risk. Elevated LDL-C and total cholesterol compared to ε3/ε3. Stronger lipid response to dietary saturated fat. Intermediate cardiovascular risk elevation.",
+          "recommendation": "Heart-healthy diet with reduced saturated fat. Regular lipid and cognitive monitoring. Consider MIND/Mediterranean diet. Exercise (neuroprotective). Statin therapy if LDL-C elevated. Cognitive engagement activities.",
+          "severity": "moderate",
+          "odds_ratio": 3.5
+        },
+        "TT": {
+          "phenotype": "APOE ε2/ε2, ε2/ε3, or ε3/ε3 — standard/lower risk",
+          "effect": "Non-ε4 carrier. Standard or reduced Alzheimer's and cardiovascular risk from this locus. ε3/ε3 is the most common genotype (~60% of population). ε2 carriers may have lower LDL-C but potentially higher triglycerides.",
+          "recommendation": "Standard dietary and lifestyle guidelines. Check rs7412 to distinguish ε2 from ε3 status.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.15,
+        "african": 0.25,
+        "east_asian": 0.09,
+        "south_asian": 0.10,
+        "latino": 0.12
+      }
+    },
+    {
+      "rsid": "rs7412",
+      "risk_allele": "C",
+      "reference_allele": "T",
+      "interpretations": {
+        "CC": {
+          "phenotype": "APOE ε3/ε3 or ε3/ε4 or ε4/ε4 (no ε2 allele)",
+          "effect": "No ε2 allele present. Standard apoE-mediated lipoprotein clearance. Lipid profile and disease risk determined primarily by rs429358 genotype (ε3 vs ε4 status).",
+          "recommendation": "See rs429358 interpretation for overall APOE risk assessment.",
+          "severity": "info"
+        },
+        "CT": {
+          "phenotype": "APOE ε2 carrier (one copy — ε2/ε3 or ε2/ε4)",
+          "effect": "One ε2 allele. Lower LDL-C than ε3/ε3 or ε4 carriers. Reduced hepatic LDL receptor binding efficiency. Mildly elevated triglycerides. Protective against Alzheimer's disease (strongest protective allele). If combined with ε4 (ε2/ε4), effects may partially cancel.",
+          "recommendation": "Generally favorable lipid genetics for LDL. Monitor triglycerides which may be elevated. Standard dietary guidelines.",
+          "severity": "info"
+        },
+        "TC": {
+          "phenotype": "APOE ε2 carrier (one copy — ε2/ε3 or ε2/ε4)",
+          "effect": "One ε2 allele. Lower LDL-C than ε3/ε3 or ε4 carriers. Reduced hepatic LDL receptor binding efficiency. Mildly elevated triglycerides. Protective against Alzheimer's disease (strongest protective allele). If combined with ε4 (ε2/ε4), effects may partially cancel.",
+          "recommendation": "Generally favorable lipid genetics for LDL. Monitor triglycerides which may be elevated. Standard dietary guidelines.",
+          "severity": "info"
+        },
+        "TT": {
+          "phenotype": "APOE ε2/ε2 homozygous (rare ~1%)",
+          "effect": "Homozygous ε2. Lowest LDL-C levels but significantly elevated triglycerides. Rare risk of type III hyperlipoproteinemia (dysbetalipoproteinemia) with high triglycerides and cholesterol if additional metabolic triggers present. Strong Alzheimer's disease protection.",
+          "recommendation": "Monitor triglycerides closely — risk of type III hyperlipoproteinemia. Low-fat diet may be needed if triglycerides very high. Favorable Alzheimer's risk profile. Fibrates if type III HLP develops.",
+          "severity": "mild"
+        }
+      },
+      "population_frequency": {
+        "european": 0.08,
+        "african": 0.12,
+        "east_asian": 0.05,
+        "south_asian": 0.06,
+        "latino": 0.07
+      }
+    }
+  ],
+  "evidence_level": "established",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

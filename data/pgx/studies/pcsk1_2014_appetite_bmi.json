@@ -1,0 +1,104 @@
+{
+  "gene": "PCSK1",
+  "category": "nutrient_absorption",
+  "gene_description": "Proprotein Convertase Subtilisin/Kexin Type 1 — endoprotease that converts prohormones (proinsulin, POMC) to active forms. Critical for appetite regulation and energy balance. Variants increase obesity risk through impaired prohormone processing.",
+  "drugs": ["semaglutide", "liraglutide", "insulin"],
+  "source": {
+    "pmid": "25971926",
+    "doi": "10.1093/hmg/ddv197",
+    "source_type": "pubmed",
+    "title": "Contribution of common non-synonymous variants in PCSK1 to body mass index variation and risk of obesity: a systematic review and meta-analysis with evidence from up to 331,175 individuals",
+    "journal": "Human Molecular Genetics",
+    "year": 2014,
+    "cohort_size": 331175,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/25971926/",
+    "finding": "PCSK1 rs6232 (N221D) and rs6235 (S690T) minor alleles are associated with 1.34-fold and 1.22-fold increased obesity risk respectively. Effects consistent across Caucasian, African, and Hispanic ethnicities. Variants impair prohormone processing including proinsulin and POMC."
+  },
+  "snps": [
+    {
+      "rsid": "rs6232",
+      "risk_allele": "A",
+      "reference_allele": "G",
+      "interpretations": {
+        "AA": {
+          "phenotype": "High obesity susceptibility (N221D homozygous, rare)",
+          "effect": "Homozygous N221D carriers have significantly impaired proprotein convertase 1/3 activity. Elevated proinsulin levels indicating impaired proinsulin-to-insulin conversion. Increased BMI and strong obesity risk. May present with features of mild proprotein convertase deficiency.",
+          "recommendation": "Intensive weight management and metabolic monitoring. Proinsulin levels should be monitored. GLP-1 agonists may help with appetite regulation. High-protein, low-glycemic diet to manage insulin resistance. Consider referral to endocrinologist.",
+          "severity": "moderate",
+          "odds_ratio": 1.34
+        },
+        "GA": {
+          "phenotype": "Increased obesity susceptibility",
+          "effect": "Heterozygous N221D carriers show mildly elevated proinsulin/insulin ratio and increased BMI. Moderate obesity risk increase. Partially impaired prohormone processing.",
+          "recommendation": "Weight management strategies. Regular metabolic screening. Balanced caloric intake with emphasis on satiety-promoting foods.",
+          "severity": "mild",
+          "odds_ratio": 1.34
+        },
+        "AG": {
+          "phenotype": "Increased obesity susceptibility",
+          "effect": "Heterozygous N221D carriers show mildly elevated proinsulin/insulin ratio and increased BMI. Moderate obesity risk increase. Partially impaired prohormone processing.",
+          "recommendation": "Weight management strategies. Regular metabolic screening. Balanced caloric intake with emphasis on satiety-promoting foods.",
+          "severity": "mild",
+          "odds_ratio": 1.34
+        },
+        "GG": {
+          "phenotype": "Normal PCSK1 activity at this locus",
+          "effect": "Wild-type N221 with full proprotein convertase activity. Normal proinsulin processing.",
+          "recommendation": "Standard dietary guidelines.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.06,
+        "african": 0.04,
+        "east_asian": 0.02,
+        "south_asian": 0.05,
+        "latino": 0.01
+      }
+    },
+    {
+      "rsid": "rs6235",
+      "risk_allele": "G",
+      "reference_allele": "C",
+      "interpretations": {
+        "GG": {
+          "phenotype": "Increased obesity susceptibility (S690T homozygous)",
+          "effect": "Homozygous S690T carriers show reduced PCSK1 biosynthesis and activity. Elevated proinsulin levels. Increased BMI and 1.22-fold obesity risk per allele. Effect consistent across Caucasian, African, and Hispanic populations but not seen in East Asians.",
+          "recommendation": "Weight management focus. Monitor proinsulin/insulin ratio. High-fiber, high-protein diet to enhance satiety. Regular physical activity.",
+          "severity": "moderate",
+          "odds_ratio": 1.22
+        },
+        "CG": {
+          "phenotype": "Mildly increased obesity risk",
+          "effect": "Heterozygous carriers show intermediate PCSK1 activity and modest BMI increase.",
+          "recommendation": "Standard healthy diet with emphasis on portion control. Regular exercise.",
+          "severity": "mild"
+        },
+        "GC": {
+          "phenotype": "Mildly increased obesity risk",
+          "effect": "Heterozygous carriers show intermediate PCSK1 activity and modest BMI increase.",
+          "recommendation": "Standard healthy diet with emphasis on portion control. Regular exercise.",
+          "severity": "mild"
+        },
+        "CC": {
+          "phenotype": "Normal PCSK1 activity at this locus",
+          "effect": "Wild-type S690 with full proprotein convertase activity.",
+          "recommendation": "Standard dietary guidelines.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.26,
+        "african": 0.20,
+        "east_asian": 0.15,
+        "south_asian": 0.22,
+        "latino": 0.20
+      }
+    }
+  ],
+  "evidence_level": "established",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

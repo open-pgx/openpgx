@@ -1,0 +1,66 @@
+{
+  "gene": "GSTP1",
+  "category": "drug_metabolism",
+  "gene_description": "Glutathione S-transferase Pi 1 — phase II detoxification enzyme that conjugates glutathione to platinum compounds, influencing efficacy and toxicity of cisplatin/carboplatin chemotherapy",
+  "drugs": ["cisplatin", "carboplatin", "oxaliplatin", "paclitaxel"],
+  "source": {
+    "pmid": "27154175",
+    "doi": "10.1007/s00280-016-3047-1",
+    "source_type": "pubmed",
+    "title": "Predictive value of GSTP1 Ile105Val polymorphism in clinical outcomes of chemotherapy in gastric and colorectal cancers: a systematic review and meta-analysis",
+    "journal": "Cancer Chemotherapy and Pharmacology",
+    "year": 2016,
+    "cohort_size": 4375,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/27154175/",
+    "finding": "GSTP1 rs1695 Ile105Val polymorphism significantly affects platinum-based chemotherapy outcomes — Val carriers show reduced detoxification of platinum compounds, leading to higher drug exposure, increased toxicity but potentially better tumor response."
+  },
+  "snps": [
+    {
+      "rsid": "rs1695",
+      "risk_allele": "G",
+      "reference_allele": "A",
+      "interpretations": {
+        "GG": {
+          "phenotype": "Reduced GSTP1 activity (Val/Val)",
+          "effect": "Homozygous Val105 carriers have significantly reduced glutathione-S-transferase activity toward platinum substrates. Lower detoxification of cisplatin/carboplatin leads to higher intracellular platinum concentration. Associated with 3.87-fold increased risk of disease progression in head/neck cancer but higher objective response rates in GI cancers. Greater risk of grade 2-3 nephrotoxicity and ototoxicity.",
+          "recommendation": "Consider closer monitoring for platinum toxicity (nephrotoxicity, neurotoxicity, ototoxicity). Dose adjustments may be warranted. May have better initial tumor response but worse long-term outcomes in some cancer types.",
+          "severity": "moderate",
+          "odds_ratio": 3.87
+        },
+        "AG": {
+          "phenotype": "Intermediate GSTP1 activity (Ile/Val)",
+          "effect": "Heterozygotes show intermediate enzyme activity. Moderate reduction in platinum detoxification. 4.28-fold higher likelihood of grade 2-3 vomiting with cisplatin-based therapy compared to Ile/Ile. Intermediate toxicity and efficacy profile.",
+          "recommendation": "Standard platinum dosing with enhanced monitoring for adverse effects. Watch for nephrotoxicity and severe nausea/vomiting. Consider supportive care adjustments.",
+          "severity": "mild",
+          "odds_ratio": 4.28
+        },
+        "GA": {
+          "phenotype": "Intermediate GSTP1 activity (Ile/Val)",
+          "effect": "Heterozygotes show intermediate enzyme activity. Moderate reduction in platinum detoxification. 4.28-fold higher likelihood of grade 2-3 vomiting with cisplatin-based therapy compared to Ile/Ile. Intermediate toxicity and efficacy profile.",
+          "recommendation": "Standard platinum dosing with enhanced monitoring for adverse effects. Watch for nephrotoxicity and severe nausea/vomiting. Consider supportive care adjustments.",
+          "severity": "mild",
+          "odds_ratio": 4.28
+        },
+        "AA": {
+          "phenotype": "Normal GSTP1 activity (Ile/Ile)",
+          "effect": "Wild-type with full glutathione conjugation activity. Efficient detoxification of platinum compounds. Associated with higher risk of severe hematotoxicity (OR 5.71) due to greater drug activation, but standard drug clearance. Standard toxicity profile for platinum agents.",
+          "recommendation": "Standard platinum-based chemotherapy dosing. Monitor for hematological toxicity as Ile/Ile carriers may paradoxically show higher hematotoxicity rates.",
+          "severity": "info",
+          "odds_ratio": 5.71
+        }
+      },
+      "population_frequency": {
+        "european": 0.33,
+        "african": 0.42,
+        "east_asian": 0.24,
+        "south_asian": 0.35,
+        "latino": 0.37
+      }
+    }
+  ],
+  "evidence_level": "moderate",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

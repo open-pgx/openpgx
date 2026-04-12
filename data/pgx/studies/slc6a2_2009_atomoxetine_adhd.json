@@ -1,0 +1,100 @@
+{
+  "gene": "SLC6A2",
+  "category": "drug_target",
+  "gene_description": "Solute Carrier Family 6 Member 2 (NET) — encodes the norepinephrine transporter, the primary reuptake mechanism for norepinephrine and direct pharmacological target of atomoxetine, venlafaxine, and duloxetine.",
+  "drugs": ["atomoxetine", "venlafaxine", "duloxetine", "nortriptyline", "methylphenidate"],
+  "source": {
+    "pmid": "19387424",
+    "doi": "10.1016/j.nbd.2009.02.012",
+    "source_type": "pubmed",
+    "title": "A haplotype of the norepinephrine transporter (Net) gene Slc6a2 is associated with clinical response to atomoxetine in attention-deficit hyperactivity disorder (ADHD)",
+    "journal": "Neurobiology of Disease",
+    "year": 2009,
+    "cohort_size": 159,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/19387424/",
+    "finding": "NET/SLC6A2 genomic region across exons 4-9 was significantly associated with atomoxetine treatment response in ADHD. Promoter variant rs28386840 T-allele carriers showed greater methylphenidate response in subsequent meta-analysis."
+  },
+  "snps": [
+    {
+      "rsid": "rs28386840",
+      "risk_allele": "A",
+      "reference_allele": "T",
+      "interpretations": {
+        "AA": {
+          "phenotype": "Reduced Stimulant/Atomoxetine Response",
+          "effect": "Homozygous for the A allele at the -3081 promoter position of NET. This variant affects SLC6A2 transcriptional activity and norepinephrine transporter expression. Associated with reduced response to both methylphenidate and atomoxetine in ADHD. Pooled data show T-allele carriers are significantly more likely to respond to stimulant treatment.",
+          "recommendation": "If atomoxetine or methylphenidate response is suboptimal, consider dose escalation or switch to alternative ADHD medications. Alpha-2 agonists (guanfacine, clonidine) may be considered as adjunct or alternative therapy.",
+          "severity": "moderate"
+        },
+        "AT": {
+          "phenotype": "Intermediate Treatment Response",
+          "effect": "Heterozygous carrier with one T allele. Intermediate NET promoter activity and norepinephrine transporter expression. Generally adequate response to atomoxetine and methylphenidate expected, though may not be as robust as TT homozygotes.",
+          "recommendation": "Standard dosing for atomoxetine or stimulants. Monitor clinical response and titrate based on symptom improvement.",
+          "severity": "mild"
+        },
+        "TA": {
+          "phenotype": "Intermediate Treatment Response",
+          "effect": "Heterozygous carrier with one T allele. Intermediate NET promoter activity and norepinephrine transporter expression. Generally adequate response to atomoxetine and methylphenidate expected, though may not be as robust as TT homozygotes.",
+          "recommendation": "Standard dosing for atomoxetine or stimulants. Monitor clinical response and titrate based on symptom improvement.",
+          "severity": "mild"
+        },
+        "TT": {
+          "phenotype": "Enhanced Treatment Response",
+          "effect": "Homozygous for the T allele. Associated with optimal norepinephrine transporter expression and best response to both atomoxetine and methylphenidate in ADHD. T-allele carriers showed significantly greater improvement in hyperactive-impulsive symptoms.",
+          "recommendation": "Standard dosing expected to be effective. Good clinical response anticipated with atomoxetine or stimulant medications.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.35,
+        "african": 0.40,
+        "east_asian": 0.25,
+        "south_asian": 0.30,
+        "latino": 0.33
+      }
+    },
+    {
+      "rsid": "rs2242446",
+      "risk_allele": "C",
+      "reference_allele": "T",
+      "interpretations": {
+        "CC": {
+          "phenotype": "Altered NET Expression",
+          "effect": "Homozygous for the C allele at the -182 promoter position. This variant has potential to influence NET gene transcriptional activity, though direct association with methylphenidate response was not significant in meta-analysis. May contribute to ADHD susceptibility through altered noradrenergic tone.",
+          "recommendation": "Standard medication dosing. This variant alone does not strongly predict treatment response, but consider in context of overall pharmacogenomic profile.",
+          "severity": "mild"
+        },
+        "CT": {
+          "phenotype": "Intermediate NET Expression",
+          "effect": "Heterozygous carrier. Intermediate effect on NET promoter activity. No significant standalone association with treatment response reported.",
+          "recommendation": "Standard dosing per clinical guidelines.",
+          "severity": "info"
+        },
+        "TC": {
+          "phenotype": "Intermediate NET Expression",
+          "effect": "Heterozygous carrier. Intermediate effect on NET promoter activity. No significant standalone association with treatment response reported.",
+          "recommendation": "Standard dosing per clinical guidelines.",
+          "severity": "info"
+        },
+        "TT": {
+          "phenotype": "Normal NET Expression",
+          "effect": "Wild-type alleles at the -182 position. Standard norepinephrine transporter expression and typical ADHD medication response.",
+          "recommendation": "Standard dosing per clinical guidelines.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.42,
+        "african": 0.55,
+        "east_asian": 0.60,
+        "south_asian": 0.50,
+        "latino": 0.45
+      }
+    }
+  ],
+  "evidence_level": "emerging",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "gene": "CYP2C9",
+  "category": "drug_metabolism",
+  "gene_description": "Cytochrome P450 2C9 — major hepatic enzyme responsible for oxidative metabolism of THC, phenytoin, NSAIDs, sulfonylureas, and warfarin. *2 and *3 alleles cause 30% and 80% reduction in activity, respectively.",
+  "drugs": ["THC", "dronabinol", "nabilone", "phenytoin", "fosphenytoin", "glimepiride", "glipizide"],
+  "source": {
+    "pmid": "29386252",
+    "doi": "10.1002/cpt.1003",
+    "source_type": "pubmed",
+    "title": "Pharmacogenomics of CYP2C9: Functional and Clinical Considerations",
+    "journal": "Clinical Pharmacology & Therapeutics",
+    "year": 2018,
+    "cohort_size": null,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/29386252/",
+    "finding": "CYP2C9*2 (rs1799853) and *3 (rs1057910) reduce enzyme activity by 30% and 80% respectively. THC metabolism is significantly reduced in *3 carriers, leading to prolonged psychoactive effects. Allele frequencies up to 18% in Europeans."
+  },
+  "snps": [
+    {
+      "rsid": "rs1799853",
+      "risk_allele": "T",
+      "reference_allele": "C",
+      "interpretations": {
+        "TT": {
+          "phenotype": "CYP2C9*2/*2 — Reduced Metabolizer",
+          "effect": "Homozygous for CYP2C9*2 (Arg144Cys). Approximately 30% reduction in CYP2C9 activity. THC clearance is moderately decreased, potentially leading to prolonged psychoactive effects and elevated plasma levels. Also impacts metabolism of phenytoin, NSAIDs, and sulfonylureas.",
+          "recommendation": "Reduce THC/dronabinol doses and extend dosing intervals. For phenytoin, reduce dose by 25% per CPIC guidelines. For sulfonylureas (glimepiride, glipizide), start at lower doses and monitor blood glucose. Avoid high-frequency cannabis use.",
+          "severity": "moderate"
+        },
+        "TC": {
+          "phenotype": "CYP2C9*1/*2 — Intermediate Metabolizer",
+          "effect": "Heterozygous carrier of CYP2C9*2. Mildly reduced CYP2C9 activity (~15% reduction). Slightly prolonged THC effects and modest impact on clearance of other CYP2C9 substrates.",
+          "recommendation": "Standard dosing generally appropriate for most drugs. May require modest dose adjustment for narrow therapeutic index drugs. Monitor clinical response.",
+          "severity": "mild"
+        },
+        "CT": {
+          "phenotype": "CYP2C9*1/*2 — Intermediate Metabolizer",
+          "effect": "Heterozygous carrier of CYP2C9*2. Mildly reduced CYP2C9 activity (~15% reduction). Slightly prolonged THC effects and modest impact on clearance of other CYP2C9 substrates.",
+          "recommendation": "Standard dosing generally appropriate for most drugs. May require modest dose adjustment for narrow therapeutic index drugs. Monitor clinical response.",
+          "severity": "mild"
+        },
+        "CC": {
+          "phenotype": "Normal CYP2C9 Activity at This Locus",
+          "effect": "Wild-type at the *2 position. Normal CYP2C9 activity at this locus (still check *3 variant rs1057910 for complete phenotype assignment).",
+          "recommendation": "Standard dosing per clinical guidelines. Check CYP2C9*3 status for complete metabolizer phenotype.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.13,
+        "african": 0.02,
+        "east_asian": 0.01,
+        "south_asian": 0.05,
+        "latino": 0.07
+      }
+    },
+    {
+      "rsid": "rs1057910",
+      "risk_allele": "C",
+      "reference_allele": "A",
+      "interpretations": {
+        "CC": {
+          "phenotype": "CYP2C9*3/*3 — Poor Metabolizer",
+          "effect": "Homozygous for CYP2C9*3 (Ile359Leu). Approximately 80% reduction in CYP2C9 activity. Dramatically prolonged THC psychoactive effects and significantly elevated plasma concentrations. High risk of adverse effects from phenytoin, warfarin, NSAIDs, and sulfonylureas due to impaired clearance.",
+          "recommendation": "Avoid THC/dronabinol or use minimal doses with close monitoring. For phenytoin, reduce dose by 50% per CPIC. For warfarin, reduce initial dose significantly. For sulfonylureas, use alternative diabetes medications. Closely monitor for drug toxicity.",
+          "severity": "severe"
+        },
+        "CA": {
+          "phenotype": "CYP2C9*1/*3 — Intermediate Metabolizer",
+          "effect": "Heterozygous carrier of CYP2C9*3. Approximately 40% reduction in CYP2C9 activity. Moderately prolonged THC effects. Clinically significant for drugs with narrow therapeutic indices.",
+          "recommendation": "Reduce THC doses and consider longer dosing intervals. For phenytoin, reduce dose by 25%. Monitor for enhanced drug effects and adverse reactions with all CYP2C9 substrates.",
+          "severity": "moderate"
+        },
+        "AC": {
+          "phenotype": "CYP2C9*1/*3 — Intermediate Metabolizer",
+          "effect": "Heterozygous carrier of CYP2C9*3. Approximately 40% reduction in CYP2C9 activity. Moderately prolonged THC effects. Clinically significant for drugs with narrow therapeutic indices.",
+          "recommendation": "Reduce THC doses and consider longer dosing intervals. For phenytoin, reduce dose by 25%. Monitor for enhanced drug effects and adverse reactions with all CYP2C9 substrates.",
+          "severity": "moderate"
+        },
+        "AA": {
+          "phenotype": "Normal CYP2C9 Activity at This Locus",
+          "effect": "Wild-type at the *3 position. Normal CYP2C9 activity at this locus (still check *2 variant rs1799853 for complete phenotype assignment).",
+          "recommendation": "Standard dosing per clinical guidelines. Check CYP2C9*2 status for complete metabolizer phenotype.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.07,
+        "african": 0.01,
+        "east_asian": 0.04,
+        "south_asian": 0.10,
+        "latino": 0.04
+      }
+    }
+  ],
+  "evidence_level": "established",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

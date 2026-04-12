@@ -1,0 +1,67 @@
+{
+  "gene": "UGT1A4",
+  "category": "metabolism",
+  "gene_description": "UDP-glucuronosyltransferase 1-4 (UGT1A4) — Phase II enzyme responsible for glucuronidation of lamotrigine and other xenobiotics. The UGT1A4*3 variant (Leu48Val) has increased enzymatic activity in vitro but shows conflicting clinical effects on lamotrigine metabolism and seizure control.",
+  "drugs": [
+    "lamotrigine"
+  ],
+  "source": {
+    "pmid": "25492569",
+    "doi": "10.1007/s13318-014-0247-0",
+    "source_type": "pubmed",
+    "title": "Frequencies of UGT1A4*2 (P24T) and *3 (L48V) and their effects on serum concentrations of lamotrigine",
+    "journal": "European Journal of Drug Metabolism and Pharmacokinetics",
+    "year": 2014,
+    "cohort_size": 413,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/25492569/",
+    "finding": "UGT1A4*3 carriers (G allele at rs2011425) show reduced lamotrigine serum concentrations and reduced therapeutic efficacy in some studies but no clinical consequence in others. Meta-analysis of 413 patients showed carriers of G allele (TG+GG genotypes) had significantly reduced lamotrigine concentrations vs TT wild-type. However, some recent studies (2023) show no relevant clinical consequence for lamotrigine troughs in adult epilepsy patients."
+  },
+  "snps": [
+    {
+      "rsid": "rs2011425",
+      "risk_allele": "G",
+      "reference_allele": "T",
+      "note": "c.142T>G SNP resulting in Leu48Val (L48V) amino acid change in UGT1A4*3 variant",
+      "interpretations": {
+        "GG": {
+          "phenotype": "UGT1A4*3/*3 (Homozygous Val48 variant)",
+          "effect": "Homozygous carriers of the Val48 variant may have enhanced glucuronidation capacity for lamotrigine in vitro. Clinical studies show mixed results: some show significantly lower lamotrigine serum concentrations and higher dose requirements, while others (particularly 2023 data) show no clinically relevant differences. G-allele carriers showed reduced lamotrigine serum concentrations in meta-analysis of 3 studies (n=413), with lower therapeutic efficacy reported vs wild-type TT.",
+          "recommendation": "Lamotrigine therapy can be used with standard dosing, but therapeutic drug monitoring (TDM) is recommended to ensure adequate serum concentrations (target 4-20 mcg/mL). If GG genotype is identified and lamotrigine levels are subtherapeutic despite standard dosing, consider modest dose increase. Monitor seizure control closely during titration.",
+          "severity": "mild"
+        },
+        "TG": {
+          "phenotype": "UGT1A4*1/*3 (Heterozygous)",
+          "effect": "Heterozygous carriers show intermediate glucuronidation activity. Some studies report modestly reduced lamotrigine serum concentrations compared to TT wild-type (approximately 15-25% lower), while recent large studies show no clinically relevant consequence. The effect appears population and context-dependent.",
+          "recommendation": "Standard lamotrigine dosing is generally appropriate. Therapeutic drug monitoring may be considered if seizure control is suboptimal or if patient is on concomitant enzyme-inducing or inhibiting medications. Adjust dose based on clinical response and TDM levels if available.",
+          "severity": "mild"
+        },
+        "GT": {
+          "phenotype": "UGT1A4*1/*3 (Heterozygous)",
+          "effect": "Heterozygous carriers show intermediate glucuronidation activity. Some studies report modestly reduced lamotrigine serum concentrations compared to TT wild-type (approximately 15-25% lower), while recent large studies show no clinically relevant consequence. The effect appears population and context-dependent.",
+          "recommendation": "Standard lamotrigine dosing is generally appropriate. Therapeutic drug monitoring may be considered if seizure control is suboptimal or if patient is on concomitant enzyme-inducing or inhibiting medications. Adjust dose based on clinical response and TDM levels if available.",
+          "severity": "mild"
+        },
+        "TT": {
+          "phenotype": "UGT1A4*1/*1 (Wild-type)",
+          "effect": "Wild-type UGT1A4 with normal glucuronidation capacity. Standard lamotrigine serum concentrations and therapeutic efficacy expected with standard dosing regimens.",
+          "recommendation": "Standard lamotrigine dosing per prescribing guidelines is appropriate. No UGT1A4-related dose adjustments needed. Monitor seizure control and adjust dose based on clinical response.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "global": 0.11,
+        "japanese": 0.129,
+        "turkish": 0.224,
+        "jordanian": 0.035,
+        "european": 0.09,
+        "african": 0.08,
+        "south_asian": 0.06
+      }
+    }
+  ],
+  "evidence_level": "moderate",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

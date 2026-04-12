@@ -1,0 +1,50 @@
+{
+  "gene": "CLOCK",
+  "category": "circadian_metabolism",
+  "gene_description": "Circadian locomotor output cycles kaput — core clock transcription factor influencing sleep timing, appetite rhythm, and weight-loss response",
+  "source": {
+    "pmid": "20065968",
+    "doi": "10.1038/ijo.2009.255",
+    "source_type": "pubmed",
+    "title": "CLOCK gene is implicated in weight reduction in obese patients participating in a dietary programme based on the Mediterranean diet",
+    "journal": "International Journal of Obesity",
+    "year": 2010,
+    "cohort_size": null,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/20065968/",
+    "finding": "rs1801260 (3111T>C) minor allele carriers had higher baseline BMI and smaller weight loss on a hypocaloric Mediterranean-style program vs major allele homozygotes."
+  },
+  "snps": [
+    {
+      "rsid": "rs1801260",
+      "risk_allele": "C",
+      "reference_allele": "T",
+      "interpretations": {
+        "TT": {
+          "phenotype": "More favorable weight-loss response (Garaulet cohort)",
+          "effect": "Major-allele homozygotes at rs1801260 showed greater reduction on structured hypocaloric diet in intervention study.",
+          "recommendation": "Regular meal timing and consistent sleep still support all genotypes.",
+          "severity": "info"
+        },
+        "TC": {
+          "phenotype": "Intermediate circadian–metabolic weight response",
+          "effect": "Heterozygotes: intermediate BMI and weight-loss trajectories in obesity diet trials; literature shows population heterogeneity by sex/context.",
+          "recommendation": "Prioritize sleep regularity, morning light, and aligned meal windows alongside diet quality.",
+          "severity": "mild"
+        },
+        "CT": {
+          "phenotype": "Intermediate circadian–metabolic weight response",
+          "effect": "Heterozygotes: intermediate BMI and weight-loss trajectories in obesity diet trials; literature shows population heterogeneity by sex/context.",
+          "recommendation": "Prioritize sleep regularity, morning light, and aligned meal windows alongside diet quality.",
+          "severity": "mild"
+        },
+        "CC": {
+          "phenotype": "Greater BMI signal / diet resistance (some cohorts)",
+          "effect": "Minor-allele homozygotes linked to higher baseline BMI and blunted loss on low-energy Mediterranean program in Garaulet et al.; not all studies agree.",
+          "recommendation": "Stricter adherence support, chronotherapy (sleep/meal timing), and clinician-led weight management if goals are not met.",
+          "severity": "mild"
+        }
+      }
+    }
+  ],
+  "evidence_level": "moderate"
+}

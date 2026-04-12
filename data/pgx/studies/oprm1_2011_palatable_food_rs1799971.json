@@ -1,0 +1,50 @@
+{
+  "gene": "OPRM1",
+  "category": "reward_behavior",
+  "gene_description": "Mu-opioid receptor — endogenous opioid signalling in reward, analgesia, and food preference (Asn40Asp, A118G)",
+  "source": {
+    "pmid": "21266954",
+    "doi": "10.1038/ijo.2010.276",
+    "source_type": "pubmed",
+    "title": "Opiates, overeating and obesity: a psychogenetic analysis",
+    "journal": "International Journal of Obesity",
+    "year": 2011,
+    "cohort_size": 300,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/21266954/",
+    "finding": "OPRM1 rs1799971 (A118G): G/G carriers reported higher preference for sweet and fatty foods vs A-allele groups; preferences correlated with overeating traits and BMI."
+  },
+  "snps": [
+    {
+      "rsid": "rs1799971",
+      "risk_allele": "G",
+      "reference_allele": "A",
+      "interpretations": {
+        "AA": {
+          "phenotype": "Lower self-reported sweet/fat preference (cohort average)",
+          "effect": "Asn40 homozygotes (A/A): lowest palatable-food preference scores in the IJO 2011 cohort.",
+          "recommendation": "Behavioral and environmental factors still drive intake; no change to medical opioid dosing from this finding alone.",
+          "severity": "info"
+        },
+        "AG": {
+          "phenotype": "Intermediate palatable-food preference",
+          "effect": "Heterozygotes: intermediate preference for sweet/fat foods vs AA/GG extremes in the IJO 2011 cohort.",
+          "recommendation": "Structure food environment; mindfulness for stress/emotional eating patterns.",
+          "severity": "info"
+        },
+        "GA": {
+          "phenotype": "Intermediate palatable-food preference",
+          "effect": "Heterozygotes: intermediate preference for sweet/fat foods vs AA/GG extremes in the IJO 2011 cohort.",
+          "recommendation": "Structure food environment; mindfulness for stress/emotional eating patterns.",
+          "severity": "info"
+        },
+        "GG": {
+          "phenotype": "Higher palatable-food preference signal",
+          "effect": "Asp40 homozygotes reported strongest preference for sweet and fatty foods, linked via questionnaires to overeating phenotypes and BMI in this cohort.",
+          "recommendation": "Practical: reduce cue exposure, prioritize protein/fiber meals; discuss disordered eating with a clinician if relevant. Distinct from naltrexone pharmacogenomics.",
+          "severity": "mild"
+        }
+      }
+    }
+  ],
+  "evidence_level": "moderate"
+}

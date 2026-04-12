@@ -1,0 +1,62 @@
+{
+  "gene": "HLA-C",
+  "category": "immune",
+  "gene_description": "HLA class I molecule HLA-C — presents antigens to immune cells; HLA-C*06:02 allele associated with psoriasis susceptibility and exceptional response to IL-12/23 biologics (ustekinumab, risankizumab)",
+  "drugs": ["ustekinumab", "risankizumab", "guselkumab"],
+  "source": {
+    "pmid": "27043841",
+    "doi": "10.1007/s40291-016-0198-z",
+    "source_type": "clinical_study",
+    "title": "A pharmacogenetic study of psoriasis risk variants and prediction of responses to anti-TNF-alpha and anti-IL-12/23 agents",
+    "journal": "Molecular Diagnosis & Therapy",
+    "year": 2016,
+    "cohort_size": 186,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/27043841/",
+    "finding": "HLA-C*06:02+ patients had 92% PASI75 response rate vs 67% in HLA-C*06:02- patients after 6 months ustekinumab; tag SNP rs10484554 associated with response pattern"
+  },
+  "snps": [
+    {
+      "rsid": "rs10484554",
+      "risk_allele": "A",
+      "reference_allele": "G",
+      "interpretations": {
+        "AA": {
+          "phenotype": "HLA-C*06:02 positive (expected)",
+          "effect": "Homozygous A carriers correlate with HLA-C*06:02 allele presence. Exceptional response to IL-12/23 inhibitors (ustekinumab, risankizumab, guselkumab). 92% achieve PASI75 response within 6 months. Strong genetic predisposition to psoriasis but excellent biologic response.",
+          "recommendation": "IL-12/23 inhibitors (ustekinumab 45-90 mg dose, risankizumab 150 mg, guselkumab 100 mg) are first-line biologic choice. Expected response within 12-16 weeks. Consider these agents preferentially in this genotype for optimal outcomes.",
+          "severity": "moderate"
+        },
+        "AG": {
+          "phenotype": "HLA-C*06:02 heterozygous carrier",
+          "effect": "Heterozygous A/G carriers likely represent HLA-C*06:02 allele carriers (one copy). Intermediate to good response to IL-12/23 biologics. Approximately 75-85% achieve PASI75 response.",
+          "recommendation": "IL-12/23 inhibitors remain good first-line biologic choice. Standard dosing recommended. May consider TNF-alpha inhibitors as alternative if IL-12/23 response suboptimal.",
+          "severity": "mild"
+        },
+        "GA": {
+          "phenotype": "HLA-C*06:02 heterozygous carrier",
+          "effect": "Heterozygous G/A carriers likely represent HLA-C*06:02 allele carriers (one copy). Intermediate to good response to IL-12/23 biologics. Approximately 75-85% achieve PASI75 response.",
+          "recommendation": "IL-12/23 inhibitors remain good first-line biologic choice. Standard dosing recommended. May consider TNF-alpha inhibitors as alternative if IL-12/23 response suboptimal.",
+          "severity": "mild"
+        },
+        "GG": {
+          "phenotype": "HLA-C*06:02 negative (wild-type)",
+          "effect": "Homozygous G carriers typically HLA-C*06:02 negative. Lower response rates to IL-12/23 inhibitors (approximately 50-67% PASI75 response). TNF-alpha inhibitors may be more effective in this population.",
+          "recommendation": "Consider TNF-alpha inhibitors (adalimumab, etanercept, infliximab) as first-line biologic therapy. If IL-12/23 inhibitor selected, use with close monitoring for response at 12-16 weeks; be prepared to switch if inadequate response.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.28,
+        "african": 0.12,
+        "east_asian": 0.15,
+        "south_asian": 0.18,
+        "latino": 0.22
+      }
+    }
+  ],
+  "evidence_level": "moderate",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "gene": "FADS1",
+  "category": "nutrient_absorption",
+  "gene_description": "Fatty Acid Desaturase 1 — encodes delta-5 desaturase (D5D), a key enzyme in the conversion of essential fatty acids (omega-3 and omega-6) to their long-chain polyunsaturated forms (EPA, DHA, arachidonic acid).",
+  "drugs": ["omega-3 supplements", "fish oil", "EPA supplements", "DHA supplements"],
+  "source": {
+    "pmid": "29722844",
+    "doi": "10.1371/journal.pone.0194268",
+    "source_type": "pubmed",
+    "title": "Joint effects of fatty acid desaturase 1 polymorphisms and dietary polyunsaturated fatty acid intake on circulating fatty acid proportions",
+    "journal": "PLoS ONE",
+    "year": 2019,
+    "cohort_size": 1500,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/29722844/",
+    "finding": "FADS1 rs174546 T allele carriers have lower delta-5 desaturase activity, resulting in reduced conversion of ALA to EPA/DHA and linoleic acid to arachidonic acid. These individuals benefit more from preformed EPA/DHA supplementation (fish oil) than from plant-based ALA sources."
+  },
+  "snps": [
+    {
+      "rsid": "rs174546",
+      "risk_allele": "T",
+      "reference_allele": "C",
+      "interpretations": {
+        "TT": {
+          "phenotype": "Reduced desaturase activity",
+          "effect": "Homozygous ancestral allele carriers have significantly lower FADS1 activity. Reduced conversion of alpha-linolenic acid (ALA) to EPA and DHA, and of linoleic acid to arachidonic acid. Lower circulating EPA, DHA, and arachidonic acid levels. Higher linoleic acid and DGLA levels. May need higher dietary EPA/DHA to achieve optimal omega-3 status.",
+          "recommendation": "Supplement with preformed EPA+DHA (fish oil, algae oil) rather than relying on plant-based ALA sources (flaxseed, chia). Target 1-2g EPA+DHA daily. Fatty fish 2-3x per week. ALA from plant sources will be poorly converted. Consider omega-3 index testing.",
+          "severity": "moderate"
+        },
+        "CT": {
+          "phenotype": "Intermediate desaturase activity",
+          "effect": "Heterozygotes show intermediate delta-5 desaturase activity. Moderate conversion efficiency of essential fatty acids. Intermediate circulating EPA/DHA levels.",
+          "recommendation": "Include fatty fish regularly (2x per week minimum). May benefit from EPA/DHA supplementation (500mg-1g daily). Plant-based ALA sources provide some but incomplete conversion.",
+          "severity": "mild"
+        },
+        "TC": {
+          "phenotype": "Intermediate desaturase activity",
+          "effect": "Heterozygotes show intermediate delta-5 desaturase activity. Moderate conversion efficiency of essential fatty acids. Intermediate circulating EPA/DHA levels.",
+          "recommendation": "Include fatty fish regularly (2x per week minimum). May benefit from EPA/DHA supplementation (500mg-1g daily). Plant-based ALA sources provide some but incomplete conversion.",
+          "severity": "mild"
+        },
+        "CC": {
+          "phenotype": "High desaturase activity",
+          "effect": "Derived allele homozygotes have highest FADS1 activity. Efficient conversion of ALA to EPA/DHA. Higher arachidonic acid levels which may promote inflammatory pathways. Lower linoleic acid levels.",
+          "recommendation": "Standard omega-3 intake from mixed sources (both plant and marine). Be mindful of omega-6 to omega-3 ratio as efficient arachidonic acid production may promote inflammation with excess omega-6 intake.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.35,
+        "african": 0.10,
+        "east_asian": 0.45,
+        "south_asian": 0.40,
+        "latino": 0.30
+      }
+    }
+  ],
+  "evidence_level": "moderate",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

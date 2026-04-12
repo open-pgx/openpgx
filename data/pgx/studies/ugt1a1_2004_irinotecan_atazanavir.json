@@ -1,0 +1,62 @@
+{
+  "gene": "UGT1A1",
+  "category": "drug_metabolism",
+  "gene_description": "UDP-glucuronosyltransferase Family 1 Member A1 — catalyzes the glucuronidation and elimination of bilirubin and many drugs. The rs8175347 TA repeat polymorphism in the TATA box promoter regulates enzyme expression and activity.",
+  "drugs": [
+    "irinotecan",
+    "atazanavir",
+    "nilotinib",
+    "sorafenib"
+  ],
+  "source": {
+    "pmid": "15647620",
+    "doi": "10.1038/sj.clpt.6100476",
+    "source_type": "guideline",
+    "title": "Clinical Pharmacogenetics Implementation Consortium (CPIC) Guideline for UGT1A1 and Irinotecan Prescribing",
+    "journal": "Clinical Pharmacology & Therapeutics",
+    "year": 2009,
+    "cohort_size": null,
+    "url": "https://www.ncbi.nlm.nih.gov/books/NBK294473/",
+    "finding": "UGT1A1*28 (TA7 repeats from rs8175347) reduces enzyme activity to approximately 30% of normal, increasing risk of severe irinotecan toxicity (neutropenia, diarrhea) and bilirubin elevation with atazanavir."
+  },
+  "snps": [
+    {
+      "rsid": "rs8175347",
+      "reference_allele": "TA6",
+      "risk_allele": "TA7",
+      "variant_name": "UGT1A1*1/*28 and *28/*28 genotypes",
+      "interpretations": {
+        "TA6/TA6": {
+          "phenotype": "Normal UGT1A1 activity",
+          "effect": "Wild-type genotype with normal UGT1A1 expression and glucuronidation capacity. Normal bilirubin metabolism and drug elimination. Normal bilirubin levels (typically <1.2 mg/dL).",
+          "recommendation": "Standard irinotecan dosing per protocol. Standard atazanavir dosing appropriate. No dose adjustments needed. Routine monitoring of liver function and bilirubin.",
+          "severity": "info"
+        },
+        "TA6/TA7": {
+          "phenotype": "Intermediate UGT1A1 activity (Gilbert heterozygote)",
+          "effect": "Heterozygous carriers with intermediate UGT1A1 expression (approximately 70% of normal activity). Slightly elevated bilirubin levels (often 1.2-3.0 mg/dL without clinical jaundice). Moderate risk for irinotecan dose-limiting toxicity (severe diarrhea, neutropenia).",
+          "recommendation": "Irinotecan: Use standard dosing but with close toxicity monitoring. Consider 10-15% dose reduction if dose-limiting toxicity observed. Atazanavir: Standard dosing, monitor for hyperbilirubinemia and jaundice. If bilirubin elevates, may require alternative protease inhibitor.",
+          "severity": "mild"
+        },
+        "TA7/TA7": {
+          "phenotype": "Reduced UGT1A1 activity (Gilbert syndrome)",
+          "effect": "Homozygous TA7 carriers (UGT1A1*28/*28) with significantly reduced enzyme activity (approximately 30% of normal). Chronic unconjugated hyperbilirubinemia (typically 2-5 mg/dL) without hemolysis or hepatic dysfunction. High risk for severe irinotecan toxicity and atazanavir-related hyperbilirubinemia with jaundice.",
+          "recommendation": "Irinotecan: FDA recommends 25-30% dose reduction from standard protocol starting dose. Monitor CBC and diarrhea closely during first cycle. Atazanavir: Use with caution or consider alternative protease inhibitor. If used, baseline and regular bilirubin monitoring mandatory. Patient counseling on expected benign mild jaundice. Avoid concurrent use with irinotecan.",
+          "severity": "high"
+        }
+      }
+    }
+  ],
+  "population_frequency": {
+    "note": "Variable by ancestry",
+    "caucasian_ta7_frequency": "36-39%",
+    "african_ta7_frequency": "10-20%",
+    "asian_ta7_frequency": "15-25%",
+    "homozygous_ta7_ta7_frequency": "5-14%"
+  },
+  "evidence_level": "established",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

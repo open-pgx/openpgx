@@ -1,0 +1,63 @@
+{
+  "gene": "CRY2",
+  "category": "nutrient_absorption",
+  "gene_description": "Cryptochrome Circadian Regulator 2 — flavin adenine dinucleotide-binding protein essential for circadian rhythm stability. Regulates glucose homeostasis through circadian clock-metabolic coupling. Variants affect fasting glucose and type 2 diabetes risk.",
+  "drugs": ["melatonin"],
+  "source": {
+    "pmid": "40599617",
+    "doi": "10.3892/br.2025.2022",
+    "source_type": "pubmed",
+    "title": "CRY2 (rs11605924) and G6PC2 (rs560887) single nucleotide polymorphisms increase risk of type 2 diabetes mellitus",
+    "journal": "Biomedical Reports",
+    "year": 2025,
+    "cohort_size": 614,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/40599617/",
+    "finding": "CRY2 rs11605924 recessive genotype is associated with 1.82-fold increased T2DM risk. The A allele affects 2h glucose concentrations (β=0.07 mmol/L per allele) with season-dependent effects (stronger in dark season). Gene-diet fat interactions modify energy expenditure response to weight loss."
+  },
+  "snps": [
+    {
+      "rsid": "rs11605924",
+      "risk_allele": "A",
+      "reference_allele": "C",
+      "interpretations": {
+        "AA": {
+          "phenotype": "Increased T2DM risk / circadian metabolic disruption",
+          "effect": "Homozygous A carriers show 1.82-fold increased type 2 diabetes risk. Elevated 2h post-load glucose levels, particularly during winter/dark season. Greater reduction in respiratory quotient (RQ) and increase in resting metabolic rate with weight-loss diets. Significant gene-diet fat interactions affect metabolic adaptation. Hepatic lipid content may be elevated.",
+          "recommendation": "Monitor fasting and post-load glucose regularly. Seasonal variation in glucose — extra vigilance in winter months. Low-fat dietary interventions show particular metabolic benefit for this genotype. Maintain consistent circadian schedule. Adequate light exposure during dark months.",
+          "severity": "moderate",
+          "odds_ratio": 1.82
+        },
+        "AC": {
+          "phenotype": "Intermediate circadian-metabolic risk",
+          "effect": "Heterozygous carriers show intermediate glucose effects. Mild seasonal variation in metabolic parameters. Modest gene-diet interactions.",
+          "recommendation": "Standard metabolic monitoring. Maintain regular meal and sleep schedules. Moderate fat intake.",
+          "severity": "mild"
+        },
+        "CA": {
+          "phenotype": "Intermediate circadian-metabolic risk",
+          "effect": "Heterozygous carriers show intermediate glucose effects. Mild seasonal variation in metabolic parameters. Modest gene-diet interactions.",
+          "recommendation": "Standard metabolic monitoring. Maintain regular meal and sleep schedules. Moderate fat intake.",
+          "severity": "mild"
+        },
+        "CC": {
+          "phenotype": "Normal circadian glucose regulation",
+          "effect": "Wild-type CRY2 function with standard circadian-metabolic coupling. Normal glucose homeostasis from this locus.",
+          "recommendation": "Standard dietary and lifestyle guidelines.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.49,
+        "african": 0.40,
+        "east_asian": 0.35,
+        "south_asian": 0.45,
+        "latino": 0.42
+      }
+    }
+  ],
+  "evidence_level": "moderate",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

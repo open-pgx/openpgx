@@ -1,0 +1,62 @@
+{
+  "gene": "SLC2A2",
+  "category": "nutrient_absorption",
+  "gene_description": "Solute Carrier Family 2 Member 2 (GLUT2) — facilitative glucose transporter and glucose sensor in liver, pancreatic beta cells, intestine, kidney, and brain. Controls glucose sensing, insulin secretion, and sugar intake behavior.",
+  "drugs": ["metformin", "empagliflozin", "dapagliflozin"],
+  "source": {
+    "pmid": "18000092",
+    "doi": "10.1152/physiolgenomics.00148.2007",
+    "source_type": "pubmed",
+    "title": "Genetic variant in the glucose transporter type 2 is associated with higher intakes of sugars in two distinct populations",
+    "journal": "Physiological Genomics",
+    "year": 2007,
+    "cohort_size": 2700,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/18000092/",
+    "finding": "SLC2A2 rs5400 (Thr110Ile) T allele carriers consume significantly more sugar per day (131g vs 115g). The variant affects GLUT2 glucose sensing, fasting glucose, HbA1c, and conversion from impaired glucose tolerance to type 2 diabetes."
+  },
+  "snps": [
+    {
+      "rsid": "rs5400",
+      "risk_allele": "T",
+      "reference_allele": "C",
+      "interpretations": {
+        "TT": {
+          "phenotype": "Impaired glucose sensing / high sugar intake",
+          "effect": "Homozygous Ile110 carriers have altered GLUT2 glucose sensing function. Significantly higher habitual sugar consumption (~14% more). Elevated fasting glucose and HbA1c. Increased risk of conversion from impaired glucose tolerance to type 2 diabetes. Altered glycemic response to metformin.",
+          "recommendation": "Active sugar intake reduction — awareness that genetic predisposition drives higher sugar consumption. Use portion control and sugar alternatives. Regular fasting glucose and HbA1c monitoring. Avoid sugar-sweetened beverages. High-fiber diet to slow glucose absorption.",
+          "severity": "moderate"
+        },
+        "CT": {
+          "phenotype": "Intermediate glucose sensing",
+          "effect": "Heterozygous carriers show intermediate sugar intake tendency and mildly elevated fasting glucose. Moderate GLUT2 function alteration.",
+          "recommendation": "Monitor sugar intake. Regular metabolic screening. Balanced diet with emphasis on complex carbohydrates over simple sugars.",
+          "severity": "mild"
+        },
+        "TC": {
+          "phenotype": "Intermediate glucose sensing",
+          "effect": "Heterozygous carriers show intermediate sugar intake tendency and mildly elevated fasting glucose. Moderate GLUT2 function alteration.",
+          "recommendation": "Monitor sugar intake. Regular metabolic screening. Balanced diet with emphasis on complex carbohydrates over simple sugars.",
+          "severity": "mild"
+        },
+        "CC": {
+          "phenotype": "Normal GLUT2 glucose sensing",
+          "effect": "Wild-type with full GLUT2 glucose sensing and transport function. Normal sugar intake patterns and fasting glucose from this locus.",
+          "recommendation": "Standard dietary guidelines.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.15,
+        "african": 0.10,
+        "east_asian": 0.08,
+        "south_asian": 0.12,
+        "latino": 0.13
+      }
+    }
+  ],
+  "evidence_level": "moderate",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

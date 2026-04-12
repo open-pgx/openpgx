@@ -1,0 +1,100 @@
+{
+  "gene": "MC1R",
+  "category": "drug_target",
+  "gene_description": "Melanocortin 1 Receptor — G-protein coupled receptor on melanocytes controlling pigmentation. Loss-of-function variants (red hair phenotype) alter pain sensitivity and increase anesthetic requirement by ~19% through melanocortin-opioid receptor system crosstalk.",
+  "drugs": ["sevoflurane", "desflurane", "isoflurane", "propofol", "lidocaine", "pentazocine", "nalbuphine", "butorphanol"],
+  "source": {
+    "pmid": "15277922",
+    "doi": "10.1097/00000542-200408000-00006",
+    "source_type": "pubmed",
+    "title": "Anesthetic Requirement is Increased in Redheads",
+    "journal": "Anesthesiology",
+    "year": 2004,
+    "cohort_size": 40,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/15277922/",
+    "finding": "Anesthetic requirement in redheads (MC1R variant carriers) was increased by 19% (desflurane MAC 6.2 vs 5.2 vol%), a highly statistically significant difference (p=0.0004), confirming altered pain sensitivity in MC1R loss-of-function carriers."
+  },
+  "snps": [
+    {
+      "rsid": "rs1805007",
+      "risk_allele": "T",
+      "reference_allele": "C",
+      "interpretations": {
+        "TT": {
+          "phenotype": "Increased Anesthetic Requirement — Red Hair Phenotype",
+          "effect": "Homozygous for the R151C variant. Major determinant of red hair phenotype. Approximately 19% higher anesthetic requirement (MAC increase). Enhanced pain sensitivity across multiple pain modalities. Increased responsiveness to certain kappa-opioid agonists (pentazocine, nalbuphine). Mechanism involves melanocortin-opioid receptor system crosstalk in both peripheral and central pathways.",
+          "recommendation": "Increase volatile anesthetic doses by approximately 20%. Plan for potentially higher analgesic requirements perioperatively. Local anesthetics may also have reduced efficacy — consider higher doses of lidocaine/bupivacaine. However, kappa-opioid agonists may be more effective. Communicate MC1R status to anesthesia team preoperatively.",
+          "severity": "moderate"
+        },
+        "TC": {
+          "phenotype": "Mildly Increased Anesthetic Requirement",
+          "effect": "Heterozygous carrier of R151C. May contribute to red or auburn hair depending on other MC1R variants. Intermediate increase in anesthetic requirement and pain sensitivity. Partial loss of MC1R function.",
+          "recommendation": "Be aware of potentially increased anesthetic and analgesic needs. Monitor depth of anesthesia carefully. Standard starting doses with readiness to titrate upward.",
+          "severity": "mild"
+        },
+        "CT": {
+          "phenotype": "Mildly Increased Anesthetic Requirement",
+          "effect": "Heterozygous carrier of R151C. May contribute to red or auburn hair depending on other MC1R variants. Intermediate increase in anesthetic requirement and pain sensitivity. Partial loss of MC1R function.",
+          "recommendation": "Be aware of potentially increased anesthetic and analgesic needs. Monitor depth of anesthesia carefully. Standard starting doses with readiness to titrate upward.",
+          "severity": "mild"
+        },
+        "CC": {
+          "phenotype": "Normal Anesthetic Requirement",
+          "effect": "Wild-type at this position. Normal MC1R function and standard pain sensitivity. Typical anesthetic requirement.",
+          "recommendation": "Standard anesthetic and analgesic dosing per clinical protocols.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.10,
+        "african": 0.01,
+        "east_asian": 0.01,
+        "south_asian": 0.02,
+        "latino": 0.03
+      }
+    },
+    {
+      "rsid": "rs1805008",
+      "risk_allele": "T",
+      "reference_allele": "C",
+      "interpretations": {
+        "TT": {
+          "phenotype": "Increased Anesthetic Requirement — Red Hair Variant",
+          "effect": "Homozygous for the R160W variant. Another major red hair determinant. Combined with rs1805007, accounts for approximately 60% of red hair cases. Similar increase in anesthetic requirement and pain sensitivity as R151C.",
+          "recommendation": "Same precautions as rs1805007 TT. Increase anesthetic doses by ~20%. Plan for higher analgesic needs. Inform anesthesia team.",
+          "severity": "moderate"
+        },
+        "TC": {
+          "phenotype": "Mildly Increased Anesthetic Requirement",
+          "effect": "Heterozygous R160W carrier. Partial effect on pigmentation and pain sensitivity.",
+          "recommendation": "Monitor anesthetic depth. Be prepared to titrate upward if needed.",
+          "severity": "mild"
+        },
+        "CT": {
+          "phenotype": "Mildly Increased Anesthetic Requirement",
+          "effect": "Heterozygous R160W carrier. Partial effect on pigmentation and pain sensitivity.",
+          "recommendation": "Monitor anesthetic depth. Be prepared to titrate upward if needed.",
+          "severity": "mild"
+        },
+        "CC": {
+          "phenotype": "Normal Anesthetic Requirement",
+          "effect": "Wild-type at this position. Normal MC1R function.",
+          "recommendation": "Standard dosing per clinical protocols.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.08,
+        "african": 0.005,
+        "east_asian": 0.005,
+        "south_asian": 0.01,
+        "latino": 0.02
+      }
+    }
+  ],
+  "evidence_level": "moderate",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

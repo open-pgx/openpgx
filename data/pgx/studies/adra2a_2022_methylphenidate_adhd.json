@@ -1,0 +1,62 @@
+{
+  "gene": "ADRA2A",
+  "category": "drug_target",
+  "gene_description": "Alpha-2A Adrenergic Receptor — major norepinephrine receptor in the prefrontal cortex, primary target of guanfacine and clonidine, and modulator of stimulant response in ADHD.",
+  "drugs": ["guanfacine", "clonidine", "methylphenidate"],
+  "source": {
+    "pmid": "36325160",
+    "doi": "10.1016/j.bpsgos.2021.07.003",
+    "source_type": "pubmed",
+    "title": "Review and Meta-analysis on the Impact of the ADRA2A Variant rs1800544 on Methylphenidate Outcomes in Attention-Deficit/Hyperactivity Disorder",
+    "journal": "Biological Psychiatry: Global Open Science",
+    "year": 2022,
+    "cohort_size": 1068,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/36325160/",
+    "finding": "Meta-analysis showed G-allele carriers of rs1800544 had significantly greater ADHD symptom improvement with methylphenidate (OR=3.08, 95% CI 1.71-5.56, p=0.0002) compared to non-carriers."
+  },
+  "snps": [
+    {
+      "rsid": "rs1800544",
+      "risk_allele": "C",
+      "reference_allele": "G",
+      "interpretations": {
+        "CC": {
+          "phenotype": "Reduced Methylphenidate Response",
+          "effect": "Homozygous for the C allele at the -1291 promoter position. Associated with reduced methylphenidate efficacy in ADHD. The C allele is the most common allele in European populations (~73-75%). Individuals lacking the G allele showed significantly less improvement in ADHD symptom scores in meta-analysis.",
+          "recommendation": "If methylphenidate response is suboptimal, consider dose increase or switching to non-stimulant alpha-2 agonists (guanfacine, clonidine) which directly target ADRA2A. As this receptor is the pharmacological target of guanfacine, genotype may also influence alpha-2 agonist response.",
+          "severity": "moderate"
+        },
+        "CG": {
+          "phenotype": "Enhanced Methylphenidate Response",
+          "effect": "Heterozygous G-allele carrier. The G allele at -1291 is associated with significantly greater ADHD symptom improvement with methylphenidate (OR=3.08). Intermediate response expected between GG and CC genotypes.",
+          "recommendation": "Standard methylphenidate dosing likely effective. Monitor response during titration as enhanced efficacy may allow lower effective doses.",
+          "severity": "mild"
+        },
+        "GC": {
+          "phenotype": "Enhanced Methylphenidate Response",
+          "effect": "Heterozygous G-allele carrier. The G allele at -1291 is associated with significantly greater ADHD symptom improvement with methylphenidate (OR=3.08). Intermediate response expected between GG and CC genotypes.",
+          "recommendation": "Standard methylphenidate dosing likely effective. Monitor response during titration as enhanced efficacy may allow lower effective doses.",
+          "severity": "mild"
+        },
+        "GG": {
+          "phenotype": "Optimal Methylphenidate Response",
+          "effect": "Homozygous for the G allele. Strongest association with methylphenidate efficacy in ADHD. Carriers of two G alleles showed the greatest improvement in attention and hyperactivity-impulsivity symptoms during treatment.",
+          "recommendation": "Methylphenidate is expected to be effective. Standard dosing per ADHD guidelines. This genotype is relatively uncommon in European populations.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.27,
+        "african": 0.73,
+        "east_asian": 0.50,
+        "south_asian": 0.45,
+        "latino": 0.35
+      }
+    }
+  ],
+  "evidence_level": "moderate",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

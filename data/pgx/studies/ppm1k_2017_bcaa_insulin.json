@@ -1,0 +1,62 @@
+{
+  "gene": "PPM1K",
+  "category": "nutrient_absorption",
+  "gene_description": "Protein Phosphatase Mg2+/Mn2+ Dependent 1K — mitochondrial phosphatase that activates BCKDH (branched-chain alpha-keto acid dehydrogenase), the rate-limiting enzyme in branched-chain amino acid (BCAA) catabolism. Variants affect circulating BCAA levels and insulin secretion.",
+  "drugs": ["metformin"],
+  "source": {
+    "pmid": "28768654",
+    "doi": "10.3945/ajcn.117.156281",
+    "source_type": "pubmed",
+    "title": "Effect of the interaction between diet composition and the PPM1K genetic variant on insulin resistance and β cell function markers during weight loss",
+    "journal": "American Journal of Clinical Nutrition",
+    "year": 2017,
+    "cohort_size": 771,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/28768654/",
+    "finding": "PPM1K rs1440581 T allele is associated with elevated serum valine and total BCAAs. Significant gene-diet interactions: T allele carriers show higher insulin reduction on high-fat diet but smaller glucose improvement during weight-loss. CC genotype associated with cardiovascular disease risk."
+  },
+  "snps": [
+    {
+      "rsid": "rs1440581",
+      "risk_allele": "C",
+      "reference_allele": "T",
+      "interpretations": {
+        "CC": {
+          "phenotype": "Elevated BCAAs / cardiovascular risk",
+          "effect": "Homozygous C carriers show elevated serum valine and total BCAA levels. PPM1K phosphatase activity may be altered, affecting BCKDH-mediated BCAA catabolism. Associated with increased cardiovascular disease risk. Decreased PPM1K expression impairs glucose-stimulated insulin secretion in pancreatic beta cells.",
+          "recommendation": "Monitor cardiovascular risk markers. Moderate protein intake with balanced BCAA sources. Consider lower BCAA supplementation. Regular fasting glucose and insulin monitoring. Low-fat dietary pattern may be preferable.",
+          "severity": "moderate"
+        },
+        "CT": {
+          "phenotype": "Intermediate BCAA metabolism",
+          "effect": "Heterozygous carriers show intermediate BCAA levels and mixed metabolic response to dietary interventions.",
+          "recommendation": "Balanced macronutrient intake. Standard metabolic monitoring.",
+          "severity": "mild"
+        },
+        "TC": {
+          "phenotype": "Intermediate BCAA metabolism",
+          "effect": "Heterozygous carriers show intermediate BCAA levels and mixed metabolic response to dietary interventions.",
+          "recommendation": "Balanced macronutrient intake. Standard metabolic monitoring.",
+          "severity": "mild"
+        },
+        "TT": {
+          "phenotype": "Normal BCAA catabolism",
+          "effect": "T allele carriers show better glucose improvement during weight-loss interventions. Higher insulin reduction on high-fat diets (gene-diet interaction). Normal BCAA catabolism.",
+          "recommendation": "Standard dietary guidelines. Responds well to weight-loss dietary interventions.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.40,
+        "african": 0.35,
+        "east_asian": 0.30,
+        "south_asian": 0.38,
+        "latino": 0.37
+      }
+    }
+  ],
+  "evidence_level": "moderate",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "gene": "FAAH",
+  "category": "drug_metabolism",
+  "gene_description": "Fatty Acid Amide Hydrolase — primary enzyme responsible for degradation of the endocannabinoid anandamide (AEA). Loss-of-function variants elevate endocannabinoid tone, modulating cannabinoid therapy response and substance use vulnerability.",
+  "drugs": ["cannabidiol", "dronabinol", "nabilone"],
+  "source": {
+    "pmid": "28150397",
+    "doi": "10.1111/adb.12480",
+    "source_type": "pubmed",
+    "title": "Severity of alcohol dependence is associated with the fatty acid amide hydrolase Pro129Thr missense variant",
+    "journal": "Addiction Biology",
+    "year": 2017,
+    "cohort_size": 1641,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/28150397/",
+    "finding": "FAAH Pro129Thr (rs324420 A allele) reduces FAAH protein stability and elevates anandamide levels, associated with differential susceptibility to substance use disorders, anxiety modulation, and altered endocannabinoid signaling."
+  },
+  "snps": [
+    {
+      "rsid": "rs324420",
+      "risk_allele": "A",
+      "reference_allele": "C",
+      "interpretations": {
+        "AA": {
+          "phenotype": "FAAH Deficient — Elevated Endocannabinoid Tone",
+          "effect": "Homozygous for the Thr129 variant (Pro129Thr). Markedly reduced FAAH protein stability and enzymatic activity, leading to significantly elevated anandamide levels. Enhanced endogenous cannabinoid signaling may alter response to exogenous cannabinoids (CBD, THC). Associated with increased vulnerability to substance use disorders, altered anxiety reactivity, and modified pain perception.",
+          "recommendation": "Expect enhanced sensitivity to cannabinoid-based medications due to elevated endocannabinoid baseline. Start at lower doses of CBD/THC preparations. Monitor for excessive sedation or anxiolytic effects. Screen for substance use disorder risk. May benefit from lower CBD doses for anxiety management.",
+          "severity": "moderate"
+        },
+        "AC": {
+          "phenotype": "Intermediate FAAH Activity",
+          "effect": "Heterozygous carrier (Pro/Thr). Partially reduced FAAH activity with moderately elevated anandamide levels. Intermediate endocannabinoid tone compared to wild-type. May show slightly enhanced responses to cannabinoid medications.",
+          "recommendation": "Standard cannabinoid dosing generally appropriate. Monitor for enhanced or prolonged effects. Consider individual variation in response during dose titration.",
+          "severity": "mild"
+        },
+        "CA": {
+          "phenotype": "Intermediate FAAH Activity",
+          "effect": "Heterozygous carrier (Pro/Thr). Partially reduced FAAH activity with moderately elevated anandamide levels. Intermediate endocannabinoid tone compared to wild-type. May show slightly enhanced responses to cannabinoid medications.",
+          "recommendation": "Standard cannabinoid dosing generally appropriate. Monitor for enhanced or prolonged effects. Consider individual variation in response during dose titration.",
+          "severity": "mild"
+        },
+        "CC": {
+          "phenotype": "Normal FAAH Activity",
+          "effect": "Homozygous for the Pro129 wild-type allele. Normal FAAH enzymatic function and anandamide degradation. Standard endocannabinoid tone and typical response to cannabinoid-based medications.",
+          "recommendation": "Standard dosing for cannabinoid preparations per clinical guidelines.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.21,
+        "african": 0.11,
+        "east_asian": 0.15,
+        "south_asian": 0.18,
+        "latino": 0.19
+      }
+    }
+  ],
+  "evidence_level": "moderate",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

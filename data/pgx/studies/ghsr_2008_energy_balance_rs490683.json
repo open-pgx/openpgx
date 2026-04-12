@@ -1,0 +1,50 @@
+{
+  "gene": "GHSR",
+  "category": "energy_balance",
+  "gene_description": "Growth hormone secretagogue receptor (ghrelin receptor) — promoter variants linked to weight change during lifestyle intervention and glucose metabolism",
+  "source": {
+    "pmid": "18698404",
+    "doi": "10.1371/journal.pone.0002941",
+    "source_type": "pubmed",
+    "title": "Variations in the Ghrelin Receptor Gene Associate with Obesity and Glucose Metabolism in Individuals with Impaired Glucose Tolerance",
+    "journal": "PLoS ONE",
+    "year": 2008,
+    "cohort_size": null,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/18698404/",
+    "finding": "Promoter rs490683: CC genotype associated with greatest weight loss during long-term lifestyle intervention; G allele linked to altered NF-1 binding and higher GHSR expression in reporter assays."
+  },
+  "snps": [
+    {
+      "rsid": "rs490683",
+      "risk_allele": "G",
+      "reference_allele": "C",
+      "interpretations": {
+        "CC": {
+          "phenotype": "More favorable weight-loss response (Finnish DPS subgroup)",
+          "effect": "CC carriers showed the largest mean weight loss over follow-up in impaired-glucose-tolerance lifestyle trial.",
+          "recommendation": "Lifestyle programs remain first-line; genotype does not replace monitoring of glucose and weight.",
+          "severity": "info"
+        },
+        "CG": {
+          "phenotype": "Intermediate ghrelin-receptor promoter effect",
+          "effect": "Heterozygotes: intermediate longitudinal weight and glucose-metabolism patterns vs CC/GG in Mager et al.",
+          "recommendation": "Sustained dietary quality and activity; track metabolic markers with usual care.",
+          "severity": "info"
+        },
+        "GC": {
+          "phenotype": "Intermediate ghrelin-receptor promoter effect",
+          "effect": "Heterozygotes: intermediate longitudinal weight and glucose-metabolism patterns vs CC/GG in Mager et al.",
+          "recommendation": "Sustained dietary quality and activity; track metabolic markers with usual care.",
+          "severity": "info"
+        },
+        "GG": {
+          "phenotype": "Less weight loss / stronger promoter signal (trial context)",
+          "effect": "GG associated with lowest body weight at baseline in that cohort and smaller loss over intervention; functional data suggest higher GHSR expression with intact NF-1 motif.",
+          "recommendation": "Extra structure for appetite (meal timing, protein, fiber); interpret with clinician in context of diabetes risk.",
+          "severity": "mild"
+        }
+      }
+    }
+  ],
+  "evidence_level": "emerging"
+}

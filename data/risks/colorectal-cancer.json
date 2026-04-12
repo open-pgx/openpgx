@@ -24,6 +24,61 @@
         "european": 0.29
       },
       "effect_template": "11q23.1 locus variant. Modest effect on colorectal cancer risk."
+    },
+    {
+      "rsid": "rs4939827",
+      "gene_region": "SMAD7",
+      "risk_allele": "T",
+      "odds_ratio": 1.18,
+      "population_frequency": {
+        "global": 0.45,
+        "european": 0.46
+      },
+      "effect_template": "SMAD7 variant associated with colorectal cancer risk (OR ~1.18)."
+    },
+    {
+      "rsid": "rs4444235",
+      "gene_region": "BMP4",
+      "risk_allele": "C",
+      "odds_ratio": 1.12,
+      "population_frequency": {
+        "global": 0.36,
+        "european": 0.37
+      },
+      "effect_template": "BMP4 region variant involved in bone morphogenetic protein signaling and colorectal cancer susceptibility."
+    },
+    {
+      "rsid": "rs10936599",
+      "gene_region": "RHPN2",
+      "risk_allele": "C",
+      "odds_ratio": 1.08,
+      "population_frequency": {
+        "global": 0.28,
+        "european": 0.29
+      },
+      "effect_template": "RHPN2 variant affecting colorectal cancer risk with modest effect size."
+    },
+    {
+      "rsid": "rs16969681",
+      "gene_region": "GREM1",
+      "risk_allele": "T",
+      "odds_ratio": 1.26,
+      "population_frequency": {
+        "global": 0.32,
+        "european": 0.33
+      },
+      "effect_template": "GREM1 variant in gremlin 1 pathway associated with increased colorectal cancer risk (OR ~1.26)."
+    },
+    {
+      "rsid": "rs16892766",
+      "gene_region": "EIF3H",
+      "risk_allele": "C",
+      "odds_ratio": 1.25,
+      "population_frequency": {
+        "global": 0.38,
+        "european": 0.39
+      },
+      "effect_template": "EIF3H variant in translation initiation factor pathway linked to colorectal cancer susceptibility."
     }
   ],
   "evidence_level": "established",
@@ -39,6 +94,15 @@
       "cohort_size": 7480,
       "url": "https://pubmed.ncbi.nlm.nih.gov/17618284/",
       "finding": "rs6983267 G allele OR=1.27 for colorectal cancer"
+    },
+    {
+      "pmid": "18372905",
+      "title": "Meta-analysis of genome-wide association data identifies four new susceptibility loci for colorectal cancer",
+      "journal": "Nature Genetics",
+      "year": 2008,
+      "cohort_size": 38000,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/18372905/",
+      "finding": "Identified multiple colorectal cancer susceptibility loci including SMAD7, BMP4, RHPN2, GREM1, and EIF3H variants"
     }
   ]
 }

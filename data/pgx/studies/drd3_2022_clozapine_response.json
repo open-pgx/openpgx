@@ -1,0 +1,63 @@
+{
+  "gene": "DRD3",
+  "category": "antipsychotic_response",
+  "gene_description": "Dopamine D3 Receptor — a dopamine receptor subtype involved in reward processing, motor control, and antipsychotic drug response. The functional Ser9Gly polymorphism (rs6280) affects extracellular N-terminal domain structure and dopamine binding affinity, influencing antipsychotic medication response.",
+  "drugs": ["clozapine", "risperidone", "olanzapine", "quetiapine"],
+  "source": {
+    "pmid": "35710824",
+    "doi": "10.1038/s41397-022-00281-9",
+    "source_type": "pubmed",
+    "title": "DRD3 Ser9Gly polymorphism and treatment response to antipsychotics in schizophrenia: A meta-analysis",
+    "journal": "The Pharmacogenomics Journal",
+    "year": 2022,
+    "cohort_size": 1769,
+    "url": "https://www.nature.com/articles/s41397-022-00281-9",
+    "finding": "Meta-analysis of 13 studies with 1,769 patients found Ser9Gly polymorphism significantly associated with antipsychotic response in Caucasians (allele model OR=0.72, P=0.002). Ser allele and Ser/Ser genotype associated with poor clozapine response. Association not significant in Asian populations."
+  },
+  "snps": [
+    {
+      "rsid": "rs6280",
+      "risk_allele": "A",
+      "reference_allele": "G",
+      "interpretations": {
+        "AA": {
+          "phenotype": "Poor clozapine response, Ser9/Ser9 homozygous",
+          "effect": "Homozygous Ser9 (A-allele) carriers show significantly reduced clozapine and risperidone response. Poor symptom remission rates. Higher rates of treatment resistance. Impaired dopamine D3 receptor sensitivity affects antipsychotic efficacy. More common poor responders in this group in Caucasian populations.",
+          "recommendation": "Consider higher clozapine doses or combination antipsychotic strategies. Monitor for adequate symptom response at 4-8 weeks; escalate dose if inadequate response. May benefit from augmentation with other agents (lithium, valproate). Close EPS and metabolic monitoring recommended. Consider alternative antipsychotics like aripiprazole which may have better response profile.",
+          "severity": "moderate",
+          "odds_ratio": 0.72
+        },
+        "AG": {
+          "phenotype": "Intermediate clozapine response, Ser9/Gly9 heterozygous",
+          "effect": "Heterozygous carriers (Ser9/Gly9) show intermediate antipsychotic response. Slightly reduced clozapine efficacy compared to Gly/Gly homozygotes. Variable symptom improvement rates.",
+          "recommendation": "Standard clozapine dosing with close clinical monitoring. Assess response at 4-6 weeks and optimize dose as needed. Monitor for extrapyramidal side effects and metabolic effects. Standard pharmacological and behavioral interventions.",
+          "severity": "mild"
+        },
+        "GG": {
+          "phenotype": "Favorable clozapine response, Gly9/Gly9 homozygous",
+          "effect": "Wild-type Gly9 homozygotes show better clozapine and antipsychotic response. Higher rates of symptom remission. More sensitive dopamine D3 receptor signaling. Better treatment outcomes in this genotype group.",
+          "recommendation": "Standard clozapine dosing with expected good response. Monitor at 4-6 weeks and maintain effective dose. Routine monitoring for metabolic and neurological effects. Standard behavioral interventions.",
+          "severity": "info"
+        },
+        "GA": {
+          "phenotype": "Intermediate clozapine response, Ser9/Gly9 heterozygous",
+          "effect": "Heterozygous carriers (Ser9/Gly9) show intermediate antipsychotic response. Slightly reduced clozapine efficacy compared to Gly/Gly homozygotes. Variable symptom improvement rates.",
+          "recommendation": "Standard clozapine dosing with close clinical monitoring. Assess response at 4-6 weeks and optimize dose as needed. Monitor for extrapyramidal side effects and metabolic effects. Standard pharmacological and behavioral interventions.",
+          "severity": "mild"
+        }
+      },
+      "population_frequency": {
+        "european": 0.32,
+        "african": 0.28,
+        "east_asian": 0.38,
+        "south_asian": 0.34,
+        "latino": 0.30
+      }
+    }
+  ],
+  "evidence_level": "moderate",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

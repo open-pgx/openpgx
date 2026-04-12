@@ -24,6 +24,72 @@
         "european": 0.47
       },
       "effect_template": "9p21.3 variant independently associated with CAD and MI risk."
+    },
+    {
+      "rsid": "rs10455872",
+      "gene_region": "LPA",
+      "risk_allele": "G",
+      "odds_ratio": 1.7,
+      "population_frequency": {
+        "global": 0.08,
+        "european": 0.09
+      },
+      "effect_template": "Lipoprotein(a) risk variant. G allele increases CAD risk through lipoprotein(a) elevation."
+    },
+    {
+      "rsid": "rs599839",
+      "gene_region": "SORT1",
+      "risk_allele": "G",
+      "odds_ratio": 0.87,
+      "population_frequency": {
+        "global": 0.27,
+        "european": 0.28
+      },
+      "effect_template": "SORT1 sortilin protective variant. G allele protective against CAD (OR ~0.87 per copy)."
+    },
+    {
+      "rsid": "rs11591147",
+      "gene_region": "PCSK9",
+      "risk_allele": "T",
+      "odds_ratio": 0.7,
+      "population_frequency": {
+        "global": 0.04,
+        "european": 0.05
+      },
+      "effect_template": "PCSK9 loss-of-function protective variant. T allele significantly reduces LDL-C and CAD risk."
+    },
+    {
+      "rsid": "rs6511720",
+      "gene_region": "LDLR",
+      "risk_allele": "T",
+      "odds_ratio": 0.82,
+      "population_frequency": {
+        "global": 0.33,
+        "european": 0.34
+      },
+      "effect_template": "LDLR LDL receptor protective variant. T allele protective against CAD."
+    },
+    {
+      "rsid": "rs12526453",
+      "gene_region": "PHACTR1",
+      "risk_allele": "C",
+      "odds_ratio": 1.12,
+      "population_frequency": {
+        "global": 0.36,
+        "european": 0.37
+      },
+      "effect_template": "PHACTR1 phosphatase risk variant. C allele associated with increased CAD susceptibility."
+    },
+    {
+      "rsid": "rs3798220",
+      "gene_region": "APOB",
+      "risk_allele": "T",
+      "odds_ratio": 1.11,
+      "population_frequency": {
+        "global": 0.25,
+        "european": 0.26
+      },
+      "effect_template": "APOB apolipoprotein B risk variant. T allele increases CAD risk through LDL metabolism."
     }
   ],
   "evidence_level": "established",
@@ -39,6 +105,15 @@
       "cohort_size": 23000,
       "url": "https://pubmed.ncbi.nlm.nih.gov/17478679/",
       "finding": "9p21.3 locus associated with ~30% increased risk per allele for CAD"
+    },
+    {
+      "pmid": "21378990",
+      "title": "Large-scale association analysis identifies 13 new susceptibility loci for coronary artery disease",
+      "journal": "Nature Genetics",
+      "year": 2011,
+      "cohort_size": 143000,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/21378990/",
+      "finding": "Large-scale GWAS identifying 13 novel CAD susceptibility loci including LPA, PCSK9, SORT1, and others"
     }
   ]
 }

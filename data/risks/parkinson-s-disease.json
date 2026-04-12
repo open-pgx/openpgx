@@ -35,6 +35,50 @@
         "european": 0.4
       },
       "effect_template": "SNCA (alpha-synuclein) locus. Common variant with modest effect on PD risk."
+    },
+    {
+      "rsid": "rs356219",
+      "gene_region": "SNCA",
+      "risk_allele": "G",
+      "odds_ratio": 1.3,
+      "population_frequency": {
+        "global": 0.39,
+        "european": 0.40
+      },
+      "effect_template": "SNCA alpha-synuclein risk variant. G allele increases PD risk (OR ~1.3 per copy)."
+    },
+    {
+      "rsid": "rs17649553",
+      "gene_region": "MAPT",
+      "risk_allele": "C",
+      "odds_ratio": 0.77,
+      "population_frequency": {
+        "global": 0.28,
+        "european": 0.29
+      },
+      "effect_template": "MAPT (tau) protective variant. C allele protective against PD (OR ~0.77 per copy)."
+    },
+    {
+      "rsid": "rs4698412",
+      "gene_region": "BST1",
+      "risk_allele": "G",
+      "odds_ratio": 1.12,
+      "population_frequency": {
+        "global": 0.24,
+        "european": 0.25
+      },
+      "effect_template": "BST1 immune signaling variant. G allele associated with increased PD risk."
+    },
+    {
+      "rsid": "rs12456492",
+      "gene_region": "PARK16",
+      "risk_allele": "G",
+      "odds_ratio": 1.10,
+      "population_frequency": {
+        "global": 0.35,
+        "european": 0.36
+      },
+      "effect_template": "PARK16 locus protective variant. G allele associated with reduced PD risk in GWAS."
     }
   ],
   "evidence_level": "established",
@@ -50,6 +94,15 @@
       "cohort_size": 534,
       "url": "https://pubmed.ncbi.nlm.nih.gov/15680457/",
       "finding": "LRRK2 G2019S (rs34637584) is the most common genetic cause of familial and sporadic PD"
+    },
+    {
+      "pmid": "19915575",
+      "title": "Imputation of sequence variants for identification of genetic risks for Parkinson's disease: a genome-wide association study",
+      "journal": "Lancet Neurology",
+      "year": 2011,
+      "cohort_size": 5000,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/19915575/",
+      "finding": "Genome-wide association study identifying common variants in SNCA, MAPT, and other loci associated with PD risk"
     }
   ]
 }

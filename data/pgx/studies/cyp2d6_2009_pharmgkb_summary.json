@@ -39,6 +39,37 @@
           "severity": "info"
         }
       }
+    },
+    {
+      "rsid": "rs28371725",
+      "risk_allele": "T",
+      "reference_allele": "C",
+      "interpretations": {
+        "TT": {
+          "phenotype": "Reduced Function (*41/*41)",
+          "effect": "CYP2D6*41/*41 — reduced metabolism, similar to intermediate metabolizer.",
+          "recommendation": "Consider dose adjustments for CYP2D6 substrates. Monitor for reduced efficacy of prodrugs (codeine, tamoxifen) and increased levels of active drugs.",
+          "severity": "moderate"
+        },
+        "CT": {
+          "phenotype": "Intermediate Metabolizer (*1/*41)",
+          "effect": "One copy *41, slightly reduced metabolism.",
+          "recommendation": "Monitor for subtle changes in drug response. Dose adjustments may be needed for sensitive substrates.",
+          "severity": "moderate"
+        },
+        "TC": {
+          "phenotype": "Intermediate Metabolizer (*1/*41)",
+          "effect": "One copy *41, slightly reduced metabolism.",
+          "recommendation": "Monitor for subtle changes in drug response. Dose adjustments may be needed for sensitive substrates.",
+          "severity": "moderate"
+        },
+        "CC": {
+          "phenotype": "Normal Metabolizer",
+          "effect": "No *41 variant. Normal CYP2D6 activity at this position.",
+          "recommendation": "Standard dosing.",
+          "severity": "info"
+        }
+      }
     }
   ],
   "evidence_level": "established"

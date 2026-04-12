@@ -1,0 +1,50 @@
+{
+  "gene": "FTO",
+  "category": "energy_balance",
+  "gene_description": "Fat mass and obesity–associated gene — common intron variant linked to BMI, fat mass, and obesity risk",
+  "source": {
+    "pmid": "17434869",
+    "doi": "10.1126/science.1141634",
+    "source_type": "pubmed",
+    "title": "A common variant in the FTO gene is associated with body mass index and predisposes to childhood and adult obesity",
+    "journal": "Science",
+    "year": 2007,
+    "cohort_size": 38759,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/17434869/",
+    "finding": "rs9939609 A allele associates with higher BMI and ~1.67x obesity odds for AA vs TT in large European meta-analysis; effect on fat mass from childhood."
+  },
+  "snps": [
+    {
+      "rsid": "rs9939609",
+      "risk_allele": "A",
+      "reference_allele": "T",
+      "interpretations": {
+        "TT": {
+          "phenotype": "Lower FTO-associated obesity genetic load",
+          "effect": "No A allele at rs9939609. On average lower BMI association than A carriers in population studies (environment and behavior still dominate).",
+          "recommendation": "Standard healthy weight guidance; genetics are not destiny.",
+          "severity": "info"
+        },
+        "AT": {
+          "phenotype": "Intermediate FTO–BMI association",
+          "effect": "Per-allele A associated with modestly higher BMI and obesity odds in replicated GWAS.",
+          "recommendation": "Structured diet/activity and sleep help offset polygenic obesity tendency.",
+          "severity": "mild"
+        },
+        "TA": {
+          "phenotype": "Intermediate FTO–BMI association",
+          "effect": "Per-allele A associated with modestly higher BMI and obesity odds in replicated GWAS.",
+          "recommendation": "Structured diet/activity and sleep help offset polygenic obesity tendency.",
+          "severity": "mild"
+        },
+        "AA": {
+          "phenotype": "Higher FTO-associated obesity susceptibility",
+          "effect": "Homozygous risk allele; strongest association with BMI/fat mass in discovery/replication cohorts (~3 kg heavier on average vs TT in Frayling et al.).",
+          "recommendation": "Emphasize sustainable caloric control, protein/fiber, resistance training, and sleep; medical support if obesity complicates health.",
+          "severity": "moderate"
+        }
+      }
+    }
+  ],
+  "evidence_level": "established"
+}

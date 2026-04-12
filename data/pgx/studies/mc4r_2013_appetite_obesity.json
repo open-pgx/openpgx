@@ -1,0 +1,101 @@
+{
+  "gene": "MC4R",
+  "category": "nutrient_absorption",
+  "gene_description": "Melanocortin-4 Receptor — critical regulator of appetite, energy homeostasis, and body weight in the hypothalamus. Variants near MC4R are consistently associated with increased BMI and obesity risk across populations.",
+  "drugs": ["semaglutide", "liraglutide", "tirzepatide", "setmelanotide"],
+  "source": {
+    "pmid": "23872305",
+    "doi": "10.1093/ijnp/pyt018",
+    "source_type": "pubmed",
+    "title": "MC4R rs489693: a clinical risk factor for second generation antipsychotic-related weight gain?",
+    "journal": "International Journal of Neuropsychopharmacology",
+    "year": 2013,
+    "cohort_size": 438,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/23872305/",
+    "finding": "MC4R rs489693 A-allele carriers show 2.2-3.1 times higher weight gain with antipsychotic use. The variant also associates with higher BMI, triglycerides, leptin, and insulin levels in the general population."
+  },
+  "snps": [
+    {
+      "rsid": "rs489693",
+      "risk_allele": "A",
+      "reference_allele": "C",
+      "interpretations": {
+        "AA": {
+          "phenotype": "High obesity/weight gain susceptibility",
+          "effect": "Homozygous risk allele carriers show 2.2-3.1 fold higher weight gain, particularly with antipsychotic medications. Elevated triglycerides, leptin, and insulin levels. Increased appetite drive and reduced satiety signaling through melanocortin pathway disruption.",
+          "recommendation": "Focus on caloric deficit strategies and high-protein diets to enhance satiety. Monitor metabolic parameters closely if on antipsychotics. GLP-1 receptor agonists (semaglutide, tirzepatide) may be particularly beneficial. Regular physical activity strongly recommended.",
+          "severity": "moderate",
+          "odds_ratio": 3.1
+        },
+        "AC": {
+          "phenotype": "Moderate obesity susceptibility",
+          "effect": "Heterozygous carriers show intermediate weight gain susceptibility. Mildly elevated appetite drive. Modest increase in antipsychotic-related weight gain risk.",
+          "recommendation": "Standard dietary and lifestyle recommendations with emphasis on satiety-promoting foods. Monitor weight if starting antipsychotic medications.",
+          "severity": "mild"
+        },
+        "CA": {
+          "phenotype": "Moderate obesity susceptibility",
+          "effect": "Heterozygous carriers show intermediate weight gain susceptibility. Mildly elevated appetite drive. Modest increase in antipsychotic-related weight gain risk.",
+          "recommendation": "Standard dietary and lifestyle recommendations with emphasis on satiety-promoting foods. Monitor weight if starting antipsychotic medications.",
+          "severity": "mild"
+        },
+        "CC": {
+          "phenotype": "Normal MC4R signaling",
+          "effect": "Wild-type with standard melanocortin signaling. Normal appetite regulation and energy homeostasis from this locus.",
+          "recommendation": "Standard dietary guidelines. Normal expected weight response to medications.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.25,
+        "african": 0.20,
+        "east_asian": 0.18,
+        "south_asian": 0.22,
+        "latino": 0.23
+      }
+    },
+    {
+      "rsid": "rs17700633",
+      "risk_allele": "A",
+      "reference_allele": "G",
+      "interpretations": {
+        "AA": {
+          "phenotype": "Increased BMI susceptibility",
+          "effect": "Homozygous minor allele carriers show increased BMI and higher overweight/obesity risk. Associated with higher energy intake in some populations.",
+          "recommendation": "Calorie-controlled diet recommended. Emphasis on portion control and regular meal timing. Monitor weight trends.",
+          "severity": "mild"
+        },
+        "GA": {
+          "phenotype": "Slightly increased BMI susceptibility",
+          "effect": "Heterozygous carriers show marginally increased BMI tendency.",
+          "recommendation": "Standard dietary and lifestyle recommendations. Maintain regular physical activity.",
+          "severity": "info"
+        },
+        "AG": {
+          "phenotype": "Slightly increased BMI susceptibility",
+          "effect": "Heterozygous carriers show marginally increased BMI tendency.",
+          "recommendation": "Standard dietary and lifestyle recommendations. Maintain regular physical activity.",
+          "severity": "info"
+        },
+        "GG": {
+          "phenotype": "Normal BMI tendency",
+          "effect": "Wild-type at this locus. Standard BMI and appetite regulation.",
+          "recommendation": "Standard dietary guidelines.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.30,
+        "african": 0.25,
+        "east_asian": 0.22,
+        "south_asian": 0.28,
+        "latino": 0.27
+      }
+    }
+  ],
+  "evidence_level": "moderate",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

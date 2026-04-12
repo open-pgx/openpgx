@@ -1,0 +1,62 @@
+{
+  "gene": "DHCR7",
+  "category": "vitamin_conversion",
+  "gene_description": "7-Dehydrocholesterol Reductase — enzyme that converts 7-dehydrocholesterol (7-DHC) to cholesterol. When DHCR7 activity is reduced, more 7-DHC is available for UV-mediated vitamin D3 synthesis in the skin. Key switch between cholesterol and vitamin D production.",
+  "drugs": ["cholecalciferol", "ergocalciferol", "vitamin D supplements"],
+  "source": {
+    "pmid": "27697512",
+    "doi": "10.1016/j.plipres.2016.09.002",
+    "source_type": "pubmed",
+    "title": "DHCR7: A vital enzyme switch between cholesterol and vitamin D production",
+    "journal": "Progress in Lipid Research",
+    "year": 2016,
+    "cohort_size": null,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/27697512/",
+    "finding": "DHCR7 rs12785878 is a strong GWAS determinant of circulating 25-hydroxyvitamin D levels. Variants that reduce DHCR7 activity increase 7-DHC substrate availability for vitamin D synthesis. These variants were evolutionarily favored in Northern European populations as adaptation to lower UV exposure."
+  },
+  "snps": [
+    {
+      "rsid": "rs12785878",
+      "risk_allele": "G",
+      "reference_allele": "T",
+      "interpretations": {
+        "GG": {
+          "phenotype": "Lower vitamin D synthesis capacity",
+          "effect": "Homozygous G carriers have higher DHCR7 activity, directing more 7-dehydrocholesterol toward cholesterol synthesis rather than vitamin D3 production. Lower circulating 25(OH)D levels. Greater susceptibility to vitamin D deficiency, especially in Northern latitudes with limited UV exposure. May also have slightly higher cholesterol.",
+          "recommendation": "Vitamin D supplementation recommended (1000-2000 IU daily), especially in winter and at higher latitudes. Regular 25(OH)D monitoring. Maximize safe sun exposure. Vitamin D-rich foods (fatty fish, fortified dairy). Higher supplementation doses may be needed to achieve optimal levels.",
+          "severity": "moderate"
+        },
+        "GT": {
+          "phenotype": "Intermediate vitamin D synthesis",
+          "effect": "Heterozygous carriers show intermediate DHCR7 activity and 7-DHC availability for vitamin D production. Moderate vitamin D levels. Some seasonal variation.",
+          "recommendation": "Moderate vitamin D supplementation (600-1000 IU daily). Monitor 25(OH)D levels seasonally. Adequate sun exposure and dietary vitamin D.",
+          "severity": "mild"
+        },
+        "TG": {
+          "phenotype": "Intermediate vitamin D synthesis",
+          "effect": "Heterozygous carriers show intermediate DHCR7 activity and 7-DHC availability for vitamin D production. Moderate vitamin D levels. Some seasonal variation.",
+          "recommendation": "Moderate vitamin D supplementation (600-1000 IU daily). Monitor 25(OH)D levels seasonally. Adequate sun exposure and dietary vitamin D.",
+          "severity": "mild"
+        },
+        "TT": {
+          "phenotype": "Higher vitamin D synthesis capacity (protective)",
+          "effect": "Homozygous T carriers have lower DHCR7 activity, leaving more 7-DHC available for UV-mediated vitamin D3 synthesis in skin. Higher circulating 25(OH)D levels. Evolutionarily favorable variant in Northern climates. Naturally better vitamin D status.",
+          "recommendation": "Favorable vitamin D genetics. Standard sun exposure and dietary vitamin D intake likely sufficient. Supplementation may still be needed at very high latitudes in winter.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.75,
+        "african": 0.90,
+        "east_asian": 0.60,
+        "south_asian": 0.70,
+        "latino": 0.72
+      }
+    }
+  ],
+  "evidence_level": "established",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

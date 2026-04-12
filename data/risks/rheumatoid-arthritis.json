@@ -24,6 +24,50 @@
         "european": 0.1
       },
       "effect_template": "PTPN22 R620W variant. Shared autoimmune risk allele (RA, T1D, lupus)."
+    },
+    {
+      "rsid": "rs7574865",
+      "gene_region": "STAT4",
+      "risk_allele": "T",
+      "odds_ratio": 1.32,
+      "population_frequency": {
+        "global": 0.15,
+        "european": 0.16
+      },
+      "effect_template": "STAT4 signal transducer and activator of transcription 4. Interferon signaling in RA."
+    },
+    {
+      "rsid": "rs3087243",
+      "gene_region": "CTLA4",
+      "risk_allele": "G",
+      "odds_ratio": 1.13,
+      "population_frequency": {
+        "global": 0.35,
+        "european": 0.37
+      },
+      "effect_template": "CTLA4 cytotoxic T-lymphocyte-associated protein 4. T cell co-stimulation regulation."
+    },
+    {
+      "rsid": "rs3761847",
+      "gene_region": "TRAF1/C5",
+      "risk_allele": "G",
+      "odds_ratio": 1.14,
+      "population_frequency": {
+        "global": 0.42,
+        "european": 0.43
+      },
+      "effect_template": "TRAF1/C5 TNF receptor associated factor 1. NF-kappa B and complement signaling in RA."
+    },
+    {
+      "rsid": "rs2240340",
+      "gene_region": "PADI4",
+      "risk_allele": "T",
+      "odds_ratio": 1.14,
+      "population_frequency": {
+        "global": 0.15,
+        "european": 0.16
+      },
+      "effect_template": "PADI4 peptidylarginine deiminase 4. Protein citrullination in RA pathogenesis."
     }
   ],
   "evidence_level": "established",
@@ -39,6 +83,15 @@
       "cohort_size": 14000,
       "url": "https://pubmed.ncbi.nlm.nih.gov/17804836/",
       "finding": "HLA-DRB1 shared epitope and PTPN22 are strongest common RA risk factors"
+    },
+    {
+      "pmid": "20453842",
+      "title": "Genome-wide association study meta-analysis identifies seven new rheumatoid arthritis risk loci",
+      "journal": "Nature Genetics",
+      "year": 2010,
+      "cohort_size": 25000,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/20453842/",
+      "finding": "Identified multiple RA susceptibility loci including STAT4, CTLA4, TRAF1/C5, and PADI4"
     }
   ]
 }

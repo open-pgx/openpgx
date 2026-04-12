@@ -24,6 +24,61 @@
         "european": 0.11
       },
       "effect_template": "Second HLA-C tag SNP for psoriasis risk. Strong effect."
+    },
+    {
+      "rsid": "rs3212227",
+      "gene_region": "IL12B",
+      "risk_allele": "C",
+      "odds_ratio": 1.35,
+      "population_frequency": {
+        "global": 0.25,
+        "european": 0.27
+      },
+      "effect_template": "IL12B interleukin 12B. T cell differentiation and Th1 response in psoriasis."
+    },
+    {
+      "rsid": "rs11209026",
+      "gene_region": "IL23R",
+      "risk_allele": "A",
+      "odds_ratio": 0.63,
+      "population_frequency": {
+        "global": 0.08,
+        "european": 0.09
+      },
+      "effect_template": "IL23R interleukin 23 receptor protective variant. IL-23 signaling in psoriasis pathogenesis."
+    },
+    {
+      "rsid": "rs610604",
+      "gene_region": "TNFAIP3",
+      "risk_allele": "T",
+      "odds_ratio": 1.22,
+      "population_frequency": {
+        "global": 0.15,
+        "european": 0.16
+      },
+      "effect_template": "TNFAIP3 TNF-alpha induced protein 3. NF-kappa B inhibition in immune regulation."
+    },
+    {
+      "rsid": "rs4112788",
+      "gene_region": "LCE3B/3C",
+      "risk_allele": "T",
+      "odds_ratio": 1.27,
+      "population_frequency": {
+        "global": 0.06,
+        "european": 0.07
+      },
+      "effect_template": "LCE3B/3C late cornified envelope proteins. Skin barrier function in psoriasis."
+    },
+    {
+      "rsid": "rs33980500",
+      "gene_region": "TRAF3IP2",
+      "risk_allele": "T",
+      "odds_ratio": 1.49,
+      "population_frequency": {
+        "global": 0.12,
+        "european": 0.13
+      },
+      "effect_template": "TRAF3IP2 TNF receptor associated factor 3 interacting protein 2. NF-kappa B pathway involvement."
     }
   ],
   "evidence_level": "established",
@@ -39,6 +94,15 @@
       "cohort_size": 10588,
       "url": "https://pubmed.ncbi.nlm.nih.gov/19169254/",
       "finding": "HLA-C region (rs10484554) confers OR=4.66 for psoriasis"
+    },
+    {
+      "pmid": "20953190",
+      "title": "Genome-wide meta-analysis of psoriasis",
+      "journal": "Nature Genetics",
+      "year": 2010,
+      "cohort_size": 15000,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/20953190/",
+      "finding": "Identified multiple psoriasis susceptibility loci including IL12B, IL23R, TNFAIP3, LCE3B/3C, and TRAF3IP2"
     }
   ]
 }

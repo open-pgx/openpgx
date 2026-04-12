@@ -1,0 +1,60 @@
+{
+  "gene": "HLA-DQB1",
+  "category": "severe_adverse_reaction",
+  "gene_description": "Human Leukocyte Antigen DQB1 — part of the MHC class II antigen presentation system. Specific HLA-DQB1 alleles (particularly *05:02 and *02:01) are associated with clozapine-induced agranulocytosis (CIAG), a potentially fatal adverse drug reaction occurring in up to 1% of treated patients. HLA genetic testing can identify high-risk individuals.",
+  "drugs": [
+    "clozapine"
+  ],
+  "source": {
+    "pmid": "25187353",
+    "doi": "10.1038/ncomms5757",
+    "source_type": "pubmed",
+    "title": "Clozapine-induced agranulocytosis is associated with rare HLA-DQB1 and HLA-B alleles",
+    "journal": "Nature Communications",
+    "year": 2021,
+    "cohort_size": 143,
+    "url": "https://www.nature.com/articles/ncomms5757",
+    "finding": "Two independent MHC loci associated with CIAG: HLA-DQB1 126Q (protective, OR=0.19) and HLA-DQB1*05:02 (risk, OR=7.12). HLA-DQB1*02:01 present in 100% of agranulocytosis cases (5/5) vs 54% controls in early studies. Meta-analysis shows HLA-DRB1*04:02 (OR=5.8) also strongly associated."
+  },
+  "snps": [
+    {
+      "rsid": "HLA-DQB1*02:01",
+      "risk_allele": "*02:01",
+      "reference_allele": "other",
+      "interpretations": {
+        "*02:01/*02:01": {
+          "phenotype": "Significantly elevated agranulocytosis risk",
+          "effect": "Homozygous HLA-DQB1*02:01 carriers have markedly increased risk of clozapine-induced agranulocytosis. Early studies reported 100% presence in CIAG cases. Present in only 54% of controls. Altered antigen presentation leading to immune-mediated granulocyte destruction. Potentially life-threatening adverse reaction.",
+          "recommendation": "CONTRAINDICATED or use with extreme caution. If clozapine is absolutely necessary for treatment-resistant schizophrenia, baseline and weekly absolute neutrophil count (ANC) monitoring is MANDATORY. Do not use clozapine unless no safer alternatives available and benefits clearly outweigh severe risks. Consider alternative antipsychotics: aripiprazole, quetiapine, risperidone, or olanzapine. If used, ANC must be monitored weekly for 6 months, then every 2 weeks.",
+          "severity": "life_threatening",
+          "odds_ratio": 5.1
+        },
+        "*02:01/other": {
+          "phenotype": "Moderately elevated agranulocytosis risk, heterozygous carrier",
+          "effect": "Heterozygous *02:01 carriers show moderately increased risk of clozapine-induced agranulocytosis. Present in approximately 54% of control populations, suggesting heterozygous carriers have meaningful but lower risk than homozygotes. Immune-mediated mechanism still present.",
+          "recommendation": "Use clozapine with caution. Baseline ANC required before initiation. Mandatory weekly ANC monitoring for minimum 6 months, then every 2 weeks if continued. Patient education about agranulocytosis warning signs (fever, sore throat, unusual bruising) essential. Rapid ANC drop (>3000 to <2000 in 1 week) requires immediate discontinuation. Consider alternative antipsychotics if available.",
+          "severity": "severe",
+          "odds_ratio": 2.8
+        },
+        "other/other": {
+          "phenotype": "Standard agranulocytosis risk",
+          "effect": "Absence of high-risk HLA-DQB1*02:01 and *05:02 alleles. Standard CIAG risk (approximately 0.8-1.0% of clozapine-treated patients). Baseline immune risk present but significantly lower than in *02:01/*05:02 carriers.",
+          "recommendation": "Clozapine can be used for treatment-resistant schizophrenia. Baseline ANC required before initiation (target >3000/microliter). Baseline monitoring: ANC every 2 weeks for 6 months, then monthly. Patient must be counseled on agranulocytosis warning signs. Discontinue immediately if ANC <2000 or significant drop observed.",
+          "severity": "moderate"
+        }
+      },
+      "population_frequency": {
+        "european": 0.08,
+        "african": 0.05,
+        "east_asian": 0.03,
+        "south_asian": 0.06,
+        "latino": 0.07
+      }
+    }
+  ],
+  "evidence_level": "established",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

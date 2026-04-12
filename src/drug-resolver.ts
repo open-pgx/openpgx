@@ -133,9 +133,14 @@ const DRUG_CATEGORIES: Record<string, DrugCategory> = {
   },
 };
 
-// === OpenAI Semantic Search ===
+// === OpenAI Semantic Search (unified: drugs, risks, traits) ===
 
-let embeddingsData: { drugs: Record<string, number[]> } | null = null;
+interface EmbeddingsFile {
+  vectors: Record<string, number[]>;
+  type_index: { drug: string[]; risk: string[]; trait: string[] };
+}
+
+let embeddingsData: EmbeddingsFile | null = null;
 let openaiClient: OpenAI | null = null;
 
 function getOpenAI(): OpenAI | null {
@@ -146,17 +151,17 @@ function getOpenAI(): OpenAI | null {
   return openaiClient;
 }
 
-function loadEmbeddings(): Record<string, number[]> {
-  if (embeddingsData) return embeddingsData.drugs;
+function loadEmbeddings(): EmbeddingsFile {
+  if (embeddingsData) return embeddingsData;
 
-  const embPath = join(DATA_DIR, "drugs_embeddings.json");
+  const embPath = join(DATA_DIR, "embeddings.json");
   if (!existsSync(embPath)) {
-    embeddingsData = { drugs: {} };
-    return {};
+    embeddingsData = { vectors: {}, type_index: { drug: [], risk: [], trait: [] } };
+    return embeddingsData;
   }
 
   embeddingsData = JSON.parse(readFileSync(embPath, "utf-8"));
-  return embeddingsData!.drugs ?? {};
+  return embeddingsData!;
 }
 
 function cosineSimilarity(a: number[], b: number[]): number {
@@ -170,34 +175,57 @@ function cosineSimilarity(a: number[], b: number[]): number {
   return denom === 0 ? 0 : dot / denom;
 }
 
-async function semanticSearch(query: string, topK = 5, threshold = 0.40): Promise<Array<{ name: string; score: number }>> {
+async function embedQuery(query: string): Promise<number[] | null> {
   const client = getOpenAI();
-  if (!client) return [];
-
-  const drugs = loadEmbeddings();
-  if (Object.keys(drugs).length === 0) return [];
-
-  let queryVec: number[];
+  if (!client) return null;
   try {
     const resp = await client.embeddings.create({
       model: "text-embedding-3-small",
       input: query,
     });
-    queryVec = resp.data[0].embedding;
+    return resp.data[0].embedding;
   } catch {
-    return [];
+    return null;
   }
+}
 
-  const results: Array<{ name: string; score: number }> = [];
-  for (const [name, drugVec] of Object.entries(drugs)) {
-    const score = cosineSimilarity(queryVec, drugVec);
+/**
+ * Semantic search across a specific type (drug, risk, trait) or all types.
+ */
+export async function semanticSearch(
+  query: string,
+  type: "drug" | "risk" | "trait" | "all" = "all",
+  topK = 5,
+  threshold = 0.40,
+): Promise<Array<{ key: string; type: string; score: number }>> {
+  const queryVec = await embedQuery(query);
+  if (!queryVec) return [];
+
+  const data = loadEmbeddings();
+  if (Object.keys(data.vectors).length === 0) return [];
+
+  const keysToSearch = type === "all"
+    ? Object.keys(data.vectors)
+    : (data.type_index[type] ?? []);
+
+  const results: Array<{ key: string; type: string; score: number }> = [];
+  for (const key of keysToSearch) {
+    const vec = data.vectors[key];
+    if (!vec) continue;
+    const score = cosineSimilarity(queryVec, vec);
     if (score >= threshold) {
-      results.push({ name, score: Math.round(score * 10000) / 10000 });
+      const entryType = key.startsWith("risk:") ? "risk" : key.startsWith("trait:") ? "trait" : "drug";
+      results.push({ key, type: entryType, score: Math.round(score * 10000) / 10000 });
     }
   }
 
   results.sort((a, b) => b.score - a.score);
   return results.slice(0, topK);
+}
+
+async function drugSemanticSearch(query: string, topK = 5, threshold = 0.40): Promise<Array<{ name: string; score: number }>> {
+  const results = await semanticSearch(query, "drug", topK, threshold);
+  return results.map(r => ({ name: r.key, score: r.score }));
 }
 
 // === Similarity ===
@@ -277,8 +305,8 @@ export async function resolveDrugName(query: string): Promise<DrugResolution> {
     };
   }
 
-  // 6. OpenAI semantic search
-  const semResults = await semanticSearch(query);
+  // 6. OpenAI semantic search (drugs only)
+  const semResults = await drugSemanticSearch(query);
   if (semResults.length > 0) {
     if (semResults[0].score > 0.50 && semResults.length === 1) {
       return {

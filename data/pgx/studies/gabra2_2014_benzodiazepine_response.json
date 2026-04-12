@@ -1,0 +1,74 @@
+{
+  "gene": "GABRA2",
+  "category": "drug_target",
+  "gene_description": "GABA(A) receptor subunit alpha 2 — component of GABA(A) chloride channels. Variants alter benzodiazepine receptor binding affinity and GABAergic neurotransmission, affecting response to benzodiazepines and susceptibility to alcohol dependence and anxiety disorders.",
+  "drugs": [
+    "diazepam",
+    "lorazepam",
+    "alprazolam",
+    "clonazepam",
+    "flumazenil"
+  ],
+  "source": {
+    "pmid": "26250693",
+    "doi": "10.1523/JNEUROSCI.2707-15.2015",
+    "source_type": "pubmed",
+    "title": "GABRA2 Alcohol Dependence Risk Allele is Associated with Reduced Expression of Chromosome 4p12 GABAA Subunit Genes in Human Neural Cultures",
+    "journal": "Journal of Neuroscience",
+    "year": 2015,
+    "cohort_size": 48,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/26250693/",
+    "finding": "GABRA2 rs279858 C-allele carriers show significantly reduced GABRA2 mRNA expression in neural cultures; C-allele associated with increased subjective effects of alcohol ('feeling' and 'liking' alcohol effects) and elevated risk of alcohol dependence (p < 0.001)."
+  },
+  "snps": [
+    {
+      "rsid": "rs279858",
+      "risk_allele": "C",
+      "reference_allele": "T",
+      "interpretations": {
+        "CC": {
+          "phenotype": "High-risk variant (homozygous C-allele carrier)",
+          "effect": "Significantly reduced GABRA2 gene expression in neural tissue (~30-40% lower mRNA levels compared to T-allele carriers). Homozygous C-carriers show heightened subjective response to alcohol ('feel the effect' ratings 2-3 fold higher). Associated with reduced GABAergic inhibition, increasing vulnerability to benzodiazepine tolerance and cross-addiction. Elevated risk of alcohol dependence (OR~1.8-2.0) and anxiety disorders.",
+          "recommendation": "Cautious benzodiazepine use; consider lower initial doses or shorter-acting agents. Enhanced monitoring for tolerance development and dependence. Consider non-GABAergic anxiolytics (SSRIs, buspirone) as first-line alternatives. Educate regarding alcohol-benzodiazepine interaction risk and cross-addiction potential. Avoid concurrent alcohol use.",
+          "severity": "moderate",
+          "odds_ratio": 1.85
+        },
+        "CT": {
+          "phenotype": "Heterozygous (intermediate risk)",
+          "effect": "Intermediate GABRA2 expression levels. Moderate subjective response to alcohol. Intermediate risk for benzodiazepine tolerance and alcohol dependence (OR~1.2). Some individuals show enhanced benzodiazepine sensitivity; others show reduced response.",
+          "recommendation": "Standard benzodiazepine dosing with baseline monitoring for response and tolerance. Periodic reassessment of clinical efficacy. Counsel regarding alcohol interaction. Monitor for signs of dependence or tolerance development.",
+          "severity": "mild",
+          "odds_ratio": 1.2
+        },
+        "TC": {
+          "phenotype": "Heterozygous (intermediate risk)",
+          "effect": "Intermediate GABRA2 expression levels. Moderate subjective response to alcohol. Intermediate risk for benzodiazepine tolerance and alcohol dependence (OR~1.2). Some individuals show enhanced benzodiazepine sensitivity; others show reduced response.",
+          "recommendation": "Standard benzodiazepine dosing with baseline monitoring for response and tolerance. Periodic reassessment of clinical efficacy. Counsel regarding alcohol interaction. Monitor for signs of dependence or tolerance development.",
+          "severity": "mild",
+          "odds_ratio": 1.2
+        },
+        "TT": {
+          "phenotype": "Wild-type (protective variant)",
+          "effect": "Normal or elevated GABRA2 gene expression. Typical subjective response to alcohol. Lowest risk for alcohol dependence and benzodiazepine-related adverse effects. Standard benzodiazepine sensitivity expected.",
+          "recommendation": "Standard benzodiazepine dosing per clinical guidelines. Standard monitoring for therapeutic response and adverse effects.",
+          "severity": "info",
+          "odds_ratio": null
+        }
+      },
+      "population_frequency": {
+        "global": 0.42,
+        "european": 0.43,
+        "african": 0.38,
+        "east_asian": 0.35,
+        "south_asian": 0.4,
+        "latino": 0.42
+      }
+    }
+  ],
+  "evidence_level": "moderate",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx",
+    "orcid": null
+  }
+}

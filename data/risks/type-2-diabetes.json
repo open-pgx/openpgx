@@ -35,6 +35,72 @@
         "european": 0.7
       },
       "effect_template": "SLC30A8 variant affecting zinc transporter in pancreatic beta cells."
+    },
+    {
+      "rsid": "rs1801282",
+      "gene_region": "PPARG",
+      "risk_allele": "G",
+      "odds_ratio": 0.86,
+      "population_frequency": {
+        "global": 0.22,
+        "european": 0.23
+      },
+      "effect_template": "PPARG Pro12Ala protective variant. G allele (Ala) protective against T2D (OR ~0.86 per copy)."
+    },
+    {
+      "rsid": "rs9939609",
+      "gene_region": "FTO",
+      "risk_allele": "A",
+      "odds_ratio": 1.15,
+      "population_frequency": {
+        "global": 0.41,
+        "european": 0.42
+      },
+      "effect_template": "FTO obesity risk variant. A allele increases T2D risk primarily via obesity (OR ~1.15 per copy)."
+    },
+    {
+      "rsid": "rs7754840",
+      "gene_region": "CDKAL1",
+      "risk_allele": "C",
+      "odds_ratio": 1.12,
+      "population_frequency": {
+        "global": 0.33,
+        "european": 0.33
+      },
+      "effect_template": "CDKAL1 cyclin-dependent kinase risk variant. C allele increases T2D risk."
+    },
+    {
+      "rsid": "rs1111875",
+      "gene_region": "HHEX",
+      "risk_allele": "C",
+      "odds_ratio": 1.13,
+      "population_frequency": {
+        "global": 0.38,
+        "european": 0.38
+      },
+      "effect_template": "HHEX hematopoietically expressed homeobox risk variant. C allele increases T2D susceptibility."
+    },
+    {
+      "rsid": "rs10811661",
+      "gene_region": "CDKN2A/B",
+      "risk_allele": "T",
+      "odds_ratio": 1.20,
+      "population_frequency": {
+        "global": 0.35,
+        "european": 0.36
+      },
+      "effect_template": "CDKN2A/B cell cycle inhibitor risk variant. T allele associated with increased T2D risk."
+    },
+    {
+      "rsid": "rs4402960",
+      "gene_region": "IGF2BP2",
+      "risk_allele": "T",
+      "odds_ratio": 1.14,
+      "population_frequency": {
+        "global": 0.28,
+        "european": 0.29
+      },
+      "effect_template": "IGF2BP2 insulin-like growth factor binding protein risk variant. T allele increases T2D risk."
     }
   ],
   "evidence_level": "established",
@@ -50,6 +116,15 @@
       "cohort_size": 14000,
       "url": "https://pubmed.ncbi.nlm.nih.gov/17463246/",
       "finding": "TCF7L2 rs7903146 T allele strongest common T2D risk variant (OR=1.37)"
+    },
+    {
+      "pmid": "17463249",
+      "title": "Genome-wide association analysis identifies loci for type 2 diabetes and triglyceride levels",
+      "journal": "Science",
+      "year": 2007,
+      "cohort_size": 30000,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17463249/",
+      "finding": "Large-scale GWAS identifying multiple T2D susceptibility loci including PPARG, FTO, HHEX, and CDKN2A/B"
     }
   ]
 }

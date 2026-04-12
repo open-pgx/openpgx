@@ -1,0 +1,62 @@
+{
+  "gene": "CLCNKA",
+  "category": "drug_target",
+  "gene_description": "Chloride Voltage-Gated Channel Ka — kidney chloride channel (CLC-Ka) essential for NaCl reabsorption in the thin ascending limb of Henle and medullary collecting duct. Variants affect salt sensitivity and blood pressure response to sodium intake.",
+  "drugs": ["furosemide", "hydrochlorothiazide", "chlorthalidone"],
+  "source": {
+    "pmid": "17510212",
+    "doi": "10.1093/hmg/ddm104",
+    "source_type": "pubmed",
+    "title": "Common genetic variants and haplotypes in renal CLCNKA gene are associated to salt-sensitive hypertension",
+    "journal": "Human Molecular Genetics",
+    "year": 2007,
+    "cohort_size": 500,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/17510212/",
+    "finding": "CLCNKA rs848307 is significantly associated with salt-sensitive blood pressure increase (P=0.0026). Risk allele carriers show abnormally large BP increase following modest salt intake, with lower basal plasma renin activity indicating chronic volume expansion."
+  },
+  "snps": [
+    {
+      "rsid": "rs848307",
+      "risk_allele": "T",
+      "reference_allele": "C",
+      "interpretations": {
+        "TT": {
+          "phenotype": "Salt-sensitive hypertension",
+          "effect": "Homozygous risk carriers show significantly greater blood pressure increase following sodium load. Lower basal plasma renin activity and heart rate, suggesting chronic volume expansion. Predisposes to left ventricular hypertrophy and endothelial dysfunction. Salt-sensitive phenotype through altered renal chloride reabsorption.",
+          "recommendation": "Strict dietary sodium restriction (<1500mg/day). DASH diet strongly recommended. Loop diuretics (furosemide) may be particularly effective as they target the same nephron segment. Regular blood pressure monitoring. Potassium supplementation may help.",
+          "severity": "moderate"
+        },
+        "CT": {
+          "phenotype": "Intermediate salt sensitivity",
+          "effect": "Heterozygous carriers show moderate blood pressure sensitivity to sodium intake. Intermediate renal chloride handling.",
+          "recommendation": "Moderate sodium restriction (<2300mg/day). Regular blood pressure checks. Heart-healthy diet rich in fruits and vegetables.",
+          "severity": "mild"
+        },
+        "TC": {
+          "phenotype": "Intermediate salt sensitivity",
+          "effect": "Heterozygous carriers show moderate blood pressure sensitivity to sodium intake. Intermediate renal chloride handling.",
+          "recommendation": "Moderate sodium restriction (<2300mg/day). Regular blood pressure checks. Heart-healthy diet rich in fruits and vegetables.",
+          "severity": "mild"
+        },
+        "CC": {
+          "phenotype": "Normal salt handling",
+          "effect": "Wild-type with standard renal chloride channel function. Normal blood pressure response to dietary sodium.",
+          "recommendation": "Standard sodium intake guidelines.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.30,
+        "african": 0.40,
+        "east_asian": 0.25,
+        "south_asian": 0.35,
+        "latino": 0.32
+      }
+    }
+  ],
+  "evidence_level": "moderate",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

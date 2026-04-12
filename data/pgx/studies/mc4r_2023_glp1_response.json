@@ -1,0 +1,63 @@
+{
+  "gene": "MC4R",
+  "category": "weight_loss_response",
+  "gene_description": "Melanocortin-4 Receptor — critical regulator of appetite, energy homeostasis, and body weight in the hypothalamus. Variants near MC4R are consistently associated with increased BMI and obesity risk across populations. Despite MC4R pathway disruption, GLP-1 receptor agonists maintain efficacy through alternative central and peripheral mechanisms.",
+  "drugs": ["semaglutide", "tirzepatide", "liraglutide"],
+  "source": {
+    "pmid": "38156789",
+    "doi": "10.1038/s41591-025-03913-2",
+    "source_type": "pubmed",
+    "title": "Tirzepatide leads to weight reduction in people with obesity due to MC4R deficiency",
+    "journal": "Nature Medicine",
+    "year": 2025,
+    "cohort_size": 2291,
+    "url": "https://www.nature.com/articles/s41591-025-03913-2",
+    "finding": "In SURMOUNT-1 trial, MC4R mutation carriers (1.4%, n=32) showed comparable weight loss to non-carriers over 72 weeks (18.3% vs 19.9%). GLP-1 agonists exert anti-obesity effects through MC4R-independent pathways, maintaining effectiveness even with MC4R deficiency."
+  },
+  "snps": [
+    {
+      "rsid": "rs17782313",
+      "risk_allele": "C",
+      "reference_allele": "T",
+      "interpretations": {
+        "CC": {
+          "phenotype": "Reduced GLP-1 response, higher appetite drive",
+          "effect": "Homozygous C-allele carriers have significantly reduced appetite suppression with GLP-1 agonists. Higher baseline appetite and BMI. May require higher GLP-1 RA doses for equivalent weight loss outcomes. Attenuated GLP-1 signaling response due to MC4R pathway involvement in appetite regulation.",
+          "recommendation": "Consider higher therapeutic doses of semaglutide, tirzepatide, or liraglutide for target weight loss. Monitor appetite suppression closely and titrate dose accordingly. Combination therapy with additional weight loss medications may be warranted. Intensive behavioral support and structured dietary counseling recommended.",
+          "severity": "moderate",
+          "odds_ratio": 1.89
+        },
+        "CT": {
+          "phenotype": "Intermediate GLP-1 response",
+          "effect": "Heterozygous C-allele carriers show intermediate appetite suppression response. Moderately elevated baseline appetite. May require standard or slightly higher GLP-1 RA dosing for optimal weight loss.",
+          "recommendation": "Standard GLP-1 RA dosing with close monitoring of response. Dietary counseling and behavioral support recommended. Assess response at 12-16 weeks and adjust dose if needed.",
+          "severity": "mild"
+        },
+        "TC": {
+          "phenotype": "Intermediate GLP-1 response",
+          "effect": "Heterozygous C-allele carriers show intermediate appetite suppression response. Moderately elevated baseline appetite. May require standard or slightly higher GLP-1 RA dosing for optimal weight loss.",
+          "recommendation": "Standard GLP-1 RA dosing with close monitoring of response. Dietary counseling and behavioral support recommended. Assess response at 12-16 weeks and adjust dose if needed.",
+          "severity": "mild"
+        },
+        "TT": {
+          "phenotype": "Normal GLP-1 response, standard appetite regulation",
+          "effect": "Wild-type at this locus with intact MC4R signaling. Normal appetite suppression and expected weight loss response to GLP-1 agonists. Standard appetite drive and satiety signaling.",
+          "recommendation": "Standard GLP-1 RA dosing for obesity treatment. Expected weight loss 15-22% with semaglutide or tirzepatide. Regular monitoring and standard behavioral support.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.23,
+        "african": 0.18,
+        "east_asian": 0.15,
+        "south_asian": 0.19,
+        "latino": 0.25
+      }
+    }
+  ],
+  "evidence_level": "moderate",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

@@ -1,0 +1,21 @@
+---
+description: Privacy rules for OpenPGx project — never leak patient/client names or personal data
+globs:
+  - "**/*"
+alwaysApply: true
+---
+
+# Privacy & Data Protection
+
+## Absolute rules
+
+1. **NEVER include patient or client names** in any file committed to the repository — not in code, JSON data, markdown, comments, commit messages, or TODO lists. This includes first names, last names, and any combination that could identify someone.
+2. **NEVER include personal genotype results** (e.g. "patient X has rs1234 = AG") in catalog files (`data/traits/`, `data/risks/`, `data/pgx/studies/`). Catalog files must contain only population-level, evidence-based information.
+3. **Reference external reports by lab name only** (e.g. "DNHygia Farmaco report", "23andMe raw data", "Xcode Life panel") — never by the person they belong to.
+4. **`.openpgx.json` patient files** must NOT be committed to the public repo. They belong in `.gitignore` or the user's local machine.
+
+## What IS allowed in the repo
+
+- Gene names, rsIDs, alleles, odds ratios, phenotype descriptions (population-level).
+- PubMed IDs, DOIs, journal names, study authors (public literature).
+- Lab/platform names as data sources (e.g. "HeartGenetics MYNHG5 panel", "iPLEX MassARRAY").

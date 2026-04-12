@@ -1,0 +1,550 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://openpgx.ai/schema/v0.4.0/openpgx.schema.json",
+  "title": "OpenPGx Unified Schema",
+  "description": "OpenPGx v0.4.0 — unified schema for patient files, study contributions, risk definitions, and trait definitions. Use $defs/patient_file for .openpgx.json output, $defs/study_contribution for data/pgx/studies/*.json input.",
+  "type": "object",
+  "required": ["openpgx_version"],
+  "properties": {
+    "openpgx_version": {
+      "type": "string",
+      "const": "0.4.0",
+      "description": "OpenPGx specification version"
+    },
+    "metadata": {
+      "$ref": "#/$defs/metadata"
+    },
+    "provenance": {
+      "$ref": "#/$defs/provenance"
+    },
+    "patient": {
+      "$ref": "#/$defs/patient"
+    },
+    "observations": {
+      "type": "array",
+      "description": "Raw genotype observations (what the lab/kit measured — no interpretation)",
+      "items": { "$ref": "#/$defs/genotype_observation" }
+    },
+    "medications": {
+      "type": "array",
+      "description": "Drug-specific pharmacogenomic interpretations",
+      "items": { "$ref": "#/$defs/medication" }
+    },
+    "risks": {
+      "type": "array",
+      "description": "Genetic predispositions to diseases and conditions",
+      "items": { "$ref": "#/$defs/risk" }
+    },
+    "traits": {
+      "type": "array",
+      "description": "Observable characteristics influenced by genetics",
+      "items": { "$ref": "#/$defs/trait" }
+    },
+    "fhir_mapping": {
+      "$ref": "#/$defs/fhir_mapping"
+    }
+  },
+  "$defs": {
+    "metadata": {
+      "type": "object",
+      "required": ["generated_at", "generator", "sources"],
+      "properties": {
+        "generated_at": { "type": "string", "format": "date-time", "description": "When this file was generated" },
+        "generator": { "type": "string", "description": "Software/version that produced this file" },
+        "sources": { "type": "array", "items": { "type": "string" }, "description": "Databases consulted" },
+        "last_updated": { "type": "string", "format": "date-time", "description": "When data was last re-parsed" }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "description": "Version history and change tracking for clinical audit trail",
+      "properties": {
+        "version": { "type": "integer", "description": "Incremented on each regeneration" },
+        "previous_version_hash": { "type": ["string", "null"], "description": "SHA-256 hash of the previous file for integrity chain" },
+        "changelog": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["date", "reason"],
+            "properties": {
+              "date": { "type": "string", "format": "date-time" },
+              "reason": {
+                "type": "string",
+                "enum": ["initial_generation", "catalog_update", "new_study_added", "evidence_level_change", "reparse_with_new_format", "manual_correction"],
+                "description": "Why this version was generated"
+              },
+              "description": { "type": "string", "description": "Human-readable change summary" },
+              "affected_sections": {
+                "type": "array",
+                "items": { "type": "string", "enum": ["medications", "risks", "traits", "observations"] }
+              }
+            }
+          }
+        }
+      }
+    },
+    "patient": {
+      "type": "object",
+      "description": "Individual's profile metadata (no genotype data here — see observations)",
+      "properties": {
+        "id": { "type": "string", "description": "Patient identifier (optional, privacy-preserving)" },
+        "raw_data_source": { "type": "string", "description": "Source platform (e.g., '23andMe', 'Genera')" },
+        "raw_data_format": { "type": "string", "description": "Format version" },
+        "extraction_date": { "type": "string", "format": "date" },
+        "ancestry": {
+          "type": "string",
+          "description": "Self-reported ancestry for population frequency context (e.g., 'european', 'east_asian', 'african', 'latino', 'south_asian', 'mixed')"
+        }
+      }
+    },
+    "genotype_observation": {
+      "type": "object",
+      "description": "Raw genotype observation — what was measured, with no interpretation. Separates fact from opinion for audit trail.",
+      "required": ["gene", "rsid", "genotype"],
+      "properties": {
+        "gene": { "type": "string", "description": "Gene symbol (HGNC standard)" },
+        "rsid": { "type": "string", "pattern": "^rs[0-9]+$" },
+        "genotype": { "type": "string", "description": "Observed genotype (e.g., 'AG', 'TT')" },
+        "chromosome": { "type": "string" },
+        "position": { "type": "integer" },
+        "diplotype": { "type": ["string", "null"], "description": "Star allele notation if applicable (e.g., *1/*4)" },
+        "activity_score": { "type": ["number", "null"], "description": "CPIC activity score if applicable" }
+      }
+    },
+    "medication": {
+      "type": "object",
+      "required": ["drug", "pgx_associations", "parsed_at", "parse_source", "confidence"],
+      "properties": {
+        "drug": {
+          "type": "object",
+          "required": ["name", "class"],
+          "properties": {
+            "name": { "type": "string", "description": "Generic drug name (INN)" },
+            "brand_names": { "type": "array", "items": { "type": "string" } },
+            "class": { "type": "string", "description": "Drug class" },
+            "atc_code": { "type": "string", "description": "WHO ATC classification code" },
+            "drugbank_id": { "type": "string", "description": "DrugBank identifier" }
+          }
+        },
+        "pgx_associations": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/pgx_association" }
+        },
+        "interactions": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/drug_interaction" }
+        },
+        "dosing": { "$ref": "#/$defs/dosing_recommendation" },
+        "parsed_at": { "type": "string", "format": "date-time" },
+        "parse_source": {
+          "type": "string",
+          "enum": ["cpic_guideline", "pharmgkb_annotation", "fda_label", "ema_label", "clinical_trial", "preprint", "web_search", "manual_curation", "community_contribution"]
+        },
+        "confidence": { "$ref": "#/$defs/confidence" }
+      }
+    },
+    "confidence": {
+      "type": "object",
+      "description": "Objective confidence assessment. Score = f(evidence_level, source_count, max_cohort_size). Formula: base(evidence) * min(1, source_count/3) * min(1, log10(cohort+1)/5)",
+      "required": ["score", "evidence_level"],
+      "properties": {
+        "score": {
+          "type": "number", "minimum": 0, "maximum": 1,
+          "description": "Computed confidence: base_score(evidence_level) * source_factor * cohort_factor"
+        },
+        "evidence_level": {
+          "type": "string",
+          "enum": ["established", "moderate", "emerging", "preliminary"],
+          "description": "Base evidence tier. established=0.95, moderate=0.75, emerging=0.50, preliminary=0.30"
+        },
+        "source_count": {
+          "type": "integer",
+          "description": "Number of independent sources supporting this association"
+        },
+        "max_cohort_size": {
+          "type": ["integer", "null"],
+          "description": "Largest cohort among supporting studies"
+        },
+        "rationale": {
+          "type": "string",
+          "description": "Human-readable explanation of the confidence assessment"
+        }
+      }
+    },
+    "pgx_association": {
+      "type": "object",
+      "required": ["gene", "rsid", "effect", "evidence", "clinical_recommendation"],
+      "properties": {
+        "gene": { "type": "string" },
+        "rsid": { "type": "string", "pattern": "^rs[0-9]+$" },
+        "observed_genotype": { "type": "string", "description": "Reference to the raw genotype from observations (what was measured)" },
+        "risk_allele": { "type": "string", "description": "Allele associated with altered response" },
+        "reference_allele": { "type": "string", "description": "Reference/normal allele" },
+        "phenotype": { "type": "string", "description": "Interpreted phenotype (e.g., 'Poor Metabolizer')" },
+        "effect": { "type": "string", "description": "Human-readable clinical effect" },
+        "evidence": { "$ref": "#/$defs/medication_evidence" },
+        "clinical_recommendation": { "type": "string" },
+        "adverse_effects": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/adverse_effect" }
+        },
+        "population_frequency": { "$ref": "#/$defs/population_frequency" },
+        "studies": { "$ref": "#/$defs/studies_array" }
+      }
+    },
+    "medication_evidence": {
+      "type": "object",
+      "required": ["level", "sources"],
+      "properties": {
+        "level": { "type": "string", "enum": ["established", "moderate", "emerging", "preliminary"] },
+        "cpic_level": { "type": ["string", "null"], "description": "CPIC evidence level (A, B, C, D)" },
+        "pharmgkb_level": { "type": ["string", "null"], "description": "PharmGKB evidence level" },
+        "sources": { "type": "array" }
+      }
+    },
+    "adverse_effect": {
+      "type": "object",
+      "required": ["effect", "risk_genotype", "severity"],
+      "properties": {
+        "effect": { "type": "string" },
+        "risk_genotype": { "type": "string" },
+        "odds_ratio": { "type": ["number", "null"] },
+        "frequency_in_carriers": { "type": "string" },
+        "severity": { "type": "string", "enum": ["mild", "moderate", "moderate_to_severe", "severe", "life_threatening"] },
+        "onset": { "type": "string" }
+      }
+    },
+    "dosing_recommendation": {
+      "type": "object",
+      "description": "Structured dosing guidance based on phenotype",
+      "properties": {
+        "phenotype": { "type": "string", "description": "Metabolizer phenotype this recommendation applies to" },
+        "action": {
+          "type": "string",
+          "enum": ["standard_dose", "reduce_dose", "increase_dose", "avoid", "use_alternative", "monitor"],
+          "description": "Recommended clinical action"
+        },
+        "dose_adjustment": { "type": "string", "description": "Specific adjustment (e.g., 'Reduce by 50%')" },
+        "alternative_drugs": { "type": "array", "items": { "type": "string" } },
+        "monitoring": { "type": "string", "description": "Recommended monitoring" },
+        "source": { "type": "string", "description": "Guideline source (e.g., 'CPIC 2023')" }
+      }
+    },
+    "drug_interaction": {
+      "type": "object",
+      "required": ["interacting_drug", "mechanism", "severity", "recommendation"],
+      "properties": {
+        "interacting_drug": { "type": "string" },
+        "mechanism": { "type": "string" },
+        "severity": { "type": "string", "enum": ["major", "moderate", "minor"] },
+        "recommendation": { "type": "string" },
+        "affected_genes": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "risk": {
+      "type": "object",
+      "required": ["condition", "category", "overall_risk", "risk_snps", "evidence", "actionable", "recommendation", "studies"],
+      "properties": {
+        "condition": { "type": "string", "description": "Disease or condition name" },
+        "category": {
+          "type": "string",
+          "enum": [
+            "oncology", "cardiovascular", "neurological", "metabolic", "autoimmune",
+            "ophthalmological", "hematological", "musculoskeletal", "respiratory",
+            "dermatological", "endocrine", "gastrointestinal", "renal", "hepatic",
+            "psychiatric", "immunological", "reproductive"
+          ]
+        },
+        "icd10": { "type": ["string", "null"], "description": "ICD-10 code" },
+        "overall_risk": {
+          "type": "string",
+          "enum": ["reduced", "typical", "slightly_elevated", "elevated", "high"]
+        },
+        "risk_snps": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/risk_snp" }
+        },
+        "polygenic_score": {
+          "oneOf": [{ "$ref": "#/$defs/polygenic_score" }, { "type": "null" }]
+        },
+        "evidence": {
+          "type": "object",
+          "required": ["level"],
+          "properties": {
+            "level": { "type": "string", "enum": ["established", "moderate", "emerging", "preliminary"] },
+            "gwas_catalog_id": { "type": ["string", "null"] }
+          }
+        },
+        "lifetime_risk": {
+          "oneOf": [{ "$ref": "#/$defs/lifetime_risk" }, { "type": "null" }]
+        },
+        "actionable": { "type": "boolean" },
+        "recommendation": { "type": "string" },
+        "studies": { "$ref": "#/$defs/studies_array" }
+      }
+    },
+    "risk_snp": {
+      "type": "object",
+      "required": ["rsid", "gene_region", "observed_genotype", "risk_allele", "odds_ratio", "effect"],
+      "properties": {
+        "rsid": { "type": "string", "pattern": "^rs[0-9]+$" },
+        "gene_region": { "type": "string" },
+        "observed_genotype": { "type": "string", "description": "Raw genotype from observations" },
+        "risk_allele": { "type": "string" },
+        "reference_allele": { "type": "string" },
+        "odds_ratio": { "type": "number" },
+        "population_frequency": { "$ref": "#/$defs/population_frequency" },
+        "effect": { "type": "string", "description": "Interpreted effect for this genotype" }
+      }
+    },
+    "polygenic_score": {
+      "type": "object",
+      "required": ["percentile", "snps_used", "interpretation"],
+      "properties": {
+        "percentile": { "type": "integer", "minimum": 0, "maximum": 100 },
+        "snps_used": { "type": "integer" },
+        "model": { "type": "string", "description": "PGS Catalog ID" },
+        "interpretation": { "type": "string" }
+      }
+    },
+    "lifetime_risk": {
+      "type": "object",
+      "required": ["general_population", "your_estimated", "note"],
+      "properties": {
+        "general_population": { "type": "string" },
+        "your_estimated": { "type": "string" },
+        "note": { "type": "string", "description": "Required caveats" }
+      }
+    },
+    "trait": {
+      "type": "object",
+      "required": ["trait", "category", "snps", "your_phenotype", "description", "evidence", "practical_advice", "studies"],
+      "properties": {
+        "trait": { "type": "string" },
+        "category": {
+          "type": "string",
+          "enum": ["metabolism", "nutrition", "sensory", "fitness", "sleep", "appearance", "cognitive", "behavioral", "skin", "longevity", "immunity", "hormonal"]
+        },
+        "snps": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/trait_snp" }
+        },
+        "your_phenotype": { "type": "string" },
+        "description": { "type": "string" },
+        "evidence": {
+          "type": "object",
+          "required": ["level"],
+          "properties": {
+            "level": { "type": "string", "enum": ["established", "moderate", "emerging"] }
+          }
+        },
+        "practical_advice": { "type": "string" },
+        "studies": { "$ref": "#/$defs/studies_array" }
+      }
+    },
+    "trait_snp": {
+      "type": "object",
+      "required": ["rsid", "gene", "observed_genotype", "effect_allele", "effect"],
+      "properties": {
+        "rsid": { "type": "string", "pattern": "^rs[0-9]+$" },
+        "gene": { "type": "string" },
+        "observed_genotype": { "type": "string", "description": "Raw genotype from observations" },
+        "effect_allele": { "type": "string" },
+        "effect": { "type": "string" }
+      }
+    },
+    "population_frequency": {
+      "type": "object",
+      "description": "Allele frequency by population",
+      "additionalProperties": { "type": "number", "minimum": 0, "maximum": 1 },
+      "properties": {
+        "global": { "type": "number" },
+        "european": { "type": "number" },
+        "east_asian": { "type": "number" },
+        "african": { "type": "number" },
+        "latino": { "type": "number" },
+        "south_asian": { "type": "number" }
+      }
+    },
+    "study": {
+      "type": "object",
+      "required": ["title", "year", "url", "finding"],
+      "properties": {
+        "pmid": { "type": ["string", "null"] },
+        "doi": { "type": ["string", "null"] },
+        "source_type": {
+          "type": "string",
+          "enum": ["pubmed", "preprint", "guideline", "fda_label", "ema_label", "clinical_trial", "consortium", "other"]
+        },
+        "title": { "type": "string" },
+        "journal": { "type": "string" },
+        "year": { "type": "integer" },
+        "cohort_size": { "type": ["integer", "null"] },
+        "url": { "type": "string", "format": "uri" },
+        "finding": { "type": "string" }
+      }
+    },
+    "studies_array": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/study" }
+    },
+    "fhir_mapping": {
+      "type": "object",
+      "description": "Hints for converting this OpenPGx file to HL7 FHIR resources. OpenPGx is NOT a FHIR replacement — it's an intelligence layer that can be projected into FHIR for hospital integration.",
+      "properties": {
+        "patient_reference": {
+          "type": "string",
+          "description": "FHIR Patient resource reference (e.g., 'Patient/12345')"
+        },
+        "service_request_id": {
+          "type": "string",
+          "description": "FHIR ServiceRequest that triggered this analysis"
+        },
+        "resource_mappings": {
+          "type": "object",
+          "description": "How OpenPGx sections map to FHIR resources",
+          "properties": {
+            "observations": {
+              "type": "string",
+              "const": "Observation (code: LOINC 81247-9 'Master HL7 genetic variant reporting panel')",
+              "description": "Each genotype_observation → one FHIR Observation resource"
+            },
+            "medications": {
+              "type": "string",
+              "const": "DiagnosticReport (code: LOINC 51969-4 'Genetic analysis report') + MolecularSequence",
+              "description": "Each medication analysis → one DiagnosticReport with contained Observations"
+            },
+            "risks": {
+              "type": "string",
+              "const": "RiskAssessment (method: LOINC 75321-0 'Clinical genomics report')",
+              "description": "Each risk → one FHIR RiskAssessment resource"
+            },
+            "traits": {
+              "type": "string",
+              "const": "Observation (category: genomics)",
+              "description": "Each trait → one FHIR Observation with genomics category"
+            }
+          }
+        },
+        "terminology_systems": {
+          "type": "object",
+          "description": "Code systems used for FHIR interoperability",
+          "properties": {
+            "genes": { "type": "string", "const": "https://www.genenames.org (HGNC)" },
+            "variants": { "type": "string", "const": "https://www.ncbi.nlm.nih.gov/snp (dbSNP rsID)" },
+            "drugs": { "type": "string", "const": "https://www.whocc.no/atc (ATC) or RxNorm" },
+            "conditions": { "type": "string", "const": "https://icd.who.int (ICD-10)" },
+            "evidence": { "type": "string", "const": "https://cpicpgx.org (CPIC) or https://www.pharmgkb.org" }
+          }
+        }
+      }
+    },
+
+    "study_contribution": {
+      "type": "object",
+      "description": "Format for contributing a pharmacogenomic/nutrigenomic study to the catalog. One file per gene-study. Drop in data/pgx/studies/ and open a PR.",
+      "required": ["gene", "source", "snps"],
+      "properties": {
+        "gene": { "type": "string", "description": "Gene symbol (HGNC standard, e.g., 'CYP2D6', 'GLP1R', 'COMT')" },
+        "category": { "type": "string", "description": "Gene functional category (e.g., 'drug_metabolism', 'drug_target', 'drug_transport', 'nutrient_absorption', 'vitamin_conversion', 'glp1_response', 'immune', 'methylation', 'catecholamine')" },
+        "gene_description": { "type": "string", "description": "Short human-readable gene description" },
+        "drugs": { "type": "array", "items": { "type": "string" }, "description": "Generic drug names this study is relevant to" },
+        "source": { "$ref": "#/$defs/study" },
+        "snps": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["rsid", "interpretations"],
+            "properties": {
+              "rsid": { "type": "string", "pattern": "^rs[0-9]+$" },
+              "risk_allele": { "type": "string", "description": "Allele associated with altered effect" },
+              "reference_allele": { "type": "string", "description": "Normal/reference allele" },
+              "interpretations": {
+                "type": "object",
+                "description": "Genotype → clinical interpretation (e.g., 'AA': { phenotype, effect, recommendation, severity })",
+                "additionalProperties": {
+                  "type": "object",
+                  "required": ["phenotype", "effect"],
+                  "properties": {
+                    "phenotype": { "type": "string" },
+                    "effect": { "type": "string" },
+                    "recommendation": { "type": "string" },
+                    "severity": { "type": "string", "enum": ["info", "mild", "moderate", "severe", "life_threatening"] },
+                    "odds_ratio": { "type": ["number", "null"] }
+                  }
+                }
+              },
+              "population_frequency": { "$ref": "#/$defs/population_frequency" }
+            }
+          }
+        },
+        "evidence_level": { "type": "string", "enum": ["established", "moderate", "emerging", "preliminary"] },
+        "contributor": {
+          "type": "object",
+          "properties": {
+            "name": { "type": "string" },
+            "github": { "type": "string" },
+            "orcid": { "type": "string" }
+          }
+        }
+      }
+    },
+
+    "risk_contribution": {
+      "type": "object",
+      "description": "Format for contributing a disease risk definition. One file per condition. Drop in data/risks/.",
+      "required": ["condition", "category", "snps", "evidence_level", "general_population_risk", "recommendation_template", "studies"],
+      "properties": {
+        "condition": { "type": "string" },
+        "category": { "type": "string" },
+        "icd10": { "type": ["string", "null"] },
+        "snps": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["rsid", "gene_region", "risk_allele", "odds_ratio", "effect_template"],
+            "properties": {
+              "rsid": { "type": "string", "pattern": "^rs[0-9]+$" },
+              "gene_region": { "type": "string" },
+              "risk_allele": { "type": "string" },
+              "odds_ratio": { "type": "number" },
+              "population_frequency": { "$ref": "#/$defs/population_frequency" },
+              "effect_template": { "type": "string" }
+            }
+          }
+        },
+        "evidence_level": { "type": "string", "enum": ["established", "moderate", "emerging", "preliminary"] },
+        "gwas_catalog_id": { "type": ["string", "null"] },
+        "general_population_risk": { "type": "string" },
+        "recommendation_template": { "type": "string" },
+        "studies": { "$ref": "#/$defs/studies_array" }
+      }
+    },
+
+    "trait_contribution": {
+      "type": "object",
+      "description": "Format for contributing a genetic trait definition. One file per trait. Drop in data/traits/.",
+      "required": ["trait", "category", "snps", "evidence_level", "studies"],
+      "properties": {
+        "trait": { "type": "string" },
+        "category": { "type": "string" },
+        "snps": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["rsid", "gene", "effect_allele", "effect_template"],
+            "properties": {
+              "rsid": { "type": "string", "pattern": "^rs[0-9]+$" },
+              "gene": { "type": "string" },
+              "effect_allele": { "type": "string" },
+              "effect_template": { "type": "string" }
+            }
+          }
+        },
+        "evidence_level": { "type": "string", "enum": ["established", "moderate", "emerging"] },
+        "studies": { "$ref": "#/$defs/studies_array" }
+      }
+    }
+  }
+}

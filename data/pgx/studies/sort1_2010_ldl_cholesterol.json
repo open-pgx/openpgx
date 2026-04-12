@@ -1,0 +1,62 @@
+{
+  "gene": "SORT1",
+  "category": "nutrient_absorption",
+  "gene_description": "Sortilin 1 — sorting receptor involved in hepatic lipoprotein metabolism and VLDL secretion. The 1p13.3 locus (CELSR2-PSRC1-SORT1) is one of the strongest GWAS signals for LDL cholesterol and coronary artery disease risk.",
+  "drugs": ["atorvastatin", "rosuvastatin", "simvastatin", "pravastatin"],
+  "source": {
+    "pmid": "20686565",
+    "doi": "10.1038/nature09266",
+    "source_type": "pubmed",
+    "title": "From noncoding variant to phenotype via SORT1 at the 1p13 cholesterol locus",
+    "journal": "Nature",
+    "year": 2010,
+    "cohort_size": 100000,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/20686565/",
+    "finding": "Variants at the 1p13.3 locus alter hepatic SORT1 expression, directly affecting VLDL secretion and LDL-C levels. The minor allele of rs629301 is associated with higher SORT1 expression, lower VLDL secretion, and reduced LDL-C and CAD risk."
+  },
+  "snps": [
+    {
+      "rsid": "rs629301",
+      "risk_allele": "G",
+      "reference_allele": "T",
+      "interpretations": {
+        "GG": {
+          "phenotype": "Elevated LDL cholesterol",
+          "effect": "Homozygous major allele carriers have lower hepatic SORT1 expression, leading to increased VLDL secretion and elevated LDL-C levels. Associated with increased risk of coronary artery disease, atherosclerosis, and arterial calcification. Equivalent to ~10-year additional cardiovascular risk in critical stenosis assessment.",
+          "recommendation": "Cardiovascular risk management: lipid-lowering diet (reduce saturated fat, increase soluble fiber, plant sterols). Consider statin therapy per clinical guidelines. Regular lipid panel monitoring. LDL-C target individualized by overall risk profile.",
+          "severity": "moderate"
+        },
+        "GT": {
+          "phenotype": "Intermediate LDL cholesterol",
+          "effect": "Heterozygotes show intermediate SORT1 expression and LDL-C levels. Modest cardiovascular risk modification from this locus.",
+          "recommendation": "Heart-healthy diet. Monitor lipid levels annually. Standard cardiovascular risk assessment.",
+          "severity": "mild"
+        },
+        "TG": {
+          "phenotype": "Intermediate LDL cholesterol",
+          "effect": "Heterozygotes show intermediate SORT1 expression and LDL-C levels. Modest cardiovascular risk modification from this locus.",
+          "recommendation": "Heart-healthy diet. Monitor lipid levels annually. Standard cardiovascular risk assessment.",
+          "severity": "mild"
+        },
+        "TT": {
+          "phenotype": "Lower LDL cholesterol (protective)",
+          "effect": "Homozygous minor allele carriers have higher hepatic SORT1 expression, resulting in reduced VLDL secretion, lower LDL-C, and reduced coronary artery disease risk. Naturally favorable lipid profile from this locus.",
+          "recommendation": "Standard dietary guidelines. Favorable genetic lipid profile but other risk factors still apply. Maintain healthy lifestyle.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.78,
+        "african": 0.60,
+        "east_asian": 0.70,
+        "south_asian": 0.72,
+        "latino": 0.75
+      }
+    }
+  ],
+  "evidence_level": "established",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

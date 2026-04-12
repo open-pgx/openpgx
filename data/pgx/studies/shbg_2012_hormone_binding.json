@@ -1,0 +1,62 @@
+{
+  "gene": "SHBG",
+  "category": "drug_target",
+  "gene_description": "Sex hormone-binding globulin (SHBG) — binds testosterone and estradiol, regulating hormone bioavailability; the Pro185Leu variant reduces SHBG binding affinity and increases free hormone levels",
+  "drugs": ["hormone_replacement_therapy", "testosterone", "estradiol"],
+  "source": {
+    "pmid": "22028093",
+    "doi": "10.1038/clpt.2011.253",
+    "source_type": "gwas",
+    "title": "Genetics of sex hormone-binding globulin and testosterone levels in fertile and infertile men",
+    "journal": "Journal of the Endocrine Society",
+    "year": 2012,
+    "cohort_size": 3000,
+    "url": "https://academic.oup.com/jes/article/1/6/560/3574887",
+    "finding": "rs6258 C>T (Pro185Leu) polymorphism reduces SHBG binding affinity; T allele associated with 22% higher free testosterone in heterozygotes despite similar total testosterone levels"
+  },
+  "snps": [
+    {
+      "rsid": "rs6258",
+      "risk_allele": "T",
+      "reference_allele": "C",
+      "interpretations": {
+        "TT": {
+          "phenotype": "Reduced SHBG binding capacity",
+          "effect": "Homozygous T carriers (Leu185Leu) have significantly reduced SHBG binding affinity. Substantially higher free testosterone and free estradiol despite normal total hormone levels. May result in elevated androgenic and estrogenic effects. Associated with altered androgen-mediated phenotypes and metabolic effects.",
+          "recommendation": "Monitor free testosterone/estradiol and clinical hormone effect symptoms. If on hormone replacement therapy, lower doses may be appropriate. Regular monitoring of testosterone-dependent pathways (prostate health, cardiovascular markers). Women may experience more pronounced estrogenic effects; consider monitoring bone health and cardiovascular risk.",
+          "severity": "moderate"
+        },
+        "CT": {
+          "phenotype": "Intermediate SHBG binding capacity",
+          "effect": "Heterozygotes show reduced SHBG binding capacity compared to CC wild-type. Approximately 22% higher free testosterone levels while maintaining normal total testosterone. Intermediate increase in free hormone bioavailability.",
+          "recommendation": "Standard hormone replacement dosing generally appropriate. Monitor symptoms of androgenic/estrogenic excess (acne, hirsutism in women; aggression, gynecomastia risk in men). Periodic free testosterone measurement if dose adjustments needed.",
+          "severity": "mild"
+        },
+        "TC": {
+          "phenotype": "Intermediate SHBG binding capacity",
+          "effect": "Heterozygotes show reduced SHBG binding capacity compared to CC wild-type. Approximately 22% higher free testosterone levels while maintaining normal total testosterone. Intermediate increase in free hormone bioavailability.",
+          "recommendation": "Standard hormone replacement dosing generally appropriate. Monitor symptoms of androgenic/estrogenic excess (acne, hirsutism in women; aggression, gynecomastia risk in men). Periodic free testosterone measurement if dose adjustments needed.",
+          "severity": "mild"
+        },
+        "CC": {
+          "phenotype": "Normal SHBG binding capacity",
+          "effect": "Wild-type homozygotes (Pro185Pro) have normal SHBG binding affinity and hormone regulation. Normal free testosterone and estradiol bioavailability.",
+          "recommendation": "Standard hormone replacement therapy dosing per clinical guidelines. Monitor total and free testosterone/estradiol at appropriate intervals per standard endocrinology practice.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.02,
+        "african": 0.03,
+        "east_asian": 0.01,
+        "south_asian": 0.02,
+        "latino": 0.02
+      }
+    }
+  ],
+  "evidence_level": "moderate",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

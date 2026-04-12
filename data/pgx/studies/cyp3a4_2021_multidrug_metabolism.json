@@ -1,0 +1,100 @@
+{
+  "gene": "CYP3A4",
+  "category": "drug_metabolism",
+  "gene_description": "Cytochrome P450 3A4 — the most abundant hepatic CYP enzyme, responsible for oxidative metabolism of approximately 50% of all clinically prescribed drugs including opioids, benzodiazepines, statins, immunosuppressants, and cannabinoids.",
+  "drugs": ["cannabidiol", "dronabinol", "nabilone", "fentanyl", "methadone", "buprenorphine", "oxycodone", "alprazolam", "midazolam", "triazolam", "diazepam", "atorvastatin", "simvastatin", "lovastatin", "rivaroxaban", "apixaban", "cyclosporine", "tacrolimus", "testosterone", "oral contraceptives"],
+  "source": {
+    "pmid": "34246200",
+    "doi": "10.3389/fgene.2021.711943",
+    "source_type": "pubmed",
+    "title": "CYP3A4*22 Genotyping in Clinical Practice: Ready for Implementation?",
+    "journal": "Frontiers in Genetics",
+    "year": 2021,
+    "cohort_size": null,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/34246200/",
+    "finding": "CYP3A4*22 (rs35599367) carriers showed 1.7- to 5-fold decreased CYP3A4 mRNA/protein expression, explaining 12% of CYP3A4 activity variability. Allele frequency 3-5% in Europeans, <1% in Asians."
+  },
+  "snps": [
+    {
+      "rsid": "rs35599367",
+      "risk_allele": "T",
+      "reference_allele": "C",
+      "interpretations": {
+        "TT": {
+          "phenotype": "Poor Metabolizer — CYP3A4*22/*22",
+          "effect": "Homozygous for CYP3A4*22. Markedly decreased CYP3A4 expression (up to 5-fold reduction in mRNA and protein levels). Dramatically reduced metabolism of CYP3A4 substrates leading to significantly elevated plasma concentrations of fentanyl, midazolam, statins, cannabinoids, and many other drugs. Extremely rare genotype (<0.25% in Europeans).",
+          "recommendation": "Reduce doses of all CYP3A4-metabolized drugs by 50-75%. For fentanyl and opioids, use significantly reduced doses with careful monitoring. Avoid high-dose statins (simvastatin ≤20mg). For cannabidiol, expect prolonged effects. Monitor drug levels when possible.",
+          "severity": "severe"
+        },
+        "TC": {
+          "phenotype": "Intermediate Metabolizer — CYP3A4*1/*22",
+          "effect": "Heterozygous carrier of CYP3A4*22. Reduced CYP3A4 enzyme activity (approximately 1.7-2.5-fold decrease in expression). Moderately elevated plasma concentrations of CYP3A4 substrates. Clinically relevant for drugs with narrow therapeutic indices such as fentanyl, tacrolimus, and cyclosporine.",
+          "recommendation": "Consider 25-50% dose reduction for narrow therapeutic index CYP3A4 substrates. Monitor for enhanced effects of opioids, benzodiazepines, and statins. For tacrolimus/cyclosporine, target lower end of therapeutic drug monitoring range. Avoid grapefruit juice which further inhibits CYP3A4.",
+          "severity": "moderate"
+        },
+        "CT": {
+          "phenotype": "Intermediate Metabolizer — CYP3A4*1/*22",
+          "effect": "Heterozygous carrier of CYP3A4*22. Reduced CYP3A4 enzyme activity (approximately 1.7-2.5-fold decrease in expression). Moderately elevated plasma concentrations of CYP3A4 substrates. Clinically relevant for drugs with narrow therapeutic indices such as fentanyl, tacrolimus, and cyclosporine.",
+          "recommendation": "Consider 25-50% dose reduction for narrow therapeutic index CYP3A4 substrates. Monitor for enhanced effects of opioids, benzodiazepines, and statins. For tacrolimus/cyclosporine, target lower end of therapeutic drug monitoring range. Avoid grapefruit juice which further inhibits CYP3A4.",
+          "severity": "moderate"
+        },
+        "CC": {
+          "phenotype": "Normal Metabolizer — CYP3A4*1/*1",
+          "effect": "Wild-type CYP3A4 activity. Normal metabolism of all CYP3A4 substrates. Standard pharmacokinetic profiles expected for fentanyl, benzodiazepines, statins, cannabinoids, and other CYP3A4 substrates.",
+          "recommendation": "Standard dosing per clinical guidelines. Note that CYP3A4 activity is still subject to significant drug-drug interactions and food effects (grapefruit, St. John's wort).",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.05,
+        "african": 0.01,
+        "east_asian": 0.005,
+        "south_asian": 0.02,
+        "latino": 0.03
+      }
+    },
+    {
+      "rsid": "rs2740574",
+      "risk_allele": "G",
+      "reference_allele": "A",
+      "interpretations": {
+        "GG": {
+          "phenotype": "CYP3A4*1B Homozygous — Altered Promoter Activity",
+          "effect": "Homozygous for CYP3A4*1B (-392A>G promoter variant). Associated with modestly altered CYP3A4 expression, though functional significance remains debated. Common in African populations. May contribute to interindividual variability in CYP3A4-mediated drug metabolism.",
+          "recommendation": "Clinical significance of *1B alone is uncertain. Consider in combination with other CYP3A variants. Standard dosing with monitoring is appropriate.",
+          "severity": "mild"
+        },
+        "GA": {
+          "phenotype": "CYP3A4*1/*1B Heterozygous",
+          "effect": "Heterozygous carrier of the *1B allele. Minimal to modest effect on CYP3A4 activity. Clinical impact likely negligible for most drugs.",
+          "recommendation": "Standard dosing per clinical guidelines. No dose adjustment recommended based on this variant alone.",
+          "severity": "info"
+        },
+        "AG": {
+          "phenotype": "CYP3A4*1/*1B Heterozygous",
+          "effect": "Heterozygous carrier of the *1B allele. Minimal to modest effect on CYP3A4 activity. Clinical impact likely negligible for most drugs.",
+          "recommendation": "Standard dosing per clinical guidelines. No dose adjustment recommended based on this variant alone.",
+          "severity": "info"
+        },
+        "AA": {
+          "phenotype": "Wild-type CYP3A4 Promoter",
+          "effect": "Wild-type promoter activity. Normal CYP3A4 transcription regulation.",
+          "recommendation": "Standard dosing per clinical guidelines.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.04,
+        "african": 0.82,
+        "east_asian": 0.01,
+        "south_asian": 0.03,
+        "latino": 0.10
+      }
+    }
+  ],
+  "evidence_level": "moderate",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "gene": "FABP2",
+  "category": "nutrient_absorption",
+  "gene_description": "Fatty Acid Binding Protein 2 (Intestinal) — exclusively expressed in intestinal enterocytes, mediates intracellular transport and absorption of dietary long-chain fatty acids. The Ala54Thr variant increases fat absorption efficiency.",
+  "drugs": ["orlistat"],
+  "source": {
+    "pmid": "11487582",
+    "doi": "10.1074/jbc.M105759200",
+    "source_type": "pubmed",
+    "title": "The polymorphism at codon 54 of the FABP2 gene increases fat absorption in human intestinal explants",
+    "journal": "Journal of Biological Chemistry",
+    "year": 2001,
+    "cohort_size": 200,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/11487582/",
+    "finding": "FABP2 Ala54Thr (rs1799883) Thr-encoding allele increases intestinal triglyceride secretion, de novo apoB synthesis, and chylomicron output. The Thr54 protein has ~2-fold higher affinity for long-chain fatty acids, leading to enhanced fat absorption."
+  },
+  "snps": [
+    {
+      "rsid": "rs1799883",
+      "risk_allele": "A",
+      "reference_allele": "G",
+      "interpretations": {
+        "AA": {
+          "phenotype": "Enhanced fat absorption (Thr/Thr)",
+          "effect": "Homozygous Thr54 carriers have highest intestinal fat absorption efficiency (~2-fold higher fatty acid binding affinity). Increased triglyceride secretion, chylomicron output, and postprandial lipemia. Associated with increased risk of insulin resistance, type 2 diabetes, dyslipidemia, metabolic syndrome, and obesity. Higher fat oxidation rates but also hyperinsulinemia.",
+          "recommendation": "Moderate dietary fat intake (25-30% of calories). Favor unsaturated over saturated fats. Higher fiber intake to slow fat absorption. Consider orlistat if obese. Monitor postprandial triglycerides. Low-glycemic index foods to manage insulin response.",
+          "severity": "moderate"
+        },
+        "GA": {
+          "phenotype": "Intermediate fat absorption (Ala/Thr)",
+          "effect": "Heterozygous carriers show intermediate fat absorption efficiency. Mildly elevated postprandial triglycerides and moderate metabolic risk increase. Interaction with high-saturated-fat diet affects lipid levels and insulin resistance.",
+          "recommendation": "Heart-healthy fat intake. Limit saturated fat. Regular metabolic screening.",
+          "severity": "mild"
+        },
+        "AG": {
+          "phenotype": "Intermediate fat absorption (Ala/Thr)",
+          "effect": "Heterozygous carriers show intermediate fat absorption efficiency. Mildly elevated postprandial triglycerides and moderate metabolic risk increase. Interaction with high-saturated-fat diet affects lipid levels and insulin resistance.",
+          "recommendation": "Heart-healthy fat intake. Limit saturated fat. Regular metabolic screening.",
+          "severity": "mild"
+        },
+        "GG": {
+          "phenotype": "Normal fat absorption (Ala/Ala)",
+          "effect": "Wild-type with standard fatty acid binding affinity and normal intestinal fat absorption. Standard postprandial triglyceride clearance.",
+          "recommendation": "Standard dietary guidelines.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.27,
+        "african": 0.30,
+        "east_asian": 0.35,
+        "south_asian": 0.42,
+        "latino": 0.32
+      }
+    }
+  ],
+  "evidence_level": "moderate",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

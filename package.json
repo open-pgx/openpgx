@@ -1,6 +1,6 @@
 {
   "name": "openpgx",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Open standard for pharmacogenomic data. Upload your DNA, ask about medications.",
   "type": "module",
   "main": "dist/index.js",
@@ -14,6 +14,10 @@
     "dev:http": "tsx watch src/server-http.ts",
     "build": "tsc",
     "rebuild-embeddings": "npm run build && node scripts/rebuild-embeddings.mjs",
+    "generate-studies": "tsx scripts/auto-study-generator/index.ts",
+    "generate-studies:dry": "tsx scripts/auto-study-generator/index.ts --dry-run --verbose",
+    "generate-studies:high": "tsx scripts/auto-study-generator/index.ts --priority=high",
+    "research": "tsx scripts/auto-study-generator/cli.ts",
     "clean": "rm -rf dist",
     "check-dna": "bash scripts/check-no-dna.sh",
     "precommit": "npm run check-dna",
@@ -47,6 +51,10 @@
     "data"
   ],
   "dependencies": {
+    "@ai-sdk/anthropic": "^3.0.69",
+    "@ai-sdk/google": "^3.0.62",
+    "@ai-sdk/openai": "^3.0.52",
+    "ai": "^6.0.158",
     "@modelcontextprotocol/sdk": "^1.6.1",
     "openai": "^6.34.0",
     "zod": "^3.23.8"

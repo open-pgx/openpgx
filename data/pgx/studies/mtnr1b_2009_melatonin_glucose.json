@@ -1,0 +1,65 @@
+{
+  "gene": "MTNR1B",
+  "category": "drug_target",
+  "gene_description": "Melatonin Receptor 1B — G-protein coupled receptor for melatonin in pancreatic beta cells. Variant rs10830963 increases receptor expression, enhancing melatonin-mediated inhibition of insulin secretion and raising fasting glucose.",
+  "drugs": ["melatonin", "ramelteon", "tasimelteon", "agomelatine"],
+  "source": {
+    "pmid": "19060907",
+    "doi": "10.1038/ng.290",
+    "source_type": "pubmed",
+    "title": "Variants in MTNR1B influence fasting glucose levels",
+    "journal": "Nature Genetics",
+    "year": 2009,
+    "cohort_size": 82453,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/19060907/",
+    "finding": "MTNR1B rs10830963 G allele is strongly associated with increased fasting glucose (+0.07 mmol/L per allele, P=3.2×10⁻⁵⁰), decreased early-phase insulin response, and 9% increased risk of type 2 diabetes per allele (OR=1.09)."
+  },
+  "snps": [
+    {
+      "rsid": "rs10830963",
+      "risk_allele": "G",
+      "reference_allele": "C",
+      "interpretations": {
+        "GG": {
+          "phenotype": "Elevated fasting glucose / impaired insulin secretion",
+          "effect": "Homozygous G carriers show significantly elevated fasting glucose (~0.14 mmol/L above baseline), reduced HOMA-B (beta-cell function), and impaired early-phase insulin secretion. Melatonin exerts stronger inhibition of insulin release. Eating late at night (when melatonin is high) worsens glucose tolerance in these individuals. Increased type 2 diabetes risk.",
+          "recommendation": "Avoid eating close to bedtime (finish meals 3+ hours before sleep). If using melatonin supplements, monitor blood glucose. Prefer early time-restricted feeding. Regular fasting glucose monitoring recommended. If diabetic, melatonin supplementation may impair glycemic control.",
+          "severity": "moderate",
+          "odds_ratio": 1.19
+        },
+        "CG": {
+          "phenotype": "Mildly elevated fasting glucose",
+          "effect": "Heterozygous carriers show intermediate fasting glucose elevation (~0.07 mmol/L). Modest reduction in early-phase insulin secretion. Melatonin-glucose interaction is present but less pronounced.",
+          "recommendation": "Maintain regular meal timing and avoid late-night eating. Standard monitoring. Melatonin supplements unlikely to cause major issues but be aware of potential glucose effects.",
+          "severity": "mild",
+          "odds_ratio": 1.09
+        },
+        "GC": {
+          "phenotype": "Mildly elevated fasting glucose",
+          "effect": "Heterozygous carriers show intermediate fasting glucose elevation (~0.07 mmol/L). Modest reduction in early-phase insulin secretion. Melatonin-glucose interaction is present but less pronounced.",
+          "recommendation": "Maintain regular meal timing and avoid late-night eating. Standard monitoring. Melatonin supplements unlikely to cause major issues but be aware of potential glucose effects.",
+          "severity": "mild",
+          "odds_ratio": 1.09
+        },
+        "CC": {
+          "phenotype": "Normal melatonin-glucose axis",
+          "effect": "Wild-type with standard MTNR1B signaling. Normal fasting glucose regulation and insulin secretion from this locus. Melatonin does not excessively inhibit insulin release.",
+          "recommendation": "Standard dietary and metabolic guidelines. Melatonin supplements may be used without specific glucose concerns from this locus.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.30,
+        "african": 0.10,
+        "east_asian": 0.42,
+        "south_asian": 0.35,
+        "latino": 0.28
+      }
+    }
+  ],
+  "evidence_level": "established",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

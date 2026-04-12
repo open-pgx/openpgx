@@ -1,0 +1,102 @@
+{
+  "gene": "CES1",
+  "category": "drug_metabolism",
+  "gene_description": "Carboxylesterase 1 — primary enzyme responsible for hydrolysis and metabolism of methylphenidate in the liver. Loss-of-function variants lead to significantly elevated drug exposure.",
+  "drugs": ["methylphenidate", "dabigatran", "clopidogrel", "oseltamivir"],
+  "source": {
+    "pmid": "28087982",
+    "doi": "10.1111/bcp.13237",
+    "source_type": "pubmed",
+    "title": "The impact of CES1 genotypes on the pharmacokinetics of methylphenidate in healthy Danish subjects",
+    "journal": "British Journal of Clinical Pharmacology",
+    "year": 2017,
+    "cohort_size": 151,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/28087982/",
+    "finding": "G143E (rs71647871) carriers showed 149% increase in d-methylphenidate AUC (2.5-fold higher exposure), and required significantly lower doses to achieve clinical response."
+  },
+  "snps": [
+    {
+      "rsid": "rs71647871",
+      "risk_allele": "A",
+      "reference_allele": "G",
+      "interpretations": {
+        "AA": {
+          "phenotype": "Poor Metabolizer — CES1 Deficient",
+          "effect": "Homozygous for the G143E loss-of-function variant. Markedly decreased CES1 enzymatic activity leading to dramatically elevated methylphenidate plasma levels. Expected >4-fold increase in drug exposure. Extremely rare genotype but carries high risk of adverse effects including cardiovascular events, insomnia, and appetite suppression.",
+          "recommendation": "Use significantly reduced methylphenidate dose (consider ≤25% of standard dose) or avoid methylphenidate entirely. Consider non-CES1-metabolized alternatives such as amphetamine-based stimulants, atomoxetine, or guanfacine. Closely monitor blood pressure and heart rate.",
+          "severity": "severe"
+        },
+        "AG": {
+          "phenotype": "Intermediate Metabolizer — CES1 Reduced Function",
+          "effect": "Heterozygous carrier of the G143E variant. CES1 activity is reduced, resulting in approximately 2.5-fold higher d-methylphenidate exposure (149% increase in AUC). Clinical responders with this genotype required significantly lower doses than wild-type individuals.",
+          "recommendation": "Start methylphenidate at a lower dose (consider 50% of standard starting dose) and titrate cautiously. Monitor for dose-dependent side effects including insomnia, appetite loss, tachycardia, and elevated blood pressure. This variant also affects dabigatran metabolism.",
+          "severity": "moderate",
+          "odds_ratio": 2.5
+        },
+        "GA": {
+          "phenotype": "Intermediate Metabolizer — CES1 Reduced Function",
+          "effect": "Heterozygous carrier of the G143E variant. CES1 activity is reduced, resulting in approximately 2.5-fold higher d-methylphenidate exposure (149% increase in AUC). Clinical responders with this genotype required significantly lower doses than wild-type individuals.",
+          "recommendation": "Start methylphenidate at a lower dose (consider 50% of standard starting dose) and titrate cautiously. Monitor for dose-dependent side effects including insomnia, appetite loss, tachycardia, and elevated blood pressure. This variant also affects dabigatran metabolism.",
+          "severity": "moderate",
+          "odds_ratio": 2.5
+        },
+        "GG": {
+          "phenotype": "Normal Metabolizer",
+          "effect": "Wild-type CES1 function. Normal methylphenidate hydrolysis and clearance. Standard pharmacokinetic profile expected.",
+          "recommendation": "Standard methylphenidate dosing per clinical guidelines. No pharmacogenomic dose adjustment needed.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.037,
+        "african": 0.005,
+        "east_asian": 0.001,
+        "south_asian": 0.01,
+        "latino": 0.02
+      }
+    },
+    {
+      "rsid": "rs2244613",
+      "risk_allele": "C",
+      "reference_allele": "T",
+      "interpretations": {
+        "CC": {
+          "phenotype": "Reduced CES1 Activity",
+          "effect": "Homozygous for the C allele. Associated with moderately reduced CES1 activity and increased methylphenidate exposure. Also relevant for dabigatran metabolism, where this variant has been associated with reduced bleeding risk due to lower active drug levels.",
+          "recommendation": "Monitor for enhanced methylphenidate effects. Consider dose reduction if side effects are prominent. For dabigatran, this variant may provide a modest protective effect against bleeding.",
+          "severity": "mild"
+        },
+        "CT": {
+          "phenotype": "Mildly Reduced CES1 Activity",
+          "effect": "Heterozygous carrier. Slight reduction in CES1 activity with marginally increased drug exposure for CES1 substrates.",
+          "recommendation": "Standard dosing generally appropriate. Monitor clinical response and adjust as needed.",
+          "severity": "mild"
+        },
+        "TC": {
+          "phenotype": "Mildly Reduced CES1 Activity",
+          "effect": "Heterozygous carrier. Slight reduction in CES1 activity with marginally increased drug exposure for CES1 substrates.",
+          "recommendation": "Standard dosing generally appropriate. Monitor clinical response and adjust as needed.",
+          "severity": "mild"
+        },
+        "TT": {
+          "phenotype": "Normal CES1 Activity",
+          "effect": "Wild-type alleles. Normal CES1 enzymatic function and standard drug metabolism.",
+          "recommendation": "Standard dosing per clinical guidelines.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.30,
+        "african": 0.15,
+        "east_asian": 0.10,
+        "south_asian": 0.20,
+        "latino": 0.25
+      }
+    }
+  ],
+  "evidence_level": "moderate",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "gene": "APOA5",
+  "category": "nutrient_absorption",
+  "gene_description": "Apolipoprotein A-V — key regulator of plasma triglyceride levels. Modulates lipoprotein lipase activity and VLDL production. Variants significantly elevate triglycerides and metabolic syndrome risk.",
+  "drugs": ["fenofibrate", "gemfibrozil", "omega-3 supplements", "statins"],
+  "source": {
+    "pmid": "32199547",
+    "doi": "10.1016/j.atherosclerosis.2020.03.002",
+    "source_type": "pubmed",
+    "title": "Apolipoprotein A5 fifteen years anniversary: Lessons from genetic epidemiology",
+    "journal": "Atherosclerosis",
+    "year": 2020,
+    "cohort_size": 50000,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/32199547/",
+    "finding": "APOA5 variants rs3135506 (S19W) and rs662799 (-1131T>C) are consistently associated with 15-16% higher triglyceride levels per minor allele and ~1.5-fold increased metabolic syndrome risk. Significant gene-diet interactions with dietary fat intake."
+  },
+  "snps": [
+    {
+      "rsid": "rs3135506",
+      "risk_allele": "G",
+      "reference_allele": "C",
+      "interpretations": {
+        "GG": {
+          "phenotype": "Significantly elevated triglycerides (S19W homozygous)",
+          "effect": "Homozygous S19W carriers have impaired APOA5 signal peptide processing, reducing protein secretion. Triglycerides elevated ~30% above baseline. Increased risk of metabolic syndrome, hypertriglyceridemia, and cardiovascular disease. Atherogenic LDL levels also elevated.",
+          "recommendation": "Strict dietary fat management — limit saturated fat, avoid trans fats. Omega-3 supplementation (2-4g EPA+DHA daily). Consider fibrate therapy if triglycerides remain >500 mg/dL. Reduce refined carbohydrates and alcohol. Regular triglyceride monitoring.",
+          "severity": "moderate"
+        },
+        "CG": {
+          "phenotype": "Moderately elevated triglycerides",
+          "effect": "Heterozygous carriers show ~15% higher triglycerides. Modest increase in metabolic syndrome risk. Postprandial triglyceride clearance is somewhat delayed.",
+          "recommendation": "Heart-healthy diet with moderate fat intake. Regular triglyceride testing. Omega-3 rich diet (fatty fish 2-3x/week). Limit alcohol and refined sugars.",
+          "severity": "mild"
+        },
+        "GC": {
+          "phenotype": "Moderately elevated triglycerides",
+          "effect": "Heterozygous carriers show ~15% higher triglycerides. Modest increase in metabolic syndrome risk. Postprandial triglyceride clearance is somewhat delayed.",
+          "recommendation": "Heart-healthy diet with moderate fat intake. Regular triglyceride testing. Omega-3 rich diet (fatty fish 2-3x/week). Limit alcohol and refined sugars.",
+          "severity": "mild"
+        },
+        "CC": {
+          "phenotype": "Normal APOA5 function",
+          "effect": "Wild-type with efficient APOA5 secretion and triglyceride regulation from this locus.",
+          "recommendation": "Standard dietary guidelines.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.07,
+        "african": 0.12,
+        "east_asian": 0.01,
+        "south_asian": 0.08,
+        "latino": 0.10
+      }
+    },
+    {
+      "rsid": "rs662799",
+      "risk_allele": "C",
+      "reference_allele": "T",
+      "interpretations": {
+        "CC": {
+          "phenotype": "Significantly elevated triglycerides (-1131C homozygous)",
+          "effect": "Homozygous -1131C carriers have ~50% lower APOA5 gene expression. Substantially elevated triglycerides (~32% above baseline). High metabolic syndrome risk (OR ~1.5). After Mediterranean diet intervention, these carriers show greater triglyceride reduction, indicating strong gene-diet interaction.",
+          "recommendation": "Mediterranean dietary pattern strongly recommended — shows greatest benefit in this genotype. Strict triglyceride management. Omega-3 supplementation. Limit refined carbohydrates and alcohol.",
+          "severity": "moderate"
+        },
+        "TC": {
+          "phenotype": "Moderately elevated triglycerides",
+          "effect": "Heterozygous carriers show ~16% higher triglycerides. Intermediate APOA5 expression. Moderate metabolic syndrome risk elevation.",
+          "recommendation": "Mediterranean-style diet preferred. Regular lipid monitoring. Moderate omega-3 intake.",
+          "severity": "mild"
+        },
+        "CT": {
+          "phenotype": "Moderately elevated triglycerides",
+          "effect": "Heterozygous carriers show ~16% higher triglycerides. Intermediate APOA5 expression. Moderate metabolic syndrome risk elevation.",
+          "recommendation": "Mediterranean-style diet preferred. Regular lipid monitoring. Moderate omega-3 intake.",
+          "severity": "mild"
+        },
+        "TT": {
+          "phenotype": "Normal APOA5 expression",
+          "effect": "Wild-type with full APOA5 promoter activity and normal triglyceride regulation.",
+          "recommendation": "Standard dietary guidelines.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.08,
+        "african": 0.12,
+        "east_asian": 0.30,
+        "south_asian": 0.15,
+        "latino": 0.10
+      }
+    }
+  ],
+  "evidence_level": "established",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

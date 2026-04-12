@@ -118,6 +118,25 @@ Same configuration. OpenPGx uses stdio transport — any MCP-compatible client w
 npx openpgx
 ```
 
+### Remote server (no install)
+
+Don't want to install anything? Use the hosted server directly:
+
+```json
+{
+  "mcpServers": {
+    "openpgx": {
+      "type": "streamable-http",
+      "url": "https://mcp.openpgx.ai/mcp"
+    }
+  }
+}
+```
+
+This connects to our remote MCP server via Streamable HTTP — same 9 tools, zero local setup. Your genome is parsed server-side and stored temporarily in memory (30-minute session TTL).
+
+> **Privacy note:** For maximum privacy, prefer the `npx` install — everything stays on your machine. The remote server processes your data but does not store it permanently.
+
 ---
 
 ## What can you ask?
@@ -127,7 +146,7 @@ npx openpgx
 ```
 "Upload my genome"                    → parse your raw DNA file
 "Can I take Ozempic?"                 → check semaglutide + GLP1R
-"What about Venvanse?"                → brand names work (60+ mapped)
+"What about Venvanse?"                → brand names work (60+ brands mapped)
 "Is modafinil right for me?"          → checks COMT + CYP2C19 interactions
 "Compare sertraline vs escitalopram"  → head-to-head comparison
 "Weight loss medications"             → search by category
@@ -159,41 +178,50 @@ npx openpgx
 "Should I take methylfolate?"         → based on your MTHFR status
 ```
 
-### AI-Powered Drug Research
-
-When a drug isn't in the local knowledge base, the AI can search online and bring the data back into the OpenPGx standard:
-
-```
-"Can I take metformin?"               → not found locally
-                                      → AI searches PharmGKB, CPIC, PubMed
-                                      → saves structured study to local cache
-                                      → returns personalized result
-```
-
 ---
 
 ## What's in the knowledge base
 
-### 19 Genes with Study Data
+**67 studies · 63 genes · 127 drugs · 19 disease risks · 31 traits** — all backed by published research with PMID/DOI.
+
+### 63 Genes with Study Data
 
 Every gene is backed by at least one published study with interpretations per genotype:
 
 | Category | Genes |
 |----------|-------|
-| Drug Metabolism | CYP2D6, CYP2C19, CYP2C9, CYP3A5, ALDH2 |
-| Drug Targets | DPYD, TPMT, NUDT15, VKORC1 |
-| Drug Transport | SLCO1B1 |
-| Immune | HLA-B |
-| Methylation & Vitamins | MTHFR, COMT, VDR, BCMO1, FUT2, CBS |
-| GLP-1 Response | GLP1R, GIPR |
+| Drug Metabolism | CYP2D6, CYP2C19, CYP2C9, CYP2B6, CYP3A5, CYP1A2, ALDH2, DPYD, TPMT, NUDT15, GSTP1 |
+| Drug Targets | VKORC1, DRD2, HTR2C, OPRM1, DPYD, NUDT15, C11ORF65, MTNR1B, GRK4, CLCNKA, F2, F5 |
+| Drug Transport | SLCO1B1, ABCB1, ABCG2 |
+| Immune / HLA | HLA-B, HLA-A |
+| GLP-1 / Incretin | GLP1R, GIPR |
+| Methylation & Vitamins | MTHFR, COMT, VDR, BCMO1, FUT2, CBS, DHCR7, SLC23A1 |
+| Lipid Metabolism | PNPLA3, TM6SF2, APOE, APOA5, APOB, LDLR, LIPC, LPL, SORT1, PPARG |
+| Energy Balance / Obesity | FTO, MC4R, GHSR, CLOCK, SIRT1, BDNF, PCSK1, FABP2, LYPLAL1 |
+| Glucose / Insulin | GCKR, SLC2A2, PPM1K, MTNR1B, IL6 |
+| Circadian Rhythm | PER2, CRY2, NR1D1 |
+| Nutrient Response | FADS1, FABP2, IL6, GRK4, CLCNKA |
 
-### 50+ Drugs Indexed
+### 127 Medications & Compounds
 
-Warfarin, clopidogrel, simvastatin, semaglutide, modafinil, lisdexamfetamine, abacavir, tacrolimus, capecitabine, azathioprine, codeine, tramadol, and many more — each linked to specific genes with evidence.
+<details>
+<summary>Full list of supported drugs (click to expand)</summary>
 
-### 21 Published Studies
+| Therapeutic Area | Medications |
+|-----------------|-------------|
+| **Cardiology & Anticoagulation** | warfarin, clopidogrel, rivaroxaban, apixaban, dabigatran, enoxaparin, heparin, nitroglycerin, isosorbide dinitrate, digoxin, amlodipine, losartan, hydrochlorothiazide, chlorthalidone, furosemide |
+| **Statins & Lipid-Lowering** | simvastatin, atorvastatin, rosuvastatin, pravastatin, ezetimibe, fenofibrate, gemfibrozil, niacin, evolocumab, alirocumab, mipomersen |
+| **Psychiatry & Neurology** | clozapine, olanzapine, risperidone, haloperidol, aripiprazole, quetiapine, fluoxetine, paroxetine, escitalopram, citalopram, venlafaxine, bupropion, carbamazepine, oxcarbazepine, eslicarbazepine, phenytoin, donepezil, memantine, lecanemab |
+| **ADHD & Wakefulness** | modafinil, armodafinil, methylphenidate, lisdexamfetamine, amphetamine, atomoxetine, caffeine |
+| **Pain & Opioids** | codeine, tramadol, fentanyl, morphine, methadone |
+| **Oncology** | capecitabine, fluorouracil, cisplatin, carboplatin, oxaliplatin, paclitaxel, topotecan, methotrexate, tamoxifen |
+| **Immunosuppressants** | tacrolimus, azathioprine, mercaptopurine, thioguanine, sulfasalazine |
+| **Metabolic & GLP-1** | semaglutide, liraglutide, tirzepatide, dulaglutide, setmelanotide, metformin, pioglitazone, rosiglitazone, insulin, orlistat, empagliflozin, dapagliflozin |
+| **Infectious Disease** | abacavir, efavirenz |
+| **Supplements & Vitamins** | omega-3/fish oil/EPA/DHA, vitamin D (cholecalciferol, ergocalciferol, calcitriol), vitamin C (ascorbic acid), folic acid, methylfolate, methylcobalamin, beta-carotene, retinol, resveratrol, nicotinamide riboside, NMN, melatonin, pyridoxine |
+| **Other** | allopurinol, febuxostat, theophylline, tizanidine, cannabidiol, ethanol, disulfiram, celecoxib, ibuprofen, naproxen |
 
-Each with PMID/DOI, cohort sizes, and genotype-level interpretations. From CPIC guidelines, PharmGKB, and peer-reviewed journals.
+</details>
 
 ### 19 Disease Risk Conditions
 
@@ -213,7 +241,28 @@ Each with PMID/DOI, cohort sizes, and genotype-level interpretations. From CPIC 
 
 Caffeine metabolism, alcohol flush, lactose tolerance, muscle composition, chronotype, eye color, and more.
 
-### 11 MCP Tools
+### Clinical Conditions Covered by Gene Studies
+
+Beyond disease risk SNPs, the gene studies provide pharmacogenomic guidance across these clinical areas:
+
+| Area | What OpenPGx covers |
+|------|-------------------|
+| **Blood Clotting** | Factor V Leiden (F5), Prothrombin mutation (F2), warfarin sensitivity (VKORC1, CYP2C9) |
+| **Drug Hypersensitivity** | HLA-B*57:01 → abacavir, HLA-A*31:01 → carbamazepine DRESS, HLA-B*15:02 → SJS/TEN |
+| **Statin Myopathy** | SLCO1B1 poor transport → simvastatin muscle toxicity |
+| **Chemotherapy Toxicity** | DPYD deficiency → fluorouracil/capecitabine, TPMT/NUDT15 → thiopurines, GSTP1 → platinum agents |
+| **Opioid Response** | CYP2D6 poor/ultrarapid → codeine, tramadol, fentanyl dosing |
+| **Antipsychotic Side Effects** | HTR2C → weight gain risk, DRD2 → efficacy, CYP2D6 → metabolism |
+| **Obesity & Weight Loss** | FTO, MC4R, BDNF, PCSK1, GHSR, CLOCK, SIRT1, LYPLAL1 — 9 genes affecting appetite, metabolism, fat distribution |
+| **Cardiovascular Lipids** | APOE, APOA5, APOB, LDLR, LIPC, LPL, SORT1, PNPLA3, TM6SF2 — LDL, HDL, triglycerides, fatty liver |
+| **Diabetes & Glucose** | GCKR, SLC2A2, MTNR1B, PPM1K, PPARG, IL6 — insulin secretion, glucose sensing, BCAA metabolism |
+| **Salt Sensitivity & Hypertension** | GRK4, CLCNKA — sodium handling, diuretic response |
+| **Circadian & Sleep** | PER2, CRY2, NR1D1, CLOCK — chronotype, shift work risk, melatonin response |
+| **Vitamin Metabolism** | MTHFR → folate, DHCR7 → vitamin D synthesis, BCMO1 → beta-carotene, VDR → vitamin D receptor, SLC23A1 → vitamin C, FUT2 → B12 |
+| **Omega-3 & Fat Absorption** | FADS1 → DHA/EPA conversion, FABP2 → dietary fat absorption |
+| **GLP-1 Drug Response** | GLP1R, GIPR → semaglutide/tirzepatide efficacy prediction |
+
+### 9 MCP Tools
 
 | Tool | Description |
 |------|-------------|
@@ -226,8 +275,6 @@ Caffeine metabolism, alcohol flush, lactose tolerance, muscle composition, chron
 | `full_risk_report` | Comprehensive disease risk report |
 | `trait_report` | All genetic traits analysis |
 | `full_report` | Everything combined: medications + risks + traits |
-| `search_drug_pgx` | AI-powered drug research prompt (web search fallback) |
-| `save_drug_research` | Save and validate AI-researched drug data |
 
 ---
 
@@ -282,22 +329,86 @@ The system automatically:
 }
 ```
 
-Full schema: [`openpgx.study.schema.json`](../openpgx.study.schema.json)
+Full schema: [`openpgx.schema.json`](docs/openpgx.schema.json) (see `$defs/study_contribution`)
 
 ---
 
 ## The OpenPGx Output Standard (v0.4.0)
 
-The output format separates raw observations from interpretations for clinical audit trail:
+Patient-facing OpenPGx files are a single JSON object. The **only required top-level field** is `openpgx_version` (must be `"0.4.0"`). Everything else follows [`openpgx.schema.json`](docs/openpgx.schema.json).
 
-- **`observations`** — raw genotypes (what was measured)
-- **`medications`** — drug-gene interpretations with structured confidence scoring
-- **`risks`** — disease predispositions with odds ratios and lifetime risk
-- **`traits`** — observable characteristics with practical advice
-- **`provenance`** — version history and changelog for tracking what changed and why
-- **`fhir_mapping`** — how each section maps to HL7 FHIR resources
+Top-level structure:
 
-Full schema: [`openpgx.schema.json`](../openpgx.schema.json)
+| Field | Required | Role |
+|--------|----------|------|
+| **`openpgx_version`** | yes | Specification version; const `0.4.0` |
+| **`metadata`** | no | `generated_at`, `generator`, `sources`; optional `last_updated` |
+| **`provenance`** | no | Audit trail: `version`, `previous_version_hash`, `changelog[]` (`date`, `reason`, optional `description`, `affected_sections`) |
+| **`patient`** | no | Profile only (no genotypes): `id`, `raw_data_source`, `raw_data_format`, `extraction_date`, `ancestry` |
+| **`observations`** | no | Raw measurements: each item has `gene`, `rsid`, `genotype`; optional `chromosome`, `position`, `diplotype`, `activity_score` |
+| **`medications`** | no | Per-drug blocks: `drug` (`name`, `class`, optional `brand_names`, `atc_code`, `drugbank_id`), `pgx_associations[]`, optional `interactions[]`, optional `dosing`, plus `parsed_at`, `parse_source`, `confidence` (`score`, `evidence_level`, …) |
+| **`risks`** | no | Disease risk: `condition`, `category` (enum incl. oncology, cardiovascular, …), `overall_risk`, `risk_snps[]`, `evidence`, `actionable`, `recommendation`, `studies`; optional `icd10`, `polygenic_score`, `lifetime_risk` |
+| **`traits`** | no | `trait`, `category`, `snps[]`, `your_phenotype`, `description`, `evidence`, `practical_advice`, `studies` |
+| **`fhir_mapping`** | no | Hints for FHIR: `patient_reference`, `service_request_id`, `resource_mappings`, `terminology_systems` |
+
+Minimal valid skeleton (only the required field):
+
+```json
+{
+  "openpgx_version": "0.4.0"
+}
+```
+
+Example with the main optional sections (names shortened; see schema for full `$defs`):
+
+```json
+{
+  "openpgx_version": "0.4.0",
+  "metadata": {
+    "generated_at": "2026-04-12T12:00:00Z",
+    "generator": "openpgx-mcp/1.x",
+    "sources": ["CPIC", "PharmGKB"]
+  },
+  "patient": {
+    "raw_data_source": "23andMe",
+    "ancestry": "european"
+  },
+  "observations": [
+    {
+      "gene": "CYP2C19",
+      "rsid": "rs4244285",
+      "genotype": "AG"
+    }
+  ],
+  "medications": [
+    {
+      "drug": { "name": "clopidogrel", "class": "antiplatelet" },
+      "pgx_associations": [
+        {
+          "gene": "CYP2C19",
+          "rsid": "rs4244285",
+          "effect": "Reduced active metabolite formation",
+          "evidence": { "level": "established", "sources": [] },
+          "clinical_recommendation": "Consider alternative antiplatelet per guideline"
+        }
+      ],
+      "parsed_at": "2026-04-12T12:00:00Z",
+      "parse_source": "cpic_guideline",
+      "confidence": { "score": 0.9, "evidence_level": "established" }
+    }
+  ],
+  "fhir_mapping": {
+    "resource_mappings": {
+      "observations": "Observation (code: LOINC 81247-9 'Master HL7 genetic variant reporting panel')",
+      "medications": "DiagnosticReport (code: LOINC 51969-4 'Genetic analysis report') + MolecularSequence",
+      "risks": "RiskAssessment (method: LOINC 75321-0 'Clinical genomics report')",
+      "traits": "Observation (category: genomics)"
+    }
+  }
+}
+```
+
+Full schema: [`openpgx.schema.json`](docs/openpgx.schema.json)
 
 ---
 
@@ -314,14 +425,14 @@ Raw DNA file (23andMe .txt / Genera .csv)
         |
         v
 +------------------+
-|  Study Catalog    | --> 21 studies x 19 genes x 50+ drugs
+|  Study Catalog    | --> 67 studies x 63 genes x 127 drugs
 |  (data/pgx/       |     Auto-creates gene definitions
 |   studies/*.json)  |     Builds drug-gene index at runtime
 +------------------+
         |
         v
 +------------------+
-|  MCP Tools        | --> 11 tools for AI interaction
+|  MCP Tools        | --> 9 tools for AI interaction
 |  (server-core.ts) |     Falls back to AI web search when needed
 +------------------+
         |
@@ -380,7 +491,7 @@ mcp-server/
 │   ├── trait-catalog.ts     # Trait definitions
 │   └── types.ts             # Shared TypeScript interfaces
 ├── data/
-│   ├── pgx/studies/         # 21 study files (the knowledge base)
+│   ├── pgx/studies/         # 67 study files (the knowledge base)
 │   ├── risks/               # Disease risk condition definitions
 │   ├── traits/              # Trait definitions
 │   ├── drugs_embeddings.json # TF-IDF vectors for semantic search

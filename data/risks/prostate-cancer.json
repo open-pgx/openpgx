@@ -26,6 +26,61 @@
         "european": 0.004
       },
       "effect_template": "Rare HOXB13 variant with strong effect (OR 4.5)."
+    },
+    {
+      "rsid": "rs10993994",
+      "gene_region": "MSMB",
+      "risk_allele": "T",
+      "odds_ratio": 1.25,
+      "population_frequency": {
+        "global": 0.22,
+        "european": 0.23
+      },
+      "effect_template": "MSMB (microseminoprotein beta) variant associated with prostate cancer risk (OR ~1.25)."
+    },
+    {
+      "rsid": "rs2735839",
+      "gene_region": "KLK3",
+      "risk_allele": "G",
+      "odds_ratio": 0.74,
+      "population_frequency": {
+        "global": 0.35,
+        "european": 0.36
+      },
+      "effect_template": "KLK3 (kallikrein-3/PSA) protective variant reducing prostate cancer risk."
+    },
+    {
+      "rsid": "rs10486567",
+      "gene_region": "JAZF1",
+      "risk_allele": "G",
+      "odds_ratio": 0.74,
+      "population_frequency": {
+        "global": 0.25,
+        "european": 0.26
+      },
+      "effect_template": "JAZF1 variant with protective effect on prostate cancer risk."
+    },
+    {
+      "rsid": "rs4430796",
+      "gene_region": "HNF1B",
+      "risk_allele": "A",
+      "odds_ratio": 1.22,
+      "population_frequency": {
+        "global": 0.31,
+        "european": 0.32
+      },
+      "effect_template": "HNF1B (hepatocyte nuclear factor 1-beta) variant increasing prostate cancer susceptibility."
+    },
+    {
+      "rsid": "rs1983891",
+      "gene_region": "FOXP4",
+      "risk_allele": "T",
+      "odds_ratio": 1.12,
+      "population_frequency": {
+        "global": 0.42,
+        "european": 0.43
+      },
+      "effect_template": "FOXP4 (forkhead box P4) variant modestly increasing prostate cancer risk."
     }
   ],
   "evidence_level": "established",
@@ -41,6 +96,15 @@
       "cohort_size": 11789,
       "url": "https://pubmed.ncbi.nlm.nih.gov/17401363/",
       "finding": "rs1447295 A allele OR=1.62 for prostate cancer in European ancestry"
+    },
+    {
+      "pmid": "17401363",
+      "title": "Multiple loci identified in a genome-wide association study of prostate cancer",
+      "journal": "Nature Genetics",
+      "year": 2008,
+      "cohort_size": 11789,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17401363/",
+      "finding": "Identified multiple prostate cancer susceptibility loci including MSMB, KLK3, JAZF1, HNF1B, and FOXP4 variants"
     }
   ]
 }

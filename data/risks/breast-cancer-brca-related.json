@@ -34,6 +34,72 @@
         "european": 0.33
       },
       "effect_template": "Common BRCA1 polymorphism. Modest effect on breast cancer risk."
+    },
+    {
+      "rsid": "rs2981582",
+      "gene_region": "FGFR2",
+      "risk_allele": "T",
+      "odds_ratio": 1.26,
+      "population_frequency": {
+        "global": 0.37,
+        "european": 0.38
+      },
+      "effect_template": "FGFR2 fibroblast growth factor receptor risk variant. T allele increases BC risk (OR ~1.26 per copy)."
+    },
+    {
+      "rsid": "rs3803662",
+      "gene_region": "TOX3",
+      "risk_allele": "A",
+      "odds_ratio": 1.20,
+      "population_frequency": {
+        "global": 0.31,
+        "european": 0.32
+      },
+      "effect_template": "TOX3 thymocyte selection associated high mobility group box risk variant. A allele increases BC risk."
+    },
+    {
+      "rsid": "rs889312",
+      "gene_region": "MAP3K1",
+      "risk_allele": "C",
+      "odds_ratio": 1.13,
+      "population_frequency": {
+        "global": 0.26,
+        "european": 0.27
+      },
+      "effect_template": "MAP3K1 mitogen-activated protein kinase kinase kinase risk variant. C allele associated with BC risk."
+    },
+    {
+      "rsid": "rs3817198",
+      "gene_region": "LSP1",
+      "risk_allele": "C",
+      "odds_ratio": 1.07,
+      "population_frequency": {
+        "global": 0.34,
+        "european": 0.35
+      },
+      "effect_template": "LSP1 lymphocyte-specific protein risk variant. C allele modestly increases BC risk."
+    },
+    {
+      "rsid": "rs13281615",
+      "gene_region": "8q24",
+      "risk_allele": "G",
+      "odds_ratio": 1.08,
+      "population_frequency": {
+        "global": 0.28,
+        "european": 0.29
+      },
+      "effect_template": "8q24 chromosomal locus risk variant. G allele associated with increased BC susceptibility."
+    },
+    {
+      "rsid": "rs1045485",
+      "gene_region": "CASP8",
+      "risk_allele": "C",
+      "odds_ratio": 0.88,
+      "population_frequency": {
+        "global": 0.43,
+        "european": 0.44
+      },
+      "effect_template": "CASP8 caspase-8 apoptosis-related protective variant. C allele protective against BC (OR ~0.88 per copy)."
     }
   ],
   "evidence_level": "established",
@@ -49,6 +115,15 @@
       "cohort_size": 8139,
       "url": "https://pubmed.ncbi.nlm.nih.gov/17529967/",
       "finding": "BRCA1 carriers: 65% cumulative breast cancer risk by age 70"
+    },
+    {
+      "pmid": "17529967",
+      "title": "Genome-wide association study identifies novel breast cancer susceptibility loci",
+      "journal": "Nature",
+      "year": 2007,
+      "cohort_size": 22000,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17529967/",
+      "finding": "GWAS identifies multiple common variants in FGFR2, TOX3, MAP3K1, and 8q24 associated with BC risk"
     }
   ]
 }

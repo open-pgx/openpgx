@@ -341,6 +341,10 @@ function buildProfile(
 
 export function parseRawData(filePath: string): PatientProfile {
   const content = readFileSync(filePath, "utf-8");
+  return parseRawContent(content);
+}
+
+export function parseRawContent(content: string): PatientProfile {
   const lines = content.split("\n").slice(0, 30);
 
   if (is23andMe(lines)) return parse23andMe(content);

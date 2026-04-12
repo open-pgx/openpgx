@@ -1,0 +1,52 @@
+{
+  "gene": "ABCB1",
+  "category": "drug_transport",
+  "gene_description": "ATP-binding cassette sub-family B member 1 — encodes P-glycoprotein (MDR1), a critical efflux transporter at blood-brain barrier, gut, liver, and kidney that limits oral bioavailability and CNS penetration of many drugs",
+  "drugs": ["fentanyl", "morphine", "methadone", "digoxin", "dabigatran", "cannabidiol"],
+  "source": {
+    "pmid": "22028093",
+    "doi": "10.1038/clpt.2011.253",
+    "source_type": "guideline",
+    "title": "PharmGKB summary: very important pharmacogene information for ABCB1",
+    "journal": "Pharmacogenetics and Genomics",
+    "year": 2012,
+    "cohort_size": null,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/22028093/",
+    "finding": "ABCB1 C3435T (rs1045642) TT genotype is associated with reduced P-glycoprotein expression and function, leading to higher systemic and CNS drug levels for P-gp substrates including opioids, digoxin, dabigatran, and cannabinoids."
+  },
+  "snps": [
+    {
+      "rsid": "rs1045642",
+      "risk_allele": "T",
+      "reference_allele": "C",
+      "interpretations": {
+        "TT": {
+          "phenotype": "Reduced P-glycoprotein function",
+          "effect": "Homozygous 3435T carriers have significantly lower P-gp expression in duodenum and at the blood-brain barrier. Higher oral bioavailability and CNS penetration of P-gp substrates. Increased digoxin plasma levels, greater opioid sensitivity, and higher dabigatran exposure reported.",
+          "recommendation": "Use lower starting doses for narrow-therapeutic-index P-gp substrates (digoxin, dabigatran). Monitor closely for opioid over-sedation. Consider dose reduction for fentanyl/morphine/methadone if excessive response observed.",
+          "severity": "moderate",
+          "odds_ratio": null
+        },
+        "TC": {
+          "phenotype": "Intermediate P-glycoprotein function",
+          "effect": "Heterozygotes show intermediate P-gp expression and drug transport activity. Modest increases in substrate bioavailability compared to CC wild-type.",
+          "recommendation": "Standard dosing generally appropriate. Monitor for adverse effects with narrow-therapeutic-index P-gp substrates. Be vigilant when combining multiple P-gp substrates or inhibitors.",
+          "severity": "mild"
+        },
+        "CT": {
+          "phenotype": "Intermediate P-glycoprotein function",
+          "effect": "Heterozygotes show intermediate P-gp expression and drug transport activity. Modest increases in substrate bioavailability compared to CC wild-type.",
+          "recommendation": "Standard dosing generally appropriate. Monitor for adverse effects with narrow-therapeutic-index P-gp substrates. Be vigilant when combining multiple P-gp substrates or inhibitors.",
+          "severity": "mild"
+        },
+        "CC": {
+          "phenotype": "Normal P-glycoprotein function",
+          "effect": "Wild-type with full P-gp expression and efflux activity. Normal drug transport at intestinal, hepatic, renal, and blood-brain barriers.",
+          "recommendation": "Standard dosing per prescribing guidelines. No P-gp-related dose adjustments needed.",
+          "severity": "info"
+        }
+      }
+    }
+  ],
+  "evidence_level": "moderate"
+}

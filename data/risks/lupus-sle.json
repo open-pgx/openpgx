@@ -24,6 +24,72 @@
         "european": 0.1
       },
       "effect_template": "PTPN22 R620W. Shared autoimmune susceptibility variant."
+    },
+    {
+      "rsid": "rs3135388",
+      "gene_region": "HLA-DR",
+      "risk_allele": "T",
+      "odds_ratio": 2.0,
+      "population_frequency": {
+        "global": 0.12,
+        "european": 0.14
+      },
+      "effect_template": "HLA-DR region risk variant for systemic lupus erythematosus."
+    },
+    {
+      "rsid": "rs7574865",
+      "gene_region": "STAT4",
+      "risk_allele": "T",
+      "odds_ratio": 1.55,
+      "population_frequency": {
+        "global": 0.15,
+        "european": 0.16
+      },
+      "effect_template": "STAT4 signal transducer. Interferon pathway component associated with SLE susceptibility."
+    },
+    {
+      "rsid": "rs2004640",
+      "gene_region": "IRF5",
+      "risk_allele": "T",
+      "odds_ratio": 1.4,
+      "population_frequency": {
+        "global": 0.18,
+        "european": 0.2
+      },
+      "effect_template": "IRF5 interferon regulatory factor. Innate immune response involvement in SLE pathogenesis."
+    },
+    {
+      "rsid": "rs1143679",
+      "gene_region": "ITGAM",
+      "risk_allele": "A",
+      "odds_ratio": 1.6,
+      "population_frequency": {
+        "global": 0.13,
+        "european": 0.14
+      },
+      "effect_template": "ITGAM integrin alpha M. Immune cell adhesion and migration in SLE."
+    },
+    {
+      "rsid": "rs5029939",
+      "gene_region": "TNFAIP3",
+      "risk_allele": "G",
+      "odds_ratio": 2.3,
+      "population_frequency": {
+        "global": 0.08,
+        "european": 0.09
+      },
+      "effect_template": "TNFAIP3 TNF-alpha induced protein 3. NF-kappa B signaling regulation in autoimmunity."
+    },
+    {
+      "rsid": "rs13277113",
+      "gene_region": "BLK",
+      "risk_allele": "A",
+      "odds_ratio": 1.39,
+      "population_frequency": {
+        "global": 0.11,
+        "european": 0.12
+      },
+      "effect_template": "BLK B lymphoid tyrosine kinase. B cell development and activation in SLE."
     }
   ],
   "evidence_level": "established",
@@ -39,6 +105,15 @@
       "cohort_size": 8100,
       "url": "https://pubmed.ncbi.nlm.nih.gov/18204098/",
       "finding": "HLA region and PTPN22 confirmed as major SLE risk loci"
+    },
+    {
+      "pmid": "18204098",
+      "title": "Genome-wide association study in systemic lupus erythematosus",
+      "journal": "Nature Genetics",
+      "year": 2008,
+      "cohort_size": 8100,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/18204098/",
+      "finding": "Multiple loci identified including STAT4, IRF5, ITGAM, TNFAIP3, and BLK as SLE susceptibility genes"
     }
   ]
 }

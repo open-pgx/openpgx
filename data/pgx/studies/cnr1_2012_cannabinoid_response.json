@@ -1,0 +1,101 @@
+{
+  "gene": "CNR1",
+  "category": "drug_target",
+  "gene_description": "Cannabinoid Receptor 1 — primary G-protein coupled receptor for endocannabinoids and THC in the central nervous system. Mediates psychoactive effects of cannabis and is the target of cannabinoid-based therapies.",
+  "drugs": ["cannabidiol", "dronabinol", "nabilone", "THC", "nabiximols"],
+  "source": {
+    "pmid": "19443135",
+    "doi": "10.1016/j.drugalcdep.2009.01.004",
+    "source_type": "pubmed",
+    "title": "The association between cannabinoid receptor 1 gene (CNR1) and cannabis dependence symptoms in adolescents and young adults",
+    "journal": "Drug and Alcohol Dependence",
+    "year": 2009,
+    "cohort_size": 2436,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/19443135/",
+    "finding": "CNR1 haplotypes significantly associated with cannabis dependence risk. rs1049353 T-allele carriers showed increased psychotic adverse events (OR=6.1, p=0.009) and augmented subjective effects of THC."
+  },
+  "snps": [
+    {
+      "rsid": "rs1049353",
+      "risk_allele": "T",
+      "reference_allele": "C",
+      "interpretations": {
+        "TT": {
+          "phenotype": "Enhanced Cannabis Sensitivity — High Psychosis Risk",
+          "effect": "Homozygous for the T allele. Significantly increased odds of psychotic adverse events from cannabis/THC use (OR=6.1). Enhanced subjective effects including altered satiety and mood responses. Greater vulnerability to cannabis dependence. The variant is synonymous but may affect CNR1 expression regulation or mRNA stability.",
+          "recommendation": "Strongly advise caution with any cannabis-based therapy. If cannabinoids are medically necessary, use lowest effective dose with close psychiatric monitoring. Prefer CBD-dominant preparations over THC. Screen for personal and family history of psychosis before initiating therapy.",
+          "severity": "severe",
+          "odds_ratio": 6.1
+        },
+        "TC": {
+          "phenotype": "Moderate Cannabis Sensitivity",
+          "effect": "Heterozygous T-allele carrier. Intermediate increase in subjective effects of THC and moderately elevated risk of psychotic adverse events. Lower satiety response to THC compared to CC genotype.",
+          "recommendation": "Use caution with THC-containing preparations. Monitor for unusual psychiatric symptoms. CBD-dominant products may be better tolerated. Consider lower starting doses.",
+          "severity": "moderate"
+        },
+        "CT": {
+          "phenotype": "Moderate Cannabis Sensitivity",
+          "effect": "Heterozygous T-allele carrier. Intermediate increase in subjective effects of THC and moderately elevated risk of psychotic adverse events. Lower satiety response to THC compared to CC genotype.",
+          "recommendation": "Use caution with THC-containing preparations. Monitor for unusual psychiatric symptoms. CBD-dominant products may be better tolerated. Consider lower starting doses.",
+          "severity": "moderate"
+        },
+        "CC": {
+          "phenotype": "Standard Cannabis Response",
+          "effect": "Homozygous for the reference C allele. Standard CNR1 receptor function with typical response to cannabinoid medications. Lower baseline risk of psychotic adverse events from THC.",
+          "recommendation": "Standard dosing for cannabinoid-based medications per clinical guidelines. Monitor as usual for efficacy and side effects.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.22,
+        "african": 0.10,
+        "east_asian": 0.18,
+        "south_asian": 0.15,
+        "latino": 0.20
+      }
+    },
+    {
+      "rsid": "rs806379",
+      "risk_allele": "A",
+      "reference_allele": "G",
+      "interpretations": {
+        "AA": {
+          "phenotype": "Altered Cannabinoid Response",
+          "effect": "Homozygous for the A allele. Marginally associated with altered cannabis response and dependence risk in haplotype analyses. The variant is in linkage disequilibrium with other CNR1 regulatory variants.",
+          "recommendation": "Consider in context of overall CNR1 haplotype. Monitor response to cannabinoid medications.",
+          "severity": "mild"
+        },
+        "AG": {
+          "phenotype": "Intermediate Cannabinoid Response",
+          "effect": "Heterozygous carrier. Minimal standalone effect on cannabinoid pharmacology.",
+          "recommendation": "Standard dosing and monitoring.",
+          "severity": "info"
+        },
+        "GA": {
+          "phenotype": "Intermediate Cannabinoid Response",
+          "effect": "Heterozygous carrier. Minimal standalone effect on cannabinoid pharmacology.",
+          "recommendation": "Standard dosing and monitoring.",
+          "severity": "info"
+        },
+        "GG": {
+          "phenotype": "Standard Cannabinoid Response",
+          "effect": "Wild-type alleles. Normal CNR1 regulatory activity.",
+          "recommendation": "Standard dosing per clinical guidelines.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.35,
+        "african": 0.28,
+        "east_asian": 0.40,
+        "south_asian": 0.32,
+        "latino": 0.33
+      }
+    }
+  ],
+  "evidence_level": "moderate",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

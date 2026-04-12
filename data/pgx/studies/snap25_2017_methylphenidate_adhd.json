@@ -1,0 +1,63 @@
+{
+  "gene": "SNAP25",
+  "category": "drug_target",
+  "gene_description": "Synaptosomal-Associated Protein 25 — essential component of the SNARE complex mediating neurotransmitter vesicle fusion and release. Modulates dopaminergic and noradrenergic transmission relevant to ADHD and stimulant response.",
+  "drugs": ["methylphenidate"],
+  "source": {
+    "pmid": "28871191",
+    "doi": "10.1038/s41598-017-10912-y",
+    "source_type": "pubmed",
+    "title": "Pharmacogenetics of methylphenidate in childhood attention-deficit/hyperactivity disorder: long-term effects",
+    "journal": "Scientific Reports",
+    "year": 2017,
+    "cohort_size": 173,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/28871191/",
+    "finding": "SNAP25 rs3746544 G allele carriers showed poorer methylphenidate response — only 33.3% of G/G genotype responded well vs 74.7% of T/T, with 2-3x higher risk of irritability and sleep problems during treatment."
+  },
+  "snps": [
+    {
+      "rsid": "rs3746544",
+      "risk_allele": "G",
+      "reference_allele": "T",
+      "interpretations": {
+        "GG": {
+          "phenotype": "Poor Methylphenidate Response",
+          "effect": "Homozygous for the G allele (MnlI polymorphism 1065T>G). Only 33.3% of individuals with G/G genotype showed good clinical response to methylphenidate. G allele carriers were 2-3 times more likely to experience irritability and sleep problems during treatment. The variant affects SNAP25 expression and synaptic vesicle dynamics, impairing neurotransmitter release efficiency.",
+          "recommendation": "If methylphenidate is initiated, monitor closely for treatment-resistant symptoms and side effects (especially irritability and sleep disturbance). Consider amphetamine-based alternatives, atomoxetine, or guanfacine if response is inadequate. Behavioral interventions may have greater relative benefit.",
+          "severity": "moderate",
+          "odds_ratio": 2.5
+        },
+        "GT": {
+          "phenotype": "Intermediate Methylphenidate Response",
+          "effect": "Heterozygous carrier. Approximately 72.5% of T/G carriers showed good response to methylphenidate, significantly better than G/G but slightly less than T/T genotype. Moderate increase in risk of treatment-related irritability.",
+          "recommendation": "Standard methylphenidate dosing is reasonable. Monitor for irritability and sleep problems. Adjust formulation timing if sleep disturbance occurs.",
+          "severity": "mild"
+        },
+        "TG": {
+          "phenotype": "Intermediate Methylphenidate Response",
+          "effect": "Heterozygous carrier. Approximately 72.5% of T/G carriers showed good response to methylphenidate, significantly better than G/G but slightly less than T/T genotype. Moderate increase in risk of treatment-related irritability.",
+          "recommendation": "Standard methylphenidate dosing is reasonable. Monitor for irritability and sleep problems. Adjust formulation timing if sleep disturbance occurs.",
+          "severity": "mild"
+        },
+        "TT": {
+          "phenotype": "Good Methylphenidate Response",
+          "effect": "Homozygous for the reference T allele. 74.7% of individuals with this genotype showed good clinical response to methylphenidate. Normal SNAP25 expression and synaptic vesicle function. Lower risk of treatment-emergent irritability and sleep problems.",
+          "recommendation": "Standard methylphenidate dosing per ADHD guidelines. Good likelihood of treatment response.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.35,
+        "african": 0.20,
+        "east_asian": 0.55,
+        "south_asian": 0.40,
+        "latino": 0.30
+      }
+    }
+  ],
+  "evidence_level": "emerging",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "gene": "LYPLAL1",
+  "category": "nutrient_absorption",
+  "gene_description": "Lysophospholipase Like 1 — enzyme involved in triglyceride metabolism and fat distribution. Variants at this locus show strong sexual dimorphism, primarily affecting waist-hip ratio and visceral fat distribution in women.",
+  "drugs": [],
+  "source": {
+    "pmid": "20935629",
+    "doi": "10.1038/ng.685",
+    "source_type": "pubmed",
+    "title": "Meta-analysis identifies 13 new loci associated with waist-hip ratio and reveals sexual dimorphism in the genetic basis of fat distribution",
+    "journal": "Nature Genetics",
+    "year": 2010,
+    "cohort_size": 77167,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/20935629/",
+    "finding": "LYPLAL1 rs2605100 is associated with waist-hip ratio with marked sexual dimorphism (stronger effect in women). The G allele associates with increased fasting triglycerides, fasting insulin, and central adiposity pattern."
+  },
+  "snps": [
+    {
+      "rsid": "rs2605100",
+      "risk_allele": "G",
+      "reference_allele": "A",
+      "interpretations": {
+        "GG": {
+          "phenotype": "Increased central adiposity (especially women)",
+          "effect": "Homozygous G carriers show increased waist-hip ratio, primarily in women. Associated with elevated fasting triglycerides and fasting insulin. Central fat distribution pattern with higher visceral fat tendency. May associate with hepatic steatosis risk. Sexual dimorphism: effect is significantly stronger in females.",
+          "recommendation": "Focus on waist circumference reduction through exercise (both aerobic and resistance training). Anti-inflammatory diet. For women: regular waist circumference monitoring. Reduce refined carbohydrates to manage triglycerides and insulin.",
+          "severity": "mild"
+        },
+        "GA": {
+          "phenotype": "Intermediate fat distribution",
+          "effect": "Heterozygous carriers show modest central adiposity tendency, more pronounced in women. Mildly elevated triglycerides.",
+          "recommendation": "Standard healthy diet and exercise. Monitor waist circumference.",
+          "severity": "info"
+        },
+        "AG": {
+          "phenotype": "Intermediate fat distribution",
+          "effect": "Heterozygous carriers show modest central adiposity tendency, more pronounced in women. Mildly elevated triglycerides.",
+          "recommendation": "Standard healthy diet and exercise. Monitor waist circumference.",
+          "severity": "info"
+        },
+        "AA": {
+          "phenotype": "Favorable fat distribution",
+          "effect": "Wild-type with standard fat distribution pattern. Lower central adiposity tendency from this locus.",
+          "recommendation": "Standard dietary and lifestyle guidelines.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.62,
+        "african": 0.45,
+        "east_asian": 0.55,
+        "south_asian": 0.58,
+        "latino": 0.60
+      }
+    }
+  ],
+  "evidence_level": "moderate",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

@@ -17,13 +17,68 @@
     {
       "rsid": "rs8076131",
       "gene_region": "ORMDL3",
-      "risk_allele": "T",
+      "risk_allele": "A",
       "odds_ratio": 1.35,
       "population_frequency": {
         "global": 0.43,
         "european": 0.5
       },
-      "effect_template": "Second independent 17q21 variant for asthma susceptibility."
+      "effect_template": "ORMDL3 orosomucoid like 3. ER stress and ceramide biosynthesis in asthma."
+    },
+    {
+      "rsid": "rs1342326",
+      "gene_region": "IL33",
+      "risk_allele": "C",
+      "odds_ratio": 1.20,
+      "population_frequency": {
+        "global": 0.22,
+        "european": 0.23
+      },
+      "effect_template": "IL33 interleukin 33. Th2 immune response and allergic inflammation."
+    },
+    {
+      "rsid": "rs1837253",
+      "gene_region": "TSLP",
+      "risk_allele": "C",
+      "odds_ratio": 0.84,
+      "population_frequency": {
+        "global": 0.30,
+        "european": 0.31
+      },
+      "effect_template": "TSLP thymic stromal lymphopoietin protective variant. Dendritic cell-mediated immunity."
+    },
+    {
+      "rsid": "rs2244012",
+      "gene_region": "RAD50/IL13",
+      "risk_allele": "T",
+      "odds_ratio": 1.16,
+      "population_frequency": {
+        "global": 0.32,
+        "european": 0.33
+      },
+      "effect_template": "IL13 interleukin 13. Th2 differentiation and airway remodeling in asthma."
+    },
+    {
+      "rsid": "rs744910",
+      "gene_region": "SMAD3",
+      "risk_allele": "A",
+      "odds_ratio": 1.12,
+      "population_frequency": {
+        "global": 0.35,
+        "european": 0.36
+      },
+      "effect_template": "SMAD3 SMAD family member 3. TGF-beta signaling in airway remodeling."
+    },
+    {
+      "rsid": "rs9273349",
+      "gene_region": "HLA-DQ",
+      "risk_allele": "C",
+      "odds_ratio": 1.18,
+      "population_frequency": {
+        "global": 0.28,
+        "european": 0.29
+      },
+      "effect_template": "HLA-DQ MHC class II antigen. Allergen presentation to T cells."
     }
   ],
   "evidence_level": "established",
@@ -39,6 +94,15 @@
       "cohort_size": 10000,
       "url": "https://pubmed.ncbi.nlm.nih.gov/17611496/",
       "finding": "ORMDL3 locus (17q21) strongly associated with childhood asthma (OR=1.4)"
+    },
+    {
+      "pmid": "20860503",
+      "title": "Meta-analysis of genome-wide association studies identifies ten loci influencing allergic sensitization",
+      "journal": "Nature Genetics",
+      "year": 2010,
+      "cohort_size": 20000,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/20860503/",
+      "finding": "Identified multiple asthma and allergy loci including IL33, TSLP, IL13, SMAD3, and HLA-DQ"
     }
   ]
 }

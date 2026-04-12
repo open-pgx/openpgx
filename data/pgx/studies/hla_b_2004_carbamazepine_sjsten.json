@@ -1,0 +1,76 @@
+{
+  "gene": "HLA-B",
+  "category": "immune",
+  "gene_description": "Human Leukocyte Antigen B — major histocompatibility complex class I gene. HLA-B*15:02 allele is strongly associated with severe cutaneous adverse reactions (Stevens-Johnson Syndrome and Toxic Epidermal Necrolysis) to carbamazepine, oxcarbazepine, and phenytoin, particularly in Southeast Asian populations.",
+  "drugs": [
+    "carbamazepine",
+    "oxcarbazepine",
+    "phenytoin"
+  ],
+  "source": {
+    "pmid": "20345939",
+    "doi": "10.1111/j.1528-1167.2010.02554.x",
+    "source_type": "clinical_trial",
+    "title": "Association between HLA-B*1502 and carbamazepine-induced severe cutaneous adverse drug reactions in a Thai population",
+    "journal": "Epilepsia",
+    "year": 2010,
+    "cohort_size": 112,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/20345939/",
+    "finding": "In Thai population, 88.1% of carbamazepine-induced SJS/TEN patients carried HLA-B*1502 (37/42 patients) vs 11.9% of carbamazepine-tolerant controls (5/42). Odds ratio 54.76, 95% CI 18.18-164.7. FDA black-box warning issued for carbamazepine based on SJS/TEN risk in HLA-B*15:02 carriers."
+  },
+  "snps": [
+    {
+      "rsid": "rs3909184",
+      "risk_allele": "G",
+      "reference_allele": "A",
+      "note": "Proxy SNP tagging HLA-B*15:02 allele in Southeast Asian populations. Direct HLA-B allele typing is gold standard but genetic marker rs3909184 is used in some screening protocols.",
+      "interpretations": {
+        "GG": {
+          "phenotype": "HLA-B*15:02 positive (homozygous)",
+          "effect": "Homozygous carriers of HLA-B*15:02 allele have very high risk of life-threatening carbamazepine-induced Stevens-Johnson Syndrome (SJS) and Toxic Epidermal Necrolysis (TEN). Risk of SJS/TEN is 100-1000 times higher than non-carriers. Typical onset is 1-8 weeks after initiation of carbamazepine. Mortality rate for TEN is 20-30%.",
+          "recommendation": "CONTRAINDICATED. DO NOT prescribe carbamazepine, oxcarbazepine, or phenytoin to HLA-B*15:02-positive patients. This is an FDA black-box warning. Use alternative antiepileptic drugs (e.g., levetiracetam, lamotrigine with careful monitoring, valproate, or lacosamide). This is a CPIC/PharmGKB Level A recommendation.",
+          "severity": "life_threatening",
+          "odds_ratio": 54.76
+        },
+        "GA": {
+          "phenotype": "HLA-B*15:02 positive (heterozygous)",
+          "effect": "Heterozygous carriers of HLA-B*15:02 allele have significantly increased risk of carbamazepine-induced SJS/TEN. The presence of one copy of the allele is sufficient to confer substantial risk. Risk remains 50-100 times higher than non-carriers.",
+          "recommendation": "CONTRAINDICATED or use with extreme caution. Avoid carbamazepine, oxcarbazepine, and phenytoin if alternatives exist. HLA-B*15:02 testing is recommended for all patients with ancestry from Southeast Asia, South Asia (India), or other high-risk populations prior to initiating these medications. If use is deemed essential despite positive screening, implement intensive patient education about early warning signs (fever, rash, blistering, oral lesions, eye involvement) and arrange close clinical monitoring.",
+          "severity": "life_threatening",
+          "odds_ratio": 54.76
+        },
+        "AG": {
+          "phenotype": "HLA-B*15:02 positive (heterozygous)",
+          "effect": "Heterozygous carriers of HLA-B*15:02 allele have significantly increased risk of carbamazepine-induced SJS/TEN. The presence of one copy of the allele is sufficient to confer substantial risk. Risk remains 50-100 times higher than non-carriers.",
+          "recommendation": "CONTRAINDICATED or use with extreme caution. Avoid carbamazepine, oxcarbazepine, and phenytoin if alternatives exist. HLA-B*15:02 testing is recommended for all patients with ancestry from Southeast Asia, South Asia (India), or other high-risk populations prior to initiating these medications. If use is deemed essential despite positive screening, implement intensive patient education about early warning signs (fever, rash, blistering, oral lesions, eye involvement) and arrange close clinical monitoring.",
+          "severity": "life_threatening",
+          "odds_ratio": 54.76
+        },
+        "AA": {
+          "phenotype": "HLA-B*15:02 negative",
+          "effect": "Non-carrier of HLA-B*15:02. Standard population risk for carbamazepine-induced SJS/TEN from this locus. Note: Other HLA alleles (HLA-A*31:01, HLA-B*15:08, HLA-B*15:11, HLA-B*15:21) may still confer risk in some populations. Risk in non-carriers is still approximately 1-6 per 10,000 carbamazepine exposures (baseline population risk).",
+          "recommendation": "Carbamazepine, oxcarbazepine, and phenytoin may be prescribed per standard clinical guidelines. Standard monitoring for dermatologic and systemic adverse effects applies. If patient develops signs of SJS/TEN (fever, rash, blistering, mucosal involvement), discontinue immediately and seek emergency care.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "global": 0.02,
+        "southeast_asian": 0.08,
+        "thai": 0.15,
+        "hong_kong": 0.15,
+        "taiwanese": 0.1,
+        "malaysian": 0.15,
+        "vietnamese": 0.15,
+        "south_asian": 0.04,
+        "east_asian": 0.01,
+        "european": 0.001,
+        "african": 0.001
+      }
+    }
+  ],
+  "evidence_level": "established",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

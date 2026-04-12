@@ -24,6 +24,61 @@
         "european": 0.2
       },
       "effect_template": "CDKN2A region variant. Affects cell cycle control and melanoma susceptibility."
+    },
+    {
+      "rsid": "rs16891982",
+      "gene_region": "SLC45A2",
+      "risk_allele": "C",
+      "odds_ratio": 2.4,
+      "population_frequency": {
+        "global": 0.12,
+        "european": 0.15
+      },
+      "effect_template": "SLC45A2 solute carrier variant involved in pigmentation and melanoma risk (OR ~2.4)."
+    },
+    {
+      "rsid": "rs1126809",
+      "gene_region": "TYR",
+      "risk_allele": "A",
+      "odds_ratio": 1.21,
+      "population_frequency": {
+        "global": 0.22,
+        "european": 0.24
+      },
+      "effect_template": "TYR (tyrosinase) variant affecting melanin synthesis and melanoma susceptibility."
+    },
+    {
+      "rsid": "rs3731239",
+      "gene_region": "CDKN2A",
+      "risk_allele": "G",
+      "odds_ratio": 1.74,
+      "population_frequency": {
+        "global": 0.19,
+        "european": 0.21
+      },
+      "effect_template": "CDKN2A cell cycle regulator variant associated with melanoma risk (OR ~1.74)."
+    },
+    {
+      "rsid": "rs149617956",
+      "gene_region": "MITF",
+      "risk_allele": "T",
+      "odds_ratio": 2.19,
+      "population_frequency": {
+        "global": 0.01,
+        "european": 0.01
+      },
+      "effect_template": "Rare MITF (microphthalmia-associated transcription factor) variant with strong melanoma effect."
+    },
+    {
+      "rsid": "rs12203592",
+      "gene_region": "IRF4",
+      "risk_allele": "T",
+      "odds_ratio": 1.54,
+      "population_frequency": {
+        "global": 0.28,
+        "european": 0.30
+      },
+      "effect_template": "IRF4 (interferon regulatory factor 4) variant linked to pigmentation and melanoma risk."
     }
   ],
   "evidence_level": "established",

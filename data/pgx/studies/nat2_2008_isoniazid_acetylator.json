@@ -1,0 +1,135 @@
+{
+  "gene": "NAT2",
+  "category": "drug_metabolism",
+  "gene_description": "N-Acetyltransferase 2 — catalyzes the acetylation and detoxification of isoniazid and other xenobiotics. Multiple genetic variants (rs1801280, rs1799930, rs1208) define rapid, intermediate, and slow acetylator phenotypes with profound effects on isoniazid efficacy and toxicity.",
+  "drugs": [
+    "isoniazid",
+    "rifampicin",
+    "sulfamethoxazole",
+    "procainamide"
+  ],
+  "source": {
+    "pmid": "22092036",
+    "source_type": "research_study",
+    "title": "Accuracy of various human NAT2 SNP genotyping panels to infer rapid, intermediate and slow acetylator phenotypes",
+    "journal": "Pharmacogenomics",
+    "year": 2011,
+    "cohort_size": null,
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3285565/",
+    "finding": "NAT2 polymorphisms define acetylator phenotypes with major clinical implications for isoniazid tuberculosis therapy. Slow acetylators accumulate acetylhydrazine leading to 36.2% risk of drug-induced liver injury versus 20.5% in rapid acetylators."
+  },
+  "snps": [
+    {
+      "rsid": "rs1801280",
+      "reference_allele": "T",
+      "risk_allele": "C",
+      "variant_name": "NAT2*5 341T>C (I114T)",
+      "interpretations": {
+        "TT": {
+          "phenotype": "Rapid acetylator (at this locus)",
+          "effect": "Wild-type genotype contributing to rapid acetylation phenotype. Rapid conversion of isoniazid to acetylisoniazid.",
+          "recommendation": "Standard isoniazid dosing 5 mg/kg daily. Monitor TB treatment response and ensure adequate plasma levels (8-24 mg/L at 2-6 hours post-dose).",
+          "severity": "info"
+        },
+        "TC": {
+          "phenotype": "Intermediate acetylator (at this locus)",
+          "effect": "Heterozygous NAT2*5 allele. Intermediate acetylation capacity.",
+          "recommendation": "Standard isoniazid dosing with therapeutic drug monitoring if available.",
+          "severity": "mild"
+        },
+        "CT": {
+          "phenotype": "Intermediate acetylator (at this locus)",
+          "effect": "Heterozygous NAT2*5 allele. Intermediate acetylation capacity.",
+          "recommendation": "Standard isoniazid dosing with therapeutic drug monitoring if available.",
+          "severity": "mild"
+        },
+        "CC": {
+          "phenotype": "Slow acetylator (at this locus)",
+          "effect": "Homozygous NAT2*5 allele with reduced isoniazid acetylation.",
+          "recommendation": "Standard dosing but with increased hepatotoxicity monitoring. Monitor liver function tests (ALT, AST, bilirubin) more frequently.",
+          "severity": "mild"
+        }
+      }
+    },
+    {
+      "rsid": "rs1799930",
+      "reference_allele": "G",
+      "risk_allele": "A",
+      "variant_name": "NAT2*6 590G>A (R197Q)",
+      "interpretations": {
+        "GG": {
+          "phenotype": "Rapid acetylator (at this locus)",
+          "effect": "Wild-type genotype with normal NAT2 enzymatic activity at this position.",
+          "recommendation": "Standard isoniazid dosing per TB treatment guidelines.",
+          "severity": "info"
+        },
+        "GA": {
+          "phenotype": "Intermediate/Slow acetylator (at this locus)",
+          "effect": "Heterozygous or homozygous NAT2*6 allele reduces NAT2 activity. Decreased isoniazid acetylation and accumulation.",
+          "recommendation": "Standard isoniazid dosing with enhanced hepatotoxicity monitoring. Monitor LFTs at baseline, weeks 2, 4, 8, and 12 of TB treatment.",
+          "severity": "mild"
+        },
+        "AG": {
+          "phenotype": "Intermediate/Slow acetylator (at this locus)",
+          "effect": "Heterozygous or homozygous NAT2*6 allele reduces NAT2 activity. Decreased isoniazid acetylation and accumulation.",
+          "recommendation": "Standard isoniazid dosing with enhanced hepatotoxicity monitoring. Monitor LFTs at baseline, weeks 2, 4, 8, and 12 of TB treatment.",
+          "severity": "mild"
+        },
+        "AA": {
+          "phenotype": "Slow acetylator (at this locus)",
+          "effect": "Homozygous NAT2*6 variant with impaired isoniazid acetylation. Significant accumulation of isoniazid and toxic acetylhydrazine metabolites.",
+          "recommendation": "Standard isoniazid dosing but mandatory hepatic function monitoring. Consider dose reduction if baseline liver impairment or if LFT elevation develops. Enhanced patient counseling on hepatotoxicity symptoms (jaundice, dark urine, abdominal pain, pruritus).",
+          "severity": "moderate"
+        }
+      }
+    },
+    {
+      "rsid": "rs1208",
+      "reference_allele": "C",
+      "risk_allele": "T",
+      "variant_name": "NAT2*7 857G>A (G286E)",
+      "interpretations": {
+        "CC": {
+          "phenotype": "Rapid acetylator (at this locus)",
+          "effect": "Wild-type genotype with normal NAT2 catalytic activity.",
+          "recommendation": "Standard isoniazid dosing per TB guidelines.",
+          "severity": "info"
+        },
+        "CT": {
+          "phenotype": "Intermediate acetylator (at this locus)",
+          "effect": "Heterozygous NAT2*7 allele with intermediate enzyme activity.",
+          "recommendation": "Standard dosing with routine hepatic monitoring.",
+          "severity": "mild"
+        },
+        "TC": {
+          "phenotype": "Intermediate acetylator (at this locus)",
+          "effect": "Heterozygous NAT2*7 allele with intermediate enzyme activity.",
+          "recommendation": "Standard dosing with routine hepatic monitoring.",
+          "severity": "mild"
+        },
+        "TT": {
+          "phenotype": "Slow acetylator (at this locus)",
+          "effect": "Homozygous NAT2*7 with substantially reduced isoniazid acetylation capacity. Impaired detoxification of isoniazid leading to systemic accumulation.",
+          "recommendation": "Standard isoniazid dosing with mandatory enhanced hepatotoxicity surveillance. Monitor LFTs at baseline and weeks 2, 4, 8, and 12. Consider lower dosing if liver dysfunction develops. Educate patient on hepatotoxicity warning signs.",
+          "severity": "moderate"
+        }
+      }
+    }
+  ],
+  "phenotype_interpretation": {
+    "rapid_acetylator": "Diplotype with functional NAT2 alleles (*4/*4). Population frequency 5-10% (higher near equator). Normal to rapid isoniazid acetylation.",
+    "intermediate_acetylator": "One functional and one reduced-function allele (*4/*5, *4/*6, *4/*7). Population frequency 40-60%. Intermediate acetylation capacity.",
+    "slow_acetylator": "Two reduced-function alleles (*5/*5, *5/*6, *5/*7, *6/*6, *6/*7, *7/*7). Population frequency 10-80% (variable by ancestry). Slow acetylation with drug accumulation and increased hepatotoxicity risk."
+  },
+  "population_frequency": {
+    "note": "Dramatic variation by ancestry",
+    "equatorial_slow_frequency": "up_to_80%",
+    "northern_temperate_slow_frequency": "10-20%",
+    "global_slow_average": "40-50%"
+  },
+  "evidence_level": "established",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "condition": "ADHD",
+  "category": "neurological",
+  "icd10": "F90",
+  "snps": [
+    {
+      "rsid": "rs27072",
+      "gene_region": "SLC6A3",
+      "risk_allele": "T",
+      "odds_ratio": 1.13,
+      "population_frequency": {
+        "global": 0.52,
+        "european": 0.54
+      },
+      "effect_template": "Variant in the dopamine transporter gene associated with altered dopamine reuptake and modest increase in ADHD susceptibility"
+    },
+    {
+      "rsid": "rs998424",
+      "gene_region": "SLC6A2",
+      "risk_allele": "C",
+      "odds_ratio": 1.09,
+      "population_frequency": {
+        "global": 0.45,
+        "european": 0.48
+      },
+      "effect_template": "Norepinephrine transporter variant associated with modest increase in ADHD risk and potential influence on stimulant treatment response"
+    },
+    {
+      "rsid": "rs1800544",
+      "gene_region": "ADRA2A",
+      "risk_allele": "G",
+      "odds_ratio": 1.11,
+      "population_frequency": {
+        "global": 0.38,
+        "european": 0.42
+      },
+      "effect_template": "Alpha-2A adrenergic receptor variant linked to altered noradrenergic signaling and modest ADHD risk elevation"
+    },
+    {
+      "rsid": "rs25531",
+      "gene_region": "SLC6A4",
+      "risk_allele": "A",
+      "odds_ratio": 1.08,
+      "population_frequency": {
+        "global": 0.41,
+        "european": 0.45
+      },
+      "effect_template": "Serotonin transporter polymorphism with modest association to ADHD and potential modulation of emotional regulation"
+    }
+  ],
+  "evidence_level": "moderate",
+  "gwas_catalog_id": "GCST007143",
+  "general_population_risk": "~5-7% (childhood prevalence), ~2.5% (adult persistence)",
+  "recommendation_template": "ADHD has moderate heritability (~75%) with polygenic architecture. Genetic variants in neurotransmitter systems may influence treatment response. Consider comprehensive clinical evaluation for diagnosis. Environmental factors, behavioral interventions, and pharmacotherapy (stimulants, non-stimulants) should be personalized based on clinical presentation. Genetic testing may inform medication selection but is not routinely recommended for diagnosis.",
+  "studies": [
+    {
+      "pmid": "31740662",
+      "title": "Integrative proteomics and pharmacogenomics analysis of methylphenidate treatment response",
+      "journal": "Translational Psychiatry",
+      "year": 2020,
+      "cohort_size": 173,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31740662/",
+      "finding": "Identified protein biomarkers and genetic variants in dopaminergic and noradrenergic pathways associated with methylphenidate treatment response in ADHD"
+    },
+    {
+      "pmid": "30478444",
+      "title": "Discovery of the first genome-wide significant risk loci for attention deficit/hyperactivity disorder",
+      "journal": "Nature Genetics",
+      "year": 2019,
+      "cohort_size": 55374,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30478444/",
+      "finding": "Identified 12 genome-wide significant loci for ADHD with heritability estimate of 22%, showing genetic correlation with educational attainment and other psychiatric disorders"
+    }
+  ]
+}

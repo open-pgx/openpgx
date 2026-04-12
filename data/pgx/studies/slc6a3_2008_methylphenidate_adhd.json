@@ -1,0 +1,65 @@
+{
+  "gene": "SLC6A3",
+  "category": "drug_target",
+  "gene_description": "Solute Carrier Family 6 Member 3 (DAT1) — encodes the dopamine transporter, the primary mechanism for dopamine reuptake from the synapse and main target of stimulant medications used in ADHD.",
+  "drugs": ["methylphenidate", "lisdexamfetamine", "amphetamine", "dextroamphetamine"],
+  "source": {
+    "pmid": "17955457",
+    "doi": "10.1038/sj.tpj.6500466",
+    "source_type": "pubmed",
+    "title": "Response to methylphenidate in adults with ADHD is associated with a polymorphism in SLC6A3 (DAT1)",
+    "journal": "The Pharmacogenomics Journal",
+    "year": 2008,
+    "cohort_size": 178,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/17955457/",
+    "finding": "The rs27072 T allele in DAT1 3'-UTR was associated with altered dopamine transporter expression and reduced methylphenidate response in ADHD adults (p=0.009), with a 2.1-fold effect on mRNA expression levels."
+  },
+  "snps": [
+    {
+      "rsid": "rs27072",
+      "risk_allele": "T",
+      "reference_allele": "C",
+      "interpretations": {
+        "TT": {
+          "phenotype": "Reduced Stimulant Response",
+          "effect": "Homozygous for the T allele, associated with significantly altered dopamine transporter expression. Individuals may have reduced clinical response to methylphenidate due to changes in dopamine reuptake dynamics. Studies show the T allele affects DAT mRNA expression and translation efficiency, potentially leading to suboptimal stimulant efficacy.",
+          "recommendation": "Consider dose optimization or alternative stimulant formulations. If methylphenidate response is inadequate, evaluate amphetamine-based alternatives or non-stimulant options such as atomoxetine or guanfacine.",
+          "severity": "moderate",
+          "odds_ratio": 2.1
+        },
+        "TC": {
+          "phenotype": "Intermediate Stimulant Response",
+          "effect": "Heterozygous carrier of the T allele with one copy of the reference C allele. May show partially reduced methylphenidate efficacy compared to CC homozygotes. The effect on dopamine transporter expression is intermediate.",
+          "recommendation": "Standard stimulant dosing is typically appropriate. Monitor clinical response closely during titration and adjust dose based on symptom improvement and tolerability.",
+          "severity": "mild",
+          "odds_ratio": 1.4
+        },
+        "CT": {
+          "phenotype": "Intermediate Stimulant Response",
+          "effect": "Heterozygous carrier of the T allele with one copy of the reference C allele. May show partially reduced methylphenidate efficacy compared to CC homozygotes. The effect on dopamine transporter expression is intermediate.",
+          "recommendation": "Standard stimulant dosing is typically appropriate. Monitor clinical response closely during titration and adjust dose based on symptom improvement and tolerability.",
+          "severity": "mild",
+          "odds_ratio": 1.4
+        },
+        "CC": {
+          "phenotype": "Normal Stimulant Response",
+          "effect": "Homozygous for the reference C allele. Normal dopamine transporter expression and standard response to methylphenidate and other stimulant medications expected.",
+          "recommendation": "Standard stimulant dosing per clinical guidelines. No pharmacogenomic-based dose adjustment needed.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.22,
+        "african": 0.10,
+        "east_asian": 0.15,
+        "south_asian": 0.18,
+        "latino": 0.20
+      }
+    }
+  ],
+  "evidence_level": "moderate",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

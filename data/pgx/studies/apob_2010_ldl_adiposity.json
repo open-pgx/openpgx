@@ -1,0 +1,62 @@
+{
+  "gene": "APOB",
+  "category": "nutrient_absorption",
+  "gene_description": "Apolipoprotein B — primary structural protein of LDL particles (ApoB-100) and chylomicrons (ApoB-48). Essential for hepatic VLDL assembly and intestinal lipid transport. Variants affect LDL levels, abdominal obesity, and metabolic syndrome risk.",
+  "drugs": ["atorvastatin", "rosuvastatin", "ezetimibe", "mipomersen"],
+  "source": {
+    "pmid": "21122859",
+    "doi": "10.1016/j.numecd.2010.10.009",
+    "source_type": "pubmed",
+    "title": "Gene-nutrient interactions and gender may modulate the association between ApoA1 and ApoB gene polymorphisms and metabolic syndrome risk",
+    "journal": "Nutrition Metabolism and Cardiovascular Diseases",
+    "year": 2010,
+    "cohort_size": 2025,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/21122859/",
+    "finding": "APOB rs512535 major G allele homozygotes show increased metabolic syndrome risk through abdominal obesity and impaired insulin sensitivity, with significant gene-diet interactions — risk exacerbated by high-fat diets (>35% energy from fat), particularly in males."
+  },
+  "snps": [
+    {
+      "rsid": "rs512535",
+      "risk_allele": "G",
+      "reference_allele": "A",
+      "interpretations": {
+        "GG": {
+          "phenotype": "Increased metabolic syndrome / abdominal obesity risk",
+          "effect": "Homozygous G carriers show increased metabolic syndrome risk driven by abdominal obesity and impaired insulin sensitivity. Effect is sex-specific (stronger in males). Risk exacerbated by high-fat diets (>35% energy from fat) and high monounsaturated fat intake (>14% energy). Does not directly affect dyslipidemia but influences adiposity patterns.",
+          "recommendation": "Limit total fat to <35% of energy intake. Reduce monounsaturated fat-heavy foods if excessive. Waist circumference monitoring. Focus on whole grains, fiber-rich foods. Males with this genotype should be especially vigilant about abdominal adiposity.",
+          "severity": "moderate"
+        },
+        "GA": {
+          "phenotype": "Intermediate metabolic risk",
+          "effect": "Heterozygotes show intermediate risk profile. Mild gene-diet interaction with high-fat diets.",
+          "recommendation": "Balanced macronutrient distribution. Standard healthy diet with moderate fat intake.",
+          "severity": "mild"
+        },
+        "AG": {
+          "phenotype": "Intermediate metabolic risk",
+          "effect": "Heterozygotes show intermediate risk profile. Mild gene-diet interaction with high-fat diets.",
+          "recommendation": "Balanced macronutrient distribution. Standard healthy diet with moderate fat intake.",
+          "severity": "mild"
+        },
+        "AA": {
+          "phenotype": "Lower metabolic syndrome risk",
+          "effect": "Homozygous minor allele carriers show lower metabolic syndrome risk from this locus. Less susceptible to fat-driven abdominal obesity.",
+          "recommendation": "Standard dietary guidelines.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.70,
+        "african": 0.55,
+        "east_asian": 0.65,
+        "south_asian": 0.60,
+        "latino": 0.68
+      }
+    }
+  ],
+  "evidence_level": "moderate",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

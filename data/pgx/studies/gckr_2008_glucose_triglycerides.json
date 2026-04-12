@@ -1,0 +1,62 @@
+{
+  "gene": "GCKR",
+  "category": "nutrient_absorption",
+  "gene_description": "Glucokinase Regulator — hepatic protein that allosterically inhibits glucokinase and sequesters it in the nucleus under low glucose. The rs780094 variant modulates the glucose-triglyceride trade-off: improving glycemia while raising triglycerides.",
+  "drugs": ["metformin", "fenofibrate"],
+  "source": {
+    "pmid": "18678614",
+    "doi": "10.2337/db08-0516",
+    "source_type": "pubmed",
+    "title": "Common missense variant in the glucokinase regulatory protein gene is associated with increased plasma triglyceride and C-reactive protein but lower fasting glucose concentrations",
+    "journal": "Diabetes",
+    "year": 2008,
+    "cohort_size": 16000,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/18678614/",
+    "finding": "GCKR rs780094 T allele increases hepatic glucokinase activity, leading to lower fasting glucose and insulin resistance but higher triglycerides and CRP. Represents a metabolic trade-off: improved glycemia at the cost of dyslipidemia and NAFLD risk."
+  },
+  "snps": [
+    {
+      "rsid": "rs780094",
+      "risk_allele": "T",
+      "reference_allele": "C",
+      "interpretations": {
+        "TT": {
+          "phenotype": "Lower glucose / higher triglycerides (metabolic trade-off)",
+          "effect": "Homozygous T carriers have reduced GCKR inhibition of glucokinase, leading to increased hepatic glucose uptake. Lower fasting glucose, lower insulin, and reduced T2DM risk. However, elevated triglycerides, higher CRP (inflammation), and increased NAFLD risk. This metabolic trade-off represents improved glycemia at the cost of lipid dysregulation.",
+          "recommendation": "Monitor triglycerides and liver function despite favorable glucose profile. Limit refined carbohydrates (which hepatic glucokinase converts to triglycerides). Low-glycemic, moderate-fat diet. Omega-3 supplementation for triglyceride management. Regular hepatic steatosis screening.",
+          "severity": "moderate"
+        },
+        "CT": {
+          "phenotype": "Intermediate metabolic trade-off",
+          "effect": "Heterozygous carriers show intermediate effects: modestly lower fasting glucose with mildly elevated triglycerides.",
+          "recommendation": "Balanced diet. Monitor both glucose and lipid panels. Standard metabolic recommendations.",
+          "severity": "mild"
+        },
+        "TC": {
+          "phenotype": "Intermediate metabolic trade-off",
+          "effect": "Heterozygous carriers show intermediate effects: modestly lower fasting glucose with mildly elevated triglycerides.",
+          "recommendation": "Balanced diet. Monitor both glucose and lipid panels. Standard metabolic recommendations.",
+          "severity": "mild"
+        },
+        "CC": {
+          "phenotype": "Normal GCKR regulation",
+          "effect": "Wild-type with standard glucokinase regulatory function. Normal fasting glucose and triglyceride levels from this locus. Standard T2DM risk.",
+          "recommendation": "Standard dietary and metabolic guidelines.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.40,
+        "african": 0.15,
+        "east_asian": 0.50,
+        "south_asian": 0.35,
+        "latino": 0.38
+      }
+    }
+  ],
+  "evidence_level": "established",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "gene": "PPARG",
+  "category": "nutrient_absorption",
+  "gene_description": "Peroxisome Proliferator-Activated Receptor Gamma — nuclear receptor and transcription factor highly expressed in adipose tissue, regulating adipogenesis, glucose homeostasis, lipid metabolism, and insulin sensitivity. Target of thiazolidinedione drugs (pioglitazone).",
+  "drugs": ["pioglitazone", "rosiglitazone"],
+  "source": {
+    "pmid": "32764857",
+    "doi": "10.1038/s41598-020-69363-7",
+    "source_type": "pubmed",
+    "title": "PPARG (Pro12Ala) genetic variant and risk of T2DM: a systematic review and meta-analysis",
+    "journal": "Scientific Reports",
+    "year": 2020,
+    "cohort_size": 131863,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/32764857/",
+    "finding": "PPARG Pro12Ala (rs1801282) meta-analysis of 73 studies (62,250 cases / 69,613 controls) confirms the Ala (G) allele is protective against T2DM. The Pro (C) allele increases diabetes risk, particularly in interaction with high-fat diets."
+  },
+  "snps": [
+    {
+      "rsid": "rs1801282",
+      "risk_allele": "C",
+      "reference_allele": "G",
+      "interpretations": {
+        "CC": {
+          "phenotype": "Pro/Pro — higher T2DM risk",
+          "effect": "Homozygous Pro12 carriers have full PPARG transcriptional activity. Higher risk of type 2 diabetes, particularly with high-fat diet. Greater insulin resistance in the context of obesity. PPARG-mediated adipogenesis and lipid storage are more active, but insulin sensitization may be impaired under metabolic stress.",
+          "recommendation": "Limit saturated fat intake (<7% calories). Mediterranean or low-glycemic diet preferred. Regular physical activity to improve insulin sensitivity. Monitor fasting glucose and HbA1c. If diabetic, pioglitazone may provide particular benefit as it targets PPARG directly.",
+          "severity": "moderate"
+        },
+        "CG": {
+          "phenotype": "Pro/Ala — intermediate T2DM risk",
+          "effect": "Heterozygous Pro12Ala carriers show 30-50% reduced PPARG ligand-induced activity. Intermediate diabetes risk. The Ala allele provides partial protection against T2DM development. Dietary fat-insulin resistance interaction is moderated.",
+          "recommendation": "Balanced diet with moderate fat intake. Standard diabetes prevention strategies. Regular exercise and weight management.",
+          "severity": "mild"
+        },
+        "GC": {
+          "phenotype": "Pro/Ala — intermediate T2DM risk",
+          "effect": "Heterozygous Pro12Ala carriers show 30-50% reduced PPARG ligand-induced activity. Intermediate diabetes risk. The Ala allele provides partial protection against T2DM development. Dietary fat-insulin resistance interaction is moderated.",
+          "recommendation": "Balanced diet with moderate fat intake. Standard diabetes prevention strategies. Regular exercise and weight management.",
+          "severity": "mild"
+        },
+        "GG": {
+          "phenotype": "Ala/Ala — lower T2DM risk (protective)",
+          "effect": "Homozygous Ala12 carriers have most reduced PPARG activity. Protective against type 2 diabetes. However, may be associated with slightly increased obesity risk and hypercholesterolemia in some populations. Lower insulin resistance overall.",
+          "recommendation": "Favorable diabetes genetics from this locus. Standard healthy lifestyle. Monitor cholesterol levels as GG may associate with higher total cholesterol in some studies.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.12,
+        "african": 0.03,
+        "east_asian": 0.05,
+        "south_asian": 0.10,
+        "latino": 0.10
+      }
+    }
+  ],
+  "evidence_level": "established",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

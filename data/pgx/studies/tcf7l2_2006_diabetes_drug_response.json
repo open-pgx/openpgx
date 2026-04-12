@@ -1,0 +1,64 @@
+{
+  "gene": "TCF7L2",
+  "category": "diabetes_metabolic",
+  "gene_description": "Transcription Factor 7 Like 2 — a transcription factor involved in incretin signaling and glucose homeostasis. The rs7903146 variant is the strongest genetic risk factor for type 2 diabetes identified to date.",
+  "drugs": [
+    "metformin",
+    "sulfonylureas",
+    "glipizide"
+  ],
+  "source": {
+    "pmid": "29326107",
+    "source_type": "research_study",
+    "title": "TCF7L2 Genetic Variation Augments Incretin Resistance and Influences Response to a Sulfonylurea and Metformin: The Study to Understand the Genetics of the Acute Response to Metformin and Glipizide in Humans (SUGAR-MGH)",
+    "journal": "Diabetes Care",
+    "year": 2018,
+    "cohort_size": null,
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5829963/",
+    "finding": "TCF7L2 rs7903146 C>T variant affects metformin and sulfonylurea response through incretin signaling. T allele carriers show improved glycemic response to metformin with 6.7-16.8% lower fasting glucose and 25.9% lower fasting insulin after treatment."
+  },
+  "snps": [
+    {
+      "rsid": "rs7903146",
+      "reference_allele": "C",
+      "risk_allele": "T",
+      "variant_name": "C>T risk variant",
+      "interpretations": {
+        "CC": {
+          "phenotype": "Higher type 2 diabetes risk, variable drug response",
+          "effect": "Wild-type genotype associated with increased type 2 diabetes risk. Suboptimal metformin response with modest glycemic improvement. Moderate sulfonylurea response expected.",
+          "recommendation": "Standard metformin and sulfonylurea dosing. Monitor HbA1c response closely. May require combination therapy or early addition of second agent if inadequate control.",
+          "severity": "info"
+        },
+        "CT": {
+          "phenotype": "Intermediate diabetes risk, enhanced drug response",
+          "effect": "Heterozygous T allele carriers show intermediate type 2 diabetes genetic risk. Improved glycemic response to both metformin and sulfonylureas. Better fasting glucose and insulin control compared to CC carriers. Approximately 6.7% lower fasting glucose after 6 months metformin therapy.",
+          "recommendation": "Standard dosing appropriate. Expect robust glycemic response to metformin and sulfonylureas. Good candidates for monotherapy trials before combination therapy needed.",
+          "severity": "mild"
+        },
+        "TC": {
+          "phenotype": "Intermediate diabetes risk, enhanced drug response",
+          "effect": "Heterozygous T allele carriers show intermediate type 2 diabetes genetic risk. Improved glycemic response to both metformin and sulfonylureas. Better fasting glucose and insulin control compared to CC carriers. Approximately 6.7% lower fasting glucose after 6 months metformin therapy.",
+          "recommendation": "Standard dosing appropriate. Expect robust glycemic response to metformin and sulfonylureas. Good candidates for monotherapy trials before combination therapy needed.",
+          "severity": "mild"
+        },
+        "TT": {
+          "phenotype": "Reduced diabetes risk, optimal drug response",
+          "effect": "Homozygous T allele carriers (about 25-30% of populations) show the strongest protection against type 2 diabetes and most dramatic drug response improvements. Approximately 16.8% lower fasting glucose and 25.9% lower fasting insulin after metformin treatment. Enhanced incretin signaling contributes to superior glycemic response.",
+          "recommendation": "Excellent candidates for metformin monotherapy with expected robust HbA1c reduction. Strong sulfonylurea responders. Prioritize lifestyle modifications as metabolic capacity is preserved. Earlier remission of diabetes possible.",
+          "severity": "info"
+        }
+      }
+    }
+  ],
+  "population_frequency": {
+    "note": "Common variant worldwide",
+    "allele_frequency_t": "30-35%",
+    "carrier_frequency": "50-60% (CT + TT)"
+  },
+  "evidence_level": "moderate",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

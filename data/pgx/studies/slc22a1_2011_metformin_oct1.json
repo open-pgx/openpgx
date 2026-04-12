@@ -1,0 +1,64 @@
+{
+  "gene": "SLC22A1",
+  "category": "drug_transport",
+  "gene_description": "Solute Carrier Family 22 Member 1 — encodes Organic Cation Transporter 1 (OCT1), a hepatic influx transporter critical for metformin uptake into hepatocytes where it exerts its hypoglycemic effects",
+  "drugs": [
+    "metformin"
+  ],
+  "source": {
+    "pmid": "35905099",
+    "doi": "10.1371/journal.pone.0271410",
+    "source_type": "research_study",
+    "title": "The influence of metformin transporter gene SLC22A1 and SLC47A1 variants on steady-state pharmacokinetics and glycemic response",
+    "journal": "PLOS ONE",
+    "year": 2022,
+    "cohort_size": 81,
+    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0271410",
+    "finding": "SLC22A1 rs628031 polymorphism affects metformin pharmacokinetics and glycemic response. The Met408Val variant (rs628031 A>G) reduces OCT1 mRNA expression in hepatocytes, resulting in decreased metformin hepatic uptake and accumulation in systemic circulation."
+  },
+  "snps": [
+    {
+      "rsid": "rs628031",
+      "reference_allele": "A",
+      "risk_allele": "G",
+      "variant_name": "Met408Val",
+      "interpretations": {
+        "AA": {
+          "phenotype": "Normal OCT1 function",
+          "effect": "Wild-type genotype with full OCT1 expression and metformin transport capacity. Normal hepatic uptake of metformin allowing optimal glycemic response.",
+          "recommendation": "Standard metformin dosing per therapeutic guidelines. Expect robust hypoglycemic response.",
+          "severity": "info"
+        },
+        "AG": {
+          "phenotype": "Intermediate OCT1 function",
+          "effect": "Heterozygous carriers show intermediate OCT1 expression and reduced metformin transport compared to wild-type. Moderately increased plasma metformin levels due to decreased hepatic uptake.",
+          "recommendation": "Standard metformin dosing, though some patients may require dose adjustment if GI side effects develop. Monitor glycemic response and HbA1c reduction.",
+          "severity": "mild"
+        },
+        "GA": {
+          "phenotype": "Intermediate OCT1 function",
+          "effect": "Heterozygous carriers show intermediate OCT1 expression and reduced metformin transport compared to wild-type. Moderately increased plasma metformin levels due to decreased hepatic uptake.",
+          "recommendation": "Standard metformin dosing, though some patients may require dose adjustment if GI side effects develop. Monitor glycemic response and HbA1c reduction.",
+          "severity": "mild"
+        },
+        "GG": {
+          "phenotype": "Reduced OCT1 function",
+          "effect": "Homozygous carriers have significantly reduced OCT1 mRNA expression and metformin transport capacity. Markedly elevated plasma metformin levels with decreased renal clearance. Increased risk of metformin-associated lactic acidosis (MALA) especially with renal impairment.",
+          "recommendation": "Caution with metformin use. Consider dose reduction or alternative antidiabetic agents. Monitor renal function closely. Avoid in patients with eGFR <45 mL/min/1.73m2. Regular monitoring of serum lactate and pH recommended.",
+          "severity": "moderate"
+        }
+      }
+    }
+  ],
+  "population_frequency": {
+    "note": "Highly variable by ancestry",
+    "asian_frequency": "60-80%",
+    "european_frequency": "40-50%",
+    "african_frequency": "35-45%"
+  },
+  "evidence_level": "moderate",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

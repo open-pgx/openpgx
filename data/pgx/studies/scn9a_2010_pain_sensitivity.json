@@ -1,0 +1,62 @@
+{
+  "gene": "SCN9A",
+  "category": "drug_target",
+  "gene_description": "Sodium Voltage-Gated Channel Alpha Subunit 9 (Nav1.7) — peripheral sodium channel essential for pain signal transduction. Gain- and loss-of-function variants cause dramatically altered pain perception, from complete insensitivity to extreme pain disorders.",
+  "drugs": ["morphine", "oxycodone", "fentanyl", "propofol", "lidocaine", "carbamazepine"],
+  "source": {
+    "pmid": "20421589",
+    "doi": "10.1073/pnas.0913181107",
+    "source_type": "pubmed",
+    "title": "Pain perception is altered by a nucleotide polymorphism in SCN9A",
+    "journal": "Proceedings of the National Academy of Sciences",
+    "year": 2010,
+    "cohort_size": 578,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/20421589/",
+    "finding": "SCN9A rs6746030 A allele (R1150W) significantly associated with increased pain scores. GA and AA genotypes linked to increased Nav1.7 activity and lowered pain thresholds. Minor allele frequency ~10%."
+  },
+  "snps": [
+    {
+      "rsid": "rs6746030",
+      "risk_allele": "A",
+      "reference_allele": "G",
+      "interpretations": {
+        "AA": {
+          "phenotype": "Increased Pain Sensitivity — Enhanced Nav1.7 Activity",
+          "effect": "Homozygous for the R1150W variant (tryptophan at position 1150). Significantly increased Nav1.7 sodium channel activity leading to heightened pain perception across multiple pain modalities. Lower pain thresholds and increased pain scores. Under propofol anesthesia, significantly lower BIS values recorded, indicating altered anesthetic sensitivity.",
+          "recommendation": "Plan for higher analgesic requirements. Consider multimodal pain management strategies. Propofol dosing may need adjustment based on BIS monitoring. Local anesthetics targeting sodium channels (lidocaine, bupivacaine) may be particularly effective. Nav1.7-specific blockers in development may offer targeted benefit.",
+          "severity": "moderate"
+        },
+        "AG": {
+          "phenotype": "Mildly Increased Pain Sensitivity",
+          "effect": "Heterozygous carrier. Intermediate Nav1.7 activity with moderately increased pain perception compared to GG genotype. Mild alteration in anesthetic response.",
+          "recommendation": "Be aware of potentially increased analgesic needs. Monitor pain scores and adjust management accordingly. Standard starting doses with readiness to titrate.",
+          "severity": "mild"
+        },
+        "GA": {
+          "phenotype": "Mildly Increased Pain Sensitivity",
+          "effect": "Heterozygous carrier. Intermediate Nav1.7 activity with moderately increased pain perception compared to GG genotype. Mild alteration in anesthetic response.",
+          "recommendation": "Be aware of potentially increased analgesic needs. Monitor pain scores and adjust management accordingly. Standard starting doses with readiness to titrate.",
+          "severity": "mild"
+        },
+        "GG": {
+          "phenotype": "Standard Pain Sensitivity",
+          "effect": "Homozygous for the reference allele (arginine at position 1150). Normal Nav1.7 sodium channel function and standard pain perception. Typical response to analgesics and anesthetics.",
+          "recommendation": "Standard pain management protocols. No pharmacogenomic adjustment needed.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.10,
+        "african": 0.15,
+        "east_asian": 0.05,
+        "south_asian": 0.08,
+        "latino": 0.12
+      }
+    }
+  ],
+  "evidence_level": "moderate",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

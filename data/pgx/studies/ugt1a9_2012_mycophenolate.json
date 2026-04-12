@@ -1,0 +1,95 @@
+{
+  "gene": "UGT1A9",
+  "category": "drug_metabolism",
+  "gene_description": "UDP-glucuronosyltransferase Family 1 Member A9 — the primary hepatic enzyme responsible for glucuronidation and elimination of mycophenolic acid (MPA), the active metabolite of mycophenolate mofetil (MMF) used in organ transplant recipients",
+  "drugs": [
+    "mycophenolate",
+    "mycophenolate mofetil"
+  ],
+  "source": {
+    "pmid": "15258099",
+    "source_type": "research_study",
+    "title": "The main role of UGT1A9 in the hepatic metabolism of mycophenolic acid and the effects of naturally occurring variants",
+    "journal": "Drug Metabolism and Disposition",
+    "year": 2004,
+    "cohort_size": null,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/15258099/",
+    "finding": "UGT1A9 polymorphisms (rs72551330, rs2741049) significantly affect mycophenolic acid pharmacokinetics in transplant patients. Genetic variation contributes to inter-individual variability in MPA exposure and clinical outcomes."
+  },
+  "snps": [
+    {
+      "rsid": "rs72551330",
+      "reference_allele": "C",
+      "risk_allele": "T",
+      "variant_name": "UGT1A9 reduced function variant",
+      "interpretations": {
+        "CC": {
+          "phenotype": "Normal UGT1A9 activity",
+          "effect": "Wild-type genotype with normal mycophenolic acid glucuronidation and elimination. Expected MPA area under curve (AUC) and half-life values consistent with clinical pharmacokinetic targets.",
+          "recommendation": "Standard mycophenolate mofetil dosing of 1000 mg twice daily. Monitor MPA trough levels (therapeutic range typically 1-3.5 mg/h/mL). Standard immunosuppressive efficacy expected.",
+          "severity": "info"
+        },
+        "CT": {
+          "phenotype": "Intermediate UGT1A9 activity",
+          "effect": "Heterozygous carriers show moderately reduced UGT1A9 expression and MPA glucuronidation capacity. Elevated MPA exposure (increased AUC approximately 15-25%) with moderately prolonged elimination half-life. Increased risk of dose-dependent mycophenolate toxicity (GI side effects, hematologic effects).",
+          "recommendation": "Standard mycophenolate dosing with therapeutic drug monitoring. Measure MPA trough levels at steady state (days 7-14). If levels exceed target (>3.5 mg/h/mL), consider dose reduction by 250-500 mg. Monitor complete blood count for myelosuppression.",
+          "severity": "mild"
+        },
+        "TC": {
+          "phenotype": "Intermediate UGT1A9 activity",
+          "effect": "Heterozygous carriers show moderately reduced UGT1A9 expression and MPA glucuronidation capacity. Elevated MPA exposure (increased AUC approximately 15-25%) with moderately prolonged elimination half-life. Increased risk of dose-dependent mycophenolate toxicity (GI side effects, hematologic effects).",
+          "recommendation": "Standard mycophenolate dosing with therapeutic drug monitoring. Measure MPA trough levels at steady state (days 7-14). If levels exceed target (>3.5 mg/h/mL), consider dose reduction by 250-500 mg. Monitor complete blood count for myelosuppression.",
+          "severity": "mild"
+        },
+        "TT": {
+          "phenotype": "Reduced UGT1A9 activity",
+          "effect": "Homozygous carriers with significantly impaired mycophenolic acid glucuronidation (30-50% reduced activity). Markedly elevated MPA plasma exposure with extended half-life. High risk for mycophenolate toxicity including severe GI side effects (diarrhea, nausea, vomiting), myelosuppression (anemia, leukopenia, thrombocytopenia), and increased infection risk.",
+          "recommendation": "Consider mycophenolate dose reduction (750 mg or 500 mg twice daily initial dose). Mandatory therapeutic drug monitoring with target MPA trough 1.5-3.0 mg/h/mL (lower end of range). Frequent CBC monitoring for bone marrow suppression. Prophylactic antimicrobial coverage consideration. Switch to alternative immunosuppressant if MPA toxicity develops despite dose adjustment.",
+          "severity": "moderate"
+        }
+      }
+    },
+    {
+      "rsid": "rs2741049",
+      "reference_allele": "G",
+      "risk_allele": "A",
+      "variant_name": "UGT1A9 reduced function variant",
+      "interpretations": {
+        "GG": {
+          "phenotype": "Normal UGT1A9 activity",
+          "effect": "Wild-type genotype with normal mycophenolic acid metabolism. Expected MPA pharmacokinetic profile with standard mycophenolate dosing.",
+          "recommendation": "Standard mycophenolate mofetil dosing. Therapeutic drug monitoring with target MPA trough 1-3.5 mg/h/mL.",
+          "severity": "info"
+        },
+        "GA": {
+          "phenotype": "Intermediate UGT1A9 activity",
+          "effect": "Heterozygous carriers show intermediate UGT1A9 function with modest increase in MPA exposure. Slightly elevated trough levels may occur.",
+          "recommendation": "Standard mycophenolate dosing with therapeutic drug monitoring. Adjust dose if MPA levels exceed 3.5 mg/h/mL.",
+          "severity": "mild"
+        },
+        "AG": {
+          "phenotype": "Intermediate UGT1A9 activity",
+          "effect": "Heterozygous carriers show intermediate UGT1A9 function with modest increase in MPA exposure. Slightly elevated trough levels may occur.",
+          "recommendation": "Standard mycophenolate dosing with therapeutic drug monitoring. Adjust dose if MPA levels exceed 3.5 mg/h/mL.",
+          "severity": "mild"
+        },
+        "AA": {
+          "phenotype": "Reduced UGT1A9 activity",
+          "effect": "Homozygous carriers with reduced UGT1A9-mediated MPA glucuronidation. Significantly elevated mycophenolic acid exposure with increased toxicity risk.",
+          "recommendation": "Consider mycophenolate dose reduction. Mandatory therapeutic drug monitoring targeting lower MPA levels (1.5-3.0 mg/h/mL). Close monitoring for mycophenolate toxicity.",
+          "severity": "moderate"
+        }
+      }
+    }
+  ],
+  "population_frequency": {
+    "note": "Limited frequency data available",
+    "rs72551330_allele_frequency": "5-15%",
+    "rs2741049_allele_frequency": "10-20%"
+  },
+  "evidence_level": "moderate",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

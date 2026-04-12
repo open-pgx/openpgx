@@ -24,6 +24,72 @@
         "european": 0.22
       },
       "effect_template": "ARMS2/HTRA1 locus. Second major AMD risk locus with strong effect."
+    },
+    {
+      "rsid": "rs2230199",
+      "gene_region": "C3",
+      "risk_allele": "G",
+      "odds_ratio": 1.7,
+      "population_frequency": {
+        "global": 0.19,
+        "european": 0.19
+      },
+      "effect_template": "Complement Component 3 variant. Associated with AMD risk through complement pathway activation."
+    },
+    {
+      "rsid": "rs9332739",
+      "gene_region": "C2/CFB",
+      "risk_allele": "G",
+      "odds_ratio": 0.4,
+      "population_frequency": {
+        "global": 0.23,
+        "european": 0.24
+      },
+      "effect_template": "C2/CFB locus protective variant. G allele protective against AMD (OR ~0.4 per copy)."
+    },
+    {
+      "rsid": "rs641153",
+      "gene_region": "CFB",
+      "risk_allele": "A",
+      "odds_ratio": 0.5,
+      "population_frequency": {
+        "global": 0.31,
+        "european": 0.31
+      },
+      "effect_template": "Complement Factor B protective variant. A allele reduces AMD risk (OR ~0.5 per copy)."
+    },
+    {
+      "rsid": "rs429358",
+      "gene_region": "APOE",
+      "risk_allele": "T",
+      "odds_ratio": 0.7,
+      "population_frequency": {
+        "global": 0.16,
+        "european": 0.15
+      },
+      "effect_template": "APOE ε2 determining SNP (context variant). ε2 and ε4 both show modest protective/neutral effects in AMD (OR ~0.7 for C allele context)."
+    },
+    {
+      "rsid": "rs10468017",
+      "gene_region": "LIPC",
+      "risk_allele": "T",
+      "odds_ratio": 0.8,
+      "population_frequency": {
+        "global": 0.25,
+        "european": 0.26
+      },
+      "effect_template": "LIPC hepatic lipase protective variant. T allele protective against AMD."
+    },
+    {
+      "rsid": "rs3764261",
+      "gene_region": "CETP",
+      "risk_allele": "A",
+      "odds_ratio": 1.2,
+      "population_frequency": {
+        "global": 0.37,
+        "european": 0.38
+      },
+      "effect_template": "CETP risk variant associated with altered lipid metabolism affecting AMD susceptibility."
     }
   ],
   "evidence_level": "established",
@@ -39,6 +105,15 @@
       "cohort_size": 2172,
       "url": "https://pubmed.ncbi.nlm.nih.gov/15761122/",
       "finding": "CFH Y402H (rs1061170 C) increases AMD risk 2.5-fold per allele"
+    },
+    {
+      "pmid": "16518403",
+      "title": "Complement component 3 and complement factor I genetic variants and risk of age-related macular degeneration",
+      "journal": "Nature Genetics",
+      "year": 2006,
+      "cohort_size": 3000,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/16518403/",
+      "finding": "C3 rs2230199 G allele increases AMD risk through complement pathway (OR ~1.7)"
     }
   ]
 }

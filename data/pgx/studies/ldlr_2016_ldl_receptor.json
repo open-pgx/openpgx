@@ -1,0 +1,62 @@
+{
+  "gene": "LDLR",
+  "category": "nutrient_absorption",
+  "gene_description": "Low-Density Lipoprotein Receptor — membrane receptor that mediates hepatic uptake of LDL cholesterol from circulation. Variants in the promoter/intron-1 region modulate receptor expression and LDL-C levels.",
+  "drugs": ["atorvastatin", "rosuvastatin", "simvastatin", "evolocumab", "alirocumab"],
+  "source": {
+    "pmid": "27973560",
+    "doi": "10.1371/journal.pone.0167676",
+    "source_type": "pubmed",
+    "title": "Identification of the Functional Variant(s) that Explain the Low-Density Lipoprotein Receptor (LDLR) GWAS SNP rs6511720 Association with Lower LDL-C and Risk of CHD",
+    "journal": "PLoS ONE",
+    "year": 2016,
+    "cohort_size": 188577,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/27973560/",
+    "finding": "LDLR rs6511720 T allele causes 29% increased LDLR expression via enhanced transcription factor binding, leading to lower LDL-C (effect size -0.15 to -0.26 mmol/L) and reduced coronary heart disease risk."
+  },
+  "snps": [
+    {
+      "rsid": "rs6511720",
+      "risk_allele": "G",
+      "reference_allele": "T",
+      "interpretations": {
+        "GG": {
+          "phenotype": "Standard LDLR expression / higher LDL-C",
+          "effect": "Homozygous major allele carriers have baseline LDLR expression levels. Higher LDL-C levels compared to T allele carriers. Standard coronary heart disease risk from this locus. Represents the majority genotype (~81% in Europeans).",
+          "recommendation": "Standard lipid management per clinical guidelines. Heart-healthy diet with focus on reducing saturated fat and increasing soluble fiber. Statin therapy if LDL-C elevated per risk assessment.",
+          "severity": "info"
+        },
+        "GT": {
+          "phenotype": "Increased LDLR expression / lower LDL-C",
+          "effect": "Heterozygous T carriers have ~15% higher LDLR expression. LDL-C reduced by approximately 0.15-0.26 mmol/L (6-10 mg/dL). Modest reduction in coronary heart disease and myocardial infarction risk.",
+          "recommendation": "Favorable genetic profile for LDL-C. Maintain heart-healthy lifestyle. May respond particularly well to statins. Other cardiovascular risk factors still apply.",
+          "severity": "info"
+        },
+        "TG": {
+          "phenotype": "Increased LDLR expression / lower LDL-C",
+          "effect": "Heterozygous T carriers have ~15% higher LDLR expression. LDL-C reduced by approximately 0.15-0.26 mmol/L (6-10 mg/dL). Modest reduction in coronary heart disease and myocardial infarction risk.",
+          "recommendation": "Favorable genetic profile for LDL-C. Maintain heart-healthy lifestyle. May respond particularly well to statins. Other cardiovascular risk factors still apply.",
+          "severity": "info"
+        },
+        "TT": {
+          "phenotype": "Highest LDLR expression / lowest LDL-C (protective)",
+          "effect": "Homozygous minor allele carriers (rare, ~1%) have ~29% increased LDLR expression. Significantly lower LDL-C levels. Reduced risk of coronary heart disease and abdominal aortic aneurysm. Naturally efficient hepatic LDL clearance.",
+          "recommendation": "Highly favorable lipid genetics. Standard healthy lifestyle. Lowest risk from this locus.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.10,
+        "african": 0.08,
+        "east_asian": 0.05,
+        "south_asian": 0.07,
+        "latino": 0.09
+      }
+    }
+  ],
+  "evidence_level": "established",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

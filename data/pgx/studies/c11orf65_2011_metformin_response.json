@@ -1,0 +1,51 @@
+{
+  "gene": "C11ORF65",
+  "category": "drug_target",
+  "gene_description": "Chromosome 11 open reading frame 65 (ATM region) — rs11212617 is located near the ATM gene and was the first GWAS-identified locus for metformin glycemic response in type 2 diabetes; the ATM–AMPK signaling pathway is a proposed mechanism for metformin action",
+  "drugs": ["metformin"],
+  "source": {
+    "pmid": "21186350",
+    "doi": "10.1038/ng.735",
+    "source_type": "pubmed",
+    "title": "Common variants near ATM are associated with glycemic response to metformin in type 2 diabetes",
+    "journal": "Nature Genetics",
+    "year": 2011,
+    "cohort_size": 3920,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/21186350/",
+    "finding": "GWAS across GoDARTS and UKPDS cohorts identified rs11212617 (C11orf65/ATM locus) as significantly associated with metformin treatment success (achieving HbA1c <7%). The A allele was associated with better glycemic response to metformin (OR 1.35, P = 4.1×10⁻⁸)."
+  },
+  "snps": [
+    {
+      "rsid": "rs11212617",
+      "risk_allele": "C",
+      "reference_allele": "A",
+      "interpretations": {
+        "AA": {
+          "phenotype": "Enhanced metformin responder",
+          "effect": "Homozygous for the A allele associated with greater HbA1c reduction on metformin monotherapy. Higher probability of achieving glycemic target (HbA1c <7%) in the GoDARTS/UKPDS discovery and replication cohorts (OR 1.35 per A allele).",
+          "recommendation": "Metformin is an excellent first-line choice. Expect good glycemic response with standard titration. Continue routine HbA1c monitoring every 3–6 months.",
+          "severity": "info"
+        },
+        "AC": {
+          "phenotype": "Intermediate metformin responder",
+          "effect": "Heterozygous carriers show intermediate glycemic response to metformin. Moderate probability of reaching target HbA1c on monotherapy.",
+          "recommendation": "Start metformin at standard dose with uptitration. If target HbA1c not achieved after 3–6 months of maximal tolerated dose, consider adding a second agent (SGLT2 inhibitor, GLP-1 agonist, or sulfonylurea) per guidelines.",
+          "severity": "mild"
+        },
+        "CA": {
+          "phenotype": "Intermediate metformin responder",
+          "effect": "Heterozygous carriers show intermediate glycemic response to metformin. Moderate probability of reaching target HbA1c on monotherapy.",
+          "recommendation": "Start metformin at standard dose with uptitration. If target HbA1c not achieved after 3–6 months of maximal tolerated dose, consider adding a second agent (SGLT2 inhibitor, GLP-1 agonist, or sulfonylurea) per guidelines.",
+          "severity": "mild"
+        },
+        "CC": {
+          "phenotype": "Reduced metformin glycemic response",
+          "effect": "Homozygous for the C allele associated with diminished HbA1c reduction on metformin monotherapy. Lower likelihood of achieving glycemic target on metformin alone in the GoDARTS/UKPDS cohorts.",
+          "recommendation": "Metformin remains appropriate first-line therapy but anticipate possible need for earlier combination therapy. If HbA1c remains above target after 3 months at maximal dose, promptly add a complementary agent. Consider SGLT2 inhibitors or GLP-1 receptor agonists which act through independent mechanisms.",
+          "severity": "moderate"
+        }
+      }
+    }
+  ],
+  "evidence_level": "moderate"
+}

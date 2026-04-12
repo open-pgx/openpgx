@@ -1,0 +1,62 @@
+{
+  "gene": "HLA-A",
+  "category": "immune",
+  "gene_description": "Human Leukocyte Antigen A — major histocompatibility complex class I gene. HLA-A*31:01 allele is associated with severe cutaneous adverse reactions (DRESS, SJS/TEN, MPE) to carbamazepine across multiple ethnicities.",
+  "drugs": ["carbamazepine", "oxcarbazepine", "eslicarbazepine"],
+  "source": {
+    "pmid": "29392710",
+    "doi": "10.1002/cpt.1004",
+    "source_type": "guideline",
+    "title": "Clinical Pharmacogenetics Implementation Consortium (CPIC) Guideline for HLA Genotype and Use of Carbamazepine and Oxcarbazepine: 2017 Update",
+    "journal": "Clinical Pharmacology & Therapeutics",
+    "year": 2018,
+    "cohort_size": null,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/29392710/",
+    "finding": "HLA-A*31:01 carriers have significantly increased risk of carbamazepine-induced DRESS, SJS/TEN, and MPE across European, Japanese, and other populations. CPIC recommends avoiding carbamazepine in HLA-A*31:01-positive patients."
+  },
+  "snps": [
+    {
+      "rsid": "rs41543916",
+      "risk_allele": "A",
+      "reference_allele": "C",
+      "interpretations": {
+        "AA": {
+          "phenotype": "HLA-A*31:01 positive (homozygous)",
+          "effect": "Homozygous carriers of HLA-A*31:01 have highest risk for carbamazepine-induced severe cutaneous adverse reactions including DRESS (Drug Reaction with Eosinophilia and Systemic Symptoms), Stevens-Johnson Syndrome (SJS), toxic epidermal necrolysis (TEN), and maculopapular exanthema (MPE). Risk is present regardless of ethnicity.",
+          "recommendation": "DO NOT USE carbamazepine or oxcarbazepine. Choose an alternative anticonvulsant that is not structurally related (e.g., levetiracetam, lamotrigine with caution, valproate). This is a CPIC Level A recommendation.",
+          "severity": "life_threatening"
+        },
+        "AC": {
+          "phenotype": "HLA-A*31:01 positive (heterozygous)",
+          "effect": "Heterozygous carrier of HLA-A*31:01. Significantly increased risk of carbamazepine-induced DRESS, SJS/TEN, and MPE. One copy of the allele is sufficient to confer risk. The allele has 2-5% prevalence in Northern Europeans, ~6% in Hispanics, and ~8% in Japanese.",
+          "recommendation": "DO NOT USE carbamazepine or oxcarbazepine if alternatives are available. If carbamazepine use is considered essential, ensure very close clinical monitoring and patient education about early signs of hypersensitivity (fever, rash, lymphadenopathy).",
+          "severity": "severe"
+        },
+        "CA": {
+          "phenotype": "HLA-A*31:01 positive (heterozygous)",
+          "effect": "Heterozygous carrier of HLA-A*31:01. Significantly increased risk of carbamazepine-induced DRESS, SJS/TEN, and MPE. One copy of the allele is sufficient to confer risk. The allele has 2-5% prevalence in Northern Europeans, ~6% in Hispanics, and ~8% in Japanese.",
+          "recommendation": "DO NOT USE carbamazepine or oxcarbazepine if alternatives are available. If carbamazepine use is considered essential, ensure very close clinical monitoring and patient education about early signs of hypersensitivity (fever, rash, lymphadenopathy).",
+          "severity": "severe"
+        },
+        "CC": {
+          "phenotype": "HLA-A*31:01 negative",
+          "effect": "Non-carrier of HLA-A*31:01. Standard risk for carbamazepine-induced cutaneous adverse reactions from this locus. Note: HLA-B*15:02 should still be tested in Southeast Asian ancestry patients for SJS/TEN risk.",
+          "recommendation": "Carbamazepine may be used per standard prescribing guidelines. Still test for HLA-B*15:02 if patient is of Southeast Asian descent. Standard monitoring for drug reactions applies.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.04,
+        "african": 0.01,
+        "east_asian": 0.08,
+        "south_asian": 0.03,
+        "latino": 0.06
+      }
+    }
+  ],
+  "evidence_level": "established",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

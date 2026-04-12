@@ -1,0 +1,68 @@
+{
+  "gene": "GENE_SYMBOL",
+  "category": "CATEGORY",
+  "gene_description": "Full Gene Name — one-sentence description of function and clinical relevance",
+  "drugs": ["drug1", "drug2"],
+  "source": {
+    "pmid": "PMID_HERE",
+    "doi": "DOI_OR_NULL",
+    "source_type": "pubmed",
+    "title": "Full title of the primary paper or guideline",
+    "journal": "Journal Name",
+    "year": 2024,
+    "cohort_size": null,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/PMID_HERE/",
+    "finding": "One-line summary: key result with specific numbers (OR, fold-change, p-value)"
+  },
+  "snps": [
+    {
+      "rsid": "rs000000",
+      "risk_allele": "A",
+      "reference_allele": "G",
+      "interpretations": {
+        "AA": {
+          "phenotype": "Homozygous risk phenotype name",
+          "effect": "2-4 sentences: mechanism, clinical impact, specific numbers. What changes physiologically?",
+          "recommendation": "Actionable guidance: dose adjustments, monitoring, alternatives, dietary changes.",
+          "severity": "moderate",
+          "odds_ratio": null
+        },
+        "AG": {
+          "phenotype": "Heterozygous phenotype name",
+          "effect": "Intermediate effect. Quantify if possible.",
+          "recommendation": "Guidance for heterozygotes.",
+          "severity": "mild",
+          "odds_ratio": null
+        },
+        "GA": {
+          "phenotype": "Heterozygous phenotype name",
+          "effect": "Same as AG — both strand orderings must be present.",
+          "recommendation": "Same as AG.",
+          "severity": "mild",
+          "odds_ratio": null
+        },
+        "GG": {
+          "phenotype": "Normal/wild-type phenotype",
+          "effect": "Standard function. No altered response.",
+          "recommendation": "Standard dosing/guidelines.",
+          "severity": "info",
+          "odds_ratio": null
+        }
+      },
+      "population_frequency": {
+        "global": 0.00,
+        "european": 0.00,
+        "african": 0.00,
+        "east_asian": 0.00,
+        "south_asian": 0.00,
+        "latino": 0.00
+      }
+    }
+  ],
+  "evidence_level": "moderate",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx",
+    "orcid": null
+  }
+}

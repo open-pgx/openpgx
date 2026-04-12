@@ -1,0 +1,62 @@
+{
+  "gene": "SLC6A4",
+  "category": "drug_target",
+  "gene_description": "Solute Carrier Family 6 Member 4 (5-HTT) — encodes the serotonin transporter, the primary reuptake mechanism for serotonin and direct pharmacological target of all SSRIs. 5-HTTLPR and rs25531 modulate transporter expression.",
+  "drugs": ["sertraline", "escitalopram", "fluoxetine", "paroxetine", "citalopram", "fluvoxamine", "venlafaxine", "duloxetine"],
+  "source": {
+    "pmid": "34889217",
+    "doi": "10.3390/jpm11121334",
+    "source_type": "pubmed",
+    "title": "Serotonin Transporter Genetic Variation and Antidepressant Response and Tolerability: A Systematic Review and Meta-Analysis",
+    "journal": "Journal of Personalized Medicine",
+    "year": 2021,
+    "cohort_size": 5408,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/34889217/",
+    "finding": "Meta-analysis of 5-HTTLPR: L-allele carriers (LL/LS) were significantly more likely to respond to SSRI therapy compared to SS carriers in European populations. SS genotype associated with 50% less serotonin transporter expression."
+  },
+  "snps": [
+    {
+      "rsid": "rs25531",
+      "risk_allele": "G",
+      "reference_allele": "A",
+      "interpretations": {
+        "GG": {
+          "phenotype": "Reduced SSRI Response — Low Serotonin Transporter Expression",
+          "effect": "Homozygous for the G allele (functionally equivalent to 5-HTTLPR LG, comparable to the S allele). Reduced SLC6A4 transcriptional activity resulting in approximately 50% less serotonin transporter expression. Associated with poorer SSRI response, longer time to remission, and higher rates of treatment-resistant depression. The low-expression genotype reduces the target density for SSRIs.",
+          "recommendation": "Consider starting with an SSRI but allow adequate trial duration (8-12 weeks). If response is inadequate, consider switching to an SNRI (venlafaxine, duloxetine), bupropion, or augmentation strategies earlier than usual. Cognitive behavioral therapy may provide additional benefit. Monitor closely for treatment-emergent anxiety in the first 2 weeks.",
+          "severity": "moderate"
+        },
+        "GA": {
+          "phenotype": "Intermediate SSRI Response",
+          "effect": "Heterozygous carrier. Intermediate serotonin transporter expression. The combination with the 5-HTTLPR long/short status further modulates the functional impact. Generally adequate SSRI response expected, though may not be optimal.",
+          "recommendation": "Standard SSRI dosing is appropriate. Monitor treatment response during the first 4-6 weeks. If response is partial, dose optimization or augmentation may be needed.",
+          "severity": "mild"
+        },
+        "AG": {
+          "phenotype": "Intermediate SSRI Response",
+          "effect": "Heterozygous carrier. Intermediate serotonin transporter expression. The combination with the 5-HTTLPR long/short status further modulates the functional impact. Generally adequate SSRI response expected, though may not be optimal.",
+          "recommendation": "Standard SSRI dosing is appropriate. Monitor treatment response during the first 4-6 weeks. If response is partial, dose optimization or augmentation may be needed.",
+          "severity": "mild"
+        },
+        "AA": {
+          "phenotype": "Favorable SSRI Response — High Serotonin Transporter Expression",
+          "effect": "Homozygous for the A allele (functionally equivalent to 5-HTTLPR LA). High SLC6A4 transcriptional activity with robust serotonin transporter expression. Associated with better SSRI treatment response, higher remission rates, and better tolerability in multiple meta-analyses.",
+          "recommendation": "SSRIs are likely to be effective first-line treatment. Standard dosing per clinical guidelines. Good likelihood of treatment response.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.09,
+        "african": 0.05,
+        "east_asian": 0.03,
+        "south_asian": 0.06,
+        "latino": 0.07
+      }
+    }
+  ],
+  "evidence_level": "moderate",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

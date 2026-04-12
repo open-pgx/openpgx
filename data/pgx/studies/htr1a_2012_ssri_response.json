@@ -1,0 +1,62 @@
+{
+  "gene": "HTR1A",
+  "category": "drug_target",
+  "gene_description": "5-Hydroxytryptamine Receptor 1A — inhibitory serotonin autoreceptor and postsynaptic receptor in limbic regions. Modulates serotonergic tone and influences SSRI onset of action and treatment response.",
+  "drugs": ["fluoxetine", "sertraline", "escitalopram", "citalopram", "paroxetine", "venlafaxine", "buspirone", "vilazodone"],
+  "source": {
+    "pmid": "22890315",
+    "doi": "10.1097/FPC.0b013e3283564f91",
+    "source_type": "pubmed",
+    "title": "Association between the 5-HT1A receptor gene polymorphism (rs6295) and antidepressants: a meta-analysis",
+    "journal": "Pharmacogenetics and Genomics",
+    "year": 2012,
+    "cohort_size": 3229,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/22890315/",
+    "finding": "HTR1A rs6295 C-1019G: GG homozygotes showed higher baseline depressive symptoms and significantly lower SSRI response rates. G allele abolishes Deaf1 repressor binding, increasing presynaptic 5-HT1A expression and reducing serotonergic firing."
+  },
+  "snps": [
+    {
+      "rsid": "rs6295",
+      "risk_allele": "G",
+      "reference_allele": "C",
+      "interpretations": {
+        "GG": {
+          "phenotype": "Reduced SSRI Response — Elevated Autoreceptor Expression",
+          "effect": "Homozygous for the G allele at C-1019G. The G allele abolishes binding of the Deaf1 and Hes5 transcriptional repressors, leading to increased presynaptic 5-HT1A autoreceptor expression in the raphe nuclei. This reduces serotonergic neuron firing rate, counteracting SSRI effects. Associated with higher baseline depressive symptoms, lower treatment response rates, and potentially longer time to onset of SSRI action. When combined with SLC6A4 SS genotype, risk of treatment failure increases 74%.",
+          "recommendation": "If SSRI response is slow or inadequate, consider augmentation with buspirone (a partial 5-HT1A agonist that may desensitize autoreceptors) or switch to vilazodone which combines SSRI and 5-HT1A partial agonist properties. Allow longer trial duration as autoreceptor desensitization may take longer. Pindolol augmentation has also been studied for this genotype.",
+          "severity": "moderate"
+        },
+        "GC": {
+          "phenotype": "Intermediate SSRI Response",
+          "effect": "Heterozygous carrier. Partial increase in presynaptic 5-HT1A expression. Intermediate effects on serotonergic firing and SSRI response kinetics.",
+          "recommendation": "Standard SSRI dosing with monitoring. May benefit from adequate trial duration of at least 6-8 weeks before switching.",
+          "severity": "mild"
+        },
+        "CG": {
+          "phenotype": "Intermediate SSRI Response",
+          "effect": "Heterozygous carrier. Partial increase in presynaptic 5-HT1A expression. Intermediate effects on serotonergic firing and SSRI response kinetics.",
+          "recommendation": "Standard SSRI dosing with monitoring. May benefit from adequate trial duration of at least 6-8 weeks before switching.",
+          "severity": "mild"
+        },
+        "CC": {
+          "phenotype": "Favorable SSRI Response",
+          "effect": "Homozygous for the C allele. Intact Deaf1 repressor binding maintains appropriate presynaptic 5-HT1A autoreceptor expression. Normal serotonergic firing dynamics support effective SSRI action. Associated with better treatment response to fluoxetine and other SSRIs.",
+          "recommendation": "SSRIs expected to be effective with standard dosing and timeline. Good pharmacogenomic profile for first-line SSRI therapy.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.47,
+        "african": 0.30,
+        "east_asian": 0.55,
+        "south_asian": 0.42,
+        "latino": 0.40
+      }
+    }
+  ],
+  "evidence_level": "moderate",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

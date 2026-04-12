@@ -39,6 +39,99 @@
           "severity": "info"
         }
       }
+    },
+    {
+      "rsid": "rs55886062",
+      "risk_allele": "A",
+      "reference_allele": "T",
+      "interpretations": {
+        "AA": {
+          "phenotype": "Poor Metabolizer (DPD Deficient)",
+          "effect": "DPYD*13 homozygous. Complete DPD deficiency. Life-threatening fluoropyrimidine toxicity.",
+          "recommendation": "Avoid fluoropyrimidines entirely. Use alternative chemotherapy.",
+          "severity": "life_threatening"
+        },
+        "AT": {
+          "phenotype": "Intermediate Metabolizer (Partial DPD Deficiency)",
+          "effect": "DPYD*13 heterozygous. Partial DPD deficiency with high risk of severe toxicity.",
+          "recommendation": "Reduce fluoropyrimidine dose by at least 50%. Close monitoring required.",
+          "severity": "severe"
+        },
+        "TA": {
+          "phenotype": "Intermediate Metabolizer (Partial DPD Deficiency)",
+          "effect": "DPYD*13 heterozygous. Partial DPD deficiency with high risk of severe toxicity.",
+          "recommendation": "Reduce fluoropyrimidine dose by at least 50%. Close monitoring required.",
+          "severity": "severe"
+        },
+        "TT": {
+          "phenotype": "Normal Metabolizer",
+          "effect": "No DPYD*13 variant. Normal DPD activity.",
+          "recommendation": "Standard dosing.",
+          "severity": "info"
+        }
+      }
+    },
+    {
+      "rsid": "rs67376798",
+      "risk_allele": "T",
+      "reference_allele": "A",
+      "interpretations": {
+        "TT": {
+          "phenotype": "Poor Metabolizer (DPD Deficient)",
+          "effect": "DPYD c.2846A>T homozygous. Complete DPD deficiency. Life-threatening fluoropyrimidine toxicity.",
+          "recommendation": "Avoid fluoropyrimidines entirely. Use alternative chemotherapy.",
+          "severity": "life_threatening"
+        },
+        "AT": {
+          "phenotype": "Intermediate Metabolizer (Partial DPD Deficiency)",
+          "effect": "DPYD c.2846A>T heterozygous. Partial DPD deficiency with increased toxicity risk.",
+          "recommendation": "Reduce fluoropyrimidine dose by at least 50%. Close monitoring required.",
+          "severity": "severe"
+        },
+        "TA": {
+          "phenotype": "Intermediate Metabolizer (Partial DPD Deficiency)",
+          "effect": "DPYD c.2846A>T heterozygous. Partial DPD deficiency with increased toxicity risk.",
+          "recommendation": "Reduce fluoropyrimidine dose by at least 50%. Close monitoring required.",
+          "severity": "severe"
+        },
+        "AA": {
+          "phenotype": "Normal Metabolizer",
+          "effect": "No c.2846A>T variant. Normal DPD activity.",
+          "recommendation": "Standard dosing.",
+          "severity": "info"
+        }
+      }
+    },
+    {
+      "rsid": "rs75017182",
+      "risk_allele": "G",
+      "reference_allele": "C",
+      "interpretations": {
+        "GG": {
+          "phenotype": "Poor Metabolizer (DPD Deficient)",
+          "effect": "DPYD HapB3 tag homozygous. Complete DPD deficiency. Life-threatening fluoropyrimidine toxicity.",
+          "recommendation": "Avoid fluoropyrimidines entirely. Use alternative chemotherapy.",
+          "severity": "life_threatening"
+        },
+        "CG": {
+          "phenotype": "Intermediate Metabolizer (Partial DPD Deficiency)",
+          "effect": "DPYD HapB3 tag heterozygous. Partial DPD deficiency with increased toxicity risk.",
+          "recommendation": "Reduce fluoropyrimidine dose by at least 50%. Close monitoring required.",
+          "severity": "severe"
+        },
+        "GC": {
+          "phenotype": "Intermediate Metabolizer (Partial DPD Deficiency)",
+          "effect": "DPYD HapB3 tag heterozygous. Partial DPD deficiency with increased toxicity risk.",
+          "recommendation": "Reduce fluoropyrimidine dose by at least 50%. Close monitoring required.",
+          "severity": "severe"
+        },
+        "CC": {
+          "phenotype": "Normal Metabolizer",
+          "effect": "No HapB3 variant. Normal DPD activity.",
+          "recommendation": "Standard dosing.",
+          "severity": "info"
+        }
+      }
     }
   ],
   "evidence_level": "established"

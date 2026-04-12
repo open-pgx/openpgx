@@ -1,0 +1,68 @@
+{
+  "gene": "ACE",
+  "category": "drug_metabolism",
+  "gene_description": "Angiotensin-Converting Enzyme — cleaves angiotensin I to form angiotensin II. Insertion/deletion polymorphism (I/D) in intron 16 affects ACE expression levels and response to ACE inhibitor therapy.",
+  "drugs": [
+    "enalapril",
+    "lisinopril",
+    "ramipril",
+    "perindopril",
+    "fosinopril"
+  ],
+  "source": {
+    "pmid": "15801945",
+    "doi": null,
+    "source_type": "pubmed",
+    "title": "Insertion/deletion polymorphism of the ACE gene and adherence to ACE inhibitors",
+    "journal": "Pharmacogenetics and Genomics",
+    "year": 2005,
+    "cohort_size": 156,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/15801945/",
+    "finding": "ACE rs4646994 (I/D polymorphism) shows inconsistent association with ACE inhibitor efficacy across studies. DD genotype associated with higher serum ACE activity (65% more than II), but effect on blood pressure response variable."
+  },
+  "snps": [
+    {
+      "rsid": "rs4646994",
+      "risk_allele": "D",
+      "reference_allele": "I",
+      "interpretations": {
+        "II": {
+          "phenotype": "Low ACE activity / favorable I/D status",
+          "effect": "Homozygous for insertion allele. Lowest circulating ACE activity. Lower angiotensin II generation. May show greater blood pressure reduction with ACE inhibitors. Reduced cardiovascular and renal disease risk in some populations. ~18-22% frequency in Europeans.",
+          "recommendation": "Standard ACE inhibitor dosing. May show good blood pressure response. Monitor renal function and potassium at baseline and after 2-4 weeks of therapy. Consider initial standard dosing with assessment for adequate response.",
+          "severity": "info"
+        },
+        "ID": {
+          "phenotype": "Intermediate ACE activity / intermediate response",
+          "effect": "Heterozygous I/D genotype. Intermediate circulating ACE activity (approximately 31% higher than II genotype). Intermediate angiotensin II generation. Variable ACE inhibitor blood pressure response. Most common genotype in many populations (~50-60%).",
+          "recommendation": "Standard ACE inhibitor dosing. Monitor blood pressure response at 2-4 weeks. Assess renal function and potassium. Adjust dose as needed based on individual BP response and tolerability.",
+          "severity": "info"
+        },
+        "DI": {
+          "phenotype": "Intermediate ACE activity / intermediate response",
+          "effect": "Heterozygous I/D genotype. Intermediate circulating ACE activity (approximately 31% higher than II genotype). Intermediate angiotensin II generation. Variable ACE inhibitor blood pressure response. Most common genotype in many populations (~50-60%).",
+          "recommendation": "Standard ACE inhibitor dosing. Monitor blood pressure response at 2-4 weeks. Assess renal function and potassium. Adjust dose as needed based on individual BP response and tolerability.",
+          "severity": "info"
+        },
+        "DD": {
+          "phenotype": "High ACE activity / possible variable response",
+          "effect": "Homozygous for deletion allele. Highest circulating ACE activity (approximately 65% higher than II genotype). Higher baseline angiotensin II generation. May require higher ACE inhibitor doses for equivalent BP reduction in some individuals. Associated with increased CV risk in some but not all populations. ~8-31% frequency depending on ethnicity.",
+          "recommendation": "Standard ACE inhibitor dosing with careful monitoring. Assess blood pressure response at 2-4 weeks; may require dose optimization. Monitor renal function and potassium carefully. May benefit from dose escalation if inadequate response. Close follow-up essential.",
+          "severity": "moderate"
+        }
+      },
+      "population_frequency": {
+        "european": 0.54,
+        "african": 0.5,
+        "east_asian": 0.42,
+        "south_asian": 0.48,
+        "latino": 0.52
+      }
+    }
+  ],
+  "evidence_level": "emerging",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

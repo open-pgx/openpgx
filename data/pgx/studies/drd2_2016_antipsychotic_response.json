@@ -1,0 +1,52 @@
+{
+  "gene": "DRD2",
+  "category": "drug_target",
+  "gene_description": "Dopamine receptor D2 — primary target of antipsychotic medications; rs1800497 (Taq1A, located in ANKK1 adjacent to DRD2) modulates D2 receptor density in the striatum and influences antipsychotic efficacy and metabolic side effects",
+  "drugs": ["risperidone", "haloperidol", "aripiprazole", "olanzapine"],
+  "source": {
+    "pmid": "20531014",
+    "doi": "10.2217/pgs.10.57",
+    "source_type": "pubmed",
+    "title": "The DRD2 Taq1A polymorphism and its relationship with antipsychotic drug response: a systematic review and meta-analysis",
+    "journal": "Pharmacogenomics",
+    "year": 2010,
+    "cohort_size": null,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/20531014/",
+    "finding": "DRD2/ANKK1 Taq1A A1 allele (rs1800497 A) carriers have reduced striatal D2 receptor density, associated with diminished antipsychotic response and increased susceptibility to weight gain and hyperprolactinemia during antipsychotic treatment."
+  },
+  "snps": [
+    {
+      "rsid": "rs1800497",
+      "risk_allele": "A",
+      "reference_allele": "G",
+      "interpretations": {
+        "AA": {
+          "phenotype": "Reduced D2 receptor density (A1/A1 homozygous)",
+          "effect": "Significantly lower striatal D2 receptor availability. Associated with reduced clinical response to typical and atypical antipsychotics, higher risk of antipsychotic-induced weight gain, metabolic syndrome, and hyperprolactinemia. May require higher doses to achieve therapeutic effect, but side effect burden increases.",
+          "recommendation": "Consider atypical antipsychotics with lower metabolic profiles (aripiprazole, ziprasidone). Monitor weight, glucose, lipids, and prolactin closely. If poor response at standard doses, evaluate adherence and consider switching rather than dose escalation.",
+          "severity": "moderate",
+          "odds_ratio": null
+        },
+        "AG": {
+          "phenotype": "Intermediate D2 receptor density (A1/A2 heterozygous)",
+          "effect": "Moderately reduced D2 receptor binding. Intermediate antipsychotic response profile. Slightly elevated risk of weight gain compared to GG genotype.",
+          "recommendation": "Standard antipsychotic dosing. Monitor metabolic parameters (weight, fasting glucose, lipid panel) and prolactin. Adjust therapy based on clinical response and tolerability.",
+          "severity": "mild"
+        },
+        "GA": {
+          "phenotype": "Intermediate D2 receptor density (A1/A2 heterozygous)",
+          "effect": "Moderately reduced D2 receptor binding. Intermediate antipsychotic response profile. Slightly elevated risk of weight gain compared to GG genotype.",
+          "recommendation": "Standard antipsychotic dosing. Monitor metabolic parameters (weight, fasting glucose, lipid panel) and prolactin. Adjust therapy based on clinical response and tolerability.",
+          "severity": "mild"
+        },
+        "GG": {
+          "phenotype": "Normal D2 receptor density (A2/A2 homozygous)",
+          "effect": "Normal striatal D2 receptor expression and binding. Expected antipsychotic response at standard doses. Lower baseline risk for antipsychotic-induced metabolic adverse effects related to this locus.",
+          "recommendation": "Standard antipsychotic prescribing guidelines apply. Routine metabolic monitoring as per treatment protocols.",
+          "severity": "info"
+        }
+      }
+    }
+  ],
+  "evidence_level": "moderate"
+}

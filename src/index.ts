@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * OpenPGx MCP Server v0.2.0 — Talk to your DNA.
+ * OpenPGx MCP Server v0.4.0 — Talk to your DNA.
  *
  * An open-source MCP Server that transforms raw genetic data into
  * genomic intelligence using the OpenPGx standard format.

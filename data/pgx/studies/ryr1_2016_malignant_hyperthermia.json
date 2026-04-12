@@ -1,0 +1,62 @@
+{
+  "gene": "RYR1",
+  "category": "drug_target",
+  "gene_description": "Ryanodine Receptor 1 — calcium release channel in skeletal muscle sarcoplasmic reticulum. Pathogenic variants cause malignant hyperthermia susceptibility, a potentially fatal pharmacogenomic reaction to volatile anesthetics and succinylcholine.",
+  "drugs": ["sevoflurane", "desflurane", "isoflurane", "halothane", "enflurane", "succinylcholine"],
+  "source": {
+    "pmid": "27857962",
+    "doi": "10.1038/s41598-016-0002-y",
+    "source_type": "pubmed",
+    "title": "Functional analysis of RYR1 variants linked to malignant hyperthermia",
+    "journal": "Scientific Reports",
+    "year": 2016,
+    "cohort_size": null,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/27857962/",
+    "finding": "RYR1 pathogenic variants cause dysregulated calcium release from sarcoplasmic reticulum upon exposure to volatile anesthetics or succinylcholine, triggering malignant hyperthermia with mortality rate of 70% if untreated. Over 400 variants identified, 35 confirmed causative."
+  },
+  "snps": [
+    {
+      "rsid": "rs121918592",
+      "risk_allele": "T",
+      "reference_allele": "C",
+      "interpretations": {
+        "TT": {
+          "phenotype": "Malignant Hyperthermia Susceptible — Homozygous",
+          "effect": "Homozygous for a pathogenic RYR1 variant. High susceptibility to malignant hyperthermia (MH) when exposed to triggering agents (volatile anesthetics, succinylcholine). MH presents as rapid temperature rise, muscle rigidity, metabolic acidosis, hyperkalemia, and rhabdomyolysis. Untreated mortality rate is approximately 70%. Even with dantrolene treatment, mortality remains 1-5%.",
+          "recommendation": "DO NOT USE volatile anesthetics (sevoflurane, desflurane, isoflurane, halothane) or succinylcholine. Use total intravenous anesthesia (TIVA) with propofol, non-depolarizing muscle relaxants, and opioids. Ensure dantrolene is immediately available. Use a dedicated anesthesia machine flushed of volatile agents. Medical alert bracelet recommended. Screen all first-degree relatives.",
+          "severity": "life_threatening"
+        },
+        "TC": {
+          "phenotype": "Malignant Hyperthermia Susceptible — Carrier",
+          "effect": "Heterozygous carrier. MH susceptibility is autosomal dominant, so even one pathogenic allele confers significant risk. Exposure to triggering agents can cause full MH crisis. Penetrance is variable — not all carriers develop MH on every exposure, but the risk is unpredictable and potentially fatal.",
+          "recommendation": "DO NOT USE volatile anesthetics or succinylcholine. Same precautions as homozygous: use TIVA with propofol, ensure dantrolene availability, use clean anesthesia machine. All first-degree relatives should be tested. Consider caffeine-halothane contracture test for definitive diagnosis if genetic testing is inconclusive.",
+          "severity": "life_threatening"
+        },
+        "CT": {
+          "phenotype": "Malignant Hyperthermia Susceptible — Carrier",
+          "effect": "Heterozygous carrier. MH susceptibility is autosomal dominant, so even one pathogenic allele confers significant risk. Exposure to triggering agents can cause full MH crisis. Penetrance is variable — not all carriers develop MH on every exposure, but the risk is unpredictable and potentially fatal.",
+          "recommendation": "DO NOT USE volatile anesthetics or succinylcholine. Same precautions as homozygous: use TIVA with propofol, ensure dantrolene availability, use clean anesthesia machine. All first-degree relatives should be tested. Consider caffeine-halothane contracture test for definitive diagnosis if genetic testing is inconclusive.",
+          "severity": "life_threatening"
+        },
+        "CC": {
+          "phenotype": "No Increased MH Risk at This Locus",
+          "effect": "Wild-type at this specific RYR1 position. However, over 400 RYR1 variants have been identified — absence of this specific variant does not rule out MH susceptibility from other RYR1 variants. A negative result for one SNP requires comprehensive RYR1 sequencing for complete risk assessment.",
+          "recommendation": "Standard anesthetic protocols if no other MH risk factors present. If family history suggests MH, pursue comprehensive RYR1 genetic testing or caffeine-halothane contracture test.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.0003,
+        "african": 0.0001,
+        "east_asian": 0.0002,
+        "south_asian": 0.0002,
+        "latino": 0.0002
+      }
+    }
+  ],
+  "evidence_level": "established",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

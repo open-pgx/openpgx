@@ -1,0 +1,62 @@
+{
+  "gene": "PER2",
+  "category": "nutrient_absorption",
+  "gene_description": "Period Circadian Regulator 2 — core clock gene in the mammalian suprachiasmatic nucleus (SCN). PER2 protein is essential for maintaining circadian oscillations that regulate sleep-wake cycles, metabolism, and eating behavior patterns.",
+  "drugs": ["melatonin"],
+  "source": {
+    "pmid": "22137505",
+    "doi": "10.1016/j.biopsych.2011.10.024",
+    "source_type": "pubmed",
+    "title": "PER2 rs2304672 Polymorphism Moderates Circadian-Relevant Reward Circuitry Activity in Adolescents",
+    "journal": "Biological Psychiatry",
+    "year": 2012,
+    "cohort_size": 78,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/22137505/",
+    "finding": "PER2 rs2304672 G allele moderates reward circuitry activity in the medial prefrontal cortex as a function of sleep timing, with later sleep midpoint associated with reduced reward response. G carriers also show longer sleep duration and greater probability of dietary treatment withdrawal."
+  },
+  "snps": [
+    {
+      "rsid": "rs2304672",
+      "risk_allele": "G",
+      "reference_allele": "C",
+      "interpretations": {
+        "GG": {
+          "phenotype": "Altered circadian reward/sleep pattern (rare)",
+          "effect": "Homozygous G carriers (rare, ~2%) show significantly altered circadian reward circuitry. Longer sleep duration (mean 8.2h vs 7.5h). Reduced medial prefrontal cortex reward response with later sleep timing. Greater probability of withdrawal from dietary obesity treatments. Altered chronotype with possible evening preference.",
+          "recommendation": "Tailor dietary interventions to account for lower adherence tendency — favor simpler, flexible dietary approaches over strict regimens. Leverage longer sleep duration as metabolic advantage. Avoid late-night eating. Behavioral support for diet compliance.",
+          "severity": "mild"
+        },
+        "CG": {
+          "phenotype": "Intermediate circadian variation",
+          "effect": "Heterozygous carriers show intermediate effects on sleep duration and reward circuitry modulation. Mild impact on dietary treatment adherence.",
+          "recommendation": "Standard dietary and sleep hygiene recommendations. Be aware of potential challenges with strict dietary programs.",
+          "severity": "info"
+        },
+        "GC": {
+          "phenotype": "Intermediate circadian variation",
+          "effect": "Heterozygous carriers show intermediate effects on sleep duration and reward circuitry modulation. Mild impact on dietary treatment adherence.",
+          "recommendation": "Standard dietary and sleep hygiene recommendations. Be aware of potential challenges with strict dietary programs.",
+          "severity": "info"
+        },
+        "CC": {
+          "phenotype": "Normal PER2 circadian function",
+          "effect": "Wild-type with standard circadian period regulation. Normal sleep duration (~7.5h) and reward circuitry modulation. Standard dietary treatment adherence from this locus.",
+          "recommendation": "Standard dietary and sleep guidelines.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.14,
+        "african": 0.08,
+        "east_asian": 0.18,
+        "south_asian": 0.12,
+        "latino": 0.10
+      }
+    }
+  ],
+  "evidence_level": "emerging",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

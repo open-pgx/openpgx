@@ -1,0 +1,62 @@
+{
+  "gene": "NR1D1",
+  "category": "nutrient_absorption",
+  "gene_description": "Nuclear Receptor Subfamily 1 Group D Member 1 (REV-ERBα) — heme-binding nuclear receptor that represses BMAL1 transcription, forming a critical link between the circadian clock and metabolic regulation (glucose/lipid homeostasis).",
+  "drugs": ["melatonin"],
+  "source": {
+    "pmid": "25798852",
+    "doi": "10.3109/07420528.2015.1024710",
+    "source_type": "pubmed",
+    "title": "Associations between polymorphisms in the NR1D1 gene encoding for nuclear receptor REV-ERBα and circadian typologies",
+    "journal": "Chronobiology International",
+    "year": 2015,
+    "cohort_size": 602,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/25798852/",
+    "finding": "NR1D1 rs12941497 genotypes are significantly associated with chronotype classification (morning/intermediate/evening types), supporting REV-ERBα's role in circadian rhythm regulation and its downstream metabolic effects."
+  },
+  "snps": [
+    {
+      "rsid": "rs12941497",
+      "risk_allele": "C",
+      "reference_allele": "T",
+      "interpretations": {
+        "CC": {
+          "phenotype": "Evening chronotype tendency",
+          "effect": "Homozygous C carriers show stronger association with evening chronotype. Altered REV-ERBα-mediated circadian repression may shift metabolic timing, affecting glucose and lipid homeostasis. Evening chronotype is associated with later meal timing, increased metabolic syndrome risk, and impaired glucose tolerance.",
+          "recommendation": "Align meal timing with circadian biology — avoid late-night eating. Try to maintain consistent sleep-wake schedule. Morning light exposure to help entrain circadian clock. Time-restricted feeding (earlier eating window) may counteract evening chronotype metabolic effects.",
+          "severity": "mild"
+        },
+        "CT": {
+          "phenotype": "Intermediate chronotype",
+          "effect": "Heterozygous carriers show intermediate chronotype tendency. Standard circadian metabolic regulation with minor variations.",
+          "recommendation": "Maintain regular sleep schedule. Standard meal timing recommendations.",
+          "severity": "info"
+        },
+        "TC": {
+          "phenotype": "Intermediate chronotype",
+          "effect": "Heterozygous carriers show intermediate chronotype tendency. Standard circadian metabolic regulation with minor variations.",
+          "recommendation": "Maintain regular sleep schedule. Standard meal timing recommendations.",
+          "severity": "info"
+        },
+        "TT": {
+          "phenotype": "Morning chronotype tendency",
+          "effect": "Homozygous T carriers show stronger association with morning chronotype. REV-ERBα circadian repression cycle is well-aligned with standard metabolic timing. Generally favorable metabolic profile associated with morning chronotype.",
+          "recommendation": "Natural circadian alignment is favorable. Maintain regular schedule to preserve this advantage.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.40,
+        "african": 0.35,
+        "east_asian": 0.45,
+        "south_asian": 0.38,
+        "latino": 0.42
+      }
+    }
+  ],
+  "evidence_level": "emerging",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

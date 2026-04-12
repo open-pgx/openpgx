@@ -10,8 +10,15 @@
 
 import { StreamableHTTPServerTransport } from "@modelcontextprotocol/sdk/server/streamableHttp.js";
 import { createServer, OPENPGX_VERSION } from "./server-core.js";
+import { parseRawContent } from "./parsers.js";
 import { createServer as createHttpServer, IncomingMessage, ServerResponse } from "node:http";
 import { randomUUID } from "node:crypto";
+import { writeFileSync, mkdirSync } from "node:fs";
+import { join } from "node:path";
+import { homedir } from "node:os";
+
+const UPLOADS_DIR = join(homedir(), ".openpgx", "uploads");
+mkdirSync(UPLOADS_DIR, { recursive: true });
 
 const PORT = parseInt(process.env.PORT ?? "3200", 10);
 const SESSION_TTL_MS = 30 * 60 * 1000; // 30 minutes
@@ -100,6 +107,11 @@ function handleRequest(req: IncomingMessage, res: ServerResponse) {
     return;
   }
 
+  if (url.pathname === "/upload" && req.method === "POST") {
+    handleUpload(req, res);
+    return;
+  }
+
   if (url.pathname === "/health") {
     res.writeHead(200, { "Content-Type": "application/json" });
     res.end(JSON.stringify({ status: "ok", version: OPENPGX_VERSION, sessions: sessions.size }));
@@ -108,6 +120,56 @@ function handleRequest(req: IncomingMessage, res: ServerResponse) {
 
   res.writeHead(404, { "Content-Type": "application/json" });
   res.end(JSON.stringify({ error: "Not found. Use POST /mcp for MCP protocol." }));
+}
+
+function handleUpload(req: IncomingMessage, res: ServerResponse) {
+  const chunks: Buffer[] = [];
+  req.on("data", (chunk) => chunks.push(chunk));
+  req.on("end", () => {
+    const body = Buffer.concat(chunks).toString("utf-8");
+    if (!body || body.length < 100) {
+      res.writeHead(400, { "Content-Type": "application/json" });
+      res.end(JSON.stringify({ error: "Empty or too small. Send your raw genome file as the request body." }));
+      return;
+    }
+
+    try {
+      const profile = parseRawContent(body);
+      const code = "pgx-" + Math.random().toString(36).slice(2, 8);
+
+      const profileData = {
+        openpgx_version: OPENPGX_VERSION,
+        created_at: new Date().toISOString(),
+        patient: {
+          raw_data_source: profile.rawDataSource,
+          raw_data_format: profile.rawDataFormat,
+          extraction_date: profile.extractionDate,
+          total_snps_extracted: profile.totalSnpsExtracted,
+          pharmacogenes: profile.pharmacogenes.map(pg => ({
+            gene: pg.gene, genotypes: pg.genotypes,
+            diplotype: pg.diplotype, phenotype: pg.phenotype,
+          })),
+        },
+        risks: profile.risks,
+        traits: profile.traits,
+      };
+
+      writeFileSync(join(UPLOADS_DIR, `${code}.json`), JSON.stringify(profileData, null, 2));
+
+      res.writeHead(200, { "Content-Type": "application/json" });
+      res.end(JSON.stringify({
+        code,
+        snps: profile.totalSnpsExtracted,
+        pharmacogenes: profile.pharmacogenes.length,
+        risks: profile.risks.length,
+        traits: profile.traits.length,
+        message: `Profile ready! Tell Claude: load my profile with code ${code}`,
+      }));
+    } catch (e) {
+      res.writeHead(422, { "Content-Type": "application/json" });
+      res.end(JSON.stringify({ error: e instanceof Error ? e.message : String(e) }));
+    }
+  });
 }
 
 const httpServer = createHttpServer(handleRequest);

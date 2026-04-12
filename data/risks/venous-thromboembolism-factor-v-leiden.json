@@ -13,6 +13,72 @@
         "european": 0.05
       },
       "effect_template": "Factor V Leiden mutation. A allele causes activated protein C resistance, major VTE risk factor."
+    },
+    {
+      "rsid": "rs1799963",
+      "gene_region": "F2",
+      "risk_allele": "A",
+      "odds_ratio": 2.8,
+      "population_frequency": {
+        "global": 0.03,
+        "european": 0.04
+      },
+      "effect_template": "Prothrombin F2 G20210A variant increasing VTE risk through elevated prothrombin levels."
+    },
+    {
+      "rsid": "rs8176719",
+      "gene_region": "ABO",
+      "risk_allele": "delC",
+      "odds_ratio": 1.5,
+      "population_frequency": {
+        "global": 0.40,
+        "european": 0.42
+      },
+      "effect_template": "ABO blood group non-O genotype associated with increased VTE risk (OR ~1.5)."
+    },
+    {
+      "rsid": "rs1799809",
+      "gene_region": "PROC",
+      "risk_allele": "T",
+      "odds_ratio": 1.3,
+      "population_frequency": {
+        "global": 0.12,
+        "european": 0.13
+      },
+      "effect_template": "Protein C variant affecting anticoagulant function and VTE susceptibility."
+    },
+    {
+      "rsid": "rs2066865",
+      "gene_region": "FGG",
+      "risk_allele": "C",
+      "odds_ratio": 1.4,
+      "population_frequency": {
+        "global": 0.25,
+        "european": 0.26
+      },
+      "effect_template": "Fibrinogen gamma-chain variant modulating fibrin polymerization and thrombosis risk."
+    },
+    {
+      "rsid": "rs2227589",
+      "gene_region": "SERPINC1",
+      "risk_allele": "T",
+      "odds_ratio": 1.2,
+      "population_frequency": {
+        "global": 0.18,
+        "european": 0.19
+      },
+      "effect_template": "Antithrombin III variant affecting anticoagulant pathway and VTE risk."
+    },
+    {
+      "rsid": "rs1613662",
+      "gene_region": "GP6",
+      "risk_allele": "G",
+      "odds_ratio": 1.14,
+      "population_frequency": {
+        "global": 0.31,
+        "european": 0.32
+      },
+      "effect_template": "Glycoprotein VI platelet receptor variant affecting platelet activation and thrombosis risk."
     }
   ],
   "evidence_level": "established",
@@ -28,6 +94,15 @@
       "cohort_size": 343,
       "url": "https://pubmed.ncbi.nlm.nih.gov/7989540/",
       "finding": "Factor V Leiden (rs6025 A) confers 5x increased VTE risk (heterozygous)"
+    },
+    {
+      "pmid": "19300482",
+      "title": "Genetic risk factors for venous thromboembolism",
+      "journal": "Blood",
+      "year": 2009,
+      "cohort_size": 12000,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/19300482/",
+      "finding": "Identified multiple VTE susceptibility loci including F2, ABO, PROC, FGG, SERPINC1, and GP6 variants"
     }
   ]
 }

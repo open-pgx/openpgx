@@ -1,0 +1,62 @@
+{
+  "gene": "FKBP5",
+  "category": "drug_target",
+  "gene_description": "FK506 Binding Protein 5 — co-chaperone that modulates glucocorticoid receptor sensitivity in the HPA axis. Regulates cortisol feedback and stress response, influencing antidepressant treatment outcomes.",
+  "drugs": ["sertraline", "escitalopram", "fluoxetine", "paroxetine", "citalopram", "venlafaxine", "mirtazapine"],
+  "source": {
+    "pmid": "26645208",
+    "doi": "10.1177/0269881115620459",
+    "source_type": "pubmed",
+    "title": "The FKBP5 polymorphism rs1360780 influences the effect of an algorithm-based antidepressant treatment and is associated with remission in patients with major depression",
+    "journal": "Journal of Psychopharmacology",
+    "year": 2016,
+    "cohort_size": 398,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/26645208/",
+    "finding": "C-allele carriers of rs1360780 showed significantly better remission rates with algorithm-based antidepressant treatment. T-allele associated with higher FKBP5 induction by glucocorticoids and impaired HPA axis feedback."
+  },
+  "snps": [
+    {
+      "rsid": "rs1360780",
+      "risk_allele": "T",
+      "reference_allele": "C",
+      "interpretations": {
+        "TT": {
+          "phenotype": "Impaired Antidepressant Response — HPA Axis Dysregulation",
+          "effect": "Homozygous for the T allele. Higher FKBP5 induction by glucocorticoids, resulting in reduced glucocorticoid receptor sensitivity and impaired cortisol negative feedback. Associated with increased depression severity, greater vulnerability to childhood trauma effects, and reduced antidepressant remission rates. FKBP5 expression increases in non-responders and the T allele amplifies this effect.",
+          "recommendation": "Consider that standard antidepressant monotherapy may be less effective. Augmentation strategies (lithium, aripiprazole) or combination antidepressant therapy may be needed earlier. Psychotherapy addressing stress response (CBT, mindfulness) may be particularly beneficial. Monitor HPA axis function and cortisol patterns if clinically indicated.",
+          "severity": "moderate"
+        },
+        "TC": {
+          "phenotype": "Intermediate Antidepressant Response",
+          "effect": "Heterozygous carrier. Intermediate FKBP5 induction levels and partially impaired glucocorticoid receptor feedback. Moderate effect on antidepressant response. Gene-environment interaction with childhood adversity modifies risk.",
+          "recommendation": "Standard antidepressant dosing with careful monitoring. Allow adequate trial duration. Consider augmentation if response is partial after 6-8 weeks.",
+          "severity": "mild"
+        },
+        "CT": {
+          "phenotype": "Intermediate Antidepressant Response",
+          "effect": "Heterozygous carrier. Intermediate FKBP5 induction levels and partially impaired glucocorticoid receptor feedback. Moderate effect on antidepressant response. Gene-environment interaction with childhood adversity modifies risk.",
+          "recommendation": "Standard antidepressant dosing with careful monitoring. Allow adequate trial duration. Consider augmentation if response is partial after 6-8 weeks.",
+          "severity": "mild"
+        },
+        "CC": {
+          "phenotype": "Favorable Antidepressant Response",
+          "effect": "Homozygous for the C allele. Normal FKBP5 expression regulation and intact glucocorticoid receptor feedback. Better remission rates with algorithm-based antidepressant treatment. Appropriate cortisol response normalization during successful treatment.",
+          "recommendation": "Standard antidepressant treatment expected to be effective. Good likelihood of achieving remission with adequate dosing and duration.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.28,
+        "african": 0.08,
+        "east_asian": 0.05,
+        "south_asian": 0.12,
+        "latino": 0.18
+      }
+    }
+  ],
+  "evidence_level": "moderate",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

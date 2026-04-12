@@ -1,0 +1,100 @@
+{
+  "gene": "HTR2A",
+  "category": "drug_target",
+  "gene_description": "5-Hydroxytryptamine Receptor 2A — major postsynaptic serotonin receptor mediating mood, cognition, and perception. Key pharmacological target for SSRIs, atypical antipsychotics, and psychedelic-assisted therapy.",
+  "drugs": ["citalopram", "escitalopram", "sertraline", "fluoxetine", "paroxetine", "venlafaxine"],
+  "source": {
+    "pmid": "33492430",
+    "doi": "10.3389/fphar.2020.559601",
+    "source_type": "pubmed",
+    "title": "Gene-Based Association Analysis Suggests Association of HTR2A With Antidepressant Treatment Response in Depressed Patients",
+    "journal": "Frontiers in Pharmacology",
+    "year": 2020,
+    "cohort_size": 1953,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/33492430/",
+    "finding": "HTR2A rs7997012 A-allele homozygotes showed significantly better citalopram response in STAR*D (n=1953). Combined GRIK4+HTR2A risk alleles showed 23% reduction in non-response risk."
+  },
+  "snps": [
+    {
+      "rsid": "rs7997012",
+      "risk_allele": "G",
+      "reference_allele": "A",
+      "interpretations": {
+        "GG": {
+          "phenotype": "Reduced SSRI Response",
+          "effect": "Homozygous for the G allele. Associated with lower remission rates to citalopram in the STAR*D study. When combined with GRIK4 rs1954787 TT genotype, risk of non-response increases significantly. The variant affects intronic regulation of HTR2A expression and serotonergic signaling dynamics.",
+          "recommendation": "If SSRI response is suboptimal after 4-6 weeks, consider earlier switch to alternative antidepressant class or augmentation. Evaluate GRIK4 genotype for combined risk assessment. Consider SNRIs or atypical antidepressants as alternatives.",
+          "severity": "moderate"
+        },
+        "GA": {
+          "phenotype": "Intermediate SSRI Response",
+          "effect": "Heterozygous carrier. Intermediate likelihood of SSRI response. One copy of the protective A allele partially compensates for the G allele effect.",
+          "recommendation": "Standard SSRI dosing and monitoring. Allow adequate trial duration before switching.",
+          "severity": "mild"
+        },
+        "AG": {
+          "phenotype": "Intermediate SSRI Response",
+          "effect": "Heterozygous carrier. Intermediate likelihood of SSRI response. One copy of the protective A allele partially compensates for the G allele effect.",
+          "recommendation": "Standard SSRI dosing and monitoring. Allow adequate trial duration before switching.",
+          "severity": "mild"
+        },
+        "AA": {
+          "phenotype": "Favorable SSRI Response",
+          "effect": "Homozygous for the A allele. Best citalopram response profile in STAR*D. When combined with GRIK4 C-allele, remission likelihood is significantly enhanced. Favorable HTR2A expression profile for serotonergic antidepressant response.",
+          "recommendation": "SSRIs are likely to be effective. Standard dosing per clinical guidelines.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.45,
+        "african": 0.30,
+        "east_asian": 0.35,
+        "south_asian": 0.40,
+        "latino": 0.42
+      }
+    },
+    {
+      "rsid": "rs6311",
+      "risk_allele": "G",
+      "reference_allele": "A",
+      "interpretations": {
+        "GG": {
+          "phenotype": "Altered HTR2A Promoter Activity",
+          "effect": "Homozygous for the G allele at the -1438A/G promoter position. Associated with altered HTR2A transcription, though results across studies are inconsistent regarding direction of effect on antidepressant response. In linkage disequilibrium with rs6313 (102T/C).",
+          "recommendation": "Consider in context of overall pharmacogenomic profile. Standalone predictive value is limited. Standard antidepressant dosing with monitoring.",
+          "severity": "mild"
+        },
+        "GA": {
+          "phenotype": "Intermediate HTR2A Expression",
+          "effect": "Heterozygous carrier. Intermediate effect on HTR2A promoter activity.",
+          "recommendation": "Standard dosing per clinical guidelines.",
+          "severity": "info"
+        },
+        "AG": {
+          "phenotype": "Intermediate HTR2A Expression",
+          "effect": "Heterozygous carrier. Intermediate effect on HTR2A promoter activity.",
+          "recommendation": "Standard dosing per clinical guidelines.",
+          "severity": "info"
+        },
+        "AA": {
+          "phenotype": "Normal HTR2A Promoter Activity",
+          "effect": "Wild-type promoter. Standard HTR2A expression and typical serotonergic receptor signaling.",
+          "recommendation": "Standard dosing per clinical guidelines.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.44,
+        "african": 0.35,
+        "east_asian": 0.55,
+        "south_asian": 0.45,
+        "latino": 0.40
+      }
+    }
+  ],
+  "evidence_level": "moderate",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

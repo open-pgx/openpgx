@@ -1,0 +1,68 @@
+{
+  "gene": "ADRB2",
+  "category": "drug_metabolism",
+  "gene_description": "Beta-2 Adrenergic Receptor — target of beta-2 agonists in asthma and COPD. Arg16Gly polymorphism affects receptor regulation and bronchodilator responsiveness.",
+  "drugs": [
+    "salbutamol",
+    "albuterol",
+    "salmeterol",
+    "formoterol",
+    "terbutaline"
+  ],
+  "source": {
+    "pmid": "27029682",
+    "doi": "10.1007/s13312-016-0822-3",
+    "source_type": "pubmed",
+    "title": "ADRB2 polymorphism and salbutamol responsiveness in Northern Indian children with mild to moderate exacerbation of asthma",
+    "journal": "Indian Pediatrics",
+    "year": 2016,
+    "cohort_size": 385,
+    "url": "https://link.springer.com/article/10.1007/s13312-016-0822-3",
+    "finding": "ADRB2 rs1042713 Arg16Gly polymorphism shows variable association with salbutamol bronchodilator response across populations. Meta-analyses show inconsistent effects on FEV1 improvement post-inhalation."
+  },
+  "snps": [
+    {
+      "rsid": "rs1042713",
+      "risk_allele": "G",
+      "reference_allele": "A",
+      "interpretations": {
+        "AA": {
+          "phenotype": "Arg16Arg — favorable bronchodilator response",
+          "effect": "Homozygous for Arg16. Sustained beta-2 receptor function with repeated beta-agonist use. Better long-term bronchodilator response with salbutamol and other short-acting beta agonists. Lower risk of receptor desensitization. Represents ~42-45% of Europeans.",
+          "recommendation": "Standard bronchodilator dosing. Good response expected with short-acting beta-2 agonists. May show improved long-term control. LABA use as add-on controller therapy generally well-tolerated.",
+          "severity": "info"
+        },
+        "AG": {
+          "phenotype": "Arg16Gly heterozygous — variable response",
+          "effect": "Mixed Arg16/Gly16 alleles. Intermediate beta-2 receptor regulation. Variable bronchodilator response to inhaled beta-agonists. Moderate desensitization risk with chronic LABA use. Associated with increased asthma exacerbations in some pediatric cohorts using LABA as add-on controller.",
+          "recommendation": "Standard bronchodilator dosing with careful monitoring. Assess inhaler technique and asthma control regularly. Monitor for loss of bronchodilator efficacy over time. Consider LABA formulation choice and monitoring intensity.",
+          "severity": "info"
+        },
+        "GA": {
+          "phenotype": "Arg16Gly heterozygous — variable response",
+          "effect": "Mixed Arg16/Gly16 alleles. Intermediate beta-2 receptor regulation. Variable bronchodilator response to inhaled beta-agonists. Moderate desensitization risk with chronic LABA use. Associated with increased asthma exacerbations in some pediatric cohorts using LABA as add-on controller.",
+          "recommendation": "Standard bronchodilator dosing with careful monitoring. Assess inhaler technique and asthma control regularly. Monitor for loss of bronchodilator efficacy over time. Consider LABA formulation choice and monitoring intensity.",
+          "severity": "info"
+        },
+        "GG": {
+          "phenotype": "Gly16Gly — potential reduced bronchodilator response",
+          "effect": "Homozygous for Gly16. Increased beta-2 receptor desensitization, particularly with chronic beta-agonist use. Reduced long-term bronchodilator efficacy. Higher risk of loss of response to LABA therapy. Associated with increased nocturnal asthma symptoms despite LABA use in some studies.",
+          "recommendation": "Monitor bronchodilator response closely — may show reduced efficacy over time. Consider leukotriene inhibitors or inhaled corticosteroid optimization as primary controller. LABA as add-on therapy may be less effective; ensure adequate ICS dosing. Regular asthma control assessment essential.",
+          "severity": "moderate"
+        }
+      },
+      "population_frequency": {
+        "european": 0.36,
+        "african": 0.3,
+        "east_asian": 0.44,
+        "south_asian": 0.38,
+        "latino": 0.35
+      }
+    }
+  ],
+  "evidence_level": "emerging",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

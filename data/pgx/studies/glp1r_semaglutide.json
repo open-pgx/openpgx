@@ -1,0 +1,55 @@
+{
+  "gene": "GLP1R",
+  "category": "drug_target",
+  "gene_description": "Encodes the glucagon-like peptide-1 receptor, a G-protein coupled receptor that mediates the effects of GLP-1 in glucose homeostasis, insulin secretion, and appetite regulation. Target for GLP-1 receptor agonists used in diabetes and obesity treatment.",
+  "drugs": [
+    "semaglutide"
+  ],
+  "source": {
+    "pmid": "40384505",
+    "doi": null,
+    "source_type": "pubmed",
+    "title": "A GLP1R gene variant and sex influence the response to semaglutide treatment in patients with severe obesity.",
+    "journal": "Obesity (Silver Spring, Md.)",
+    "year": 2025,
+    "cohort_size": 112,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/40384505/",
+    "finding": "GLP1R rs6923761 AA genotype associated with 58% greater weight loss response to semaglutide compared to G allele carriers"
+  },
+  "snps": [
+    {
+      "rsid": "rs6923761",
+      "risk_allele": "G",
+      "reference_allele": "G",
+      "interpretations": {
+        "GG": {
+          "phenotype": "Reduced Response",
+          "effect": "Mean weight loss of 1.04% per month on semaglutide 2.4mg weekly. Standard response to GLP-1 receptor agonist therapy.",
+          "recommendation": "Standard semaglutide dosing. Monitor weight loss response and consider dose optimization or alternative therapies if inadequate response after 4-6 months.",
+          "severity": "mild"
+        },
+        "GA": {
+          "phenotype": "Intermediate Response",
+          "effect": "Intermediate weight loss response to semaglutide, between GG and AA genotypes. Response falls between 1.04-1.64% weight loss per month.",
+          "recommendation": "Standard semaglutide dosing. Monitor weight loss response. May have intermediate benefit compared to homozygous genotypes.",
+          "severity": "info"
+        },
+        "AA": {
+          "phenotype": "Enhanced Response",
+          "effect": "Mean weight loss of 1.64% per month on semaglutide 2.4mg weekly. Approximately 58% greater weight loss response compared to G allele carriers.",
+          "recommendation": "Standard semaglutide dosing. Patients may achieve enhanced weight loss outcomes. Continue monitoring for efficacy and tolerability.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "global": 0.121,
+        "european": null,
+        "east_asian": null,
+        "african": null,
+        "south_asian": null,
+        "americas": null
+      }
+    }
+  ],
+  "evidence_level": "emerging"
+}

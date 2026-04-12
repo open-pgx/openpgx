@@ -39,6 +39,68 @@
           "severity": "info"
         }
       }
+    },
+    {
+      "rsid": "rs1800460",
+      "risk_allele": "T",
+      "reference_allele": "C",
+      "interpretations": {
+        "TT": {
+          "phenotype": "Poor Metabolizer (TPMT Deficient)",
+          "effect": "TPMT*3B homozygous. No TPMT activity. Life-threatening myelosuppression with standard thiopurine doses.",
+          "recommendation": "Reduce dose to 10% of standard or use alternative. Mandatory monitoring.",
+          "severity": "life_threatening"
+        },
+        "CT": {
+          "phenotype": "Intermediate Metabolizer",
+          "effect": "TPMT*3B heterozygous. Reduced TPMT activity. Increased risk of myelosuppression.",
+          "recommendation": "Reduce thiopurine dose to 30-80% of standard. Monitor CBC weekly at initiation.",
+          "severity": "moderate"
+        },
+        "TC": {
+          "phenotype": "Intermediate Metabolizer",
+          "effect": "TPMT*3B heterozygous. Reduced TPMT activity. Increased risk of myelosuppression.",
+          "recommendation": "Reduce thiopurine dose to 30-80% of standard. Monitor CBC weekly at initiation.",
+          "severity": "moderate"
+        },
+        "CC": {
+          "phenotype": "Normal Metabolizer",
+          "effect": "No TPMT*3B variant. Normal TPMT activity.",
+          "recommendation": "Standard thiopurine dosing with routine monitoring.",
+          "severity": "info"
+        }
+      }
+    },
+    {
+      "rsid": "rs1800462",
+      "risk_allele": "G",
+      "reference_allele": "C",
+      "interpretations": {
+        "GG": {
+          "phenotype": "Poor Metabolizer (TPMT Deficient)",
+          "effect": "TPMT*2 homozygous. No TPMT activity. Life-threatening myelosuppression with standard thiopurine doses.",
+          "recommendation": "Reduce dose to 10% of standard or use alternative. Mandatory monitoring.",
+          "severity": "life_threatening"
+        },
+        "CG": {
+          "phenotype": "Intermediate Metabolizer",
+          "effect": "TPMT*2 heterozygous. Reduced TPMT activity. Increased risk of myelosuppression.",
+          "recommendation": "Reduce thiopurine dose to 30-80% of standard. Monitor CBC weekly at initiation.",
+          "severity": "moderate"
+        },
+        "GC": {
+          "phenotype": "Intermediate Metabolizer",
+          "effect": "TPMT*2 heterozygous. Reduced TPMT activity. Increased risk of myelosuppression.",
+          "recommendation": "Reduce thiopurine dose to 30-80% of standard. Monitor CBC weekly at initiation.",
+          "severity": "moderate"
+        },
+        "CC": {
+          "phenotype": "Normal Metabolizer",
+          "effect": "No TPMT*2 variant. Normal TPMT activity.",
+          "recommendation": "Standard thiopurine dosing with routine monitoring.",
+          "severity": "info"
+        }
+      }
     }
   ],
   "evidence_level": "established"

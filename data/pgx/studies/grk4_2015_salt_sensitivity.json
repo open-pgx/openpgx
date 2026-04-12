@@ -1,0 +1,62 @@
+{
+  "gene": "GRK4",
+  "category": "drug_target",
+  "gene_description": "G Protein-Coupled Receptor Kinase 4 — regulates renal dopamine D1 receptor signaling controlling natriuresis (sodium excretion). Activating variants desensitize D1 receptors, impairing sodium excretion and causing salt-sensitive hypertension.",
+  "drugs": ["hydrochlorothiazide", "chlorthalidone", "losartan", "amlodipine"],
+  "source": {
+    "pmid": "25775155",
+    "doi": "10.1016/j.ijcard.2015.02.084",
+    "source_type": "pubmed",
+    "title": "The importance of G protein-coupled receptor kinase 4 (GRK4) in pathogenesis of salt sensitivity, salt sensitive hypertension and response to antihypertensive treatment",
+    "journal": "International Journal of Cardiology",
+    "year": 2015,
+    "cohort_size": 2500,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/25775155/",
+    "finding": "GRK4 rs1024323 (A142V) variant desensitizes renal D1 dopamine receptor, impairing natriuresis. Number of GRK4 variant alleles inversely correlates with ability to excrete chronic sodium load. Affects response to dietary sodium restriction and antihypertensive drugs."
+  },
+  "snps": [
+    {
+      "rsid": "rs1024323",
+      "risk_allele": "T",
+      "reference_allele": "C",
+      "interpretations": {
+        "TT": {
+          "phenotype": "Salt-sensitive hypertension (A142V homozygous)",
+          "effect": "Homozygous A142V carriers have hyperactive GRK4, causing constitutive desensitization and internalization of renal D1 dopamine receptors. Markedly impaired natriuresis — blood pressure rises significantly with sodium intake. Increased angiotensin II type 1 receptor expression. High risk of essential hypertension with high-salt diet.",
+          "recommendation": "Strict sodium restriction (<1500mg/day). Dietary sodium modification should be first-line intervention. DASH diet strongly recommended. Thiazide diuretics may be particularly effective. Monitor blood pressure response to salt intake. Potassium-rich foods to counterbalance sodium.",
+          "severity": "moderate"
+        },
+        "CT": {
+          "phenotype": "Intermediate salt sensitivity",
+          "effect": "Heterozygous carriers show intermediate GRK4 activity and moderate salt sensitivity. Blood pressure modestly affected by sodium intake.",
+          "recommendation": "Moderate sodium restriction (<2300mg/day). Regular blood pressure monitoring. Emphasize potassium-rich fruits and vegetables.",
+          "severity": "mild"
+        },
+        "TC": {
+          "phenotype": "Intermediate salt sensitivity",
+          "effect": "Heterozygous carriers show intermediate GRK4 activity and moderate salt sensitivity. Blood pressure modestly affected by sodium intake.",
+          "recommendation": "Moderate sodium restriction (<2300mg/day). Regular blood pressure monitoring. Emphasize potassium-rich fruits and vegetables.",
+          "severity": "mild"
+        },
+        "CC": {
+          "phenotype": "Normal salt handling",
+          "effect": "Wild-type GRK4 with normal D1 receptor regulation. Adequate renal natriuresis. Blood pressure less affected by dietary sodium from this locus.",
+          "recommendation": "Standard sodium intake guidelines.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.20,
+        "african": 0.35,
+        "east_asian": 0.15,
+        "south_asian": 0.25,
+        "latino": 0.22
+      }
+    }
+  ],
+  "evidence_level": "moderate",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

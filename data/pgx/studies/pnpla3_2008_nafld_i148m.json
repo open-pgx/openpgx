@@ -1,0 +1,50 @@
+{
+  "gene": "PNPLA3",
+  "category": "lipid_metabolism",
+  "gene_description": "Patatin-like phospholipase domain-containing 3 — hepatic fat accumulation and NAFLD/NASH risk (I148M)",
+  "source": {
+    "pmid": "18820647",
+    "doi": "10.1038/ng.257",
+    "source_type": "pubmed",
+    "title": "Genetic variation in PNPLA3 confers susceptibility to nonalcoholic fatty liver disease",
+    "journal": "Nature Genetics",
+    "year": 2008,
+    "cohort_size": null,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/18820647/",
+    "finding": "rs738409 (I148M) G allele strongly associates with hepatic steatosis and NAFLD across ancestries; effect strongest for GG."
+  },
+  "snps": [
+    {
+      "rsid": "rs738409",
+      "risk_allele": "G",
+      "reference_allele": "C",
+      "interpretations": {
+        "CC": {
+          "phenotype": "Typical genetic risk for steatosis (reference)",
+          "effect": "No I148M variant. Lower PNPLA3-associated NAFLD genetic burden than G carriers (population and lifestyle still dominant).",
+          "recommendation": "Standard metabolic liver health: weight, alcohol, lipids, glucose; imaging if clinically indicated.",
+          "severity": "info"
+        },
+        "CG": {
+          "phenotype": "Intermediate PNPLA3-associated steatosis risk",
+          "effect": "One copy of I148M (G). Meta-analyses report ~1.5–2x higher NAFLD odds vs CC with greater ALT/fibrosis signal than non-carriers.",
+          "recommendation": "Emphasize weight and cardiometabolic control; discuss NAFLD screening with clinician if risk factors.",
+          "severity": "mild"
+        },
+        "GC": {
+          "phenotype": "Intermediate PNPLA3-associated steatosis risk",
+          "effect": "One copy of I148M (G). Same interpretation as CG.",
+          "recommendation": "Emphasize weight and cardiometabolic control; discuss NAFLD screening with clinician if risk factors.",
+          "severity": "mild"
+        },
+        "GG": {
+          "phenotype": "Elevated PNPLA3-associated NAFLD/NASH risk",
+          "effect": "Homozygous I148M. Strongly associated with higher liver fat, NASH, and fibrosis progression in multiple cohorts.",
+          "recommendation": "High priority for metabolic risk reduction and hepatology follow-up when steatosis or elevated LFTs are suspected.",
+          "severity": "moderate"
+        }
+      }
+    }
+  ],
+  "evidence_level": "established"
+}

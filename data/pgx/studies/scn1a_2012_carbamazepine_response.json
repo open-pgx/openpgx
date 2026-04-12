@@ -1,0 +1,66 @@
+{
+  "gene": "SCN1A",
+  "category": "drug_response",
+  "gene_description": "Sodium channel neuronal type 1 alpha subunit (NaV1.1) — encodes the pore-forming alpha subunit of neuronal voltage-gated sodium channels. The rs3812718 splice-site polymorphism affects exon 5 splicing to include either the neonatal (5N) or adult (5A) isoform, modifying channel sensitivity to carbamazepine and phenytoin.",
+  "drugs": [
+    "carbamazepine",
+    "phenytoin"
+  ],
+  "source": {
+    "pmid": "24417206",
+    "doi": "10.1038/clpt.2013.253",
+    "source_type": "pubmed",
+    "title": "A common SCN1A splice-site polymorphism modifies the effect of carbamazepine on cortical excitability--a pharmacogenetic transcranial magnetic stimulation study",
+    "journal": "Clinical Pharmacology & Therapeutics",
+    "year": 2014,
+    "cohort_size": 180,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/24417206/",
+    "finding": "The rs3812718 A/G polymorphism modulates the ratio of NaV1.1-5A to NaV1.1-5N isoforms. The 5N variant is more sensitive to phenytoin. AA genotype carriers showed higher maintenance doses and serum levels of carbamazepine (3-12 months) compared to GG genotype. Meta-analysis shows mixed results with some population-dependent associations between rs3812718 and carbamazepine responsiveness."
+  },
+  "snps": [
+    {
+      "rsid": "rs3812718",
+      "risk_allele": "A",
+      "reference_allele": "G",
+      "note": "IVS5N+5 G>A splice-site polymorphism; c.603-91G>A in genomic coordinates",
+      "interpretations": {
+        "AA": {
+          "phenotype": "Reduced carbamazepine/phenytoin sensitivity (predominantly 5A isoform)",
+          "effect": "Homozygous A-allele carriers produce predominantly the adult 5A isoform of NaV1.1. The 5A isoform is less sensitive to carbamazepine and phenytoin blockade. Clinical studies show AA genotype carriers require higher maintenance doses and achieve higher steady-state serum concentrations of carbamazepine (particularly 3-12 months post-initiation) compared to GG carriers. Some studies report increased carbamazepine resistance or non-retention with AA genotype.",
+          "recommendation": "Standard initial dosing is appropriate, but monitor clinical response closely. If seizure control is inadequate at standard doses, dose escalation may be needed. Therapeutic drug monitoring (TDM) is recommended to guide dosing. Target serum carbamazepine concentration is 4-12 mcg/mL; phenytoin target is 10-20 mcg/mL. Monitor for dose-related adverse effects with high-dose therapy.",
+          "severity": "mild"
+        },
+        "GA": {
+          "phenotype": "Intermediate carbamazepine/phenytoin sensitivity (mixed 5A/5N isoforms)",
+          "effect": "Heterozygous carriers produce both 5A and 5N isoforms of NaV1.1. Intermediate sensitivity to sodium channel blockers compared to GG and AA homozygotes. Clinical response typically falls between the two homozygous groups, with moderate sensitivity to standard carbamazepine and phenytoin doses.",
+          "recommendation": "Standard dosing per prescribing guidelines is generally appropriate. Monitor seizure control closely during initial treatment phase. If seizure control is not achieved at standard doses, consider therapeutic drug monitoring to guide dose adjustments. Phenytoin dosing is nonlinear; monitor levels carefully with dose changes.",
+          "severity": "mild"
+        },
+        "AG": {
+          "phenotype": "Intermediate carbamazepine/phenytoin sensitivity (mixed 5A/5N isoforms)",
+          "effect": "Heterozygous carriers produce both 5A and 5N isoforms of NaV1.1. Intermediate sensitivity to sodium channel blockers compared to GG and AA homozygotes. Clinical response typically falls between the two homozygous groups, with moderate sensitivity to standard carbamazepine and phenytoin doses.",
+          "recommendation": "Standard dosing per prescribing guidelines is generally appropriate. Monitor seizure control closely during initial treatment phase. If seizure control is not achieved at standard doses, consider therapeutic drug monitoring to guide dose adjustments. Phenytoin dosing is nonlinear; monitor levels carefully with dose changes.",
+          "severity": "mild"
+        },
+        "GG": {
+          "phenotype": "Increased carbamazepine/phenytoin sensitivity (predominantly 5N isoform)",
+          "effect": "Homozygous G-allele carriers produce predominantly the neonatal 5N isoform of NaV1.1. The 5N isoform is more sensitive to carbamazepine and phenytoin blockade, resulting in greater channel inhibition at standard doses. GG genotype carriers typically achieve adequate seizure control at lower maintenance doses and lower serum concentrations compared to AA carriers. Some studies report better carbamazepine responsiveness with GG genotype.",
+          "recommendation": "Standard initial dosing may be appropriate, but increased risk of dose-related adverse effects. Therapeutic drug monitoring (TDM) is strongly recommended to optimize dosing. Target therapeutic levels may be achieved at lower doses than in AA carriers. Start with lower doses and titrate cautiously based on clinical response and TDM results. Monitor for carbamazepine adverse effects including dizziness, ataxia, diplopia, hyponatremia, and rash.",
+          "severity": "mild"
+        }
+      },
+      "population_frequency": {
+        "global": 0.35,
+        "european": 0.4,
+        "east_asian": 0.32,
+        "african": 0.28,
+        "south_asian": 0.3
+      }
+    }
+  ],
+  "evidence_level": "moderate",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

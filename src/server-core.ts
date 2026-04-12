@@ -11,6 +11,7 @@ import { homedir } from "os";
 
 import {
   parseRawData,
+  parseRawContent,
   supportedFormats,
   type PatientProfile,
   type RiskResult,
@@ -28,9 +29,9 @@ import {
   type StudyContribution,
   type SnpInterpretation,
 } from "./pharmacogenes.js";
-import { BRAND_TO_GENERIC, resolveDrugName } from "./drug-resolver.js";
+import { BRAND_TO_GENERIC, resolveDrugName, semanticSearch } from "./drug-resolver.js";
 
-export const OPENPGX_VERSION = "0.3.0";
+export const OPENPGX_VERSION = "0.4.0";
 const OPENPGX_DIR = join(homedir(), ".openpgx");
 const CACHE_DIR = join(OPENPGX_DIR, "cache", "drugs");
 const PATIENT_DIR = join(OPENPGX_DIR, "patients");
@@ -212,6 +213,80 @@ export function createServer(): McpServer {
 
   let currentPatient: PatientProfile | null = null;
 
+  const pendingUploads = new Map<string, { chunks: string[]; createdAt: number }>();
+  const UPLOAD_TTL_MS = 10 * 60 * 1000;
+  setInterval(() => {
+    const now = Date.now();
+    for (const [id, entry] of pendingUploads) {
+      if (now - entry.createdAt > UPLOAD_TTL_MS) pendingUploads.delete(id);
+    }
+  }, 60_000).unref();
+
+  function saveAndFormatProfile(patient: PatientProfile, source: string): string {
+    const patientFile = join(PATIENT_DIR, "current.openpgx.json");
+    const patientData = {
+      openpgx_version: OPENPGX_VERSION,
+      metadata: { generated_at: new Date().toISOString(), generator: `openpgx-mcp v${OPENPGX_VERSION}` },
+      patient: {
+        raw_data_source: patient.rawDataSource,
+        raw_data_format: patient.rawDataFormat,
+        extraction_date: patient.extractionDate,
+        total_snps_extracted: patient.totalSnpsExtracted,
+        pharmacogenes: patient.pharmacogenes.map(pg => ({
+          gene: pg.gene,
+          genotypes: pg.genotypes,
+          diplotype: pg.diplotype,
+          phenotype: pg.phenotype,
+        })),
+      },
+      medications: [],
+      risks: patient.risks,
+      traits: patient.traits,
+    };
+    writeFileSync(patientFile, JSON.stringify(patientData, null, 2));
+
+    const lines = [
+      `# OpenPGx Patient Profile (v${OPENPGX_VERSION})`,
+      `**Source:** ${patient.rawDataSource}`,
+      `**Input:** ${source}`,
+      `**SNPs extracted:** ${patient.totalSnpsExtracted}`,
+      `**Pharmacogenes:** ${patient.pharmacogenes.length}`,
+      `**Disease risks:** ${patient.risks.length} conditions analyzed`,
+      `**Traits:** ${patient.traits.length} traits detected`,
+      "",
+      "## Pharmacogenes",
+      "",
+    ];
+    for (const pg of patient.pharmacogenes) {
+      const def = getGeneDefinition(pg.gene);
+      lines.push(`### ${pg.gene} (${def?.category ?? "unknown"})`);
+      if (def) lines.push(`*${def.description}*`);
+      lines.push(`- **Genotypes:** ${Object.entries(pg.genotypes).map(([k, v]) => `${k}=${v}`).join(", ")}`);
+      if (pg.phenotype) lines.push(`- **Phenotype:** ${pg.phenotype}`);
+      lines.push("");
+    }
+
+    const elevatedRisks = patient.risks.filter(r => r.overall_risk !== "typical" && r.overall_risk !== "reduced");
+    if (elevatedRisks.length > 0) {
+      lines.push("## Risk Highlights", "");
+      for (const r of elevatedRisks) {
+        lines.push(`- ${RISK_LABELS[r.overall_risk]} **${r.condition}** — ${r.risk_snps.length} SNP(s) analyzed`);
+      }
+      lines.push("", "*Use `check_risk` or `full_risk_report` for detailed analysis.*", "");
+    }
+
+    if (patient.traits.length > 0) {
+      lines.push("## Trait Highlights", "");
+      for (const t of patient.traits) {
+        lines.push(`- **${t.trait}:** ${t.your_phenotype}`);
+      }
+      lines.push("", "*Use `trait_report` for detailed analysis.*", "");
+    }
+
+    lines.push(`Saved to: \`${patientFile}\``);
+    return lines.join("\n");
+  }
+
   function getPatientGeneSummary(): string {
     if (!currentPatient) return "No profile loaded.";
     return currentPatient.pharmacogenes
@@ -228,85 +303,191 @@ export function createServer(): McpServer {
     "upload_genome",
     {
       title: "Upload Genome",
-      description: `Upload and parse a raw DNA data file. Extracts pharmacogenes, disease risk SNPs, and trait SNPs. Supports: ${supportedFormats().join(", ")}. Your data NEVER leaves your computer.`,
+      description: [
+        `Parse raw DNA data. Supports: ${supportedFormats().join(", ")}.`,
+        `CRITICAL: Genome files are 15-25MB (600k+ lines). NEVER read, inline, or chunk genome file contents — this WILL exceed your context window and crash the session.`,
+        `For REMOTE server (mcp.openpgx.ai): use get_upload_command to get a curl/python command, execute it in your code execution sandbox (or tell the user to run it in their terminal), then call load_profile with the returned code.`,
+        `For LOCAL server (stdio/npx): use file_path only.`,
+        `The url parameter is for direct download links (Google Drive, Dropbox, S3).`,
+      ].join(" "),
       inputSchema: {
-        file_path: z.string().describe("Path to your raw data file (e.g., /path/to/genome.txt)"),
+        file_path: z.string().optional().describe("Local file path (stdio mode ONLY — remote server cannot access local files)"),
+        url: z.string().optional().describe("Direct download URL to the raw data file"),
       },
       annotations: { readOnlyHint: false, destructiveHint: false, idempotentHint: true, openWorldHint: false },
     },
-    async ({ file_path }) => {
-      if (!existsSync(file_path)) {
-        return { content: [{ type: "text" as const, text: `Error: File not found at ${file_path}.\n\nSupported formats: ${supportedFormats().join(", ")}` }] };
+    async ({ file_path, url }) => {
+      const inputCount = [file_path, url].filter(Boolean).length;
+      if (inputCount === 0) {
+        return { content: [{ type: "text" as const, text: "No input provided.\n\n**How to upload genome data:**\n\n1. Use `get_upload_command` — it returns a curl command\n2. Execute that command (in your sandbox or tell the user to run it in their terminal)\n3. Use `load_profile` with the returned code (e.g., `pgx-a7b3c`)\n\n**NEVER read or paste genome file contents** — they are 15-25MB and will exceed context limits." }] };
+      }
+      if (inputCount > 1) {
+        return { content: [{ type: "text" as const, text: "Please provide only ONE of: file_path or url." }] };
       }
 
       try {
-        currentPatient = parseRawData(file_path);
+        if (url) {
+          const resp = await fetch(url, { headers: { "User-Agent": "OpenPGx-MCP/0.3.0" }, redirect: "follow" });
+          if (!resp.ok) {
+            return { content: [{ type: "text" as const, text: `Error downloading from URL: HTTP ${resp.status} ${resp.statusText}\n\nMake sure the URL points directly to the raw data file. For Google Drive, use:\nhttps://drive.google.com/uc?export=download&id=FILE_ID` }] };
+          }
+          const content = await resp.text();
+          currentPatient = parseRawContent(content);
+        } else if (file_path) {
+          if (!existsSync(file_path)) {
+            return { content: [{ type: "text" as const, text: `File not found: ${file_path}\n\nIf using the remote server (mcp.openpgx.ai), the server cannot access local files.\n\n**Use this flow instead:**\n1. Call \`get_upload_command\` with the file path\n2. Execute the returned curl command in your sandbox or terminal\n3. Call \`load_profile\` with the code you receive` }] };
+          }
+          currentPatient = parseRawData(file_path);
+        }
       } catch (e) {
         return { content: [{ type: "text" as const, text: `Error: ${e instanceof Error ? e.message : String(e)}` }] };
       }
 
-      const patientFile = join(PATIENT_DIR, "current.openpgx.json");
-      const patientData = {
-        openpgx_version: OPENPGX_VERSION,
-        metadata: { generated_at: new Date().toISOString(), generator: `openpgx-mcp v${OPENPGX_VERSION}` },
-        patient: {
-          raw_data_source: currentPatient.rawDataSource,
-          raw_data_format: currentPatient.rawDataFormat,
-          extraction_date: currentPatient.extractionDate,
-          total_snps_extracted: currentPatient.totalSnpsExtracted,
-          pharmacogenes: currentPatient.pharmacogenes.map(pg => ({
-            gene: pg.gene,
-            genotypes: pg.genotypes,
-            diplotype: pg.diplotype,
-            phenotype: pg.phenotype,
-          })),
-        },
-        medications: [],
-        risks: currentPatient.risks,
-        traits: currentPatient.traits,
-      };
-      writeFileSync(patientFile, JSON.stringify(patientData, null, 2));
-
-      const lines = [
-        `# OpenPGx Patient Profile (v${OPENPGX_VERSION})`,
-        `**Source:** ${currentPatient.rawDataSource}`,
-        `**SNPs extracted:** ${currentPatient.totalSnpsExtracted}`,
-        `**Pharmacogenes:** ${currentPatient.pharmacogenes.length}`,
-        `**Disease risks:** ${currentPatient.risks.length} conditions analyzed`,
-        `**Traits:** ${currentPatient.traits.length} traits detected`,
-        "",
-        "## Pharmacogenes",
-        "",
-      ];
-      for (const pg of currentPatient.pharmacogenes) {
-        const def = getGeneDefinition(pg.gene);
-        lines.push(`### ${pg.gene} (${def?.category ?? "unknown"})`);
-        if (def) lines.push(`*${def.description}*`);
-        lines.push(`- **Genotypes:** ${Object.entries(pg.genotypes).map(([k, v]) => `${k}=${v}`).join(", ")}`);
-        if (pg.phenotype) lines.push(`- **Phenotype:** ${pg.phenotype}`);
-        lines.push("");
+      if (!currentPatient) {
+        return { content: [{ type: "text" as const, text: "Error: Failed to parse genome data." }] };
       }
 
-      const elevatedRisks = currentPatient.risks.filter(r => r.overall_risk !== "typical" && r.overall_risk !== "reduced");
-      if (elevatedRisks.length > 0) {
-        lines.push("## Risk Highlights", "");
-        for (const r of elevatedRisks) {
-          lines.push(`- ${RISK_LABELS[r.overall_risk]} **${r.condition}** — ${r.risk_snps.length} SNP(s) analyzed`);
-        }
-        lines.push("", "*Use `check_risk` or `full_risk_report` for detailed analysis.*", "");
+      const source = url ? `URL: ${url}` : `File: ${file_path}`;
+      const text = saveAndFormatProfile(currentPatient, source);
+      return { content: [{ type: "text" as const, text }] };
+    }
+  );
+
+  // --- Tool: get_upload_command ---
+  server.registerTool(
+    "get_upload_command",
+    {
+      title: "Get Upload Command",
+      description: "Returns a ready-to-run curl command that uploads a genome file directly to the OpenPGx server. Execute this command in your code execution sandbox or tell the user to run it in their terminal. The command sends the file WITHOUT reading it into context. After running it, use load_profile with the returned code.",
+      inputSchema: {
+        file_path: z.string().describe("Path to the genome file (e.g., /uploads/genome.txt or the path shown in the user's message)"),
+      },
+      annotations: { readOnlyHint: true, destructiveHint: false, idempotentHint: true, openWorldHint: false },
+    },
+    async ({ file_path }) => {
+      const curlCmd = `curl -s -X POST https://mcp.openpgx.ai/upload --data-binary @"${file_path}"`;
+      const pythonCmd = `python3 -c "import urllib.request,json; r=urllib.request.urlopen(urllib.request.Request('https://mcp.openpgx.ai/upload',open('${file_path}','rb').read(),{'Content-Type':'application/octet-stream'},method='POST')); print(json.loads(r.read())['code'])"`;
+      const text = [
+        `## Upload Command`,
+        ``,
+        `Execute ONE of these in your code execution sandbox or terminal:`,
+        ``,
+        `**curl:**`,
+        `\`\`\`bash`,
+        curlCmd,
+        `\`\`\``,
+        ``,
+        `**python (no dependencies):**`,
+        `\`\`\`python`,
+        pythonCmd,
+        `\`\`\``,
+        ``,
+        `After running, you'll get a response like: \`{"code":"pgx-a7b3c",...}\``,
+        `Then call \`load_profile\` with that code.`,
+        ``,
+        `**Important:** If executing in Claude.ai sandbox, the user must whitelist \`mcp.openpgx.ai\` in Settings → Capabilities → Additional allowed domains.`,
+      ].join("\n");
+      return { content: [{ type: "text" as const, text }] };
+    }
+  );
+
+  // --- Tool: upload_genome_start ---
+  server.registerTool(
+    "upload_genome_start",
+    {
+      title: "Start Chunked Genome Upload",
+      description: "FOR PROGRAMMATIC MCP CLIENTS ONLY (not for LLM agents). LLM agents: use get_upload_command + load_profile instead. This starts a chunked upload session for clients that can stream file contents without loading into context.",
+      inputSchema: {
+        filename: z.string().optional().describe("Original filename (for logging only)"),
+      },
+      annotations: { readOnlyHint: false, destructiveHint: false, idempotentHint: false, openWorldHint: false },
+    },
+    async ({ filename }) => {
+      const uploadId = Math.random().toString(36).slice(2) + Date.now().toString(36);
+      pendingUploads.set(uploadId, { chunks: [], createdAt: Date.now() });
+      const text = `Upload session started.\n\n**upload_id:** \`${uploadId}\`${filename ? `\n**file:** ${filename}` : ""}\n\nNow send the file content in chunks using \`upload_genome_chunk\`. Send ~500KB per chunk (~25k lines). Set \`is_last: true\` on the final chunk.`;
+      return { content: [{ type: "text" as const, text }] };
+    }
+  );
+
+  // --- Tool: upload_genome_chunk ---
+  server.registerTool(
+    "upload_genome_chunk",
+    {
+      title: "Send Genome Data Chunk",
+      description: "FOR PROGRAMMATIC MCP CLIENTS ONLY (not for LLM agents). LLM agents: use get_upload_command + load_profile instead. Sends a chunk of genome data for a chunked upload session.",
+      inputSchema: {
+        upload_id: z.string().describe("Upload session ID from upload_genome_start"),
+        chunk_index: z.number().describe("0-based sequential chunk index"),
+        data: z.string().describe("Chunk of raw genome file content (plain text lines, NOT base64)"),
+        is_last: z.boolean().optional().describe("Set to true on the final chunk to trigger parsing"),
+      },
+      annotations: { readOnlyHint: false, destructiveHint: false, idempotentHint: true, openWorldHint: false },
+    },
+    async ({ upload_id, chunk_index, data, is_last }) => {
+      const upload = pendingUploads.get(upload_id);
+      if (!upload) {
+        return { content: [{ type: "text" as const, text: `Error: Upload session \`${upload_id}\` not found or expired. Start a new session with \`upload_genome_start\`.` }] };
       }
 
-      if (currentPatient.traits.length > 0) {
-        lines.push("## Trait Highlights", "");
-        for (const t of currentPatient.traits) {
-          lines.push(`- **${t.trait}:** ${t.your_phenotype}`);
-        }
-        lines.push("", "*Use `trait_report` for detailed analysis.*", "");
+      upload.chunks[chunk_index] = data;
+      const totalBytes = upload.chunks.reduce((sum, c) => sum + (c?.length ?? 0), 0);
+      const receivedCount = upload.chunks.filter(Boolean).length;
+
+      if (!is_last) {
+        return { content: [{ type: "text" as const, text: `Chunk ${chunk_index} received. **${receivedCount} chunks** so far (${(totalBytes / 1024).toFixed(0)} KB). Send next chunk or set \`is_last: true\` on the final one.` }] };
       }
 
-      lines.push(`Saved to: \`${patientFile}\``);
+      const fullContent = upload.chunks.join("");
+      pendingUploads.delete(upload_id);
 
-      return { content: [{ type: "text" as const, text: lines.join("\n") }] };
+      try {
+        currentPatient = parseRawContent(fullContent);
+      } catch (e) {
+        return { content: [{ type: "text" as const, text: `Error parsing assembled genome data (${receivedCount} chunks, ${(totalBytes / 1024).toFixed(0)} KB): ${e instanceof Error ? e.message : String(e)}` }] };
+      }
+
+      const text = saveAndFormatProfile(currentPatient, `Chunked upload (${receivedCount} chunks, ${(totalBytes / 1024).toFixed(0)} KB)`);
+      return { content: [{ type: "text" as const, text }] };
+    }
+  );
+
+  // --- Tool: load_profile ---
+  server.registerTool(
+    "load_profile",
+    {
+      title: "Load Uploaded Profile",
+      description: "RECOMMENDED for remote server. Load a genome profile using a code (e.g., pgx-a7b3c) from the /upload endpoint. The user ran a curl command (from get_upload_command) in their terminal or sandbox and received this code. This is the primary way to load genome data on the remote server without reading file contents into context.",
+      inputSchema: {
+        code: z.string().describe("Profile code from the upload command (e.g., pgx-a7b3c)"),
+      },
+      annotations: { readOnlyHint: false, destructiveHint: false, idempotentHint: true, openWorldHint: false },
+    },
+    async ({ code }) => {
+      const profilePath = join(PATIENT_DIR, "..", "uploads", `${code}.json`);
+      if (!existsSync(profilePath)) {
+        return { content: [{ type: "text" as const, text: `Profile \`${code}\` not found. Make sure you ran the upload command and got this code back.\n\nTo upload, run in your terminal:\n\`\`\`\ncurl -X POST https://mcp.openpgx.ai/upload --data-binary @your_genome_file.txt\n\`\`\`` }] };
+      }
+
+      try {
+        const data = JSON.parse(readFileSync(profilePath, "utf-8"));
+        const patient = data.patient;
+
+        currentPatient = {
+          rawDataSource: patient.raw_data_source,
+          rawDataFormat: patient.raw_data_format,
+          extractionDate: patient.extraction_date,
+          totalSnpsExtracted: patient.total_snps_extracted,
+          pharmacogenes: patient.pharmacogenes,
+          risks: data.risks ?? [],
+          traits: data.traits ?? [],
+        } as PatientProfile;
+
+        const text = saveAndFormatProfile(currentPatient, `Uploaded profile (code: ${code})`);
+        return { content: [{ type: "text" as const, text }] };
+      } catch (e) {
+        return { content: [{ type: "text" as const, text: `Error loading profile: ${e instanceof Error ? e.message : String(e)}` }] };
+      }
     }
   );
 
@@ -577,15 +758,34 @@ export function createServer(): McpServer {
       }
 
       const query = condition.toLowerCase();
-      const match = currentPatient.risks.find(r =>
+
+      // 1. Direct text match
+      let match = currentPatient.risks.find(r =>
         r.condition.toLowerCase().includes(query) ||
         query.includes(r.condition.toLowerCase().split(" ")[0]) ||
         r.category.toLowerCase().includes(query)
       );
 
+      // 2. Semantic search fallback
+      if (!match) {
+        const semResults = await semanticSearch(condition, "risk", 3, 0.35);
+        if (semResults.length > 0) {
+          const bestKey = semResults[0].key.replace("risk:", "").replace(":cat", "");
+          match = currentPatient.risks.find(r => r.condition === bestKey);
+
+          if (!match && semResults.length > 1) {
+            const suggestions = semResults
+              .map(r => r.key.replace("risk:", "").replace(":cat", ""))
+              .filter((v, i, a) => a.indexOf(v) === i);
+            const available = suggestions.join(", ");
+            return { content: [{ type: "text" as const, text: `# Disease Risk: "${condition}"\n\nDid you mean one of these?\n\n${suggestions.map(s => `- **${s}** (${Math.round((semResults.find(r => r.key.includes(s))?.score ?? 0) * 100)}% match)`).join("\n")}\n\nTry again with one of these condition names.` }] };
+          }
+        }
+      }
+
       if (!match) {
         const available = currentPatient.risks.map(r => r.condition).join(", ");
-        return { content: [{ type: "text" as const, text: `# Disease Risk: "${condition}"\n\nNo matching condition found in your analyzed risks.\n\n**Available conditions:** ${available}\n\nOr try a category: oncology, cardiovascular, neurological, metabolic, autoimmune, hematological, ophthalmological.` }] };
+        return { content: [{ type: "text" as const, text: `# Disease Risk: "${condition}"\n\nNo matching condition found.\n\n**Available conditions:** ${available}` }] };
       }
 
       return { content: [{ type: "text" as const, text: formatRiskResult(match) }] };
@@ -872,6 +1072,245 @@ export function createServer(): McpServer {
         lines.push("*No trait SNPs found in your raw data.*", "");
       }
 
+      lines.push(
+        "---",
+        "",
+        "## Disclaimers",
+        "",
+        "- This report is for **educational purposes only** and is not a medical diagnosis.",
+        "- Genetic risk is **probabilistic**. Having a risk allele does not guarantee developing a condition.",
+        "- **Environment, lifestyle, and family history** significantly modify genetic predispositions.",
+        "- Most studies are based on **European-ancestry populations**. Results may vary for other ancestries.",
+        "- Discuss significant findings with a **healthcare provider** or **genetic counselor**.",
+        "",
+        `*Generated by OpenPGx v${OPENPGX_VERSION} — openpgx.ai*`
+      );
+
+      return { content: [{ type: "text" as const, text: lines.join("\n") }] };
+    }
+  );
+
+  // --- Tool: diagnostic_all ---
+  server.registerTool(
+    "diagnostic_all",
+    {
+      title: "Complete Diagnostic Report",
+      description:
+        "Generate the most comprehensive genomic report available. Runs ALL modules at once: pharmacogenomics (all genes + clinical context), disease risk assessment (all 19 conditions with study citations and PMIDs), and genetic traits (all 30+ traits with studies). Includes odds ratios, evidence levels, risk allele counts, and full bibliography. This is the 'one-click full diagnostic' — the user does NOT need to ask condition by condition.",
+      inputSchema: {},
+      annotations: { readOnlyHint: true, destructiveHint: false, idempotentHint: true, openWorldHint: false },
+    },
+    async () => {
+      if (!currentPatient) {
+        return { content: [{ type: "text" as const, text: "No genetic profile loaded. Please use `upload_genome` first." }] };
+      }
+
+      const lines: string[] = [];
+      const allStudies: Array<{ pmid: string | null; title: string; journal: string; year: number }> = [];
+
+      // ── Header ──
+      lines.push(
+        `# 🧬 Complete Genomic Diagnostic Report`,
+        `### OpenPGx v${OPENPGX_VERSION}`,
+        "",
+        `| Field | Value |`,
+        `|-------|-------|`,
+        `| **Generated** | ${new Date().toISOString().split("T")[0]} |`,
+        `| **Source** | ${currentPatient.rawDataSource} |`,
+        `| **Total SNPs extracted** | ${currentPatient.totalSnpsExtracted} |`,
+        `| **Pharmacogenes** | ${currentPatient.pharmacogenes.length} |`,
+        `| **Disease conditions** | ${currentPatient.risks.length} |`,
+        `| **Traits** | ${currentPatient.traits.length} |`,
+        "",
+      );
+
+      // ── Executive Summary ──
+      const elevatedRisks = currentPatient.risks.filter(r => r.overall_risk !== "typical" && r.overall_risk !== "reduced");
+      const totalRiskAlleles = currentPatient.risks.reduce((sum, r) => {
+        return sum + r.risk_snps.filter(s => {
+          const gt = s.your_genotype.toUpperCase();
+          const ra = s.risk_allele.toUpperCase();
+          return gt.includes(ra);
+        }).length;
+      }, 0);
+
+      lines.push(
+        "## Executive Summary",
+        "",
+        `- **${elevatedRisks.length}** conditions with elevated genetic risk out of ${currentPatient.risks.length} analyzed`,
+        `- **${totalRiskAlleles}** risk alleles detected across all conditions`,
+        `- **${currentPatient.pharmacogenes.length}** pharmacogenes profiled for drug metabolism`,
+        `- **${currentPatient.traits.length}** genetic traits identified`,
+        "",
+      );
+
+      if (elevatedRisks.length > 0) {
+        lines.push("### ⚠️ Conditions Requiring Attention", "");
+        for (const r of elevatedRisks) {
+          lines.push(`- ${RISK_LABELS[r.overall_risk]} **${r.condition}** — ${r.risk_snps.filter(s => s.your_genotype.toUpperCase().includes(s.risk_allele.toUpperCase())).length} risk allele(s)`);
+        }
+        lines.push("");
+      }
+
+      lines.push("---", "");
+
+      // ════════════════════════════════════════════
+      // PART 1: PHARMACOGENOMICS
+      // ════════════════════════════════════════════
+      lines.push("# Part 1: Pharmacogenomics", "");
+
+      const pgxCategories: Record<string, Array<{ pg: typeof currentPatient.pharmacogenes[0]; def: ReturnType<typeof getGeneDefinition> }>> = {};
+      for (const pg of currentPatient.pharmacogenes) {
+        const def = getGeneDefinition(pg.gene);
+        const cat = def?.category ?? "other";
+        if (!pgxCategories[cat]) pgxCategories[cat] = [];
+        pgxCategories[cat].push({ pg, def });
+      }
+
+      const catLabels: Record<string, string> = {
+        drug_metabolism: "Drug Metabolism (CYP Enzymes)",
+        drug_target: "Drug Targets",
+        drug_transport: "Drug Transport",
+        folate_metabolism: "Folate & Methylation",
+        catecholamine: "Catecholamine Metabolism",
+        vitamin_receptor: "Vitamin Receptors",
+        vitamin_conversion: "Vitamin Conversion",
+        nutrient_absorption: "Nutrient Absorption",
+        methylation: "Methylation Pathway",
+        glp1_response: "GLP-1 Response (Emerging)",
+      };
+
+      for (const [cat, genes] of Object.entries(pgxCategories)) {
+        lines.push(`## ${catLabels[cat] ?? cat}`, "");
+        for (const { pg, def } of genes) {
+          lines.push(`### ${pg.gene}`);
+          if (def) lines.push(`*${def.description}*`);
+          lines.push(`- **Genotypes:** ${Object.entries(pg.genotypes).map(([k, v]) => `${k}: ${v}`).join(", ")}`);
+          if (pg.phenotype) lines.push(`- **Phenotype:** ${pg.phenotype}`);
+          if (GENE_CONTEXTS[pg.gene]) lines.push(`- **Clinical relevance:** ${GENE_CONTEXTS[pg.gene]}`);
+          lines.push("");
+        }
+      }
+
+      lines.push("---", "");
+
+      // ════════════════════════════════════════════
+      // PART 2: DISEASE RISK ASSESSMENT
+      // ════════════════════════════════════════════
+      lines.push("# Part 2: Disease Risk Assessment", "");
+      lines.push(`*${currentPatient.risks.length} conditions analyzed with ${totalRiskAlleles} risk alleles detected*`, "");
+
+      const riskByCategory: Record<string, RiskResult[]> = {};
+      for (const r of currentPatient.risks) {
+        if (!riskByCategory[r.category]) riskByCategory[r.category] = [];
+        riskByCategory[r.category].push(r);
+      }
+
+      for (const [cat, risks] of Object.entries(riskByCategory)) {
+        lines.push(`## ${RISK_CATEGORY_LABELS[cat] ?? cat}`, "");
+
+        for (const r of risks) {
+          lines.push(`### ${r.condition} — ${RISK_LABELS[r.overall_risk]}`);
+          if (r.icd10) lines.push(`*ICD-10: ${r.icd10} | Evidence: ${r.evidence.level}*`);
+          lines.push("");
+
+          for (const snp of r.risk_snps) {
+            const carriesRisk = snp.your_genotype.toUpperCase().includes(snp.risk_allele.toUpperCase());
+            const marker = carriesRisk ? "⚠️" : "✅";
+            lines.push(`- ${marker} **${snp.gene_region}** (${snp.rsid}): ${snp.your_genotype} — risk: ${snp.risk_allele} (OR: ${snp.odds_ratio})`);
+            lines.push(`  ${snp.effect}${carriesRisk ? ` You carry ${snp.your_genotype.toUpperCase().split("").filter(a => a === snp.risk_allele.toUpperCase()).length === 2 ? "TWO copies" : "ONE copy"} of the risk allele (${snp.your_genotype}).` : ` You do NOT carry the risk allele (${snp.your_genotype}).`}`);
+          }
+          lines.push("");
+
+          lines.push(`**Population risk:** ${r.lifetime_risk.general_population} → **Your estimate:** ${r.lifetime_risk.your_estimated}`);
+          lines.push(`**Recommendation:** ${r.recommendation}`);
+
+          if (r.studies && r.studies.length > 0) {
+            lines.push("");
+            for (const s of r.studies) {
+              lines.push(`> ${s.title} (${s.journal}, ${s.year})${s.pmid ? ` — PMID: ${s.pmid}` : ""}${s.cohort_size ? ` | n=${s.cohort_size}` : ""}`);
+              allStudies.push({ pmid: s.pmid, title: s.title, journal: s.journal, year: s.year });
+            }
+          }
+          lines.push("");
+        }
+      }
+
+      lines.push("---", "");
+
+      // ════════════════════════════════════════════
+      // PART 3: GENETIC TRAITS
+      // ════════════════════════════════════════════
+      lines.push("# Part 3: Genetic Traits", "");
+
+      if (currentPatient.traits.length > 0) {
+        // Quick-look table
+        lines.push("## At a Glance", "");
+        lines.push("| Trait | Your Phenotype | Category |");
+        lines.push("|-------|---------------|----------|");
+        for (const t of currentPatient.traits) {
+          lines.push(`| ${t.trait} | ${t.your_phenotype} | ${TRAIT_CATEGORY_LABELS[t.category] ?? t.category} |`);
+        }
+        lines.push("");
+
+        // Detailed by category
+        const traitByCategory: Record<string, TraitResult[]> = {};
+        for (const t of currentPatient.traits) {
+          if (!traitByCategory[t.category]) traitByCategory[t.category] = [];
+          traitByCategory[t.category].push(t);
+        }
+
+        for (const [cat, traits] of Object.entries(traitByCategory)) {
+          lines.push(`## ${TRAIT_CATEGORY_LABELS[cat] ?? cat}`, "");
+          for (const t of traits) {
+            lines.push(`### ${t.trait}`);
+            lines.push(`**Your phenotype:** ${t.your_phenotype}`);
+            lines.push(`**Evidence:** ${t.evidence.level}`);
+            lines.push("");
+            lines.push(t.description);
+            lines.push("");
+
+            for (const snp of t.snps) {
+              lines.push(`- **${snp.gene}** (${snp.rsid}): ${snp.your_genotype} — effect allele: ${snp.effect_allele}`);
+            }
+            lines.push("");
+            lines.push(`**Practical advice:** ${t.practical_advice}`);
+
+            if (t.studies && t.studies.length > 0) {
+              lines.push("");
+              for (const s of t.studies) {
+                lines.push(`> ${s.title} (${s.journal}, ${s.year})${s.pmid ? ` — PMID: ${s.pmid}` : ""}`);
+                allStudies.push({ pmid: s.pmid, title: s.title, journal: s.journal, year: s.year });
+              }
+            }
+            lines.push("");
+          }
+        }
+      } else {
+        lines.push("*No trait SNPs found in your raw data.*", "");
+      }
+
+      lines.push("---", "");
+
+      // ════════════════════════════════════════════
+      // BIBLIOGRAPHY
+      // ════════════════════════════════════════════
+      const uniqueStudies = allStudies.filter((s, i, arr) =>
+        arr.findIndex(x => x.title === s.title) === i
+      );
+
+      if (uniqueStudies.length > 0) {
+        lines.push("# Bibliography", "");
+        lines.push(`*${uniqueStudies.length} peer-reviewed studies cited in this report*`, "");
+        const sorted = [...uniqueStudies].sort((a, b) => a.year - b.year);
+        for (let i = 0; i < sorted.length; i++) {
+          const s = sorted[i];
+          lines.push(`${i + 1}. ${s.title}. *${s.journal}*, ${s.year}.${s.pmid ? ` PMID: ${s.pmid}` : ""}`);
+        }
+        lines.push("");
+      }
+
+      // ── Disclaimers ──
       lines.push(
         "---",
         "",

@@ -1,0 +1,62 @@
+{
+  "gene": "TCN2",
+  "category": "nutrient_absorption",
+  "gene_description": "Transcobalamin II (TCN2) — encodes transcobalamin, the protein that binds 20-25% of circulating cobalamin (vitamin B12) and mediates cellular uptake and intracellular availability",
+  "drugs": [],
+  "source": {
+    "pmid": "27535273",
+    "doi": "10.3945/ajcn.116.140590",
+    "source_type": "meta-analysis",
+    "title": "Association of TCN2 rs1801198 c.776G>C polymorphism with markers of one-carbon metabolism and related diseases: a systematic review and meta-analysis",
+    "journal": "American Journal of Clinical Nutrition",
+    "year": 2016,
+    "cohort_size": 6500,
+    "url": "https://academic.oup.com/ajcn/article/106/4/1142/4652037",
+    "finding": "rs1801198 G allele associated with 13-15% lower plasma holotranscobalamin (active B12) concentrations; Pro259Arg missense mutation reduces B12 intracellular delivery"
+  },
+  "snps": [
+    {
+      "rsid": "rs1801198",
+      "risk_allele": "G",
+      "reference_allele": "C",
+      "interpretations": {
+        "GG": {
+          "phenotype": "Reduced vitamin B12 bioavailability",
+          "effect": "Homozygous G carriers (Pro259Pro) have significantly lower plasma holotranscobalamin levels (13-15% reduction). Reduced cellular uptake and intracellular B12 availability despite adequate serum cobalamin. Associated with elevated homocysteine and methylmalonic acid in some populations. Risk of functional B12 deficiency even with normal serum B12 levels.",
+          "recommendation": "Monitor serum B12, holotranscobalamin, homocysteine, and methylmalonic acid. Maintain B12 intake at upper end of RDA (2.4 mcg daily). Consider B12 supplementation (1000 mcg weekly or 2000 mcg daily) or B12 injections to ensure adequate intracellular B12. Test holotranscobalamin if symptoms of B12 deficiency present (neuropathy, cognitive changes, anemia).",
+          "severity": "moderate"
+        },
+        "CG": {
+          "phenotype": "Intermediate vitamin B12 bioavailability",
+          "effect": "Heterozygotes show intermediate holotranscobalamin levels. Modest reduction in B12 intracellular delivery compared to CC wild-type, but generally adequate with normal dietary intake.",
+          "recommendation": "Standard B12 RDA adequate (2.4 mcg daily for adults). Monitor for B12 deficiency symptoms if at risk (vegans, elderly, gastrointestinal disorders). Consider supplementation if dietary B12 intake limited or symptoms suggestive of deficiency develop.",
+          "severity": "mild"
+        },
+        "GC": {
+          "phenotype": "Intermediate vitamin B12 bioavailability",
+          "effect": "Heterozygotes show intermediate holotranscobalamin levels. Modest reduction in B12 intracellular delivery compared to CC wild-type, but generally adequate with normal dietary intake.",
+          "recommendation": "Standard B12 RDA adequate (2.4 mcg daily for adults). Monitor for B12 deficiency symptoms if at risk (vegans, elderly, gastrointestinal disorders). Consider supplementation if dietary B12 intake limited or symptoms suggestive of deficiency develop.",
+          "severity": "mild"
+        },
+        "CC": {
+          "phenotype": "Normal vitamin B12 bioavailability",
+          "effect": "Wild-type homozygotes (Arg259Arg) have normal holotranscobalamin levels and cellular B12 uptake. Adequate intracellular B12 availability with standard dietary intake.",
+          "recommendation": "Standard B12 intake adequate (2.4 mcg daily from animal products, fortified foods, or supplements). Dietary sources include meat, fish, poultry, eggs, and dairy products.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.32,
+        "african": 0.25,
+        "east_asian": 0.28,
+        "south_asian": 0.30,
+        "latino": 0.29
+      }
+    }
+  ],
+  "evidence_level": "moderate",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

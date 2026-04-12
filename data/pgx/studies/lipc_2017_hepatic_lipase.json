@@ -1,0 +1,62 @@
+{
+  "gene": "LIPC",
+  "category": "nutrient_absorption",
+  "gene_description": "Hepatic Lipase — enzyme that hydrolyzes triglycerides and phospholipids in circulating lipoproteins, playing a central role in HDL remodeling and LDL conversion. Promoter variants affect enzyme activity and are modified by dietary fat intake.",
+  "drugs": ["atorvastatin", "fenofibrate", "niacin"],
+  "source": {
+    "pmid": "28939642",
+    "doi": "10.1152/physiolgenomics.00036.2017",
+    "source_type": "pubmed",
+    "title": "Dietary fat modulation of hepatic lipase variant -514 C/T for lipids: a crossover randomized dietary intervention trial in Caribbean Hispanics",
+    "journal": "Physiological Genomics",
+    "year": 2017,
+    "cohort_size": 42,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/28939642/",
+    "finding": "LIPC rs1800588 (C-514T) T allele carriers show reduced hepatic lipase activity and higher HDL-C levels. Significant gene-diet interaction: dietary fat composition modulates the lipid effects. HDL response varies by genotype with dietary fat modification."
+  },
+  "snps": [
+    {
+      "rsid": "rs1800588",
+      "risk_allele": "C",
+      "reference_allele": "T",
+      "interpretations": {
+        "CC": {
+          "phenotype": "High hepatic lipase activity / lower HDL",
+          "effect": "Homozygous C carriers have highest hepatic lipase activity. Lower HDL-C levels. Increased CAD risk from this locus. Strong response to dietary fat modification — HDL may improve significantly with reduced saturated fat intake. More atherogenic lipoprotein profile with high-fat diets.",
+          "recommendation": "Reduce saturated fat intake to improve HDL. Increase monounsaturated fats (olive oil, avocado, nuts). Regular lipid monitoring. Consider niacin or fibrate therapy if HDL persistently low. Exercise improves HDL in this genotype.",
+          "severity": "moderate"
+        },
+        "CT": {
+          "phenotype": "Intermediate hepatic lipase activity",
+          "effect": "Heterozygous carriers show intermediate hepatic lipase activity and HDL levels. Moderate gene-diet interaction with dietary fat composition.",
+          "recommendation": "Heart-healthy fat profile. Monitor lipids annually. Balanced saturated/unsaturated fat ratio.",
+          "severity": "mild"
+        },
+        "TC": {
+          "phenotype": "Intermediate hepatic lipase activity",
+          "effect": "Heterozygous carriers show intermediate hepatic lipase activity and HDL levels. Moderate gene-diet interaction with dietary fat composition.",
+          "recommendation": "Heart-healthy fat profile. Monitor lipids annually. Balanced saturated/unsaturated fat ratio.",
+          "severity": "mild"
+        },
+        "TT": {
+          "phenotype": "Low hepatic lipase activity / higher HDL (protective)",
+          "effect": "Homozygous T carriers have lowest hepatic lipase activity. Higher HDL-C levels (+0.09 mmol/L vs CC). Cardioprotective lipoprotein profile from this locus. Less sensitive to high-fat dietary effects on lipids.",
+          "recommendation": "Favorable lipid genetics. Standard dietary guidelines. Maintain healthy lifestyle to preserve HDL advantage.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.22,
+        "african": 0.50,
+        "east_asian": 0.40,
+        "south_asian": 0.30,
+        "latino": 0.35
+      }
+    }
+  ],
+  "evidence_level": "moderate",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

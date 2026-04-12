@@ -1,0 +1,62 @@
+{
+  "gene": "DRD4",
+  "category": "drug_target",
+  "gene_description": "Dopamine Receptor D4 — G-protein coupled receptor highly expressed in the prefrontal cortex, implicated in ADHD susceptibility and modulating stimulant medication response.",
+  "drugs": ["methylphenidate", "amphetamine", "lisdexamfetamine"],
+  "source": {
+    "pmid": "28871191",
+    "doi": "10.1038/s41598-017-10912-y",
+    "source_type": "pubmed",
+    "title": "Pharmacogenetics of methylphenidate in childhood attention-deficit/hyperactivity disorder: long-term effects",
+    "journal": "Scientific Reports",
+    "year": 2017,
+    "cohort_size": 173,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/28871191/",
+    "finding": "DRD4 rs1800955 -521C/T promoter variant influenced long-term methylphenidate efficacy in ADHD children, with the T allele associated with altered DRD4 expression and variable stimulant response."
+  },
+  "snps": [
+    {
+      "rsid": "rs1800955",
+      "risk_allele": "T",
+      "reference_allele": "C",
+      "interpretations": {
+        "TT": {
+          "phenotype": "Variable Stimulant Response",
+          "effect": "Homozygous for the T allele at the DRD4 -521 promoter position. This variant increases DRD4 transcription, altering dopaminergic signaling in the prefrontal cortex. Associated with variable long-term methylphenidate response in ADHD, potentially requiring more careful dose titration. DRD4 variants also contribute to ADHD susceptibility itself.",
+          "recommendation": "Initiate stimulant therapy at standard dose but monitor response carefully over the first 4-8 weeks. If methylphenidate response is inconsistent, consider amphetamine-based alternatives or combination with behavioral therapy. Long-term follow-up recommended.",
+          "severity": "moderate"
+        },
+        "TC": {
+          "phenotype": "Intermediate Stimulant Response",
+          "effect": "Heterozygous carrier. One copy of the T allele with intermediate DRD4 promoter activity. Moderate influence on stimulant medication response with generally adequate treatment outcomes.",
+          "recommendation": "Standard stimulant dosing is appropriate. Monitor treatment response during initial titration and long-term maintenance.",
+          "severity": "mild"
+        },
+        "CT": {
+          "phenotype": "Intermediate Stimulant Response",
+          "effect": "Heterozygous carrier. One copy of the T allele with intermediate DRD4 promoter activity. Moderate influence on stimulant medication response with generally adequate treatment outcomes.",
+          "recommendation": "Standard stimulant dosing is appropriate. Monitor treatment response during initial titration and long-term maintenance.",
+          "severity": "mild"
+        },
+        "CC": {
+          "phenotype": "Standard Stimulant Response",
+          "effect": "Homozygous for the reference C allele. Normal DRD4 promoter activity and standard dopaminergic signaling. Expected typical response to stimulant medications.",
+          "recommendation": "Standard ADHD stimulant dosing per clinical guidelines. No pharmacogenomic adjustment needed.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.40,
+        "african": 0.30,
+        "east_asian": 0.25,
+        "south_asian": 0.35,
+        "latino": 0.38
+      }
+    }
+  ],
+  "evidence_level": "emerging",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

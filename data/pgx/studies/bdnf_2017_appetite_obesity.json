@@ -1,0 +1,63 @@
+{
+  "gene": "BDNF",
+  "category": "nutrient_absorption",
+  "gene_description": "Brain-Derived Neurotrophic Factor — neurotrophin critical for energy homeostasis in the hypothalamus and cognitive control of eating behaviors. Variants reduce activity-induced BDNF expression, affecting appetite regulation and weight.",
+  "drugs": ["semaglutide", "liraglutide", "tirzepatide"],
+  "source": {
+    "pmid": "28595187",
+    "doi": "10.1159/000474956",
+    "source_type": "pubmed",
+    "title": "rs10767664 Gene Variant in Brain-Derived Neurotrophic Factor Is Associated with Diabetes Mellitus Type 2 in Caucasian Females with Obesity",
+    "journal": "Annals of Nutrition and Metabolism",
+    "year": 2017,
+    "cohort_size": 277,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/28595187/",
+    "finding": "BDNF rs10767664 T allele carriers show higher BMI, increased emotional eating, and 1.33x diabetes risk adjusted for age and BMI. The variant impairs activity-induced BDNF expression and alters noradrenaline transporter availability in hypothalamus."
+  },
+  "snps": [
+    {
+      "rsid": "rs10767664",
+      "risk_allele": "T",
+      "reference_allele": "A",
+      "interpretations": {
+        "TT": {
+          "phenotype": "High obesity/emotional eating susceptibility",
+          "effect": "Homozygous T carriers have significantly reduced activity-induced BDNF expression. Associated with higher BMI, increased emotional eating scores, higher risk of type 2 diabetes (OR 1.33), and altered noradrenaline transporter availability in hypothalamus and locus coeruleus. After hypocaloric diet, show different metabolic response patterns.",
+          "recommendation": "Behavioral eating interventions focused on emotional eating patterns. Mediterranean-style hypocaloric diet shows metabolic benefits. GLP-1 agonists may provide additional appetite control. Mindful eating practices. Regular physical activity (exercise itself boosts BDNF).",
+          "severity": "moderate",
+          "odds_ratio": 1.33
+        },
+        "AT": {
+          "phenotype": "Moderate obesity susceptibility",
+          "effect": "Heterozygous carriers show intermediate BDNF expression. Mildly increased emotional eating tendency and BMI. Modest increase in metabolic risk.",
+          "recommendation": "Standard healthy diet with attention to emotional eating triggers. Regular exercise to boost BDNF naturally. Monitor weight and metabolic markers.",
+          "severity": "mild"
+        },
+        "TA": {
+          "phenotype": "Moderate obesity susceptibility",
+          "effect": "Heterozygous carriers show intermediate BDNF expression. Mildly increased emotional eating tendency and BMI. Modest increase in metabolic risk.",
+          "recommendation": "Standard healthy diet with attention to emotional eating triggers. Regular exercise to boost BDNF naturally. Monitor weight and metabolic markers.",
+          "severity": "mild"
+        },
+        "AA": {
+          "phenotype": "Normal BDNF expression",
+          "effect": "Wild-type with standard BDNF expression and activity-induced regulation. Normal appetite control and energy homeostasis from this locus.",
+          "recommendation": "Standard dietary and lifestyle guidelines.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.20,
+        "african": 0.15,
+        "east_asian": 0.25,
+        "south_asian": 0.22,
+        "latino": 0.18
+      }
+    }
+  ],
+  "evidence_level": "moderate",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

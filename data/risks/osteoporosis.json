@@ -24,6 +24,72 @@
         "european": 0.24
       },
       "effect_template": "Lactase non-persistence indirectly affects calcium absorption from dairy, modestly increasing osteoporosis risk."
+    },
+    {
+      "rsid": "rs2234693",
+      "gene_region": "ESR1",
+      "risk_allele": "C",
+      "odds_ratio": 1.15,
+      "population_frequency": {
+        "global": 0.38,
+        "european": 0.39
+      },
+      "effect_template": "ESR1 estrogen receptor 1. Estrogen signaling in bone metabolism and BMD."
+    },
+    {
+      "rsid": "rs9594759",
+      "gene_region": "RANKL/TNFSF11",
+      "risk_allele": "T",
+      "odds_ratio": 1.18,
+      "population_frequency": {
+        "global": 0.25,
+        "european": 0.26
+      },
+      "effect_template": "RANKL receptor activator of NF-kappa B ligand. Osteoclast differentiation and bone resorption."
+    },
+    {
+      "rsid": "rs3102735",
+      "gene_region": "OPG/TNFRSF11B",
+      "risk_allele": "C",
+      "odds_ratio": 1.20,
+      "population_frequency": {
+        "global": 0.32,
+        "european": 0.33
+      },
+      "effect_template": "OPG osteoprotegerin. Inhibitor of RANKL and osteoclast differentiation."
+    },
+    {
+      "rsid": "rs1513670",
+      "gene_region": "SOST",
+      "risk_allele": "T",
+      "odds_ratio": 1.15,
+      "population_frequency": {
+        "global": 0.29,
+        "european": 0.30
+      },
+      "effect_template": "SOST sclerostin. Wnt signaling inhibition affecting bone formation."
+    },
+    {
+      "rsid": "rs3801387",
+      "gene_region": "WNT16",
+      "risk_allele": "T",
+      "odds_ratio": 1.22,
+      "population_frequency": {
+        "global": 0.28,
+        "european": 0.29
+      },
+      "effect_template": "WNT16 Wnt family member 16. Wnt signaling pathway in bone formation."
+    },
+    {
+      "rsid": "rs2016266",
+      "gene_region": "SP7",
+      "risk_allele": "G",
+      "odds_ratio": 1.16,
+      "population_frequency": {
+        "global": 0.24,
+        "european": 0.25
+      },
+      "effect_template": "SP7 osterix transcription factor. Osteoblast differentiation and bone formation."
     }
   ],
   "evidence_level": "established",
@@ -39,6 +105,15 @@
       "cohort_size": 37534,
       "url": "https://pubmed.ncbi.nlm.nih.gov/18445777/",
       "finding": "LRP5 rs3736228 T allele associated with reduced BMD and fracture risk (OR=1.3)"
+    },
+    {
+      "pmid": "22504420",
+      "title": "Genome-wide meta-analysis identifies 56 bone mineral density loci and reveals 15 loci associated with risk of fracture",
+      "journal": "Nature Genetics",
+      "year": 2012,
+      "cohort_size": 32000,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/22504420/",
+      "finding": "Identified multiple BMD loci including ESR1, RANKL, OPG, SOST, WNT16, and SP7"
     }
   ]
 }

@@ -1,0 +1,100 @@
+{
+  "gene": "LPL",
+  "category": "nutrient_absorption",
+  "gene_description": "Lipoprotein Lipase — rate-limiting enzyme for hydrolysis of triglycerides in circulating lipoproteins (chylomicrons and VLDL). Released from endothelial surface of capillaries in muscle and adipose tissue. Key determinant of plasma triglyceride and HDL levels.",
+  "drugs": ["fenofibrate", "gemfibrozil", "omega-3 supplements", "statins"],
+  "source": {
+    "pmid": "18971330",
+    "doi": "10.1093/aje/kwn235",
+    "source_type": "pubmed",
+    "title": "Seven Lipoprotein Lipase Gene Polymorphisms, Lipid Fractions, and Coronary Disease: A HuGE Association Review and Meta-Analysis",
+    "journal": "American Journal of Epidemiology",
+    "year": 2008,
+    "cohort_size": 50000,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/18971330/",
+    "finding": "LPL rs285 (PvuII) and rs320 (HindIII) polymorphisms are significantly associated with triglyceride and HDL-C levels. High-fat diet modifies the association, with risk genotypes showing greater triglyceride elevation on high-fat diets."
+  },
+  "snps": [
+    {
+      "rsid": "rs285",
+      "risk_allele": "T",
+      "reference_allele": "C",
+      "interpretations": {
+        "TT": {
+          "phenotype": "Elevated triglycerides / reduced LPL efficiency",
+          "effect": "Homozygous risk carriers show reduced lipoprotein lipase efficiency. Elevated plasma triglycerides. Potentially reduced HDL-C. Greater triglyceride response to high-fat diets. Meta-analysis shows association with diminished stroke risk protection.",
+          "recommendation": "Limit total fat intake, especially saturated fats. Omega-3 supplementation to support triglyceride management. Regular exercise (stimulates LPL activity). Monitor fasting triglycerides. Consider fibrate therapy if >500 mg/dL.",
+          "severity": "mild"
+        },
+        "CT": {
+          "phenotype": "Intermediate LPL function",
+          "effect": "Heterozygous carriers show intermediate triglyceride and HDL levels. Moderate gene-diet fat interaction.",
+          "recommendation": "Balanced fat intake. Regular lipid monitoring. Standard cardiovascular risk management.",
+          "severity": "info"
+        },
+        "TC": {
+          "phenotype": "Intermediate LPL function",
+          "effect": "Heterozygous carriers show intermediate triglyceride and HDL levels. Moderate gene-diet fat interaction.",
+          "recommendation": "Balanced fat intake. Regular lipid monitoring. Standard cardiovascular risk management.",
+          "severity": "info"
+        },
+        "CC": {
+          "phenotype": "Normal LPL function at this locus",
+          "effect": "Wild-type with standard lipoprotein lipase activity. Normal triglyceride clearance from this variant.",
+          "recommendation": "Standard dietary guidelines.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.49,
+        "african": 0.40,
+        "east_asian": 0.55,
+        "south_asian": 0.45,
+        "latino": 0.50
+      }
+    },
+    {
+      "rsid": "rs320",
+      "risk_allele": "G",
+      "reference_allele": "T",
+      "interpretations": {
+        "GG": {
+          "phenotype": "Elevated triglycerides / altered HDL",
+          "effect": "Homozygous G carriers (HindIII H+H+) show elevated triglycerides and altered HDL-C levels. The variant affects transcription factor binding in intron 8, modulating LPL expression. Significantly associated with both triglycerides and HDL-C in meta-analysis. Gene-diet interaction: high-fat diet amplifies triglyceride elevation.",
+          "recommendation": "Low-fat dietary pattern with emphasis on unsaturated fats. Regular triglyceride monitoring. Omega-3 fatty acids for lipid management. Exercise to enhance LPL activity.",
+          "severity": "mild"
+        },
+        "GT": {
+          "phenotype": "Intermediate triglyceride levels",
+          "effect": "Heterozygous carriers show intermediate triglyceride and HDL levels.",
+          "recommendation": "Heart-healthy diet. Regular lipid panel monitoring.",
+          "severity": "info"
+        },
+        "TG": {
+          "phenotype": "Intermediate triglyceride levels",
+          "effect": "Heterozygous carriers show intermediate triglyceride and HDL levels.",
+          "recommendation": "Heart-healthy diet. Regular lipid panel monitoring.",
+          "severity": "info"
+        },
+        "TT": {
+          "phenotype": "Normal LPL expression at this locus",
+          "effect": "Wild-type with standard LPL expression from this regulatory region. Normal triglyceride clearance.",
+          "recommendation": "Standard dietary guidelines.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.28,
+        "african": 0.20,
+        "east_asian": 0.35,
+        "south_asian": 0.30,
+        "latino": 0.27
+      }
+    }
+  ],
+  "evidence_level": "moderate",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

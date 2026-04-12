@@ -1,0 +1,63 @@
+{
+  "gene": "GRIK4",
+  "category": "drug_target",
+  "gene_description": "Glutamate Ionotropic Receptor Kainate Type Subunit 4 (KA1) — kainate-type glutamate receptor subunit that modulates excitatory neurotransmission. Identified in STAR*D as a predictor of SSRI antidepressant response.",
+  "drugs": ["citalopram", "escitalopram", "sertraline", "fluoxetine", "paroxetine"],
+  "source": {
+    "pmid": "17671280",
+    "doi": "10.1176/appi.ajp.2007.06111790",
+    "source_type": "pubmed",
+    "title": "Association of GRIK4 with outcome of antidepressant treatment in the STAR*D cohort",
+    "journal": "American Journal of Psychiatry",
+    "year": 2007,
+    "cohort_size": 1816,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/17671280/",
+    "finding": "GRIK4 rs1954787 C-allele homozygotes had 11% reduction in risk of non-response to citalopram in STAR*D (n=1816). Combined with HTR2A, homozygotes for both response alleles were 23% less likely to be non-responders (OR=1.22, 95% CI 1.035-1.445)."
+  },
+  "snps": [
+    {
+      "rsid": "rs1954787",
+      "risk_allele": "T",
+      "reference_allele": "C",
+      "interpretations": {
+        "TT": {
+          "phenotype": "Reduced SSRI Response",
+          "effect": "Homozygous for the T allele. Associated with poorer citalopram response in the STAR*D study (n=1816). The glutamate system plays an important role in modulating SSRI response, and this variant affects kainate receptor signaling. When combined with unfavorable HTR2A genotype, risk of treatment non-response increases substantially.",
+          "recommendation": "If SSRI monotherapy is insufficient after adequate trial, consider augmentation with glutamatergic modulators or switch to alternative antidepressant class. Evaluate HTR2A rs7997012 genotype for combined risk assessment. Consider SNRIs or bupropion as alternatives.",
+          "severity": "moderate",
+          "odds_ratio": 1.22
+        },
+        "TC": {
+          "phenotype": "Intermediate SSRI Response",
+          "effect": "Heterozygous carrier. One C allele provides partial benefit. Intermediate likelihood of SSRI response.",
+          "recommendation": "Standard SSRI dosing is appropriate. Allow adequate trial duration (6-8 weeks) before considering alternatives.",
+          "severity": "mild"
+        },
+        "CT": {
+          "phenotype": "Intermediate SSRI Response",
+          "effect": "Heterozygous carrier. One C allele provides partial benefit. Intermediate likelihood of SSRI response.",
+          "recommendation": "Standard SSRI dosing is appropriate. Allow adequate trial duration (6-8 weeks) before considering alternatives.",
+          "severity": "mild"
+        },
+        "CC": {
+          "phenotype": "Favorable SSRI Response",
+          "effect": "Homozygous for the C allele. 11% reduction in risk of non-response to citalopram. When combined with favorable HTR2A genotype (rs7997012 AA), provides the best pharmacogenomic prediction of SSRI response. Optimal kainate receptor signaling supporting serotonergic antidepressant action.",
+          "recommendation": "SSRIs are a good first-line choice. Standard dosing per clinical guidelines.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.44,
+        "african": 0.55,
+        "east_asian": 0.50,
+        "south_asian": 0.48,
+        "latino": 0.46
+      }
+    }
+  ],
+  "evidence_level": "moderate",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

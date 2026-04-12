@@ -1,0 +1,63 @@
+{
+  "gene": "TMEM18",
+  "category": "obesity_metabolism",
+  "gene_description": "Transmembrane Protein 18 — widely expressed in brain tissues, particularly in hypothalamic nuclei involved in energy homeostasis and appetite regulation. TMEM18 variants are consistently associated with obesity and metabolic dysfunction across populations, and influence response to weight management interventions.",
+  "drugs": ["metformin", "semaglutide", "liraglutide", "GLP-1 agonists"],
+  "source": {
+    "pmid": "34229657",
+    "doi": "10.1186/s12920-021-01025-7",
+    "source_type": "pubmed",
+    "title": "The association between polymorphisms near TMEM18 and the risk of obesity: a meta-analysis",
+    "journal": "BMC Medical Genomics",
+    "year": 2021,
+    "cohort_size": 177367,
+    "url": "https://bmcmedgenomics.biomedcentral.com/articles/10.1186/s12920-021-01025-7",
+    "finding": "Meta-analysis of 53,395 obesity cases and 123,972 controls across 27 studies found rs6548238 significantly associated with obesity (OR=1.25, 95% CI: 1.08-1.45). Stronger association in Europeans (OR=1.32) and Mexicans (OR=1.39). Minor allele carriers show greater metabolic response to metformin."
+  },
+  "snps": [
+    {
+      "rsid": "rs6548238",
+      "risk_allele": "C",
+      "reference_allele": "T",
+      "interpretations": {
+        "CC": {
+          "phenotype": "Higher obesity risk, metabolic dysfunction",
+          "effect": "Homozygous C-allele carriers show significantly higher BMI, waist circumference, and waist-hip ratio. Increased fasting glucose, HbA1c, triglycerides, total cholesterol, and LDL-C. Higher type 2 diabetes risk. Reduced appetite suppression and higher energy intake. Enhanced metabolic benefits from weight loss interventions.",
+          "recommendation": "Intensive lifestyle modification with structured dietary and exercise programs. Metformin may provide additional metabolic benefit with 60% of C-allele carriers achieving >7% weight loss versus 21.7% of T-allele homozygotes. GLP-1 agonists (semaglutide, liraglutide, tirzepatide) recommended for enhanced weight loss. Close monitoring of metabolic parameters (glucose, lipids, inflammation markers). Consider combination pharmacotherapy.",
+          "severity": "moderate",
+          "odds_ratio": 1.25
+        },
+        "CT": {
+          "phenotype": "Intermediate obesity risk",
+          "effect": "Heterozygous C-allele carriers show intermediate BMI and metabolic parameters. Mildly elevated waist circumference and glucose levels. Intermediate response to metabolic interventions.",
+          "recommendation": "Structured lifestyle intervention with emphasis on diet and exercise. Standard weight loss pharmacotherapy (metformin or GLP-1 RA) with monitoring. Reassess metabolic parameters at 3-6 months.",
+          "severity": "mild"
+        },
+        "TT": {
+          "phenotype": "Lower obesity risk, better metabolic health",
+          "effect": "Wild-type homozygous T-allele carriers show lower baseline BMI, better lipid profiles, and normal glucose metabolism. Standard appetite regulation and metabolic response expected.",
+          "recommendation": "Standard lifestyle recommendations. Standard weight loss approaches if needed. Regular monitoring of metabolic health markers.",
+          "severity": "info"
+        },
+        "TC": {
+          "phenotype": "Intermediate obesity risk",
+          "effect": "Heterozygous C-allele carriers show intermediate BMI and metabolic parameters. Mildly elevated waist circumference and glucose levels. Intermediate response to metabolic interventions.",
+          "recommendation": "Structured lifestyle intervention with emphasis on diet and exercise. Standard weight loss pharmacotherapy (metformin or GLP-1 RA) with monitoring. Reassess metabolic parameters at 3-6 months.",
+          "severity": "mild"
+        }
+      },
+      "population_frequency": {
+        "european": 0.35,
+        "african": 0.28,
+        "east_asian": 0.22,
+        "south_asian": 0.30,
+        "latino": 0.38
+      }
+    }
+  ],
+  "evidence_level": "moderate",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

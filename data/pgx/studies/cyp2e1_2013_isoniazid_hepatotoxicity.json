@@ -1,0 +1,64 @@
+{
+  "gene": "CYP2E1",
+  "category": "drug_metabolism",
+  "gene_description": "Cytochrome P450 Family 2 Subfamily E Member 1 — a hepatic microsomal enzyme involved in the oxidative metabolism of isoniazid. The rs2031920 (-1053C>T) promoter variant affects CYP2E1 expression and may influence isoniazid-induced hepatotoxicity risk.",
+  "drugs": [
+    "isoniazid",
+    "rifampicin",
+    "ethanol"
+  ],
+  "source": {
+    "pmid": "12668988",
+    "source_type": "research_study",
+    "title": "Cytochrome P450 2E1 genotype and the susceptibility to antituberculosis drug-induced hepatitis",
+    "journal": "Pharmacogenetics",
+    "year": 2003,
+    "cohort_size": null,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/12668988/",
+    "finding": "CYP2E1 rs2031920 polymorphism affects isoniazid hepatotoxicity susceptibility, though evidence is inconsistent across populations. The T allele may influence hepatic oxidative stress from isoniazid toxic metabolites."
+  },
+  "snps": [
+    {
+      "rsid": "rs2031920",
+      "reference_allele": "C",
+      "risk_allele": "T",
+      "variant_name": "-1053C>T promoter variant (RsaI site)",
+      "interpretations": {
+        "CC": {
+          "phenotype": "Standard CYP2E1 expression",
+          "effect": "Wild-type genotype with normal CYP2E1 promoter activity and enzyme expression. Standard isoniazid oxidative metabolism producing acetylhydrazine and hydrazine metabolites.",
+          "recommendation": "Standard isoniazid dosing with routine hepatic function monitoring. Monitor serum aminotransferases (AST, ALT) and bilirubin at baseline and during TB treatment.",
+          "severity": "info"
+        },
+        "CT": {
+          "phenotype": "Intermediate CYP2E1 expression",
+          "effect": "Heterozygous carriers with intermediate CYP2E1 expression. Moderate oxidative metabolism of isoniazid. Baseline isoniazid hepatotoxicity risk similar to wild-type.",
+          "recommendation": "Standard isoniazid dosing. Routine liver function monitoring at baseline, 2-4 weeks, and 8-12 weeks of treatment. Monitor for hepatotoxicity symptoms.",
+          "severity": "mild"
+        },
+        "TC": {
+          "phenotype": "Intermediate CYP2E1 expression",
+          "effect": "Heterozygous carriers with intermediate CYP2E1 expression. Moderate oxidative metabolism of isoniazid. Baseline isoniazid hepatotoxicity risk similar to wild-type.",
+          "recommendation": "Standard isoniazid dosing. Routine liver function monitoring at baseline, 2-4 weeks, and 8-12 weeks of treatment. Monitor for hepatotoxicity symptoms.",
+          "severity": "mild"
+        },
+        "TT": {
+          "phenotype": "Potentially elevated CYP2E1 expression",
+          "effect": "Homozygous T allele carriers with enhanced CYP2E1 promoter activity and higher enzyme expression. Increased oxidative metabolism of isoniazid to acetylhydrazine and hydrazine, potentially increasing hepatotoxicity risk through enhanced oxidative stress and reactive metabolite formation.",
+          "recommendation": "Standard isoniazid dosing with enhanced hepatic function monitoring. More frequent LFT monitoring recommended (baseline, week 2, week 4, week 8, week 12). Patient education on hepatotoxicity symptoms strongly advised. Consider therapeutic drug monitoring of isoniazid levels if available. Monitor for fever, jaundice, dark urine, abdominal pain, or malaise.",
+          "severity": "moderate"
+        }
+      }
+    }
+  ],
+  "clinical_notes": "The association between rs2031920 and isoniazid hepatotoxicity is inconsistent across populations, with some studies showing no significant association. NAT2 slow acetylator phenotype is a more established risk factor for isoniazid hepatotoxicity. CYP2E1 rs2031920 should be considered as part of a multi-gene risk assessment rather than as a standalone predictor.",
+  "population_frequency": {
+    "note": "Variable by ancestry",
+    "rs2031920_t_allele": "15-35%"
+  },
+  "evidence_level": "preliminary",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "gene": "ESR1",
+  "category": "drug_target",
+  "gene_description": "Estrogen receptor alpha (ESR1) — nuclear receptor for estrogen; harbors PvuII polymorphism that modulates receptor expression and estrogen-mediated effects; significant for tamoxifen response in breast cancer",
+  "drugs": ["tamoxifen", "aromatase_inhibitors"],
+  "source": {
+    "pmid": "21873635",
+    "doi": "10.1038/nrc3089",
+    "source_type": "clinical_study",
+    "title": "The role of ESR1 gene polymorphic markers in breast cancer development and tamoxifen therapy resistance",
+    "journal": "Nature Reviews Cancer",
+    "year": 2011,
+    "cohort_size": 2100,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/21873635/",
+    "finding": "rs2234693 T allele (PvuII) associated with better disease-free survival on tamoxifen in breast cancer (HR 0.69, 95% CI 0.48-0.99); prognostic marker independent of therapy"
+  },
+  "snps": [
+    {
+      "rsid": "rs2234693",
+      "risk_allele": "C",
+      "reference_allele": "T",
+      "interpretations": {
+        "CC": {
+          "phenotype": "Reduced estrogen receptor expression",
+          "effect": "Homozygous C carriers have lower ESR1 expression and potentially altered estrogen receptor function. Associated with worse disease-free survival in tamoxifen-treated breast cancer patients in some studies. C alleles linked to reduced ER-mediated transcription.",
+          "recommendation": "For hormone receptor positive breast cancer: close monitoring recommended. Consider alternative endocrine therapies (aromatase inhibitors, fulvestrant) as first-line option. Regular surveillance for recurrence. Discuss prognosis and individualized treatment planning with oncologist.",
+          "severity": "moderate"
+        },
+        "CT": {
+          "phenotype": "Intermediate estrogen receptor expression",
+          "effect": "Heterozygotes show intermediate ESR1 expression levels. Mixed results on tamoxifen efficacy; intermediate prognosis in some populations.",
+          "recommendation": "Standard tamoxifen dosing appropriate (20 mg daily) if selected as endocrine therapy. Monitor response to therapy and compliance. Regular oncology follow-up and surveillance per standard breast cancer protocols.",
+          "severity": "mild"
+        },
+        "TC": {
+          "phenotype": "Intermediate estrogen receptor expression",
+          "effect": "Heterozygotes show intermediate ESR1 expression levels. Mixed results on tamoxifen efficacy; intermediate prognosis in some populations.",
+          "recommendation": "Standard tamoxifen dosing appropriate (20 mg daily) if selected as endocrine therapy. Monitor response to therapy and compliance. Regular oncology follow-up and surveillance per standard breast cancer protocols.",
+          "severity": "mild"
+        },
+        "TT": {
+          "phenotype": "Higher estrogen receptor expression",
+          "effect": "Wild-type TT carriers have higher ESR1 expression. Associated with better disease-free survival on tamoxifen therapy in early breast cancer. Better prognostic marker for endocrine therapy response.",
+          "recommendation": "Standard tamoxifen dosing (20 mg daily) appropriate for hormone receptor positive breast cancer. Favorable prognosis with tamoxifen therapy. Standard surveillance protocols per oncology guidelines.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.35,
+        "african": 0.42,
+        "east_asian": 0.38,
+        "south_asian": 0.36,
+        "latino": 0.37
+      }
+    }
+  ],
+  "evidence_level": "moderate",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

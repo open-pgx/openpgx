@@ -1,0 +1,62 @@
+{
+  "gene": "NBPF3",
+  "category": "nutrient_absorption",
+  "gene_description": "NBPF3 (NACHT, LRR and PYD domains-containing protein 3) — variant located in intergenic region affecting ALPL gene function; ALPL is primary enzyme responsible for catabolism and clearance of vitamin B6 in plasma",
+  "drugs": [],
+  "source": {
+    "pmid": "19303062",
+    "doi": "10.1086/593618",
+    "source_type": "gwas",
+    "title": "Genome-wide association study of vitamin B6, vitamin B12, folate, and homocysteine blood concentrations",
+    "journal": "American Journal of Human Genetics",
+    "year": 2009,
+    "cohort_size": 1862,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/19303062/",
+    "finding": "rs4654748 C allele associated with 1.38 ng/mL lower plasma vitamin B6 concentrations (p<0.001); variant influences ALPL-mediated B6 catabolism"
+  },
+  "snps": [
+    {
+      "rsid": "rs4654748",
+      "risk_allele": "C",
+      "reference_allele": "T",
+      "interpretations": {
+        "CC": {
+          "phenotype": "Increased vitamin B6 catabolism",
+          "effect": "Homozygous C carriers have significantly lower plasma pyridoxal-5'-phosphate (PLP, active B6 form) concentrations. Variant associated with enhanced ALPL enzyme activity and accelerated B6 metabolism. Requires higher dietary intake to maintain adequate B6 status.",
+          "recommendation": "Increase dietary vitamin B6 intake to 1.5-2.0 mg daily (above standard RDA of 1.3-1.7 mg). Monitor for B6 deficiency symptoms (peripheral neuropathy, anemia, dermatitis). Consider B6 supplementation (50-100 mg daily) if dietary intake insufficient.",
+          "severity": "moderate"
+        },
+        "CT": {
+          "phenotype": "Intermediate vitamin B6 metabolism",
+          "effect": "Heterozygotes show intermediate plasma B6 levels, between homozygous groups. Modest increase in ALPL-mediated catabolism compared to TT wild-type.",
+          "recommendation": "Standard vitamin B6 RDA typically adequate (1.3-1.7 mg daily for adults). Monitor dietary intake, particularly if consuming alcohol or medications that increase B6 requirements. Supplementation if deficiency signs develop.",
+          "severity": "mild"
+        },
+        "TC": {
+          "phenotype": "Intermediate vitamin B6 metabolism",
+          "effect": "Heterozygotes show intermediate plasma B6 levels, between homozygous groups. Modest increase in ALPL-mediated catabolism compared to TT wild-type.",
+          "recommendation": "Standard vitamin B6 RDA typically adequate (1.3-1.7 mg daily for adults). Monitor dietary intake, particularly if consuming alcohol or medications that increase B6 requirements. Supplementation if deficiency signs develop.",
+          "severity": "mild"
+        },
+        "TT": {
+          "phenotype": "Normal vitamin B6 metabolism",
+          "effect": "Wild-type homozygotes have normal ALPL activity and vitamin B6 catabolism. Normal plasma B6 levels with standard dietary intake.",
+          "recommendation": "Standard dietary vitamin B6 recommendations adequate (1.3-1.7 mg daily for adults). Maintain varied diet including poultry, fish, potatoes, chickpeas, and whole grains.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.22,
+        "african": 0.18,
+        "east_asian": 0.25,
+        "south_asian": 0.20,
+        "latino": 0.21
+      }
+    }
+  ],
+  "evidence_level": "moderate",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

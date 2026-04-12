@@ -1,0 +1,62 @@
+{
+  "gene": "CYP1A2",
+  "category": "drug_metabolism",
+  "gene_description": "Cytochrome P450 1A2 — major hepatic enzyme responsible for metabolism of caffeine, clozapine, theophylline, olanzapine, and several other drugs. Activity is highly inducible by smoking, cruciferous vegetables, and chargrilled meat.",
+  "drugs": ["caffeine", "clozapine", "theophylline", "olanzapine", "fluvoxamine", "melatonin", "tizanidine"],
+  "source": {
+    "pmid": "22474343",
+    "doi": "10.1038/clpt.2012.33",
+    "source_type": "guideline",
+    "title": "PharmGKB summary: very important pharmacogene information for CYP1A2",
+    "journal": "Clinical Pharmacology & Therapeutics",
+    "year": 2012,
+    "cohort_size": null,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/22474343/",
+    "finding": "CYP1A2*1F (rs762551 A allele) is associated with increased enzyme inducibility — AA homozygotes who smoke or consume inducers show ultrarapid caffeine metabolism and lower plasma levels of CYP1A2 substrates like clozapine and theophylline."
+  },
+  "snps": [
+    {
+      "rsid": "rs762551",
+      "risk_allele": "A",
+      "reference_allele": "C",
+      "interpretations": {
+        "AA": {
+          "phenotype": "Ultrarapid Metabolizer (with inducers)",
+          "effect": "Homozygous *1F carriers show significantly increased CYP1A2 inducibility. In smokers or heavy coffee drinkers, enzyme activity is markedly elevated — rapid caffeine clearance, lower clozapine/olanzapine plasma levels, and faster theophylline metabolism. Without inducers, activity may be near-normal. Risk of sub-therapeutic clozapine levels if patient smokes.",
+          "recommendation": "For clozapine: smokers with AA genotype may need higher doses to achieve therapeutic levels. Monitor plasma concentrations closely. If patient quits smoking, reduce dose promptly to avoid toxicity. For caffeine: fast metabolizer — higher tolerance, may need more for effect. For theophylline: monitor levels; may need dose increase in smokers.",
+          "severity": "moderate"
+        },
+        "AC": {
+          "phenotype": "Intermediate Metabolizer",
+          "effect": "Heterozygotes show moderately increased CYP1A2 inducibility compared to CC wild-type. Intermediate caffeine metabolism. Clozapine and theophylline levels may be somewhat reduced in the presence of inducers (smoking, omeprazole).",
+          "recommendation": "Standard dosing for most CYP1A2 substrates. Monitor clozapine levels if patient is a smoker. Caffeine metabolism is moderate.",
+          "severity": "mild"
+        },
+        "CA": {
+          "phenotype": "Intermediate Metabolizer",
+          "effect": "Heterozygotes show moderately increased CYP1A2 inducibility compared to CC wild-type. Intermediate caffeine metabolism. Clozapine and theophylline levels may be somewhat reduced in the presence of inducers (smoking, omeprazole).",
+          "recommendation": "Standard dosing for most CYP1A2 substrates. Monitor clozapine levels if patient is a smoker. Caffeine metabolism is moderate.",
+          "severity": "mild"
+        },
+        "CC": {
+          "phenotype": "Normal Metabolizer",
+          "effect": "Wild-type CYP1A2 with standard inducibility. Normal caffeine metabolism — slower clearance compared to *1F carriers. Standard clozapine and theophylline metabolism. Less variation in drug levels with smoking status changes.",
+          "recommendation": "Standard dosing per prescribing guidelines. Slow caffeine metabolizer — may be more sensitive to caffeine effects, higher cardiovascular risk with high coffee intake (>3 cups/day).",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.68,
+        "african": 0.55,
+        "east_asian": 0.61,
+        "south_asian": 0.65,
+        "latino": 0.62
+      }
+    }
+  ],
+  "evidence_level": "established",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

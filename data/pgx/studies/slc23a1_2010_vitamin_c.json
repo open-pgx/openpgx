@@ -1,0 +1,62 @@
+{
+  "gene": "SLC23A1",
+  "category": "nutrient_absorption",
+  "gene_description": "Solute Carrier Family 23 Member 1 — encodes SVCT1 (sodium-dependent vitamin C transporter 1), the primary active transporter for L-ascorbic acid absorption in intestine and renal reabsorption in kidneys.",
+  "drugs": ["ascorbic acid supplements", "vitamin C"],
+  "source": {
+    "pmid": "20519558",
+    "doi": "10.3945/ajcn.2009.28880",
+    "source_type": "pubmed",
+    "title": "Genetic variation at the SLC23A1 locus is associated with circulating concentrations of L-ascorbic acid (vitamin C): evidence from 5 independent studies with >15,000 participants",
+    "journal": "American Journal of Clinical Nutrition",
+    "year": 2010,
+    "cohort_size": 15000,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/20519558/",
+    "finding": "SLC23A1 rs33972313 minor A allele is associated with -5.98 μmol/L reduction in plasma vitamin C per allele. Heterozygotes show 24% lower plasma vitamin C. The missense variant (Val→Met) impairs transporter function, reducing intestinal absorption and renal reabsorption of ascorbic acid."
+  },
+  "snps": [
+    {
+      "rsid": "rs33972313",
+      "risk_allele": "A",
+      "reference_allele": "G",
+      "interpretations": {
+        "AA": {
+          "phenotype": "Severely impaired vitamin C transport (rare)",
+          "effect": "Homozygous missense carriers (Met/Met) have markedly impaired SVCT1 transporter function. Plasma vitamin C levels reduced by 40-50% across dietary dose range. Very high risk of clinical vitamin C deficiency even with adequate dietary intake. Impaired intestinal absorption and renal reabsorption of ascorbate.",
+          "recommendation": "High-dose vitamin C supplementation recommended (500-1000mg daily in divided doses). Consume vitamin C-rich foods throughout the day (citrus, peppers, kiwi, broccoli). Monitor plasma vitamin C levels. Consider IV vitamin C if oral supplementation insufficient.",
+          "severity": "moderate"
+        },
+        "GA": {
+          "phenotype": "Reduced vitamin C transport",
+          "effect": "Heterozygous carriers (Val/Met) show ~24% lower plasma vitamin C concentrations (-5.98 μmol/L per allele). Partially impaired intestinal absorption and renal reabsorption. May not achieve optimal vitamin C status on standard dietary intake alone.",
+          "recommendation": "Increase vitamin C-rich foods in diet. Consider moderate supplementation (250-500mg daily). Ensure consistent daily vitamin C intake as body stores may be depleted faster. Avoid long periods without fresh fruits and vegetables.",
+          "severity": "mild"
+        },
+        "AG": {
+          "phenotype": "Reduced vitamin C transport",
+          "effect": "Heterozygous carriers (Val/Met) show ~24% lower plasma vitamin C concentrations (-5.98 μmol/L per allele). Partially impaired intestinal absorption and renal reabsorption. May not achieve optimal vitamin C status on standard dietary intake alone.",
+          "recommendation": "Increase vitamin C-rich foods in diet. Consider moderate supplementation (250-500mg daily). Ensure consistent daily vitamin C intake as body stores may be depleted faster. Avoid long periods without fresh fruits and vegetables.",
+          "severity": "mild"
+        },
+        "GG": {
+          "phenotype": "Normal vitamin C transport",
+          "effect": "Wild-type SVCT1 transporter with full activity. Efficient intestinal absorption and renal reabsorption of ascorbic acid. Normal plasma vitamin C levels with adequate dietary intake.",
+          "recommendation": "Standard dietary intake of vitamin C (90mg/day men, 75mg/day women) from fruits and vegetables is sufficient.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.05,
+        "african": 0.02,
+        "east_asian": 0.01,
+        "south_asian": 0.03,
+        "latino": 0.04
+      }
+    }
+  ],
+  "evidence_level": "established",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

@@ -24,6 +24,72 @@
         "european": 0.08
       },
       "effect_template": "APOE ε2 determining SNP. T allele (ε2) is protective against Alzheimer's."
+    },
+    {
+      "rsid": "rs11136000",
+      "gene_region": "CLU",
+      "risk_allele": "T",
+      "odds_ratio": 0.86,
+      "population_frequency": {
+        "global": 0.41,
+        "european": 0.42
+      },
+      "effect_template": "Clusterin (CLU) protective variant. T allele reduces AD risk (OR ~0.86 per copy)."
+    },
+    {
+      "rsid": "rs3851179",
+      "gene_region": "PICALM",
+      "risk_allele": "A",
+      "odds_ratio": 0.87,
+      "population_frequency": {
+        "global": 0.39,
+        "european": 0.40
+      },
+      "effect_template": "PICALM endocytosis gene protective variant. A allele protective against AD."
+    },
+    {
+      "rsid": "rs744373",
+      "gene_region": "BIN1",
+      "risk_allele": "G",
+      "odds_ratio": 1.17,
+      "population_frequency": {
+        "global": 0.31,
+        "european": 0.31
+      },
+      "effect_template": "BIN1 amphiphysin risk variant. G allele increases AD susceptibility."
+    },
+    {
+      "rsid": "rs6656401",
+      "gene_region": "CR1",
+      "risk_allele": "A",
+      "odds_ratio": 1.17,
+      "population_frequency": {
+        "global": 0.33,
+        "european": 0.34
+      },
+      "effect_template": "Complement Receptor 1 risk variant. A allele associated with increased AD risk."
+    },
+    {
+      "rsid": "rs4147929",
+      "gene_region": "ABCA7",
+      "risk_allele": "A",
+      "odds_ratio": 1.15,
+      "population_frequency": {
+        "global": 0.22,
+        "european": 0.21
+      },
+      "effect_template": "ABCA7 ATP-binding cassette transporter risk variant. Affects lipid transport and AD risk."
+    },
+    {
+      "rsid": "rs3865444",
+      "gene_region": "CD33",
+      "risk_allele": "A",
+      "odds_ratio": 0.89,
+      "population_frequency": {
+        "global": 0.38,
+        "european": 0.39
+      },
+      "effect_template": "CD33 immune cell receptor protective variant. A allele reduces AD risk through neuroinflammation pathways."
     }
   ],
   "evidence_level": "established",
@@ -39,6 +105,15 @@
       "cohort_size": 74046,
       "url": "https://pubmed.ncbi.nlm.nih.gov/24162737/",
       "finding": "APOE ε4 remains strongest common genetic risk factor for late-onset Alzheimer's"
+    },
+    {
+      "pmid": "21460841",
+      "title": "Common variants at ABCA7, MS4A6A/MS4A4E, EPHA1, CD33 and CD2AP are associated with Alzheimer's disease and amyloid-beta levels",
+      "journal": "Nature Genetics",
+      "year": 2011,
+      "cohort_size": 59091,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/21460841/",
+      "finding": "Five new common variants identified through GWAS associated with AD risk and amyloid pathology"
     }
   ]
 }

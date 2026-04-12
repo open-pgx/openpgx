@@ -1,0 +1,62 @@
+{
+  "gene": "ABCG2",
+  "category": "drug_transport",
+  "gene_description": "ATP-binding cassette sub-family G member 2 — encodes BCRP (Breast Cancer Resistance Protein), an efflux transporter in intestine, liver, kidney, and blood-brain barrier that controls bioavailability of statins, urate-lowering drugs, and many oncology agents",
+  "drugs": ["rosuvastatin", "atorvastatin", "allopurinol", "febuxostat", "sulfasalazine", "methotrexate", "topotecan"],
+  "source": {
+    "pmid": "35188534",
+    "doi": "10.3390/pharmaceutics14030501",
+    "source_type": "pubmed",
+    "title": "The Association between ABCG2 421C>A (rs2231142) Polymorphism and Rosuvastatin Pharmacokinetics: A Systematic Review and Meta-Analysis",
+    "journal": "Pharmaceutics",
+    "year": 2022,
+    "cohort_size": 1200,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/35188534/",
+    "finding": "ABCG2 Q141K (rs2231142) significantly increases rosuvastatin AUC and Cmax in a gene-dose dependent manner. Homozygous TT carriers show ~2.4-fold higher rosuvastatin exposure. CPIC recommends initial dose ≤20mg for homozygous Q141K carriers."
+  },
+  "snps": [
+    {
+      "rsid": "rs2231142",
+      "risk_allele": "T",
+      "reference_allele": "G",
+      "interpretations": {
+        "TT": {
+          "phenotype": "Poor BCRP function (Q141K homozygous)",
+          "effect": "Homozygous Q141K carriers have markedly reduced BCRP efflux activity. Rosuvastatin AUC increased ~2.4-fold, with significantly higher Cmax. Increased risk of statin-associated musculoskeletal symptoms (SAMS). For allopurinol, DPWG recommends 1.4-fold higher dose due to association with decreased efficacy. Also affects sulfasalazine bioavailability.",
+          "recommendation": "Rosuvastatin: use initial dose ≤20mg per CPIC guideline. Consider alternative statin (pravastatin, fluvastatin) if myopathy occurs. Allopurinol: consider 1.4x higher dose per DPWG. Monitor uric acid levels closely. Monitor for statin side effects including myalgia.",
+          "severity": "moderate"
+        },
+        "GT": {
+          "phenotype": "Intermediate BCRP function (Q141K heterozygous)",
+          "effect": "Heterozygotes show intermediate BCRP activity. Rosuvastatin AUC increased ~1.7-fold. Modest increase in statin exposure with slightly elevated risk of myopathy. For allopurinol, DPWG recommends 1.25-fold higher dose.",
+          "recommendation": "Rosuvastatin: standard dosing acceptable but monitor for myopathy. Consider dose cap at 20mg if adverse effects emerge. Allopurinol: consider 1.25x dose adjustment per DPWG if target uric acid not reached.",
+          "severity": "mild"
+        },
+        "TG": {
+          "phenotype": "Intermediate BCRP function (Q141K heterozygous)",
+          "effect": "Heterozygotes show intermediate BCRP activity. Rosuvastatin AUC increased ~1.7-fold. Modest increase in statin exposure with slightly elevated risk of myopathy. For allopurinol, DPWG recommends 1.25-fold higher dose.",
+          "recommendation": "Rosuvastatin: standard dosing acceptable but monitor for myopathy. Consider dose cap at 20mg if adverse effects emerge. Allopurinol: consider 1.25x dose adjustment per DPWG if target uric acid not reached.",
+          "severity": "mild"
+        },
+        "GG": {
+          "phenotype": "Normal BCRP function",
+          "effect": "Wild-type with full BCRP efflux transporter activity. Normal rosuvastatin pharmacokinetics and standard allopurinol response. Normal intestinal and hepatic drug efflux.",
+          "recommendation": "Standard dosing for rosuvastatin and allopurinol. No BCRP-related dose adjustments needed.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.10,
+        "african": 0.03,
+        "east_asian": 0.30,
+        "south_asian": 0.12,
+        "latino": 0.10
+      }
+    }
+  ],
+  "evidence_level": "established",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

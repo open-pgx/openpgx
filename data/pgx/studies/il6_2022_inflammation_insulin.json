@@ -1,0 +1,62 @@
+{
+  "gene": "IL6",
+  "category": "nutrient_absorption",
+  "gene_description": "Interleukin-6 — pro-inflammatory cytokine involved in immune response, inflammation, and metabolic regulation. The -174G/C promoter polymorphism affects IL-6 expression and modulates insulin resistance, cardiovascular risk, and dietary fat response.",
+  "drugs": ["tocilizumab", "sarilumab", "siltuximab"],
+  "source": {
+    "pmid": "35741206",
+    "doi": "10.1186/s13098-022-00851-8",
+    "source_type": "pubmed",
+    "title": "IL-6 gene rs1800795 polymorphism and diabetes mellitus: a comprehensive analysis involving 42,150 participants from a meta-analysis",
+    "journal": "Diabetology & Metabolic Syndrome",
+    "year": 2022,
+    "cohort_size": 42150,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/35741206/",
+    "finding": "IL6 rs1800795 -174G/C polymorphism modulates diabetes risk in interaction with obesity and dietary fat intake. The G allele is associated with higher IL-6 levels and increased inflammatory tone, while the C allele in obese individuals paradoxically shows highest insulin resistance."
+  },
+  "snps": [
+    {
+      "rsid": "rs1800795",
+      "risk_allele": "G",
+      "reference_allele": "C",
+      "interpretations": {
+        "GG": {
+          "phenotype": "Higher IL-6 expression / pro-inflammatory",
+          "effect": "Homozygous G carriers have highest IL-6 transcription and serum levels. Associated with elevated systemic inflammation, increased cardiovascular disease risk (meta-analysis of 74 studies, 86,229 subjects), and modified insulin sensitivity response to dietary fat. Higher inflammatory response to high-fat diets.",
+          "recommendation": "Anti-inflammatory dietary pattern recommended (Mediterranean diet, rich in omega-3, polyphenols, fiber). Limit saturated fat and ultra-processed foods. Regular exercise to counter chronic inflammation. Monitor CRP and inflammatory markers.",
+          "severity": "moderate"
+        },
+        "GC": {
+          "phenotype": "Intermediate IL-6 expression",
+          "effect": "Heterozygotes show intermediate IL-6 levels. Moderate inflammatory response. Dietary fat-insulin resistance interaction is present but attenuated.",
+          "recommendation": "Balanced anti-inflammatory diet recommended. Moderate saturated fat intake. Regular physical activity.",
+          "severity": "mild"
+        },
+        "CG": {
+          "phenotype": "Intermediate IL-6 expression",
+          "effect": "Heterozygotes show intermediate IL-6 levels. Moderate inflammatory response. Dietary fat-insulin resistance interaction is present but attenuated.",
+          "recommendation": "Balanced anti-inflammatory diet recommended. Moderate saturated fat intake. Regular physical activity.",
+          "severity": "mild"
+        },
+        "CC": {
+          "phenotype": "Lower IL-6 expression",
+          "effect": "Homozygous C carriers have lower baseline IL-6 levels. However, in obese individuals, the CC genotype was paradoxically associated with highest insulin resistance and greatest T2DM risk, possibly through alternative inflammatory pathways. Lower cardiovascular inflammation risk in non-obese individuals.",
+          "recommendation": "Weight management is critical — CC genotype in obesity shows highest insulin resistance. Standard dietary guidelines for non-obese carriers. Monitor metabolic health if overweight.",
+          "severity": "mild"
+        }
+      },
+      "population_frequency": {
+        "european": 0.55,
+        "african": 0.95,
+        "east_asian": 0.99,
+        "south_asian": 0.80,
+        "latino": 0.65
+      }
+    }
+  ],
+  "evidence_level": "moderate",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

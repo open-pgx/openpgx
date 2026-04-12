@@ -1,0 +1,52 @@
+{
+  "gene": "HTR2C",
+  "category": "drug_target",
+  "gene_description": "5-Hydroxytryptamine receptor 2C — serotonin receptor involved in appetite regulation and energy homeostasis; rs3813929 (-759C/T) promoter variant modulates receptor expression and influences antipsychotic-induced weight gain",
+  "drugs": ["olanzapine", "clozapine", "risperidone", "quetiapine"],
+  "source": {
+    "pmid": "22005930",
+    "doi": "10.1097/JCP.0b013e31823591e5",
+    "source_type": "pubmed",
+    "title": "Polymorphisms of the HTR2C gene and antipsychotic-induced weight gain: an update and meta-analysis",
+    "journal": "Journal of Clinical Psychopharmacology",
+    "year": 2012,
+    "cohort_size": null,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/22005930/",
+    "finding": "HTR2C rs3813929 C allele (common, -759C) is associated with significantly greater antipsychotic-induced weight gain, particularly with olanzapine and clozapine. T allele carriers (-759T) show a protective effect against weight gain during atypical antipsychotic treatment."
+  },
+  "snps": [
+    {
+      "rsid": "rs3813929",
+      "risk_allele": "C",
+      "reference_allele": "T",
+      "interpretations": {
+        "CC": {
+          "phenotype": "Higher risk of antipsychotic-induced weight gain",
+          "effect": "Homozygous for the common -759C allele associated with higher HTR2C promoter activity. Significantly greater weight gain during treatment with atypical antipsychotics, especially olanzapine and clozapine. Meta-analyses show CC carriers gain on average 2–3 kg more than T carriers over treatment periods.",
+          "recommendation": "Prefer antipsychotics with lower metabolic liability (aripiprazole, ziprasidone, lurasidone) when clinically appropriate. If olanzapine or clozapine is necessary, implement proactive weight management: dietary counseling, exercise program, baseline and monthly weight/BMI/waist monitoring. Consider metformin co-prescription for weight mitigation.",
+          "severity": "moderate",
+          "odds_ratio": null
+        },
+        "CT": {
+          "phenotype": "Intermediate risk of antipsychotic-induced weight gain",
+          "effect": "Heterozygous carriers have intermediate weight gain risk. The T allele confers partial protection against antipsychotic-induced metabolic effects. Weight gain typically less pronounced than CC homozygotes.",
+          "recommendation": "Standard antipsychotic prescribing. Monitor weight and metabolic markers. Implement lifestyle counseling as part of routine care. No specific agent restriction based on this genotype alone.",
+          "severity": "mild"
+        },
+        "TC": {
+          "phenotype": "Intermediate risk of antipsychotic-induced weight gain",
+          "effect": "Heterozygous carriers have intermediate weight gain risk. The T allele confers partial protection against antipsychotic-induced metabolic effects. Weight gain typically less pronounced than CC homozygotes.",
+          "recommendation": "Standard antipsychotic prescribing. Monitor weight and metabolic markers. Implement lifestyle counseling as part of routine care. No specific agent restriction based on this genotype alone.",
+          "severity": "mild"
+        },
+        "TT": {
+          "phenotype": "Lower risk of antipsychotic-induced weight gain (protective)",
+          "effect": "Homozygous -759T carriers show the lowest weight gain during atypical antipsychotic therapy. The T allele reduces HTR2C promoter activity, attenuating the serotonergic appetite-stimulating pathway that mediates antipsychotic weight gain.",
+          "recommendation": "Reduced metabolic concern for this pharmacogenomic locus. Standard antipsychotic selection and dosing. Routine metabolic monitoring still recommended as weight gain is multifactorial.",
+          "severity": "info"
+        }
+      }
+    }
+  ],
+  "evidence_level": "moderate"
+}

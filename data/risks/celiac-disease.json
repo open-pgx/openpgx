@@ -24,6 +24,61 @@
         "european": 0.09
       },
       "effect_template": "HLA-DQ8 tag SNP. Secondary celiac risk allele (found in remaining ~5% of patients)."
+    },
+    {
+      "rsid": "rs6822844",
+      "gene_region": "IL2/IL21",
+      "risk_allele": "T",
+      "odds_ratio": 0.63,
+      "population_frequency": {
+        "global": 0.28,
+        "european": 0.30
+      },
+      "effect_template": "IL2/IL21 protective variant reducing celiac disease risk through immune regulation."
+    },
+    {
+      "rsid": "rs6441961",
+      "gene_region": "CCR3",
+      "risk_allele": "T",
+      "odds_ratio": 1.34,
+      "population_frequency": {
+        "global": 0.20,
+        "european": 0.21
+      },
+      "effect_template": "CCR3 chemokine receptor variant affecting immune cell migration and celiac susceptibility."
+    },
+    {
+      "rsid": "rs3184504",
+      "gene_region": "SH2B3",
+      "risk_allele": "T",
+      "odds_ratio": 1.28,
+      "population_frequency": {
+        "global": 0.33,
+        "european": 0.34
+      },
+      "effect_template": "SH2B3 adaptor protein variant affecting lymphocyte signaling in celiac disease."
+    },
+    {
+      "rsid": "rs2816316",
+      "gene_region": "RGS1",
+      "risk_allele": "C",
+      "odds_ratio": 1.29,
+      "population_frequency": {
+        "global": 0.24,
+        "european": 0.25
+      },
+      "effect_template": "RGS1 regulator of G-protein signaling variant modulating immune response and celiac risk."
+    },
+    {
+      "rsid": "rs1738074",
+      "gene_region": "TAGAP",
+      "risk_allele": "T",
+      "odds_ratio": 1.19,
+      "population_frequency": {
+        "global": 0.38,
+        "european": 0.39
+      },
+      "effect_template": "TAGAP T-cell activation GTPase-activating protein variant affecting T-cell function in celiac disease."
     }
   ],
   "evidence_level": "established",
@@ -39,6 +94,15 @@
       "cohort_size": 24269,
       "url": "https://pubmed.ncbi.nlm.nih.gov/20190752/",
       "finding": "HLA-DQ2.5 (rs2187668) confers highest genetic risk for celiac disease (OR~7)"
+    },
+    {
+      "pmid": "20190752",
+      "title": "Multiple common variants for celiac disease influencing immune gene expression",
+      "journal": "Nature Genetics",
+      "year": 2010,
+      "cohort_size": 15000,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/20190752/",
+      "finding": "Identified multiple celiac susceptibility loci including IL2/IL21, CCR3, SH2B3, RGS1, and TAGAP immune-related variants"
     }
   ]
 }

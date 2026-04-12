@@ -1,0 +1,62 @@
+{
+  "gene": "BCHE",
+  "category": "drug_metabolism",
+  "gene_description": "Butyrylcholinesterase (Pseudocholinesterase) — serum enzyme responsible for rapid hydrolysis of succinylcholine and mivacurium. Atypical variants cause prolonged neuromuscular blockade, extending paralysis from minutes to hours.",
+  "drugs": ["succinylcholine", "mivacurium", "procaine", "chloroprocaine", "cocaine", "heroin"],
+  "source": {
+    "pmid": "33061533",
+    "doi": "10.1002/mgg3.1507",
+    "source_type": "pubmed",
+    "title": "Genetic Testing for BCHE Variants Identifies Patients at Risk of Prolonged Neuromuscular Blockade in Response to Succinylcholine",
+    "journal": "Molecular Genetics & Genomic Medicine",
+    "year": 2020,
+    "cohort_size": 283,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/33061533/",
+    "finding": "BCHE variants reliably predict prolonged apnea after succinylcholine. Atypical variant (D70G, rs1799807) reduces activity to 41% of normal. Homozygous or compound heterozygous carriers experience paralysis lasting up to 8 hours instead of 5-10 minutes."
+  },
+  "snps": [
+    {
+      "rsid": "rs1799807",
+      "risk_allele": "G",
+      "reference_allele": "A",
+      "interpretations": {
+        "GG": {
+          "phenotype": "Pseudocholinesterase Deficiency — Atypical Homozygous",
+          "effect": "Homozygous for the atypical BCHE variant (D70G). Severely reduced butyrylcholinesterase activity (~20% of normal). Standard dose of succinylcholine will cause prolonged neuromuscular blockade lasting 2-8 hours instead of the normal 5-10 minutes, requiring prolonged mechanical ventilation. Dibucaine number typically 20-30 (normal >70). Life-threatening if unrecognized.",
+          "recommendation": "DO NOT USE succinylcholine or mivacurium. Use non-depolarizing neuromuscular blocking agents (rocuronium, vecuronium, cisatracurium) with sugammadex for reversal. Alert the anesthesia team before any procedure. Consider medical alert bracelet. Screen family members.",
+          "severity": "life_threatening"
+        },
+        "GA": {
+          "phenotype": "Pseudocholinesterase Deficiency — Carrier",
+          "effect": "Heterozygous carrier of the atypical variant. BChE activity reduced to approximately 41-60% of normal. Moderately prolonged succinylcholine effect (paralysis may last 20-30 minutes instead of 5-10 minutes). Dibucaine number typically 50-65 (intermediate).",
+          "recommendation": "Use succinylcholine with caution and at reduced doses only when non-depolarizing agents are not suitable. Prefer rocuronium with sugammadex reversal. Inform anesthesia team of carrier status. Consider family screening.",
+          "severity": "severe"
+        },
+        "AG": {
+          "phenotype": "Pseudocholinesterase Deficiency — Carrier",
+          "effect": "Heterozygous carrier of the atypical variant. BChE activity reduced to approximately 41-60% of normal. Moderately prolonged succinylcholine effect (paralysis may last 20-30 minutes instead of 5-10 minutes). Dibucaine number typically 50-65 (intermediate).",
+          "recommendation": "Use succinylcholine with caution and at reduced doses only when non-depolarizing agents are not suitable. Prefer rocuronium with sugammadex reversal. Inform anesthesia team of carrier status. Consider family screening.",
+          "severity": "severe"
+        },
+        "AA": {
+          "phenotype": "Normal Pseudocholinesterase Activity",
+          "effect": "Wild-type BChE. Normal butyrylcholinesterase activity with typical succinylcholine metabolism. Paralysis duration 5-10 minutes as expected. Normal dibucaine number (>70).",
+          "recommendation": "Succinylcholine and mivacurium can be used per standard anesthetic protocols.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.02,
+        "african": 0.01,
+        "east_asian": 0.005,
+        "south_asian": 0.015,
+        "latino": 0.01
+      }
+    }
+  ],
+  "evidence_level": "established",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

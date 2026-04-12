@@ -1,0 +1,68 @@
+{
+  "gene": "HMGCR",
+  "category": "drug_metabolism",
+  "gene_description": "HMG-CoA Reductase — rate-limiting enzyme of cholesterol biosynthesis and the direct target of statin drugs. Variants in HMGCR affect enzyme expression and statin-induced cholesterol lowering efficacy.",
+  "drugs": [
+    "atorvastatin",
+    "rosuvastatin",
+    "simvastatin",
+    "pravastatin",
+    "lovastatin"
+  ],
+  "source": {
+    "pmid": "18815589",
+    "doi": null,
+    "source_type": "pubmed",
+    "title": "A paucimorphic variant in the HMG-CoA reductase gene is associated with lipid-lowering response to statin treatment in diabetes: a GoDARTS study",
+    "journal": "Pharmacogenetics and Genomics",
+    "year": 2008,
+    "cohort_size": 1500,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/18815589/",
+    "finding": "HMGCR rs17238540 G allele carriers show 22-23% reduced statin efficacy for total cholesterol and triglyceride lowering. G allele frequencies vary by population; TT homozygotes show 28% treatment failure vs 51% in G allele carriers."
+  },
+  "snps": [
+    {
+      "rsid": "rs17238540",
+      "risk_allele": "G",
+      "reference_allele": "T",
+      "interpretations": {
+        "TT": {
+          "phenotype": "Normal statin response / strong cholesterol reduction",
+          "effect": "Homozygous for reference allele. Standard HMG-CoA reductase expression. Optimal statin efficacy. Mean total cholesterol reduction of 41.8 mg/dL with pravastatin. 28% fail to reach cholesterol targets. Represents ~95.7% of Europeans.",
+          "recommendation": "Standard statin dosing and monitoring. Expect good cholesterol reduction. Assess response at 4-6 weeks and titrate as needed per lipid guidelines.",
+          "severity": "info"
+        },
+        "TG": {
+          "phenotype": "Reduced statin response / moderate cholesterol reduction",
+          "effect": "Heterozygous G carrier. Modestly reduced HMG-CoA reductase expression or activity. Approximately 22-23% reduced statin efficacy compared to TT. Mean total cholesterol reduction of 32.5 mg/dL with pravastatin. Higher failure rates to reach targets (51% in some cohorts).",
+          "recommendation": "May require higher statin doses to achieve target LDL-C. Intensify lipid monitoring at 4-6 weeks. Consider combination therapy (ezetimibe, PCSK9 inhibitors) if targets not met with standard dosing.",
+          "severity": "moderate"
+        },
+        "GT": {
+          "phenotype": "Reduced statin response / moderate cholesterol reduction",
+          "effect": "Heterozygous G carrier. Modestly reduced HMG-CoA reductase expression or activity. Approximately 22-23% reduced statin efficacy compared to TT. Mean total cholesterol reduction of 32.5 mg/dL with pravastatin. Higher failure rates to reach targets (51% in some cohorts).",
+          "recommendation": "May require higher statin doses to achieve target LDL-C. Intensify lipid monitoring at 4-6 weeks. Consider combination therapy (ezetimibe, PCSK9 inhibitors) if targets not met with standard dosing.",
+          "severity": "moderate"
+        },
+        "GG": {
+          "phenotype": "Significantly reduced statin response",
+          "effect": "Homozygous for minor allele (rare, ~0.06% in Europeans). Marked reduction in statin efficacy. Substantially impaired cholesterol lowering response. Highest failure rates for reaching lipid targets.",
+          "recommendation": "Likely to require higher statin doses or combination lipid-lowering therapy. Early intensive monitoring essential. Consider PCSK9 inhibitors or ezetimibe addition. Genetic counseling regarding familial hypercholesterolemia risk.",
+          "severity": "moderate"
+        }
+      },
+      "population_frequency": {
+        "european": 0.022,
+        "african": 0.015,
+        "east_asian": 0.008,
+        "south_asian": 0.012,
+        "latino": 0.018
+      }
+    }
+  ],
+  "evidence_level": "moderate",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

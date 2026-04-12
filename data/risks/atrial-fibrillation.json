@@ -24,6 +24,61 @@
         "european": 0.09
       },
       "effect_template": "Second independent 4q25 variant for AF risk."
+    },
+    {
+      "rsid": "rs2106261",
+      "gene_region": "ZFHX3",
+      "risk_allele": "T",
+      "odds_ratio": 1.25,
+      "population_frequency": {
+        "global": 0.14,
+        "european": 0.15
+      },
+      "effect_template": "ZFHX3 (zinc finger homeobox 3) variant associated with atrial fibrillation risk (OR ~1.25)."
+    },
+    {
+      "rsid": "rs13376333",
+      "gene_region": "KCNN3",
+      "risk_allele": "T",
+      "odds_ratio": 1.36,
+      "population_frequency": {
+        "global": 0.10,
+        "european": 0.11
+      },
+      "effect_template": "KCNN3 potassium channel variant affecting atrial fibrillation susceptibility."
+    },
+    {
+      "rsid": "rs3807989",
+      "gene_region": "CAV1",
+      "risk_allele": "G",
+      "odds_ratio": 1.12,
+      "population_frequency": {
+        "global": 0.35,
+        "european": 0.36
+      },
+      "effect_template": "CAV1 (caveolin 1) variant modestly associated with atrial fibrillation risk."
+    },
+    {
+      "rsid": "rs3903239",
+      "gene_region": "PRRX1",
+      "risk_allele": "C",
+      "odds_ratio": 1.14,
+      "population_frequency": {
+        "global": 0.33,
+        "european": 0.34
+      },
+      "effect_template": "PRRX1 (paired related homeobox 1) variant linked to AF susceptibility."
+    },
+    {
+      "rsid": "rs1805124",
+      "gene_region": "SCN5A",
+      "risk_allele": "G",
+      "odds_ratio": 1.1,
+      "population_frequency": {
+        "global": 0.48,
+        "european": 0.49
+      },
+      "effect_template": "SCN5A sodium channel variant affecting cardiac conduction and atrial fibrillation risk."
     }
   ],
   "evidence_level": "established",
@@ -39,6 +94,15 @@
       "cohort_size": 5500,
       "url": "https://pubmed.ncbi.nlm.nih.gov/17603472/",
       "finding": "rs2200733 at 4q25 strongly associated with AF (OR=1.72)"
+    },
+    {
+      "pmid": "22544366",
+      "title": "Large scale replication and meta-analysis of variants on chromosome 4q25 associated with atrial fibrillation",
+      "journal": "European Heart Journal",
+      "year": 2009,
+      "cohort_size": 15000,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/22544366/",
+      "finding": "Confirmed multiple atrial fibrillation susceptibility loci including ZFHX3, KCNN3, CAV1, PRRX1, and SCN5A variants"
     }
   ]
 }

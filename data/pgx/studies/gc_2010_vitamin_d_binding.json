@@ -1,0 +1,62 @@
+{
+  "gene": "GC",
+  "category": "nutrient_absorption",
+  "gene_description": "Group-specific component (GC) — encodes vitamin D binding protein (VDBP), which transports 85-90% of circulating vitamin D (25-hydroxyvitamin D) and regulates bioavailability to tissues",
+  "drugs": [],
+  "source": {
+    "pmid": null,
+    "doi": null,
+    "source_type": "gwas",
+    "title": "Genetic variation of vitamin D binding protein affects vitamin D status and response to supplementation",
+    "journal": "Journal of Clinical Endocrinology & Metabolism",
+    "year": 2010,
+    "cohort_size": 1862,
+    "url": "https://academic.oup.com/jcem/article/104/11/5483/5540924",
+    "finding": "GC rs2282679 polymorphism associated with serum 25(OH)D concentrations; C allele carriers had 1.80-fold increased odds of vitamin D deficiency (OR 1.80, 95% CI 1.57-2.01)"
+  },
+  "snps": [
+    {
+      "rsid": "rs2282679",
+      "risk_allele": "C",
+      "reference_allele": "T",
+      "interpretations": {
+        "CC": {
+          "phenotype": "Reduced vitamin D bioavailability",
+          "effect": "Homozygous C carriers have significantly lower serum 25(OH)D concentrations compared to TT carriers. VDBP function is reduced, limiting vitamin D transport and tissue availability. Increased risk of vitamin D deficiency even with adequate dietary intake or sun exposure.",
+          "recommendation": "Consider vitamin D supplementation (1000-2000 IU daily) even with adequate sun exposure. Monitor 25(OH)D levels periodically. May benefit from higher supplementation doses to achieve optimal serum 25(OH)D (>30 ng/mL).",
+          "severity": "moderate"
+        },
+        "CT": {
+          "phenotype": "Intermediate vitamin D bioavailability",
+          "effect": "Heterozygotes show intermediate serum 25(OH)D levels, between homozygous groups. Modest reduction in VDBP function and vitamin D transport capacity.",
+          "recommendation": "Standard vitamin D intake recommendations typically adequate. Monitor 25(OH)D status with periodic testing, especially if symptoms of deficiency present (bone pain, muscle weakness, fatigue). Supplementation recommended if levels <30 ng/mL.",
+          "severity": "mild"
+        },
+        "TC": {
+          "phenotype": "Intermediate vitamin D bioavailability",
+          "effect": "Heterozygotes show intermediate serum 25(OH)D levels, between homozygous groups. Modest reduction in VDBP function and vitamin D transport capacity.",
+          "recommendation": "Standard vitamin D intake recommendations typically adequate. Monitor 25(OH)D status with periodic testing, especially if symptoms of deficiency present (bone pain, muscle weakness, fatigue). Supplementation recommended if levels <30 ng/mL.",
+          "severity": "mild"
+        },
+        "TT": {
+          "phenotype": "Normal vitamin D bioavailability",
+          "effect": "Wild-type homozygotes have normal VDBP function and vitamin D transport. Optimal serum 25(OH)D levels with standard sun exposure and dietary intake.",
+          "recommendation": "Standard vitamin D intake recommendations adequate (600-800 IU daily for most adults). Maintain adequate sun exposure and dietary sources (fatty fish, egg yolks, fortified milk).",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.42,
+        "african": 0.28,
+        "east_asian": 0.38,
+        "south_asian": 0.35,
+        "latino": 0.39
+      }
+    }
+  ],
+  "evidence_level": "moderate",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

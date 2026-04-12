@@ -1,0 +1,69 @@
+{
+  "gene": "PCSK9",
+  "category": "drug_metabolism",
+  "gene_description": "Proprotein Convertase Subtilisin/Kexin Type 9 — regulates LDL receptor degradation. Loss-of-function variants reduce PCSK9 levels, enhancing LDL receptor-mediated cholesterol clearance. PCSK9 inhibitors (evolocumab, alirocumab) block this pathway.",
+  "drugs": [
+    "evolocumab",
+    "alirocumab",
+    "bococizumab",
+    "atorvastatin",
+    "rosuvastatin"
+  ],
+  "source": {
+    "pmid": "26804959",
+    "doi": "10.1038/tpj.2016.3",
+    "source_type": "pubmed",
+    "title": "The effect of genetic variation in PCSK9 on the LDL-cholesterol response to statin therapy",
+    "journal": "The Pharmacogenomics Journal",
+    "year": 2016,
+    "cohort_size": 6989,
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4995153/",
+    "finding": "PCSK9 rs11591147 R46L loss-of-function variant carriers show 55.6% greater LDL-C reduction with rosuvastatin. T allele (loss-of-function) associated with 0.5 mmol/L lower LDL-C and 23% reduced coronary heart disease risk."
+  },
+  "snps": [
+    {
+      "rsid": "rs11591147",
+      "risk_allele": "C",
+      "reference_allele": "T",
+      "interpretations": {
+        "CC": {
+          "phenotype": "Normal PCSK9 function / standard LDL response",
+          "effect": "Homozygous for normal function allele. Standard PCSK9 expression and LDL receptor degradation. Standard statin response. LDL-C reduction follows typical response curves. Baseline coronary heart disease risk from this locus.",
+          "recommendation": "Standard statin dosing per clinical guidelines. Assess LDL-C response at 4-6 weeks. If targets not met, consider dose escalation or combination with ezetimibe or PCSK9 inhibitors.",
+          "severity": "info"
+        },
+        "CT": {
+          "phenotype": "Heterozygous loss-of-function / enhanced LDL response",
+          "effect": "One copy of T allele (loss-of-function). Reduced PCSK9 levels and enhanced LDL receptor activity. Approximately 27.8% greater LDL-C reduction with statins (in carriers vs non-carriers). Approximately 0.25 mmol/L lower LDL-C. Reduced coronary heart disease risk (~11-12% reduction).",
+          "recommendation": "Favorable statin response profile. Standard statin dosing likely effective. May achieve target LDL-C more easily. Excellent candidacy for PCSK9 inhibitor therapy if additional cholesterol lowering needed.",
+          "severity": "info"
+        },
+        "TC": {
+          "phenotype": "Heterozygous loss-of-function / enhanced LDL response",
+          "effect": "One copy of T allele (loss-of-function). Reduced PCSK9 levels and enhanced LDL receptor activity. Approximately 27.8% greater LDL-C reduction with statins (in carriers vs non-carriers). Approximately 0.25 mmol/L lower LDL-C. Reduced coronary heart disease risk (~11-12% reduction).",
+          "recommendation": "Favorable statin response profile. Standard statin dosing likely effective. May achieve target LDL-C more easily. Excellent candidacy for PCSK9 inhibitor therapy if additional cholesterol lowering needed.",
+          "severity": "info"
+        },
+        "TT": {
+          "phenotype": "Homozygous loss-of-function / maximum LDL reduction",
+          "effect": "Homozygous for loss-of-function allele (rare, ~1.5% in Caucasians, 3-5% in some Asian populations). Markedly reduced PCSK9 activity. Maximum LDL receptor-mediated cholesterol clearance. 55.6% greater LDL-C reduction with statins. Significantly lower baseline LDL-C. Substantially reduced coronary heart disease risk (23% reduction).",
+          "recommendation": "Excellent genetic profile for cholesterol lowering. Standard statin dosing likely highly effective at achieving target LDL-C. Strong candidate for PCSK9 inhibitor therapy if further reduction needed. May benefit from combination therapy for very aggressive LDL lowering.",
+          "severity": "info",
+          "odds_ratio": 0.77
+        }
+      },
+      "population_frequency": {
+        "european": 0.032,
+        "african": 0.015,
+        "east_asian": 0.045,
+        "south_asian": 0.02,
+        "latino": 0.025
+      }
+    }
+  ],
+  "evidence_level": "moderate",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

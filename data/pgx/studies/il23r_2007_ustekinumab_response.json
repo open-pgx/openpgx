@@ -1,0 +1,62 @@
+{
+  "gene": "IL23R",
+  "category": "immune",
+  "gene_description": "Interleukin-23 receptor (IL23R) — component of IL-23 signaling pathway; Arg381Gln variant reduces receptor function and mediates response to IL-12/23 biologics in psoriasis and inflammatory bowel disease",
+  "drugs": ["ustekinumab", "risankizumab", "guselkumab", "tildrakizumab"],
+  "source": {
+    "pmid": "18219280",
+    "doi": "10.1038/ng.62",
+    "source_type": "gwas",
+    "title": "Polymorphisms of IL12B and IL23R genes are associated with psoriasis",
+    "journal": "Nature Genetics",
+    "year": 2008,
+    "cohort_size": 4200,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/18219280/",
+    "finding": "rs11209026 Gln381 allele (protective variant) showed strong association with psoriasis (OR=1.40, p=3.8×10^-4 for C allele); confers protection from Crohn's disease; molecular basis for IL-23 targeted therapy"
+  },
+  "snps": [
+    {
+      "rsid": "rs11209026",
+      "risk_allele": "C",
+      "reference_allele": "A",
+      "interpretations": {
+        "CC": {
+          "phenotype": "Enhanced IL-23R signaling",
+          "effect": "Homozygous C carriers (Arg381Arg) have full IL-23 receptor function. Enhanced IL-23 signaling contributes to T-cell mediated inflammation. Strong genetic susceptibility to psoriasis and inflammatory bowel disease. Normal or reduced response to IL-23 targeted biologics in some studies.",
+          "recommendation": "IL-12/23 inhibitors (ustekinumab, risankizumab, guselkumab) indicated. However, TNF-alpha inhibitors or other biologic classes may offer comparable or better efficacy in this genotype. Discuss treatment options with dermatologist. Monitor response closely at 12-16 weeks and adjust therapy if needed.",
+          "severity": "moderate"
+        },
+        "CA": {
+          "phenotype": "Intermediate IL-23R signaling",
+          "effect": "Heterozygous C/A carriers show intermediate IL-23R function. Heterozygotes carry one protective allele, reducing but not eliminating IL-23 pathway contribution to psoriasis. Favorable response to IL-23 targeted biologics.",
+          "recommendation": "IL-12/23 inhibitors are effective first-line biologic choice. Standard dosing of ustekinumab (45-90 mg), risankizumab (150 mg), or guselkumab (100 mg) recommended. Expected response within 12-16 weeks.",
+          "severity": "mild"
+        },
+        "AC": {
+          "phenotype": "Intermediate IL-23R signaling",
+          "effect": "Heterozygous A/C carriers show intermediate IL-23R function. Heterozygotes carry one protective allele, reducing but not eliminating IL-23 pathway contribution to psoriasis. Favorable response to IL-23 targeted biologics.",
+          "recommendation": "IL-12/23 inhibitors are effective first-line biologic choice. Standard dosing of ustekinumab (45-90 mg), risankizumab (150 mg), or guselkumab (100 mg) recommended. Expected response within 12-16 weeks.",
+          "severity": "mild"
+        },
+        "AA": {
+          "phenotype": "Reduced IL-23R signaling (protective)",
+          "effect": "Homozygous A carriers (Gln381Gln) have reduced IL-23 receptor function due to Arg381Gln missense mutation. Protective against psoriasis and IBD development. Minimal contribution of IL-23 pathway to disease. Exceptional response to IL-23 targeted biologics.",
+          "recommendation": "IL-12/23 inhibitors are highly effective in this genotype with excellent response rates. Ustekinumab, risankizumab, and guselkumab all appropriate; expect strong PASI response within 12-16 weeks. This genotype predicts favorable biologic therapy outcomes.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.12,
+        "african": 0.08,
+        "east_asian": 0.18,
+        "south_asian": 0.10,
+        "latino": 0.11
+      }
+    }
+  ],
+  "evidence_level": "moderate",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

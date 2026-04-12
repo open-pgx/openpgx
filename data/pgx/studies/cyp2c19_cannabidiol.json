@@ -1,0 +1,55 @@
+{
+  "gene": "CYP2C19",
+  "category": "neurological",
+  "gene_description": "CYP2C19 is involved in the metabolism of many drugs in the liver, including some antidepressants and anticonvulsants.",
+  "drugs": [
+    "cannabidiol"
+  ],
+  "source": {
+    "pmid": "32048179",
+    "doi": null,
+    "source_type": "pubmed",
+    "title": "Disposition of Oral Cannabidiol-Rich Cannabis Extracts in Children with Epilepsy.",
+    "journal": "Clinical pharmacokinetics",
+    "year": 2021,
+    "cohort_size": null,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/32048179/",
+    "finding": "Determined pharmacokinetic parameters of cannabidiol in children."
+  },
+  "snps": [
+    {
+      "rsid": "rs4244285",
+      "risk_allele": "A",
+      "reference_allele": "G",
+      "interpretations": {
+        "AA": {
+          "phenotype": "Poor Metabolizer",
+          "effect": "Increased plasma concentrations of CYP2C19 substrates.",
+          "recommendation": "Consider dose reduction or alternative therapy.",
+          "severity": "moderate"
+        },
+        "AG": {
+          "phenotype": "Intermediate Metabolizer",
+          "effect": "Moderate plasma concentrations of CYP2C19 substrates.",
+          "recommendation": "Monitor therapy, adjust dose if necessary.",
+          "severity": "mild"
+        },
+        "GG": {
+          "phenotype": "Normal Metabolizer",
+          "effect": "Normal metabolism of CYP2C19 substrates.",
+          "recommendation": "Standard dosing.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "global": 0.25,
+        "european": 0.3,
+        "east_asian": 0.15,
+        "african": 0.2,
+        "south_asian": 0.22,
+        "americas": 0.25
+      }
+    }
+  ],
+  "evidence_level": "moderate"
+}

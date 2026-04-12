@@ -1,0 +1,68 @@
+{
+  "gene": "AGTR1",
+  "category": "drug_metabolism",
+  "gene_description": "Angiotensin II Type 1 Receptor — target of angiotensin II receptor blockers (ARBs). A1166C polymorphism in the 3' UTR affects receptor expression and vascular response to angiotensin II.",
+  "drugs": [
+    "losartan",
+    "valsartan",
+    "irbesartan",
+    "candesartan",
+    "telmisartan"
+  ],
+  "source": {
+    "pmid": "35345577",
+    "doi": "10.1155/2022/7677252",
+    "source_type": "pubmed",
+    "title": "Association of AGTR1 A1166C and CYP2C9*3 Gene Polymorphisms with the Antihypertensive Effect of Valsartan",
+    "journal": "International Journal of Hypertension",
+    "year": 2022,
+    "cohort_size": 308,
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8957473/",
+    "finding": "AGTR1 rs5186 C allele (AC+CC genotypes) associated with better hypertension control with valsartan (OR 2.836). C allele carriers show greater BP reduction compared to AA homozygotes."
+  },
+  "snps": [
+    {
+      "rsid": "rs5186",
+      "risk_allele": "C",
+      "reference_allele": "A",
+      "interpretations": {
+        "AA": {
+          "phenotype": "Standard angiotensin II receptor function",
+          "effect": "Homozygous for wild-type A allele. Standard AGTR1 expression and angiotensin II receptor-mediated vascular response. Standard blood pressure response to ARB therapy. Represents approximately 85% of European populations.",
+          "recommendation": "Standard ARB dosing (losartan, valsartan, irbesartan, or candesartan). Assess blood pressure response at 2-4 weeks. Adjust dose per clinical guidelines if targets not achieved. Monitor renal function and potassium regularly.",
+          "severity": "info"
+        },
+        "AC": {
+          "phenotype": "Heterozygous C carrier — enhanced ARB response",
+          "effect": "One copy of C allele. Enhanced AGTR1 expression or vascular sensitivity. Associated with greater blood pressure reduction with ARB therapy. Better hypertension control rates with valsartan (higher odds of BP target achievement). Reduced cardiovascular risk in some studies.",
+          "recommendation": "Standard ARB dosing expected to be effective. Good blood pressure response anticipated. Monitor at 2-4 weeks; may achieve target BP with standard dosing. Generally favorable response profile.",
+          "severity": "info"
+        },
+        "CA": {
+          "phenotype": "Heterozygous C carrier — enhanced ARB response",
+          "effect": "One copy of C allele. Enhanced AGTR1 expression or vascular sensitivity. Associated with greater blood pressure reduction with ARB therapy. Better hypertension control rates with valsartan (higher odds of BP target achievement). Reduced cardiovascular risk in some studies.",
+          "recommendation": "Standard ARB dosing expected to be effective. Good blood pressure response anticipated. Monitor at 2-4 weeks; may achieve target BP with standard dosing. Generally favorable response profile.",
+          "severity": "info"
+        },
+        "CC": {
+          "phenotype": "Homozygous C allele — enhanced ARB response",
+          "effect": "Homozygous for C allele (rare, ~1.4% in Europeans). Maximum AGTR1 expression. Substantially enhanced angiotensin II receptor signaling. Greatest blood pressure reduction with ARB therapy in most studies. Markedly improved hypertension control rates. May show better long-term cardiovascular outcomes.",
+          "recommendation": "Standard ARB dosing likely highly effective. Excellent blood pressure response anticipated. Monitor at 2-4 weeks; may achieve target BP readily. Consider standard dosing with assessment for adequate response. Follow-up as per guidelines.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.08,
+        "african": 0.12,
+        "east_asian": 0.1,
+        "south_asian": 0.09,
+        "latino": 0.08
+      }
+    }
+  ],
+  "evidence_level": "emerging",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

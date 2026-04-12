@@ -1,0 +1,52 @@
+{
+  "gene": "CYP2B6",
+  "category": "drug_metabolism",
+  "gene_description": "Cytochrome P450 2B6 — key hepatic enzyme metabolizing efavirenz, methadone, bupropion, and ketamine; highly polymorphic with CYP2B6*6 (rs3745274 G516T) being the most common reduced-function allele across populations",
+  "drugs": ["efavirenz", "methadone", "bupropion", "ketamine"],
+  "source": {
+    "pmid": "31006110",
+    "doi": "10.1002/cpt.1477",
+    "source_type": "guideline",
+    "title": "Clinical Pharmacogenetics Implementation Consortium (CPIC) Guideline for CYP2B6 and Efavirenz-Containing Antiretroviral Therapy",
+    "journal": "Clinical Pharmacology & Therapeutics",
+    "year": 2019,
+    "cohort_size": null,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/31006110/",
+    "finding": "CYP2B6 poor metabolizers (e.g., *6/*6 homozygotes) have 3–4-fold higher efavirenz plasma concentrations, significantly increasing risk of CNS toxicity (dizziness, vivid dreams, depression, suicidality). CPIC recommends 50% dose reduction or alternative antiretroviral for poor metabolizers."
+  },
+  "snps": [
+    {
+      "rsid": "rs3745274",
+      "risk_allele": "T",
+      "reference_allele": "G",
+      "interpretations": {
+        "TT": {
+          "phenotype": "CYP2B6 Poor Metabolizer (*6/*6)",
+          "effect": "Markedly reduced CYP2B6 enzyme activity. Efavirenz plasma levels 3–4× higher than normal metabolizers, leading to high risk of persistent CNS adverse effects (insomnia, vivid dreams, dizziness, psychosis). Also slower methadone and bupropion clearance.",
+          "recommendation": "Reduce efavirenz dose by 50% (from 600 mg to 400 mg daily) or switch to an alternative antiretroviral (e.g., dolutegravir). For methadone: monitor for prolonged QTc and over-sedation. For bupropion: consider lower dose and monitor seizure risk.",
+          "severity": "severe",
+          "odds_ratio": null
+        },
+        "GT": {
+          "phenotype": "CYP2B6 Intermediate Metabolizer (*1/*6)",
+          "effect": "Moderately reduced CYP2B6 activity. Efavirenz levels approximately 1.5–2× higher than normal metabolizers. Some increased risk of CNS side effects, especially in the first weeks of therapy.",
+          "recommendation": "Standard efavirenz dose (600 mg) is generally tolerable but monitor for persistent CNS side effects. If toxicity occurs, consider dose reduction to 400 mg. Standard precautions for methadone and bupropion.",
+          "severity": "moderate"
+        },
+        "TG": {
+          "phenotype": "CYP2B6 Intermediate Metabolizer (*1/*6)",
+          "effect": "Moderately reduced CYP2B6 activity. Efavirenz levels approximately 1.5–2× higher than normal metabolizers. Some increased risk of CNS side effects, especially in the first weeks of therapy.",
+          "recommendation": "Standard efavirenz dose (600 mg) is generally tolerable but monitor for persistent CNS side effects. If toxicity occurs, consider dose reduction to 400 mg. Standard precautions for methadone and bupropion.",
+          "severity": "moderate"
+        },
+        "GG": {
+          "phenotype": "CYP2B6 Normal Metabolizer (*1/*1)",
+          "effect": "Normal CYP2B6 enzyme activity. Standard efavirenz metabolism and expected plasma levels. Normal clearance of methadone, bupropion, and ketamine.",
+          "recommendation": "Use standard efavirenz dose (600 mg daily). No CYP2B6-based dose adjustments required.",
+          "severity": "info"
+        }
+      }
+    }
+  ],
+  "evidence_level": "established"
+}

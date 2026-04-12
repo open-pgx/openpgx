@@ -1,0 +1,65 @@
+{
+  "gene": "AKT1",
+  "category": "drug_target",
+  "gene_description": "AKT Serine/Threonine Kinase 1 — key signaling molecule in the dopamine D2 receptor pathway downstream of cannabinoid receptor activation. Modulates cannabis-induced dopamine release and psychosis risk.",
+  "drugs": ["THC", "dronabinol", "nabilone", "nabiximols", "cannabidiol"],
+  "source": {
+    "pmid": "22831980",
+    "doi": "10.1016/j.biopsych.2012.06.020",
+    "source_type": "pubmed",
+    "title": "Confirmation that the AKT1 (rs2494732) genotype influences the risk of psychosis in cannabis users",
+    "journal": "Biological Psychiatry",
+    "year": 2012,
+    "cohort_size": 489,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/22831980/",
+    "finding": "C/C carriers of rs2494732 with cannabis use had 2.18-fold increased risk of psychotic disorder vs T/T carriers. Among daily cannabis users, C/C genotype showed 7.23-fold increase in psychosis odds."
+  },
+  "snps": [
+    {
+      "rsid": "rs2494732",
+      "risk_allele": "C",
+      "reference_allele": "T",
+      "interpretations": {
+        "CC": {
+          "phenotype": "High Cannabis-Psychosis Risk",
+          "effect": "Homozygous for the C allele. In cannabis users, this genotype confers a 2.18-fold increased risk of psychotic disorder compared to T/T carriers. Among daily cannabis users, the risk escalates dramatically to 7.23-fold. The mechanism involves excess dopamine release via the AKT1-GSK3 signaling cascade upon cannabinoid receptor activation. Importantly, the variant alone does not increase psychosis risk — the effect emerges through gene-environment interaction with cannabis exposure.",
+          "recommendation": "Strongly counsel against recreational cannabis use. If medical cannabinoids are necessary, use CBD-only preparations when possible and avoid THC. If THC is required, use minimum effective doses with close psychiatric monitoring. Screen for psychosis risk factors before initiating any cannabinoid therapy.",
+          "severity": "severe",
+          "odds_ratio": 7.23
+        },
+        "CT": {
+          "phenotype": "Moderate Cannabis-Psychosis Risk",
+          "effect": "Heterozygous carrier. Intermediate risk of cannabis-induced psychotic symptoms between CC and TT genotypes. The interaction between AKT1 genotype and cannabis frequency determines risk level — occasional use carries lower risk than daily use.",
+          "recommendation": "Advise caution with cannabis use, especially frequent or daily use. If medical cannabinoids are prescribed, prefer lower THC content and monitor for psychiatric symptoms. Consider CBD-dominant formulations.",
+          "severity": "moderate",
+          "odds_ratio": 2.18
+        },
+        "TC": {
+          "phenotype": "Moderate Cannabis-Psychosis Risk",
+          "effect": "Heterozygous carrier. Intermediate risk of cannabis-induced psychotic symptoms between CC and TT genotypes. The interaction between AKT1 genotype and cannabis frequency determines risk level — occasional use carries lower risk than daily use.",
+          "recommendation": "Advise caution with cannabis use, especially frequent or daily use. If medical cannabinoids are prescribed, prefer lower THC content and monitor for psychiatric symptoms. Consider CBD-dominant formulations.",
+          "severity": "moderate",
+          "odds_ratio": 2.18
+        },
+        "TT": {
+          "phenotype": "Lower Cannabis-Psychosis Risk",
+          "effect": "Homozygous for the T allele. Lowest genetic risk for cannabis-induced psychosis among AKT1 genotypes. Normal AKT1-GSK3 signaling in response to cannabinoid receptor activation. Standard dopaminergic response to cannabis exposure.",
+          "recommendation": "Standard risk assessment for cannabinoid therapy. General precautions still apply regarding cannabis use and mental health monitoring.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.40,
+        "african": 0.35,
+        "east_asian": 0.45,
+        "south_asian": 0.38,
+        "latino": 0.42
+      }
+    }
+  ],
+  "evidence_level": "moderate",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

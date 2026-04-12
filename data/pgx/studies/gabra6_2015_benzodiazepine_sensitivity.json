@@ -1,0 +1,73 @@
+{
+  "gene": "GABRA6",
+  "category": "drug_target",
+  "gene_description": "GABA(A) receptor subunit alpha 6 — component of GABA(A) chloride channels primarily expressed in cerebellar granule cells. Variants may influence benzodiazepine sensitivity, seizure susceptibility, and stress response through altered GABAergic neurotransmission.",
+  "drugs": [
+    "diazepam",
+    "lorazepam",
+    "alprazolam",
+    "clonazepam"
+  ],
+  "source": {
+    "pmid": "25088614",
+    "doi": "10.1016/j.seizure.2014.09.010",
+    "source_type": "pubmed",
+    "title": "Association of GABRA6 1519 T>C (rs3219151) and Synapsin II (rs37733634) gene polymorphisms with the development of idiopathic generalized epilepsy",
+    "journal": "Seizure",
+    "year": 2014,
+    "cohort_size": 302,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/25088614/",
+    "finding": "GABRA6 rs3219151 C-allele associated with increased epilepsy susceptibility in some populations (South India OR=3.6, 95% CI 1.8-7.2); T-allele associated with greater stress response and potentially heightened benzodiazepine sensitivity."
+  },
+  "snps": [
+    {
+      "rsid": "rs3219151",
+      "risk_allele": "C",
+      "reference_allele": "T",
+      "interpretations": {
+        "CC": {
+          "phenotype": "Homozygous C-allele (high-risk variant in some populations)",
+          "effect": "Associated with altered GABRA6 function and increased seizure risk in Asian populations (OR~3.6). May indicate reduced GABAergic inhibition in cerebellum and brainstem. Potentially altered benzodiazepine sensitivity; some individuals may show enhanced response, others may have reduced therapeutic efficacy. Elevated baseline anxiety and stress responsivity reported.",
+          "recommendation": "Baseline EEG and seizure risk assessment recommended, particularly if Asian ancestry. For benzodiazepines: start with lower doses and titrate slowly; monitor for paradoxical reactions or inadequate response. Enhanced monitoring for seizure development. Consider alternative anxiolytics if benzodiazepine response suboptimal.",
+          "severity": "moderate",
+          "odds_ratio": 3.6
+        },
+        "CT": {
+          "phenotype": "Heterozygous",
+          "effect": "Intermediate phenotype. Reduced seizure risk compared to CC genotype. Variable benzodiazepine sensitivity; most individuals show standard response, some may show enhanced sensitivity.",
+          "recommendation": "Standard benzodiazepine dosing with assessment of therapeutic response. Monitor for both efficacy and adverse effects. Standard seizure precautions as clinically indicated.",
+          "severity": "mild",
+          "odds_ratio": null
+        },
+        "TC": {
+          "phenotype": "Heterozygous",
+          "effect": "Intermediate phenotype. Reduced seizure risk compared to CC genotype. Variable benzodiazepine sensitivity; most individuals show standard response, some may show enhanced sensitivity.",
+          "recommendation": "Standard benzodiazepam dosing with assessment of therapeutic response. Monitor for both efficacy and adverse effects. Standard seizure precautions as clinically indicated.",
+          "severity": "mild",
+          "odds_ratio": null
+        },
+        "TT": {
+          "phenotype": "Homozygous T-allele (protective variant)",
+          "effect": "Associated with normal to reduced seizure risk. T-allele carriers show greater physiological and endocrine stress response, potentially indicating increased benzodiazepine sensitivity in some individuals. Standard to enhanced GABA(A) function.",
+          "recommendation": "Standard benzodiazepine dosing for most individuals; monitor clinical response. Those with elevated baseline stress response may benefit from lower initial doses with careful titration.",
+          "severity": "info",
+          "odds_ratio": null
+        }
+      },
+      "population_frequency": {
+        "global": 0.28,
+        "european": 0.25,
+        "african": 0.32,
+        "east_asian": 0.31,
+        "south_asian": 0.35,
+        "latino": 0.26
+      }
+    }
+  ],
+  "evidence_level": "emerging",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx",
+    "orcid": null
+  }
+}

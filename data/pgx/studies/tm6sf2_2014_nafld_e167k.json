@@ -1,0 +1,50 @@
+{
+  "gene": "TM6SF2",
+  "category": "lipid_metabolism",
+  "gene_description": "Transmembrane 6 superfamily member 2 — VLDL secretion, liver fat, and NAFLD fibrosis (E167K)",
+  "source": {
+    "pmid": "24666144",
+    "doi": "10.1038/ng.2901",
+    "source_type": "pubmed",
+    "title": "Exome-wide association study identifies a TM6SF2 variant that confers susceptibility to nonalcoholic fatty liver disease",
+    "journal": "Nature Genetics",
+    "year": 2014,
+    "cohort_size": 80000,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/24666144/",
+    "finding": "rs58542926 (E167K) T allele associates with higher liver fat, higher ALT, and lower LDL/TG; independent NAFLD signal from PNPLA3."
+  },
+  "snps": [
+    {
+      "rsid": "rs58542926",
+      "risk_allele": "T",
+      "reference_allele": "C",
+      "interpretations": {
+        "CC": {
+          "phenotype": "Reference TM6SF2 liver-fat profile",
+          "effect": "No E167K variant. Lower TM6SF2-associated hepatic steatosis genetic signal than T carriers.",
+          "recommendation": "Standard NAFLD prevention: diet, activity, metabolic control.",
+          "severity": "info"
+        },
+        "CT": {
+          "phenotype": "Intermediate TM6SF2-associated steatosis/fibrosis signal",
+          "effect": "One copy of E167K (T). Associated with higher liver fat and fibrosis progression risk in biopsy cohorts, partly independent of BMI.",
+          "recommendation": "Reinforce weight and metabolic management; correlate with imaging/LFTs clinically.",
+          "severity": "mild"
+        },
+        "TC": {
+          "phenotype": "Intermediate TM6SF2-associated steatosis/fibrosis signal",
+          "effect": "One copy of E167K (T). Same interpretation as CT.",
+          "recommendation": "Reinforce weight and metabolic management; correlate with imaging/LFTs clinically.",
+          "severity": "mild"
+        },
+        "TT": {
+          "phenotype": "Stronger TM6SF2-associated NAFLD/fibrosis signal",
+          "effect": "Homozygous E167K. Greater association with advanced fibrosis/cirrhosis in NAFLD cohorts vs non-carriers.",
+          "recommendation": "Discuss hepatology/monitoring if NAFLD is suspected or liver enzymes are abnormal.",
+          "severity": "moderate"
+        }
+      }
+    }
+  ],
+  "evidence_level": "established"
+}

@@ -1,0 +1,204 @@
+---
+description: >
+  Research and create OpenPGx pharmacogenomic/nutrigenomic study JSON files from gene/rsID inputs.
+  Triggers on: create PGx studies, research gene/SNP, add gene to catalog, generate study JSONs,
+  expand OpenPGx database, process TODO-RESEARCH.md, create studies from DNHygia/HeartGenetics/Xcode,
+  or mentions of "openpgx", "study json", "gene research", "rsid", "pharmacogenomics study",
+  "nutrigenomics study", "pgx catalog", or specific gene names (CYP2D6, ABCB1, MTHFR, etc.)
+  in the context of creating database entries or study files.
+globs:
+  - "mcp-server/data/pgx/studies/**"
+  - "mcp-server/TODO-RESEARCH.md"
+  - "mcp-server/docs/*.schema.json"
+---
+
+# OpenPGx Research — Gene/SNP Study Generator
+
+You are creating structured pharmacogenomic (PGx) and nutrigenomic study files for the OpenPGx open-source catalog. Each file represents one gene-drug or gene-trait association backed by peer-reviewed evidence.
+
+## Project Layout
+
+```
+mcp-server/
+├── data/pgx/studies/          ← study JSONs go here
+├── docs/
+│   ├── openpgx.schema.json         ← patient file schema (v0.4.0)
+│   └── openpgx.study.schema.json   ← study contribution schema (v0.4.0)
+├── scripts/validate_studies.py      ← validation script
+└── TODO-RESEARCH.md           ← master list of pending genes
+```
+
+**Schema lives in `mcp-server/docs/openpgx.study.schema.json`** — single source of truth.
+
+## Workflow Overview
+
+```
+1. DISCOVER  →  2. RESEARCH  →  3. GENERATE  →  4. VALIDATE  →  5. UPDATE TODO
+```
+
+---
+
+## Phase 1: DISCOVER — What needs to be built?
+
+- **If user names specific genes**: collect gene symbols, rsIDs, drugs, and category.
+- **If user says "do all from TODO"**: read `mcp-server/TODO-RESEARCH.md` and filter unchecked items.
+- **If user provides a report/PDF**: extract gene+rsID pairs from the document.
+
+### Checklist before proceeding
+
+- [ ] Gene symbol (HGNC standard, e.g., `CYP2D6` not `cyp2d6`)
+- [ ] At least one rsID
+- [ ] Associated drugs or traits
+- [ ] Category (drug_metabolism, drug_target, drug_transport, immune, nutrient_absorption, etc.)
+
+### Check for duplicates
+
+```bash
+ls mcp-server/data/pgx/studies/ | grep -i <gene_name_lowercase>
+```
+
+If a study exists, user might want an *upgrade* (add more SNPs/drugs) rather than a new file. Ask.
+
+---
+
+## Phase 2: RESEARCH — Gather evidence
+
+Run **parallel web searches** for each gene:
+
+```
+"<GENE> <rsID> <key_drug_or_trait> pharmacogenomics <functional_keyword> allele frequency"
+```
+
+### Data points to extract
+
+| Data point | Source | Required? |
+|---|---|---|
+| Mechanism | PharmGKB, gene reviews | Yes |
+| Risk allele | Primary GWAS or PGx study | Yes |
+| Reference allele | Same source or dbSNP | Yes |
+| Clinical effect per genotype | CPIC/DPWG guidelines | Yes |
+| Recommendations per genotype | CPIC, FDA label | Yes |
+| Severity per genotype | Clinical judgment | Yes |
+| PMID / DOI | PubMed | Yes |
+| Odds ratio | Meta-analysis | Nice to have |
+| Population frequencies | gnomAD, 1000 Genomes | Nice to have |
+| Cohort size | Study abstract | Nice to have |
+
+### Evidence level classification
+
+| Level | Criteria |
+|---|---|
+| `established` | CPIC Level A/B, PharmGKB 1A/1B, FDA label, multiple large meta-analyses |
+| `moderate` | PharmGKB 2A/2B, single large meta-analysis, consistent replicated GWAS |
+| `emerging` | PharmGKB Level 3, single well-powered study, GWAS without replication |
+| `preliminary` | Small cohort, candidate gene study, conflicting evidence |
+
+### Research sources (by tier)
+
+**Tier 1 — Authoritative (prefer these):**
+- CPIC Guidelines (cpicpgx.org/guidelines/)
+- PharmGKB (pharmgkb.org/gene/GENE)
+- DPWG Dutch guidelines (pharmgkb.org/page/dpwg)
+- FDA Pharmacogenomic Biomarkers Table
+
+**Tier 2 — Strong evidence:**
+- PubMed meta-analyses
+- gnomAD (gnomad.broadinstitute.org) — population allele frequencies
+- ClinVar (ncbi.nlm.nih.gov/clinvar)
+- SNPedia (snpedia.com)
+
+**Tier 3 — Supplementary:**
+- dbSNP, GeneCards, OMIM, 1000 Genomes
+
+### Common pitfalls
+
+1. Don't confuse risk/reference alleles — cross-reference with dbSNP.
+2. Population frequencies are ALLELE frequencies (0-1), not genotype frequencies.
+3. Always include both heterozygous orderings (AG and GA).
+4. For HLA genes, the rsID may be a tag SNP — clarify in effect text.
+5. For haplotypic genes (APOE), create entries for BOTH rsIDs.
+6. Source URL: always `https://pubmed.ncbi.nlm.nih.gov/<PMID>/`
+
+---
+
+## Phase 3: GENERATE — Create JSON study files
+
+### File naming: `<gene_lowercase>_<year>_<short_description>.json`
+
+### JSON template (canonical: `docs/openpgx.study.schema.json`)
+
+```json
+{
+  "gene": "GENE_SYMBOL",
+  "category": "category_here",
+  "gene_description": "One-sentence description of gene function and clinical relevance",
+  "drugs": ["drug1", "drug2"],
+  "source": {
+    "pmid": "12345678",
+    "doi": "10.xxxx/xxxxx",
+    "source_type": "pubmed",
+    "title": "Full title of the primary paper",
+    "journal": "Journal Name",
+    "year": 2024,
+    "cohort_size": null,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/12345678/",
+    "finding": "One-line summary with specific numbers"
+  },
+  "snps": [
+    {
+      "rsid": "rs12345",
+      "risk_allele": "A",
+      "reference_allele": "G",
+      "interpretations": {
+        "AA": { "phenotype": "...", "effect": "...", "recommendation": "...", "severity": "moderate", "odds_ratio": null },
+        "AG": { "phenotype": "...", "effect": "...", "recommendation": "...", "severity": "mild" },
+        "GA": { "phenotype": "...", "effect": "...", "recommendation": "...", "severity": "mild" },
+        "GG": { "phenotype": "...", "effect": "...", "recommendation": "...", "severity": "info" }
+      },
+      "population_frequency": { "european": 0.10, "african": 0.05, "east_asian": 0.15, "south_asian": 0.08, "latino": 0.09 }
+    }
+  ],
+  "evidence_level": "moderate",
+  "contributor": { "name": "OpenPGx Community", "github": "openpgx" }
+}
+```
+
+### Writing quality
+
+- **gene_description**: Full gene name + dash + clinical function (<200 chars)
+- **effect**: 2-4 sentences with specific numbers (OR, fold-change, %)
+- **recommendation**: Actionable, start with verb, include dosing if available
+- **severity**: info/mild/moderate/severe/life_threatening
+- **Batch**: create 4-6 files in parallel per round
+
+---
+
+## Phase 4: VALIDATE
+
+Run: `python mcp-server/scripts/validate_studies.py --new` (or `--all`)
+
+Check beyond schema: genotype completeness (AA/AG/GA/GG), severity consistency, population frequency sanity, no duplicate files, valid source URLs.
+
+---
+
+## Phase 5: UPDATE TODO
+
+1. Change `- [ ]` to `- [x]` with `*(added — source: <source>)*`
+2. Move genes from "Candidate" to "Added" table if applicable
+3. Update coverage counters at top of TODO-RESEARCH.md
+
+---
+
+## Category reference
+
+| Category | When to use | Examples |
+|---|---|---|
+| `drug_metabolism` | CYP enzymes, phase I/II | CYP2D6, CYP1A2, GSTP1 |
+| `drug_target` | Receptors, enzymes drugs act on | OPRM1, DRD2, MTNR1B |
+| `drug_transport` | Efflux/uptake transporters | ABCB1, ABCG2, SLCO1B1 |
+| `immune` | HLA, immune-mediated reactions | HLA-B, HLA-A |
+| `nutrient_absorption` | Intestinal absorption | FABP2, FADS1, LPL, FTO |
+| `vitamin_conversion` | Vitamin synthesis/activation | DHCR7, BCMO1 |
+| `glp1_response` | GLP-1 pathway | GLP1R, GIPR |
+| `catecholamine` | Dopamine/NE pathway | COMT, DRD2 |
+| `methylation` | Methylation cycle | MTHFR, CBS |

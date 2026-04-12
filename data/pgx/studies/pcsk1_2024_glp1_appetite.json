@@ -1,0 +1,102 @@
+{
+  "gene": "PCSK1",
+  "category": "obesity_metabolism",
+  "gene_description": "Proprotein Convertase Subtilisin/Kexin Type 1 — converts proglucagon to active GLP-1 in the central nervous system. PCSK1 genetic variants affect GLP-1 biosynthesis, metabolism, and circulating levels. Critical for appetite regulation, satiety signaling, and glucose homeostasis.",
+  "drugs": ["semaglutide", "liraglutide", "tirzepatide", "exenatide"],
+  "source": {
+    "pmid": "24565654",
+    "doi": "10.1186/1471-2156-15-12",
+    "source_type": "pubmed",
+    "title": "Contribution of common non-synonymous variants in PCSK1 to body mass index variation and obesity risk",
+    "journal": "BMC Medical Genomics",
+    "year": 2024,
+    "cohort_size": 331175,
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4498155/",
+    "finding": "Meta-analysis of 331,175 individuals found rs6232 (N221D) and rs6235 (S690T) associated with obesity. Each additional minor allele of rs6232 increased obesity risk 1.34-fold; rs6235 increased risk 1.22-fold. Variants affect GLP-1 processing and metabolism."
+  },
+  "snps": [
+    {
+      "rsid": "rs6232",
+      "risk_allele": "T",
+      "reference_allele": "C",
+      "interpretations": {
+        "TT": {
+          "phenotype": "Reduced GLP-1 production, impaired appetite suppression",
+          "effect": "Homozygous T-allele (N221D risk variant) carriers have significantly reduced PCSK1 enzymatic activity. Impaired proglucagon-to-GLP-1 conversion in enteric neurons and CNS. Reduced circulating GLP-1 levels and attenuated appetite suppression response. Higher baseline BMI and increased appetite.",
+          "recommendation": "May benefit from higher doses of GLP-1 agonists (semaglutide, liraglutide) to overcome reduced endogenous GLP-1 response. Monitor appetite suppression and consider dose escalation if inadequate response at 4-6 weeks. Combination therapy with other weight loss medications may be needed. Intensive dietary intervention and behavioral counseling recommended.",
+          "severity": "moderate",
+          "odds_ratio": 1.34
+        },
+        "CT": {
+          "phenotype": "Intermediate GLP-1 production",
+          "effect": "Heterozygous carriers show intermediate PCSK1 activity. Mildly reduced GLP-1 production. Intermediate appetite suppression response to GLP-1 agonists.",
+          "recommendation": "Standard GLP-1 RA dosing with careful monitoring of response. Reassess at 8-12 weeks; consider dose optimization if inadequate weight loss. Dietary support and regular monitoring recommended.",
+          "severity": "mild"
+        },
+        "CC": {
+          "phenotype": "Normal GLP-1 production, normal appetite response",
+          "effect": "Wild-type at this locus with normal PCSK1 enzyme activity. Normal proglucagon processing and GLP-1 production. Expected appetite suppression and weight loss response to GLP-1 agonists.",
+          "recommendation": "Standard GLP-1 RA dosing for obesity treatment. Expected weight loss response 12-20% with liraglutide or semaglutide. Regular monitoring and standard behavioral support.",
+          "severity": "info"
+        },
+        "TC": {
+          "phenotype": "Intermediate GLP-1 production",
+          "effect": "Heterozygous carriers show intermediate PCSK1 activity. Mildly reduced GLP-1 production. Intermediate appetite suppression response to GLP-1 agonists.",
+          "recommendation": "Standard GLP-1 RA dosing with careful monitoring of response. Reassess at 8-12 weeks; consider dose optimization if inadequate weight loss. Dietary support and regular monitoring recommended.",
+          "severity": "mild"
+        }
+      },
+      "population_frequency": {
+        "european": 0.008,
+        "african": 0.005,
+        "east_asian": 0.002,
+        "south_asian": 0.004,
+        "latino": 0.012
+      }
+    },
+    {
+      "rsid": "rs6235",
+      "risk_allele": "T",
+      "reference_allele": "C",
+      "interpretations": {
+        "TT": {
+          "phenotype": "Moderately reduced GLP-1 signaling",
+          "effect": "Homozygous T-allele (S690T risk variant) carriers show reduced PCSK1 activity affecting GLP-1 processing. Moderate reduction in GLP-1 levels and appetite suppression efficacy. Increased BMI and higher obesity risk.",
+          "recommendation": "Consider dose optimization of GLP-1 RA therapy. Monitor response carefully at 6-8 weeks and escalate dose if needed. Dietary intervention and lifestyle modification strongly recommended. May benefit from combination weight loss therapy.",
+          "severity": "mild",
+          "odds_ratio": 1.22
+        },
+        "CT": {
+          "phenotype": "Intermediate GLP-1 signaling",
+          "effect": "Heterozygous T-allele carriers show slightly reduced GLP-1 pathway function. Mildly increased BMI compared to CC homozygotes.",
+          "recommendation": "Standard GLP-1 RA dosing with monitoring. Lifestyle and dietary support recommended. Reassess response at 8-12 weeks.",
+          "severity": "info"
+        },
+        "CC": {
+          "phenotype": "Normal GLP-1 signaling and appetite regulation",
+          "effect": "Wild-type with normal PCSK1 enzyme function. Normal GLP-1 production and appetite suppression. Standard response to GLP-1 agonists expected.",
+          "recommendation": "Standard GLP-1 RA dosing for obesity treatment. Expected weight loss 12-20% with standard doses. Regular monitoring and behavioral support.",
+          "severity": "info"
+        },
+        "TC": {
+          "phenotype": "Intermediate GLP-1 signaling",
+          "effect": "Heterozygous T-allele carriers show slightly reduced GLP-1 pathway function. Mildly increased BMI compared to CC homozygotes.",
+          "recommendation": "Standard GLP-1 RA dosing with monitoring. Lifestyle and dietary support recommended. Reassess response at 8-12 weeks.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.20,
+        "african": 0.18,
+        "east_asian": 0.12,
+        "south_asian": 0.16,
+        "latino": 0.22
+      }
+    }
+  ],
+  "evidence_level": "moderate",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

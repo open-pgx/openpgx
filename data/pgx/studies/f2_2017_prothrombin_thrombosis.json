@@ -1,0 +1,66 @@
+{
+  "gene": "F2",
+  "category": "drug_target",
+  "gene_description": "Coagulation Factor II (Prothrombin) — key protein in the coagulation cascade. The G20210A variant leads to elevated prothrombin levels and increased thrombotic risk, impacting anticoagulant therapy decisions.",
+  "drugs": ["warfarin", "rivaroxaban", "apixaban", "dabigatran", "enoxaparin", "heparin"],
+  "source": {
+    "pmid": "29222384",
+    "doi": "10.1038/s41598-017-13623-6",
+    "source_type": "pubmed",
+    "title": "Prothrombin G20210A (rs1799963) polymorphism increases myocardial infarction risk in an age-related manner: a systematic review and meta-analysis",
+    "journal": "Scientific Reports",
+    "year": 2017,
+    "cohort_size": 17500,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/29222384/",
+    "finding": "F2 G20210A (rs1799963) carriers have 2-5 fold increased risk of venous thromboembolism and myocardial infarction. Heterozygous carriers have elevated prothrombin plasma levels (~30% higher), necessitating careful anticoagulation management."
+  },
+  "snps": [
+    {
+      "rsid": "rs1799963",
+      "risk_allele": "A",
+      "reference_allele": "G",
+      "interpretations": {
+        "AA": {
+          "phenotype": "Homozygous prothrombin mutation (G20210A)",
+          "effect": "Extremely rare homozygous state. Very high prothrombin plasma levels and markedly elevated thrombotic risk (estimated >10-fold). Significant risk of recurrent VTE, DVT, and pulmonary embolism. May require lifelong anticoagulation.",
+          "recommendation": "Refer to hematologist. Long-term or lifelong anticoagulation therapy strongly recommended. Avoid estrogen-containing oral contraceptives. Consider thromboprophylaxis during high-risk situations (surgery, immobilization, pregnancy).",
+          "severity": "severe",
+          "odds_ratio": 10.0
+        },
+        "GA": {
+          "phenotype": "Heterozygous prothrombin mutation carrier",
+          "effect": "Carrier of one copy of G20210A. Prothrombin plasma levels ~30% higher than normal. 2-5 fold increased risk of venous thromboembolism (DVT, PE). 3-4 fold increased thrombosis risk in children. Risk further increased by combined oral contraceptives, smoking, obesity, and immobilization.",
+          "recommendation": "Anticoagulation for 3-6 months following thrombotic event. Avoid estrogen-containing contraceptives; consider progestin-only alternatives. Thromboprophylaxis during surgery/prolonged immobilization. Genetic counseling for family members. Choice of anticoagulant (warfarin vs DOAC) based on clinical context.",
+          "severity": "moderate",
+          "odds_ratio": 3.5
+        },
+        "AG": {
+          "phenotype": "Heterozygous prothrombin mutation carrier",
+          "effect": "Carrier of one copy of G20210A. Prothrombin plasma levels ~30% higher than normal. 2-5 fold increased risk of venous thromboembolism (DVT, PE). 3-4 fold increased thrombosis risk in children. Risk further increased by combined oral contraceptives, smoking, obesity, and immobilization.",
+          "recommendation": "Anticoagulation for 3-6 months following thrombotic event. Avoid estrogen-containing contraceptives; consider progestin-only alternatives. Thromboprophylaxis during surgery/prolonged immobilization. Genetic counseling for family members. Choice of anticoagulant (warfarin vs DOAC) based on clinical context.",
+          "severity": "moderate",
+          "odds_ratio": 3.5
+        },
+        "GG": {
+          "phenotype": "Normal prothrombin (wild-type)",
+          "effect": "No G20210A mutation. Normal prothrombin levels and standard thrombotic risk from this locus. Other genetic and environmental factors still influence individual thrombosis risk.",
+          "recommendation": "Standard clinical assessment for thrombotic risk. No F2-specific anticoagulation adjustments needed.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.02,
+        "african": 0.003,
+        "east_asian": 0.001,
+        "south_asian": 0.005,
+        "latino": 0.015,
+        "middle_eastern": 0.03
+      }
+    }
+  ],
+  "evidence_level": "established",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

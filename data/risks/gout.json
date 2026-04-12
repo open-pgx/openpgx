@@ -24,6 +24,61 @@
         "european": 0.26
       },
       "effect_template": "SLC2A9 variant affecting renal urate transport. Second major gout risk locus."
+    },
+    {
+      "rsid": "rs12498742",
+      "gene_region": "SLC2A9",
+      "risk_allele": "A",
+      "odds_ratio": 1.73,
+      "population_frequency": {
+        "global": 0.23,
+        "european": 0.24
+      },
+      "effect_template": "SLC2A9 GLUT9 glucose transporter. Primary urate transporter in kidney and gut."
+    },
+    {
+      "rsid": "rs1183201",
+      "gene_region": "SLC17A1",
+      "risk_allele": "T",
+      "odds_ratio": 1.19,
+      "population_frequency": {
+        "global": 0.22,
+        "european": 0.23
+      },
+      "effect_template": "SLC17A1 urate/anion exchanger. Renal uric acid secretion and reabsorption."
+    },
+    {
+      "rsid": "rs505802",
+      "gene_region": "SLC22A12",
+      "risk_allele": "C",
+      "odds_ratio": 1.14,
+      "population_frequency": {
+        "global": 0.18,
+        "european": 0.19
+      },
+      "effect_template": "SLC22A12 urate transporter 1 (URAT1). Renal uric acid reabsorption."
+    },
+    {
+      "rsid": "rs1260326",
+      "gene_region": "GCKR",
+      "risk_allele": "T",
+      "odds_ratio": 1.13,
+      "population_frequency": {
+        "global": 0.35,
+        "european": 0.36
+      },
+      "effect_template": "GCKR glucokinase regulator. Metabolic pathways affecting serum urate."
+    },
+    {
+      "rsid": "rs12129861",
+      "gene_region": "PDZK1",
+      "risk_allele": "T",
+      "odds_ratio": 1.10,
+      "population_frequency": {
+        "global": 0.30,
+        "european": 0.31
+      },
+      "effect_template": "PDZK1 PDZ domain containing 1. Renal transporter regulation and urate handling."
     }
   ],
   "evidence_level": "established",
@@ -39,6 +94,15 @@
       "cohort_size": 12000,
       "url": "https://pubmed.ncbi.nlm.nih.gov/18759275/",
       "finding": "ABCG2 rs2231142 and SLC2A9 are major genetic determinants of serum urate and gout risk"
+    },
+    {
+      "pmid": "23263486",
+      "title": "Genome-wide association analyses identify 18 new loci associated with serum urate concentrations",
+      "journal": "Nature Genetics",
+      "year": 2013,
+      "cohort_size": 140000,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/23263486/",
+      "finding": "Identified multiple urate and gout loci including SLC2A9, ABCG2, SLC17A1, SLC22A12, GCKR, and PDZK1"
     }
   ]
 }

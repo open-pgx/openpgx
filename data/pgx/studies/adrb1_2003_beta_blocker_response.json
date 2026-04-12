@@ -1,0 +1,68 @@
+{
+  "gene": "ADRB1",
+  "category": "drug_metabolism",
+  "gene_description": "Beta-1 Adrenergic Receptor — primary target of beta-1 selective blockers (metoprolol, atenolol, bisoprolol). Arg389Gly polymorphism affects receptor signaling capacity and drug response.",
+  "drugs": [
+    "metoprolol",
+    "atenolol",
+    "bisoprolol",
+    "carvedilol",
+    "nebivolol"
+  ],
+  "source": {
+    "pmid": "22703382",
+    "doi": "10.1111/j.1440-1681.2012.05736.x",
+    "source_type": "pubmed",
+    "title": "Effect of the Arg389Gly β1-adrenoceptor polymorphism on plasma renin activity and heart rate, and the genotype-dependent response to metoprolol treatment",
+    "journal": "Clinical and Experimental Pharmacology and Physiology",
+    "year": 2012,
+    "cohort_size": 189,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/22703382/",
+    "finding": "ADRB1 rs1801253 Arg389Gly polymorphism predicts metoprolol response. Arg389Arg carriers show greater reductions in systolic/diastolic BP and heart rate compared to Gly389 carriers."
+  },
+  "snps": [
+    {
+      "rsid": "rs1801253",
+      "risk_allele": "G",
+      "reference_allele": "C",
+      "interpretations": {
+        "CC": {
+          "phenotype": "Arg389Arg — enhanced beta-blocker response",
+          "effect": "Homozygous for Arg389. Higher beta-1 receptor signaling capacity. Greater hemodynamic response to beta-blockers. Significant reductions in systolic BP (>10 mmHg), diastolic BP, and resting heart rate. Better heart rate control in acute coronary syndromes. Represents ~27-36% of Europeans.",
+          "recommendation": "Standard beta-blocker dosing expected to be effective. Monitor heart rate and BP response at baseline and 2-4 weeks. May require lower doses to achieve target heart rate/BP due to enhanced responsiveness.",
+          "severity": "info"
+        },
+        "CG": {
+          "phenotype": "Arg389Gly heterozygous — intermediate response",
+          "effect": "Mixed Arg/Gly alleles. Intermediate beta-1 receptor signaling. Intermediate beta-blocker response. Moderate reductions in BP and heart rate. More variable individual response patterns.",
+          "recommendation": "Standard beta-blocker dosing with careful monitoring. Assess heart rate and BP response at 2-4 weeks and adjust dose as needed. May benefit from dose titration protocols.",
+          "severity": "info"
+        },
+        "GC": {
+          "phenotype": "Arg389Gly heterozygous — intermediate response",
+          "effect": "Mixed Arg/Gly alleles. Intermediate beta-1 receptor signaling. Intermediate beta-blocker response. Moderate reductions in BP and heart rate. More variable individual response patterns.",
+          "recommendation": "Standard beta-blocker dosing with careful monitoring. Assess heart rate and BP response at 2-4 weeks and adjust dose as needed. May benefit from dose titration protocols.",
+          "severity": "info"
+        },
+        "GG": {
+          "phenotype": "Gly389Gly — reduced beta-blocker response",
+          "effect": "Homozygous for Gly389. Lower beta-1 receptor signaling capacity. Reduced hemodynamic response to beta-blockers. Smaller reductions in BP and heart rate. May require higher doses or higher cumulative dosing to achieve target heart rate/BP. Associated with severe coronary artery stenosis in some populations.",
+          "recommendation": "May require higher beta-blocker doses to achieve therapeutic BP and heart rate targets. Close monitoring essential — assess response at 2-4 weeks and consider dose escalation. Alternative beta-blockers or add-on agents may be needed if targets not achieved.",
+          "severity": "moderate"
+        }
+      },
+      "population_frequency": {
+        "european": 0.27,
+        "african": 0.41,
+        "east_asian": 0.21,
+        "south_asian": 0.3,
+        "latino": 0.28
+      }
+    }
+  ],
+  "evidence_level": "moderate",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

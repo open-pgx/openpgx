@@ -1,0 +1,62 @@
+{
+  "gene": "SIRT1",
+  "category": "nutrient_absorption",
+  "gene_description": "Sirtuin 1 — NAD+-dependent histone deacetylase that acts as a master metabolic regulator. Controls transcription factors involved in glucose/lipid homeostasis, inflammation, stress response, and energy expenditure. Activated by caloric restriction and resveratrol.",
+  "drugs": ["resveratrol", "nicotinamide riboside", "NMN supplements"],
+  "source": {
+    "pmid": "21297681",
+    "doi": "10.1038/ijo.2011.12",
+    "source_type": "pubmed",
+    "title": "The molecular genetics of sirtuins: association with human longevity and age-related diseases",
+    "journal": "International Journal of Obesity",
+    "year": 2011,
+    "cohort_size": 6251,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/21297681/",
+    "finding": "SIRT1 rs1467568 minor allele associated with lower BMI (0.2-0.4 kg/m² decrease per allele) and 13-18% decreased obesity risk (p=0.0009). Effect sustained over 6.4 year follow-up. In diabetic subgroups, SIRT1 variation relates to survival rate."
+  },
+  "snps": [
+    {
+      "rsid": "rs1467568",
+      "risk_allele": "A",
+      "reference_allele": "G",
+      "interpretations": {
+        "AA": {
+          "phenotype": "Higher obesity susceptibility",
+          "effect": "Homozygous major allele carriers have higher baseline BMI and increased obesity risk. Standard SIRT1 activity. May benefit more from caloric restriction and NAD+ precursor supplementation. In diabetic individuals, this genotype may relate to poorer metabolic outcomes.",
+          "recommendation": "Caloric restriction strategies and intermittent fasting may be particularly beneficial. Consider resveratrol-rich foods (grapes, berries, red wine in moderation). NAD+ precursor supplements (NMN, nicotinamide riboside) may support SIRT1 activity. Regular exercise (activates SIRT1).",
+          "severity": "mild"
+        },
+        "AG": {
+          "phenotype": "Intermediate obesity risk",
+          "effect": "Heterozygous carriers show intermediate BMI tendency. Moderate SIRT1 activity and metabolic regulation.",
+          "recommendation": "Standard healthy lifestyle with emphasis on regular physical activity and balanced caloric intake.",
+          "severity": "info"
+        },
+        "GA": {
+          "phenotype": "Intermediate obesity risk",
+          "effect": "Heterozygous carriers show intermediate BMI tendency. Moderate SIRT1 activity and metabolic regulation.",
+          "recommendation": "Standard healthy lifestyle with emphasis on regular physical activity and balanced caloric intake.",
+          "severity": "info"
+        },
+        "GG": {
+          "phenotype": "Lower obesity risk (protective)",
+          "effect": "Homozygous minor allele carriers show lower BMI (0.4-0.8 kg/m² lower) and 13-18% reduced obesity risk. Potentially enhanced SIRT1 metabolic regulation. Favorable metabolic trajectory over time.",
+          "recommendation": "Favorable metabolic genetics from this locus. Maintain healthy lifestyle. Standard dietary guidelines.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.65,
+        "african": 0.55,
+        "east_asian": 0.60,
+        "south_asian": 0.58,
+        "latino": 0.62
+      }
+    }
+  ],
+  "evidence_level": "moderate",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

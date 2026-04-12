@@ -1,0 +1,66 @@
+{
+  "gene": "F5",
+  "category": "drug_target",
+  "gene_description": "Coagulation Factor V — essential cofactor in the prothrombinase complex. The Factor V Leiden mutation (R506Q) causes resistance to activated protein C, leading to a hypercoagulable state and increased VTE risk.",
+  "drugs": ["warfarin", "rivaroxaban", "apixaban", "dabigatran", "enoxaparin", "heparin"],
+  "source": {
+    "pmid": "20301779",
+    "doi": null,
+    "source_type": "pubmed",
+    "title": "Factor V Leiden Thrombophilia",
+    "journal": "GeneReviews",
+    "year": 2017,
+    "cohort_size": null,
+    "url": "https://www.ncbi.nlm.nih.gov/books/NBK1368/",
+    "finding": "Factor V Leiden (rs6025, R506Q) is the most common inherited thrombophilia. Heterozygous carriers have ~3-8 fold increased VTE risk; homozygous carriers have ~33-80 fold increased risk. Impacts anticoagulant treatment duration decisions."
+  },
+  "snps": [
+    {
+      "rsid": "rs6025",
+      "risk_allele": "T",
+      "reference_allele": "C",
+      "interpretations": {
+        "TT": {
+          "phenotype": "Homozygous Factor V Leiden",
+          "effect": "Homozygous R506Q mutation causing complete resistance to activated protein C (APC). 33-80 fold increased risk of venous thromboembolism. High risk of recurrent DVT, pulmonary embolism, and potentially cerebral vein thrombosis. Risk compounded by oral contraceptives, pregnancy, surgery, and immobilization.",
+          "recommendation": "Refer to hematologist. Long-term or lifelong anticoagulation therapy strongly recommended after first thrombotic event. Absolutely avoid estrogen-containing contraceptives. Thromboprophylaxis for all high-risk situations. Genetic counseling for family members. DOACs or warfarin based on clinical judgment.",
+          "severity": "severe",
+          "odds_ratio": 33.46
+        },
+        "CT": {
+          "phenotype": "Heterozygous Factor V Leiden carrier",
+          "effect": "One copy of R506Q mutation causing partial APC resistance. 3-8 fold increased risk of venous thromboembolism. Risk is substantially increased by combined oral contraceptives (~35-fold with OCP use), pregnancy (~7-16 fold), surgery, trauma, and immobilization. Most carriers never develop thrombosis without additional risk factors.",
+          "recommendation": "Anticoagulation for VTE events (duration based on clinical context, typically 3-6 months for provoked events). Avoid estrogen-containing contraceptives; progestin-only or non-hormonal alternatives preferred. Thromboprophylaxis during surgery and prolonged immobilization. Pregnancy management in consultation with hematologist.",
+          "severity": "moderate",
+          "odds_ratio": 5.58
+        },
+        "TC": {
+          "phenotype": "Heterozygous Factor V Leiden carrier",
+          "effect": "One copy of R506Q mutation causing partial APC resistance. 3-8 fold increased risk of venous thromboembolism. Risk is substantially increased by combined oral contraceptives (~35-fold with OCP use), pregnancy (~7-16 fold), surgery, trauma, and immobilization. Most carriers never develop thrombosis without additional risk factors.",
+          "recommendation": "Anticoagulation for VTE events (duration based on clinical context, typically 3-6 months for provoked events). Avoid estrogen-containing contraceptives; progestin-only or non-hormonal alternatives preferred. Thromboprophylaxis during surgery and prolonged immobilization. Pregnancy management in consultation with hematologist.",
+          "severity": "moderate",
+          "odds_ratio": 5.58
+        },
+        "CC": {
+          "phenotype": "Normal Factor V (wild-type)",
+          "effect": "No Factor V Leiden mutation. Normal activated protein C sensitivity. Standard thrombotic risk from this locus.",
+          "recommendation": "Standard clinical assessment for thrombotic risk. No F5-specific anticoagulation adjustments needed.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.05,
+        "african": 0.01,
+        "east_asian": 0.001,
+        "south_asian": 0.02,
+        "latino": 0.03,
+        "middle_eastern": 0.04
+      }
+    }
+  ],
+  "evidence_level": "established",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}
