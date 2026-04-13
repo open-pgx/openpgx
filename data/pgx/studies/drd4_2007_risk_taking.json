@@ -1,0 +1,63 @@
+{
+  "gene": "DRD4",
+  "category": "personality_trait",
+  "gene_description": "Dopamine receptor D4 (DRD4) — G protein-coupled dopamine receptor in prefrontal cortex regulating behavioral inhibition, novelty seeking, and reward sensitivity",
+  "drugs": [],
+  "source": {
+    "pmid": "18194532",
+    "doi": "10.1016/j.concog.2007.09.006",
+    "source_type": "pubmed",
+    "title": "Meta-analysis of DRD4 and personality: Evaluating evolutionary hypotheses of Novelty Seeking and Extraversion",
+    "journal": "Consciousness and Cognition",
+    "year": 2008,
+    "cohort_size": null,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/18194532/",
+    "finding": "rs1800955 -521C/T SNP in DRD4 promoter associated with novelty seeking and approach-related personality traits. Meta-analysis supports association explaining ~2% of phenotypic variance. C allele associated with sensation seeking, particularly in sports contexts."
+  },
+  "snps": [
+    {
+      "rsid": "rs1800955",
+      "risk_allele": "C",
+      "reference_allele": "T",
+      "interpretations": {
+        "CC": {
+          "phenotype": "High Novelty Seeking, Risk-Taking Propensity (Risk/Risk)",
+          "effect": "Homozygous for C allele at -521. Enhanced DRD4 promoter activity and higher dopamine D4 receptor expression in prefrontal cortex. Associated with increased novelty-seeking, sensation-seeking, and approach-related personality traits. Stronger attraction to new experiences, thrill-seeking, and risky behaviors. Meta-analysis shows C allele explains ~2% of novelty-seeking variance.",
+          "recommendation": "Awareness of risk-taking propensity important. Direct energy toward positive outlets (adventure sports, challenging careers, exploration). Be mindful of impulsive decision-making and risk assessment in high-stakes situations. Good candidates for careers requiring boldness and innovation. Substance abuse risk awareness warranted.",
+          "severity": "info",
+          "odds_ratio": null
+        },
+        "CT": {
+          "phenotype": "Intermediate Novelty Seeking (Heterozygous)",
+          "effect": "Heterozygous for C/T alleles. Intermediate DRD4 expression and novelty-seeking propensity. Balanced approach-related and cautious traits.",
+          "recommendation": "Standard personality assessment. Individual variation in novelty-seeking noted.",
+          "severity": "info"
+        },
+        "TC": {
+          "phenotype": "Intermediate Novelty Seeking (Heterozygous)",
+          "effect": "Heterozygous for C/T alleles. Intermediate DRD4 expression and novelty-seeking propensity. Balanced approach-related and cautious traits.",
+          "recommendation": "Standard personality assessment. Individual variation in novelty-seeking noted.",
+          "severity": "info"
+        },
+        "TT": {
+          "phenotype": "Lower Novelty Seeking, Conservative Approach (Wild-type/Wild-type)",
+          "effect": "Homozygous for T allele at -521 (ancestral). Lower DRD4 expression and reduced novelty-seeking propensity. More cautious, less impulsive approach to new experiences. Preference for stability and familiar environments.",
+          "recommendation": "Natural cautious temperament. Suited for detailed, analytical work requiring careful risk assessment. Less attraction to thrill-seeking activities. Standard personality profile.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.48,
+        "african": 0.52,
+        "east_asian": 0.42,
+        "south_asian": 0.45,
+        "latino": 0.50
+      }
+    }
+  ],
+  "evidence_level": "emerging",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

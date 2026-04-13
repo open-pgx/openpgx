@@ -1,0 +1,68 @@
+{
+  "gene": "CDH1",
+  "rsid": "rs16260",
+  "cancer_type": "gastric_cancer",
+  "title": "CDH1 rs16260 Gastric Cancer Risk (E-cadherin Promoter)",
+  "description": "Promoter SNP in CDH1 (E-cadherin), a calcium-dependent cell adhesion molecule. The -160C>A polymorphism (rs16260) is located in the CDH1 promoter and the A allele reduces transcriptional activity of E-cadherin by approximately 68%. Loss of E-cadherin function increases cellular motility and invasiveness, promoting gastric cancer development particularly in diffuse-type gastric adenocarcinoma.",
+  "source": {
+    "title": "CDH1 promoter polymorphisms and gastric cancer susceptibility",
+    "authors": ["Fang WL", "Lin YC", "Huang KH", "et al."],
+    "year": 2010,
+    "journal": "World Journal of Gastroenterology",
+    "volume": 16,
+    "pages": "5038-5043",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/20954282/"
+  },
+  "pmid": "20954282",
+  "source_type": "pubmed",
+  "evidence_level": "moderate",
+  "drugs": ["trastuzumab", "ramucirumab", "nivolumab", "fluorouracil"],
+  "snps": [
+    {
+      "rsid": "rs16260",
+      "chromosome": "16",
+      "position": 68835396,
+      "ref_allele": "C",
+      "risk_allele": "A",
+      "interpretations": {
+        "CC": {
+          "phenotype": "normal_risk",
+          "effect": "baseline_gastric_cancer_risk",
+          "recommendation": "standard_surveillance",
+          "severity": "info"
+        },
+        "CA": {
+          "phenotype": "intermediate_risk",
+          "effect": "1.2x_increased_gastric_cancer_risk",
+          "recommendation": "enhanced_endoscopic_surveillance",
+          "severity": "mild"
+        },
+        "AC": {
+          "phenotype": "intermediate_risk",
+          "effect": "1.2x_increased_gastric_cancer_risk",
+          "recommendation": "enhanced_endoscopic_surveillance",
+          "severity": "mild"
+        },
+        "AA": {
+          "phenotype": "increased_risk",
+          "effect": "1.4x_increased_diffuse_gastric_cancer_risk",
+          "recommendation": "aggressive_surveillance_aggressive_treatment",
+          "severity": "moderate"
+        }
+      },
+      "population_frequency": {
+        "european": 0.25,
+        "african": 0.15,
+        "east_asian": 0.38,
+        "south_asian": 0.28,
+        "latino": 0.22
+      }
+    }
+  ],
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  },
+  "tags": ["cancer_risk", "gastric_cancer", "adhesion_molecule", "promoter_variant"],
+  "last_updated": "2026-04-12"
+}

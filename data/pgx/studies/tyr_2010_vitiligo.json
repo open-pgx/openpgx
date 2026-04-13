@@ -1,0 +1,57 @@
+{
+  "gene": "TYR",
+  "source": {
+    "title": "Variant of TYR and Autoimmunity Susceptibility Loci in Generalized Vitiligo",
+    "year": 2010,
+    "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa0908547"
+  },
+  "source_type": "pubmed",
+  "evidence_level": "moderate",
+  "severity": "mild",
+  "description": "TYR rs1126809 (R402Q) encodes a thermolabile tyrosinase with reduced catalytic activity at body temperature. The variant is associated with vitiligo risk through altered melanocyte-HLA antigen presentation.",
+  "snps": [
+    {
+      "rsid": "rs1126809",
+      "location": "11q14.3",
+      "effect_allele": "A",
+      "reference_allele": "G",
+      "interpretations": {
+        "GG": {
+          "phenotype": "Lower vitiligo risk",
+          "effect": "Reference homozygote for normal tyrosinase",
+          "recommendation": "Standard dermatologic health; sun protection as baseline",
+          "severity": "info"
+        },
+        "GA": {
+          "phenotype": "Intermediate vitiligo risk",
+          "effect": "Heterozygous carrier for R402Q variant",
+          "recommendation": "Baseline dermatologic evaluation; monitor for depigmented patches; sun protection to affected areas; consider early treatment if vitiligo develops",
+          "severity": "mild"
+        },
+        "AG": {
+          "phenotype": "Intermediate vitiligo risk",
+          "effect": "Heterozygous carrier for R402Q variant",
+          "recommendation": "Baseline dermatologic evaluation; monitor for depigmented patches; sun protection to affected areas; consider early treatment if vitiligo develops",
+          "severity": "mild"
+        },
+        "AA": {
+          "phenotype": "Elevated generalized vitiligo risk",
+          "effect": "Homozygous for R402Q thermolabile tyrosinase; reduced enzyme activity at 37°C",
+          "recommendation": "Regular dermatologic monitoring; early intervention if depigmented patches develop; topical corticosteroids or calcineurin inhibitors for treatment; phototherapy consideration; cosmetic camouflage for psychological support",
+          "severity": "mild"
+        }
+      },
+      "population_frequency": {
+        "european": 0.278,
+        "african": 0.05,
+        "east_asian": 0.0,
+        "south_asian": 0.15,
+        "latino": 0.12
+      }
+    }
+  ],
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "gene": "KCNH2",
+  "gene_full_name": "Potassium Voltage-Gated Channel Subfamily H Member 2",
+  "region": "Exon 13",
+  "category": "drug_target",
+  "phenotype": "Long QT Syndrome",
+  "description": "KCNH2 rs1805123 (K897T) variant associated with altered cardiac repolarization and QT interval duration. This common polymorphism affects the hERG potassium channel, predisposing carriers to prolonged QT and increased risk of drug-induced torsades de pointes.",
+  "source": {
+    "title": "Common genetic variation in the cardiac ion channel hERG (KCNH2) and QTc prolongation",
+    "year": 2004,
+    "authors": "Bezzina CR, Verkerk AO, Buxton AE, et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/15051636/",
+    "pmid": "15051636",
+    "journal": "Cardiovascular Research",
+    "volume": 67,
+    "pages": "396-405",
+    "source_type": "pubmed"
+  },
+  "source_type": "pubmed",
+  "evidence_level": "moderate",
+  "snps": [
+    {
+      "rsid": "rs1805123",
+      "risk_allele": "T",
+      "interpretations": {
+        "TT": {
+          "phenotype": "High genetic risk for QT prolongation and drug-induced torsades de pointes",
+          "effect": "High genetic risk for QT prolongation and drug-induced torsades de pointes",
+          "recommendation": "Avoid or use with extreme caution: sotalol, amiodarone, dofetilide, erythromycin, haloperidol, methadone. Baseline and periodic ECG monitoring recommended. Electrolyte management (especially potassium, magnesium) important.",
+          "severity": "info"
+        },
+        "TC": {
+          "phenotype": "Moderate increased risk of QT prolongation with QT-prolonging drugs",
+          "effect": "Moderate increased risk of QT prolongation with QT-prolonging drugs",
+          "recommendation": "Use QT-prolonging drugs cautiously. Consider alternative agents when possible. ECG baseline and monitoring recommended, especially with multiple QT-prolonging drugs.",
+          "severity": "info"
+        },
+        "CT": {
+          "phenotype": "Moderate increased risk of QT prolongation with QT-prolonging drugs",
+          "effect": "Moderate increased risk of QT prolongation with QT-prolonging drugs",
+          "recommendation": "Use QT-prolonging drugs cautiously. Consider alternative agents when possible. ECG baseline and monitoring recommended, especially with multiple QT-prolonging drugs.",
+          "severity": "info"
+        },
+        "CC": {
+          "phenotype": "Normal QT interval risk; no specific KCNH2-related concerns",
+          "effect": "Normal QT interval risk; no specific KCNH2-related concerns",
+          "recommendation": "Standard dosing and monitoring for QT-prolonging drugs as per clinical practice",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.28,
+        "african": 0.15,
+        "east_asian": 0.35,
+        "south_asian": 0.22,
+        "latino": 0.25
+      }
+    }
+  ],
+  "drugs": [
+    "sotalol",
+    "amiodarone",
+    "dofetilide",
+    "erythromycin",
+    "haloperidol",
+    "methadone"
+  ],
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

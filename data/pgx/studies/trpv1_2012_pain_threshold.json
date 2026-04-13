@@ -1,0 +1,62 @@
+{
+  "gene": "TRPV1",
+  "category": "drug_target",
+  "gene_description": "Transient Receptor Potential Cation Channel Subfamily V Member 1 — pain and temperature sensing ion channel activated by vanilloids and heat; Ile585Val variant (rs8065080) modulates pain perception and heat sensitivity",
+  "drugs": ["capsaicin", "lidocaine", "morphine", "ibuprofen"],
+  "source": {
+    "pmid": "21616913",
+    "source_type": "pubmed",
+    "title": "The Ile585Val TRPV1 variant is involved in risk of painful knee osteoarthritis",
+    "journal": "Pain",
+    "year": 2011,
+    "cohort_size": null,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/21616913/",
+    "finding": "TRPV1 rs8065080 (Ile585Val) variant affects thermal pain sensitivity and nociception. The GG genotype (Val-Val, encoded by T at rs8065080) is associated with reduced pain sensitivity, while AA and AG genotypes show increased thermal pain perception and altered response to pain therapeutics."
+  },
+  "snps": [
+    {
+      "rsid": "rs8065080",
+      "risk_allele": "T",
+      "reference_allele": "C",
+      "variant_name": "Ile585Val",
+      "interpretations": {
+        "TT": {
+          "phenotype": "Altered pain threshold — reduced thermal pain sensitivity",
+          "effect": "Homozygous for the Val585 allele (TT genotype). Associated with lower thermal pain sensitivity and reduced capsaicin-induced pain perception. May have diminished awareness of painful stimuli, which could be protective in acute pain situations but may delay detection of serious underlying pathology (myocardial infarction, appendicitis). Modified response to nociceptive drugs.",
+          "recommendation": "Patient education about potential delayed pain recognition — encourage medical evaluation for non-pain symptoms of serious conditions (fatigue, nausea, dyspnea). Standard analgesic dosing, though efficacy may vary. Monitor for medication overuse due to altered pain feedback. Consider physical therapy and non-pharmacological approaches to manage chronic pain. Regular screening for asymptomatic conditions.",
+          "severity": "moderate"
+        },
+        "TC": {
+          "phenotype": "Intermediate thermal pain sensitivity",
+          "effect": "Heterozygous carriers (Ile/Val) show intermediate pain perception. Normal to slightly reduced thermal pain threshold. Standard nociceptive response expected.",
+          "recommendation": "Standard analgesic management and dosing. Routine pain assessment and monitoring.",
+          "severity": "mild"
+        },
+        "CT": {
+          "phenotype": "Intermediate thermal pain sensitivity",
+          "effect": "Heterozygous carriers (Ile/Val) show intermediate pain perception. Normal to slightly reduced thermal pain threshold. Standard nociceptive response expected.",
+          "recommendation": "Standard analgesic management and dosing. Routine pain assessment and monitoring.",
+          "severity": "mild"
+        },
+        "CC": {
+          "phenotype": "Normal thermal pain sensitivity (wild-type)",
+          "effect": "Homozygous for the Ile585 allele (CC genotype). Normal TRPV1 function with typical thermal pain perception and capsaicin sensitivity. Standard nociceptive response to pain stimuli and analgesics.",
+          "recommendation": "Standard pain management and analgesic therapy per clinical guidelines. Routine pain assessment.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.22,
+        "african": 0.08,
+        "east_asian": 0.48,
+        "south_asian": 0.18,
+        "latino": 0.15
+      }
+    }
+  ],
+  "evidence_level": "emerging",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

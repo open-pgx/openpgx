@@ -1,0 +1,63 @@
+{
+  "gene": "SLC24A5",
+  "category": "trait_appearance",
+  "gene_description": "Solute carrier family 24 member 5 (SLC24A5) — cation exchanger protein controlling melanin synthesis and skin pigmentation",
+  "drugs": [],
+  "source": {
+    "pmid": "16357253",
+    "doi": "10.1126/science.1110074",
+    "source_type": "pubmed",
+    "title": "SLC24A5, a putative cation exchanger, affects pigmentation in zebrafish and humans",
+    "journal": "Science",
+    "year": 2005,
+    "cohort_size": null,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/16357253/",
+    "finding": "rs1426654 A111T variant explains ~27% of skin pigmentation variation in South Asians. Ancestral allele (A) predominates in African and East Asian populations; derived allele (G/threonine) nearly fixed in Europeans and associated with lighter skin."
+  },
+  "snps": [
+    {
+      "rsid": "rs1426654",
+      "risk_allele": "G",
+      "reference_allele": "A",
+      "interpretations": {
+        "GG": {
+          "phenotype": "Light Skin Pigmentation (A111T/T111T)",
+          "effect": "Homozygous for threonine at position 111. Strong light skin pigmentation phenotype. Nearly 100% frequency in European populations. Associated with reduced melanin production and increased risk of sunburn and UV damage.",
+          "recommendation": "High risk for sun damage and skin cancer. Daily broad-spectrum SPF 30+ sunscreen recommended. Avoid peak sun hours (10am-4pm). Regular skin cancer screening advised.",
+          "severity": "moderate",
+          "odds_ratio": null
+        },
+        "AG": {
+          "phenotype": "Intermediate Skin Pigmentation (A111T/A111)",
+          "effect": "Heterozygous for mixed alanine/threonine alleles. Intermediate skin pigmentation—lighter than ancestral phenotype but darker than homozygous light-skin carriers. Common in admixed populations.",
+          "recommendation": "Moderate sun protection recommended. Use SPF 30+ sunscreen and protective clothing in sun exposure. Periodic skin checks appropriate.",
+          "severity": "mild"
+        },
+        "GA": {
+          "phenotype": "Intermediate Skin Pigmentation (A111T/A111)",
+          "effect": "Heterozygous for mixed alanine/threonine alleles. Intermediate skin pigmentation—lighter than ancestral phenotype but darker than homozygous light-skin carriers. Common in admixed populations.",
+          "recommendation": "Moderate sun protection recommended. Use SPF 30+ sunscreen and protective clothing in sun exposure. Periodic skin checks appropriate.",
+          "severity": "mild"
+        },
+        "AA": {
+          "phenotype": "Dark Skin Pigmentation (A111/A111)",
+          "effect": "Homozygous for ancestral alanine at position 111. Strong melanin synthesis and dark skin pigmentation. Predominant in Sub-Saharan African, East Asian, and Indigenous American populations. Increased photoprotection against UV damage.",
+          "recommendation": "Standard sun protection sufficient (SPF 15+). Lower risk for skin cancer but still at risk during intense sun exposure. Vitamin D synthesis may be reduced in high-latitude regions with low sun exposure.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.98,
+        "african": 0.02,
+        "east_asian": 0.05,
+        "south_asian": 0.25,
+        "latino": 0.35
+      }
+    }
+  ],
+  "evidence_level": "established",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "gene": "BRAF",
+  "category": "drug_target",
+  "gene_description": "BRAF (B-Raf Proto-Oncogene, Serine/Threonine Kinase) encodes a component of the MAPK/ERK signaling pathway. The V600E mutation is the most common BRAF alteration, occurring in ~50% of melanomas. This constitutively active mutation drives rapid tumor growth and predicts excellent response to BRAF-directed therapies.",
+  "drugs": ["vemurafenib", "dabrafenib", "encorafenib", "trametinib", "cobimetinib"],
+  "source": {
+    "pmid": "20818844",
+    "source_type": "pubmed",
+    "title": "Inhibition of mutated, activated BRAF in metastatic melanoma",
+    "journal": "New England Journal of Medicine",
+    "year": 2010,
+    "cohort_size": 32,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/20818844/",
+    "finding": "BRAF V600E inhibition with vemurafenib achieved 81% response rate in phase 1; established BRAF as druggable target in melanoma"
+  },
+  "snps": [
+    {
+      "rsid": "rs113488022",
+      "risk_allele": "A",
+      "reference_allele": "T",
+      "chromosome": "7",
+      "position": "140753336",
+      "variant_type": "missense",
+      "interpretations": {
+        "AA": {
+          "phenotype": "Homozygous BRAF V600E mutation",
+          "effect": "Constitutively active BRAF kinase; strong MAPK pathway activation; 81% response rate to vemurafenib",
+          "recommendation": "BRAF inhibitor monotherapy or combined BRAF+MEK inhibition (preferred for improved PFS and OS). Monitor for secondary cutaneous malignancies.",
+          "severity": "moderate"
+        },
+        "AT": {
+          "phenotype": "Heterozygous BRAF V600E mutation",
+          "effect": "BRAF V600E present; excellent response to targeted therapy expected; constitutively active kinase",
+          "recommendation": "BRAF+MEK inhibitor combination preferred (dabrafenib+trametinib or encorafenib+cobimetinib). Superior to monotherapy for PFS and OS.",
+          "severity": "moderate"
+        },
+        "TA": {
+          "phenotype": "Heterozygous BRAF V600E mutation",
+          "effect": "BRAF V600E present; excellent response to targeted therapy expected; constitutively active kinase",
+          "recommendation": "BRAF+MEK inhibitor combination preferred (dabrafenib+trametinib or encorafenib+cobimetinib). Superior to monotherapy for PFS and OS.",
+          "severity": "moderate"
+        },
+        "TT": {
+          "phenotype": "Wild-type BRAF",
+          "effect": "BRAF V600E not present; BRAF inhibitors not indicated; consider NRAS or other mutations",
+          "recommendation": "Immunotherapy (anti-PD-1/PD-L1) is first-line. Consider MEK inhibitor if NRAS mutant. Evaluate for other driver mutations.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.004,
+        "african": 0.002,
+        "east_asian": 0.0015,
+        "south_asian": 0.001,
+        "latino": 0.003
+      }
+    }
+  ],
+  "evidence_level": "established",
+  "clinical_significance": "FDA companion diagnostic for vemurafenib and other BRAF inhibitors. BRAF V600E present in ~50% of melanomas. Transformed melanoma treatment from chemotherapy to precision medicine.",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

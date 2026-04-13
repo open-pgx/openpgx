@@ -6,7 +6,7 @@
   "source": {
     "pmid": "27535273",
     "doi": "10.3945/ajcn.116.140590",
-    "source_type": "meta-analysis",
+    "source_type": "pubmed",
     "title": "Association of TCN2 rs1801198 c.776G>C polymorphism with markers of one-carbon metabolism and related diseases: a systematic review and meta-analysis",
     "journal": "American Journal of Clinical Nutrition",
     "year": 2016,
@@ -49,7 +49,7 @@
         "european": 0.32,
         "african": 0.25,
         "east_asian": 0.28,
-        "south_asian": 0.30,
+        "south_asian": 0.3,
         "latino": 0.29
       }
     }

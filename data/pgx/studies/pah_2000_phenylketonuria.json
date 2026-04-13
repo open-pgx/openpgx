@@ -1,0 +1,57 @@
+{
+  "gene": "PAH",
+  "source": {
+    "title": "Phenylalanine Hydroxylase Deficiency and Phenylketonuria",
+    "year": 2000,
+    "url": "https://www.ncbi.nlm.nih.gov/books/NBK1504/"
+  },
+  "source_type": "guideline",
+  "evidence_level": "established",
+  "severity": "life_threatening",
+  "description": "PAH rs5030858 (R408W mutation) is the most common pathogenic variant causing phenylketonuria in European populations. Homozygous or compound heterozygous carriers develop classic PKU with severe intellectual disability if untreated.",
+  "snps": [
+    {
+      "rsid": "rs5030858",
+      "location": "12q23.2",
+      "effect_allele": "T",
+      "reference_allele": "C",
+      "interpretations": {
+        "CC": {
+          "phenotype": "Normal phenylalanine metabolism",
+          "effect": "Wildtype homozygote; no PKU risk",
+          "recommendation": "Standard newborn screening; normal diet",
+          "severity": "info"
+        },
+        "CT": {
+          "phenotype": "Heterozygous carrier",
+          "effect": "Carrier; normal phenylalanine levels but ~50% enzyme activity",
+          "recommendation": "No dietary restrictions; genetic counseling if planning pregnancy; carrier testing of partner",
+          "severity": "info"
+        },
+        "TC": {
+          "phenotype": "Heterozygous carrier",
+          "effect": "Carrier; normal phenylalanine levels but ~50% enzyme activity",
+          "recommendation": "No dietary restrictions; genetic counseling if planning pregnancy; carrier testing of partner",
+          "severity": "info"
+        },
+        "TT": {
+          "phenotype": "Classic phenylketonuria",
+          "effect": "Homozygous or compound heterozygous for pathogenic mutations; severe PAH deficiency",
+          "recommendation": "Immediate dietary restriction of phenylalanine; low-Phe medical formula; periodic monitoring of Phe levels; neuropsychological follow-up; ongoing metabolic management with specialist",
+          "severity": "life_threatening"
+        }
+      },
+      "population_frequency": {
+        "european": 0.0082,
+        "african": 0.001,
+        "east_asian": 0.0003,
+        "south_asian": 0.001,
+        "latino": 0.002
+      }
+    }
+  ],
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

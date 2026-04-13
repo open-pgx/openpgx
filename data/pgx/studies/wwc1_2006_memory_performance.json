@@ -1,0 +1,66 @@
+{
+  "gene": "WWC1",
+  "common_name": "KIBRA",
+  "description": "WWC1 protein expression and episodic memory performance",
+  "category": "drug_target",
+  "drugs": [
+    "donepezil",
+    "memantine",
+    "galantamine"
+  ],
+  "source": {
+    "title": "Common Kibra Alleles Are Associated with Human Memory Performance",
+    "year": 2006,
+    "pmid": "17053149",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/17053149/",
+    "journal": "Science",
+    "authors": "Papassotiropoulos A, Stephan DA, Huentelman MJ, et al.",
+    "source_type": "pubmed"
+  },
+  "source_type": "pubmed",
+  "evidence_level": "moderate",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  },
+  "snps": [
+    {
+      "rsid": "rs17070145",
+      "reference_allele": "T",
+      "risk_allele": "C",
+      "interpretations": {
+        "CC": {
+          "phenotype": "CC homozygote (Risk)",
+          "effect": "Homozygous for the C allele (risk allele). Associated with lower episodic memory performance, reduced hippocampal activation during memory retrieval tasks.",
+          "recommendation": "Consult clinical guidelines.",
+          "severity": "mild"
+        },
+        "CT": {
+          "phenotype": "CT heterozygote",
+          "effect": "Heterozygous carrier. Intermediate memory performance with moderate hippocampal activation.",
+          "recommendation": "Consult clinical guidelines.",
+          "severity": "info"
+        },
+        "TC": {
+          "phenotype": "CT heterozygote",
+          "effect": "Heterozygous carrier. Intermediate memory performance with moderate hippocampal activation.",
+          "recommendation": "Consult clinical guidelines.",
+          "severity": "info"
+        },
+        "TT": {
+          "phenotype": "TT homozygote (Favorable)",
+          "effect": "Homozygous for the T allele (reference/favorable allele). Associated with enhanced episodic memory performance, higher hippocampal activation during memory retrieval tasks.",
+          "recommendation": "Consult clinical guidelines.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.45,
+        "african": 0.38,
+        "east_asian": 0.52,
+        "south_asian": 0.41,
+        "latino": 0.43
+      }
+    }
+  ]
+}

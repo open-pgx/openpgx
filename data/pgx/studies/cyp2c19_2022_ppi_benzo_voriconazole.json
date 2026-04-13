@@ -156,7 +156,6 @@
   "evidence_level": "established",
   "contributor": {
     "name": "OpenPGx Community",
-    "github": "openpgx",
-    "orcid": null
+    "github": "openpgx"
   }
 }

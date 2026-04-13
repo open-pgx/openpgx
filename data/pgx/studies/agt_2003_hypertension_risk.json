@@ -1,0 +1,65 @@
+{
+  "gene": "AGT",
+  "category": "drug_target",
+  "gene_description": "Angiotensinogen — the precursor protein for angiotensin II, a potent vasoconstrictor and key regulator of blood pressure and sodium homeostasis. The M235T variant affects angiotensinogen expression levels; the T allele is associated with higher circulating angiotensinogen and increased blood pressure responses to dietary sodium.",
+  "drugs": ["lisinopril", "enalapril", "losartan", "valsartan", "hydrochlorothiazide"],
+  "source": {
+    "pmid": "12624324",
+    "doi": "10.1161/01.ATV.0000059925.46454.78",
+    "source_type": "pubmed",
+    "title": "Angiotensinogen gene polymorphism, plasma angiotensinogen, and risk of hypertension and ischemic heart disease: a meta-analysis",
+    "journal": "Arteriosclerosis, Thrombosis, and Vascular Biology",
+    "year": 2003,
+    "cohort_size": 7500,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/12624324/",
+    "finding": "Meta-analysis of 63 studies (n = 7,500) demonstrates the M235T polymorphism's association with hypertension risk. T allele associated with higher plasma angiotensinogen levels (~20% increase per T allele) and increased systolic blood pressure (~2 mmHg per T allele). TT genotype shows ~1.3-fold hypertension risk. ACE inhibitors and ARBs more effective in AGT 235T carriers due to greater renin-angiotensin-aldosterone system suppression."
+  },
+  "snps": [
+    {
+      "rsid": "rs699",
+      "risk_allele": "T",
+      "reference_allele": "C",
+      "interpretations": {
+        "TT": {
+          "phenotype": "AGT M235T homozygous — elevated hypertension risk",
+          "effect": "Homozygous for T (235T) risk allele. ~1.3-fold increased hypertension risk. 20-30% higher circulating angiotensinogen levels compared to CC carriers. Greater blood pressure sensitivity to dietary sodium. Enhanced renin-angiotensin-aldosterone system activity. Systolic blood pressure typically 2-3 mmHg higher than non-carriers. Increased vasoconstriction and sodium retention.",
+          "recommendation": "Sodium restriction (target <2,300 mg/day, ideally <1,500 mg/day given genetic predisposition). First-line antihypertensive: ACE inhibitors (lisinopril, enalapril) or ARBs (losartan, valsartan) — particularly effective in AGT T carriers due to RAAS suppression. Thiazide diuretics (hydrochlorothiazide) also effective. Lifestyle modifications: weight loss if overweight, regular aerobic exercise (150 min/week), moderate alcohol, stress management. Monitor blood pressure regularly (home monitoring recommended). Screen for chronic kidney disease and albuminuria (RAAS activity impacts kidney). Target BP <130/80 mmHg given genetic risk.",
+          "severity": "moderate",
+          "odds_ratio": 1.3
+        },
+        "TC": {
+          "phenotype": "AGT M235T heterozygous — mild hypertension risk elevation",
+          "effect": "Heterozygous for T allele. Mild increase in hypertension risk (intermediate between TT and CC). 10-15% higher angiotensinogen levels than CC homozygotes. Modest increased blood pressure sensitivity to dietary sodium. Intermediate RAAS activity.",
+          "recommendation": "Lifestyle modifications as primary prevention: weight management, sodium restriction (2,300 mg/day), regular exercise, limit alcohol, stress reduction. Monitor blood pressure periodically. If hypertension develops, ACE inhibitors or ARBs are preferred first-line agents. Maintain healthy diet rich in potassium, magnesium, and calcium.",
+          "severity": "mild",
+          "odds_ratio": 1.15
+        },
+        "CT": {
+          "phenotype": "AGT M235T heterozygous — mild hypertension risk elevation",
+          "effect": "Heterozygous for T allele. Mild increase in hypertension risk (intermediate between TT and CC). 10-15% higher angiotensinogen levels than CC homozygotes. Modest increased blood pressure sensitivity to dietary sodium. Intermediate RAAS activity.",
+          "recommendation": "Lifestyle modifications as primary prevention: weight management, sodium restriction (2,300 mg/day), regular exercise, limit alcohol, stress reduction. Monitor blood pressure periodically. If hypertension develops, ACE inhibitors or ARBs are preferred first-line agents. Maintain healthy diet rich in potassium, magnesium, and calcium.",
+          "severity": "mild",
+          "odds_ratio": 1.15
+        },
+        "CC": {
+          "phenotype": "AGT M235M homozygous wild-type — standard hypertension risk",
+          "effect": "Homozygous for C (235M) reference allele. Normal angiotensinogen expression and circulating levels. Standard hypertension risk determined primarily by environmental factors (dietary sodium, obesity, sedentary lifestyle, alcohol), other genetic loci, and age-related blood pressure elevation.",
+          "recommendation": "Standard hypertension prevention: maintain healthy weight, limit sodium intake to <2,300 mg/day, regular exercise (150 min/week moderate aerobic activity), moderate alcohol consumption, stress management. Annual blood pressure checks. If hypertension develops, any first-line antihypertensive class appropriate (ACE inhibitors, ARBs, thiazides, calcium channel blockers).",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.42,
+        "african": 0.35,
+        "east_asian": 0.28,
+        "south_asian": 0.40,
+        "latino": 0.38
+      }
+    }
+  ],
+  "evidence_level": "moderate",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

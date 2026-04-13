@@ -1,0 +1,58 @@
+{
+  "gene": "MUC5B",
+  "source": {
+    "title": "Association of the MUC5B Promoter Polymorphism With Idiopathic Pulmonary Fibrosis",
+    "year": 2011,
+    "pmid": "21460141",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/21460141/"
+  },
+  "source_type": "pubmed",
+  "evidence_level": "established",
+  "severity": "severe",
+  "description": "MUC5B rs35705950 is the strongest genetic risk factor for idiopathic pulmonary fibrosis. The minor T allele increases MUC5B expression in terminal bronchi and is associated with substantially elevated IPF risk.",
+  "snps": [
+    {
+      "rsid": "rs35705950",
+      "location": "11p15.5",
+      "effect_allele": "T",
+      "reference_allele": "G",
+      "interpretations": {
+        "GG": {
+          "phenotype": "Lower IPF risk",
+          "effect": "Reference homozygote",
+          "recommendation": "Standard pulmonary health; avoid environmental lung toxins; smoking cessation if applicable",
+          "severity": "info"
+        },
+        "GT": {
+          "phenotype": "Intermediate IPF risk",
+          "effect": "Heterozygous carrier; ~6.8-9.0x increased risk for familial/sporadic IPF",
+          "recommendation": "Baseline high-resolution CT chest; annual pulmonary function testing; occupational exposure assessment; smoking cessation strongly recommended; family counseling",
+          "severity": "moderate"
+        },
+        "TG": {
+          "phenotype": "Intermediate IPF risk",
+          "effect": "Heterozygous carrier; ~6.8-9.0x increased risk for familial/sporadic IPF",
+          "recommendation": "Baseline high-resolution CT chest; annual pulmonary function testing; occupational exposure assessment; smoking cessation strongly recommended; family counseling",
+          "severity": "moderate"
+        },
+        "TT": {
+          "phenotype": "Very high IPF risk",
+          "effect": "Homozygous for risk allele; ~20.8-21.8x increased risk; dramatically elevated disease susceptibility",
+          "recommendation": "Baseline HRCT and PFTs immediately; referral to IPF specialist; antifibrotic therapy consideration (pirfenidone or nintedanib) even for subclinical disease; close monitoring every 3-6 months; strict avoidance of environmental triggers; genetic counseling for family members",
+          "severity": "severe"
+        }
+      },
+      "population_frequency": {
+        "european": 0.09,
+        "african": 0.02,
+        "east_asian": 0.08,
+        "south_asian": 0.04,
+        "latino": 0.06
+      }
+    }
+  ],
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "gene": "IRF5",
+  "source": {
+    "title": "Association of IRF5 rs2004640 polymorphism and systemic lupus erythematosus: A meta-analysis",
+    "year": 2005,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/31347288/"
+  },
+  "source_type": "pubmed",
+  "evidence_level": "moderate",
+  "severity": "moderate",
+  "description": "IRF5 rs2004640 is a functional G/T polymorphism that alters splicing and increases interferon-alpha production. The T allele is associated with increased risk of Sjogren syndrome and systemic lupus erythematosus.",
+  "snps": [
+    {
+      "rsid": "rs2004640",
+      "location": "7q32.1",
+      "effect_allele": "T",
+      "reference_allele": "G",
+      "interpretations": {
+        "GG": {
+          "phenotype": "Lower SLE and Sjogren's disease risk",
+          "effect": "Reference homozygote; protective genotype",
+          "recommendation": "Standard health maintenance; family counseling if autoimmune disease in family",
+          "severity": "info"
+        },
+        "GT": {
+          "phenotype": "Intermediate SLE and Sjogren's risk",
+          "effect": "Heterozygous carrier; modest increased risk",
+          "recommendation": "Baseline ANA and anti-Ro/La antibody screening; monitor for symptoms (dry eyes, dry mouth, joint pain); periodic rheumatologic evaluation if symptoms",
+          "severity": "mild"
+        },
+        "TG": {
+          "phenotype": "Intermediate SLE and Sjogren's risk",
+          "effect": "Heterozygous carrier; modest increased risk",
+          "recommendation": "Baseline ANA and anti-Ro/La antibody screening; monitor for symptoms (dry eyes, dry mouth, joint pain); periodic rheumatologic evaluation if symptoms",
+          "severity": "mild"
+        },
+        "TT": {
+          "phenotype": "Elevated SLE and Sjogren's disease risk",
+          "effect": "Risk allele homozygote; substantially increased autoimmune risk across populations",
+          "recommendation": "Comprehensive autoimmune screening (ANA, anti-Ro/La, anti-Smith, complement levels); regular rheumatology monitoring; ophthalmology evaluation for ocular involvement; renal function monitoring",
+          "severity": "moderate"
+        }
+      },
+      "population_frequency": {
+        "european": 0.28,
+        "african": 0.15,
+        "east_asian": 0.22,
+        "south_asian": 0.18,
+        "latino": 0.25
+      }
+    }
+  ],
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

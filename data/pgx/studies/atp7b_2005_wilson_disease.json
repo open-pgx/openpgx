@@ -1,0 +1,58 @@
+{
+  "gene": "ATP7B",
+  "source": {
+    "title": "The H1069Q mutation in ATP7B is associated with late and neurologic presentation in Wilson disease",
+    "year": 2005,
+    "pmid": "15519648",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/15519648/"
+  },
+  "source_type": "pubmed",
+  "evidence_level": "established",
+  "severity": "severe",
+  "description": "ATP7B rs76151636 (H1069Q mutation) is the most common pathogenic variant causing Wilson disease in European and Caucasian populations. It results in impaired copper transport and neuropsychiatric presentation.",
+  "snps": [
+    {
+      "rsid": "rs76151636",
+      "location": "13q14.3",
+      "effect_allele": "A",
+      "reference_allele": "C",
+      "interpretations": {
+        "CC": {
+          "phenotype": "No Wilson disease from this variant",
+          "effect": "Wildtype homozygote",
+          "recommendation": "Standard health maintenance; family counseling if Wilson disease in family",
+          "severity": "info"
+        },
+        "CA": {
+          "phenotype": "Heterozygous carrier for H1069Q",
+          "effect": "Carrier; normal copper metabolism",
+          "recommendation": "No treatment needed; genetic counseling if planning pregnancy; confirm compound heterozygosity status with genetic testing",
+          "severity": "info"
+        },
+        "AC": {
+          "phenotype": "Heterozygous carrier for H1069Q",
+          "effect": "Carrier; normal copper metabolism",
+          "recommendation": "No treatment needed; genetic counseling if planning pregnancy; confirm compound heterozygosity status with genetic testing",
+          "severity": "info"
+        },
+        "AA": {
+          "phenotype": "Wilson disease (homozygous or compound heterozygous)",
+          "effect": "Pathogenic H1069Q variant carrier; manifests late and with neurologic symptoms typically age 15-45",
+          "recommendation": "Initiate copper chelation therapy (penicillamine or trientine); maintain low-copper diet; regular serum ceruloplasmin and copper monitoring; neurologic and ophthalmology evaluation; zinc supplementation as maintenance therapy",
+          "severity": "severe"
+        }
+      },
+      "population_frequency": {
+        "european": 0.014,
+        "african": 0.001,
+        "east_asian": 0.002,
+        "south_asian": 0.003,
+        "latino": 0.004
+      }
+    }
+  ],
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

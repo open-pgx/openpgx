@@ -1,0 +1,63 @@
+{
+  "gene": "SCN1A",
+  "category": "drug_target",
+  "gene_description": "Sodium Voltage-Gated Channel Alpha Subunit 1 (NaV1.1) — pore-forming alpha subunit of neuronal voltage-gated sodium channels essential for action potential initiation and propagation in inhibitory neurons. The rs11890028 intronic SNP is the lead disease-risk variant from the 2014 ILAE GWAS, with the highest association signal on chromosome 2q24.3 for common epilepsy. The SNP affects NaV1.1 expression levels, modulating neuronal excitability and seizure threshold across epilepsy subtypes.",
+  "drugs": [
+    "carbamazepine",
+    "phenytoin",
+    "valproate",
+    "lamotrigine",
+    "levetiracetam"
+  ],
+  "source": {
+    "pmid": "25087078",
+    "source_type": "pubmed",
+    "title": "Genetic determinants of common epilepsies: a meta-analysis of genome-wide association studies",
+    "journal": "The Lancet Neurology",
+    "year": 2014,
+    "cohort_size": 34853,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/25087078/"
+  },
+  "snps": [
+    {
+      "rsid": "rs11890028",
+      "risk_allele": "A",
+      "reference_allele": "G",
+      "note": "Lead SNP at 2q24.3 locus in intronic region of SCN1A; associated with disease susceptibility across genetic generalized and focal epilepsies",
+      "interpretations": {
+        "AA": {
+          "phenotype": "Increased epilepsy risk, potentially broad phenotype",
+          "effect": "Homozygous A-allele carriers show elevated epilepsy susceptibility (approximately 1.35-1.50x relative risk compared to GG carriers). The A allele is associated with altered SCN1A expression, likely reducing NaV1.1 channel density in inhibitory neurons and reducing GABAergic inhibition. Increased seizure susceptibility across multiple epilepsy subtypes including generalized and focal epilepsies. AA carriers show lower seizure threshold and variable antiepileptic drug (AED) responsiveness.",
+          "severity": "moderate"
+        },
+        "AG": {
+          "phenotype": "Mild increased epilepsy risk",
+          "effect": "Heterozygous carriers show mild-to-moderate epilepsy risk elevation (approximately 1.15-1.25x relative risk compared to GG carriers). Intermediate SCN1A expression and NaV1.1 channel density. Modest reduction in seizure threshold primarily affecting generalized seizure susceptibility. Most heterozygotes, if affected, show favorable AED responsiveness.",
+          "severity": "mild"
+        },
+        "GA": {
+          "phenotype": "Mild increased epilepsy risk",
+          "effect": "Heterozygous carriers show mild-to-moderate epilepsy risk elevation (approximately 1.15-1.25x relative risk compared to GG carriers). Intermediate SCN1A expression and NaV1.1 channel density. Modest reduction in seizure threshold primarily affecting generalized seizure susceptibility. Most heterozygotes, if affected, show favorable AED responsiveness.",
+          "severity": "mild"
+        },
+        "GG": {
+          "phenotype": "Baseline epilepsy risk",
+          "effect": "Homozygous G-allele carriers serve as reference group. Standard SCN1A expression and NaV1.1 channel density in inhibitory neurons. Normal seizure threshold and standard epilepsy prevalence without specific SCN1A-mediated risk elevation.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "global": 0.28,
+        "european": 0.30,
+        "african": 0.26,
+        "east_asian": 0.25,
+        "south_asian": 0.29
+      }
+    }
+  ],
+  "evidence_level": "moderate",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

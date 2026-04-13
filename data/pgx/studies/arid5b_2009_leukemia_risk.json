@@ -1,0 +1,68 @@
+{
+  "gene": "ARID5B",
+  "rsid": "rs10821936",
+  "cancer_type": "acute_lymphoblastic_leukemia",
+  "title": "ARID5B rs10821936 Childhood Acute Lymphoblastic Leukemia Risk",
+  "description": "Common variant in ARID5B (AT-rich interaction domain 5B) encoding a chromatin remodeling protein. The C allele is strongly associated with childhood B-cell precursor ALL, particularly B-hyperdiploid ALL subtype. ARID5B variants associate with methotrexate accumulation in leukemic cells, potentially affecting treatment response.",
+  "source": {
+    "title": "Germline genomic variants associated with childhood acute lymphoblastic leukemia",
+    "authors": ["Trevino LR", "Yang W", "French D", "et al."],
+    "year": 2009,
+    "journal": "Nature Genetics",
+    "volume": 41,
+    "pages": "1001-1005",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/19684603/"
+  },
+  "pmid": "19684603",
+  "source_type": "pubmed",
+  "evidence_level": "established",
+  "drugs": ["methotrexate", "vincristine", "asparaginase", "mercaptopurine"],
+  "snps": [
+    {
+      "rsid": "rs10821936",
+      "chromosome": "10",
+      "position": 63792513,
+      "ref_allele": "T",
+      "risk_allele": "C",
+      "interpretations": {
+        "TT": {
+          "phenotype": "normal_risk",
+          "effect": "baseline_childhood_ALL_risk",
+          "recommendation": "standard_chemotherapy",
+          "severity": "info"
+        },
+        "TC": {
+          "phenotype": "intermediate_risk",
+          "effect": "1.38x_increased_childhood_ALL_risk",
+          "recommendation": "standard_chemotherapy_methotrexate_monitoring",
+          "severity": "mild"
+        },
+        "CT": {
+          "phenotype": "intermediate_risk",
+          "effect": "1.38x_increased_childhood_ALL_risk",
+          "recommendation": "standard_chemotherapy_methotrexate_monitoring",
+          "severity": "mild"
+        },
+        "CC": {
+          "phenotype": "high_risk",
+          "effect": "1.6x_increased_childhood_ALL_risk",
+          "recommendation": "enhanced_monitoring_methotrexate_dose_optimization",
+          "severity": "moderate"
+        }
+      },
+      "population_frequency": {
+        "european": 0.32,
+        "african": 0.18,
+        "east_asian": 0.42,
+        "south_asian": 0.35,
+        "latino": 0.28
+      }
+    }
+  ],
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  },
+  "tags": ["cancer_risk", "acute_lymphoblastic_leukemia", "childhood_cancer", "gwas"],
+  "last_updated": "2026-04-12"
+}

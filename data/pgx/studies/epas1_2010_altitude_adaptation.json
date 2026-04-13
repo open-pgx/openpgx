@@ -1,0 +1,63 @@
+{
+  "gene": "EPAS1",
+  "category": "trait_adaptation",
+  "gene_description": "Endothelial Per-Arnt-Sim (PAS) domain protein 1 (EPAS1/HIF-2a) — oxygen-dependent transcription factor regulating erythropoietin production and hypoxic cellular response",
+  "drugs": [],
+  "source": {
+    "pmid": "20683017",
+    "doi": "10.1371/journal.pone.0011571",
+    "source_type": "pubmed",
+    "title": "Genetic variants in EPAS1 contribute to adaptation to high-altitude hypoxia in Sherpas",
+    "journal": "PLOS One",
+    "year": 2010,
+    "cohort_size": 40,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/20683017/",
+    "finding": "rs1868092 and rs4953354 SNPs significantly associated with altitude adaptation in Tibetan and Sherpa populations. Derived alleles reduce hemoglobin levels and risk of high-altitude polycythemia despite hypoxia. Evidence of ancient positive selection."
+  },
+  "snps": [
+    {
+      "rsid": "rs1868092",
+      "risk_allele": "G",
+      "reference_allele": "A",
+      "interpretations": {
+        "GG": {
+          "phenotype": "Enhanced Altitude Adaptation (Risk/Risk)",
+          "effect": "Homozygous for G allele. Optimized HIF-2a function for chronic hypoxia response. Controlled erythropoietin production prevents excessive hemoglobin elevation. Reduced risk of high-altitude polycythemia despite living at high altitude. Found at high frequency in Tibetan and Sherpa populations due to ancient positive selection (~10,000+ years). Maintains adequate oxygen delivery without pathological hemoglobin elevation.",
+          "recommendation": "Good tolerance for high-altitude living. Minimal risk for high-altitude polycythemia. Standard high-altitude precautions still appropriate (hydration, gradual ascent acclimatization).",
+          "severity": "info",
+          "odds_ratio": null
+        },
+        "AG": {
+          "phenotype": "Intermediate Altitude Adaptation (Heterozygous)",
+          "effect": "Heterozygous for G/A alleles. Intermediate HIF-2a responsiveness and erythropoietin regulation. Moderate altitude tolerance with intermediate hemoglobin response to hypoxia. Common in admixed populations with recent altitude exposure.",
+          "recommendation": "High-altitude living possible but may require gradual acclimatization. Monitor hemoglobin/hematocrit if living at high altitude chronically.",
+          "severity": "info"
+        },
+        "GA": {
+          "phenotype": "Intermediate Altitude Adaptation (Heterozygous)",
+          "effect": "Heterozygous for G/A alleles. Intermediate HIF-2a responsiveness and erythropoietin regulation. Moderate altitude tolerance with intermediate hemoglobin response to hypoxia. Common in admixed populations with recent altitude exposure.",
+          "recommendation": "High-altitude living possible but may require gradual acclimatization. Monitor hemoglobin/hematocrit if living at high altitude chronically.",
+          "severity": "info"
+        },
+        "AA": {
+          "phenotype": "Standard Altitude Response (Wild-type/Wild-type)",
+          "effect": "Homozygous for A allele (ancestral). Standard HIF-2a and erythropoietin response to hypoxia. Normal hemoglobin elevation at high altitude. Higher risk of high-altitude polycythemia with chronic hypoxia exposure, as hemoglobin can rise excessively (>20 g/dL).",
+          "recommendation": "High-altitude living possible but requires careful monitoring. Gradual acclimatization essential. Monitor hemoglobin/hematocrit regularly if living at high altitude (>2,500m). Consider iron status and hydration. Phlebotomy may be needed if hemoglobin becomes elevated (>20 g/dL).",
+          "severity": "mild"
+        }
+      },
+      "population_frequency": {
+        "european": 0.25,
+        "african": 0.15,
+        "east_asian": 0.45,
+        "south_asian": 0.38,
+        "latino": 0.30
+      }
+    }
+  ],
+  "evidence_level": "established",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

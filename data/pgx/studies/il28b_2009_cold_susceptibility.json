@@ -1,0 +1,67 @@
+{
+  "gene": "IL28B",
+  "category": "immune_trait",
+  "gene_description": "Interleukin 28B / Interferon Lambda 3 (IL28B/IFNL3) — type III interferon essential for innate immune response to viral infection and mucosal immunity",
+  "drugs": ["interferon_alpha", "ribavirin"],
+  "source": {
+    "pmid": "19684573",
+    "doi": "10.1038/nature07798",
+    "source_type": "pubmed",
+    "title": "Genetic variation in IL28B predicts hepatitis C treatment-induced viral clearance",
+    "journal": "Nature",
+    "year": 2009,
+    "cohort_size": 1671,
+    "cohort_size_note": "HCV treatment study",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/19684573/",
+    "finding": "rs12979860 CC genotype 2-3 times more likely to clear HCV spontaneously or with treatment (~80%) vs TT genotype (~25%). C allele associated with better innate viral immunity. Extends beyond HCV to other viral infections including respiratory viruses."
+  },
+  "snps": [
+    {
+      "rsid": "rs12979860",
+      "risk_allele": "T",
+      "reference_allele": "C",
+      "interpretations": {
+        "CC": {
+          "phenotype": "Robust Viral Clearance (Favorable Immune Response)",
+          "effect": "Homozygous for C allele. Optimal IL28B/IFNL3 expression and innate immune response to viral pathogens. Enhanced interferon lambda production and mucosal immunity. Approximately 80% clearance rate for HCV (vs 25% in TT genotype). Faster viral clearance observed in respiratory viral infections. Better spontaneous recovery from viral infections.",
+          "recommendation": "Good innate antiviral immunity. Standard prevention practices (vaccination, hygiene) sufficient. Favorable prognosis if exposed to hepatitis C or other viral infections.",
+          "severity": "info",
+          "odds_ratio": 3.0
+        },
+        "CT": {
+          "phenotype": "Intermediate Viral Clearance (Heterozygous)",
+          "effect": "Heterozygous for C/T alleles. Intermediate IL28B expression and immune response. HCV clearance rate approximately 50-60%. Intermediate response to viral infections.",
+          "recommendation": "Standard infection prevention practices. Monitor for signs of viral infection. Vaccination recommended for preventable viral diseases.",
+          "severity": "info",
+          "odds_ratio": 1.5
+        },
+        "TC": {
+          "phenotype": "Intermediate Viral Clearance (Heterozygous)",
+          "effect": "Heterozygous for C/T alleles. Intermediate IL28B expression and immune response. HCV clearance rate approximately 50-60%. Intermediate response to viral infections.",
+          "recommendation": "Standard infection prevention practices. Monitor for signs of viral infection. Vaccination recommended for preventable viral diseases.",
+          "severity": "info",
+          "odds_ratio": 1.5
+        },
+        "TT": {
+          "phenotype": "Reduced Viral Clearance (Impaired Immune Response)",
+          "effect": "Homozygous for T allele. Reduced IL28B/IFNL3 expression and weaker innate antiviral response. Only ~25% spontaneous HCV clearance rate. Higher risk of viral persistence and chronic infection. Slower clearance of respiratory viral infections.",
+          "recommendation": "Enhanced infection prevention essential: regular hand hygiene, vaccinations, avoid unnecessary pathogen exposure. Early antiviral treatment important if infected with hepatitis C or other serious viruses. Monitor for prolonged viral symptoms. Consider prophylaxis for high-risk exposures.",
+          "severity": "mild",
+          "odds_ratio": 0.25
+        }
+      },
+      "population_frequency": {
+        "european": 0.55,
+        "african": 0.35,
+        "east_asian": 0.65,
+        "south_asian": 0.45,
+        "latino": 0.40
+      }
+    }
+  ],
+  "evidence_level": "established",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

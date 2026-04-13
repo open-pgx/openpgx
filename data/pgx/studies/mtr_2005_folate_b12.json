@@ -1,0 +1,65 @@
+{
+  "gene": "MTR",
+  "description": "Methionine synthase and one-carbon metabolism, folate and B12 dependency",
+  "category": "folate_metabolism",
+  "drugs": [
+    "methylcobalamin",
+    "folic_acid",
+    "methylfolate"
+  ],
+  "source": {
+    "title": "Analysis of methionine synthase reductase polymorphisms for neural tube defects risk association",
+    "year": 2005,
+    "pmid": "15979034",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/15979034/",
+    "journal": "Molecular Genetics and Metabolism",
+    "authors": "Gaughan DJ, Barbaux S, Kluijtmans LA, et al.",
+    "source_type": "pubmed"
+  },
+  "source_type": "pubmed",
+  "evidence_level": "moderate",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  },
+  "snps": [
+    {
+      "rsid": "rs1805087",
+      "reference_allele": "A",
+      "risk_allele": "G",
+      "interpretations": {
+        "GG": {
+          "phenotype": "GG homozygote (Risk)",
+          "effect": "Homozygous for the G allele (risk allele), resulting in D919G homozygosity. Altered methionine synthase enzyme activity and reduced efficiency in B12-dependent remethylation. Associated with elevated homocysteine levels, impaired one-carbon metabolism.",
+          "recommendation": "Consult clinical guidelines.",
+          "severity": "moderate"
+        },
+        "AG": {
+          "phenotype": "AG heterozygote",
+          "effect": "Heterozygous carrier with one G allele. Intermediate methionine synthase activity with mildly reduced efficiency in folate-B12 dependent remethylation.",
+          "recommendation": "Consult clinical guidelines.",
+          "severity": "mild"
+        },
+        "GA": {
+          "phenotype": "AG heterozygote",
+          "effect": "Heterozygous carrier with one G allele. Intermediate methionine synthase activity with mildly reduced efficiency in folate-B12 dependent remethylation.",
+          "recommendation": "Consult clinical guidelines.",
+          "severity": "mild"
+        },
+        "AA": {
+          "phenotype": "AA homozygote (Reference)",
+          "effect": "Homozygous for the A allele (reference allele). Normal methionine synthase enzyme function and efficient B12-dependent remethylation.",
+          "recommendation": "Consult clinical guidelines.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.34,
+        "african": 0.28,
+        "east_asian": 0.46,
+        "south_asian": 0.38,
+        "latino": 0.32
+      }
+    }
+  ]
+}

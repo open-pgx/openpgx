@@ -1,0 +1,70 @@
+{
+  "gene": "COMT",
+  "full_name": "Catechol-O-Methyltransferase",
+  "category": "catecholamine",
+  "relevant_drugs": [
+    "morphine",
+    "oxycodone",
+    "tramadol",
+    "ibuprofen",
+    "acetaminophen"
+  ],
+  "source": {
+    "title": "Genetic basis for individual variations in pain perception and the development of a chronic pain condition",
+    "authors": "Diatchenko et al.",
+    "year": 2006,
+    "pmid": "16520807",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/16520807/",
+    "publication_type": "genetic association study",
+    "subjects": 2737,
+    "journal": "Human Molecular Genetics",
+    "source_type": "pubmed"
+  },
+  "source_type": "pubmed",
+  "evidence_level": "moderate",
+  "condition": "Chronic Pain Susceptibility",
+  "snps": [
+    {
+      "rsid": "rs4680",
+      "interpretations": {
+        "AA": {
+          "phenotype": "Met/Met low enzymatic activity",
+          "effect": "Homozygous Met carriers have significantly reduced COMT enzymatic activity (~20-fold reduction compared to Val/Val), leading to elevated catecholamine levels. Associated with heightened pain sensitivity and increased pain perception across experimental paradigms. Higher opioid analgesic requirements for pain management. Increased risk for developing chronic pain conditions. May require dosage adjustments for analgesic medications.",
+          "recommendation": "Consult clinical guidelines.",
+          "severity": "moderate"
+        },
+        "AG": {
+          "phenotype": "Val/Met intermediate enzymatic activity",
+          "effect": "Heterozygous carriers show intermediate COMT enzymatic activity with moderate catecholamine metabolism. Associated with mild to moderate increase in pain sensitivity relative to Val/Val genotype. Intermediate opioid requirements and moderate risk for chronic pain development.",
+          "recommendation": "Consult clinical guidelines.",
+          "severity": "mild"
+        },
+        "GA": {
+          "phenotype": "Met/Val intermediate enzymatic activity",
+          "effect": "Heterozygous carriers show intermediate COMT enzymatic activity with moderate catecholamine metabolism. Associated with mild to moderate increase in pain sensitivity relative to Val/Val genotype. Intermediate opioid requirements and moderate risk for chronic pain development.",
+          "recommendation": "Consult clinical guidelines.",
+          "severity": "mild"
+        },
+        "GG": {
+          "phenotype": "Val/Val high enzymatic activity",
+          "effect": "Homozygous Val carriers have high COMT enzymatic activity with efficient catecholamine metabolism and lower baseline catecholamine levels. Associated with lower pain sensitivity and reduced pain perception. Lower opioid requirements for analgesia. Lower baseline risk for chronic pain development. Standard analgesic dosing typically appropriate.",
+          "recommendation": "Consult clinical guidelines.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.18,
+        "african": 0.1,
+        "east_asian": 0.12,
+        "south_asian": 0.14,
+        "latino": 0.16
+      }
+    }
+  ],
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  },
+  "created_date": "2026-04-12",
+  "notes": "COMT Val158Met (rs4680) is a functional polymorphism affecting catecholamine metabolism. Three common haplotypes (LPS/APS/HPS) show dramatic differences in enzyme activity driven by both the Val158Met coding change and regulatory synonymous variations affecting mRNA secondary structure. Met carriers have substantially increased pain sensitivity and higher risk for chronic pain conditions."
+}

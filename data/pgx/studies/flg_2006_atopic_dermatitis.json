@@ -1,0 +1,70 @@
+{
+  "gene": "FLG",
+  "gene_full_name": "Filaggrin",
+  "region": "Exon 3, position 501",
+  "category": "immune",
+  "phenotype": "Atopic Dermatitis and Eczema",
+  "description": "FLG rs61816761 (R501X) loss-of-function variant affecting the filaggrin protein critical for skin barrier function. Homozygous loss-of-function variants confer ~7x increased eczema risk and impaired epidermal barrier, with secondary increased asthma risk.",
+  "source": {
+    "title": "Common loss-of-function variants of the epidermal barrier protein filaggrin are a major predisposing factor for atopic dermatitis",
+    "year": 2006,
+    "authors": "Palmer CN, Irvine AD, Terron-Kwiatkowski A, et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/16550169/",
+    "pmid": "16550169",
+    "journal": "Nature Genetics",
+    "volume": 38,
+    "pages": "441-446",
+    "source_type": "pubmed"
+  },
+  "source_type": "pubmed",
+  "evidence_level": "established",
+  "snps": [
+    {
+      "rsid": "rs61816761",
+      "risk_allele": "A",
+      "interpretations": {
+        "AA": {
+          "phenotype": "High genetic susceptibility to atopic dermatitis with severely impaired skin barrier",
+          "effect": "High genetic susceptibility to atopic dermatitis with severely impaired skin barrier",
+          "recommendation": "Aggressive skin care with frequent emolliation and ceramide-rich moisturizers. Early recognition and treatment of eczema flares. Topical corticosteroids or calcineurin inhibitors as first-line. Consider dupilumab or other biologics for moderate-severe disease. Monitor for asthma and allergic rhinitis. Avoid allergen triggers.",
+          "severity": "info"
+        },
+        "AG": {
+          "phenotype": "Moderate increased genetic susceptibility to atopic dermatitis",
+          "effect": "Moderate increased genetic susceptibility to atopic dermatitis",
+          "recommendation": "Regular skin care with emollients. Early treatment of eczema flares with topical agents. Avoid irritants and allergens. Monitor for asthma development. Dupilumab or tacrolimus/pimecrolimus for moderate disease.",
+          "severity": "info"
+        },
+        "GA": {
+          "phenotype": "Moderate increased genetic susceptibility to atopic dermatitis",
+          "effect": "Moderate increased genetic susceptibility to atopic dermatitis",
+          "recommendation": "Regular skin care with emollients. Early treatment of eczema flares with topical agents. Avoid irritants and allergens. Monitor for asthma development. Dupilumab or tacrolimus/pimecrolimus for moderate disease.",
+          "severity": "info"
+        },
+        "GG": {
+          "phenotype": "Normal skin barrier function; no increased FLG-related eczema risk",
+          "effect": "Normal skin barrier function; no increased FLG-related eczema risk",
+          "recommendation": "Standard dermatologic care if other causes of eczema present; genetic predisposition via FLG not a factor",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.09,
+        "african": 0.02,
+        "east_asian": 0.01,
+        "south_asian": 0.03,
+        "latino": 0.05
+      }
+    }
+  ],
+  "drugs": [
+    "dupilumab",
+    "tacrolimus",
+    "pimecrolimus",
+    "crisaborole"
+  ],
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

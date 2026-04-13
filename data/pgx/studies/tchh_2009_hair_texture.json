@@ -1,0 +1,63 @@
+{
+  "gene": "TCHH",
+  "category": "trait_appearance",
+  "gene_description": "Trichohyalin (TCHH) — structural protein in hair follicles involved in cross-linking of keratin filaments and determining hair fiber morphology",
+  "drugs": [],
+  "source": {
+    "pmid": "19896111",
+    "doi": "10.1371/journal.pgen.1000539",
+    "source_type": "pubmed",
+    "title": "Common variants in the trichohyalin gene are associated with straight hair in Europeans",
+    "journal": "PLoS Genetics",
+    "year": 2009,
+    "cohort_size": null,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/19896111/",
+    "finding": "rs11803731 T allele (leucine-to-methionine at position 790) accounts for ~6% of hair curliness variance. T allele carriers show 70% likelihood of straight hair vs 50% in non-carriers."
+  },
+  "snps": [
+    {
+      "rsid": "rs11803731",
+      "risk_allele": "T",
+      "reference_allele": "A",
+      "interpretations": {
+        "TT": {
+          "phenotype": "Straight Hair (Met790/Met790)",
+          "effect": "Homozygous for methionine at position 790. Strong association with straight hair phenotype. Approximately 70% of T allele carriers have straight hair. T allele affects cross-linking of keratin filaments in hair shaft, leading to reduced curliness.",
+          "recommendation": "No clinical action needed. Hair care recommendations tailored to straight hair products (volumizing shampoos if fine, smoothing products for frizz control).",
+          "severity": "info",
+          "odds_ratio": null
+        },
+        "AT": {
+          "phenotype": "Straight/Wavy Hair (Met790/Leu790)",
+          "effect": "Heterozygous for mixed methionine/leucine alleles. Intermediate hair texture phenotype—more likely straight but some wavy hair observed. Intermediate effects on keratin cross-linking.",
+          "recommendation": "No clinical action needed. Hair care routine depends on individual phenotype expression.",
+          "severity": "info"
+        },
+        "TA": {
+          "phenotype": "Straight/Wavy Hair (Met790/Leu790)",
+          "effect": "Heterozygous for mixed methionine/leucine alleles. Intermediate hair texture phenotype—more likely straight but some wavy hair observed. Intermediate effects on keratin cross-linking.",
+          "recommendation": "No clinical action needed. Hair care routine depends on individual phenotype expression.",
+          "severity": "info"
+        },
+        "AA": {
+          "phenotype": "Curly Hair (Leu790/Leu790)",
+          "effect": "Homozygous for ancestral leucine at position 790. Associated with curly or wavy hair texture. Represents the ancestral trait. Leucine maintains normal cross-linking of keratin filaments, permitting natural hair curl.",
+          "recommendation": "No clinical action needed. Hair care recommendations for curly hair (moisturizing products, curl-enhancing treatments).",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.42,
+        "african": 0.18,
+        "east_asian": 0.35,
+        "south_asian": 0.25,
+        "latino": 0.28
+      }
+    }
+  ],
+  "evidence_level": "moderate",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

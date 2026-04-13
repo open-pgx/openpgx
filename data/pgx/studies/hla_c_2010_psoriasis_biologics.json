@@ -2,11 +2,15 @@
   "gene": "HLA-C",
   "category": "immune",
   "gene_description": "HLA class I molecule HLA-C — presents antigens to immune cells; HLA-C*06:02 allele associated with psoriasis susceptibility and exceptional response to IL-12/23 biologics (ustekinumab, risankizumab)",
-  "drugs": ["ustekinumab", "risankizumab", "guselkumab"],
+  "drugs": [
+    "ustekinumab",
+    "risankizumab",
+    "guselkumab"
+  ],
   "source": {
     "pmid": "27043841",
     "doi": "10.1007/s40291-016-0198-z",
-    "source_type": "clinical_study",
+    "source_type": "pubmed",
     "title": "A pharmacogenetic study of psoriasis risk variants and prediction of responses to anti-TNF-alpha and anti-IL-12/23 agents",
     "journal": "Molecular Diagnosis & Therapy",
     "year": 2016,

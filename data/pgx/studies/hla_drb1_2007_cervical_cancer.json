@@ -1,0 +1,69 @@
+{
+  "gene": "HLA-DRB1",
+  "rsid": "rs9272143",
+  "cancer_type": "cervical_cancer",
+  "title": "HLA-DRB1 rs9272143 Cervical Cancer Risk (MHC Class II)",
+  "description": "Tag SNP upstream of HLA-DRB1 in the MHC class II region associated with cervical cancer susceptibility. HLA-DRB1 encodes the beta chain of HLA-DR molecules essential for antigen presentation to CD4+ T helper cells. Variants affecting HLA expression influence immune response to HPV infection, modulating cervical cancer risk. The C allele confers protection against cervical cancer development.",
+  "source": {
+    "title": "A variant upstream of HLA-DRB1 and multiple variants in MICA influence susceptibility to cervical cancer",
+    "authors": ["Hildesheim A", "Wacholder S", "Rodriquez AC", "et al."],
+    "year": 2007,
+    "journal": "Nature Genetics",
+    "volume": 39,
+    "pages": "1369-1373",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/17952073/"
+  },
+  "pmid": "17952073",
+  "source_type": "pubmed",
+  "evidence_level": "moderate",
+  "category": "immune",
+  "drugs": ["cisplatin", "pembrolizumab", "bevacizumab", "HPV_vaccine"],
+  "snps": [
+    {
+      "rsid": "rs9272143",
+      "chromosome": "6",
+      "position": 32662789,
+      "ref_allele": "T",
+      "risk_allele": "C",
+      "interpretations": {
+        "TT": {
+          "phenotype": "increased_risk",
+          "effect": "reduced_HLA-DRB1_expression_increased_cervical_cancer_risk",
+          "recommendation": "HPV_vaccination_enhanced_screening",
+          "severity": "moderate"
+        },
+        "TC": {
+          "phenotype": "intermediate_risk",
+          "effect": "intermediate_HLA-DRB1_expression",
+          "recommendation": "HPV_vaccination_standard_screening",
+          "severity": "mild"
+        },
+        "CT": {
+          "phenotype": "intermediate_risk",
+          "effect": "intermediate_HLA-DRB1_expression",
+          "recommendation": "HPV_vaccination_standard_screening",
+          "severity": "mild"
+        },
+        "CC": {
+          "phenotype": "protected",
+          "effect": "0.73x_decreased_cervical_cancer_risk",
+          "recommendation": "standard_surveillance",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.52,
+        "african": 0.38,
+        "east_asian": 0.45,
+        "south_asian": 0.48,
+        "latino": 0.50
+      }
+    }
+  ],
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  },
+  "tags": ["cancer_risk", "cervical_cancer", "HLA", "immune_function", "HPV"],
+  "last_updated": "2026-04-12"
+}

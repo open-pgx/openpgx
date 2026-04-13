@@ -1,0 +1,65 @@
+{
+  "gene": "HFE",
+  "description": "Homeostatic iron regulator protein and iron metabolism",
+  "category": "nutrient_absorption",
+  "drugs": [
+    "iron_supplements",
+    "deferoxamine",
+    "deferasirox"
+  ],
+  "source": {
+    "title": "A novel MHC class I-like gene is mutated in patients with hereditary haemochromatosis",
+    "year": 1996,
+    "pmid": "8696333",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/8696333/",
+    "journal": "Nature Genetics",
+    "authors": "Feder JN, Gnirke A, Thomas W, et al.",
+    "source_type": "pubmed"
+  },
+  "source_type": "pubmed",
+  "evidence_level": "established",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  },
+  "snps": [
+    {
+      "rsid": "rs1800562",
+      "reference_allele": "G",
+      "risk_allele": "A",
+      "interpretations": {
+        "AA": {
+          "phenotype": "AA homozygote (C282Y/C282Y)",
+          "effect": "Homozygous for the A allele (risk allele), resulting in C282Y homozygosity. Strong risk for hereditary hemochromatosis with iron overload. Elevated transferrin saturation and serum ferritin. Associated with progressive organ damage including cirrhosis, cardiomyopathy, and endocrine dysfunction. Requires iron chelation therapy and avoid iron supplements.",
+          "recommendation": "Consult clinical guidelines.",
+          "severity": "severe"
+        },
+        "AG": {
+          "phenotype": "AG heterozygote (C282Y/WT)",
+          "effect": "Heterozygous carrier with one C282Y mutation. Mild to moderate elevation in iron stores, mildly elevated transferrin saturation. Monitor ferritin levels. May develop iron overload later in life, particularly with additional risk factors.",
+          "recommendation": "Consult clinical guidelines.",
+          "severity": "moderate"
+        },
+        "GA": {
+          "phenotype": "AG heterozygote (C282Y/WT)",
+          "effect": "Heterozygous carrier with one C282Y mutation. Mild to moderate elevation in iron stores, mildly elevated transferrin saturation. Monitor ferritin levels. May develop iron overload later in life, particularly with additional risk factors.",
+          "recommendation": "Consult clinical guidelines.",
+          "severity": "moderate"
+        },
+        "GG": {
+          "phenotype": "GG homozygote (WT/WT)",
+          "effect": "Homozygous for the G allele (reference/wild-type), no C282Y mutations. Normal iron metabolism and regulation.",
+          "recommendation": "Consult clinical guidelines.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.07,
+        "african": 0.01,
+        "east_asian": 0.0,
+        "south_asian": 0.01,
+        "latino": 0.02
+      }
+    }
+  ]
+}

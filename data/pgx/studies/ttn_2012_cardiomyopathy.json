@@ -1,0 +1,57 @@
+{
+  "gene": "TTN",
+  "source": {
+    "title": "Truncations of Titin Causing Dilated Cardiomyopathy",
+    "year": 2012,
+    "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa1110186"
+  },
+  "source_type": "pubmed",
+  "evidence_level": "moderate",
+  "severity": "life_threatening",
+  "description": "TTN (Titin) truncating variants are the most common genetic cause of heritable dilated cardiomyopathy, accounting for up to 25% of familial cases. TTN is a critical sarcomeric protein essential for myocardial function.",
+  "snps": [
+    {
+      "rsid": "rs2042995",
+      "location": "2q31.2",
+      "effect_allele": "A",
+      "reference_allele": "G",
+      "interpretations": {
+        "GG": {
+          "phenotype": "Lower dilated cardiomyopathy risk",
+          "effect": "Reference homozygote",
+          "recommendation": "Standard cardiac health maintenance; family screening based on history",
+          "severity": "info"
+        },
+        "GA": {
+          "phenotype": "Possible heterozygous carrier effect",
+          "effect": "Carrier for TTN variation; risk profile depends on specific variant type",
+          "recommendation": "Baseline echocardiogram; periodic cardiac monitoring; genetic counseling; family screening",
+          "severity": "moderate"
+        },
+        "AG": {
+          "phenotype": "Possible heterozygous carrier effect",
+          "effect": "Carrier for TTN variation; risk profile depends on specific variant type",
+          "recommendation": "Baseline echocardiogram; periodic cardiac monitoring; genetic counseling; family screening",
+          "severity": "moderate"
+        },
+        "AA": {
+          "phenotype": "Elevated dilated cardiomyopathy risk",
+          "effect": "Homozygous or compound heterozygous for pathogenic TTN variants",
+          "recommendation": "Comprehensive cardiac evaluation including echocardiogram and genetic testing; specialist cardiology care; family member screening; device therapy consideration",
+          "severity": "life_threatening"
+        }
+      },
+      "population_frequency": {
+        "european": 0.15,
+        "african": 0.12,
+        "east_asian": 0.18,
+        "south_asian": 0.14,
+        "latino": 0.16
+      }
+    }
+  ],
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

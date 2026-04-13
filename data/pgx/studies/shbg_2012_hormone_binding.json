@@ -2,11 +2,15 @@
   "gene": "SHBG",
   "category": "drug_target",
   "gene_description": "Sex hormone-binding globulin (SHBG) — binds testosterone and estradiol, regulating hormone bioavailability; the Pro185Leu variant reduces SHBG binding affinity and increases free hormone levels",
-  "drugs": ["hormone_replacement_therapy", "testosterone", "estradiol"],
+  "drugs": [
+    "hormone_replacement_therapy",
+    "testosterone",
+    "estradiol"
+  ],
   "source": {
     "pmid": "22028093",
     "doi": "10.1038/clpt.2011.253",
-    "source_type": "gwas",
+    "source_type": "pubmed",
     "title": "Genetics of sex hormone-binding globulin and testosterone levels in fertile and infertile men",
     "journal": "Journal of the Endocrine Society",
     "year": 2012,

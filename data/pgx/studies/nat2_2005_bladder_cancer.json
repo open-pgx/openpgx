@@ -1,0 +1,68 @@
+{
+  "gene": "NAT2",
+  "rsid": "rs1799930",
+  "cancer_type": "bladder_cancer",
+  "title": "NAT2 rs1799930 Bladder Cancer Risk (Slow Acetylator Variant)",
+  "description": "Loss-of-function variant in N-acetyltransferase 2 defining slow acetylator phenotype. NAT2 encodes a phase II detoxification enzyme that inactivates aromatic amines. Slow acetylators have reduced capacity to detoxify bladder carcinogens, increasing cancer risk. This SNP is part of the NAT2*6 haplotype.",
+  "source": {
+    "title": "NAT2 slow acetylation and bladder cancer risk: a meta-analysis of case-control studies",
+    "authors": ["Garcia-Closas M", "Malats N", "Silverman D", "et al."],
+    "year": 2005,
+    "journal": "Carcinogenesis",
+    "volume": 26,
+    "pages": "821-830",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/10761999/"
+  },
+  "pmid": "10761999",
+  "source_type": "pubmed",
+  "evidence_level": "moderate",
+  "drugs": ["cisplatin", "gemcitabine", "atezolizumab", "erdafitinib"],
+  "snps": [
+    {
+      "rsid": "rs1799930",
+      "chromosome": "8",
+      "position": 41376347,
+      "ref_allele": "G",
+      "risk_allele": "A",
+      "interpretations": {
+        "GG": {
+          "phenotype": "rapid_acetylator",
+          "effect": "baseline_bladder_cancer_risk",
+          "recommendation": "standard_surveillance",
+          "severity": "info"
+        },
+        "GA": {
+          "phenotype": "intermediate_acetylator",
+          "effect": "1.2x_increased_bladder_cancer_risk",
+          "recommendation": "enhanced_surveillance_avoid_aromatic_amines",
+          "severity": "mild"
+        },
+        "AG": {
+          "phenotype": "intermediate_acetylator",
+          "effect": "1.2x_increased_bladder_cancer_risk",
+          "recommendation": "enhanced_surveillance_avoid_aromatic_amines",
+          "severity": "mild"
+        },
+        "AA": {
+          "phenotype": "slow_acetylator",
+          "effect": "1.4-2.1x_increased_bladder_cancer_risk",
+          "recommendation": "aggressive_surveillance_optimal_chemotherapy",
+          "severity": "moderate"
+        }
+      },
+      "population_frequency": {
+        "european": 0.42,
+        "african": 0.35,
+        "east_asian": 0.38,
+        "south_asian": 0.45,
+        "latino": 0.40
+      }
+    }
+  ],
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  },
+  "tags": ["cancer_risk", "bladder_cancer", "detoxification", "acetylation"],
+  "last_updated": "2026-04-12"
+}

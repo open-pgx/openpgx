@@ -1,0 +1,57 @@
+{
+  "gene": "SLC1A1",
+  "source": {
+    "title": "Glutamate transporter gene SLC1A1 associated with obsessive-compulsive disorder",
+    "year": 2006,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/16818866/"
+  },
+  "source_type": "pubmed",
+  "evidence_level": "emerging",
+  "severity": "mild",
+  "description": "SLC1A1 rs301434 is associated with obsessive-compulsive disorder susceptibility, particularly in males and those with hoarding symptoms. The gene encodes the neuronal glutamate transporter EAAT3.",
+  "snps": [
+    {
+      "rsid": "rs301434",
+      "location": "9p24.2",
+      "effect_allele": "G",
+      "reference_allele": "A",
+      "interpretations": {
+        "AA": {
+          "phenotype": "Lower OCD risk",
+          "effect": "Reference homozygote",
+          "recommendation": "Standard mental health monitoring; baseline assessment only",
+          "severity": "info"
+        },
+        "AG": {
+          "phenotype": "Intermediate OCD susceptibility",
+          "effect": "Heterozygous carrier; modest increased OCD risk, particularly in males",
+          "recommendation": "Psychiatric screening; monitor for obsessive or compulsive symptoms; early intervention if symptoms develop; family history assessment",
+          "severity": "mild"
+        },
+        "GA": {
+          "phenotype": "Intermediate OCD susceptibility",
+          "effect": "Heterozygous carrier; modest increased OCD risk, particularly in males",
+          "recommendation": "Psychiatric screening; monitor for obsessive or compulsive symptoms; early intervention if symptoms develop; family history assessment",
+          "severity": "mild"
+        },
+        "GG": {
+          "phenotype": "Elevated OCD susceptibility",
+          "effect": "Homozygous for risk allele; substantially increased glutamatergic dysfunction risk",
+          "recommendation": "Comprehensive psychiatric evaluation; OCD screening with Yale-Brown Obsessive Compulsive Scale; early cognitive-behavioral therapy if symptoms present; medication options (SSRIs); augmentation with glutamatergic agents may be considered",
+          "severity": "mild"
+        }
+      },
+      "population_frequency": {
+        "european": 0.32,
+        "african": 0.28,
+        "east_asian": 0.38,
+        "south_asian": 0.35,
+        "latino": 0.30
+      }
+    }
+  ],
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

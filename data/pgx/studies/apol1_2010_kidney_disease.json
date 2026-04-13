@@ -1,0 +1,65 @@
+{
+  "gene": "APOL1",
+  "category": "immune",
+  "gene_description": "Apolipoprotein L1 — a serum protein with innate immune function against trypanosomes. Two African-ancestry-enriched variants (G1 and G2) confer strong kidney disease risk through increased cellular toxicity and podocyte injury, inherited in recessive fashion (two risk alleles required for high risk).",
+  "drugs": ["lisinopril", "losartan", "amlodipine", "dapagliflozin"],
+  "source": {
+    "pmid": "20647424",
+    "doi": "10.1126/science.1193032",
+    "source_type": "pubmed",
+    "title": "Association of trypanolytic ApoL1 variants with kidney disease in African Americans",
+    "journal": "Science",
+    "year": 2010,
+    "cohort_size": 1000,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/20647424/",
+    "finding": "Two APOL1 variants (G1 rs73885319 and G2) show strong association with focal segmental glomerulosclerosis (FSGS, OR = 10.5, 95% CI 6.0–18.4) and hypertension-attributed end-stage kidney disease (H-ESKD, OR = 7.3, 95% CI 5.6–9.5) in African Americans. Variants show positive selection signatures and are absent from European populations. Only kidney disease-associated variants retain trypanolytic activity in vitro."
+  },
+  "snps": [
+    {
+      "rsid": "rs73885319",
+      "risk_allele": "A",
+      "reference_allele": "G",
+      "interpretations": {
+        "AA": {
+          "phenotype": "APOL1 G1/G1 homozygous — highest kidney disease risk (recessive model)",
+          "effect": "Homozygous for G1 risk variant. 7–10 fold increased risk of focal segmental glomerulosclerosis (FSGS) and hypertension-attributed ESKD in African Americans. Recessive inheritance: two risk alleles required for high penetrance. Increased podocyte toxicity, cytotoxicity, and cell death. Impaired cellular autophagy. Higher rates of FSGS, HIVAN (HIV-associated nephropathy), and ESKD progression.",
+          "recommendation": "Intensive renal protective therapy: ACE inhibitors (lisinopril, enalapril) or ARBs (losartan, valsartan) as first-line. SGLT2 inhibitors (dapagliflozin, empagliflozin) for additional renal and cardiovascular protection. Strict blood pressure control (target <120 mmHg systolic). Avoid NSAIDs. Monitor serum creatinine and urine protein regularly (every 3–6 months). Consider nephrology referral. Screen for proteinuria and hematuria. Manage diabetes aggressively if present. Genetic counseling: high recurrence risk in family members.",
+          "severity": "severe",
+          "odds_ratio": 8.5
+        },
+        "AG": {
+          "phenotype": "APOL1 G1/G2 or G1/reference heterozygous — minimal increased risk alone (carrier status)",
+          "effect": "Heterozygous carrier of one G1 risk allele. In recessive inheritance model, single allele carrier has minimal increased kidney disease risk on its own. Risk significantly increases only if individual carries two risk alleles (compound heterozygous or homozygous). Population studies show heterozygotes have near-normal kidney function and disease risk.",
+          "recommendation": "Standard kidney health guidelines. Annual renal function monitoring (serum creatinine, eGFR). Maintain normal blood pressure. Adequate hydration. Screen family members for APOL1 status (genetic testing recommended in African Americans with kidney disease or strong family history). Lifestyle modifications: avoid smoking, limit alcohol, maintain healthy weight.",
+          "severity": "mild",
+          "odds_ratio": 1.2
+        },
+        "GA": {
+          "phenotype": "APOL1 G1/G2 or G1/reference heterozygous — minimal increased risk alone (carrier status)",
+          "effect": "Heterozygous carrier of one G1 risk allele. In recessive inheritance model, single allele carrier has minimal increased kidney disease risk on its own. Risk significantly increases only if individual carries two risk alleles (compound heterozygous or homozygous). Population studies show heterozygotes have near-normal kidney function and disease risk.",
+          "recommendation": "Standard kidney health guidelines. Annual renal function monitoring (serum creatinine, eGFR). Maintain normal blood pressure. Adequate hydration. Screen family members for APOL1 status (genetic testing recommended in African Americans with kidney disease or strong family history). Lifestyle modifications: avoid smoking, limit alcohol, maintain healthy weight.",
+          "severity": "mild",
+          "odds_ratio": 1.2
+        },
+        "GG": {
+          "phenotype": "APOL1 reference/reference homozygous — standard kidney disease risk",
+          "effect": "Homozygous for wild-type reference alleles. Normal APOL1 function. Kidney disease risk from this locus is minimal and determined by other genetic and environmental factors (hypertension, diabetes, obesity, smoking). Standard population kidney disease risk applies.",
+          "recommendation": "Standard preventive care: maintain healthy blood pressure, healthy weight, avoid smoking and excessive alcohol. Regular kidney function screening as part of routine health maintenance. Control diabetes if present. Stay well-hydrated.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.0,
+        "african": 0.13,
+        "east_asian": 0.0,
+        "south_asian": 0.01,
+        "latino": 0.02
+      }
+    }
+  ],
+  "evidence_level": "established",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

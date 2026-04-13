@@ -1,0 +1,68 @@
+{
+  "gene": "CHRNA5",
+  "rsid": "rs8034191",
+  "cancer_type": "lung_cancer",
+  "title": "CHRNA5 rs8034191 Lung Cancer Risk (Nicotinic Acetylcholine Receptor)",
+  "description": "Common variant in CHRNA5 encoding alpha-5 subunit of nicotinic acetylcholine receptor, associated with increased lung cancer susceptibility and smoking behavior. This tag SNP marks the 15q25.1 susceptibility locus.",
+  "source": {
+    "title": "Genome-wide association scan of tag SNPs identifies a susceptibility locus for lung cancer at 15q25.1",
+    "authors": ["Amos CI", "Wu X", "Broderick P", "et al."],
+    "year": 2008,
+    "journal": "Nature Genetics",
+    "volume": 40,
+    "pages": "616-622",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/18385676/"
+  },
+  "pmid": "18385676",
+  "source_type": "pubmed",
+  "evidence_level": "established",
+  "drugs": ["cisplatin", "carboplatin", "pembrolizumab", "osimertinib"],
+  "snps": [
+    {
+      "rsid": "rs8034191",
+      "chromosome": "15",
+      "position": 24951605,
+      "ref_allele": "T",
+      "risk_allele": "C",
+      "interpretations": {
+        "TT": {
+          "phenotype": "normal_risk",
+          "effect": "baseline_lung_cancer_risk",
+          "recommendation": "standard_surveillance",
+          "severity": "info"
+        },
+        "TC": {
+          "phenotype": "intermediate_risk",
+          "effect": "increased_lung_cancer_susceptibility",
+          "recommendation": "enhanced_screening_smoking_cessation",
+          "severity": "mild"
+        },
+        "CT": {
+          "phenotype": "intermediate_risk",
+          "effect": "increased_lung_cancer_susceptibility",
+          "recommendation": "enhanced_screening_smoking_cessation",
+          "severity": "mild"
+        },
+        "CC": {
+          "phenotype": "high_risk",
+          "effect": "1.8x_increased_lung_cancer_risk",
+          "recommendation": "aggressive_screening_chemotherapy_optimization",
+          "severity": "moderate"
+        }
+      },
+      "population_frequency": {
+        "european": 0.28,
+        "african": 0.12,
+        "east_asian": 0.18,
+        "south_asian": 0.22,
+        "latino": 0.24
+      }
+    }
+  ],
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  },
+  "tags": ["cancer_risk", "lung_cancer", "nicotinic_receptor", "gwas"],
+  "last_updated": "2026-04-12"
+}

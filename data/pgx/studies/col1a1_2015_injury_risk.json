@@ -1,0 +1,63 @@
+{
+  "gene": "COL1A1",
+  "category": "musculoskeletal_trait",
+  "gene_description": "Collagen type I alpha 1 chain (COL1A1) — structural protein in tendons, ligaments, and bones; first intron Sp1 binding site polymorphism affects type I collagen expression",
+  "drugs": [],
+  "source": {
+    "pmid": "28206959",
+    "doi": "10.18632/oncotarget.15271",
+    "source_type": "pubmed",
+    "title": "Association of polymorphisms rs1800012 in COL1A1 with sports-related tendon and ligament injuries: a meta-analysis",
+    "journal": "Oncotarget",
+    "year": 2017,
+    "cohort_size": 1914,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/28206959/",
+    "finding": "rs1800012 TT genotype (rare allele) is protective against sports-related tendon/ligament injuries (OR=0.17 in homozygote model). GG genotype increases collagen α1:α2 imbalance, reducing tendon/ligament structural integrity."
+  },
+  "snps": [
+    {
+      "rsid": "rs1800012",
+      "risk_allele": "G",
+      "reference_allele": "T",
+      "interpretations": {
+        "GG": {
+          "phenotype": "Higher Injury Risk (Risk/Risk)",
+          "effect": "Homozygous for G allele. Enhanced COL1A1 expression creating imbalance in α1:α2 collagen chain ratio (>2:1). Alters tendon/ligament microarchitecture, reducing structural integrity and tensile strength. Increased susceptibility to sports-related ACL tears, Achilles tendon injuries, rotator cuff tears, and tennis elbow.",
+          "recommendation": "Enhanced injury prevention strategies essential. Emphasize proper warm-up, gradual training progression, strength training for joint stabilizers, flexibility work, and adequate recovery. Consider medical clearance before intense sports. Use protective equipment. Avoid sudden training intensity increases.",
+          "severity": "moderate",
+          "odds_ratio": 2.5
+        },
+        "GT": {
+          "phenotype": "Intermediate Injury Risk (Heterozygous)",
+          "effect": "Heterozygous for G/T alleles. Intermediate collagen α1:α2 ratio. Intermediate tendon/ligament structural properties. Some increased injury risk compared to TT genotype but much lower than GG.",
+          "recommendation": "Standard injury prevention practices appropriate (warm-up, progressive training, strength training). Attention to technique important. Monitor for early signs of tendon/ligament stress.",
+          "severity": "mild"
+        },
+        "TG": {
+          "phenotype": "Intermediate Injury Risk (Heterozygous)",
+          "effect": "Heterozygous for G/T alleles. Intermediate collagen α1:α2 ratio. Intermediate tendon/ligament structural properties. Some increased injury risk compared to TT genotype but much lower than GG.",
+          "recommendation": "Standard injury prevention practices appropriate (warm-up, progressive training, strength training). Attention to technique important. Monitor for early signs of tendon/ligament stress.",
+          "severity": "mild"
+        },
+        "TT": {
+          "phenotype": "Lower Injury Risk (Wild-type/Wild-type)",
+          "effect": "Homozygous for T allele (protective). Lower COL1A1 expression maintaining normal collagen α1:α2 chain ratio (2:1). Optimized tendon/ligament microarchitecture and structural integrity. Protective effect against sports-related soft tissue injuries.",
+          "recommendation": "Standard injury prevention practices adequate. Lower risk for tendon/ligament injuries. Regular training and conditioning sufficient.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.65,
+        "african": 0.58,
+        "east_asian": 0.62,
+        "south_asian": 0.60,
+        "latino": 0.61
+      }
+    }
+  ],
+  "evidence_level": "moderate",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

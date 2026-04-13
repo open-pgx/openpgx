@@ -1,0 +1,61 @@
+{
+  "gene": "DENND1A",
+  "category": "drug_target",
+  "gene_description": "DENN Domain Containing 1A (DENND1A) — member of the connecdenn family regulating Rab35-dependent endocytic trafficking and intracellular signaling. The rs2479106 polymorphism is located in an intron of DENND1A and is reproducibly associated with PCOS in Han Chinese and European populations. Risk variants are associated with elevated testosterone production, impaired insulin signaling, and altered follicle development.",
+  "drugs": [
+    "metformin",
+    "letrozole",
+    "clomiphene",
+    "spironolactone"
+  ],
+  "source": {
+    "pmid": "21151128",
+    "source_type": "pubmed",
+    "title": "Genome-wide association study identifies susceptibility loci for polycystic ovary syndrome on chromosome 2p16.3, 2p21 and 9q33.3",
+    "journal": "Nature Genetics",
+    "year": 2011,
+    "cohort_size": 3637,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/21151128/"
+  },
+  "snps": [
+    {
+      "rsid": "rs2479106",
+      "risk_allele": "G",
+      "reference_allele": "A",
+      "interpretations": {
+        "GG": {
+          "phenotype": "Increased PCOS risk with metabolic dysfunction",
+          "effect": "Homozygous G-allele carriers (in Asian populations) show elevated PCOS risk (approximately 1.4-1.5x relative risk in Han Chinese; inverse effect in European populations). Associated with elevated serum testosterone and androstenedione, increased 2-hour postglucose insulin levels indicating insulin resistance, impaired glucose tolerance, and follicle maturation defects. GG carriers show increased ovarian theca cell testosterone production, primarily through DENND1A-dependent signaling in endocytic trafficking. Higher rates of metabolic syndrome and diabetes in PCOS patients with GG genotype.",
+          "severity": "moderate"
+        },
+        "GA": {
+          "phenotype": "Mild increased PCOS risk",
+          "effect": "Heterozygous carriers show modest PCOS risk elevation in Asian populations. Intermediate effects on androgen production and insulin sensitivity. Some heterozygotes show borderline elevated testosterone with normal glucose tolerance, representing milder disease phenotypes.",
+          "severity": "mild"
+        },
+        "AG": {
+          "phenotype": "Mild increased PCOS risk",
+          "effect": "Heterozygous carriers show modest PCOS risk elevation in Asian populations. Intermediate effects on androgen production and insulin sensitivity. Some heterozygotes show borderline elevated testosterone with normal glucose tolerance, representing milder disease phenotypes.",
+          "severity": "mild"
+        },
+        "AA": {
+          "phenotype": "Baseline PCOS risk",
+          "effect": "Homozygous A-allele carriers serve as reference group. Normal androgen levels and insulin sensitivity in Asian populations (increased PCOS risk in European populations). Standard PCOS prevalence without specific DENND1A-mediated risk elevation.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "global": 0.32,
+        "european": 0.28,
+        "african": 0.24,
+        "east_asian": 0.38,
+        "south_asian": 0.30
+      }
+    }
+  ],
+  "evidence_level": "moderate",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

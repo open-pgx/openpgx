@@ -42,7 +42,7 @@
           "phenotype": "Reduced UGT1A1 activity (Gilbert syndrome)",
           "effect": "Homozygous TA7 carriers (UGT1A1*28/*28) with significantly reduced enzyme activity (approximately 30% of normal). Chronic unconjugated hyperbilirubinemia (typically 2-5 mg/dL) without hemolysis or hepatic dysfunction. High risk for severe irinotecan toxicity and atazanavir-related hyperbilirubinemia with jaundice.",
           "recommendation": "Irinotecan: FDA recommends 25-30% dose reduction from standard protocol starting dose. Monitor CBC and diarrhea closely during first cycle. Atazanavir: Use with caution or consider alternative protease inhibitor. If used, baseline and regular bilirubin monitoring mandatory. Patient counseling on expected benign mild jaundice. Avoid concurrent use with irinotecan.",
-          "severity": "high"
+          "severity": "severe"
         }
       }
     }

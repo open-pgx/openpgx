@@ -1,0 +1,65 @@
+{
+  "gene": "ALK",
+  "category": "drug_target",
+  "gene_description": "ALK (ALK Receptor Tyrosine Kinase) encodes a receptor tyrosine kinase. Chromosomal translocations involving ALK (most commonly EML4-ALK) create fusion oncogenes present in 2-7% of NSCLC. ALK fusions are oncogenic drivers and confer excellent sensitivity to ALK tyrosine kinase inhibitors.",
+  "drugs": ["crizotinib", "alectinib", "ceritinib", "lorlatinib", "brigatinib"],
+  "source": {
+    "pmid": "20979469",
+    "source_type": "pubmed",
+    "title": "Anaplastic lymphoma kinase inhibition in non-small-cell lung cancer",
+    "journal": "New England Journal of Medicine",
+    "year": 2010,
+    "cohort_size": 82,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/20979469/",
+    "finding": "Crizotinib achieved 57% response rate in ALK-positive NSCLC; established ALK as actionable target in lung cancer"
+  },
+  "snps": [
+    {
+      "rsid": "rs1881421",
+      "risk_allele": "T",
+      "reference_allele": "C",
+      "chromosome": "2",
+      "position": "29192774",
+      "variant_type": "tag_SNP",
+      "interpretations": {
+        "TT": {
+          "phenotype": "Tag allele associated with ALK fusion-positive tumors",
+          "effect": "Genetic marker linked to ALK fusion prevalence; predicts ALK fusion status and excellent ALK inhibitor response",
+          "recommendation": "If ALK fusion confirmed by FISH/NGS, initiate ALK inhibitor therapy. Crizotinib first-line or next-generation ALK inhibitors (alectinib/ceritinib) for improved CNS penetration.",
+          "severity": "info"
+        },
+        "TC": {
+          "phenotype": "Heterozygous tag allele",
+          "effect": "Intermediate frequency; may be associated with ALK fusion status",
+          "recommendation": "Perform ALK fusion testing (FISH, NGS, or immunohistochemistry). If positive, use ALK inhibitor. If negative, evaluate for other fusions (ROS1, NTRK).",
+          "severity": "mild"
+        },
+        "CT": {
+          "phenotype": "Heterozygous tag allele",
+          "effect": "Intermediate frequency; may be associated with ALK fusion status",
+          "recommendation": "Perform ALK fusion testing (FISH, NGS, or immunohistochemistry). If positive, use ALK inhibitor. If negative, evaluate for other fusions (ROS1, NTRK).",
+          "severity": "mild"
+        },
+        "CC": {
+          "phenotype": "Wild-type tag allele",
+          "effect": "Lower frequency of ALK fusion association; standard treatment paradigm applies",
+          "recommendation": "ALK fusion testing still indicated if clinical suspicion. Evaluate for EGFR mutations, KRAS, and other drivers. Consider immunotherapy if no driver mutation.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.32,
+        "african": 0.25,
+        "east_asian": 0.38,
+        "south_asian": 0.30,
+        "latino": 0.28
+      }
+    }
+  ],
+  "evidence_level": "established",
+  "clinical_significance": "ALK fusion testing mandatory in NSCLC. Present in 2-7% of lung adenocarcinomas. Crizotinib revolutionized treatment; subsequent next-generation ALK inhibitors improved CNS penetration and overcome resistance.",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

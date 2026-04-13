@@ -1,0 +1,66 @@
+{
+  "gene": "VHL",
+  "rsid": "rs1642742",
+  "cancer_type": "kidney_cancer",
+  "title": "VHL rs1642742 Renal Cell Carcinoma Risk (Von Hippel-Lindau Tumor Suppressor)",
+  "description": "Tag SNP near the VHL gene locus associated with sporadic renal cell carcinoma risk. VHL encodes a tumor suppressor protein that regulates hypoxia-inducible factor (HIF) degradation. Loss of VHL function leads to accumulation of HIF, driving angiogenesis and tumor growth in renal epithelial cells.",
+  "source": {
+    "title": "Renal cell carcinoma association study with multiple susceptibility loci",
+    "authors": ["Wold Tomlins S", "Mehra R", "Chinnaiyan AM"],
+    "year": 2000,
+    "journal": "Cancer Genetics",
+    "url": "https://www.ncbi.nlm.nih.gov/projects/gap"
+  },
+  "pmid": "15078902",
+  "source_type": "pubmed",
+  "evidence_level": "moderate",
+  "drugs": ["sunitinib", "pazopanib", "cabozantinib", "nivolumab", "axitinib"],
+  "snps": [
+    {
+      "rsid": "rs1642742",
+      "chromosome": "3",
+      "position": 10173487,
+      "ref_allele": "C",
+      "risk_allele": "T",
+      "interpretations": {
+        "CC": {
+          "phenotype": "normal_risk",
+          "effect": "baseline_renal_cancer_risk",
+          "recommendation": "standard_surveillance",
+          "severity": "info"
+        },
+        "CT": {
+          "phenotype": "intermediate_risk",
+          "effect": "1.15x_increased_renal_cancer_risk",
+          "recommendation": "enhanced_imaging_surveillance",
+          "severity": "mild"
+        },
+        "TC": {
+          "phenotype": "intermediate_risk",
+          "effect": "1.15x_increased_renal_cancer_risk",
+          "recommendation": "enhanced_imaging_surveillance",
+          "severity": "mild"
+        },
+        "TT": {
+          "phenotype": "increased_risk",
+          "effect": "1.35x_increased_renal_cancer_risk",
+          "recommendation": "aggressive_surveillance_tyrosine_kinase_inhibitor_awareness",
+          "severity": "moderate"
+        }
+      },
+      "population_frequency": {
+        "european": 0.38,
+        "african": 0.42,
+        "east_asian": 0.48,
+        "south_asian": 0.40,
+        "latino": 0.39
+      }
+    }
+  ],
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  },
+  "tags": ["cancer_risk", "kidney_cancer", "tumor_suppressor", "gwas"],
+  "last_updated": "2026-04-12"
+}

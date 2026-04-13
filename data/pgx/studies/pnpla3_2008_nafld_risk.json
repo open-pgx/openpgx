@@ -1,0 +1,65 @@
+{
+  "gene": "PNPLA3",
+  "category": "nutrient_absorption",
+  "gene_description": "Patatin-Like Phospholipase Domain Containing 3 — a membrane-bound enzyme involved in hepatic fat metabolism, triacylglycerol hydrolysis, and lipid remodeling. Variants disrupt adipose triglyceride lipase function, impairing hepatic fat mobilization and increasing NAFLD and fibrosis risk.",
+  "drugs": ["pioglitazone", "vitamin_e", "obeticholic_acid", "semaglutide"],
+  "source": {
+    "pmid": "18820647",
+    "doi": "10.1038/ng.257",
+    "source_type": "pubmed",
+    "title": "Genetic variation in PNPLA3 confers susceptibility to nonalcoholic fatty liver disease",
+    "journal": "Nature Genetics",
+    "year": 2008,
+    "cohort_size": 9229,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/18820647/",
+    "finding": "The I148M variant (rs738409-G) is strongly associated with increased hepatic fat levels (P = 5.9 × 10⁻¹⁰) and hepatic inflammation. Hepatic fat content is >2-fold higher in PNPLA3 rs738409[G] homozygotes vs. noncarriers. G allele most common in Hispanics (highest NAFLD risk group). Variant impairs hepatic fat mobilization and adipose triglyceride lipase activity."
+  },
+  "snps": [
+    {
+      "rsid": "rs738409",
+      "risk_allele": "G",
+      "reference_allele": "C",
+      "interpretations": {
+        "GG": {
+          "phenotype": "PNPLA3 I148M/I148M homozygous — highest NAFLD/NASH/fibrosis risk",
+          "effect": "Homozygous for I148M variant. ~3.3-fold increased NAFLD risk, ~5-fold increased NASH and hepatic fibrosis risk. Markedly impaired hepatic lipid mobilization. Accumulation of triglycerides in hepatocytes. Increased inflammation and progression to cirrhosis. Severely reduced adipose triglyceride lipase activity.",
+          "recommendation": "Aggressive NAFLD management: weight loss (7-10% reduces fibrosis risk). Avoid alcohol completely. Monitor ALT/AST, FIB-4 index, and consider FibroScan annually. Consider pioglitazone or vitamin E if NASH diagnosed (biopsy-proven). Evaluate for hepatocellular carcinoma screening if cirrhosis develops. Semaglutide may provide benefit via weight loss and metabolic improvement. Avoid high-fat/high-sugar diet.",
+          "severity": "severe",
+          "odds_ratio": 5.2
+        },
+        "GC": {
+          "phenotype": "PNPLA3 I148M/M148 heterozygous — intermediate NAFLD risk",
+          "effect": "Heterozygous for I148M variant. ~1.7-fold increased NAFLD risk. Intermediate impairment of hepatic lipid metabolism. Increased hepatic fat content but not to the extent of homozygotes. Modest increase in inflammation and fibrosis progression risk.",
+          "recommendation": "Moderate lifestyle intervention: weight loss if overweight (5% reduction beneficial). Limit alcohol. Monitor liver function annually. Consider FibroScan if additional risk factors (metabolic syndrome, elevated transaminases). Mediterranean or low-fat diet. Regular exercise (150 min/week moderate intensity).",
+          "severity": "moderate",
+          "odds_ratio": 1.7
+        },
+        "CG": {
+          "phenotype": "PNPLA3 I148M/M148 heterozygous — intermediate NAFLD risk",
+          "effect": "Heterozygous for I148M variant. ~1.7-fold increased NAFLD risk. Intermediate impairment of hepatic lipid metabolism. Increased hepatic fat content but not to the extent of homozygotes. Modest increase in inflammation and fibrosis progression risk.",
+          "recommendation": "Moderate lifestyle intervention: weight loss if overweight (5% reduction beneficial). Limit alcohol. Monitor liver function annually. Consider FibroScan if additional risk factors (metabolic syndrome, elevated transaminases). Mediterranean or low-fat diet. Regular exercise (150 min/week moderate intensity).",
+          "severity": "moderate",
+          "odds_ratio": 1.7
+        },
+        "CC": {
+          "phenotype": "PNPLA3 M148/M148 wild-type — standard NAFLD risk",
+          "effect": "Homozygous for wild-type (M148) allele. Standard hepatic lipid metabolism. Normal adipose triglyceride lipase function. NAFLD risk driven primarily by metabolic factors (obesity, insulin resistance, diet) rather than genetic predisposition at this locus.",
+          "recommendation": "Standard preventive guidelines: maintain healthy weight, balanced diet, moderate alcohol, regular exercise. Monitor for metabolic syndrome. Liver function tests if other risk factors present.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.23,
+        "african": 0.07,
+        "east_asian": 0.12,
+        "south_asian": 0.14,
+        "latino": 0.38
+      }
+    }
+  ],
+  "evidence_level": "established",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

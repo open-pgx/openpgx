@@ -67,7 +67,6 @@
   "evidence_level": "emerging",
   "contributor": {
     "name": "OpenPGx Community",
-    "github": "openpgx",
-    "orcid": null
+    "github": "openpgx"
   }
 }

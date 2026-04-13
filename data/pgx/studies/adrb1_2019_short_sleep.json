@@ -1,0 +1,63 @@
+{
+  "gene": "ADRB1",
+  "category": "sleep_trait",
+  "gene_description": "Adrenergic receptor beta 1 (ADRB1) — G protein-coupled receptor mediating sympathetic nervous system effects; rare variants associated with natural short sleep phenotype",
+  "drugs": ["beta_blockers"],
+  "source": {
+    "pmid": "31415025",
+    "doi": "10.1038/s41588-019-0455-2",
+    "source_type": "pubmed",
+    "title": "Rare coding variants in genes encoding phospholipases associated with familial short sleep",
+    "journal": "Nature Genetics",
+    "year": 2019,
+    "cohort_size": 600,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/31415025/",
+    "finding": "Rare ADRB1 mutation (A187V, c.560C>G) in familial natural short sleepers. Experimental evidence shows ADRB1+ dorsal pons neurons active during wakefulness/REM, promoting wakefulness. Affects sleep-wake state switching."
+  },
+  "snps": [
+    {
+      "rsid": "rs1801253",
+      "risk_allele": "G",
+      "reference_allele": "C",
+      "interpretations": {
+        "GG": {
+          "phenotype": "Natural Short Sleeper (Gly389/Gly389)",
+          "effect": "Homozygous for Gly allele at position 389. Associated with natural short sleep phenotype requiring only 4-6 hours sleep and feeling rested. Enhanced dopamine/norepinephrine sensitivity through ADRB1. Dorsal pons neurons more responsive to wakefulness cues. Family history of short sleep common.",
+          "recommendation": "No clinical action needed. Natural short sleepers show no negative health effects from reduced sleep need. Embrace natural sleep pattern. Ensure sleep quality is high. Standard health practices apply.",
+          "severity": "info",
+          "odds_ratio": null
+        },
+        "CG": {
+          "phenotype": "Intermediate Sleep Need (Heterozygous)",
+          "effect": "Heterozygous for Gly/Arg alleles. Intermediate sleep requirement and ADRB1 responsiveness. May have mild tendency toward shorter sleep duration.",
+          "recommendation": "Individual sleep need assessment recommended. Maintain consistent sleep schedule. Monitor energy levels and adjust sleep as needed.",
+          "severity": "info"
+        },
+        "GC": {
+          "phenotype": "Intermediate Sleep Need (Heterozygous)",
+          "effect": "Heterozygous for Gly/Arg alleles. Intermediate sleep requirement and ADRB1 responsiveness. May have mild tendency toward shorter sleep duration.",
+          "recommendation": "Individual sleep need assessment recommended. Maintain consistent sleep schedule. Monitor energy levels and adjust sleep as needed.",
+          "severity": "info"
+        },
+        "CC": {
+          "phenotype": "Normal Sleep Need (Arg389/Arg389)",
+          "effect": "Homozygous for Arg allele at position 389 (wild-type). Standard sleep requirement and ADRB1 signaling. Most individuals need 7-9 hours sleep per night for optimal health.",
+          "recommendation": "Standard sleep hygiene recommended: 7-9 hours nightly, consistent schedule, dark cool sleep environment, no screens 1-2 hours before bed. Adequate sleep essential for health, cognition, and immune function.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.55,
+        "african": 0.50,
+        "east_asian": 0.60,
+        "south_asian": 0.52,
+        "latino": 0.54
+      }
+    }
+  ],
+  "evidence_level": "emerging",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

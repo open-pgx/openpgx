@@ -6,7 +6,7 @@
   "source": {
     "pmid": "19303062",
     "doi": "10.1086/593618",
-    "source_type": "gwas",
+    "source_type": "pubmed",
     "title": "Genome-wide association study of vitamin B6, vitamin B12, folate, and homocysteine blood concentrations",
     "journal": "American Journal of Human Genetics",
     "year": 2009,
@@ -49,7 +49,7 @@
         "european": 0.22,
         "african": 0.18,
         "east_asian": 0.25,
-        "south_asian": 0.20,
+        "south_asian": 0.2,
         "latino": 0.21
       }
     }

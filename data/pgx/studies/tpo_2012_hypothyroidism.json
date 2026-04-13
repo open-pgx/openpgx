@@ -1,0 +1,60 @@
+{
+  "gene": "TPO",
+  "category": "drug_target",
+  "gene_description": "Thyroid Peroxidase (TPO) — essential enzyme catalyzing thyroid hormone synthesis through iodination of tyrosine residues in thyroglobulin. The rs11675434 polymorphism is located near TPO and is associated with increased serum TPO antibodies, higher TSH, and lower free T4. Risk variants are central to Hashimoto's thyroiditis pathogenesis and hypothyroidism susceptibility in approximately 20-30% of the population.",
+  "drugs": [
+    "levothyroxine",
+    "liothyronine",
+    "selenium"
+  ],
+  "source": {
+    "pmid": "22922229",
+    "source_type": "pubmed",
+    "title": "Genome-wide association study of hypothyroidism in a Chinese Han population",
+    "journal": "Human Molecular Genetics",
+    "year": 2012,
+    "cohort_size": 3736,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/22922229/"
+  },
+  "snps": [
+    {
+      "rsid": "rs11675434",
+      "risk_allele": "T",
+      "reference_allele": "C",
+      "interpretations": {
+        "TT": {
+          "phenotype": "Increased hypothyroidism and Hashimoto's thyroiditis risk",
+          "effect": "Homozygous T-allele carriers show significantly elevated risk for hypothyroidism (approximately 1.4-1.6x relative risk compared to CC carriers). Associated with higher serum TPO antibody concentrations (2-3 fold increase), elevated TSH levels, and reduced free T4. Strong association with Hashimoto's thyroiditis, the most common cause of hypothyroidism. TT carriers show higher prevalence of anti-TPO antibodies and develop overt hypothyroidism at younger ages and higher rates.",
+          "severity": "moderate"
+        },
+        "TC": {
+          "phenotype": "Mild increased hypothyroidism risk",
+          "effect": "Heterozygous carriers show modestly elevated hypothyroidism risk (approximately 20-30% increased risk relative to CC carriers). Intermediate TPO antibody levels and thyroid function parameters. Some heterozygotes develop subclinical hypothyroidism (elevated TSH with normal free T4) before progression to overt disease.",
+          "severity": "mild"
+        },
+        "CT": {
+          "phenotype": "Mild increased hypothyroidism risk",
+          "effect": "Heterozygous carriers show modestly elevated hypothyroidism risk (approximately 20-30% increased risk relative to CC carriers). Intermediate TPO antibody levels and thyroid function parameters. Some heterozygotes develop subclinical hypothyroidism (elevated TSH with normal free T4) before progression to overt disease.",
+          "severity": "mild"
+        },
+        "CC": {
+          "phenotype": "Baseline hypothyroidism risk",
+          "effect": "Homozygous C-allele carriers serve as reference group. Normal TPO antibody levels and thyroid function. Standard hypothyroidism prevalence without specific TPO-mediated autoimmune risk elevation.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "global": 0.45,
+        "european": 0.47,
+        "african": 0.41,
+        "east_asian": 0.42,
+        "south_asian": 0.44
+      }
+    }
+  ],
+  "evidence_level": "moderate",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

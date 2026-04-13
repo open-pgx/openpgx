@@ -1,0 +1,70 @@
+{
+  "gene": "HBB",
+  "gene_full_name": "Hemoglobin Subunit Beta",
+  "region": "Exon 1, codon 6",
+  "category": "drug_target",
+  "phenotype": "Sickle Cell Disease",
+  "description": "HBB rs334 (Glu6Val) variant causing HbS mutation, leading to sickle cell disease in homozygotes. The glutamic acid to valine substitution causes hemoglobin polymerization under low oxygen conditions, resulting in characteristic sickle-shaped red blood cells.",
+  "source": {
+    "title": "Global distribution of the sickle cell gene and geographical confirmation of the malaria hypothesis",
+    "year": 2010,
+    "authors": "Piel FB, Patil AP, Howes RE, et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/20813960/",
+    "pmid": "20813960",
+    "journal": "Nature Communications",
+    "volume": 1,
+    "pages": "104",
+    "source_type": "pubmed"
+  },
+  "source_type": "pubmed",
+  "evidence_level": "established",
+  "snps": [
+    {
+      "rsid": "rs334",
+      "risk_allele": "T",
+      "interpretations": {
+        "TT": {
+          "phenotype": "Sickle cell disease (HbSS); severe chronic hemolytic anemia with vaso-occlusive complications",
+          "effect": "Sickle cell disease (HbSS); severe chronic hemolytic anemia with vaso-occlusive complications",
+          "recommendation": "Requires comprehensive medical management including pain control, hydration, folic acid supplementation, and hydroxycurea or other disease-modifying therapies. Consider voxelotor, crizanlizumab, L-glutamine, or gene therapy.",
+          "severity": "info"
+        },
+        "TA": {
+          "phenotype": "Sickle cell trait (HbAS); usually asymptomatic but increased risk during stress, altitude, exercise",
+          "effect": "Sickle cell trait (HbAS); usually asymptomatic but increased risk during stress, altitude, exercise",
+          "recommendation": "Genetic counseling recommended; avoid extreme exercise/altitude/dehydration; no routine medical treatment needed",
+          "severity": "info"
+        },
+        "AT": {
+          "phenotype": "Sickle cell trait (HbAS); usually asymptomatic but increased risk during stress, altitude, exercise",
+          "effect": "Sickle cell trait (HbAS); usually asymptomatic but increased risk during stress, altitude, exercise",
+          "recommendation": "Genetic counseling recommended; avoid extreme exercise/altitude/dehydration; no routine medical treatment needed",
+          "severity": "info"
+        },
+        "AA": {
+          "phenotype": "Normal hemoglobin; no sickle cell disease or trait",
+          "effect": "Normal hemoglobin; no sickle cell disease or trait",
+          "recommendation": "No special considerations related to sickle cell",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.001,
+        "african": 0.08,
+        "east_asian": 0.0,
+        "south_asian": 0.001,
+        "latino": 0.002
+      }
+    }
+  ],
+  "drugs": [
+    "hydroxyurea",
+    "voxelotor",
+    "crizanlizumab",
+    "L-glutamine"
+  ],
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

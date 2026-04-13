@@ -1,0 +1,65 @@
+{
+  "gene": "FOXO3",
+  "description": "Forkhead box O3 genetic variation and human longevity",
+  "category": "drug_target",
+  "drugs": [
+    "metformin",
+    "rapamycin",
+    "resveratrol"
+  ],
+  "source": {
+    "title": "FOXO3A genotype is strongly associated with human longevity",
+    "year": 2008,
+    "pmid": "18765803",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/18765803/",
+    "journal": "Proceedings of the National Academy of Sciences USA",
+    "authors": "Willcox BJ, Donlon TA, He Q, et al.",
+    "source_type": "pubmed"
+  },
+  "source_type": "pubmed",
+  "evidence_level": "moderate",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  },
+  "snps": [
+    {
+      "rsid": "rs2802292",
+      "reference_allele": "T",
+      "risk_allele": "G",
+      "interpretations": {
+        "GG": {
+          "phenotype": "GG homozygote (Risk)",
+          "effect": "Homozygous for the G allele (risk allele). Associated with lower FOXO3 expression, standard aging profile, lower FOXO3-mediated stress resistance, reduced longevity association.",
+          "recommendation": "Consult clinical guidelines.",
+          "severity": "mild"
+        },
+        "GT": {
+          "phenotype": "GT heterozygote",
+          "effect": "Heterozygous carrier. Intermediate FOXO3 expression and longevity phenotype.",
+          "recommendation": "Consult clinical guidelines.",
+          "severity": "info"
+        },
+        "TG": {
+          "phenotype": "GT heterozygote",
+          "effect": "Heterozygous carrier. Intermediate FOXO3 expression and longevity phenotype.",
+          "recommendation": "Consult clinical guidelines.",
+          "severity": "info"
+        },
+        "TT": {
+          "phenotype": "TT homozygote (Protective)",
+          "effect": "Homozygous for the T allele (reference/protective allele). Associated with enhanced FOXO3 expression and activity, improved stress resistance, cellular quality control, and strong longevity association. Associated with lower prevalence of cardiovascular disease and cancer.",
+          "recommendation": "Consult clinical guidelines.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.3,
+        "african": 0.42,
+        "east_asian": 0.25,
+        "south_asian": 0.35,
+        "latino": 0.33
+      }
+    }
+  ]
+}

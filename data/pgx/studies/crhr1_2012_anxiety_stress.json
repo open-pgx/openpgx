@@ -1,0 +1,69 @@
+{
+  "gene": "CRHR1",
+  "full_name": "Corticotropin Releasing Hormone Receptor 1",
+  "category": "drug_target",
+  "relevant_drugs": [
+    "alprazolam",
+    "diazepam",
+    "buspirone",
+    "sertraline",
+    "duloxetine"
+  ],
+  "source": {
+    "title": "CRHR1 genetic variation and stress interact to influence reward learning and processing of social rejection",
+    "authors": "Heim et al.",
+    "year": 2012,
+    "pmid": "22960728",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/22960728/",
+    "publication_type": "observational study",
+    "subjects": 500,
+    "source_type": "pubmed"
+  },
+  "source_type": "pubmed",
+  "evidence_level": "emerging",
+  "condition": "Generalized Anxiety Disorder",
+  "snps": [
+    {
+      "rsid": "rs110402",
+      "interpretations": {
+        "AA": {
+          "phenotype": "High risk allele homozygous",
+          "effect": "AA carriers show altered HPA axis function with increased cortisol reactivity to stress. Associated with significantly elevated anxiety risk, particularly in individuals with early life stress exposure. Enhanced stress sensitivity and potential for more pronounced anxiety symptoms.",
+          "recommendation": "Consult clinical guidelines.",
+          "severity": "moderate"
+        },
+        "AG": {
+          "phenotype": "Heterozygous",
+          "effect": "AG carriers show intermediate HPA axis responsivity with moderate cortisol reactivity. Associated with mild increase in anxiety risk, particularly in stress-exposed populations. Show intermediate response to anxiolytic medications.",
+          "recommendation": "Consult clinical guidelines.",
+          "severity": "mild"
+        },
+        "GA": {
+          "phenotype": "Heterozygous",
+          "effect": "GA carriers show intermediate HPA axis responsivity with moderate cortisol reactivity. Associated with mild increase in anxiety risk, particularly in stress-exposed populations. Show intermediate response to anxiolytic medications.",
+          "recommendation": "Consult clinical guidelines.",
+          "severity": "mild"
+        },
+        "GG": {
+          "phenotype": "Wild-type homozygous",
+          "effect": "GG carriers have normal HPA axis function and baseline cortisol reactivity to stress. Baseline anxiety risk with typical medication response patterns.",
+          "recommendation": "Consult clinical guidelines.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.18,
+        "african": 0.12,
+        "east_asian": 0.1,
+        "south_asian": 0.14,
+        "latino": 0.16
+      }
+    }
+  ],
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  },
+  "created_date": "2026-04-12",
+  "notes": "CRHR1 rs110402 is associated with HPA axis function and stress reactivity. Risk alleles show strong gene-environment interaction with early life stress, a critical factor in anxiety disorder development."
+}

@@ -1,0 +1,58 @@
+{
+  "gene": "PITX2",
+  "source": {
+    "title": "A Common Variant Associated with Recurrent Myocardial Infarction",
+    "year": 2007,
+    "pmid": "17603472",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/17603472/"
+  },
+  "source_type": "pubmed",
+  "evidence_level": "established",
+  "severity": "severe",
+  "description": "PITX2 rs2200733 is strongly associated with atrial fibrillation and increased risk of cardioembolic stroke. The variant on chromosome 4q25 is located upstream of the PITX2 gene.",
+  "snps": [
+    {
+      "rsid": "rs2200733",
+      "location": "4q25",
+      "effect_allele": "T",
+      "reference_allele": "C",
+      "interpretations": {
+        "CC": {
+          "phenotype": "Lower atrial fibrillation and stroke risk",
+          "effect": "Protective homozygote",
+          "recommendation": "Standard cardiovascular monitoring; maintain healthy lifestyle",
+          "severity": "info"
+        },
+        "CT": {
+          "phenotype": "Intermediate atrial fibrillation and stroke risk",
+          "effect": "Heterozygous carrier; modest increased risk",
+          "recommendation": "Regular cardiac monitoring; consider ECG screening; manage cardiovascular risk factors",
+          "severity": "moderate"
+        },
+        "TC": {
+          "phenotype": "Intermediate atrial fibrillation and stroke risk",
+          "effect": "Heterozygous carrier; modest increased risk",
+          "recommendation": "Regular cardiac monitoring; consider ECG screening; manage cardiovascular risk factors",
+          "severity": "moderate"
+        },
+        "TT": {
+          "phenotype": "High atrial fibrillation and stroke risk",
+          "effect": "Risk allele homozygote; ~1.4x increased risk per copy",
+          "recommendation": "Close cardiac monitoring; annual ECG; stroke risk assessment; consider anticoagulation evaluation if AF develops",
+          "severity": "severe"
+        }
+      },
+      "population_frequency": {
+        "european": 0.38,
+        "african": 0.08,
+        "east_asian": 0.12,
+        "south_asian": 0.15,
+        "latino": 0.25
+      }
+    }
+  ],
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

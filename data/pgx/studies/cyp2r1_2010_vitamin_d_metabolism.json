@@ -1,0 +1,61 @@
+{
+  "gene": "CYP2R1",
+  "category": "vitamin_conversion",
+  "gene_description": "Cytochrome P450 Family 2 Subfamily R Member 1 — encodes vitamin D 25-hydroxylase, the enzyme catalyzing the first step of vitamin D metabolism; rs10741657 variant affects enzyme activity and circulating 25(OH)D levels",
+  "drugs": ["cholecalciferol", "ergocalciferol", "calcifediol"],
+  "source": {
+    "pmid": "20541252",
+    "source_type": "pubmed",
+    "title": "Common genetic determinants of vitamin D insufficiency: a genome-wide association study",
+    "journal": "The Lancet",
+    "year": 2010,
+    "cohort_size": null,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/20541252/",
+    "finding": "CYP2R1 rs10741657 A allele is associated with reduced 25-hydroxylation of cholecalciferol, resulting in lower circulating 25(OH)D levels. The variant affects CYP2R1 expression or enzyme activity, impairing the conversion of vitamin D3 to its active metabolite."
+  },
+  "snps": [
+    {
+      "rsid": "rs10741657",
+      "risk_allele": "A",
+      "reference_allele": "G",
+      "interpretations": {
+        "AA": {
+          "phenotype": "Reduced vitamin D 25-hydroxylation — increased vitamin D insufficiency risk",
+          "effect": "Homozygous for the risk allele (AA). Significantly reduced CYP2R1 enzyme activity or expression. Impaired conversion of vitamin D3 (cholecalciferol) to 25-hydroxyvitamin D (25(OH)D). Individuals typically have lower circulating 25(OH)D levels (mean ~8-10 ng/mL lower than GG carriers) despite similar sun exposure and dietary intake. Increased risk of vitamin D insufficiency (25(OH)D <20 ng/mL) and deficiency (<12 ng/mL).",
+          "recommendation": "More aggressive vitamin D supplementation needed. Start with higher cholecalciferol doses (2000-4000 IU daily or weekly high-dose regimens) and monitor 25(OH)D levels every 8-12 weeks until target achieved. Target 25(OH)D >30 ng/mL (75 nmol/L). Consider alternative active metabolites (calcifediol 0.25-0.5 mcg BID) which bypass CYP2R1. Adequate calcium, phosphorus, and magnesium co-supplementation. Monitor for secondary hyperparathyroidism with PTH levels. Increased risk screening for bone mineral density loss and osteoporosis.",
+          "severity": "moderate"
+        },
+        "AG": {
+          "phenotype": "Intermediate vitamin D 25-hydroxylation — mildly reduced vitamin D status",
+          "effect": "Heterozygous carriers show intermediate CYP2R1 enzyme activity. Modestly reduced 25-hydroxylation capacity with typical 25(OH)D levels 4-6 ng/mL lower than GG homozygotes. Increased susceptibility to vitamin D insufficiency with inadequate intake or sun exposure.",
+          "recommendation": "Standard vitamin D supplementation (1000-2000 IU daily). Monitor baseline 25(OH)D and recheck annually or with symptoms. Adjust dosing if levels <30 ng/mL. Ensure adequate calcium and magnesium intake.",
+          "severity": "mild"
+        },
+        "GA": {
+          "phenotype": "Intermediate vitamin D 25-hydroxylation — mildly reduced vitamin D status",
+          "effect": "Heterozygous carriers show intermediate CYP2R1 enzyme activity. Modestly reduced 25-hydroxylation capacity with typical 25(OH)D levels 4-6 ng/mL lower than GG homozygotes. Increased susceptibility to vitamin D insufficiency with inadequate intake or sun exposure.",
+          "recommendation": "Standard vitamin D supplementation (1000-2000 IU daily). Monitor baseline 25(OH)D and recheck annually or with symptoms. Adjust dosing if levels <30 ng/mL. Ensure adequate calcium and magnesium intake.",
+          "severity": "mild"
+        },
+        "GG": {
+          "phenotype": "Normal vitamin D 25-hydroxylation (wild-type)",
+          "effect": "Homozygous for the reference allele (GG). Normal CYP2R1 enzyme activity and vitamin D 25-hydroxylation. Efficient conversion of cholecalciferol to 25(OH)D with typical circulating levels achieved through normal supplementation and sun exposure.",
+          "recommendation": "Standard vitamin D supplementation recommendations. RDA of 600-800 IU daily for most adults or 1000-2000 IU daily for higher-risk groups. Periodic monitoring if symptoms suggestive of insufficiency or in high-risk populations.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.28,
+        "african": 0.12,
+        "east_asian": 0.42,
+        "south_asian": 0.35,
+        "latino": 0.22
+      }
+    }
+  ],
+  "evidence_level": "moderate",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

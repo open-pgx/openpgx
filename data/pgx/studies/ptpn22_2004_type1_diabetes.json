@@ -1,0 +1,69 @@
+{
+  "gene": "PTPN22",
+  "gene_full_name": "Protein Tyrosine Phosphatase Non-Receptor Type 22",
+  "region": "Exon 14, codon 620",
+  "category": "immune",
+  "phenotype": "Type 1 Diabetes",
+  "description": "PTPN22 rs2476601 (R620W, C1858T) variant affecting lymphocyte phosphatase function. The T allele increases T-cell activation, predisposing to autoimmune conditions including type 1 diabetes (~2.5x risk in TT homozygotes). Also associated with rheumatoid arthritis, lupus, and thyroiditis.",
+  "source": {
+    "title": "A functional variant of lymphoid tyrosine phosphatase is associated with type I diabetes",
+    "year": 2004,
+    "authors": "Bottini N, Musso T, Nieto M, et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/15004560/",
+    "pmid": "15004560",
+    "journal": "Nature Genetics",
+    "volume": 36,
+    "pages": "337-338",
+    "source_type": "pubmed"
+  },
+  "source_type": "pubmed",
+  "evidence_level": "established",
+  "snps": [
+    {
+      "rsid": "rs2476601",
+      "risk_allele": "A",
+      "interpretations": {
+        "AA": {
+          "phenotype": "High genetic susceptibility to type 1 diabetes and other autoimmune conditions",
+          "effect": "High genetic susceptibility to type 1 diabetes and other autoimmune conditions",
+          "recommendation": "Family screening recommended if T1D diagnosis. Genetic counseling appropriate. Monitor for signs of T1D (thirst, polyuria, weight loss). Annual screening with HbA1c and fasting glucose in at-risk relatives. Consider also screening for other autoimmune conditions (thyroiditis, RA, SLE).",
+          "severity": "info"
+        },
+        "AG": {
+          "phenotype": "Moderately increased genetic risk for type 1 diabetes and autoimmune conditions",
+          "effect": "Moderately increased genetic risk for type 1 diabetes and autoimmune conditions",
+          "recommendation": "Standard T1D screening for symptomatic relatives. Counsel on early warning signs. Annual monitoring of metabolic markers if family history of T1D.",
+          "severity": "info"
+        },
+        "GA": {
+          "phenotype": "Moderately increased genetic risk for type 1 diabetes and autoimmune conditions",
+          "effect": "Moderately increased genetic risk for type 1 diabetes and autoimmune conditions",
+          "recommendation": "Standard T1D screening for symptomatic relatives. Counsel on early warning signs. Annual monitoring of metabolic markers if family history of T1D.",
+          "severity": "info"
+        },
+        "GG": {
+          "phenotype": "No increased PTPN22-related T1D genetic risk",
+          "effect": "No increased PTPN22-related T1D genetic risk",
+          "recommendation": "Standard population screening recommendations apply",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.1,
+        "african": 0.05,
+        "east_asian": 0.02,
+        "south_asian": 0.08,
+        "latino": 0.08
+      }
+    }
+  ],
+  "drugs": [
+    "insulin",
+    "teplizumab",
+    "rituximab"
+  ],
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

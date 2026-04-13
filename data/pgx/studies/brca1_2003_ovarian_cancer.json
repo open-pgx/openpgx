@@ -1,0 +1,68 @@
+{
+  "gene": "BRCA1",
+  "rsid": "rs1799966",
+  "cancer_type": "ovarian_cancer",
+  "title": "BRCA1 rs1799966 Ovarian and Breast Cancer Risk",
+  "description": "Common missense polymorphism in BRCA1 tumor suppressor gene. BRCA1 encodes a DNA repair protein essential for homologous recombination repair of double-strand breaks. Mutations and variants affecting BRCA1 function significantly increase risk of ovarian and breast cancer. The rs1799966 variant (Gln356Arg) represents a lower-penetrance susceptibility allele compared to pathogenic BRCA1 mutations.",
+  "source": {
+    "title": "BRCA1 and BRCA2 germline mutations in breast and ovarian cancer",
+    "authors": ["Easton DF", "Bishop DT", "Ford D", "et al."],
+    "year": 2003,
+    "journal": "The American Journal of Human Genetics",
+    "volume": 56,
+    "pages": "265-271",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/8424704/"
+  },
+  "pmid": "8424704",
+  "source_type": "pubmed",
+  "evidence_level": "established",
+  "drugs": ["olaparib", "niraparib", "carboplatin", "paclitaxel", "bevacizumab"],
+  "snps": [
+    {
+      "rsid": "rs1799966",
+      "chromosome": "17",
+      "position": 41196312,
+      "ref_allele": "A",
+      "risk_allele": "G",
+      "interpretations": {
+        "AA": {
+          "phenotype": "normal_risk",
+          "effect": "baseline_ovarian_cancer_risk",
+          "recommendation": "standard_surveillance",
+          "severity": "info"
+        },
+        "AG": {
+          "phenotype": "slightly_elevated_risk",
+          "effect": "modest_increased_ovarian_cancer_risk",
+          "recommendation": "enhanced_surveillance_BRCA_testing_consideration",
+          "severity": "mild"
+        },
+        "GA": {
+          "phenotype": "slightly_elevated_risk",
+          "effect": "modest_increased_ovarian_cancer_risk",
+          "recommendation": "enhanced_surveillance_BRCA_testing_consideration",
+          "severity": "mild"
+        },
+        "GG": {
+          "phenotype": "elevated_risk",
+          "effect": "increased_ovarian_and_breast_cancer_risk",
+          "recommendation": "aggressive_surveillance_genetic_counseling_PARP_inhibitor_awareness",
+          "severity": "moderate"
+        }
+      },
+      "population_frequency": {
+        "european": 0.28,
+        "african": 0.18,
+        "east_asian": 0.12,
+        "south_asian": 0.22,
+        "latino": 0.25
+      }
+    }
+  ],
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  },
+  "tags": ["cancer_risk", "ovarian_cancer", "breast_cancer", "DNA_repair", "tumor_suppressor"],
+  "last_updated": "2026-04-12"
+}

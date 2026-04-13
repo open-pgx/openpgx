@@ -1,0 +1,63 @@
+{
+  "gene": "AMH",
+  "category": "reproductive_trait",
+  "gene_description": "Anti-Müllerian hormone (AMH) — TGF-beta superfamily cytokine produced by ovarian granulosa cells, surrogate marker for number of growing follicles and ovarian reserve",
+  "drugs": [],
+  "source": {
+    "pmid": "26748515",
+    "doi": "10.1038/ncomms10985",
+    "source_type": "pubmed",
+    "title": "Meta-analysis of genome-wide association studies identifies common variants associated with circulating progesterone levels and explains their association with fertility",
+    "journal": "Nature Communications",
+    "year": 2016,
+    "cohort_size": null,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/26748515/",
+    "finding": "rs10407022 T allele associated with higher serum AMH levels and more metaphase II oocytes retrieved during assisted reproduction. Effect modulated by ethnicity, with stronger effects in Asian populations."
+  },
+  "snps": [
+    {
+      "rsid": "rs10407022",
+      "risk_allele": "T",
+      "reference_allele": "G",
+      "interpretations": {
+        "TT": {
+          "phenotype": "Higher Ovarian Reserve (Risk/Risk)",
+          "effect": "Homozygous for T allele. Associated with higher circulating AMH levels, indicating larger pool of growing follicles and increased ovarian reserve. More metaphase II oocytes retrieved during fertility treatment. Correlates with later age at menopause (~1-2 years later).",
+          "recommendation": "Good ovarian reserve indicator. Favorable response anticipated to fertility medications if assisted reproduction needed. Standard reproductive planning applies. Monitor AMH levels periodically.",
+          "severity": "info",
+          "odds_ratio": null
+        },
+        "GT": {
+          "phenotype": "Intermediate Ovarian Reserve (Heterozygous)",
+          "effect": "Heterozygous for T/G alleles. Intermediate AMH levels and ovarian reserve. Intermediate response to fertility stimulation. Normal fertility expected in most cases.",
+          "recommendation": "Standard reproductive assessment and planning. AMH testing recommended if evaluating fertility or approaching assisted reproduction.",
+          "severity": "info"
+        },
+        "TG": {
+          "phenotype": "Intermediate Ovarian Reserve (Heterozygous)",
+          "effect": "Heterozygous for T/G alleles. Intermediate AMH levels and ovarian reserve. Intermediate response to fertility stimulation. Normal fertility expected in most cases.",
+          "recommendation": "Standard reproductive assessment and planning. AMH testing recommended if evaluating fertility or approaching assisted reproduction.",
+          "severity": "info"
+        },
+        "GG": {
+          "phenotype": "Lower Ovarian Reserve (Wild-type/Wild-type)",
+          "effect": "Homozygous for G allele (wild-type). Associated with lower AMH levels and reduced ovarian follicle pool. Fewer oocytes retrieved during assisted reproduction. Correlates with earlier age at menopause.",
+          "recommendation": "If concerned about fertility, AMH testing and ovarian reserve assessment recommended. Early oocyte or embryo preservation may be considered. Earlier reproductive planning may be prudent given smaller follicle pool.",
+          "severity": "mild"
+        }
+      },
+      "population_frequency": {
+        "european": 0.35,
+        "african": 0.28,
+        "east_asian": 0.42,
+        "south_asian": 0.38,
+        "latino": 0.32
+      }
+    }
+  ],
+  "evidence_level": "moderate",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

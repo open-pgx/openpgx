@@ -182,25 +182,28 @@ This connects to our remote MCP server via Streamable HTTP — same 9 tools, zer
 
 ## What's in the knowledge base
 
-**67 studies · 63 genes · 127 drugs · 19 disease risks · 31 traits** — all backed by published research with PMID/DOI.
+**118 studies · 109 genes · 219 drugs · 19 disease risks · 31 traits** — all backed by published research with PMID/DOI.
 
-### 63 Genes with Study Data
+### Genes with study data (109)
 
-Every gene is backed by at least one published study with interpretations per genotype:
+Every gene is backed by at least one published study with interpretations per genotype. The authoritative list is the set of `gene` fields in `data/pgx/studies/*.json`; the table below groups major clinical themes (some genes appear in more than one theme in the data).
 
-| Category | Genes |
+| Category | Genes (representative) |
 |----------|-------|
-| Drug Metabolism | CYP2D6, CYP2C19, CYP2C9, CYP2B6, CYP3A5, CYP1A2, ALDH2, DPYD, TPMT, NUDT15, GSTP1 |
-| Drug Targets | VKORC1, DRD2, HTR2C, OPRM1, DPYD, NUDT15, C11ORF65, MTNR1B, GRK4, CLCNKA, F2, F5 |
-| Drug Transport | SLCO1B1, ABCB1, ABCG2 |
-| Immune / HLA | HLA-B, HLA-A |
-| GLP-1 / Incretin | GLP1R, GIPR |
-| Methylation & Vitamins | MTHFR, COMT, VDR, BCMO1, FUT2, CBS, DHCR7, SLC23A1 |
+| Drug Metabolism | CYP2D6, CYP2C19, CYP2C9, CYP2B6, CYP3A4, CYP3A5, CYP1A2, CYP2E1, ALDH2, BCHE, CES1, FAAH, NAT2, UGT1A1, UGT1A4, UGT1A9, GSTP1, ACE, ADRB1, ADRB2, AGTR1, HMGCR, PCSK9 |
+| Drug Targets & Response | VKORC1, DRD2, DRD3, DRD4, HTR1A, HTR2A, HTR2C, GABRA2, GABRA6, GLP1R, GRIK4, SCN1A, SCN9A, MC1R, RYR1, TPMT, NUDT15, DPYD, FKBP5, ESR1, SHBG, COMT, OPRM1, TCF7L2, CLOCK |
+| ADHD / Stimulants | ADRA2A, SLC6A2, SLC6A3, SLC6A4, SNAP25 |
+| Drug Transport | SLCO1B1, ABCB1, ABCG2, SLC22A1, SLC22A2 |
+| Immune / HLA | HLA-B, HLA-A, HLA-C, HLA-DQB1, IL23R |
+| GLP-1 / Incretin | GLP1R, GIPR, MC4R, PCSK1 |
+| Methylation & Vitamins | MTHFR, COMT, VDR, BCMO1, FUT2, CBS, DHCR7, SLC23A1, GC, TCN2, NBPF3 |
 | Lipid Metabolism | PNPLA3, TM6SF2, APOE, APOA5, APOB, LDLR, LIPC, LPL, SORT1, PPARG |
-| Energy Balance / Obesity | FTO, MC4R, GHSR, CLOCK, SIRT1, BDNF, PCSK1, FABP2, LYPLAL1 |
-| Glucose / Insulin | GCKR, SLC2A2, PPM1K, MTNR1B, IL6 |
-| Circadian Rhythm | PER2, CRY2, NR1D1 |
-| Nutrient Response | FADS1, FABP2, IL6, GRK4, CLCNKA |
+| Energy Balance / Obesity | FTO, MC4R, GHSR, BDNF, PCSK1, TMEM18, FABP2, LYPLAL1 |
+| Glucose / Insulin | GCKR, SLC2A2, PPM1K, MTNR1B, IL6, C11ORF65 |
+| Circadian Rhythm | PER2, CRY2, NR1D1, CLOCK |
+| Coagulation | F2, F5 |
+| Cannabinoid / Related | CNR1, AKT1, CYP2C9 |
+| Salt Sensitivity | GRK4, CLCNKA |
 
 ### 127 Medications & Compounds
 
@@ -425,7 +428,7 @@ Raw DNA file (23andMe .txt / Genera .csv)
         |
         v
 +------------------+
-|  Study Catalog    | --> 67 studies x 63 genes x 127 drugs
+|  Study Catalog    | --> 118 studies x 109 genes x 219 drugs
 |  (data/pgx/       |     Auto-creates gene definitions
 |   studies/*.json)  |     Builds drug-gene index at runtime
 +------------------+
@@ -491,7 +494,7 @@ mcp-server/
 │   ├── trait-catalog.ts     # Trait definitions
 │   └── types.ts             # Shared TypeScript interfaces
 ├── data/
-│   ├── pgx/studies/         # 67 study files (the knowledge base)
+│   ├── pgx/studies/         # 118 study files (the knowledge base)
 │   ├── risks/               # Disease risk condition definitions
 │   ├── traits/              # Trait definitions
 │   ├── drugs_embeddings.json # TF-IDF vectors for semantic search

@@ -9,7 +9,7 @@
   ],
   "source": {
     "pmid": "30733798",
-    "source_type": "research_study",
+    "source_type": "pubmed",
     "title": "Interaction of rs316019 variants of SLC22A2 with metformin and other drugs: an in silico analysis",
     "journal": "Pharmacogenomics Journal",
     "year": 2019,
@@ -46,7 +46,7 @@
           "phenotype": "Reduced OCT2 renal clearance",
           "effect": "Homozygous 270S form has severely reduced OCT2 function for metformin renal secretion. Marked accumulation in plasma (46-74% higher AUC) with significantly delayed elimination (CLrenal reduced 31-44%). High risk for metformin-associated lactic acidosis, especially if combined with renal impairment or acute illness.",
           "recommendation": "Caution with metformin use. Careful dose adjustment or alternative agent consideration strongly advised. Mandatory regular renal function monitoring (eGFR, creatinine). Avoid if eGFR <45 mL/min/1.73m2. Periodic lactate and pH monitoring recommended. Absolute contraindication if eGFR <30 or severe renal disease.",
-          "severity": "high"
+          "severity": "moderate"
         }
       }
     }

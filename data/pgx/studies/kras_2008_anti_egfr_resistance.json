@@ -1,0 +1,65 @@
+{
+  "gene": "KRAS",
+  "category": "drug_target",
+  "gene_description": "KRAS (KRAS Proto-Oncogene, GTPase) encodes a small GTPase in the MAPK signaling pathway. Activating mutations (G12C, G12D, G12V, G13D) are oncogenic drivers in ~40% of colorectal cancers and ~30% of NSCLC. Mutations in codons 12 and 13 confer resistance to anti-EGFR monoclonal antibodies.",
+  "drugs": ["cetuximab", "panitumumab", "sotorasib", "adagrasib"],
+  "source": {
+    "pmid": "18316791",
+    "source_type": "pubmed",
+    "title": "K-ras mutations and benefit from cetuximab in advanced colorectal cancer",
+    "journal": "New England Journal of Medicine",
+    "year": 2008,
+    "cohort_size": 394,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/18316791/",
+    "finding": "KRAS mutations (codons 12/13) predict lack of benefit from cetuximab; established KRAS testing as essential before anti-EGFR therapy"
+  },
+  "snps": [
+    {
+      "rsid": "rs112445441",
+      "risk_allele": "A",
+      "reference_allele": "T",
+      "chromosome": "12",
+      "position": "25245350",
+      "variant_type": "missense",
+      "interpretations": {
+        "AA": {
+          "phenotype": "Homozygous KRAS G12C mutation",
+          "effect": "Constitutively active KRAS; 100% resistant to anti-EGFR antibodies (cetuximab, panitumumab); responsive to G12C-specific inhibitors",
+          "recommendation": "Use sotorasib or adagrasib (KRAS G12C inhibitors). Do NOT use cetuximab/panitumumab. Consider combination with chemotherapy or immunotherapy.",
+          "severity": "severe"
+        },
+        "AT": {
+          "phenotype": "Heterozygous KRAS G12C mutation",
+          "effect": "KRAS G12C present; resistant to anti-EGFR therapy; sensitive to G12C-specific inhibitors",
+          "recommendation": "Use G12C inhibitors (sotorasib or adagrasib). Avoid cetuximab/panitumumab monotherapy. Consider combinations for improved efficacy.",
+          "severity": "severe"
+        },
+        "TA": {
+          "phenotype": "Heterozygous KRAS G12C mutation",
+          "effect": "KRAS G12C present; resistant to anti-EGFR therapy; sensitive to G12C-specific inhibitors",
+          "recommendation": "Use G12C inhibitors (sotorasib or adagrasib). Avoid cetuximab/panitumumab monotherapy. Consider combinations for improved efficacy.",
+          "severity": "severe"
+        },
+        "TT": {
+          "phenotype": "Wild-type KRAS (codons 12/13)",
+          "effect": "Sensitive to anti-EGFR antibodies; cetuximab/panitumumab expected to be effective",
+          "recommendation": "Anti-EGFR monoclonal antibodies (cetuximab or panitumumab) with chemotherapy recommended. Also test for NRAS, BRAF, PI3KCA mutations.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.02,
+        "african": 0.015,
+        "east_asian": 0.025,
+        "south_asian": 0.018,
+        "latino": 0.021
+      }
+    }
+  ],
+  "evidence_level": "established",
+  "clinical_significance": "KRAS testing mandated before anti-EGFR therapy in colorectal cancer. Mutations present in ~40% of CRC and confer complete resistance to cetuximab/panitumumab. Newer G12C inhibitors offer therapeutic opportunity.",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

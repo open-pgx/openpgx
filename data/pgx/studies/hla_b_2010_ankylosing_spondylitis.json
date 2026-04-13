@@ -1,0 +1,62 @@
+{
+  "gene": "HLA-B",
+  "category": "immune",
+  "gene_description": "Human Leukocyte Antigen B — Major Histocompatibility Complex class I heavy chain. The rs4349859 A-allele is a tagging SNP for HLA-B*27, which carries the strongest genetic association with ankylosing spondylitis (AS). HLA-B*27 presents bacterial and commensal peptides to CD8+ T cells, initiating pathogenic immune responses through molecular mimicry and/or aberrant peptide presentation in genetically predisposed individuals.",
+  "drugs": [
+    "adalimumab",
+    "etanercept",
+    "secukinumab",
+    "celecoxib",
+    "indomethacin"
+  ],
+  "source": {
+    "pmid": "20062062",
+    "source_type": "pubmed",
+    "title": "Interaction between ERAP1 and HLA-B27 in ankylosing spondylitis implicates peptide handling in the mechanism for HLA-B27 in disease susceptibility",
+    "journal": "Nature Genetics",
+    "year": 2011,
+    "cohort_size": 6400,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/20062062/"
+  },
+  "snps": [
+    {
+      "rsid": "rs4349859",
+      "risk_allele": "A",
+      "reference_allele": "G",
+      "interpretations": {
+        "AA": {
+          "phenotype": "Very strong ankylosing spondylitis risk",
+          "effect": "Homozygous A-allele carriers (highly correlated with HLA-B*27 positive genotype) show extremely elevated AS risk (50-100x relative risk in HLA-B*27 positive individuals compared to B*27 negative controls). The B*27 molecule presents peptides poorly to T cell receptors, resulting in aberrant peptide-independent activation of HPA and CD4+ T cells through unconventional mechanisms. Approximately 90-95% of AS patients carry HLA-B*27. AA homozygotes with B*27 show early-onset disease, severe spinal inflammation, and risk for extra-articular manifestations including uveitis and enthesitis.",
+          "severity": "severe"
+        },
+        "AG": {
+          "phenotype": "Moderate ankylosing spondylitis risk",
+          "effect": "Heterozygous carriers with one HLA-B*27 allele show significant but reduced AS risk compared to homozygotes (approximately 20-50x relative to B*27 negative controls). Intermediate B*27 expression and peptide presentation capacity. Still confers substantial disease susceptibility with variable progression.",
+          "severity": "moderate"
+        },
+        "GA": {
+          "phenotype": "Moderate ankylosing spondylitis risk",
+          "effect": "Heterozygous carriers with one HLA-B*27 allele show significant but reduced AS risk compared to homozygotes (approximately 20-50x relative to B*27 negative controls). Intermediate B*27 expression and peptide presentation capacity. Still confers substantial disease susceptibility with variable progression.",
+          "severity": "moderate"
+        },
+        "GG": {
+          "phenotype": "Baseline ankylosing spondylitis risk",
+          "effect": "Homozygous G-allele carriers lack HLA-B*27 allele and serve as reference group. Less than 5% of AS patients lack HLA-B*27. Very low risk for B*27-mediated autoimmunity; AS in these individuals is typically associated with rare HLA molecules or other genetic risk factors.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "global": 0.05,
+        "european": 0.06,
+        "african": 0.02,
+        "east_asian": 0.08,
+        "south_asian": 0.04
+      }
+    }
+  ],
+  "evidence_level": "established",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

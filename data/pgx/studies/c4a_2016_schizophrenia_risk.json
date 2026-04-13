@@ -1,0 +1,70 @@
+{
+  "gene": "C4A",
+  "full_name": "Complement Component 4A",
+  "category": "immune",
+  "relevant_drugs": [
+    "clozapine",
+    "risperidone",
+    "olanzapine",
+    "aripiprazole",
+    "haloperidol"
+  ],
+  "source": {
+    "title": "Schizophrenia risk from complex variation of complement component 4",
+    "authors": "Sekar A, Bialas AR, de Rivera H, et al.",
+    "year": 2016,
+    "pmid": "26814963",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/26814963/",
+    "publication_type": "genome-wide association study",
+    "subjects": 65000,
+    "journal": "Nature",
+    "source_type": "pubmed"
+  },
+  "source_type": "pubmed",
+  "evidence_level": "moderate",
+  "condition": "Schizophrenia",
+  "snps": [
+    {
+      "rsid": "rs204991",
+      "interpretations": {
+        "AA": {
+          "phenotype": "High C4A expression allele homozygous",
+          "effect": "AA carriers have increased C4A protein expression leading to excessive synaptic complement activity during postnatal development. Associated with approximately 1.3-fold increased schizophrenia risk. Elevated C4A drives excessive synaptic pruning, reducing synaptic density in key brain circuits involved in cognition and perception. May require atypical antipsychotics with different mechanisms.",
+          "recommendation": "Consult clinical guidelines.",
+          "severity": "moderate"
+        },
+        "AG": {
+          "phenotype": "Intermediate C4A expression heterozygous",
+          "effect": "AG carriers show intermediate C4A expression with moderate elevation in synaptic complement activity. Associated with mild increase in schizophrenia risk. Moderately elevated synaptic pruning affecting brain development and circuit formation.",
+          "recommendation": "Consult clinical guidelines.",
+          "severity": "mild"
+        },
+        "GA": {
+          "phenotype": "Intermediate C4A expression heterozygous",
+          "effect": "GA carriers show intermediate C4A expression with moderate elevation in synaptic complement activity. Associated with mild increase in schizophrenia risk. Moderately elevated synaptic pruning affecting brain development and circuit formation.",
+          "recommendation": "Consult clinical guidelines.",
+          "severity": "mild"
+        },
+        "GG": {
+          "phenotype": "Low C4A expression wild-type homozygous",
+          "effect": "GG carriers have normal C4A expression with baseline synaptic complement activity during development. Baseline schizophrenia risk with typical antipsychotic response patterns. Normal synaptic pruning and brain circuit development.",
+          "recommendation": "Consult clinical guidelines.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.16,
+        "african": 0.14,
+        "east_asian": 0.1,
+        "south_asian": 0.13,
+        "latino": 0.15
+      }
+    }
+  ],
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  },
+  "created_date": "2026-04-12",
+  "notes": "Landmark 2016 study revealing C4A as a major schizophrenia risk locus. C4A variation drives differential synaptic pruning during postnatal brain development, with higher C4A expression increasing pruning and schizophrenia risk. This represents a fundamental shift in understanding schizophrenia genetics from purely neurochemical models to immune-developmental mechanisms."
+}

@@ -1,0 +1,63 @@
+{
+  "gene": "MC1R",
+  "category": "trait_appearance",
+  "gene_description": "Melanocortin 1 receptor (MC1R) — G protein-coupled receptor controlling melanin synthesis and determining hair and skin color",
+  "drugs": [],
+  "source": {
+    "pmid": "11038563",
+    "doi": "10.1038/ng639",
+    "source_type": "pubmed",
+    "title": "Red hair color is due to the loss of function in MC1R",
+    "journal": "Nature Genetics",
+    "year": 2000,
+    "cohort_size": null,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/11038563/",
+    "finding": "Loss-of-function variants in MC1R including rs1805007 (R151C, Arg151Cys) cause red hair and fair skin phenotype. Approximately 1-2% of global population has red hair (1-13% in Northern Europe)."
+  },
+  "snps": [
+    {
+      "rsid": "rs1805007",
+      "risk_allele": "C",
+      "reference_allele": "T",
+      "interpretations": {
+        "CC": {
+          "phenotype": "Red Hair, Fair Skin (Cys151/Cys151)",
+          "effect": "Homozygous for cysteine at position 151 (loss-of-function mutation). Strong red hair and pale skin phenotype due to loss of MC1R receptor function. Dramatically reduced eumelanin (brown/black) production and increased pheomelanin (red/yellow) production. Highest photosensitivity among pigmentation phenotypes.",
+          "recommendation": "High risk for sunburn and skin cancer. Daily SPF 50+ broad-spectrum sunscreen mandatory. Avoid sun exposure during peak hours. Regular dermatologic screening recommended. Consider protective clothing and hats. Increased melanoma risk even with sun protection.",
+          "severity": "moderate",
+          "odds_ratio": null
+        },
+        "CT": {
+          "phenotype": "Red/Reddish Hair, Fair Skin (Cys151/Arg151)",
+          "effect": "Heterozygous for cysteine/arginine. Variable red hair phenotype (from light red to darker red depending on other MC1R variants). Intermediate pheomelanin production. Increased photosensitivity compared to wild-type.",
+          "recommendation": "Enhanced sun protection needed. Daily SPF 30+ sunscreen, protective clothing, and regular skin examinations. Increased risk of sun damage and skin cancer compared to wild-type.",
+          "severity": "mild"
+        },
+        "TC": {
+          "phenotype": "Red/Reddish Hair, Fair Skin (Cys151/Arg151)",
+          "effect": "Heterozygous for cysteine/arginine. Variable red hair phenotype (from light red to darker red depending on other MC1R variants). Intermediate pheomelanin production. Increased photosensitivity compared to wild-type.",
+          "recommendation": "Enhanced sun protection needed. Daily SPF 30+ sunscreen, protective clothing, and regular skin examinations. Increased risk of sun damage and skin cancer compared to wild-type.",
+          "severity": "mild"
+        },
+        "TT": {
+          "phenotype": "Black/Brown Hair, Darker Skin (Arg151/Arg151)",
+          "effect": "Homozygous for wild-type arginine at position 151. Fully functional MC1R receptor. Normal eumelanin production, brown to black hair color, and darker skin pigmentation. Normal photosensitivity.",
+          "recommendation": "Standard sun protection (SPF 15+). Normal risk for sun damage and skin cancer. Standard skin care recommended.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.15,
+        "african": 0.01,
+        "east_asian": 0.01,
+        "south_asian": 0.02,
+        "latino": 0.03
+      }
+    }
+  ],
+  "evidence_level": "established",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "gene": "ABO",
+  "rsid": "rs505922",
+  "cancer_type": "pancreatic_cancer",
+  "title": "ABO rs505922 Pancreatic Cancer Risk (Blood Type Locus)",
+  "description": "Common variant at the ABO locus defining blood group phenotype. The C allele (non-O blood type) is associated with increased pancreatic cancer risk compared to T allele (type O). Blood group antigen expression on pancreatic ductal epithelium may facilitate tumor immune escape.",
+  "source": {
+    "title": "Genome-wide association study identifies variants in the ABO locus associated with susceptibility to pancreatic cancer",
+    "authors": ["Amundadottir L", "Kraft P", "Stolzenberg-Solomon RZ", "et al."],
+    "year": 2009,
+    "journal": "Nature Genetics",
+    "volume": 41,
+    "pages": "986-990",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/19648918/"
+  },
+  "pmid": "19648918",
+  "source_type": "pubmed",
+  "evidence_level": "moderate",
+  "drugs": ["gemcitabine", "nab_paclitaxel", "FOLFIRINOX"],
+  "snps": [
+    {
+      "rsid": "rs505922",
+      "chromosome": "9",
+      "position": 131203104,
+      "ref_allele": "T",
+      "risk_allele": "C",
+      "interpretations": {
+        "TT": {
+          "phenotype": "type_O_blood_reduced_risk",
+          "effect": "baseline_pancreatic_cancer_risk",
+          "recommendation": "standard_surveillance",
+          "severity": "info"
+        },
+        "TC": {
+          "phenotype": "type_A_B_intermediate_risk",
+          "effect": "1.2x_increased_pancreatic_cancer_risk",
+          "recommendation": "enhanced_surveillance_gemcitabine_preferred",
+          "severity": "mild"
+        },
+        "CT": {
+          "phenotype": "type_A_B_intermediate_risk",
+          "effect": "1.2x_increased_pancreatic_cancer_risk",
+          "recommendation": "enhanced_surveillance_gemcitabine_preferred",
+          "severity": "mild"
+        },
+        "CC": {
+          "phenotype": "type_A_B_ab_high_risk",
+          "effect": "1.3-1.4x_increased_pancreatic_cancer_risk",
+          "recommendation": "aggressive_surveillance_combination_therapy",
+          "severity": "moderate"
+        }
+      },
+      "population_frequency": {
+        "european": 0.35,
+        "african": 0.28,
+        "east_asian": 0.42,
+        "south_asian": 0.38,
+        "latino": 0.36
+      }
+    }
+  ],
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  },
+  "tags": ["cancer_risk", "pancreatic_cancer", "blood_group", "gwas"],
+  "last_updated": "2026-04-12"
+}

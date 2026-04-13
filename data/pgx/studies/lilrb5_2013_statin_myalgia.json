@@ -1,0 +1,62 @@
+{
+  "gene": "LILRB5",
+  "category": "immune",
+  "gene_description": "Leukocyte Immunoglobulin Like Receptor B5 — immune regulatory receptor involved in inflammatory response; Asp247Gly variant (rs12975366) modulates muscle injury response and susceptibility to statin-induced myopathy",
+  "drugs": ["atorvastatin", "simvastatin", "rosuvastatin", "pravastatin"],
+  "source": {
+    "pmid": "28960165",
+    "source_type": "pubmed",
+    "title": "A common missense variant of LILRB5 is associated with statin intolerance and myalgia",
+    "journal": "European Heart Journal",
+    "year": 2017,
+    "cohort_size": 12000,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/28960165/",
+    "finding": "LILRB5 rs12975366 T allele (Asp247) is associated with statin intolerance and myalgia, with elevated serum creatine kinase (CK) and lactate dehydrogenase (LDH). TT homozygotes show 2-fold increased risk of developing statin-induced myalgia and statin intolerance."
+  },
+  "snps": [
+    {
+      "rsid": "rs12975366",
+      "risk_allele": "T",
+      "reference_allele": "C",
+      "variant_name": "Asp247Gly",
+      "interpretations": {
+        "TT": {
+          "phenotype": "Higher risk of statin-induced myalgia and intolerance",
+          "effect": "Homozygous for the risk allele (Asp247). Approximately 2-fold increased risk of developing statin myalgia, muscle pain, and creatine kinase elevation. Associated with raised baseline serum CK and LDH levels indicating greater susceptibility to muscle injury during statin therapy. Higher risk of treatment discontinuation due to intolerance.",
+          "recommendation": "Assess baseline CK before initiating therapy. Consider alternative lipid-lowering strategies (ezetimibe, PCSK9 inhibitors, bempedoic acid) as first-line. If statin required, use lower doses with frequent CK monitoring (baseline, 1 month, 3 months, then every 6-12 months). Educate patient about myalgia symptoms. Consider pravastatin or rosuvastatin (lower myalgia rates). Avoid concurrent use of drugs that inhibit statin metabolism (clarithromycin, itraconazole, cyclosporine). Advise against intense physical exertion while initiating therapy.",
+          "severity": "moderate"
+        },
+        "TC": {
+          "phenotype": "Intermediate risk of statin-induced myalgia",
+          "effect": "Heterozygous carriers show intermediate risk of myalgia and myopathy. Moderately elevated susceptibility to muscle symptoms during statin therapy compared to CC carriers. Some elevation in baseline CK/LDH observed.",
+          "recommendation": "Standard statin prescribing with baseline and periodic CK monitoring. Patient education about myalgia symptoms. If myalgia develops, consider dose reduction or alternative agent. Monitor for intolerance phenotype.",
+          "severity": "mild"
+        },
+        "CT": {
+          "phenotype": "Intermediate risk of statin-induced myalgia",
+          "effect": "Heterozygous carriers show intermediate risk of myalgia and myopathy. Moderately elevated susceptibility to muscle symptoms during statin therapy compared to CC carriers. Some elevation in baseline CK/LDH observed.",
+          "recommendation": "Standard statin prescribing with baseline and periodic CK monitoring. Patient education about myalgia symptoms. If myalgia develops, consider dose reduction or alternative agent. Monitor for intolerance phenotype.",
+          "severity": "mild"
+        },
+        "CC": {
+          "phenotype": "Lower risk of statin-induced myalgia (normal susceptibility)",
+          "effect": "Wild-type genotype (Gly247). Normal baseline CK/LDH levels and lower susceptibility to statin-induced muscle injury. Standard tolerance profile expected during statin therapy.",
+          "recommendation": "Standard statin dosing and monitoring per lipid management guidelines. Routine CK monitoring if symptomatic. No specific pharmacogenomic dose adjustment needed.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.42,
+        "african": 0.18,
+        "east_asian": 0.38,
+        "south_asian": 0.25,
+        "latino": 0.31
+      }
+    }
+  ],
+  "evidence_level": "emerging",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

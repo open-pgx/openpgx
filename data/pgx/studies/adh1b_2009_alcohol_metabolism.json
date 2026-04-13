@@ -1,0 +1,63 @@
+{
+  "gene": "ADH1B",
+  "category": "nutrient_metabolism",
+  "gene_description": "Alcohol dehydrogenase 1B (ADH1B) — rate-limiting enzyme in hepatic ethanol metabolism producing acetaldehyde",
+  "drugs": ["ethanol"],
+  "source": {
+    "pmid": "19834442",
+    "doi": "10.1038/mp.2009.100",
+    "source_type": "pubmed",
+    "title": "ADH1B is associated with alcohol dependence and alcohol consumption in populations of European and African ancestry",
+    "journal": "Molecular Psychiatry",
+    "year": 2009,
+    "cohort_size": null,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/19834442/",
+    "finding": "rs1229984 His48 (G allele) encodes fast-metabolizing enzyme: 70-80 fold faster ethanol oxidation vs Arg48. His48 variant shows genome-wide significant protective effect for alcohol dependence."
+  },
+  "snps": [
+    {
+      "rsid": "rs1229984",
+      "risk_allele": "A",
+      "reference_allele": "G",
+      "interpretations": {
+        "AA": {
+          "phenotype": "Slow Alcohol Metabolism (Arg48/Arg48)",
+          "effect": "Homozygous for arginine at position 48. Slow ethanol-to-acetaldehyde conversion (baseline rate). Higher risk of chronic ethanol accumulation with heavy drinking. Accelerates development of alcoholic fatty liver disease in heavy drinkers. Acetaldehyde accumulation is less pronounced than in ALDH2-deficient individuals.",
+          "recommendation": "Limit alcohol consumption. Heavy drinking increases risk for alcoholic liver disease, fatty liver, and alcohol dependence. Abstinence or moderate drinking (≤1 drink/day for women, ≤2 for men) strongly recommended.",
+          "severity": "moderate",
+          "odds_ratio": null
+        },
+        "AG": {
+          "phenotype": "Intermediate Alcohol Metabolism (Arg48/His48)",
+          "effect": "Heterozygous for arginine/histidine. Intermediate ethanol metabolism rate (~35-40x faster than Arg/Arg, ~1/2 of His/His rate). Moderate acetaldehyde accumulation and facial flushing with alcohol. Some protective effect against alcohol dependence.",
+          "recommendation": "Standard alcohol consumption guidelines apply. Moderate drinking (≤1 drink/day for women, ≤2 for men) recommended. Be aware of flushing response and avoid excessive intake.",
+          "severity": "mild"
+        },
+        "GA": {
+          "phenotype": "Intermediate Alcohol Metabolism (Arg48/His48)",
+          "effect": "Heterozygous for arginine/histidine. Intermediate ethanol metabolism rate (~35-40x faster than Arg/Arg, ~1/2 of His/His rate). Moderate acetaldehyde accumulation and facial flushing with alcohol. Some protective effect against alcohol dependence.",
+          "recommendation": "Standard alcohol consumption guidelines apply. Moderate drinking (≤1 drink/day for women, ≤2 for men) recommended. Be aware of flushing response and avoid excessive intake.",
+          "severity": "mild"
+        },
+        "GG": {
+          "phenotype": "Fast Alcohol Metabolism (His48/His48)",
+          "effect": "Homozygous for histidine at position 48. Very rapid ethanol-to-acetaldehyde conversion (70-80 fold faster than Arg48). Rapid acetaldehyde buildup causes facial flushing, nausea, headache, and autonomic symptoms (rapid heartbeat). Strong protective effect against alcohol dependence due to unpleasant acetaldehyde effects.",
+          "recommendation": "Natural deterrent to excessive drinking. Standard alcohol consumption safe but expect flushing/nausea response. If alcohol consumed, do so in moderation and be prepared for acetaldehyde-related symptoms.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.27,
+        "african": 0.09,
+        "east_asian": 0.63,
+        "south_asian": 0.38,
+        "latino": 0.15
+      }
+    }
+  ],
+  "evidence_level": "established",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

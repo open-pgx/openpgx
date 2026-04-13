@@ -2,11 +2,16 @@
   "gene": "IL23R",
   "category": "immune",
   "gene_description": "Interleukin-23 receptor (IL23R) — component of IL-23 signaling pathway; Arg381Gln variant reduces receptor function and mediates response to IL-12/23 biologics in psoriasis and inflammatory bowel disease",
-  "drugs": ["ustekinumab", "risankizumab", "guselkumab", "tildrakizumab"],
+  "drugs": [
+    "ustekinumab",
+    "risankizumab",
+    "guselkumab",
+    "tildrakizumab"
+  ],
   "source": {
     "pmid": "18219280",
     "doi": "10.1038/ng.62",
-    "source_type": "gwas",
+    "source_type": "pubmed",
     "title": "Polymorphisms of IL12B and IL23R genes are associated with psoriasis",
     "journal": "Nature Genetics",
     "year": 2008,
@@ -49,7 +54,7 @@
         "european": 0.12,
         "african": 0.08,
         "east_asian": 0.18,
-        "south_asian": 0.10,
+        "south_asian": 0.1,
         "latino": 0.11
       }
     }

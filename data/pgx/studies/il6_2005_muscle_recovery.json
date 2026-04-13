@@ -1,0 +1,63 @@
+{
+  "gene": "IL6",
+  "category": "fitness_trait",
+  "gene_description": "Interleukin-6 (IL6) — pro-inflammatory cytokine mediating exercise-induced inflammatory response and muscle repair and remodeling",
+  "drugs": [],
+  "source": {
+    "pmid": "16135858",
+    "doi": "10.1096/fj.05-3627fje",
+    "source_type": "pubmed",
+    "title": "A functional polymorphism in the IL6 gene promoter (-174G/C) regulates gene expression and associates with disease risk in adults",
+    "journal": "FASEB Journal",
+    "year": 2005,
+    "cohort_size": 1200,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/16135858/",
+    "finding": "rs1800795 -174G allele associated with higher IL-6 expression and enhanced post-exercise IL-6 response. G carriers show less exercise-induced muscle damage (lower CK) and faster recovery vs CC carriers."
+  },
+  "snps": [
+    {
+      "rsid": "rs1800795",
+      "risk_allele": "C",
+      "reference_allele": "G",
+      "interpretations": {
+        "CC": {
+          "phenotype": "Higher Inflammation, Slower Recovery (Risk/Risk)",
+          "effect": "Homozygous for C allele (-174C/-174C). Low baseline IL-6 expression but exaggerated post-exercise IL-6 response. Higher circulating IL-6 after eccentric exercise. Increased muscle soreness and higher levels of creatine kinase (muscle damage marker). Prolonged recovery time following intense or damaging exercise.",
+          "recommendation": "Emphasize recovery strategies: adequate protein (1.6-2.2 g/kg/day), carbohydrate around training, omega-3 supplementation, anti-inflammatory foods (berries, leafy greens, fatty fish). Prioritize sleep (7-9 hours). Consider active recovery and stretching. Allow longer recovery between intense sessions. Cold water immersion may help reduce soreness.",
+          "severity": "mild",
+          "odds_ratio": null
+        },
+        "GC": {
+          "phenotype": "Intermediate Inflammation, Moderate Recovery (Heterozygous)",
+          "effect": "Heterozygous for G/C alleles. Intermediate IL-6 production and post-exercise response. Moderate exercise-induced muscle inflammation and recovery time.",
+          "recommendation": "Standard training recovery practices. Adequate nutrition, sleep, and progressive training progression. Monitor recovery between intense sessions.",
+          "severity": "info"
+        },
+        "CG": {
+          "phenotype": "Intermediate Inflammation, Moderate Recovery (Heterozygous)",
+          "effect": "Heterozygous for G/C alleles. Intermediate IL-6 production and post-exercise response. Moderate exercise-induced muscle inflammation and recovery time.",
+          "recommendation": "Standard training recovery practices. Adequate nutrition, sleep, and progressive training progression. Monitor recovery between intense sessions.",
+          "severity": "info"
+        },
+        "GG": {
+          "phenotype": "Lower Inflammation, Faster Recovery (Wild-type/Wild-type)",
+          "effect": "Homozygous for G allele (-174G/-174G). Higher baseline and post-exercise IL-6 expression. Optimal IL-6 mediated muscle repair response. Lower exercise-induced muscle damage markers (CK). Faster recovery and less DOMS (delayed-onset muscle soreness) following eccentric exercise.",
+          "recommendation": "Favorable recovery profile allows more frequent intense training. Standard training nutrition and recovery practices sufficient. Can tolerate higher training frequency and volume.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.42,
+        "african": 0.35,
+        "east_asian": 0.48,
+        "south_asian": 0.40,
+        "latino": 0.38
+      }
+    }
+  ],
+  "evidence_level": "moderate",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

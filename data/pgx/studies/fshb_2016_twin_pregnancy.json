@@ -1,0 +1,63 @@
+{
+  "gene": "FSHB",
+  "category": "reproductive_trait",
+  "gene_description": "Follicle-stimulating hormone beta subunit (FSHB) — regulates FSH production and ovarian folliculogenesis, determines ovulation rate and twinning propensity",
+  "drugs": [],
+  "source": {
+    "pmid": "27012189",
+    "doi": "10.1038/ncomms11173",
+    "source_type": "pubmed",
+    "title": "Biological insights into multiple birth: genome-wide association study of twinning",
+    "journal": "Nature Communications",
+    "year": 2016,
+    "cohort_size": 3827,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/27012189/",
+    "finding": "rs11031006-G allele increases FSH levels and twin/multiple pregnancy risk. Associated with earlier menarche, earlier age at first child, higher lifetime parity. Effect size ~40% increased dizygotic twinning in carriers."
+  },
+  "snps": [
+    {
+      "rsid": "rs11031006",
+      "risk_allele": "G",
+      "reference_allele": "A",
+      "interpretations": {
+        "GG": {
+          "phenotype": "High FSH, Increased Twin Pregnancy Risk (Risk/Risk)",
+          "effect": "Homozygous for G allele. Elevated circulating FSH levels (~1.5-2x higher). Increased propensity for multiple ovulation per cycle, substantially increasing spontaneous dizygotic (fraternal) twinning probability. Associated with earlier menarche (~6 months earlier) and earlier age at first birth.",
+          "recommendation": "Awareness of increased twinning risk important for reproductive planning. Genetic counseling recommended if family history of multiples. Fertility treatments may result in higher risk of multiple gestation. Consider family planning timeline and resources for potential multiples.",
+          "severity": "mild",
+          "odds_ratio": 1.4
+        },
+        "AG": {
+          "phenotype": "Intermediate FSH, Moderately Increased Twin Risk (Heterozygous)",
+          "effect": "Heterozygous for G/A alleles. Moderately elevated FSH levels. Intermediate increased twinning propensity compared to AA genotype. Associated with slightly earlier reproductive milestones.",
+          "recommendation": "Modest awareness of twinning possibility. Standard reproductive planning applies. No special precautions needed.",
+          "severity": "info"
+        },
+        "GA": {
+          "phenotype": "Intermediate FSH, Moderately Increased Twin Risk (Heterozygous)",
+          "effect": "Heterozygous for G/A alleles. Moderately elevated FSH levels. Intermediate increased twinning propensity compared to AA genotype. Associated with slightly earlier reproductive milestones.",
+          "recommendation": "Modest awareness of twinning possibility. Standard reproductive planning applies. No special precautions needed.",
+          "severity": "info"
+        },
+        "AA": {
+          "phenotype": "Normal FSH, Standard Twin Risk (Wild-type/Wild-type)",
+          "effect": "Homozygous for A allele (ancestral). Normal circulating FSH levels and ovulation rates. Standard baseline dizygotic twinning probability (~1-2% in most populations).",
+          "recommendation": "Standard reproductive counseling applies. No increased twinning risk related to this locus.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.38,
+        "african": 0.45,
+        "east_asian": 0.32,
+        "south_asian": 0.35,
+        "latino": 0.40
+      }
+    }
+  ],
+  "evidence_level": "moderate",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

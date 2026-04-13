@@ -1,0 +1,63 @@
+{
+  "gene": "OXTR",
+  "description": "Oxytocin receptor genetic variation and empathy/social cognition",
+  "category": "drug_target",
+  "drugs": [
+    "oxytocin_nasal"
+  ],
+  "source": {
+    "title": "Oxytocin receptor genetic variation relates to empathy and stress reactivity in humans",
+    "year": 2009,
+    "pmid": "19934046",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/19934046/",
+    "journal": "Proceedings of the National Academy of Sciences USA",
+    "authors": "Rodrigues SM, Saslow LR, Garcia N, et al.",
+    "source_type": "pubmed"
+  },
+  "source_type": "pubmed",
+  "evidence_level": "emerging",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  },
+  "snps": [
+    {
+      "rsid": "rs53576",
+      "reference_allele": "G",
+      "risk_allele": "A",
+      "interpretations": {
+        "AA": {
+          "phenotype": "AA homozygote (Risk)",
+          "effect": "Homozygous for the A allele (risk allele). Associated with lower empathy scores, reduced empathic accuracy on emotion recognition tasks, diminished stress buffering effect from social support.",
+          "recommendation": "Consult clinical guidelines.",
+          "severity": "mild"
+        },
+        "AG": {
+          "phenotype": "AG heterozygote",
+          "effect": "Heterozygous carrier. Intermediate empathy and social cognition with moderate oxytocin receptor responsiveness.",
+          "recommendation": "Consult clinical guidelines.",
+          "severity": "info"
+        },
+        "GA": {
+          "phenotype": "AG heterozygote",
+          "effect": "Heterozygous carrier. Intermediate empathy and social cognition with moderate oxytocin receptor responsiveness.",
+          "recommendation": "Consult clinical guidelines.",
+          "severity": "info"
+        },
+        "GG": {
+          "phenotype": "GG homozygote (Favorable)",
+          "effect": "Homozygous for the G allele (reference/favorable allele). Associated with higher empathy scores, better social cognition and empathic accuracy, enhanced stress buffering from social support.",
+          "recommendation": "Consult clinical guidelines.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.36,
+        "african": 0.24,
+        "east_asian": 0.35,
+        "south_asian": 0.3,
+        "latino": 0.32
+      }
+    }
+  ]
+}

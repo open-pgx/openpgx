@@ -1,0 +1,65 @@
+{
+  "gene": "PER2",
+  "description": "Period circadian regulator 2 and chronotype/circadian preference",
+  "category": "drug_target",
+  "drugs": [
+    "melatonin",
+    "modafinil",
+    "zolpidem"
+  ],
+  "source": {
+    "title": "Genome-wide association analyses of chronotype in 697,828 individuals provides insights into circadian rhythms",
+    "year": 2019,
+    "pmid": "30696823",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/30696823/",
+    "journal": "Nature Communications",
+    "authors": "Jones SE, Tyrrell J, Wood AR, et al.",
+    "source_type": "pubmed"
+  },
+  "source_type": "pubmed",
+  "evidence_level": "emerging",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  },
+  "snps": [
+    {
+      "rsid": "rs35333999",
+      "reference_allele": "C",
+      "risk_allele": "T",
+      "interpretations": {
+        "TT": {
+          "phenotype": "TT homozygote (Evening preference)",
+          "effect": "Homozygous for the T allele (risk allele). Associated with strong evening/night chronotype preference, longer intrinsic circadian period (~24.3+ hours), difficulty with early morning schedules.",
+          "recommendation": "Consult clinical guidelines.",
+          "severity": "mild"
+        },
+        "TC": {
+          "phenotype": "TC heterozygote",
+          "effect": "Heterozygous carrier. Intermediate chronotype with slightly delayed sleep preference.",
+          "recommendation": "Consult clinical guidelines.",
+          "severity": "info"
+        },
+        "CT": {
+          "phenotype": "TC heterozygote",
+          "effect": "Heterozygous carrier. Intermediate chronotype with slightly delayed sleep preference.",
+          "recommendation": "Consult clinical guidelines.",
+          "severity": "info"
+        },
+        "CC": {
+          "phenotype": "CC homozygote (Morning preference)",
+          "effect": "Homozygous for the C allele (reference allele). Associated with morning/early chronotype preference or standard sleep timing, typical intrinsic circadian period (~24 hours).",
+          "recommendation": "Consult clinical guidelines.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.28,
+        "african": 0.15,
+        "east_asian": 0.35,
+        "south_asian": 0.22,
+        "latino": 0.25
+      }
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "gene": "BRCA2",
+  "category": "drug_target",
+  "gene_description": "BRCA2 (BRCA2 DNA repair associated) encodes a protein crucial for homologous recombination repair. BRCA2 loss-of-function variants cause hereditary breast and ovarian cancer predisposition and sensitize tumors to PARP inhibitors.",
+  "drugs": ["olaparib", "talazoparib", "niraparib", "rucaparib"],
+  "source": {
+    "pmid": "25366685",
+    "source_type": "pubmed",
+    "title": "Olaparib monotherapy in patients with advanced cancer and a germline BRCA1/2 mutation",
+    "journal": "Journal of Clinical Oncology",
+    "year": 2015,
+    "cohort_size": 298,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/25366685/",
+    "finding": "Olaparib showed significant efficacy in advanced BRCA1/2-mutant cancers, establishing PARP inhibitors as standard-of-care therapy"
+  },
+  "snps": [
+    {
+      "rsid": "rs11571833",
+      "risk_allele": "A",
+      "reference_allele": "G",
+      "chromosome": "13",
+      "position": "32890559",
+      "variant_type": "stop_codon",
+      "interpretations": {
+        "AA": {
+          "phenotype": "Homozygous BRCA2 truncating mutation",
+          "effect": "Complete loss of BRCA2 protein function; severe homologous recombination deficiency",
+          "recommendation": "Strong indication for PARP inhibitor therapy. Monitor for secondary malignancies. Carrier screening recommended for family members.",
+          "severity": "life_threatening"
+        },
+        "AG": {
+          "phenotype": "Heterozygous BRCA2 truncating mutation carrier",
+          "effect": "Partial BRCA2 function loss; increased cancer predisposition; eligible for PARP inhibitor therapy if cancer develops",
+          "recommendation": "Consider PARP inhibitor maintenance therapy if cancer diagnosed. Recommend genetic counseling and family screening. Enhanced surveillance protocols.",
+          "severity": "severe"
+        },
+        "GA": {
+          "phenotype": "Heterozygous BRCA2 truncating mutation carrier",
+          "effect": "Partial BRCA2 function loss; increased cancer predisposition; eligible for PARP inhibitor therapy if cancer develops",
+          "recommendation": "Consider PARP inhibitor maintenance therapy if cancer diagnosed. Recommend genetic counseling and family screening. Enhanced surveillance protocols.",
+          "severity": "severe"
+        },
+        "GG": {
+          "phenotype": "Wild-type BRCA2",
+          "effect": "Normal BRCA2 protein function; standard cancer risk",
+          "recommendation": "PARP inhibitors not indicated based on BRCA2 status alone. Discuss other tumor characteristics and biomarkers.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.002,
+        "african": 0.001,
+        "east_asian": 0.0005,
+        "south_asian": 0.001,
+        "latino": 0.0015
+      }
+    }
+  ],
+  "evidence_level": "established",
+  "clinical_significance": "FDA companion diagnostic for PARP inhibitor eligibility. BRCA2 mutations confer billion-dollar market opportunity for targeted therapy.",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

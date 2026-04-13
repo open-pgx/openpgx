@@ -1,0 +1,65 @@
+{
+  "gene": "HLA-B",
+  "category": "immune",
+  "gene_description": "HLA-B (Major Histocompatibility Complex, Class I, B) encodes a major histocompatibility complex class I molecule. The HLA-B*58:01 allele shows extremely strong association with allopurinol-induced severe cutaneous adverse reactions (SCAR), including Stevens-Johnson Syndrome (SJS) and Toxic Epidermal Necrolysis (TEN).",
+  "drugs": ["allopurinol", "febuxostat"],
+  "source": {
+    "pmid": "15743917",
+    "source_type": "pubmed",
+    "title": "HLA-B*5801 allele as a genetic marker for severe cutaneous adverse reactions caused by allopurinol",
+    "journal": "Proceedings of the National Academy of Sciences USA",
+    "year": 2005,
+    "cohort_size": 279,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/15743917/",
+    "finding": "HLA-B*58:01 present in 100% of allopurinol-SJS/TEN cases vs. 15% of tolerant controls in Han-Chinese population; landmark pharmacogenomic discovery"
+  },
+  "snps": [
+    {
+      "rsid": "rs9263726",
+      "risk_allele": "T",
+      "reference_allele": "C",
+      "chromosome": "6",
+      "position": "31432000",
+      "variant_type": "tag_SNP",
+      "interpretations": {
+        "TT": {
+          "phenotype": "Homozygous T allele; tag SNP for HLA-B*58:01",
+          "effect": "Very high likelihood of HLA-B*58:01 positivity; extreme risk for allopurinol-induced SJS/TEN",
+          "recommendation": "CONTRAINDICATION to allopurinol. Use alternative uric acid-lowering agents (febuxostat preferred, or use cautiously with monitoring). Consider uricosuric agents or pegloticase if needed.",
+          "severity": "life_threatening"
+        },
+        "TC": {
+          "phenotype": "Heterozygous T allele; possible tag SNP for HLA-B*58:01",
+          "effect": "Elevated risk of allopurinol-induced SJS/TEN; HLA-B*58:01 testing recommended",
+          "recommendation": "Perform HLA-B*58:01 genotyping. If positive, avoid allopurinol. If negative, allopurinol can be used but with careful monitoring. Alternative urate-lowering therapy preferred.",
+          "severity": "severe"
+        },
+        "CT": {
+          "phenotype": "Heterozygous T allele; possible tag SNP for HLA-B*58:01",
+          "effect": "Elevated risk of allopurinol-induced SJS/TEN; HLA-B*58:01 testing recommended",
+          "recommendation": "Perform HLA-B*58:01 genotyping. If positive, avoid allopurinol. If negative, allopurinol can be used but with careful monitoring. Alternative urate-lowering therapy preferred.",
+          "severity": "severe"
+        },
+        "CC": {
+          "phenotype": "Homozygous C allele; low likelihood of HLA-B*58:01",
+          "effect": "Very low risk of HLA-B*58:01-associated allopurinol SJS/TEN; allopurinol safe to use",
+          "recommendation": "Allopurinol can be safely prescribed at standard doses. Monitor for other ADRs. Standard uric acid target <6 mg/dL.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.08,
+        "african": 0.03,
+        "east_asian": 0.25,
+        "south_asian": 0.12,
+        "latino": 0.06
+      }
+    }
+  ],
+  "evidence_level": "established",
+  "clinical_significance": "Landmark CPIC-recommended pharmacogenomic test. HLA-B*58:01 screening prevents life-threatening allopurinol SJS/TEN. Particularly important in East Asian populations where allele frequency is 10-25%. FDA and FDA-cleared testing now standard-of-care.",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

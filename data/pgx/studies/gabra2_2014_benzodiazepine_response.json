@@ -68,7 +68,6 @@
   "evidence_level": "moderate",
   "contributor": {
     "name": "OpenPGx Community",
-    "github": "openpgx",
-    "orcid": null
+    "github": "openpgx"
   }
 }

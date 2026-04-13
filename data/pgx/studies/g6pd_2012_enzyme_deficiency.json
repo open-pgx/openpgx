@@ -1,0 +1,71 @@
+{
+  "gene": "G6PD",
+  "gene_full_name": "Glucose-6-Phosphate Dehydrogenase",
+  "region": "X chromosome, exon 4",
+  "category": "drug_metabolism",
+  "phenotype": "G6PD Deficiency",
+  "description": "G6PD rs1050828 (Val98Met, A- variant) X-linked enzyme deficiency affecting ability to metabolize oxidant drugs. The A- variant reduces G6PD enzyme activity to 10-40% of normal, causing hemolytic anemia when exposed to oxidative stressors including certain medications.",
+  "source": {
+    "title": "G6PD Deficiency Classification and variants in sub-Saharan African populations",
+    "year": 2012,
+    "authors": "Howes RE, Bockarie MJ, Mwangi TW, et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/22419719/",
+    "pmid": "22419719",
+    "journal": "Malaria Journal",
+    "volume": 11,
+    "pages": "46",
+    "source_type": "pubmed"
+  },
+  "source_type": "pubmed",
+  "evidence_level": "established",
+  "snps": [
+    {
+      "rsid": "rs1050828",
+      "risk_allele": "T",
+      "interpretations": {
+        "TT": {
+          "phenotype": "G6PD deficiency with severe enzyme activity reduction; high risk of hemolytic anemia with oxidant exposure",
+          "effect": "G6PD deficiency with severe enzyme activity reduction; high risk of hemolytic anemia with oxidant exposure",
+          "recommendation": "Avoid oxidative triggers: primaquine, dapsone, rasburicase, methylene blue, nitrofurantoin, aspirin (high dose), sulfonamides. Screen before use of these drugs. Counsel on fava bean avoidance.",
+          "severity": "info"
+        },
+        "TC": {
+          "phenotype": "G6PD carrier with intermediate activity; moderate hemolysis risk with strong oxidant exposure",
+          "effect": "G6PD carrier with intermediate activity; moderate hemolysis risk with strong oxidant exposure",
+          "recommendation": "Exercise caution with oxidant drugs; dose adjustment or monitoring recommended. Avoid high-dose aspirin and sulfonamides. Screen before prescribing primaquine or other high-risk drugs.",
+          "severity": "info"
+        },
+        "CT": {
+          "phenotype": "G6PD carrier with intermediate activity; moderate hemolysis risk with strong oxidant exposure",
+          "effect": "G6PD carrier with intermediate activity; moderate hemolysis risk with strong oxidant exposure",
+          "recommendation": "Exercise caution with oxidant drugs; dose adjustment or monitoring recommended. Avoid high-dose aspirin and sulfonamides. Screen before prescribing primaquine or other high-risk drugs.",
+          "severity": "info"
+        },
+        "CC": {
+          "phenotype": "Normal G6PD activity; no special risk from oxidant medications",
+          "effect": "Normal G6PD activity; no special risk from oxidant medications",
+          "recommendation": "No specific G6PD-related restrictions; standard dosing of medications is appropriate",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.003,
+        "african": 0.1,
+        "east_asian": 0.001,
+        "south_asian": 0.02,
+        "latino": 0.005
+      }
+    }
+  ],
+  "drugs": [
+    "primaquine",
+    "dapsone",
+    "rasburicase",
+    "methylene_blue",
+    "nitrofurantoin"
+  ],
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

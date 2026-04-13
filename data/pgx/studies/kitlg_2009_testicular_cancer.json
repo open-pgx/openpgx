@@ -1,0 +1,68 @@
+{
+  "gene": "KITLG",
+  "rsid": "rs995030",
+  "cancer_type": "testicular_cancer",
+  "title": "KITLG rs995030 Testicular Germ Cell Cancer Risk (Stem Cell Growth Factor)",
+  "description": "Common variant in KITLG (KIT ligand), encoding the ligand for the KIT receptor tyrosine kinase. KIT signaling is critical for germ cell development and maintenance of the germline stem cell pool. The G allele (major/risk allele) is strongly associated with testicular germ cell tumor (TGCT) development, particularly seminomas. Homozygotes for the risk allele have approximately sevenfold increased TGCT risk.",
+  "source": {
+    "title": "Common variation in KITLG and at 5q31.3 predisposes to testicular germ cell cancer",
+    "authors": ["Kanetsky PA", "Mitra N", "Vardhanabhuti S", "et al."],
+    "year": 2009,
+    "journal": "Nature Genetics",
+    "volume": 41,
+    "pages": "811-815",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/19483682/"
+  },
+  "pmid": "19483682",
+  "source_type": "pubmed",
+  "evidence_level": "established",
+  "drugs": ["cisplatin", "etoposide", "bleomycin"],
+  "snps": [
+    {
+      "rsid": "rs995030",
+      "chromosome": "12",
+      "position": 88611052,
+      "ref_allele": "A",
+      "risk_allele": "G",
+      "interpretations": {
+        "AA": {
+          "phenotype": "normal_risk",
+          "effect": "baseline_testicular_cancer_risk",
+          "recommendation": "standard_surveillance",
+          "severity": "info"
+        },
+        "AG": {
+          "phenotype": "intermediate_risk",
+          "effect": "2x_increased_testicular_cancer_risk",
+          "recommendation": "enhanced_self_examination_ultrasound_surveillance",
+          "severity": "mild"
+        },
+        "GA": {
+          "phenotype": "intermediate_risk",
+          "effect": "2x_increased_testicular_cancer_risk",
+          "recommendation": "enhanced_self_examination_ultrasound_surveillance",
+          "severity": "mild"
+        },
+        "GG": {
+          "phenotype": "very_high_risk",
+          "effect": "7x_increased_testicular_cancer_risk",
+          "recommendation": "aggressive_surveillance_early_intervention_bleomycin_monitoring",
+          "severity": "severe"
+        }
+      },
+      "population_frequency": {
+        "european": 0.48,
+        "african": 0.32,
+        "east_asian": 0.55,
+        "south_asian": 0.50,
+        "latino": 0.46
+      }
+    }
+  ],
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  },
+  "tags": ["cancer_risk", "testicular_cancer", "germ_cell_tumor", "growth_factor"],
+  "last_updated": "2026-04-12"
+}

@@ -2,11 +2,14 @@
   "gene": "ESR1",
   "category": "drug_target",
   "gene_description": "Estrogen receptor alpha (ESR1) — nuclear receptor for estrogen; harbors PvuII polymorphism that modulates receptor expression and estrogen-mediated effects; significant for tamoxifen response in breast cancer",
-  "drugs": ["tamoxifen", "aromatase_inhibitors"],
+  "drugs": [
+    "tamoxifen",
+    "aromatase_inhibitors"
+  ],
   "source": {
     "pmid": "21873635",
     "doi": "10.1038/nrc3089",
-    "source_type": "clinical_study",
+    "source_type": "pubmed",
     "title": "The role of ESR1 gene polymorphic markers in breast cancer development and tamoxifen therapy resistance",
     "journal": "Nature Reviews Cancer",
     "year": 2011,

@@ -1,0 +1,57 @@
+{
+  "gene": "FBN1",
+  "source": {
+    "title": "Genetic Variants in FBN-1 and Risk for Thoracic Aortic Aneurysm and Dissection",
+    "year": 2011,
+    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0091437"
+  },
+  "source_type": "pubmed",
+  "evidence_level": "moderate",
+  "severity": "severe",
+  "description": "FBN1 rs2118181 is associated with thoracic aortic dissection and aortic aneurysm. The minor G allele increases TGF-β1 levels and increases aortic disease risk. Carriers have increased risk of aortic dilation.",
+  "snps": [
+    {
+      "rsid": "rs2118181",
+      "location": "15q21.1",
+      "effect_allele": "G",
+      "reference_allele": "A",
+      "interpretations": {
+        "AA": {
+          "phenotype": "Lower aortic aneurysm and dissection risk",
+          "effect": "Reference homozygote",
+          "recommendation": "Standard aortic screening based on family history; healthy lifestyle",
+          "severity": "info"
+        },
+        "AG": {
+          "phenotype": "Intermediate aortic disease risk",
+          "effect": "Heterozygous carrier; ~1.8-1.9x increased risk",
+          "recommendation": "Baseline aortic imaging (ultrasound or CT); periodic monitoring; manage hypertension closely",
+          "severity": "moderate"
+        },
+        "GA": {
+          "phenotype": "Intermediate aortic disease risk",
+          "effect": "Heterozygous carrier; ~1.8-1.9x increased risk",
+          "recommendation": "Baseline aortic imaging (ultrasound or CT); periodic monitoring; manage hypertension closely",
+          "severity": "moderate"
+        },
+        "GG": {
+          "phenotype": "Elevated aortic aneurysm and dissection risk",
+          "effect": "Homozygous risk allele; cumulative increased risk",
+          "recommendation": "Baseline aortic imaging; regular monitoring every 1-2 years; aggressive BP control; avoid contact sports; genetic counseling recommended",
+          "severity": "severe"
+        }
+      },
+      "population_frequency": {
+        "european": 0.28,
+        "african": 0.18,
+        "east_asian": 0.32,
+        "south_asian": 0.25,
+        "latino": 0.22
+      }
+    }
+  ],
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

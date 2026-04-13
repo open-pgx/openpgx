@@ -1,0 +1,60 @@
+{
+  "gene": "CNTNAP2",
+  "category": "drug_target",
+  "gene_description": "Contactin Associated Protein 2 (CASPR2) — member of the neurexin superfamily that mediates cell-cell interactions in the nervous system. Essential for clustering potassium channels in myelinated axons and normal nervous system development. The rs7794745 polymorphism affects neural connectivity and language development pathways implicated in autism spectrum disorder.",
+  "drugs": [
+    "risperidone",
+    "aripiprazole",
+    "oxytocin_nasal"
+  ],
+  "source": {
+    "pmid": "18179900",
+    "source_type": "pubmed",
+    "title": "A Common Genetic Variant in the Neurexin Superfamily Member CNTNAP2 Increases Familial Risk of Autism",
+    "journal": "American Journal of Human Genetics",
+    "year": 2008,
+    "cohort_size": 1295,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/18179900/"
+  },
+  "snps": [
+    {
+      "rsid": "rs7794745",
+      "risk_allele": "T",
+      "reference_allele": "A",
+      "interpretations": {
+        "TT": {
+          "phenotype": "Increased autism spectrum disorder risk",
+          "effect": "Homozygous T-allele carriers show significantly elevated autism risk (approximately 1.2-1.4x relative risk). Associated with altered language development trajectories, reduced brain volumes in parahippocampal and temporal regions, decreased white matter integrity in language-associated tracts. Overtransmission of T allele confirmed in multiple independent autism family-based samples.",
+          "severity": "moderate"
+        },
+        "TA": {
+          "phenotype": "Mild increased autism spectrum disorder risk",
+          "effect": "Heterozygous carriers show modestly elevated risk for autism spectrum disorder. Intermediate effects on neural connectivity and language processing. Some studies show 30-40% increased risk relative to wild-type AA genotype.",
+          "severity": "mild"
+        },
+        "AT": {
+          "phenotype": "Mild increased autism spectrum disorder risk",
+          "effect": "Heterozygous carriers show modestly elevated risk for autism spectrum disorder. Intermediate effects on neural connectivity and language processing. Some studies show 30-40% increased risk relative to wild-type AA genotype.",
+          "severity": "mild"
+        },
+        "AA": {
+          "phenotype": "Baseline autism risk",
+          "effect": "Homozygous A-allele carriers serve as reference group. Standard autism prevalence risk without specific CNTNAP2-mediated increase. Normal language development trajectory and neural connectivity patterns.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "global": 0.35,
+        "european": 0.34,
+        "african": 0.40,
+        "east_asian": 0.32,
+        "south_asian": 0.36
+      }
+    }
+  ],
+  "evidence_level": "moderate",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "gene": "NOD2",
+  "category": "immune",
+  "gene_description": "Nucleotide Binding Oligomerization Domain Containing 2 — a cytoplasmic pattern recognition receptor that senses bacterial lipopolysaccharide and peptidoglycans. Frameshift and missense variants impair bacterial sensing, NF-kB signaling, and innate immune response, predisposing to Crohn's disease through dysregulated intestinal inflammation.",
+  "drugs": ["infliximab", "adalimumab", "azathioprine", "methotrexate", "mesalamine"],
+  "source": {
+    "pmid": "11385576",
+    "doi": "10.1038/35079107",
+    "source_type": "pubmed",
+    "title": "Association of NOD2 leucine-rich repeat variants with susceptibility to Crohn's disease",
+    "journal": "Nature",
+    "year": 2001,
+    "cohort_size": 680,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/11385576/",
+    "finding": "Three independent NOD2 variants associated with Crohn's disease susceptibility: a frameshift mutation (1007fs) and two missense variants (R702W and G908R). Homozygous carriers of any variant have 17-fold increased Crohn's disease risk. Variants disrupt NOD2 protein structure in leucine-rich repeat domain or adjacent region, impairing bacterial sensing and NF-kB activation. NOD2 mediates recognition of bacterial peptidoglycans through intracellular receptors."
+  },
+  "snps": [
+    {
+      "rsid": "rs2066844",
+      "risk_allele": "T",
+      "reference_allele": "C",
+      "interpretations": {
+        "TT": {
+          "phenotype": "NOD2 R702W homozygous — highest Crohn's disease risk",
+          "effect": "Homozygous for R702W risk variant. ~17-fold increased Crohn's disease risk (strongest genetic association identified in 2001). Severe impairment of NOD2-mediated bacterial sensing and NF-kB activation in intestinal innate immune cells (macrophages, dendritic cells). Defective recognition of bacterial lipopolysaccharide and peptidoglycans. Loss of negative feedback on pro-inflammatory cytokine production (TNF-α, IL-6, IL-8). Dysregulated intestinal inflammation and early-onset, more severe Crohn's disease. Higher rates of intestinal complications (strictures, fistulae).",
+          "recommendation": "Early aggressive immunosuppressive therapy: TNF-α antagonists (infliximab IV, adalimumab SC) as first-line biologics. Azathioprine or 6-mercaptopurine for maintenance immunosuppression. Methotrexate if TNF inhibitors insufficient or contraindicated. Mesalamine for mild-to-moderate colonic disease. Nutritional support: consider elemental diet or parenteral nutrition if severe malabsorption. Regular monitoring for disease activity (CRP, fecal calprotectin) and complications. Preventive screening for colorectal cancer (higher risk in inflammatory bowel disease). Genetic counseling: recurrence risk in siblings ~10-15%.",
+          "severity": "severe",
+          "odds_ratio": 17.0
+        },
+        "TC": {
+          "phenotype": "NOD2 R702W heterozygous — intermediate Crohn's disease risk",
+          "effect": "Heterozygous for R702W variant. ~2-4 fold increased Crohn's disease risk. Partial impairment of NOD2-mediated bacterial sensing and NF-kB signaling. Reduced but not absent intestinal innate immune responsiveness. Intermediate-risk genotype with variable penetrance; not all carriers develop Crohn's disease.",
+          "recommendation": "Monitor for Crohn's disease symptoms: chronic diarrhea, abdominal pain, blood in stool, weight loss, anemia. Avoid known triggers if symptomatic: NSAIDs, smoking, high-stress periods. If diagnosed with Crohn's disease, consider TNF-α antagonist or other biologic therapy given NOD2-conferred susceptibility. Maintain healthy gut microbiome: consider probiotics, fermented foods, high-fiber diet (if tolerated). Screening colonoscopy if family history of IBD-related complications.",
+          "severity": "moderate",
+          "odds_ratio": 3.0
+        },
+        "CT": {
+          "phenotype": "NOD2 R702W heterozygous — intermediate Crohn's disease risk",
+          "effect": "Heterozygous for R702W variant. ~2-4 fold increased Crohn's disease risk. Partial impairment of NOD2-mediated bacterial sensing and NF-kB signaling. Reduced but not absent intestinal innate immune responsiveness. Intermediate-risk genotype with variable penetrance; not all carriers develop Crohn's disease.",
+          "recommendation": "Monitor for Crohn's disease symptoms: chronic diarrhea, abdominal pain, blood in stool, weight loss, anemia. Avoid known triggers if symptomatic: NSAIDs, smoking, high-stress periods. If diagnosed with Crohn's disease, consider TNF-α antagonist or other biologic therapy given NOD2-conferred susceptibility. Maintain healthy gut microbiome: consider probiotics, fermented foods, high-fiber diet (if tolerated). Screening colonoscopy if family history of IBD-related complications.",
+          "severity": "moderate",
+          "odds_ratio": 3.0
+        },
+        "CC": {
+          "phenotype": "NOD2 wild-type homozygous — standard Crohn's disease risk",
+          "effect": "Homozygous for wild-type C allele. Normal NOD2 protein structure and function. Standard intestinal innate immune responsiveness to bacteria. Crohn's disease risk from this locus is minimal; other genetic loci and environmental factors (smoking, microbiota, infections) play primary role.",
+          "recommendation": "Standard preventive measures: avoid smoking (strong Crohn's risk factor), maintain balanced diet, manage stress, avoid excessive NSAID use. Regular check-ups to detect early GI symptoms. Family screening for NOD2 if close relatives develop Crohn's disease.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.08,
+        "african": 0.02,
+        "east_asian": 0.01,
+        "south_asian": 0.03,
+        "latino": 0.05
+      }
+    }
+  ],
+  "evidence_level": "established",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

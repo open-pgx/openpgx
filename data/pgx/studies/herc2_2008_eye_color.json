@@ -1,0 +1,63 @@
+{
+  "gene": "HERC2",
+  "category": "trait_appearance",
+  "gene_description": "HECT and RLD domains containing E3 ubiquitin protein ligase 2 (HERC2) — intron 86 contains regulatory element controlling OCA2 expression and eye pigmentation",
+  "drugs": [],
+  "source": {
+    "pmid": "18172690",
+    "doi": "10.1016/j.ajhg.2007.12.003",
+    "source_type": "pubmed",
+    "title": "Blue eye color in humans may be caused by a perfectly associated founder mutation in a regulatory element located within the HERC2 gene inhibiting OCA2 expression",
+    "journal": "American Journal of Human Genetics",
+    "year": 2008,
+    "cohort_size": null,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/18172690/",
+    "finding": "rs12913832 is the best-known predictor of blue vs brown eye color. Located 21.152 bp upstream of OCA2 promoter in HERC2 intron 86. G allele associated with blue eyes (~94% accuracy in Europeans) by reducing OCA2 expression."
+  },
+  "snps": [
+    {
+      "rsid": "rs12913832",
+      "risk_allele": "G",
+      "reference_allele": "A",
+      "interpretations": {
+        "GG": {
+          "phenotype": "Blue Eyes",
+          "effect": "Homozygous for G allele. Strongly associated with blue eye color. G allele is found in regulatory enhancer of HERC2 that suppresses OCA2 expression, reducing melanin production in the iris. ~94% of individuals with this genotype have blue eyes.",
+          "recommendation": "No clinical action needed. Blue eyes are more sensitive to light and sunglare; polarized sunglasses may improve comfort.",
+          "severity": "info",
+          "odds_ratio": null
+        },
+        "AG": {
+          "phenotype": "Brown/Intermediate Eyes",
+          "effect": "Heterozygous A/G genotype. Most commonly associated with brown eye color, though intermediate shades can occur. Permits higher OCA2 expression than GG genotype, resulting in increased melanin deposition.",
+          "recommendation": "No clinical action needed. Standard UV eye protection recommended for all individuals.",
+          "severity": "info"
+        },
+        "GA": {
+          "phenotype": "Brown/Intermediate Eyes",
+          "effect": "Heterozygous A/G genotype. Most commonly associated with brown eye color, though intermediate shades can occur. Permits higher OCA2 expression than GG genotype, resulting in increased melanin deposition.",
+          "recommendation": "No clinical action needed. Standard UV eye protection recommended for all individuals.",
+          "severity": "info"
+        },
+        "AA": {
+          "phenotype": "Brown Eyes",
+          "effect": "Homozygous for A allele (ancestral). Associated with brown eye color due to unrestricted OCA2 expression and high melanin production in the iris. Most common phenotype worldwide.",
+          "recommendation": "No clinical action needed. Standard UV eye protection recommended for all individuals.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.28,
+        "african": 0.08,
+        "east_asian": 0.12,
+        "south_asian": 0.10,
+        "latino": 0.15
+      }
+    }
+  ],
+  "evidence_level": "established",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

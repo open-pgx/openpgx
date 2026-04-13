@@ -1,0 +1,65 @@
+{
+  "gene": "EGFR",
+  "category": "drug_target",
+  "gene_description": "EGFR (Epidermal Growth Factor Receptor) encodes a transmembrane receptor tyrosine kinase. Activating mutations (particularly L858R and exon 19 deletions) in exons 18-21 predict excellent response to EGFR tyrosine kinase inhibitors in lung cancer.",
+  "drugs": ["gefitinib", "erlotinib", "osimertinib", "afatinib"],
+  "source": {
+    "pmid": "19692680",
+    "source_type": "pubmed",
+    "title": "Gefitinib or carboplatin-paclitaxel in pulmonary adenocarcinoma",
+    "journal": "New England Journal of Medicine",
+    "year": 2009,
+    "cohort_size": 437,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/19692680/",
+    "finding": "EGFR mutations (L858R and exon 19 deletions) strongly predict gefitinib response; first demonstration that targeted therapy superior to chemotherapy in NSCLC"
+  },
+  "snps": [
+    {
+      "rsid": "rs1050171",
+      "risk_allele": "G",
+      "reference_allele": "A",
+      "chromosome": "7",
+      "position": "55259515",
+      "variant_type": "tag_SNP",
+      "interpretations": {
+        "GG": {
+          "phenotype": "Homozygous tag allele associated with activating EGFR mutations",
+          "effect": "Strong predictor of EGFR-activating mutations; excellent TKI response expected",
+          "recommendation": "First-line osimertinib monotherapy or osimertinib + chemotherapy. Monitor for T790M resistance mutations. Consider 3rd-generation TKI upfront.",
+          "severity": "info"
+        },
+        "GA": {
+          "phenotype": "Heterozygous tag allele",
+          "effect": "Intermediate predictor of EGFR mutations; likely TKI response",
+          "recommendation": "Genotype for specific L858R/exon19 mutations. If positive, treat with EGFR TKI. Consider combination with chemotherapy in some cases.",
+          "severity": "mild"
+        },
+        "AG": {
+          "phenotype": "Heterozygous tag allele",
+          "effect": "Intermediate predictor of EGFR mutations; likely TKI response",
+          "recommendation": "Genotype for specific L858R/exon19 mutations. If positive, treat with EGFR TKI. Consider combination with chemotherapy in some cases.",
+          "severity": "mild"
+        },
+        "AA": {
+          "phenotype": "Homozygous reference allele",
+          "effect": "Lower likelihood of activating EGFR mutations; standard chemotherapy more likely appropriate",
+          "recommendation": "Perform targeted genotyping for EGFR mutations. If wild-type, consider chemotherapy or immunotherapy. Evaluate for other driver mutations (KRAS, ALK, ROS1).",
+          "severity": "moderate"
+        }
+      },
+      "population_frequency": {
+        "european": 0.35,
+        "african": 0.28,
+        "east_asian": 0.42,
+        "south_asian": 0.33,
+        "latino": 0.31
+      }
+    }
+  ],
+  "evidence_level": "established",
+  "clinical_significance": "Landmark IPASS trial established EGFR mutation testing as standard-of-care companion diagnostic for NSCLC. Mutations confer 40-50% response rates to TKIs.",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

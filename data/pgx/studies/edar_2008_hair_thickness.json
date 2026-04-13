@@ -1,0 +1,63 @@
+{
+  "gene": "EDAR",
+  "category": "trait_appearance",
+  "gene_description": "Ectodysplasin A receptor (EDAR) — signaling receptor controlling hair follicle development and fiber characteristics in East Asian populations",
+  "drugs": [],
+  "source": {
+    "pmid": "18561327",
+    "doi": "10.1002/humu.20795",
+    "source_type": "pubmed",
+    "title": "Enhanced ectodysplasin-A receptor (EDAR) signaling alters multiple fiber characteristics to produce the East Asian hair form",
+    "journal": "Human Mutation",
+    "year": 2008,
+    "cohort_size": null,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/18561327/",
+    "finding": "rs3827760 V370A variant creates EDAR370Ala (enhanced signaling). G allele frequency 87.6% in East Asians vs 0% in Europeans/Africans. Associated with thicker hair shafts, straighter hair, more sweat glands, and modified tooth/ear morphology."
+  },
+  "snps": [
+    {
+      "rsid": "rs3827760",
+      "risk_allele": "A",
+      "reference_allele": "G",
+      "interpretations": {
+        "AA": {
+          "phenotype": "Very Thick Straight Hair (Ala370/Ala370)",
+          "effect": "Homozygous for alanine at position 370 (enhanced EDAR signaling). Associated with thick, straight hair fibers with larger shaft diameter. Predominant in East Asian, Northeast Asian, and Native American populations due to ancient positive selection. Enhanced sweat gland density and modified ear/tooth morphology.",
+          "recommendation": "No clinical action needed. Hair typically requires less styling product due to natural thickness and straightness.",
+          "severity": "info",
+          "odds_ratio": null
+        },
+        "AG": {
+          "phenotype": "Moderately Thick Straight Hair (Ala370/Val370)",
+          "effect": "Heterozygous for mixed alanine/valine alleles. Intermediate hair thickness and straightness phenotype. Enhanced EDAR signaling but not to maximal level. Common in admixed populations and some South Asian populations.",
+          "recommendation": "No clinical action needed. Hair care tailored to individual phenotype presentation.",
+          "severity": "info"
+        },
+        "GA": {
+          "phenotype": "Moderately Thick Straight Hair (Ala370/Val370)",
+          "effect": "Heterozygous for mixed alanine/valine alleles. Intermediate hair thickness and straightness phenotype. Enhanced EDAR signaling but not to maximal level. Common in admixed populations and some South Asian populations.",
+          "recommendation": "No clinical action needed. Hair care tailored to individual phenotype presentation.",
+          "severity": "info"
+        },
+        "GG": {
+          "phenotype": "Thinner Variable Hair (Val370/Val370)",
+          "effect": "Homozygous for valine at position 370 (ancestral, normal EDAR signaling). Standard hair thickness and variable morphology (straight to wavy/curly). Predominant in European and African populations. Normal sweat gland density.",
+          "recommendation": "No clinical action needed. Hair care depends on individual hair characteristics.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.01,
+        "african": 0.01,
+        "east_asian": 0.75,
+        "south_asian": 0.15,
+        "latino": 0.08
+      }
+    }
+  ],
+  "evidence_level": "established",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

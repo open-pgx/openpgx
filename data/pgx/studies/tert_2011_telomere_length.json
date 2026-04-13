@@ -1,0 +1,63 @@
+{
+  "gene": "TERT",
+  "description": "Telomerase reverse transcriptase and telomere length regulation",
+  "category": "drug_target",
+  "drugs": [
+    "imetelstat"
+  ],
+  "source": {
+    "title": "Common variants at 19p13 are associated with susceptibility to ovarian cancer",
+    "year": 2013,
+    "pmid": "23143596",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/23143596/",
+    "journal": "Nature Genetics",
+    "authors": "Bojesen SE, Pooley KA, Johnatty SE, et al.",
+    "source_type": "pubmed"
+  },
+  "source_type": "pubmed",
+  "evidence_level": "moderate",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  },
+  "snps": [
+    {
+      "rsid": "rs2736100",
+      "reference_allele": "C",
+      "risk_allele": "A",
+      "interpretations": {
+        "AA": {
+          "phenotype": "AA homozygote (Risk)",
+          "effect": "Homozygous for the A allele (risk allele). Associated with shorter telomere length, accelerated cellular aging phenotype. May confer higher risk for age-related diseases and shortened replicative lifespan.",
+          "recommendation": "Consult clinical guidelines.",
+          "severity": "mild"
+        },
+        "AC": {
+          "phenotype": "AC heterozygote",
+          "effect": "Heterozygous carrier. Intermediate telomere length with intermediate aging trajectory.",
+          "recommendation": "Consult clinical guidelines.",
+          "severity": "info"
+        },
+        "CA": {
+          "phenotype": "AC heterozygote",
+          "effect": "Heterozygous carrier. Intermediate telomere length with intermediate aging trajectory.",
+          "recommendation": "Consult clinical guidelines.",
+          "severity": "info"
+        },
+        "CC": {
+          "phenotype": "CC homozygote (Reference)",
+          "effect": "Homozygous for the C allele (reference allele). Associated with longer telomere length, slower cellular aging phenotype, potential protection against age-related cellular senescence.",
+          "recommendation": "Consult clinical guidelines.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.42,
+        "african": 0.31,
+        "east_asian": 0.38,
+        "south_asian": 0.36,
+        "latino": 0.4
+      }
+    }
+  ]
+}

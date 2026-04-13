@@ -1,0 +1,68 @@
+{
+  "gene": "FOXE1",
+  "rsid": "rs965513",
+  "cancer_type": "thyroid_cancer",
+  "title": "FOXE1 rs965513 Thyroid Cancer Risk (Transcription Factor)",
+  "description": "Common variant in the FOXE1 transcription factor region strongly associated with differentiated thyroid cancer risk in European populations. FOXE1 encodes a thyroid-specific transcription factor critical for thyroid development and function. The A risk allele increases susceptibility to papillary and follicular thyroid carcinoma.",
+  "source": {
+    "title": "Common genetic variants on FOXE1 contribute to thyroid cancer susceptibility",
+    "authors": ["Gudmundsson J", "Sulem P", "Gudbjartsson DF", "et al."],
+    "year": 2009,
+    "journal": "Nature Genetics",
+    "volume": 41,
+    "pages": "460-462",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/19198613/"
+  },
+  "pmid": "19198613",
+  "source_type": "pubmed",
+  "evidence_level": "established",
+  "drugs": ["levothyroxine", "radioactive_iodine", "lenvatinib", "sorafenib"],
+  "snps": [
+    {
+      "rsid": "rs965513",
+      "chromosome": "9",
+      "position": 99387786,
+      "ref_allele": "G",
+      "risk_allele": "A",
+      "interpretations": {
+        "GG": {
+          "phenotype": "normal_risk",
+          "effect": "baseline_thyroid_cancer_risk",
+          "recommendation": "standard_surveillance",
+          "severity": "info"
+        },
+        "GA": {
+          "phenotype": "intermediate_risk",
+          "effect": "1.62x_increased_thyroid_cancer_risk",
+          "recommendation": "enhanced_TSH_monitoring_ultrasound_surveillance",
+          "severity": "mild"
+        },
+        "AG": {
+          "phenotype": "intermediate_risk",
+          "effect": "1.62x_increased_thyroid_cancer_risk",
+          "recommendation": "enhanced_TSH_monitoring_ultrasound_surveillance",
+          "severity": "mild"
+        },
+        "AA": {
+          "phenotype": "high_risk",
+          "effect": "1.74x_increased_thyroid_cancer_risk",
+          "recommendation": "aggressive_screening_aggressive_treatment",
+          "severity": "moderate"
+        }
+      },
+      "population_frequency": {
+        "european": 0.44,
+        "african": 0.18,
+        "east_asian": 0.25,
+        "south_asian": 0.22,
+        "latino": 0.31
+      }
+    }
+  ],
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  },
+  "tags": ["cancer_risk", "thyroid_cancer", "transcription_factor", "gwas"],
+  "last_updated": "2026-04-12"
+}

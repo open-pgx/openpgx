@@ -1,0 +1,57 @@
+{
+  "gene": "MYOC",
+  "source": {
+    "title": "Mutation Screening of the Myocilin Gene in Patients with Primary Open-Angle Glaucoma",
+    "year": 2002,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/12872267/"
+  },
+  "source_type": "pubmed",
+  "evidence_level": "moderate",
+  "severity": "moderate",
+  "description": "MYOC rs74315329 (Q368X truncation) is a pathogenic variant causing primary open-angle glaucoma through impaired myocilin trafficking and aqueous humor outflow dysfunction. Most common in European populations.",
+  "snps": [
+    {
+      "rsid": "rs74315329",
+      "location": "1q24.3",
+      "effect_allele": "T",
+      "reference_allele": "C",
+      "interpretations": {
+        "CC": {
+          "phenotype": "Lower POAG risk",
+          "effect": "Reference homozygote; normal myocilin function",
+          "recommendation": "Standard eye health; baseline intraocular pressure screening after age 40",
+          "severity": "info"
+        },
+        "CT": {
+          "phenotype": "Intermediate glaucoma risk",
+          "effect": "Heterozygous carrier for Q368X; modest increased risk with variable penetrance",
+          "recommendation": "Annual intraocular pressure measurement; visual field baseline; ophthalmology evaluation; family member screening; consider prophylactic monitoring",
+          "severity": "moderate"
+        },
+        "TC": {
+          "phenotype": "Intermediate glaucoma risk",
+          "effect": "Heterozygous carrier for Q368X; modest increased risk with variable penetrance",
+          "recommendation": "Annual intraocular pressure measurement; visual field baseline; ophthalmology evaluation; family member screening; consider prophylactic monitoring",
+          "severity": "moderate"
+        },
+        "TT": {
+          "phenotype": "Elevated primary open-angle glaucoma risk",
+          "effect": "Homozygous for pathogenic Q368X truncation; substantially increased POAG susceptibility (~15.5x risk in population studies)",
+          "recommendation": "Comprehensive ophthalmologic evaluation including Goldmann applanation tonometry, visual fields, and optic nerve imaging; regular monitoring every 3-6 months; topical prostaglandin analogs as first-line therapy; escalation to combination therapy if IOP control inadequate; genetic counseling for family members",
+          "severity": "moderate"
+        }
+      },
+      "population_frequency": {
+        "european": 0.002,
+        "african": 0.0005,
+        "east_asian": 0.0008,
+        "south_asian": 0.0006,
+        "latino": 0.001
+      }
+    }
+  ],
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

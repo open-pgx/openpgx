@@ -1,0 +1,69 @@
+{
+  "gene": "SERPINA1",
+  "gene_full_name": "Serpin Family A Member 1 (Alpha-1 Antitrypsin)",
+  "region": "Exon 5, position 342",
+  "category": "immune",
+  "phenotype": "Alpha-1 Antitrypsin Deficiency and COPD",
+  "description": "SERPINA1 rs28929474 (E342K, PiZ variant) causing severe alpha-1 antitrypsin deficiency. The Z allele produces a misfolded protein with <15% activity compared to normal, leading to progressive lung damage and ~8-10 fold increased COPD risk.",
+  "source": {
+    "title": "Alpha-1 antitrypsin deficiency as a cause of COPD: an overview",
+    "year": 2006,
+    "authors": "Stoller JK, Aboussouan LS",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/16909714/",
+    "pmid": "16909714",
+    "journal": "American Journal of Respiratory and Critical Care Medicine",
+    "volume": 173,
+    "pages": "987-993",
+    "source_type": "pubmed"
+  },
+  "source_type": "pubmed",
+  "evidence_level": "established",
+  "snps": [
+    {
+      "rsid": "rs28929474",
+      "risk_allele": "T",
+      "interpretations": {
+        "TT": {
+          "phenotype": "Severe AAT deficiency with high risk of early panlobular emphysema and COPD",
+          "effect": "Severe AAT deficiency with high risk of early panlobular emphysema and COPD",
+          "recommendation": "Baseline and annual pulmonary function testing. Strongly avoid smoking; smoking accelerates disease by 10-15 years. Consider AAT augmentation therapy (IV infusions). Optimize COPD management with bronchodilators, corticosteroids. Genetic counseling for family members.",
+          "severity": "info"
+        },
+        "TC": {
+          "phenotype": "Intermediate AAT deficiency; modestly increased COPD risk, especially with smoking",
+          "effect": "Intermediate AAT deficiency; modestly increased COPD risk, especially with smoking",
+          "recommendation": "Smoking cessation strongly recommended. Avoid environmental occupational exposures. Monitor lung function. AAT augmentation generally not indicated unless concurrent lung disease develops.",
+          "severity": "info"
+        },
+        "CT": {
+          "phenotype": "Intermediate AAT deficiency; modestly increased COPD risk, especially with smoking",
+          "effect": "Intermediate AAT deficiency; modestly increased COPD risk, especially with smoking",
+          "recommendation": "Smoking cessation strongly recommended. Avoid environmental occupational exposures. Monitor lung function. AAT augmentation generally not indicated unless concurrent lung disease develops.",
+          "severity": "info"
+        },
+        "CC": {
+          "phenotype": "Normal AAT levels; no special COPD risk from AAT deficiency",
+          "effect": "Normal AAT levels; no special COPD risk from AAT deficiency",
+          "recommendation": "Standard COPD risk assessment based on other factors; smoking status remains key modifiable risk factor",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.025,
+        "african": 0.001,
+        "east_asian": 0.0,
+        "south_asian": 0.001,
+        "latino": 0.005
+      }
+    }
+  ],
+  "drugs": [
+    "alpha1_antitrypsin_augmentation",
+    "roflumilast",
+    "tiotropium"
+  ],
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

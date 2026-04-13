@@ -1,0 +1,57 @@
+{
+  "gene": "TSHR",
+  "source": {
+    "title": "TSHR Gene (rs179247) Polymorphism and Susceptibility to Autoimmune Thyroid Disease: A Systematic Review and Meta-Analysis",
+    "year": 2009,
+    "url": "https://www.e-enm.org/journal/view.php?doi=10.3803/EnM.2024.1987"
+  },
+  "source_type": "guideline",
+  "evidence_level": "moderate",
+  "severity": "moderate",
+  "description": "TSHR rs179247 is a functional intronic polymorphism associated with increased risk of Graves disease and autoimmune thyroiditis. The A allele confers greater risk than the G allele.",
+  "snps": [
+    {
+      "rsid": "rs179247",
+      "location": "14q31.3",
+      "effect_allele": "A",
+      "reference_allele": "G",
+      "interpretations": {
+        "GG": {
+          "phenotype": "Lower Graves disease risk",
+          "effect": "Reference homozygote; protective genotype",
+          "recommendation": "Standard thyroid health maintenance; routine screening only if symptoms develop",
+          "severity": "info"
+        },
+        "GA": {
+          "phenotype": "Intermediate Graves disease risk",
+          "effect": "Heterozygous carrier; modest increased risk",
+          "recommendation": "Baseline TSH screening; monitor for thyroid symptoms (fatigue, tremor, heat intolerance); consider periodic TSH monitoring",
+          "severity": "mild"
+        },
+        "AG": {
+          "phenotype": "Intermediate Graves disease risk",
+          "effect": "Heterozygous carrier; modest increased risk",
+          "recommendation": "Baseline TSH screening; monitor for thyroid symptoms (fatigue, tremor, heat intolerance); consider periodic TSH monitoring",
+          "severity": "mild"
+        },
+        "AA": {
+          "phenotype": "Elevated Graves disease and autoimmune thyroid disease risk",
+          "effect": "Risk allele homozygote; substantially increased risk for autoimmune thyroiditis",
+          "recommendation": "Baseline TSH and thyroid antibodies (TPO, thyroglobulin); annual thyroid function screening; symptom monitoring; ophthalmology evaluation if eye symptoms develop; specialist endocrinology if disease manifests",
+          "severity": "moderate"
+        }
+      },
+      "population_frequency": {
+        "european": 0.42,
+        "african": 0.38,
+        "east_asian": 0.48,
+        "south_asian": 0.45,
+        "latino": 0.40
+      }
+    }
+  ],
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

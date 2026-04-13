@@ -1,0 +1,61 @@
+{
+  "gene": "ADCYAP1R1",
+  "category": "drug_target",
+  "gene_description": "PACAP Receptor, Pituitary Adenylyl Cyclase Activating Peptide Type I Receptor (PAC1) — G-protein coupled receptor critical for stress response through the PACAP-PAC1 signaling pathway. The rs2267735 polymorphism is located in a putative estrogen response element that regulates ADCYAP1R1 transcription in response to estradiol, with sex-specific effects on fear conditioning and HPA axis function.",
+  "drugs": [
+    "sertraline",
+    "paroxetine",
+    "prazosin",
+    "propranolol"
+  ],
+  "source": {
+    "pmid": "21185269",
+    "source_type": "pubmed",
+    "title": "Post-traumatic stress disorder is associated with PACAP and the PAC1 receptor",
+    "journal": "Nature",
+    "year": 2011,
+    "cohort_size": 900,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/21185269/"
+  },
+  "snps": [
+    {
+      "rsid": "rs2267735",
+      "risk_allele": "C",
+      "reference_allele": "G",
+      "interpretations": {
+        "CC": {
+          "phenotype": "Increased PTSD risk, enhanced fear response",
+          "effect": "Homozygous C-allele carriers show moderate-to-severe PTSD risk (approximately 1.5-2.0x risk in females). C allele reduces estrogen-responsive binding to the ERE, affecting ADCYAP1R1 expression. Associated with enhanced fear discrimination deficits, hyperarousal symptoms, heightened amygdala activation during threat processing, and altered HPA axis reactivity. Strong female sex bias in phenotypic expression.",
+          "severity": "moderate"
+        },
+        "CG": {
+          "phenotype": "Intermediate PTSD risk",
+          "effect": "Heterozygous carriers show mild-to-moderate PTSD risk elevation in females. Intermediate ADCYAP1R1 expression with mixed estrogen responsiveness. Fear conditioning response intermediate between CC and GG genotypes. Risk primarily expressed in female carriers.",
+          "severity": "mild"
+        },
+        "GC": {
+          "phenotype": "Intermediate PTSD risk",
+          "effect": "Heterozygous carriers show mild-to-moderate PTSD risk elevation in females. Intermediate ADCYAP1R1 expression with mixed estrogen responsiveness. Fear conditioning response intermediate between CC and GG genotypes. Risk primarily expressed in female carriers.",
+          "severity": "mild"
+        },
+        "GG": {
+          "phenotype": "Baseline PTSD risk",
+          "effect": "Homozygous G-allele carriers serve as reference group. Efficient estrogen-responsive binding to the ERE permits normal ADCYAP1R1 expression. Standard fear conditioning and HPA axis function. No sex-specific elevation in PTSD risk.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "global": 0.42,
+        "european": 0.44,
+        "african": 0.38,
+        "east_asian": 0.40,
+        "south_asian": 0.41
+      }
+    }
+  ],
+  "evidence_level": "emerging",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

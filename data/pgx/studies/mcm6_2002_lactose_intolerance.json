@@ -1,0 +1,68 @@
+{
+  "gene": "MCM6",
+  "gene_full_name": "Minichromosome Maintenance Complex Component 6",
+  "region": "MCM6 regulatory region (upstream of LCT)",
+  "category": "nutrient_absorption",
+  "phenotype": "Lactose Intolerance",
+  "description": "MCM6 regulatory variant associated with lactase persistence and lactose intolerance. The -13910 C>T variant in the regulatory region upstream of the LCT gene affects lactase enzyme expression into adulthood.",
+  "source": {
+    "title": "Identification of a variant associated with adult-type hypolactasia",
+    "year": 2002,
+    "authors": "Enattah NS, Sahi T, Savilahti E, et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/11788828/",
+    "pmid": "11788828",
+    "journal": "Nature Genetics",
+    "volume": 30,
+    "pages": "233-237",
+    "source_type": "pubmed"
+  },
+  "source_type": "pubmed",
+  "evidence_level": "established",
+  "snps": [
+    {
+      "rsid": "rs4988235",
+      "risk_allele": "G",
+      "interpretations": {
+        "GG": {
+          "phenotype": "Lactase non-persistence with high probability of adult lactose intolerance",
+          "effect": "Lactase non-persistence with high probability of adult lactose intolerance",
+          "recommendation": "Reduce or avoid dairy products; consider lactase supplements, lactose-free alternatives, or fermented dairy products",
+          "severity": "info"
+        },
+        "GA": {
+          "phenotype": "Partial lactase persistence; mild lactose intolerance possible",
+          "effect": "Partial lactase persistence; mild lactose intolerance possible",
+          "recommendation": "May tolerate some dairy; individual tolerance varies; trial and error approach recommended",
+          "severity": "info"
+        },
+        "AG": {
+          "phenotype": "Partial lactase persistence; mild lactose intolerance possible",
+          "effect": "Partial lactase persistence; mild lactose intolerance possible",
+          "recommendation": "May tolerate some dairy; individual tolerance varies; trial and error approach recommended",
+          "severity": "info"
+        },
+        "AA": {
+          "phenotype": "Lactase persistence; able to digest dairy throughout life",
+          "effect": "Lactase persistence; able to digest dairy throughout life",
+          "recommendation": "No dietary restrictions related to lactose; normal dairy consumption is tolerable",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.35,
+        "african": 0.95,
+        "east_asian": 0.88,
+        "south_asian": 0.82,
+        "latino": 0.65
+      }
+    }
+  ],
+  "drugs": [
+    "lactase_supplements",
+    "lactose_free_products"
+  ],
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

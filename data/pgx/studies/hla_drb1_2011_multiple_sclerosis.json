@@ -1,0 +1,62 @@
+{
+  "gene": "HLA-DRB1",
+  "category": "immune",
+  "gene_description": "Human Leukocyte Antigen DRB1 — Major Histocompatibility Complex class II beta-1 chain critical for antigen presentation to CD4+ T cells. The rs3135388 A-allele is a tagging SNP for HLA-DRB1*15:01 (DRB1*1501), the strongest genetic risk factor for multiple sclerosis. HLA-DRB1*15:01 presents myelin epitopes with high affinity, driving autoreactive T-cell responses central to MS pathogenesis.",
+  "drugs": [
+    "ocrelizumab",
+    "natalizumab",
+    "fingolimod",
+    "glatiramer",
+    "interferon_beta"
+  ],
+  "source": {
+    "pmid": "21833088",
+    "source_type": "pubmed",
+    "title": "Genetic refinement and assessment of multiple sclerosis susceptibility and progression loci",
+    "journal": "Nature",
+    "year": 2011,
+    "cohort_size": 9772,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/21833088/"
+  },
+  "snps": [
+    {
+      "rsid": "rs3135388",
+      "risk_allele": "A",
+      "reference_allele": "G",
+      "interpretations": {
+        "AA": {
+          "phenotype": "Strong multiple sclerosis risk",
+          "effect": "Homozygous A-allele carriers (>99% correlated with HLA-DRB1*15:01 genotype) show severe multiple sclerosis risk (approximately 5-7x relative risk compared to GG carriers). The DRB1*15:01 allele presents myelin basic protein (MBP) and proteolipid protein (PLP) peptides with extraordinarily high affinity to autoreactive T cells. Associated with early disease onset, faster progression rates, and higher cumulative disability. AA carriers show 15-20-fold higher HLA-DRB1 expression compared to GG carriers, amplifying autoantigenic presentation.",
+          "severity": "severe"
+        },
+        "AG": {
+          "phenotype": "Moderate multiple sclerosis risk",
+          "effect": "Heterozygous carriers with one HLA-DRB1*15:01 allele show moderate MS risk (approximately 3-4x relative to GG carriers). Intermediate HLA-DRB1 expression and T-cell activation capacity. Still confers significant disease susceptibility but with somewhat delayed onset and variable progression compared to homozygotes.",
+          "severity": "moderate"
+        },
+        "GA": {
+          "phenotype": "Moderate multiple sclerosis risk",
+          "effect": "Heterozygous carriers with one HLA-DRB1*15:01 allele show moderate MS risk (approximately 3-4x relative to GG carriers). Intermediate HLA-DRB1 expression and T-cell activation capacity. Still confers significant disease susceptibility but with somewhat delayed onset and variable progression compared to homozygotes.",
+          "severity": "moderate"
+        },
+        "GG": {
+          "phenotype": "Baseline multiple sclerosis risk",
+          "effect": "Homozygous G-allele carriers lack HLA-DRB1*15:01 allele and serve as reference group. Standard MS prevalence driven by other genetic and environmental factors. Substantially reduced risk for HLA-DRB1-mediated autoimmunity.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "global": 0.35,
+        "european": 0.38,
+        "african": 0.25,
+        "east_asian": 0.12,
+        "south_asian": 0.28
+      }
+    }
+  ],
+  "evidence_level": "established",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

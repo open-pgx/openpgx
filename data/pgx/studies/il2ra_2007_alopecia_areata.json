@@ -1,0 +1,57 @@
+{
+  "gene": "IL2RA",
+  "source": {
+    "title": "Interleukin gene polymorphisms and alopecia areata: A systematic review and meta-analysis",
+    "year": 2007,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/38394507/"
+  },
+  "source_type": "pubmed",
+  "evidence_level": "moderate",
+  "severity": "mild",
+  "description": "IL2RA rs3118470 is an intronic T>C polymorphism associated with increased risk of alopecia areata. The CC genotype increases autoimmune-mediated hair loss risk through altered IL-2 receptor signaling.",
+  "snps": [
+    {
+      "rsid": "rs3118470",
+      "location": "10p15.1",
+      "effect_allele": "C",
+      "reference_allele": "T",
+      "interpretations": {
+        "TT": {
+          "phenotype": "Lower alopecia areata risk",
+          "effect": "Reference homozygote",
+          "recommendation": "Standard hair and scalp health; baseline assessment only",
+          "severity": "info"
+        },
+        "TC": {
+          "phenotype": "Intermediate alopecia areata risk",
+          "effect": "Heterozygous carrier; modest increased risk",
+          "recommendation": "Baseline dermatologic evaluation; monitor for patchy hair loss; education on stress management; early treatment if disease develops",
+          "severity": "mild"
+        },
+        "CT": {
+          "phenotype": "Intermediate alopecia areata risk",
+          "effect": "Heterozygous carrier; modest increased risk",
+          "recommendation": "Baseline dermatologic evaluation; monitor for patchy hair loss; education on stress management; early treatment if disease develops",
+          "severity": "mild"
+        },
+        "CC": {
+          "phenotype": "Elevated alopecia areata risk",
+          "effect": "Homozygous for risk allele; substantially increased autoimmune hair loss susceptibility",
+          "recommendation": "Regular dermatologic monitoring; early intervention recommended; topical corticosteroids or minoxidil; intralesional corticosteroids if patches develop; counseling on psychological impact; platelet-rich plasma or JAK inhibitors for severe cases",
+          "severity": "mild"
+        }
+      },
+      "population_frequency": {
+        "european": 0.35,
+        "african": 0.28,
+        "east_asian": 0.42,
+        "south_asian": 0.38,
+        "latino": 0.32
+      }
+    }
+  ],
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

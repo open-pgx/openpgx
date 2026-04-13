@@ -1,0 +1,62 @@
+{
+  "gene": "CHRNA5",
+  "category": "drug_target",
+  "gene_description": "Cholinergic Receptor Nicotinic Alpha 5 Subunit — subunit of nicotinic acetylcholine receptors involved in reward processing and nicotine dependence; rs16969968 (Asp398Asn) variant affects receptor function and aversive response to nicotine",
+  "drugs": ["nicotine", "varenicline", "bupropion", "nicotine_replacement"],
+  "source": {
+    "pmid": "18385739",
+    "source_type": "pubmed",
+    "title": "A variant associated with nicotine dependence, lung cancer and peripheral arterial disease",
+    "journal": "Nature",
+    "year": 2008,
+    "cohort_size": null,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/18385739/",
+    "finding": "CHRNA5 rs16969968 A allele (Asp398) is associated with increased nicotine dependence, higher cigarette consumption, and reduced response to varenicline therapy. The variant reduces the aversive effects of nicotine, promoting continued smoking behavior."
+  },
+  "snps": [
+    {
+      "rsid": "rs16969968",
+      "risk_allele": "A",
+      "reference_allele": "G",
+      "variant_name": "Asp398Asn",
+      "interpretations": {
+        "AA": {
+          "phenotype": "Higher nicotine dependence risk and reduced smoking cessation response",
+          "effect": "Homozygous for the risk allele (Asp398). Strong genetic predisposition to nicotine dependence with approximately 1.5× increased risk compared to GG carriers. Individuals typically smoke more cigarettes per day and demonstrate reduced aversive response to nicotine. Significantly lower efficacy of varenicline and reduced success with nicotine replacement therapy.",
+          "recommendation": "Intensive smoking cessation support recommended. Consider combination therapy: varenicline + bupropion, or extended nicotine replacement with behavioral counseling. More frequent follow-up and relapse prevention counseling essential. May benefit from additional pharmacotherapy (clonidine, nortriptyline) and referral to specialized smoking cessation programs.",
+          "severity": "moderate"
+        },
+        "AG": {
+          "phenotype": "Intermediate nicotine dependence risk",
+          "effect": "Heterozygous carriers show intermediate nicotine dependence risk. Partial genetic predisposition with modest increased smoking intensity. Moderate reduction in aversive nicotine response compared to GG carriers.",
+          "recommendation": "Standard smoking cessation counseling and first-line pharmacotherapy (varenicline or bupropion). Monitor response and consider combination therapy if inadequate response. Routine follow-up for relapse prevention.",
+          "severity": "mild"
+        },
+        "GA": {
+          "phenotype": "Intermediate nicotine dependence risk",
+          "effect": "Heterozygous carriers show intermediate nicotine dependence risk. Partial genetic predisposition with modest increased smoking intensity. Moderate reduction in aversive nicotine response compared to GG carriers.",
+          "recommendation": "Standard smoking cessation counseling and first-line pharmacotherapy (varenicline or bupropion). Monitor response and consider combination therapy if inadequate response. Routine follow-up for relapse prevention.",
+          "severity": "mild"
+        },
+        "GG": {
+          "phenotype": "Normal nicotine dependence susceptibility",
+          "effect": "Wild-type genotype (Asn398). Normal aversive response to nicotine with baseline nicotine dependence risk. Individuals typically smoke fewer cigarettes per day and show better response to cessation pharmacotherapy.",
+          "recommendation": "Standard smoking cessation support. First-line pharmacotherapy (varenicline, bupropion, or nicotine replacement) with good expected efficacy. Routine behavioral counseling.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.35,
+        "african": 0.28,
+        "east_asian": 0.05,
+        "south_asian": 0.12,
+        "latino": 0.18
+      }
+    }
+  ],
+  "evidence_level": "established",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

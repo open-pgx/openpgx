@@ -1,0 +1,61 @@
+{
+  "gene": "MEIS1",
+  "category": "drug_target",
+  "gene_description": "Meis Homeobox 1 (MEIS1) — a transcription factor essential for iron metabolism regulation in the central nervous system and circadian rhythm control. Risk variants reduce MEIS1 expression, impairing iron homeostasis and midbrain dopamine neuron function. Pleiotropic association with both insomnia and restless legs syndrome suggests shared pathways in sleep-wake regulation and iron-dependent neuronal function.",
+  "drugs": [
+    "melatonin",
+    "zolpidem",
+    "pramipexole",
+    "gabapentin"
+  ],
+  "source": {
+    "pmid": "28604731",
+    "source_type": "pubmed",
+    "title": "Genome-wide association analysis of insomnia complaints identifies risk genes and genetic overlap with psychiatric and metabolic traits",
+    "journal": "Nature Genetics",
+    "year": 2017,
+    "cohort_size": 113006,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/28604731/"
+  },
+  "snps": [
+    {
+      "rsid": "rs2300478",
+      "risk_allele": "G",
+      "reference_allele": "A",
+      "interpretations": {
+        "GG": {
+          "phenotype": "Increased insomnia and restless legs syndrome risk",
+          "effect": "Homozygous G-allele carriers show elevated insomnia risk (approximately 1.3-1.5x relative to AA carriers) and significant RLS risk (odds ratio 1.47-1.78). Reduced MEIS1 expression impairs iron metabolism in midbrain dopamine neurons, resulting in sleep onset difficulties, sleep maintenance insomnia, and periodic leg movements during sleep. Pleiotropy with RLS suggests shared iron metabolism dysfunction.",
+          "severity": "moderate"
+        },
+        "GA": {
+          "phenotype": "Mild increased insomnia and RLS risk",
+          "effect": "Heterozygous carriers show modest elevation in insomnia complaints and RLS symptoms. Intermediate MEIS1 expression and iron homeostasis. Approximately 15-30% increased risk compared to AA wild-type.",
+          "severity": "mild"
+        },
+        "AG": {
+          "phenotype": "Mild increased insomnia and RLS risk",
+          "effect": "Heterozygous carriers show modest elevation in insomnia complaints and RLS symptoms. Intermediate MEIS1 expression and iron homeostasis. Approximately 15-30% increased risk compared to AA wild-type.",
+          "severity": "mild"
+        },
+        "AA": {
+          "phenotype": "Baseline insomnia risk",
+          "effect": "Homozygous A-allele carriers serve as reference group. Normal MEIS1 expression and central nervous system iron metabolism. Standard sleep-wake regulation and baseline insomnia prevalence without specific MEIS1-mediated risk.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "global": 0.38,
+        "european": 0.39,
+        "african": 0.36,
+        "east_asian": 0.41,
+        "south_asian": 0.37
+      }
+    }
+  ],
+  "evidence_level": "moderate",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

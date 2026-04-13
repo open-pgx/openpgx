@@ -1,0 +1,65 @@
+{
+  "gene": "ACTN3",
+  "description": "Alpha-actinin-3 protein expression and muscle fiber performance phenotypes",
+  "category": "drug_target",
+  "drugs": [
+    "creatine",
+    "caffeine",
+    "beta_alanine"
+  ],
+  "source": {
+    "title": "ACTN3 genotype is associated with human elite athletic performance",
+    "year": 2003,
+    "pmid": "12879365",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/12879365/",
+    "journal": "American Journal of Human Genetics",
+    "authors": "Yang N, MacArthur DG, Gulbin JP, et al.",
+    "source_type": "pubmed"
+  },
+  "source_type": "pubmed",
+  "evidence_level": "established",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  },
+  "snps": [
+    {
+      "rsid": "rs1815739",
+      "reference_allele": "C",
+      "risk_allele": "T",
+      "interpretations": {
+        "TT": {
+          "phenotype": "X577X (No alpha-actinin-3)",
+          "effect": "Homozygous for stop codon, complete absence of alpha-actinin-3 protein. Associated with endurance athlete phenotype, better aerobic capacity but reduced sprint/power performance.",
+          "recommendation": "Consult clinical guidelines.",
+          "severity": "mild"
+        },
+        "TC": {
+          "phenotype": "X577R (Heterozygous)",
+          "effect": "Heterozygous carrier expressing both R577 and X577 variants. Balanced muscle fiber profile with mixed endurance and sprint capacity.",
+          "recommendation": "Consult clinical guidelines.",
+          "severity": "info"
+        },
+        "CT": {
+          "phenotype": "X577R (Heterozygous)",
+          "effect": "Heterozygous carrier expressing both R577 and X577 variants. Balanced muscle fiber profile with mixed endurance and sprint capacity.",
+          "recommendation": "Consult clinical guidelines.",
+          "severity": "info"
+        },
+        "CC": {
+          "phenotype": "R577R (Full alpha-actinin-3)",
+          "effect": "Homozygous for arginine at position 577, full expression of alpha-actinin-3 protein. Associated with sprint/power athlete phenotype, better fast-twitch muscle function and explosive power.",
+          "recommendation": "Consult clinical guidelines.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.47,
+        "african": 0.28,
+        "east_asian": 0.6,
+        "south_asian": 0.45,
+        "latino": 0.42
+      }
+    }
+  ]
+}

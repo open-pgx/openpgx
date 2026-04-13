@@ -1,0 +1,65 @@
+{
+  "gene": "TRPM8",
+  "category": "drug_target",
+  "gene_description": "Transient Receptor Potential Cation Channel Subfamily M Member 8 — a cold-sensitive cation channel expressed in sensory neurons that detects cold temperatures and modulates pain signaling. Variants affect calcium influx, neuronal excitability, and migraine susceptibility through altered nociceptor sensitivity and trigeminal neuron function.",
+  "drugs": ["sumatriptan", "rizatriptan", "erenumab", "fremanezumab", "topiramate"],
+  "source": {
+    "pmid": "20584987",
+    "doi": "10.1038/ng.685",
+    "source_type": "pubmed",
+    "title": "Genome-wide association of migraine implicates a common susceptibility variant on chromosome 8q22.1",
+    "journal": "Nature Genetics",
+    "year": 2011,
+    "cohort_size": 9500,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/20584987/",
+    "finding": "TRPM8 rs10166942-T variant associated with migraine susceptibility (p = 2.6 × 10⁻¹³) in genome-wide association meta-analysis of 6,000 migraine cases and 9,500 controls. T allele increases migraine risk through altered cold-sensing and pain modulation pathways. Linkage disequilibrium analysis suggests TRPM8 as causal locus in 8q22.1 region."
+  },
+  "snps": [
+    {
+      "rsid": "rs10166942",
+      "risk_allele": "T",
+      "reference_allele": "C",
+      "interpretations": {
+        "TT": {
+          "phenotype": "TRPM8 homozygous risk — elevated migraine susceptibility",
+          "effect": "Homozygous for T risk allele. ~1.3-fold increased migraine risk per GWAS meta-analysis. Altered TRPM8 channel function and calcium signaling in trigeminal sensory neurons. Enhanced nociceptor sensitivity and cold-pain perception. Increased migraine threshold activation and more frequent migraine attacks. Impaired normal pain modulation through cold-sensing pathways.",
+          "recommendation": "Consider migraine preventive therapy: topiramate (blocks sodium channels and GABA function), propranolol, or amitriptyline. CGRP monoclonal antibodies (erenumab, fremanezumab) particularly effective for TRPM8-linked migraine. Acute treatment: triptans (sumatriptan, rizatriptan) during attacks. Identify and avoid triggers (cold exposure, menstrual cycle, stress, certain foods). Maintain regular sleep and meal schedules. Biofeedback and relaxation techniques. Consider genetic counseling if strong family history.",
+          "severity": "moderate",
+          "odds_ratio": 1.3
+        },
+        "TC": {
+          "phenotype": "TRPM8 heterozygous — intermediate migraine risk",
+          "effect": "Heterozygous for T risk allele. Modest increase in migraine susceptibility from this locus. Intermediate TRPM8 channel activity and nociceptor sensitivity. Increased likelihood of migraines but lower penetrance than homozygotes. Environmental and other genetic factors play larger role in phenotype expression.",
+          "recommendation": "Lifestyle measures: trigger identification and avoidance, stress management, regular sleep, adequate hydration, exercise. Acute migraine treatment as needed (triptans). If frequent migraines (>4 per month), consider preventive medication after discussion with neurologist. Monitor for patterns to identify specific triggers.",
+          "severity": "mild",
+          "odds_ratio": 1.15
+        },
+        "CT": {
+          "phenotype": "TRPM8 heterozygous — intermediate migraine risk",
+          "effect": "Heterozygous for T risk allele. Modest increase in migraine susceptibility from this locus. Intermediate TRPM8 channel activity and nociceptor sensitivity. Increased likelihood of migraines but lower penetrance than homozygotes. Environmental and other genetic factors play larger role in phenotype expression.",
+          "recommendation": "Lifestyle measures: trigger identification and avoidance, stress management, regular sleep, adequate hydration, exercise. Acute migraine treatment as needed (triptans). If frequent migraines (>4 per month), consider preventive medication after discussion with neurologist. Monitor for patterns to identify specific triggers.",
+          "severity": "mild",
+          "odds_ratio": 1.15
+        },
+        "CC": {
+          "phenotype": "TRPM8 homozygous wild-type — standard migraine risk",
+          "effect": "Homozygous for C reference allele. Normal TRPM8 channel function. Standard migraine risk from this locus. Migraine susceptibility determined primarily by environmental factors, other genetic loci, and neural predisposition. Normal cold-pain sensing and nociceptor function.",
+          "recommendation": "Standard migraine management if applicable: trigger avoidance, stress management, regular sleep. Acute treatment with triptans if migraines occur. No specific pharmacogenomic guidance from this variant.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.42,
+        "african": 0.35,
+        "east_asian": 0.45,
+        "south_asian": 0.40,
+        "latino": 0.41
+      }
+    }
+  ],
+  "evidence_level": "moderate",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

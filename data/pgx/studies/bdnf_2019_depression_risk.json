@@ -1,0 +1,69 @@
+{
+  "gene": "BDNF",
+  "full_name": "Brain-Derived Neurotrophic Factor",
+  "category": "drug_target",
+  "relevant_drugs": [
+    "sertraline",
+    "fluoxetine",
+    "escitalopram",
+    "venlafaxine",
+    "ketamine"
+  ],
+  "source": {
+    "title": "Association between the BDNF Val66Met polymorphism and major depressive disorder: a systematic review and meta-analysis",
+    "authors": "Zhao et al.",
+    "year": 2019,
+    "pmid": "30718901",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/30718901/",
+    "publication_type": "meta-analysis",
+    "subjects": 10000,
+    "source_type": "pubmed"
+  },
+  "source_type": "pubmed",
+  "evidence_level": "moderate",
+  "condition": "Major Depressive Disorder",
+  "snps": [
+    {
+      "rsid": "rs6265",
+      "interpretations": {
+        "AA": {
+          "phenotype": "Met/Met",
+          "effect": "Homozygous Met allele carriers show reduced BDNF secretion and impaired activity-dependent BDNF release. Associated with approximately 1.3-fold increased risk of major depressive disorder. Met/Met individuals may show reduced response to SSRIs but potentially enhanced response to ketamine therapy.",
+          "recommendation": "Consult clinical guidelines.",
+          "severity": "moderate"
+        },
+        "AG": {
+          "phenotype": "Val/Met",
+          "effect": "Heterozygous carriers show intermediate BDNF secretion capacity with moderate impairment of activity-dependent BDNF signaling. Associated with mild increase in depression risk and intermediate antidepressant response patterns.",
+          "recommendation": "Consult clinical guidelines.",
+          "severity": "mild"
+        },
+        "GA": {
+          "phenotype": "Met/Val",
+          "effect": "Heterozygous carriers show intermediate BDNF secretion capacity with moderate impairment of activity-dependent BDNF signaling. Associated with mild increase in depression risk and intermediate antidepressant response patterns.",
+          "recommendation": "Consult clinical guidelines.",
+          "severity": "mild"
+        },
+        "GG": {
+          "phenotype": "Val/Val",
+          "effect": "Wild-type Val/Val genotype associated with normal BDNF secretion and activity-dependent BDNF signaling. Baseline depression risk with typical SSRI response patterns.",
+          "recommendation": "Consult clinical guidelines.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.15,
+        "african": 0.08,
+        "east_asian": 0.12,
+        "south_asian": 0.11,
+        "latino": 0.13
+      }
+    }
+  ],
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  },
+  "created_date": "2026-04-12",
+  "notes": "Met allele (A) shows strong association with MDD in European populations. The Val66Met polymorphism affects activity-dependent BDNF secretion with functional consequences for synaptic plasticity and antidepressant response."
+}

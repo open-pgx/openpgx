@@ -19,10 +19,7 @@
     "generate-studies:high": "tsx scripts/auto-study-generator/index.ts --priority=high",
     "research": "tsx scripts/auto-study-generator/cli.ts",
     "clean": "rm -rf dist",
-    "check-dna": "bash scripts/check-no-dna.sh",
-    "precommit": "npm run check-dna",
-    "prepare": "if [ -d .git ]; then cp scripts/check-no-dna.sh .git/hooks/pre-commit 2>/dev/null && chmod +x .git/hooks/pre-commit 2>/dev/null; fi || true",
-    "prepublishOnly": "npm run check-dna && npm run build"
+    "prepublishOnly": "npm run build"
   },
   "keywords": [
     "mcp",

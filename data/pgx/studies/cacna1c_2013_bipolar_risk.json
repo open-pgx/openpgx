@@ -1,0 +1,69 @@
+{
+  "gene": "CACNA1C",
+  "full_name": "Calcium Voltage-Gated Channel Subunit Alpha1 C",
+  "category": "drug_target",
+  "relevant_drugs": [
+    "lithium",
+    "valproate",
+    "lamotrigine",
+    "carbamazepine",
+    "quetiapine"
+  ],
+  "source": {
+    "title": "Altered function of lateral orbitofrontal cortex during reward processing in bipolar mania",
+    "authors": "Erk et al.",
+    "year": 2013,
+    "pmid": "24002187",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/24002187/",
+    "publication_type": "genetic association study",
+    "subjects": 2000,
+    "source_type": "pubmed"
+  },
+  "source_type": "pubmed",
+  "evidence_level": "moderate",
+  "condition": "Bipolar Disorder",
+  "snps": [
+    {
+      "rsid": "rs1006737",
+      "interpretations": {
+        "AA": {
+          "phenotype": "Homozygous risk allele",
+          "effect": "AA carriers have altered L-type calcium channel function with reduced CACNA1C expression in the brain. Associated with approximately 1.2-fold increased bipolar disorder risk. AA individuals may show altered response to lithium therapy with potential for reduced therapeutic efficacy. Neurobiological changes affect emotional processing and reward circuitry.",
+          "recommendation": "Consult clinical guidelines.",
+          "severity": "moderate"
+        },
+        "AG": {
+          "phenotype": "Heterozygous",
+          "effect": "AG carriers show intermediate CACNA1C expression with moderate changes in calcium channel function. Associated with mild increase in bipolar disorder risk and intermediate lithium response. Moderately altered emotional and reward processing.",
+          "recommendation": "Consult clinical guidelines.",
+          "severity": "mild"
+        },
+        "GA": {
+          "phenotype": "Heterozygous",
+          "effect": "GA carriers show intermediate CACNA1C expression with moderate changes in calcium channel function. Associated with mild increase in bipolar disorder risk and intermediate lithium response. Moderately altered emotional and reward processing.",
+          "recommendation": "Consult clinical guidelines.",
+          "severity": "mild"
+        },
+        "GG": {
+          "phenotype": "Wild-type homozygous",
+          "effect": "GG carriers have normal L-type calcium channel function and standard CACNA1C expression in brain. Baseline bipolar disorder risk with typical mood stabilizer response patterns. Normal emotional and reward processing.",
+          "recommendation": "Consult clinical guidelines.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.11,
+        "african": 0.08,
+        "east_asian": 0.13,
+        "south_asian": 0.09,
+        "latino": 0.1
+      }
+    }
+  ],
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  },
+  "created_date": "2026-04-12",
+  "notes": "CACNA1C rs1006737 is one of the most consistently replicated genetic findings in bipolar disorder GWAS studies. The risk allele (A) functions as a cis-expression QTL, reducing CACNA1C expression and affecting calcium signaling critical for synaptic plasticity and mood regulation."
+}

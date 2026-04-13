@@ -1,0 +1,65 @@
+{
+  "gene": "CD274",
+  "category": "immune",
+  "gene_description": "CD274 (Cluster of Differentiation 274), also known as PD-L1, encodes a ligand that binds to PD-1 on T cells, suppressing immune response. PD-L1 expression in tumor cells and immune infiltrate predicts response to anti-PD-1/PD-L1 checkpoint inhibitors. Genetic variants in CD274 regulate PD-L1 expression levels.",
+  "drugs": ["pembrolizumab", "nivolumab", "atezolizumab", "durvalumab", "avelumab"],
+  "source": {
+    "pmid": "25891174",
+    "source_type": "pubmed",
+    "title": "Pembrolizumab for the treatment of non-small-cell lung cancer",
+    "journal": "New England Journal of Medicine",
+    "year": 2015,
+    "cohort_size": 495,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/25891174/",
+    "finding": "Pembrolizumab (anti-PD-1) showed improved survival over chemotherapy in NSCLC; PD-L1 expression ≥50% predicted superior response (KEYNOTE-001 trial)"
+  },
+  "snps": [
+    {
+      "rsid": "rs4143815",
+      "risk_allele": "C",
+      "reference_allele": "G",
+      "chromosome": "9",
+      "position": "5390654",
+      "variant_type": "3_utr_variant",
+      "interpretations": {
+        "CC": {
+          "phenotype": "Homozygous C allele associated with higher PD-L1 expression",
+          "effect": "Higher baseline PD-L1 expression in tumors; enhanced checkpoint inhibitor response predicted",
+          "recommendation": "Strong candidate for anti-PD-1/PD-L1 monotherapy. Monitor for immune-related adverse events. Consider combination with chemotherapy or targeted therapy depending on tumor type.",
+          "severity": "info"
+        },
+        "CG": {
+          "phenotype": "Heterozygous allele",
+          "effect": "Intermediate PD-L1 expression; moderate checkpoint inhibitor response expected",
+          "recommendation": "Anti-PD-1/PD-L1 therapy indicated if PD-L1 IHC score ≥1%. Consider combination approaches for potentially enhanced efficacy.",
+          "severity": "mild"
+        },
+        "GC": {
+          "phenotype": "Heterozygous allele",
+          "effect": "Intermediate PD-L1 expression; moderate checkpoint inhibitor response expected",
+          "recommendation": "Anti-PD-1/PD-L1 therapy indicated if PD-L1 IHC score ≥1%. Consider combination approaches for potentially enhanced efficacy.",
+          "severity": "mild"
+        },
+        "GG": {
+          "phenotype": "Homozygous G allele associated with lower PD-L1 expression",
+          "effect": "Lower baseline PD-L1 expression; reduced checkpoint inhibitor monotherapy response predicted",
+          "recommendation": "PD-L1 IHC testing essential. If PD-L1 <1%, consider combination chemotherapy+checkpoint inhibitor. Evaluate for other biomarkers (MSI, TMB).",
+          "severity": "moderate"
+        }
+      },
+      "population_frequency": {
+        "european": 0.28,
+        "african": 0.15,
+        "east_asian": 0.35,
+        "south_asian": 0.22,
+        "latino": 0.25
+      }
+    }
+  ],
+  "evidence_level": "moderate",
+  "clinical_significance": "PD-L1 expression established as biomarker for checkpoint inhibitor response. CD274 genetic variants may modulate tumor PD-L1 expression and influence immunotherapy outcomes. Growing evidence for CD274 SNPs in predicting immunotherapy benefit.",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "gene": "TRPM6",
+  "category": "nutrient_absorption",
+  "gene_description": "Transient receptor potential melastatin 6 (TRPM6) — rate-limiting ion channel for active transcellular magnesium absorption in intestine and reabsorption in kidney",
+  "drugs": [],
+  "source": {
+    "pmid": "17481860",
+    "doi": "10.1016/j.ajhg.2007.02.024",
+    "source_type": "pubmed",
+    "title": "TRPM6 and TRPM7--Gatekeepers of human magnesium metabolism",
+    "journal": "American Journal of Human Genetics",
+    "year": 2009,
+    "cohort_size": null,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/17481860/",
+    "finding": "rs11144134 T allele (found in 92% of Americans) increases hypomagnesemia risk by ~20%. TRPM6 is critical for intestinal absorption and renal reabsorption; variants reduce bioavailable magnesium."
+  },
+  "snps": [
+    {
+      "rsid": "rs11144134",
+      "risk_allele": "T",
+      "reference_allele": "C",
+      "interpretations": {
+        "TT": {
+          "phenotype": "Reduced Magnesium Absorption (Risk/Risk)",
+          "effect": "Homozygous for T allele. Decreased TRPM6 channel function and magnesium absorption efficiency. Approximately 20% increased risk of hypomagnesemia. Reduced intestinal absorption and renal magnesium conservation. Loss of magnesium in urine and feces increases.",
+          "recommendation": "Increase dietary magnesium intake (320 mg/day for women, 420 mg/day for men is standard; consider 400-500 mg/day). Avoid diuretics, alcohol, and foods/medications that impair Mg absorption. Consider magnesium supplementation (glycinate, citrate, or malate forms better absorbed). Monitor magnesium levels with healthcare provider.",
+          "severity": "mild",
+          "odds_ratio": null
+        },
+        "CT": {
+          "phenotype": "Normal Magnesium Absorption (Heterozygous)",
+          "effect": "Heterozygous for T/C alleles. Intermediate TRPM6 function and magnesium absorption capacity. Minimal increased hypomagnesemia risk compared to CC genotype. Generally adequate absorption with normal dietary intake.",
+          "recommendation": "Standard magnesium intake (320-420 mg/day) usually sufficient. Maintain adequate dietary sources. Avoid chronic alcohol and diuretic use.",
+          "severity": "info"
+        },
+        "TC": {
+          "phenotype": "Normal Magnesium Absorption (Heterozygous)",
+          "effect": "Heterozygous for T/C alleles. Intermediate TRPM6 function and magnesium absorption capacity. Minimal increased hypomagnesemia risk compared to CC genotype. Generally adequate absorption with normal dietary intake.",
+          "recommendation": "Standard magnesium intake (320-420 mg/day) usually sufficient. Maintain adequate dietary sources. Avoid chronic alcohol and diuretic use.",
+          "severity": "info"
+        },
+        "CC": {
+          "phenotype": "Normal Magnesium Absorption (Wild-type/Wild-type)",
+          "effect": "Homozygous for C allele (wild-type). Normal TRPM6 channel function and magnesium absorption efficiency. Adequate active magnesium absorption in gut and renal reabsorption. No significant increased hypomagnesemia risk.",
+          "recommendation": "Standard dietary magnesium intake (320-420 mg/day) is adequate. Maintain diverse diet with magnesium-rich foods (nuts, seeds, spinach, whole grains, legumes).",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.65,
+        "african": 0.58,
+        "east_asian": 0.72,
+        "south_asian": 0.62,
+        "latino": 0.60
+      }
+    }
+  ],
+  "evidence_level": "emerging",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "gene": "HLA-DQA1",
+  "gene_full_name": "Major Histocompatibility Complex, Class II, DQ Alpha 1",
+  "region": "Regulatory region, tag SNP for HLA-DQ2.5",
+  "category": "immune",
+  "phenotype": "Celiac Disease",
+  "description": "HLA-DQA1 rs2187668 tag SNP for HLA-DQ2.5 heterodimer (DQA1*05 and DQB1*02 on same chromosome). The A allele (inferred DQ2.5) is necessary for celiac disease pathogenesis, present in ~95% of celiac patients vs 30% of general population.",
+  "source": {
+    "title": "A genome-wide association study for celiac disease identifies risk variants in the region harboring IL2 and IL21",
+    "year": 2007,
+    "authors": "van Heel DA, Hunt K, Greco L, Dubois PC, et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/17660530/",
+    "pmid": "17660530",
+    "journal": "Nature Genetics",
+    "volume": 39,
+    "pages": "827-829",
+    "source_type": "pubmed"
+  },
+  "source_type": "pubmed",
+  "evidence_level": "established",
+  "snps": [
+    {
+      "rsid": "rs2187668",
+      "risk_allele": "T",
+      "interpretations": {
+        "TT": {
+          "phenotype": "High genetic predisposition to celiac disease; HLA-DQ2.5 homozygous",
+          "effect": "High genetic predisposition to celiac disease; HLA-DQ2.5 homozygous",
+          "recommendation": "Screen with tissue transglutaminase (tTG-IgA) serology. If positive, confirmed with endoscopic small bowel biopsy. Strict gluten-free diet if celiac disease confirmed. Monitor for nutritional deficiencies. Genetic counseling for family members. Screen for dermatitis herpetiformis, thyroiditis, type 1 diabetes.",
+          "severity": "info"
+        },
+        "TC": {
+          "phenotype": "Moderate genetic predisposition to celiac disease; HLA-DQ2.5 heterozygous",
+          "effect": "Moderate genetic predisposition to celiac disease; HLA-DQ2.5 heterozygous",
+          "recommendation": "Screen for celiac disease with tTG-IgA serology if symptoms suggestive. Follow-up with biopsy if serology positive. Strict gluten-free diet if diagnosed. Monitor for associated autoimmune conditions.",
+          "severity": "info"
+        },
+        "CT": {
+          "phenotype": "Moderate genetic predisposition to celiac disease; HLA-DQ2.5 heterozygous",
+          "effect": "Moderate genetic predisposition to celiac disease; HLA-DQ2.5 heterozygous",
+          "recommendation": "Screen for celiac disease with tTG-IgA serology if symptoms suggestive. Follow-up with biopsy if serology positive. Strict gluten-free diet if diagnosed. Monitor for associated autoimmune conditions.",
+          "severity": "info"
+        },
+        "CC": {
+          "phenotype": "Very low genetic risk for celiac disease; no HLA-DQ2.5",
+          "effect": "Very low genetic risk for celiac disease; no HLA-DQ2.5",
+          "recommendation": "Celiac disease unlikely if HLA-DQ2 and DQ8 both negative. Standard evaluation if celiac symptoms present despite negative HLA.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.14,
+        "african": 0.02,
+        "east_asian": 0.05,
+        "south_asian": 0.08,
+        "latino": 0.1
+      }
+    }
+  ],
+  "drugs": [
+    "gluten_free_diet",
+    "larazotide",
+    "budesonide"
+  ],
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

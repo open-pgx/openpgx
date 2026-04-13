@@ -18,7 +18,7 @@
   },
   "snps": [
     {
-      "rsid": "HLA-DQB1*02:01",
+      "rsid": "rs2647012",
       "risk_allele": "*02:01",
       "reference_allele": "other",
       "interpretations": {

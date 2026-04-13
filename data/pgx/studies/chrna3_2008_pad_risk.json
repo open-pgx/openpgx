@@ -1,0 +1,57 @@
+{
+  "gene": "CHRNA3",
+  "source": {
+    "title": "The Joint Link of the rs1051730 and rs1902341 Polymorphisms and Cigarette Smoking to Peripheral Artery Disease",
+    "year": 2008,
+    "url": "https://www.mdpi.com/2075-1729/13/2/496"
+  },
+  "source_type": "pubmed",
+  "evidence_level": "established",
+  "severity": "severe",
+  "description": "CHRNA3 rs1051730 (T allele) is strongly associated with peripheral artery disease and lung cancer, particularly in smokers. The variant affects nicotine receptor expression and smoking behavior.",
+  "snps": [
+    {
+      "rsid": "rs1051730",
+      "location": "15q24.3",
+      "effect_allele": "T",
+      "reference_allele": "C",
+      "interpretations": {
+        "CC": {
+          "phenotype": "Lower PAD and smoking risk",
+          "effect": "Reference homozygote",
+          "recommendation": "Standard cardiovascular health maintenance; smoking cessation if applicable",
+          "severity": "info"
+        },
+        "CT": {
+          "phenotype": "Intermediate PAD risk, elevated in smokers",
+          "effect": "Heterozygous carrier; modest increased risk especially with smoking",
+          "recommendation": "Smoking cessation strongly recommended; regular vascular assessment; manage cardiovascular risk factors",
+          "severity": "moderate"
+        },
+        "TC": {
+          "phenotype": "Intermediate PAD risk, elevated in smokers",
+          "effect": "Heterozygous carrier; modest increased risk especially with smoking",
+          "recommendation": "Smoking cessation strongly recommended; regular vascular assessment; manage cardiovascular risk factors",
+          "severity": "moderate"
+        },
+        "TT": {
+          "phenotype": "High PAD and lung disease risk",
+          "effect": "Risk allele homozygote; substantially increased risk in smokers and non-smokers",
+          "recommendation": "Avoid smoking completely; regular PAD screening; lipid management; consider antiplatelet therapy; monitor LDL cholesterol",
+          "severity": "severe"
+        }
+      },
+      "population_frequency": {
+        "european": 0.38,
+        "african": 0.13,
+        "east_asian": 0.27,
+        "south_asian": 0.22,
+        "latino": 0.32
+      }
+    }
+  ],
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

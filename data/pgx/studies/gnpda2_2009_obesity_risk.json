@@ -1,0 +1,65 @@
+{
+  "gene": "GNPDA2",
+  "category": "nutrient_absorption",
+  "gene_description": "Glucosamine-6-Phosphate Deaminase 2 — an enzyme involved in amino sugar metabolism and protein glycosylation. The rs10938397 variant's mechanism in obesity is not fully characterized but appears to influence energy homeostasis, possibly through effects on immune signaling, metabolic inflammation, or central appetite regulation pathways.",
+  "drugs": ["semaglutide", "liraglutide", "tirzepatide", "orlistat", "phentermine"],
+  "source": {
+    "pmid": "19151714",
+    "doi": "10.1038/ng.287",
+    "source_type": "pubmed",
+    "title": "Six new loci associated with body mass index highlight a neuronal influence on body weight regulation",
+    "journal": "Nature Genetics",
+    "year": 2009,
+    "cohort_size": 91000,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/19151714/",
+    "finding": "Genome-wide meta-analysis of BMI in 15 GWAS cohorts (n > 32,000) with follow-up in 14 additional cohorts (n > 59,000) identifies six new BMI-associated loci: TMEM18, KCTD15, GNPDA2, SH2B1, MTCH2, and NEGR1. GNPDA2 rs10938397-G associated with increased BMI (p < 5 × 10⁻⁸). Most novel loci are highly expressed in the central nervous system, suggesting neuronal control of body weight regulation. Each risk allele contributes modestly to BMI variation."
+  },
+  "snps": [
+    {
+      "rsid": "rs10938397",
+      "risk_allele": "G",
+      "reference_allele": "A",
+      "interpretations": {
+        "GG": {
+          "phenotype": "GNPDA2 homozygous risk — elevated obesity susceptibility",
+          "effect": "Homozygous for G risk allele. ~1.2-fold increased BMI per risk allele (additive effect); compound effect of two alleles is ~1.44-fold BMI increase. Approximately 1–2 kg/m² BMI increase in homozygotes. Mechanism not fully characterized; likely involves central appetite regulation, metabolic inflammation, or immune signaling pathways. Modest but consistent effect across populations. Environmental factors (diet, physical activity) substantially modulate phenotypic expression.",
+          "recommendation": "Lifestyle intervention with emphasis on energy balance: caloric deficit of 500–750 kcal/day for gradual weight loss (0.5–1 kg/week). Structured diet program (Mediterranean, DASH, or low-carbohydrate approach). Regular physical activity: ≥150 min/week moderate-intensity aerobic exercise plus resistance training 2–3 times/week. Behavioral counseling and monitoring. If lifestyle alone insufficient after 6 months and BMI >30 (or >27 with comorbidities), consider GLP-1 receptor agonists (semaglutide, liraglutide) or dual GLP-1/GIP agonist (tirzepatide) — particularly effective for GNPDA2 carriers. Orlistat (pancreatic lipase inhibitor) as adjunct. Screen for metabolic syndrome, type 2 diabetes, and dyslipidemia.",
+          "severity": "moderate",
+          "odds_ratio": 1.2
+        },
+        "GA": {
+          "phenotype": "GNPDA2 heterozygous — mild obesity risk",
+          "effect": "Heterozygous for G allele. ~1.2-fold increased BMI (per copy of G allele). ~0.5–1 kg/m² average BMI increase compared to AA homozygotes. Modest genetic contribution to obesity risk; environmental factors (diet, activity) play dominant role in phenotype expression.",
+          "recommendation": "Preventive lifestyle measures: maintain balanced, calorie-appropriate diet; regular physical activity (150 min/week moderate aerobic exercise, 2–3 times/week resistance training). Maintain healthy weight through portion control. Monitor BMI and weight trends. No specific pharmacotherapy indicated unless overweight/obese. Screen periodically for metabolic syndrome.",
+          "severity": "mild",
+          "odds_ratio": 1.1
+        },
+        "AG": {
+          "phenotype": "GNPDA2 heterozygous — mild obesity risk",
+          "effect": "Heterozygous for G allele. ~1.2-fold increased BMI (per copy of G allele). ~0.5–1 kg/m² average BMI increase compared to AA homozygotes. Modest genetic contribution to obesity risk; environmental factors (diet, activity) play dominant role in phenotype expression.",
+          "recommendation": "Preventive lifestyle measures: maintain balanced, calorie-appropriate diet; regular physical activity (150 min/week moderate aerobic exercise, 2–3 times/week resistance training). Maintain healthy weight through portion control. Monitor BMI and weight trends. No specific pharmacotherapy indicated unless overweight/obese. Screen periodically for metabolic syndrome.",
+          "severity": "mild",
+          "odds_ratio": 1.1
+        },
+        "AA": {
+          "phenotype": "GNPDA2 wild-type homozygous — standard obesity risk",
+          "effect": "Homozygous for A reference allele. Normal GNPDA2 function. Standard obesity risk determined by environmental factors (diet, physical activity, sleep, stress) and other genetic loci. No increased genetic predisposition to obesity from this variant.",
+          "recommendation": "Standard healthy lifestyle guidelines: balanced diet appropriate for energy needs, regular physical activity (150 min/week), maintain healthy weight. No specific genetic risk factors from this locus warrant additional intervention.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.38,
+        "african": 0.25,
+        "east_asian": 0.15,
+        "south_asian": 0.28,
+        "latino": 0.35
+      }
+    }
+  ],
+  "evidence_level": "moderate",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}

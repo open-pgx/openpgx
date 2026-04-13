@@ -1,0 +1,68 @@
+{
+  "gene": "TERT",
+  "rsid": "rs2736100",
+  "cancer_type": "glioma",
+  "title": "TERT rs2736100 Glioma Risk (Telomerase Reverse Transcriptase Promoter)",
+  "description": "Common variant in the TERT promoter region associated with glioma susceptibility, distinct from telomere length effects. TERT encodes the catalytic subunit of telomerase, and TERT promoter mutations/variants drive reactivation of telomerase expression in cancer cells, enabling replicative immortality. High-grade gliomas (glioblastoma) and oligodendrogliomas frequently harbor TERT promoter mutations (70-95%), driving cancer cell proliferation and poor prognosis.",
+  "source": {
+    "title": "Genome-wide association study identifies multiple glioma loci",
+    "authors": ["Sanson M", "Hosking FJ", "Shete S", "et al."],
+    "year": 2011,
+    "journal": "Nature Genetics",
+    "volume": 43,
+    "pages": "189-196",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/21358631/"
+  },
+  "pmid": "21358631",
+  "source_type": "pubmed",
+  "evidence_level": "moderate",
+  "drugs": ["temozolomide", "bevacizumab", "lomustine"],
+  "snps": [
+    {
+      "rsid": "rs2736100",
+      "chromosome": "5",
+      "position": 1343157,
+      "ref_allele": "C",
+      "risk_allele": "T",
+      "interpretations": {
+        "CC": {
+          "phenotype": "normal_risk",
+          "effect": "baseline_glioma_risk",
+          "recommendation": "standard_surveillance",
+          "severity": "info"
+        },
+        "CT": {
+          "phenotype": "intermediate_risk",
+          "effect": "1.21x_increased_glioma_risk",
+          "recommendation": "enhanced_neuroimaging_surveillance",
+          "severity": "mild"
+        },
+        "TC": {
+          "phenotype": "intermediate_risk",
+          "effect": "1.21x_increased_glioma_risk",
+          "recommendation": "enhanced_neuroimaging_surveillance",
+          "severity": "mild"
+        },
+        "TT": {
+          "phenotype": "increased_risk",
+          "effect": "1.45x_increased_glioma_risk",
+          "recommendation": "aggressive_surveillance_aggressive_multimodal_treatment",
+          "severity": "moderate"
+        }
+      },
+      "population_frequency": {
+        "european": 0.38,
+        "african": 0.22,
+        "east_asian": 0.45,
+        "south_asian": 0.35,
+        "latino": 0.36
+      }
+    }
+  ],
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  },
+  "tags": ["cancer_risk", "glioma", "brain_cancer", "telomerase", "promoter_variant"],
+  "last_updated": "2026-04-12"
+}

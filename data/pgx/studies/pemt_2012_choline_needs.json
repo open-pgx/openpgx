@@ -1,0 +1,63 @@
+{
+  "gene": "PEMT",
+  "category": "nutrient_metabolism",
+  "gene_description": "Phosphatidylethanolamine N-methyltransferase (PEMT) — catalyzes endogenous synthesis of phosphatidylcholine from phosphatidylethanolamine, primary source of choline for liver and brain",
+  "drugs": [],
+  "source": {
+    "pmid": "16179343",
+    "doi": "10.1038/sj.ejcn.1602139",
+    "source_type": "pubmed",
+    "title": "Genetic variants in phosphatidylethanolamine N-methyltransferase (PEMT) and methylenetetrahydrofolate dehydrogenase (MTHFD1) influence biomarkers of choline metabolism when folate intake is restricted",
+    "journal": "European Journal of Clinical Nutrition",
+    "year": 2006,
+    "cohort_size": 144,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/16179343/",
+    "finding": "rs12325817 variant allele associated with reduced estrogen-induced PEMT expression. 40-75% of women carry this polymorphism. Two copies increase choline deficiency organ dysfunction risk to 80% on low-choline diet vs 13% in non-carriers."
+  },
+  "snps": [
+    {
+      "rsid": "rs12325817",
+      "risk_allele": "G",
+      "reference_allele": "A",
+      "interpretations": {
+        "GG": {
+          "phenotype": "High Choline Requirement (Variant/Variant)",
+          "effect": "Homozygous for variant G allele. Significantly reduced PEMT expression and choline synthesis capacity, particularly in response to estrogen signaling. Premenopausal women show 80% risk of organ dysfunction (fatty liver, muscle damage) on low-choline diet. Reduced phosphatidylcholine synthesis increases VLDL lipid export demands.",
+          "recommendation": "Higher dietary choline intake essential, especially for premenopausal women. Target 550 mg/day for women and 550-625 mg/day for men. Include choline-rich foods (eggs, liver, fish, nuts, seeds, Brussels sprouts) or consider supplementation. Monitor liver function with adequate choline intake.",
+          "severity": "moderate",
+          "odds_ratio": null
+        },
+        "AG": {
+          "phenotype": "Moderate Choline Requirement (Heterozygous)",
+          "effect": "Heterozygous for variant G/wild-type A alleles. Intermediate PEMT expression and choline synthesis capacity. Premenopausal women show ~43% risk of organ dysfunction on low-choline diet. Some reduction in estrogen-responsive choline synthesis.",
+          "recommendation": "Adequate dietary choline intake recommended (425-550 mg/day depending on sex). Include regular dietary sources of choline. Monitor for signs of choline deficiency (muscle pain, fatty liver) especially on restrictive diets.",
+          "severity": "mild"
+        },
+        "GA": {
+          "phenotype": "Moderate Choline Requirement (Heterozygous)",
+          "effect": "Heterozygous for variant G/wild-type A alleles. Intermediate PEMT expression and choline synthesis capacity. Premenopausal women show ~43% risk of organ dysfunction on low-choline diet. Some reduction in estrogen-responsive choline synthesis.",
+          "recommendation": "Adequate dietary choline intake recommended (425-550 mg/day depending on sex). Include regular dietary sources of choline. Monitor for signs of choline deficiency (muscle pain, fatty liver) especially on restrictive diets.",
+          "severity": "mild"
+        },
+        "AA": {
+          "phenotype": "Normal Choline Requirement (Wild-type/Wild-type)",
+          "effect": "Homozygous for wild-type A allele. Normal PEMT expression and capacity for endogenous choline synthesis, particularly responsive to estrogen in women. Low risk (13%) of organ dysfunction even on low-choline diet. Adequate de novo choline production from dietary folate and methionine.",
+          "recommendation": "Standard dietary choline intake sufficient (425-550 mg/day). No special supplementation needed unless on very restricted diet. Regular balanced diet with diverse nutrient sources adequate.",
+          "severity": "info"
+        }
+      },
+      "population_frequency": {
+        "european": 0.48,
+        "african": 0.32,
+        "east_asian": 0.42,
+        "south_asian": 0.38,
+        "latino": 0.40
+      }
+    }
+  ],
+  "evidence_level": "moderate",
+  "contributor": {
+    "name": "OpenPGx Community",
+    "github": "openpgx"
+  }
+}
